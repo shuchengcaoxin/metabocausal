@@ -17,11 +17,17 @@ The public repository does not include the private Slack workspace or bot creden
 
 ## Public-safe screenshots
 
-These images are sanitized static demos, not private live workspace captures.
+The success images below are demo captures from the MetaboCausal Slack workflow. The challenge image is a public-safe static demo until a sanitized live challenge capture is available.
 
 ### Normal source-linked answer
 
-![Sanitized Slack demo showing a source-linked MetaboCausal answer](assets/slack-success-demo.png)
+![Slack demo showing a MetaboCausal HDL cholesterol and coronary artery disease question](assets/slack-success-live-1-question.png)
+
+![Slack demo showing State A retrieved MR result](assets/slack-success-live-2-result.png)
+
+![Slack demo showing generated evidence-card attachment](assets/slack-success-live-3-card.png)
+
+![Slack demo showing figure generation buttons and forest plot preview](assets/slack-success-live-4-figure.png)
 
 ### Challenge prompt
 

@@ -40,7 +40,7 @@ A missing record is reported as a gap, not as a negative biological conclusion.
 | Demo | What it shows |
 | --- | --- |
 | [Static evidence-card demo](demo/evidence-card/index.html) | A public-safe HTML example showing an evidence gap, provenance and next action. |
-| [Slack success demo](docs/assets/slack-success-demo.png) | A sanitized static screenshot showing a normal source-linked Slack answer. |
+| [Slack success demo](docs/assets/slack-success-live-1-question.png) | A real demo capture showing a normal source-linked Slack run for HDL cholesterol and coronary artery disease. |
 | [Slack challenge demo](docs/assets/slack-challenge-demo.png) | A sanitized static screenshot showing an unsupported prompt being rejected. |
 | [Genetic timeline image](docs/assets/cetp-timeline.png) | A saved example of how dated genetic, preclinical and clinical evidence can be kept separate. |
 | [5-minute presentation deck](presentation/MetaboCausal_5min_presentation.pptx) | The live-room presentation deck used to explain the project. |
@@ -48,11 +48,21 @@ A missing record is reported as a gap, not as a negative biological conclusion.
 
 ## Screenshots
 
-### Slack answer
+### Slack success demo
 
-![Sanitized Slack demo showing a source-linked MetaboCausal answer](docs/assets/slack-success-demo.png)
+The successful Slack demo starts from **HDL cholesterol vs coronary artery disease**, resolves identifiers, retrieves evidence and exposes the evidence card and figure buttons.
+
+![Slack demo showing a MetaboCausal HDL cholesterol and coronary artery disease question](docs/assets/slack-success-live-1-question.png)
+
+![Slack demo showing State A retrieved MR result](docs/assets/slack-success-live-2-result.png)
+
+![Slack demo showing generated evidence-card attachment](docs/assets/slack-success-live-3-card.png)
+
+![Slack demo showing figure generation buttons and forest plot preview](docs/assets/slack-success-live-4-figure.png)
 
 ### Slack challenge prompt
+
+This challenge screenshot is a public-safe static demo showing the intended guardrail behavior. Replace it with a sanitized live capture when available.
 
 ![Sanitized Slack demo showing an unsupported claim rejected](docs/assets/slack-challenge-demo.png)
 
