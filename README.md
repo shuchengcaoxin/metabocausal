@@ -40,11 +40,21 @@ A missing record is reported as a gap, not as a negative biological conclusion.
 | Demo | What it shows |
 | --- | --- |
 | [Static evidence-card demo](demo/evidence-card/index.html) | A public-safe HTML example showing an evidence gap, provenance and next action. |
+| [Slack success demo](docs/assets/slack-success-demo.png) | A sanitized static screenshot showing a normal source-linked Slack answer. |
+| [Slack challenge demo](docs/assets/slack-challenge-demo.png) | A sanitized static screenshot showing an unsupported prompt being rejected. |
 | [Genetic timeline image](docs/assets/cetp-timeline.png) | A saved example of how dated genetic, preclinical and clinical evidence can be kept separate. |
 | [5-minute presentation deck](presentation/MetaboCausal_5min_presentation.pptx) | The live-room presentation deck used to explain the project. |
 | [Project blog](https://shuchengcaoxin.github.io/blog/metabocausal/) | Public narrative, roadmap and team context. |
 
 ## Screenshots
+
+### Slack answer
+
+![Sanitized Slack demo showing a source-linked MetaboCausal answer](docs/assets/slack-success-demo.png)
+
+### Slack challenge prompt
+
+![Sanitized Slack demo showing an unsupported claim rejected](docs/assets/slack-challenge-demo.png)
 
 ### Evidence card
 
@@ -107,4 +117,3 @@ The public demo in this repository is static and makes no live API or model requ
 ## Status
 
 Research prototype and hackathon demo. Not for clinical use. Not a drug-development recommendation engine.
-

@@ -15,7 +15,18 @@ A typical demo has two parts:
 
 The public repository does not include the private Slack workspace or bot credentials. Add only sanitized screenshots here.
 
+## Public-safe screenshots
+
+These images are sanitized static demos, not private live workspace captures.
+
+### Normal source-linked answer
+
+![Sanitized Slack demo showing a source-linked MetaboCausal answer](assets/slack-success-demo.png)
+
+### Challenge prompt
+
+![Sanitized Slack demo showing an unsupported claim rejected](assets/slack-challenge-demo.png)
+
 Suggested public caption:
 
 > In this test, the system rejected an unsupported claim instead of inventing evidence. This is one challenge test, not proof that hallucination is impossible.
-
