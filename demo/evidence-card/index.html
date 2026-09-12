@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaboCausal static evidence-card demo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #082f49;
+      --muted: #64748b;
+      --line: #cbd5e1;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --teal: #0f5b6b;
+      --amber: #a16207;
+      --amber-bg: #fef3c7;
+      --blue-bg: #e0f2fe;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    header {
+      background: var(--teal);
+      color: #fff;
+      padding: 18px 28px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    header p {
+      margin: 4px 0 18px;
+      color: #dff7ff;
+      font-size: 14px;
+    }
+    nav {
+      display: flex;
+      gap: 4px;
+    }
+    nav span {
+      display: inline-block;
+      padding: 12px 16px;
+      background: rgba(255,255,255,.12);
+      border-radius: 8px 8px 0 0;
+      font-size: 13px;
+    }
+    nav span:first-child {
+      background: #fff;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    main {
+      width: min(920px, calc(100vw - 32px));
+      margin: 28px auto 40px;
+    }
+    .hero, .box, .metric, .details {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 18px 35px rgba(15, 23, 42, .06);
+    }
+    .hero {
+      padding: 28px;
+    }
+    .eyebrow {
+      color: #0369a1;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 8px 0 6px;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.05;
+    }
+    .subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+    .pair {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .tag {
+      background: var(--blue-bg);
+      color: #075985;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+    .status {
+      margin: 18px 0 16px;
+      padding: 16px;
+      background: var(--amber-bg);
+      border-left: 5px solid var(--amber);
+      border-radius: 10px;
+    }
+    .status strong {
+      color: #713f12;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .metric {
+      padding: 16px;
+      box-shadow: none;
+    }
+    .metric h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .metric p, .box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .box {
+      padding: 16px;
+      box-shadow: none;
+      margin-top: 12px;
+    }
+    .box h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+    .details {
+      margin-top: 18px;
+      padding: 16px;
+      box-shadow: none;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed var(--line);
+      padding: 9px 0;
+      gap: 18px;
+      font-size: 14px;
+    }
+    .row:last-child {
+      border-bottom: 0;
+    }
+    .row span:last-child {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-align: right;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 0 0 24px;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .row { display: block; }
+      .row span:last-child { display: block; text-align: left; margin-top: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MetaboCausal</h1>
+    <p>Metabolite to disease genetic evidence, with boundaries kept visible</p>
+    <nav aria-label="Demo tabs">
+      <span>Evidence card</span>
+      <span>Discovery audit</span>
+      <span>How to read this</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Static public demonstration</div>
+      <h2>Can glycine influence coronary artery disease?</h2>
+      <p class="subtitle">This viewer shows the intended evidence-card structure. It is static and does not make live API, literature-search or model requests.</p>
+      <div class="pair">glycine <span>→</span> coronary artery disease <span class="tag">example pair</span></div>
+    </section>
+
+    <section class="status">
+      <strong>State C · evidence gap</strong>
+      <p>There is no source-validated forward MR estimate for this pair in this static demonstration. This is a gap in the current evidence snapshot, not evidence of no effect.</p>
+    </section>
+
+    <section class="grid" aria-label="Evidence summary">
+      <div class="metric">
+        <h3>Genetic evidence</h3>
+        <strong style="color:#a16207">Not yet validated</strong>
+        <p>Candidate literature records require source-exact extraction before they can be shown as MR evidence.</p>
+      </div>
+      <div class="metric">
+        <h3>Instruments and feasibility</h3>
+        <strong>Not assessed</strong>
+        <p>No instrument count, F statistic or feasibility claim is supplied in this public static example.</p>
+      </div>
+      <div class="metric">
+        <h3>Effector genes</h3>
+        <strong>Unresolved</strong>
+        <p>No gene is nominated here. A missing mechanism must not erase or strengthen pair-level evidence.</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h3>Next action</h3>
+      <p>Screen the bounded candidate set for a pair-specific forward metabolite-to-disease MR analysis. Preserve exact estimate, scale, direction, method and source location before updating this card.</p>
+    </section>
+
+    <section class="details">
+      <h3>Provenance</h3>
+      <div class="row"><span>Discovery source</span><span>public literature search layer</span></div>
+      <div class="row"><span>Run scope</span><span>glycine x coronary artery disease</span></div>
+      <div class="row"><span>Public demo status</span><span>static viewer only</span></div>
+      <div class="row"><span>Live API request</span><span>none</span></div>
+    </section>
+  </main>
+
+  <footer>MetaboCausal public demo · no API keys, live requests or model output</footer>
+</body>
+</html>
+

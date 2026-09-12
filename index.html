@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaboCausal public demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+    main {
+      width: min(980px, calc(100vw - 32px));
+      margin: 56px auto;
+    }
+    h1 {
+      color: #0b3654;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1;
+      margin: 0 0 18px;
+    }
+    .lead {
+      font-size: 24px;
+      max-width: 820px;
+      margin: 0 0 34px;
+    }
+    .panel {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 18px 0;
+      box-shadow: 0 18px 35px rgba(15, 23, 42, .06);
+    }
+    h2 {
+      margin: 0 0 10px;
+      color: #0f5b6b;
+    }
+    a {
+      color: #0369a1;
+      font-weight: 700;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .small {
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MetaboCausal</h1>
+    <p class="lead">A Slack-first evidence tracing agent for metabolite-disease questions in drug discovery.</p>
+
+    <section class="panel">
+      <h2>What it shows</h2>
+      <p>MetaboCausal turns a molecule-disease question into a checkable evidence card. The public demo focuses on the product design: source-linked answers, visible evidence gaps and careful boundaries around causal claims.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Demos</h2>
+      <ul>
+        <li><a href="demo/evidence-card/">Static evidence-card demo</a></li>
+        <li><a href="docs/assets/evidence-card-screenshot.png">Evidence-card screenshot</a></li>
+        <li><a href="docs/assets/cetp-timeline.png">Genetic timeline image</a></li>
+        <li><a href="presentation/MetaboCausal_5min_presentation.pptx">Five-minute presentation deck</a></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Public boundary</h2>
+      <p>This public package does not include private data, API keys, raw literature search exports or the full internal screening workflow. It is meant to explain the product concept and demonstrated interface.</p>
+      <p class="small">Research prototype. Not for clinical use.</p>
+    </section>
+  </main>
+</body>
+</html>
+
