@@ -36,5 +36,4 @@ If the retrieved evidence is missing or weak, the answer should say so.
 
 ## Demo boundary
 
-The demos in this public repository are static. They show the intended product behavior and information design. They do not run the private APIs, private search workflow or Slack bot.
-
+The demos in this repository are static. They show the intended product behavior and information design. They do not run live APIs, the search workflow or the Slack bot.

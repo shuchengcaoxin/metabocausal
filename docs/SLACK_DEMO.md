@@ -13,9 +13,9 @@ A typical demo has two parts:
    - A user supplies a malformed or unsupported request.
    - The system should reject the request instead of forcing it into an evidence answer.
 
-The public repository does not include the private Slack workspace or bot credentials. Add only sanitized screenshots here.
+This repository does not include Slack workspace configuration or bot credentials.
 
-## Public-safe screenshots
+## Demo screenshots
 
 The images below are demo captures from the MetaboCausal Slack workflow.
 
@@ -33,6 +33,6 @@ The images below are demo captures from the MetaboCausal Slack workflow.
 
 ![Slack demo showing an unreadable pair rejected](assets/slack-challenge-live-unreadable-pair.png)
 
-Suggested public caption:
+Suggested caption:
 
 > In this test, the system refused to force an unreadable pair into an evidence answer. This is one challenge test, not proof that hallucination is impossible.

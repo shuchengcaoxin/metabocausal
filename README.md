@@ -1,12 +1,12 @@
 # MetaboCausal
 
-MetaboCausal is a public demo repository for a hackathon project built by the MetaboCausal team at AI Tinkerers Montreal.
+MetaboCausal is a demo repository for a hackathon project built by the MetaboCausal team at AI Tinkerers Montreal.
 
 The project explores a simple product idea:
 
 > Ask a metabolite-disease question in Slack. Get a source-linked evidence card that shows what is known, what is missing and what the team should check next.
 
-This repository is intentionally **not** the full private development repository. It shares the product concept, public-safe screenshots and static demos so people can understand the design without exposing private data, API keys, raw search logs or the full internal literature workflow.
+This repository shares the product concept, screenshots and static demos so people can understand the design and user experience. It omits credentials, raw search exports and detailed screening notes.
 
 ## Why this exists
 
@@ -24,7 +24,7 @@ MetaboCausal is designed to keep those boundaries visible.
 The prototype follows this product logic:
 
 1. **Ask a question.** A user starts from a molecule and a disease.
-2. **Trace public evidence.** The system resolves names and gathers available evidence from genetic, literature, target and clinical sources.
+2. **Trace evidence.** The system resolves names and gathers available evidence from genetic, literature, target and clinical sources.
 3. **Classify the evidence state.** The output distinguishes retrieved evidence, analysis-ready gaps and missing evidence.
 4. **Return a checkable card.** The answer links back to source records and keeps uncertainty visible.
 5. **Discuss in Slack.** The team sees a compact answer where the discussion is already happening.
@@ -39,12 +39,12 @@ A missing record is reported as a gap, not as a negative biological conclusion.
 
 | Demo | What it shows |
 | --- | --- |
-| [Static evidence-card demo](demo/evidence-card/index.html) | A public-safe HTML example showing an evidence gap, provenance and next action. |
+| [Static evidence-card demo](demo/evidence-card/index.html) | A static HTML example showing an evidence gap, provenance and next action. |
 | [Slack success demo](docs/assets/slack-success-live-1-question.png) | A real demo capture showing a normal source-linked Slack run for HDL cholesterol and coronary artery disease. |
 | [Slack challenge demo](docs/assets/slack-challenge-live-unreadable-pair.png) | A real demo capture showing an unreadable pair being rejected instead of forced into an answer. |
 | [Genetic timeline image](docs/assets/cetp-timeline.png) | A saved example of how dated genetic, preclinical and clinical evidence can be kept separate. |
 | [5-minute presentation deck](presentation/MetaboCausal_5min_presentation.pptx) | The live-room presentation deck used to explain the project. |
-| [Project blog](https://shuchengcaoxin.github.io/blog/metabocausal/) | Public narrative, roadmap and team context. |
+| [Project blog](https://shuchengcaoxin.github.io/blog/metabocausal/) | Project narrative, roadmap and team context. |
 
 ## Screenshots
 
@@ -86,35 +86,35 @@ MetaboCausal uses practical evidence states rather than a single overconfident v
 
 These states describe evidence availability. They do not prove that a drug will work.
 
-## What is public here
+## What is included
 
-This public repository includes:
+This repository includes:
 
 - a plain-English project overview
 - a static evidence-card demo
-- public-safe screenshots
+- demo screenshots
 - a presentation deck
 - high-level product design notes
 
-## What is intentionally not public
+## What is not included
 
 This repository does not include:
 
 - API keys or deployment credentials
-- the private Slack workspace configuration
-- raw literature search exports
-- full internal mapping tables
-- private team handoff logs
+- Slack workspace configuration
+- raw search exports
+- full mapping tables
+- team handoff logs
 - unpublished raw data
-- the detailed paper-screening workflow used inside the private project
+- detailed paper-screening notes
 
-The public goal is to explain the product design and demonstrated behavior, not to provide a complete reproducible research pipeline.
+The goal is to explain the product design and demonstrated behavior, not to provide a complete reproducible research pipeline.
 
-## Technology used in the private prototype
+## Technology used in the prototype
 
-The private prototype used Python, Slack Bolt, OpenAI, Anthropic Claude, EBI OLS4, PubChem, EpiGraphDB, IEU OpenGWAS, GWAS Catalog, Open Targets, ChEMBL and gnomAD.
+The prototype used Python, Slack Bolt, OpenAI, Anthropic Claude, EBI OLS4, PubChem, EpiGraphDB, IEU OpenGWAS, GWAS Catalog, Open Targets, ChEMBL and gnomAD.
 
-The public demo in this repository is static and makes no live API or model requests.
+The demo pages in this repository are static and make no live API or model requests.
 
 ## Team
 
