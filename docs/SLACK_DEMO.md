@@ -10,14 +10,14 @@ A typical demo has two parts:
    - The answer points to a fuller evidence card or source-linked record.
 
 2. **Challenge prompt**
-   - A user supplies a deliberately unsupported premise.
-   - The system should reject unsupported evidence instead of inventing support.
+   - A user supplies a malformed or unsupported request.
+   - The system should reject the request instead of forcing it into an evidence answer.
 
 The public repository does not include the private Slack workspace or bot credentials. Add only sanitized screenshots here.
 
 ## Public-safe screenshots
 
-The success images below are demo captures from the MetaboCausal Slack workflow. The challenge image is a public-safe static demo until a sanitized live challenge capture is available.
+The images below are demo captures from the MetaboCausal Slack workflow.
 
 ### Normal source-linked answer
 
@@ -31,8 +31,8 @@ The success images below are demo captures from the MetaboCausal Slack workflow.
 
 ### Challenge prompt
 
-![Sanitized Slack demo showing an unsupported claim rejected](assets/slack-challenge-demo.png)
+![Slack demo showing an unreadable pair rejected](assets/slack-challenge-live-unreadable-pair.png)
 
 Suggested public caption:
 
-> In this test, the system rejected an unsupported claim instead of inventing evidence. This is one challenge test, not proof that hallucination is impossible.
+> In this test, the system refused to force an unreadable pair into an evidence answer. This is one challenge test, not proof that hallucination is impossible.

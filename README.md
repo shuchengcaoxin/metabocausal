@@ -41,7 +41,7 @@ A missing record is reported as a gap, not as a negative biological conclusion.
 | --- | --- |
 | [Static evidence-card demo](demo/evidence-card/index.html) | A public-safe HTML example showing an evidence gap, provenance and next action. |
 | [Slack success demo](docs/assets/slack-success-live-1-question.png) | A real demo capture showing a normal source-linked Slack run for HDL cholesterol and coronary artery disease. |
-| [Slack challenge demo](docs/assets/slack-challenge-demo.png) | A sanitized static screenshot showing an unsupported prompt being rejected. |
+| [Slack challenge demo](docs/assets/slack-challenge-live-unreadable-pair.png) | A real demo capture showing an unreadable pair being rejected instead of forced into an answer. |
 | [Genetic timeline image](docs/assets/cetp-timeline.png) | A saved example of how dated genetic, preclinical and clinical evidence can be kept separate. |
 | [5-minute presentation deck](presentation/MetaboCausal_5min_presentation.pptx) | The live-room presentation deck used to explain the project. |
 | [Project blog](https://shuchengcaoxin.github.io/blog/metabocausal/) | Public narrative, roadmap and team context. |
@@ -62,9 +62,9 @@ The successful Slack demo starts from **HDL cholesterol vs coronary artery disea
 
 ### Slack challenge prompt
 
-This challenge screenshot is a public-safe static demo showing the intended guardrail behavior. Replace it with a sanitized live capture when available.
+This challenge screenshot shows a malformed request that the bot refused to force into an evidence answer.
 
-![Sanitized Slack demo showing an unsupported claim rejected](docs/assets/slack-challenge-demo.png)
+![Slack demo showing an unreadable pair rejected](docs/assets/slack-challenge-live-unreadable-pair.png)
 
 ### Evidence card
 
