@@ -127,3 +127,11 @@ The demo pages in this repository are static and make no live API or model reque
 ## Status
 
 Research prototype and hackathon demo. Not for clinical use. Not a drug-development recommendation engine.
+
+## Rights and reuse
+
+Copyright © 2026 Shucheng Cao and MetaboCausal contributors.
+
+This repository is shared for hackathon review, demonstration and project communication. No open-source license is granted at this stage. Please contact the team before reusing code, data, screenshots or project materials beyond normal review and citation.
+
+
