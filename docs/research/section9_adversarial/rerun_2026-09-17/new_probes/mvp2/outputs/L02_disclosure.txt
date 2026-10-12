@@ -1,0 +1,22 @@
+L02 - MVP2-absence disclosure across the frozen demo pairs
+
+renderer entry point: render.render_card(run, interpretation=None)
+needle: 'literature MR arm (MVP2)'
+
+pair                               state  discloses    card file
+----------------------------------------------------------------
+glycine|coronary artery disease    B      NO           glycine_coronary_artery_disease.md
+trimethylamine N-oxide|coronary artery disease C      yes          trimethylamine_N-oxide_coronary_artery_disease.md
+urate|gout                         A      NO           urate_gout.md
+
+by state:
+  state A: 0/1 cards disclose the MVP2 gap
+  state B: 0/1 cards disclose the MVP2 gap
+  state C: 1/1 cards disclose the MVP2 gap
+
+source of the disclosure string in render.py:
+  render.py:2016 "The literature MR arm (MVP2) is not integrated in this build, and Human-GEM "
+  render.py:2022 "The literature MR arm (MVP2) is not integrated in this build. Human-GEM "
+  enclosing function, by definition order:
+    line 2016 is inside def _next_action_c(result) -> list: (def at line 2000)
+    line 2022 is inside def _next_action_c(result) -> list: (def at line 2000)

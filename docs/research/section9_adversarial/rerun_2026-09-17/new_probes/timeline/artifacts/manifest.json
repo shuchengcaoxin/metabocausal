@@ -1,0 +1,43 @@
+{
+  "revision": "b056397",
+  "probe": "docs/research/section9_adversarial/rerun_2026-09-17/new_probes/timeline/probe_timeline.py",
+  "probe_sha256": "9ba1dea4dc8a6e4cdf8bed664b1aeaaf067a2a80ecefea9086d6b89b43458786",
+  "python": "3.12.10",
+  "matplotlib": "3.11.0",
+  "network": "sealed",
+  "gi_cases": 21,
+  "lc_cases": 10,
+  "sources": {
+    "plots.py": "d7599665bee7e6073c6c0b1f16d030aa4ae2a66d30df5c71cb25c5afa7dfb02c",
+    "tools/trials.py": "8b06b336f965b5d42898bfe9b1712d3f3f3a0257067e111dc763d3cea16fd6ac",
+    "slack_app.py": "2b26299d0e28491c3084df5f2cc4fb71675fbbcc1a91ff8e9bb98d3378cc3a72",
+    "render.py": "68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f",
+    "demo/genetic-insights/render_bundle.py": "8b88d56a725f772586683d2c98b24bc0ebb0cae6245812b932db0a9e19234051",
+    "demo/genetic-insights/viewer.template.html": "b61f2820e3f37c2849abe457b38f9763e5a3508f92941271c96c747761bfcb30",
+    "demo/genetic-insights/prepare_cetp_examples.py": "e2f94e884a96f62826e1fbb3a6ddff7e3736ec1507b881d38907f5ee22ccc1a8",
+    "demo/genetic-insights/snapshots/mvp1-cetp-torcetrapib-2026-09-12-v2.json": "dcde8e4cee170d52b9a08e36af59e659a7d55bb62f9b365e27fa8ff47b362727",
+    "demo/genetic-insights/snapshots/mvp1-cetp-evacetrapib-2026-09-12-v2.json": "613af0ef7dc444e7268957a185d5d28219e56ae4ee8ae4782fd566bf6ba284d8"
+  },
+  "figures": {
+    "GI01_genetic_insight.png": "e4dfb5b39708d5868ca39ab4ed6ea8920f6ab5e8fe6c55536c9c4a7f4c663e26",
+    "GI02_genetic_insight.png": "7735931b1e0ba927d8b0b37c2d7a0ce912d2238568d68ed52abf4b1dc26ea540",
+    "GI03_genetic_insight.png": "b80c004ac75696f13b10f063658c5aec40bffeae6c662c6aa5b7834f2048456d",
+    "GI04_genetic_insight.png": "6737c3220070ab76ffd9baca113931b8bf9744ba0b3c2d2ba7486767569c8e9a",
+    "GI05_genetic_insight.png": "3ad1ed7f1229769732771051e3fb140b031e13c14e15606594989431d8b45c35",
+    "GI06_genetic_insight.png": "1b62181993493d90b13ddee720a5dcffe02d8bb7daba98de3c6c36852f14dc50",
+    "GI07_genetic_insight.png": "bd010b2e0605234f72302722b7b0793b95d0b0cd1b7d7c2b338a46c81b045110",
+    "GI08_genetic_insight.png": "093c5841b1cb4fb2820eb3e9db1e9622ecc261634445e61501cf749044dfa7f8",
+    "GI09_genetic_insight.png": "ec76fa8c510ac433bf3f89984b4b52a1d0b342b1b4d86c2e336f32f066175f29",
+    "GI10_genetic_insight.png": "3bafc2f85dfca6a9a4ff82cd9181bc617651ab26024ec2ecd347aad91098a944",
+    "GI11_genetic_insight.png": "c6233aac4040a599a6b16c87d3da6a501fa8fc7557f01d16f0dcc8836cab585f",
+    "GI12_genetic_insight.png": "25502730f122d20ad7faeaa5202a32b16caad335089da5f6b8665af263314df0",
+    "GI13_genetic_insight.png": "0a55d1c4c3a4286464e0553db8e517cb01e94975b84d2c67af64a228db4f5f0e",
+    "GI14_genetic_insight.png": "8b299e8d1ca2627539350179437c7658425d7cd2c730ba8d9f426585dc101604",
+    "GI15_genetic_insight.png": "105f15a6f2892ea149f033071c8fc697070699b8b13c018f530eac06babd76a1",
+    "GI16_genetic_insight.png": "1e7551eca718cb9606003f0ee6cdc899e90eb74c6a82b621329e88cfb2583ed4",
+    "GI17_genetic_insight.png": "0bdcb5cba0ada1d9f2e9e7ad4340f759e5875e26aa4477538f637db2fd914105",
+    "GI18_genetic_insight.png": "a41d5f4e49c3106b962c6307ab7fc79897e20df454e0b65720f30f2618e23de4",
+    "GI19_genetic_insight.png": "7a8fa8e6574784f57c85078ffd77d1cc16c7c826a6a4d45ad3968c3b1dc243f0",
+    "GI20_genetic_insight.png": "1b9ff11ccf9e6331e613a14071981633810f55b0914edcffed9abe1f7ff663d7"
+  }
+}

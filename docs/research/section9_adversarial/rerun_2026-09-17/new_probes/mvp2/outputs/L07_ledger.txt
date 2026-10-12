@@ -1,0 +1,64 @@
+L07 - search-run traceability and identifier hygiene
+
+[1] coverage of the screening ledger by actual searches
+
+  kept unique pairs in new_unique_pairs.csv : 9801
+  search_runs directories                   : 2
+    20260912_europepmc_agentic_glycine_cad         manifest=True pairs/=False records=0
+    pair_batch_smoke_glycine_cad_20260912          manifest=True pairs/=True records=1
+  pair search records on disk               : 1
+  coverage                                  : 1 / 9801 = 0.01020%
+  kept pairs with NO search record          : 9800
+
+[2] forward traceability of each search record to a kept pair
+    pair_id recomputed with search_pairs_europepmc._pair_id
+
+  MVP2/literature/search_runs/pair_batch_smoke_glycine_cad_20260912/pairs/1b988024b80f599f.json
+    pair_id in file      : 1b988024b80f599f
+    pair_id recomputed   : 1b988024b80f599f
+    agree                : True
+    row(s) in new_unique_pairs.csv : [2514]
+    validate_pair()      : True / eligible
+
+[3] the run manifest's offset/limit claim, checked against the input file
+  20260912_europepmc_agentic_glycine_cad: no offset/limit config
+  pair_batch_smoke_glycine_cad_20260912
+    config offset=2513 limit=1
+    row 2514 of new_unique_pairs.csv: 'Glycine' x 'Coronary Artery Disease'  (pair_id 1b988024b80f599f)
+    manifest input.rows=9801 vs counted 9801 -> OK
+
+[4] identifier hygiene on every paper returned by the search
+
+    abstract_empty           3
+    doi_malformed            0
+    doi_present              50
+    no_identifier_at_all     0
+    papers                   51
+    pmcid_malformed          0
+    pmcid_present            48
+    pmid_malformed           0
+    pmid_present             48
+    title_empty              0
+    year_empty               1
+    duplicate pmids          0
+
+    identifiers recorded in each seed's source_record.json:
+      chen_2023            pmid=['36635386'] pmcid=['PMC7614162'] doi=['10.1038/s41588-022-01270-1'] malformed=none
+      shin_2014            pmid=['24816252'] pmcid=['PMC4064254'] doi=['10.1038/ng.2982'] malformed=none
+      ukb_mapping_2025     pmid=['40973818'] pmcid=['PMC12638258'] doi=['10.1038/s42255-025-01371-1'] malformed=none
+      yin_2025             pmid=['40155430'] pmcid=['PMC11953310'] doi=['10.1038/s41467-025-58129-2'] malformed=none
+      zoodsma_2025         pmid=['41044249'] pmcid=['PMC12513840'] doi=['10.1038/s41588-025-02355-3'] malformed=none
+
+[5] internal consistency of each pair record
+  MVP2/literature/search_runs/pair_batch_smoke_glycine_cad_20260912/pairs/1b988024b80f599f.json
+    papers_retained              51
+    distinct_retained_ids        51
+    ids_returned_by_queries      51
+    index_paper_count            51
+    index_round_count            3
+    rounds_in_record             3
+    status                       success
+    stop_reason                  configured maximum round limit reached
+    returned_but_not_retained   []
+    retained_but_never_returned []
+    remaining_gaps              ['pair-specific source table and direction still require screening', 'source full text and supplement acquisition still requires screening']

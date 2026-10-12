@@ -1,0 +1,6209 @@
+{
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT05202509",
+  "retrieved_at": "2026-09-12T18:13:15.644208+00:00",
+  "data": {
+    "protocolSection": {
+      "identificationModule": {
+        "nctId": "NCT05202509",
+        "orgStudyIdInfo": {
+          "id": "TA-8995-304"
+        },
+        "organization": {
+          "fullName": "NewAmsterdam Pharma",
+          "class": "INDUSTRY"
+        },
+        "briefTitle": "Cardiovascular Outcome Study to Evaluate the Effect of Obicetrapib in Patients With Cardiovascular Disease",
+        "officialTitle": "Placebo Controlled, Double Blind, Randomized Cardiovascular Outcome Study to Evaluate the Effect of 10 mg Obicetrapib in Participants With ASCVD Not Adequately Controlled Despite Maximally Tolerated Lipid Modifying Therapies",
+        "acronym": "PREVAIL"
+      },
+      "statusModule": {
+        "statusVerifiedDate": "2024-06",
+        "overallStatus": "ACTIVE_NOT_RECRUITING",
+        "expandedAccessInfo": {
+          "hasExpandedAccess": false
+        },
+        "startDateStruct": {
+          "date": "2022-02-07",
+          "type": "ACTUAL"
+        },
+        "primaryCompletionDateStruct": {
+          "date": "2026-11",
+          "type": "ESTIMATED"
+        },
+        "completionDateStruct": {
+          "date": "2026-11",
+          "type": "ESTIMATED"
+        },
+        "studyFirstSubmitDate": "2021-11-22",
+        "studyFirstSubmitQcDate": "2022-01-20",
+        "studyFirstPostDateStruct": {
+          "date": "2022-01-21",
+          "type": "ACTUAL"
+        },
+        "lastUpdateSubmitDate": "2024-06-03",
+        "lastUpdatePostDateStruct": {
+          "date": "2024-06-04",
+          "type": "ACTUAL"
+        }
+      },
+      "sponsorCollaboratorsModule": {
+        "responsibleParty": {
+          "type": "SPONSOR"
+        },
+        "leadSponsor": {
+          "name": "NewAmsterdam Pharma",
+          "class": "INDUSTRY"
+        },
+        "collaborators": [
+          {
+            "name": "Monash University",
+            "class": "OTHER"
+          }
+        ]
+      },
+      "oversightModule": {
+        "oversightHasDmc": true,
+        "isFdaRegulatedDrug": true,
+        "isFdaRegulatedDevice": false
+      },
+      "descriptionModule": {
+        "briefSummary": "This study will be a placebo-controlled, double-blind, randomized, phase 3 study in participants with Atherosclerotic Cardiovascular Disease (ASCVD) who are not adequately controlled despite maximally tolerated lipid-lowering therapy.",
+        "detailedDescription": "This study will be a placebo-controlled, double-blind, randomized, phase 3 study to evaluate the effect of 10mg Obicetrapib in participants with Atherosclerotic Cardiovascular Disease (ASCVD) who are not adequately controlled despite maximally tolerated lipid-lowering therapy to reduce the risk of cardiovascular death, myocardial infarction, stroke and non-elective coronary revascularization. The PREVAIL Study"
+      },
+      "conditionsModule": {
+        "conditions": [
+          "Atherosclerotic Cardiovascular Disease"
+        ]
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": [
+          "PHASE3"
+        ],
+        "designInfo": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "PARALLEL",
+          "interventionModelDescription": "Placebo-Controlled, Double-Blind, Randomized",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "QUADRUPLE",
+            "maskingDescription": "Matching placebo to active",
+            "whoMasked": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ]
+          }
+        },
+        "enrollmentInfo": {
+          "count": 9541,
+          "type": "ACTUAL"
+        }
+      },
+      "armsInterventionsModule": {
+        "armGroups": [
+          {
+            "label": "obicetrapib 10mg",
+            "type": "EXPERIMENTAL",
+            "description": "one 10mg tablet, once daily.",
+            "interventionNames": [
+              "Drug: Obicetrapib"
+            ]
+          },
+          {
+            "label": "Placebo",
+            "type": "PLACEBO_COMPARATOR",
+            "description": "one placebo tablet, once daily",
+            "interventionNames": [
+              "Drug: Placebo"
+            ]
+          }
+        ],
+        "interventions": [
+          {
+            "type": "DRUG",
+            "name": "Obicetrapib",
+            "description": "10mg obicetrapib tablet",
+            "armGroupLabels": [
+              "obicetrapib 10mg"
+            ]
+          },
+          {
+            "type": "DRUG",
+            "name": "Placebo",
+            "description": "Placebo tablet to resemble obicetrapib",
+            "armGroupLabels": [
+              "Placebo"
+            ]
+          }
+        ]
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {
+            "measure": "Major Adverse Cardiovascular Effect (MACE)",
+            "description": "To evaluate the effect of obicetrapib on the risk of MACE",
+            "timeFrame": "30 months after last participant randomized"
+          }
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion Criteria:\n\n* Males \\& females ≥ 18 years age.\n* Established ASCVD including:\n* Coronary artery disease\n* Cerebrovascular disease\n* Peripheral Artery disease\n* On maximally tolerated lipid-modifying therapy\n* Fasting LDL-C ≥ 55 mg/dL\n* Fasting triglycerides \\< 400 mg/dL\n* Estimated glomerular filtration rate ≥ 30 mL/min\n\nExclusion Criteria:\n\n* New York Heart Association class III or IV heart failure or left ventricular ejection fraction \\< 30%\n* Have been hospitalized for Heart Failure within 5 years prior to screening\n* Had non-fatal MI, non-fatal stroke, non-elective coronary revascularization and/or hospitalization for unstable angina or chest pain within past 3 months prior to screening\n* Uncontrolled hypertension\n* Diagnosis of homozygous familial hypercholesterolemia (HoFH)\n* Active liver disease\n* HbA1c ≥10%\n* Thyroid Stimulating Hormone (TSH) \\> 1.5 times upper limit normal\n* Creatine kinase \\> 3 times upper limit normal\n* History of malignancy with surgery in past 3 years\n* History of alcohol or drug abuse within past 5 years\n* Received treatment with investigational product or device within past 30 days excluding Coronavirus treatment or vaccine\n* Known allergy to study drug\n* Participated in previous obicetrapib trial\n* Taking gemfibrozil within 30 days screening",
+        "healthyVolunteers": false,
+        "sex": "ALL",
+        "minimumAge": "18 Years",
+        "stdAges": [
+          "ADULT",
+          "OLDER_ADULT"
+        ]
+      },
+      "contactsLocationsModule": {
+        "overallOfficials": [
+          {
+            "name": "Marc Ditmarsch, MD",
+            "affiliation": "NewAmsterdam Pharma",
+            "role": "STUDY_DIRECTOR"
+          }
+        ],
+        "locations": [
+          {
+            "facility": "Advanced Cardiovascular LLC",
+            "city": "Alexander City",
+            "state": "Alabama",
+            "zip": "35010",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.94401,
+              "lon": -85.95385
+            }
+          },
+          {
+            "facility": "Ascension - Cardiology Specialists of Birmingham",
+            "city": "Birmingham",
+            "state": "Alabama",
+            "zip": "35205",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.52066,
+              "lon": -86.80249
+            }
+          },
+          {
+            "facility": "Central Alabama Research",
+            "city": "Birmingham",
+            "state": "Alabama",
+            "zip": "35209",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.52066,
+              "lon": -86.80249
+            }
+          },
+          {
+            "facility": "Cardiovascular Associates of the Southeast, LLC",
+            "city": "Birmingham",
+            "state": "Alabama",
+            "zip": "35243",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.52066,
+              "lon": -86.80249
+            }
+          },
+          {
+            "facility": "Eastern Shore Research Institute, LLC",
+            "city": "Fairhope",
+            "state": "Alabama",
+            "zip": "36532",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.52297,
+              "lon": -87.90333
+            }
+          },
+          {
+            "facility": "The Heart Center Research",
+            "city": "Huntsville",
+            "state": "Alabama",
+            "zip": "35801",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.7304,
+              "lon": -86.58594
+            }
+          },
+          {
+            "facility": "Mobile Heart Specialists",
+            "city": "Mobile",
+            "state": "Alabama",
+            "zip": "36608",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.69436,
+              "lon": -88.04305
+            }
+          },
+          {
+            "facility": "Syed Research Consultants",
+            "city": "Muscle Shoals",
+            "state": "Alabama",
+            "zip": "35661",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.74481,
+              "lon": -87.66753
+            }
+          },
+          {
+            "facility": "Syed Research Consultants",
+            "city": "Sheffield",
+            "state": "Alabama",
+            "zip": "35660",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.76509,
+              "lon": -87.69864
+            }
+          },
+          {
+            "facility": "Elite Clinical Studies",
+            "city": "Phoenix",
+            "state": "Arizona",
+            "zip": "85018",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.44838,
+              "lon": -112.07404
+            }
+          },
+          {
+            "facility": "Clinical Research Institute of Arizona, LLC",
+            "city": "Sun City West",
+            "state": "Arizona",
+            "zip": "85375",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.66198,
+              "lon": -112.34127
+            }
+          },
+          {
+            "facility": "Eclipse Clinical Research",
+            "city": "Tucson",
+            "state": "Arizona",
+            "zip": "85745",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.22174,
+              "lon": -110.92648
+            }
+          },
+          {
+            "facility": "NEA Baptist clinic",
+            "city": "Jonesboro",
+            "state": "Arkansas",
+            "zip": "72405",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.8423,
+              "lon": -90.70428
+            }
+          },
+          {
+            "facility": "Cardiology and Medicine Clinic",
+            "city": "Little Rock",
+            "state": "Arkansas",
+            "zip": "72204",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.74648,
+              "lon": -92.28959
+            }
+          },
+          {
+            "facility": "Advanced Research Center",
+            "city": "Anaheim",
+            "state": "California",
+            "zip": "92805",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.83529,
+              "lon": -117.9145
+            }
+          },
+          {
+            "facility": "Westside Medical Associates of Los Angeles",
+            "city": "Beverly Hills",
+            "state": "California",
+            "zip": "90211",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.07362,
+              "lon": -118.40036
+            }
+          },
+          {
+            "facility": "Hope Clinical Research LLC",
+            "city": "Canoga Park",
+            "state": "California",
+            "zip": "91303",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.20112,
+              "lon": -118.59814
+            }
+          },
+          {
+            "facility": "Titan Medical Research - Oceanside",
+            "city": "Encinitas",
+            "state": "California",
+            "zip": "92024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.03699,
+              "lon": -117.29198
+            }
+          },
+          {
+            "facility": "Clinical Trials Research",
+            "city": "Lincoln",
+            "state": "California",
+            "zip": "95648",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.89156,
+              "lon": -121.29301
+            }
+          },
+          {
+            "facility": "Torrance Clinical Research Institute Inc.",
+            "city": "Lomita",
+            "state": "California",
+            "zip": "90717",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.79224,
+              "lon": -118.31507
+            }
+          },
+          {
+            "facility": "American Institute of Research",
+            "city": "Los Angeles",
+            "state": "California",
+            "zip": "90211",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.05223,
+              "lon": -118.24368
+            }
+          },
+          {
+            "facility": "Amicis Research Center-Northridge",
+            "city": "Northridge",
+            "state": "California",
+            "zip": "91324",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.22834,
+              "lon": -118.53675
+            }
+          },
+          {
+            "facility": "Amicis Research",
+            "city": "Northridge",
+            "state": "California",
+            "zip": "91324",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.22834,
+              "lon": -118.53675
+            }
+          },
+          {
+            "facility": "Valley Clinical Trials, Inc",
+            "city": "Northridge",
+            "state": "California",
+            "zip": "91325",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.22834,
+              "lon": -118.53675
+            }
+          },
+          {
+            "facility": "Lundquist Institute for Biomedical Innovation at Harbor UCLA Medical Center",
+            "city": "Torrance",
+            "state": "California",
+            "zip": "90502",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.83585,
+              "lon": -118.34063
+            }
+          },
+          {
+            "facility": "Cardiology Associates of Fairfield County",
+            "city": "Norwalk",
+            "state": "Connecticut",
+            "zip": "06905",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.1176,
+              "lon": -73.4079
+            }
+          },
+          {
+            "facility": "Excel Medical Clinical Trials",
+            "city": "Boca Raton",
+            "state": "Florida",
+            "zip": "33434",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.35869,
+              "lon": -80.0831
+            }
+          },
+          {
+            "facility": "Clearwater Cardiovascular and Interventional Consultants",
+            "city": "Clearwater",
+            "state": "Florida",
+            "zip": "33756",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.96585,
+              "lon": -82.8001
+            }
+          },
+          {
+            "facility": "Innovative Research of West Florida",
+            "city": "Clearwater",
+            "state": "Florida",
+            "zip": "33756",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.96585,
+              "lon": -82.8001
+            }
+          },
+          {
+            "facility": "Avail Clinical Research",
+            "city": "DeLand",
+            "state": "Florida",
+            "zip": "32720",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.02832,
+              "lon": -81.30312
+            }
+          },
+          {
+            "facility": "Invesclinic",
+            "city": "Fort Lauderdale",
+            "state": "Florida",
+            "zip": "33308",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.12231,
+              "lon": -80.14338
+            }
+          },
+          {
+            "facility": "Qway Research",
+            "city": "Hialeah",
+            "state": "Florida",
+            "zip": "33010",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.8576,
+              "lon": -80.27811
+            }
+          },
+          {
+            "facility": "New Generation of Medical Research",
+            "city": "Hialeah",
+            "state": "Florida",
+            "zip": "33016",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.8576,
+              "lon": -80.27811
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "zip": "32086",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.33218,
+              "lon": -81.65565
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research - Jacksonville Monroe St",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "zip": "32204",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.33218,
+              "lon": -81.65565
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research - Jacksonville University Blvd",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "zip": "32216",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.33218,
+              "lon": -81.65565
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research - Perimeter Park Court",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "zip": "32216",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.33218,
+              "lon": -81.65565
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research- Lake City",
+            "city": "Lake City",
+            "state": "Florida",
+            "zip": "32055",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.18968,
+              "lon": -82.63929
+            }
+          },
+          {
+            "facility": "Columbus Clinical Services",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33125",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "Finlay Medical Research Corp",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33126",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "A+ Research Inc",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33144",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "Ezy Medical Research",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33175",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "ProLive Medical Research",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33175",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "Med Research of Florida, LLC",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33186",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.77427,
+              "lon": -80.19366
+            }
+          },
+          {
+            "facility": "New Generation of Medical Research - Naples",
+            "city": "Naples",
+            "state": "Florida",
+            "zip": "34104",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.14234,
+              "lon": -81.79596
+            }
+          },
+          {
+            "facility": "Advanced Research Institute Inc",
+            "city": "New Port Richey",
+            "state": "Florida",
+            "zip": "34653",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.24418,
+              "lon": -82.71927
+            }
+          },
+          {
+            "facility": "Ocala Research Institute",
+            "city": "Ocala",
+            "state": "Florida",
+            "zip": "34471",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.1872,
+              "lon": -82.14009
+            }
+          },
+          {
+            "facility": "Ormond Beach Clinical Research LLC",
+            "city": "Ormond Beach",
+            "state": "Florida",
+            "zip": "32174",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.28581,
+              "lon": -81.05589
+            }
+          },
+          {
+            "facility": "Headlands Research",
+            "city": "Sarasota",
+            "state": "Florida",
+            "zip": "34243",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.33643,
+              "lon": -82.53065
+            }
+          },
+          {
+            "facility": "BayCare Health System",
+            "city": "Tampa",
+            "state": "Florida",
+            "zip": "33614",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.94752,
+              "lon": -82.45843
+            }
+          },
+          {
+            "facility": "JSV Clinical Research Study, Inc",
+            "city": "Tampa",
+            "state": "Florida",
+            "zip": "33634",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.94752,
+              "lon": -82.45843
+            }
+          },
+          {
+            "facility": "Cardiology Partners Clinical Research Institute",
+            "city": "Wellington",
+            "state": "Florida",
+            "zip": "33449",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.65868,
+              "lon": -80.24144
+            }
+          },
+          {
+            "facility": "Clinical Research of Central Florida",
+            "city": "Winter Haven",
+            "state": "Florida",
+            "zip": "33880",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.02224,
+              "lon": -81.73286
+            }
+          },
+          {
+            "facility": "Atlanta Diabetes Associates",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "zip": "30318",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.749,
+              "lon": -84.38798
+            }
+          },
+          {
+            "facility": "East Coast Institute for Research - Canton",
+            "city": "Canton",
+            "state": "Georgia",
+            "zip": "30114",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.23676,
+              "lon": -84.49076
+            }
+          },
+          {
+            "facility": "Atlanta Heart Specialists",
+            "city": "Cumming",
+            "state": "Georgia",
+            "zip": "30084",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.20732,
+              "lon": -84.14019
+            }
+          },
+          {
+            "facility": "Alta Pharmaceutical Research Center",
+            "city": "Dunwoody",
+            "state": "Georgia",
+            "zip": "30338",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.94621,
+              "lon": -84.33465
+            }
+          },
+          {
+            "facility": "Cardiology Care Clinic of Lake Oconee",
+            "city": "Eatonton",
+            "state": "Georgia",
+            "zip": "31024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.3268,
+              "lon": -83.3885
+            }
+          },
+          {
+            "facility": "NSC Research",
+            "city": "Johns Creek",
+            "state": "Georgia",
+            "zip": "30024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.02893,
+              "lon": -84.19858
+            }
+          },
+          {
+            "facility": "Endocrine Research Solutions, Inc",
+            "city": "Roswell",
+            "state": "Georgia",
+            "zip": "30076",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.02316,
+              "lon": -84.36159
+            }
+          },
+          {
+            "facility": "Javara Inc - SouthCoast Health",
+            "city": "Savannah",
+            "state": "Georgia",
+            "zip": "31406",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.08354,
+              "lon": -81.09983
+            }
+          },
+          {
+            "facility": "Herman Clinical Research",
+            "city": "Suwanee",
+            "state": "Georgia",
+            "zip": "30024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.05149,
+              "lon": -84.0713
+            }
+          },
+          {
+            "facility": "Biofortis, Inc",
+            "city": "Addison",
+            "state": "Illinois",
+            "zip": "60101",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.9317,
+              "lon": -87.98896
+            }
+          },
+          {
+            "facility": "Northwest Heart Clinical research",
+            "city": "Arlington Heights",
+            "state": "Illinois",
+            "zip": "60005",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.08836,
+              "lon": -87.98063
+            }
+          },
+          {
+            "facility": "IMA Clinical Research, PC",
+            "city": "Chicago",
+            "state": "Illinois",
+            "zip": "60602",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.85003,
+              "lon": -87.65005
+            }
+          },
+          {
+            "facility": "Clinical Investigation Specialists",
+            "city": "Gurnee",
+            "state": "Illinois",
+            "zip": "60031",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.3703,
+              "lon": -87.90202
+            }
+          },
+          {
+            "facility": "Apex Medical Research",
+            "city": "Hazel Crest",
+            "state": "Illinois",
+            "zip": "60429",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.5717,
+              "lon": -87.69449
+            }
+          },
+          {
+            "facility": "Advocate Health and Hospitals Corporation",
+            "city": "Oakbrook Terrace",
+            "state": "Illinois",
+            "zip": "60657",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.85003,
+              "lon": -87.96451
+            }
+          },
+          {
+            "facility": "Community Health Network-Anderson",
+            "city": "Anderson",
+            "state": "Indiana",
+            "zip": "46011",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.10532,
+              "lon": -85.68025
+            }
+          },
+          {
+            "facility": "Midwest Cardiovascular Research and Education Foundation",
+            "city": "Elkhart",
+            "state": "Indiana",
+            "zip": "46514",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.68199,
+              "lon": -85.97667
+            }
+          },
+          {
+            "facility": "Community Health Network",
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "zip": "46227",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.76838,
+              "lon": -86.15804
+            }
+          },
+          {
+            "facility": "ASHA Clinical Research - Munster, LLC",
+            "city": "Munster",
+            "state": "Indiana",
+            "zip": "46321",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.56448,
+              "lon": -87.51254
+            }
+          },
+          {
+            "facility": "Cardiovascular Research of Northwest Indiana, LLC",
+            "city": "Munster",
+            "state": "Indiana",
+            "zip": "46321",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.56448,
+              "lon": -87.51254
+            }
+          },
+          {
+            "facility": "West Broadway Clinic",
+            "city": "Council Bluffs",
+            "state": "Iowa",
+            "zip": "51501",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.26194,
+              "lon": -95.86083
+            }
+          },
+          {
+            "facility": "The Iowa Clinic - Cardiovascular Services",
+            "city": "Des Moines",
+            "state": "Iowa",
+            "zip": "50266",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.60054,
+              "lon": -93.60911
+            }
+          },
+          {
+            "facility": "Hutchinson Clinic",
+            "city": "Hutchinson",
+            "state": "Kansas",
+            "zip": "67502",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.06084,
+              "lon": -97.92977
+            }
+          },
+          {
+            "facility": "Kansas Nephrology Research Institute",
+            "city": "Wichita",
+            "state": "Kansas",
+            "zip": "67214",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.69224,
+              "lon": -97.33754
+            }
+          },
+          {
+            "facility": "West Houston Area Clinical Trial Consultants",
+            "city": "Wichita",
+            "state": "Kansas",
+            "zip": "67226",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.69224,
+              "lon": -97.33754
+            }
+          },
+          {
+            "facility": "The Research Group of Lexington, LLC",
+            "city": "Lexington",
+            "state": "Kentucky",
+            "zip": "40503",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.98869,
+              "lon": -84.47772
+            }
+          },
+          {
+            "facility": "Louisville Metabolic and Atherosclerosis Research Center (L-MARC)",
+            "city": "Louisville",
+            "state": "Kentucky",
+            "zip": "40213",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.25424,
+              "lon": -85.75941
+            }
+          },
+          {
+            "facility": "Research Integrity",
+            "city": "Owensboro",
+            "state": "Kentucky",
+            "zip": "42303",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.77422,
+              "lon": -87.11333
+            }
+          },
+          {
+            "facility": "Cambridge Medical Trials",
+            "city": "Alexandria",
+            "state": "Louisiana",
+            "zip": "71301",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 31.31129,
+              "lon": -92.44514
+            }
+          },
+          {
+            "facility": "Cardiovascular Associates Research, LLC - Covington, LA",
+            "city": "Covington",
+            "state": "Louisiana",
+            "zip": "70433",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.47549,
+              "lon": -90.10042
+            }
+          },
+          {
+            "facility": "Louisiana Heart Center",
+            "city": "Slidell",
+            "state": "Louisiana",
+            "zip": "70458",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.27519,
+              "lon": -89.78117
+            }
+          },
+          {
+            "facility": "Clinical Trials of America",
+            "city": "West Monroe",
+            "state": "Louisiana",
+            "zip": "71291",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.51848,
+              "lon": -92.14764
+            }
+          },
+          {
+            "facility": "Southern Clinical Research, LLC",
+            "city": "Zachary",
+            "state": "Louisiana",
+            "zip": "70791",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.64852,
+              "lon": -91.1565
+            }
+          },
+          {
+            "facility": "Northeast Cardiology Associates",
+            "city": "Bangor",
+            "state": "Maine",
+            "zip": "04401",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.79884,
+              "lon": -68.77265
+            }
+          },
+          {
+            "facility": "Javara Inc - Healthy Steps",
+            "city": "Chevy Chase",
+            "state": "Maryland",
+            "zip": "20815",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.00287,
+              "lon": -77.07115
+            }
+          },
+          {
+            "facility": "Medstar Health Research Institute",
+            "city": "Hyattsville",
+            "state": "Maryland",
+            "zip": "20782",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.95594,
+              "lon": -76.94553
+            }
+          },
+          {
+            "facility": "Optimal Research, LLC",
+            "city": "Rockville",
+            "state": "Maryland",
+            "zip": "32763",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.084,
+              "lon": -77.15276
+            }
+          },
+          {
+            "facility": "Mass General Brigham Pentucket Medical Associates - Haverhill",
+            "city": "Haverhill",
+            "state": "Massachusetts",
+            "zip": "01830",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.7762,
+              "lon": -71.07728
+            }
+          },
+          {
+            "facility": "ActivMed Practices and Research - Methuen",
+            "city": "Methuen",
+            "state": "Massachusetts",
+            "zip": "01844",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.7262,
+              "lon": -71.19089
+            }
+          },
+          {
+            "facility": "BTC of New Bedford",
+            "city": "New Bedford",
+            "state": "Massachusetts",
+            "zip": "02740",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.63526,
+              "lon": -70.92701
+            }
+          },
+          {
+            "facility": "Aa Mrc, Llc",
+            "city": "Flint",
+            "state": "Michigan",
+            "zip": "48504",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.01253,
+              "lon": -83.68746
+            }
+          },
+          {
+            "facility": "Healthy Heart Cardiology",
+            "city": "Grand Rapids",
+            "state": "Michigan",
+            "zip": "49564",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.96336,
+              "lon": -85.66809
+            }
+          },
+          {
+            "facility": "McLaren Macomb Regional Medical Center",
+            "city": "Mount Clemens",
+            "state": "Michigan",
+            "zip": "48043",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.59726,
+              "lon": -82.87798
+            }
+          },
+          {
+            "facility": "Advanced Cardiology Associates",
+            "city": "Rochester Hills",
+            "state": "Michigan",
+            "zip": "49546",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.65837,
+              "lon": -83.14993
+            }
+          },
+          {
+            "facility": "Revival Research Institute",
+            "city": "Southgate",
+            "state": "Michigan",
+            "zip": "48195",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.21393,
+              "lon": -83.19381
+            }
+          },
+          {
+            "facility": "Oakland Medical Research Center",
+            "city": "Troy",
+            "state": "Michigan",
+            "zip": "48085",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.60559,
+              "lon": -83.14993
+            }
+          },
+          {
+            "facility": "Arcturus Healthcare",
+            "city": "Troy",
+            "state": "Michigan",
+            "zip": "48098",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.60559,
+              "lon": -83.14993
+            }
+          },
+          {
+            "facility": "Michigan Heart",
+            "city": "Ypsilanti",
+            "state": "Michigan",
+            "zip": "48197",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.24115,
+              "lon": -83.61299
+            }
+          },
+          {
+            "facility": "Heart and Vascular Center at Methodist Hospital",
+            "city": "Saint Louis Park",
+            "state": "Minnesota",
+            "zip": "55416",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.9483,
+              "lon": -93.34801
+            }
+          },
+          {
+            "facility": "IMA Clinical Research - St. Louis, MO",
+            "city": "St Louis",
+            "state": "Missouri",
+            "zip": "63117",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.62727,
+              "lon": -90.19789
+            }
+          },
+          {
+            "facility": "St. Louis Heart and Vascular Cardiology",
+            "city": "St Louis",
+            "state": "Missouri",
+            "zip": "63136",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.62727,
+              "lon": -90.19789
+            }
+          },
+          {
+            "facility": "Montana Medical Research, Inc.",
+            "city": "Missoula",
+            "state": "Montana",
+            "zip": "59808",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 46.87215,
+              "lon": -113.994
+            }
+          },
+          {
+            "facility": "Meridian Clinical Research- Lincoln, NE",
+            "city": "Lincoln",
+            "state": "Nebraska",
+            "zip": "68510",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.8,
+              "lon": -96.66696
+            }
+          },
+          {
+            "facility": "Sierra Clinical Research",
+            "city": "Las Vegas",
+            "state": "Nevada",
+            "zip": "89106",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.17497,
+              "lon": -115.13722
+            }
+          },
+          {
+            "facility": "AB Clinical Trials",
+            "city": "Las Vegas",
+            "state": "Nevada",
+            "zip": "89119",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.17497,
+              "lon": -115.13722
+            }
+          },
+          {
+            "facility": "Advanced Biomedical Research of America",
+            "city": "Las Vegas",
+            "state": "Nevada",
+            "zip": "89123",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.17497,
+              "lon": -115.13722
+            }
+          },
+          {
+            "facility": "Advanced Heart Care, LLC",
+            "city": "Bridgewater",
+            "state": "New Jersey",
+            "zip": "08807",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.60079,
+              "lon": -74.64815
+            }
+          },
+          {
+            "facility": "Inspira Medical Centers",
+            "city": "Mullica Hill",
+            "state": "New Jersey",
+            "zip": "08302",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.73928,
+              "lon": -75.22407
+            }
+          },
+          {
+            "facility": "Cardio Metabolic Institute",
+            "city": "Somerset",
+            "state": "New Jersey",
+            "zip": "08873",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.4976,
+              "lon": -74.48849
+            }
+          },
+          {
+            "facility": "New Mexico Clinical Research & Osteoporosis Center Inc.",
+            "city": "Albuquerque",
+            "state": "New Mexico",
+            "zip": "87106",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.08449,
+              "lon": -106.65114
+            }
+          },
+          {
+            "facility": "Mid-Hudson Medical Research, PLLC - New Windsor",
+            "city": "New Windsor",
+            "state": "New York",
+            "zip": "12553",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.47676,
+              "lon": -74.02375
+            }
+          },
+          {
+            "facility": "IMA Clinical Research PC and Affiliates- New York, NY",
+            "city": "New York",
+            "state": "New York",
+            "zip": "10036",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.71427,
+              "lon": -74.00597
+            }
+          },
+          {
+            "facility": "DiGiovanna Institute for Medical Education and Research",
+            "city": "North Massapequa",
+            "state": "New York",
+            "zip": "11758-1802",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.70093,
+              "lon": -73.46207
+            }
+          },
+          {
+            "facility": "Saratoga Clinical Research",
+            "city": "Saratoga Springs",
+            "state": "New York",
+            "zip": "12866",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.08313,
+              "lon": -73.78457
+            }
+          },
+          {
+            "facility": "Chear Center LLC",
+            "city": "The Bronx",
+            "state": "New York",
+            "zip": "10455",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.84985,
+              "lon": -73.86641
+            }
+          },
+          {
+            "facility": "Meridian Clinical Research- Endwell, NY",
+            "city": "Vestal",
+            "state": "New York",
+            "zip": "13760",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.08507,
+              "lon": -76.05381
+            }
+          },
+          {
+            "facility": "Southgate Medical Group",
+            "city": "West Seneca",
+            "state": "New York",
+            "zip": "14224",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.85006,
+              "lon": -78.79975
+            }
+          },
+          {
+            "facility": "Great Lakes Medical Research, LLC",
+            "city": "Westfield",
+            "state": "New York",
+            "zip": "14787",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.32228,
+              "lon": -79.5781
+            }
+          },
+          {
+            "facility": "Javara Inc - Wake Forest Health Network Family Physicians - Sunset Avenue",
+            "city": "Asheboro",
+            "state": "North Carolina",
+            "zip": "27203",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.70791,
+              "lon": -79.81364
+            }
+          },
+          {
+            "facility": "Cary Research Group, LLC",
+            "city": "Cary",
+            "state": "North Carolina",
+            "zip": "27518",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.79154,
+              "lon": -78.78112
+            }
+          },
+          {
+            "facility": "The Presbyterian Hospital DBA Novant Health Heart and Vascular Institute",
+            "city": "Charlotte",
+            "state": "North Carolina",
+            "zip": "28204",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.22709,
+              "lon": -80.84313
+            }
+          },
+          {
+            "facility": "Javara Inc - Tryon Medical Partners LLC",
+            "city": "Charlotte",
+            "state": "North Carolina",
+            "zip": "28210",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.22709,
+              "lon": -80.84313
+            }
+          },
+          {
+            "facility": "Moses H. Cone Memorial Hospital Operating Corporation d/b/a Cone Health",
+            "city": "Greensboro",
+            "state": "North Carolina",
+            "zip": "27401",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.07264,
+              "lon": -79.79198
+            }
+          },
+          {
+            "facility": "Medication Management, LLC",
+            "city": "Greensboro",
+            "state": "North Carolina",
+            "zip": "28210",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.07264,
+              "lon": -79.79198
+            }
+          },
+          {
+            "facility": "Clinical Trials of America, LLC - Lenoir, NC",
+            "city": "Lenoir",
+            "state": "North Carolina",
+            "zip": "28645",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.91402,
+              "lon": -81.53898
+            }
+          },
+          {
+            "facility": "Diabetes and Endocrinology Consultants, P.C",
+            "city": "Morehead City",
+            "state": "North Carolina",
+            "zip": "28557",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.72294,
+              "lon": -76.72604
+            }
+          },
+          {
+            "facility": "Burke Primary Care",
+            "city": "Morganton",
+            "state": "North Carolina",
+            "zip": "28655",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.74541,
+              "lon": -81.68482
+            }
+          },
+          {
+            "facility": "Pinehurst Medical Clinic, Inc.",
+            "city": "Pinehurst",
+            "state": "North Carolina",
+            "zip": "28374",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.19543,
+              "lon": -79.46948
+            }
+          },
+          {
+            "facility": "Piedmont Healthcare - Statesville",
+            "city": "Statesville",
+            "state": "North Carolina",
+            "zip": "28625",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.78264,
+              "lon": -80.8873
+            }
+          },
+          {
+            "facility": "Wilmington Health Associates",
+            "city": "Wilmington",
+            "state": "North Carolina",
+            "zip": "28412",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.23556,
+              "lon": -77.94604
+            }
+          },
+          {
+            "facility": "Wake Forest University Health Sciences",
+            "city": "Winston-Salem",
+            "state": "North Carolina",
+            "zip": "27157",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.09986,
+              "lon": -80.24422
+            }
+          },
+          {
+            "facility": "Lillestol Research LLC",
+            "city": "Fargo",
+            "state": "North Dakota",
+            "zip": "58104",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 46.87719,
+              "lon": -96.7898
+            }
+          },
+          {
+            "facility": "Meridian Clinical Research - Cincinnati, OH",
+            "city": "Cincinnati",
+            "state": "Ohio",
+            "zip": "45219",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.12711,
+              "lon": -84.51439
+            }
+          },
+          {
+            "facility": "Meridian Clinical Research - Springfield, OH",
+            "city": "Cincinnati",
+            "state": "Ohio",
+            "zip": "45246",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.12711,
+              "lon": -84.51439
+            }
+          },
+          {
+            "facility": "PriMed Clinical Research",
+            "city": "Dayton",
+            "state": "Ohio",
+            "zip": "45419",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.75895,
+              "lon": -84.19161
+            }
+          },
+          {
+            "facility": "Nexgen Research",
+            "city": "Lima",
+            "state": "Ohio",
+            "zip": "45805",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.74255,
+              "lon": -84.10523
+            }
+          },
+          {
+            "facility": "SV Research",
+            "city": "Marion",
+            "state": "Ohio",
+            "zip": "43302",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.58867,
+              "lon": -83.12852
+            }
+          },
+          {
+            "facility": "Advanced Medical Research (AMR)",
+            "city": "Maumee",
+            "state": "Ohio",
+            "zip": "43537",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.56283,
+              "lon": -83.65382
+            }
+          },
+          {
+            "facility": "Lynn Institute of Norman",
+            "city": "Norman",
+            "state": "Oklahoma",
+            "zip": "73072",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.22257,
+              "lon": -97.43948
+            }
+          },
+          {
+            "facility": "Lynn Health Science Institute - East",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73111",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Altoona Center for Clinical Research",
+            "city": "Duncansville",
+            "state": "Pennsylvania",
+            "zip": "16635",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.42341,
+              "lon": -78.4339
+            }
+          },
+          {
+            "facility": "Abington Medical Specialists, P.C. dba AMS Cardiolog",
+            "city": "Horsham",
+            "state": "Pennsylvania",
+            "zip": "19044",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.17844,
+              "lon": -75.12851
+            }
+          },
+          {
+            "facility": "Preferred Primary Care Physicians Group - Pleasant Hills",
+            "city": "Pittsburgh",
+            "state": "Pennsylvania",
+            "zip": "15236",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.44062,
+              "lon": -79.99589
+            }
+          },
+          {
+            "facility": "Frontier Clinical Research",
+            "city": "Smithfield",
+            "state": "Pennsylvania",
+            "zip": "15478",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.80313,
+              "lon": -79.80783
+            }
+          },
+          {
+            "facility": "Penn State Health Medical Group- Berks Cardiology",
+            "city": "Wyomissing",
+            "state": "Pennsylvania",
+            "zip": "19610",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.32954,
+              "lon": -75.96521
+            }
+          },
+          {
+            "facility": "Clinical Research Collaborative, LLC",
+            "city": "Cumberland",
+            "state": "Rhode Island",
+            "zip": "02864",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.96677,
+              "lon": -71.43284
+            }
+          },
+          {
+            "facility": "Piedmont Research Partners, LLC",
+            "city": "Fort Mill",
+            "state": "South Carolina",
+            "zip": "29707",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.00737,
+              "lon": -80.94508
+            }
+          },
+          {
+            "facility": "South Carolina Clinical Research LLC",
+            "city": "Orangeburg",
+            "state": "South Carolina",
+            "zip": "29118",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.49182,
+              "lon": -80.85565
+            }
+          },
+          {
+            "facility": "Hillcrest Clinical Research",
+            "city": "Simpsonville",
+            "state": "South Carolina",
+            "zip": "29681",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.73706,
+              "lon": -82.25428
+            }
+          },
+          {
+            "facility": "Monument Health Clinical Research, a department of Monument Health Rapid City Hospital, Inc",
+            "city": "Rapid City",
+            "state": "South Dakota",
+            "zip": "57701",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.08054,
+              "lon": -103.23101
+            }
+          },
+          {
+            "facility": "Chattanooga Research & Medicine, PLLC",
+            "city": "Chattanooga",
+            "state": "Tennessee",
+            "zip": "37404",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.04563,
+              "lon": -85.30968
+            }
+          },
+          {
+            "facility": "Stern Cardiovascular Foundation, Inc",
+            "city": "Germantown",
+            "state": "Tennessee",
+            "zip": "38138",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.08676,
+              "lon": -89.81009
+            }
+          },
+          {
+            "facility": "Holston Medical Group",
+            "city": "Kingsport",
+            "state": "Tennessee",
+            "zip": "37660",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.54843,
+              "lon": -82.56182
+            }
+          },
+          {
+            "facility": "New Phase Research & Development",
+            "city": "Knoxville",
+            "state": "Tennessee",
+            "zip": "37909",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.96064,
+              "lon": -83.92074
+            }
+          },
+          {
+            "facility": "Cardiovascular Research of Knoxville",
+            "city": "Powell",
+            "state": "Tennessee",
+            "zip": "37849",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.03175,
+              "lon": -84.02797
+            }
+          },
+          {
+            "facility": "PharmaTex Research, LLC",
+            "city": "Amarillo",
+            "state": "Texas",
+            "zip": "79109",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.222,
+              "lon": -101.8313
+            }
+          },
+          {
+            "facility": "Central Texas Clinical Research",
+            "city": "Austin",
+            "state": "Texas",
+            "zip": "78705",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.26715,
+              "lon": -97.74306
+            }
+          },
+          {
+            "facility": "Accelemed Research Institute",
+            "city": "Austin",
+            "state": "Texas",
+            "zip": "78745",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.26715,
+              "lon": -97.74306
+            }
+          },
+          {
+            "facility": "Private Practice - O. Alejandro Brusco, MD FACE PA",
+            "city": "Corpus Christi",
+            "state": "Texas",
+            "zip": "78414",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.80058,
+              "lon": -97.39638
+            }
+          },
+          {
+            "facility": "Javara Inc - Bridge Creek Family Medicine",
+            "city": "Cypress",
+            "state": "Texas",
+            "zip": "77433",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.96911,
+              "lon": -95.69717
+            }
+          },
+          {
+            "facility": "Southwest Family Medicine Associates",
+            "city": "Dallas",
+            "state": "Texas",
+            "zip": "75325",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.78306,
+              "lon": -96.80667
+            }
+          },
+          {
+            "facility": "Texas Health Research & Education Institute",
+            "city": "Dallas",
+            "state": "Texas",
+            "zip": "76107",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.78306,
+              "lon": -96.80667
+            }
+          },
+          {
+            "facility": "South Texas Research Institute",
+            "city": "Edinburg",
+            "state": "Texas",
+            "zip": "78539",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.30174,
+              "lon": -98.16334
+            }
+          },
+          {
+            "facility": "David Turbay, MD, PLLC",
+            "city": "El Paso",
+            "state": "Texas",
+            "zip": "79905",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 31.75872,
+              "lon": -106.48693
+            }
+          },
+          {
+            "facility": "Javara Inc - Texas Health Care Family Physicians",
+            "city": "Fort Worth",
+            "state": "Texas",
+            "zip": "76132",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.72541,
+              "lon": -97.32085
+            }
+          },
+          {
+            "facility": "Valley Institute of Research - Fort Worth",
+            "city": "Fort Worth",
+            "state": "Texas",
+            "zip": "76164",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.72541,
+              "lon": -97.32085
+            }
+          },
+          {
+            "facility": "Mt. Olympus Medical Research",
+            "city": "Friendswood",
+            "state": "Texas",
+            "zip": "77546",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.5294,
+              "lon": -95.20104
+            }
+          },
+          {
+            "facility": "East Texas Cardiology, PA",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77002",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Angiocardiac Care of Texas",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77025",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Texas Heart Institute",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77030",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Southwest Clinical Trials",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77074",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "BioStar Clinical Research",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77094",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Texas Center for Drug Development",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77375",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "West Houston Area Clinical Trial Consultants, LLC",
+            "city": "Katy",
+            "state": "Texas",
+            "zip": "77493",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.78579,
+              "lon": -95.8244
+            }
+          },
+          {
+            "facility": "Milton Haber, M.D",
+            "city": "Laredo",
+            "state": "Texas",
+            "zip": "78041",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.50641,
+              "lon": -99.50754
+            }
+          },
+          {
+            "facility": "North Hills Medical Research, Inc.",
+            "city": "North Richland Hills",
+            "state": "Texas",
+            "zip": "76180",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.8343,
+              "lon": -97.2289
+            }
+          },
+          {
+            "facility": "Tapia Internal Medicine Clinic",
+            "city": "Paris",
+            "state": "Texas",
+            "zip": "75460",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.66094,
+              "lon": -95.55551
+            }
+          },
+          {
+            "facility": "Linq Research, LLC",
+            "city": "Pearland",
+            "state": "Texas",
+            "zip": "60602",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.56357,
+              "lon": -95.28605
+            }
+          },
+          {
+            "facility": "Styde Research",
+            "city": "Plano",
+            "state": "Texas",
+            "zip": "75093",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.01984,
+              "lon": -96.69889
+            }
+          },
+          {
+            "facility": "Sun Research Institute",
+            "city": "San Antonio",
+            "state": "Texas",
+            "zip": "78215",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.42412,
+              "lon": -98.49363
+            }
+          },
+          {
+            "facility": "San Antonio Premier Internal Medicine",
+            "city": "San Antonio",
+            "state": "Texas",
+            "zip": "78220",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.42412,
+              "lon": -98.49363
+            }
+          },
+          {
+            "facility": "Bandera Family HealthCare Research, LLC (BFHC)",
+            "city": "San Antonio",
+            "state": "Texas",
+            "zip": "78249",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.42412,
+              "lon": -98.49363
+            }
+          },
+          {
+            "facility": "Sherman Clinical Research",
+            "city": "Sherman",
+            "state": "Texas",
+            "zip": "75092",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.63566,
+              "lon": -96.60888
+            }
+          },
+          {
+            "facility": "Stephenville Medical & Surgical Clinic",
+            "city": "Stephenville",
+            "state": "Texas",
+            "zip": "76401",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.2207,
+              "lon": -98.20226
+            }
+          },
+          {
+            "facility": "Javara Inc - Highland Woods Health",
+            "city": "The Woodlands",
+            "state": "Texas",
+            "zip": "77382",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.15799,
+              "lon": -95.48938
+            }
+          },
+          {
+            "facility": "Alpine Research Organization, Inc.",
+            "city": "Clinton",
+            "state": "Utah",
+            "zip": "84015",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.13967,
+              "lon": -112.0505
+            }
+          },
+          {
+            "facility": "Physicians' Research Options (PRO)",
+            "city": "Draper",
+            "state": "Utah",
+            "zip": "84020",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.52467,
+              "lon": -111.86382
+            }
+          },
+          {
+            "facility": "Wasatch Clinical Research",
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "zip": "84102",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.76078,
+              "lon": -111.89105
+            }
+          },
+          {
+            "facility": "Burke Internal Medicine & Research",
+            "city": "Burke",
+            "state": "Virginia",
+            "zip": "22015",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.79345,
+              "lon": -77.27165
+            }
+          },
+          {
+            "facility": "Carient Heart & Vascular",
+            "city": "Manassas",
+            "state": "Virginia",
+            "zip": "20109",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.75095,
+              "lon": -77.47527
+            }
+          },
+          {
+            "facility": "York Clinical Research LLC",
+            "city": "Norfolk",
+            "state": "Virginia",
+            "zip": "23510",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.84681,
+              "lon": -76.28522
+            }
+          },
+          {
+            "facility": "Dominion Medical Associates",
+            "city": "Richmond",
+            "state": "Virginia",
+            "zip": "23219",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.55376,
+              "lon": -77.46026
+            }
+          },
+          {
+            "facility": "MultiCare Institute for Research and Innovation- Tacoma",
+            "city": "Tacoma",
+            "state": "Washington",
+            "zip": "98405",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 47.25288,
+              "lon": -122.44429
+            }
+          },
+          {
+            "facility": "Universal Research Group LLC",
+            "city": "Tacoma",
+            "state": "Washington",
+            "zip": "98405",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 47.25288,
+              "lon": -122.44429
+            }
+          },
+          {
+            "facility": "Prevea Health",
+            "city": "Green Bay",
+            "state": "Wisconsin",
+            "zip": "54303",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.51916,
+              "lon": -88.01983
+            }
+          },
+          {
+            "facility": "Clinical Investigation Specialists",
+            "city": "Kenosha",
+            "state": "Wisconsin",
+            "zip": "53144",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.58474,
+              "lon": -87.82119
+            }
+          },
+          {
+            "facility": "Royal Adelaide Hospital",
+            "city": "Adelaide",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.92866,
+              "lon": 138.59863
+            }
+          },
+          {
+            "facility": "Flinders Medical Centre",
+            "city": "Bedford Park",
+            "zip": "5042",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -35.02204,
+              "lon": 138.56815
+            }
+          },
+          {
+            "facility": "Campbelltown Hospital",
+            "city": "Campbelltown",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.06667,
+              "lon": 150.81667
+            }
+          },
+          {
+            "facility": "The Prince Charles Hospital",
+            "city": "Chermside",
+            "zip": "4032",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.38472,
+              "lon": 153.03062
+            }
+          },
+          {
+            "facility": "Monash Health",
+            "city": "Clayton",
+            "zip": "3168",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.91667,
+              "lon": 145.11667
+            }
+          },
+          {
+            "facility": "Bridge Family Practice",
+            "city": "Halls Creek",
+            "zip": "6210",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -18.22485,
+              "lon": 127.66647
+            }
+          },
+          {
+            "facility": "Austin Health",
+            "city": "Heidelberg",
+            "zip": "3084",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.75,
+              "lon": 145.06667
+            }
+          },
+          {
+            "facility": "Baker Heart and Diabetes Institute",
+            "city": "Melbourne",
+            "zip": "VIC 3004",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.814,
+              "lon": 144.96332
+            }
+          },
+          {
+            "facility": "The Alfred Hospital",
+            "city": "Melbourne",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.814,
+              "lon": 144.96332
+            }
+          },
+          {
+            "facility": "Redcliffe Hospital",
+            "city": "Redcliffe",
+            "zip": "4020",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -31.93845,
+              "lon": 115.94645
+            }
+          },
+          {
+            "facility": "Western Health",
+            "city": "Saint Albans",
+            "zip": "VIC 3021",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.73333,
+              "lon": 144.8
+            }
+          },
+          {
+            "facility": "Griffith University",
+            "city": "Southport",
+            "zip": "4222",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.96724,
+              "lon": 153.39796
+            }
+          },
+          {
+            "facility": "Wollongong Hospital (Illawarra Shoalhaven Local Health District)",
+            "city": "Wollongong",
+            "zip": "2500",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.424,
+              "lon": 150.89345
+            }
+          },
+          {
+            "facility": "The Queen Elizabeth Hospital (TQEH) - SA Health",
+            "city": "Woodville South",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.88186,
+              "lon": 138.53477
+            }
+          },
+          {
+            "facility": "Dr Heart Pty Ltd at Cholesterol Care Australia",
+            "city": "Woolloongabba",
+            "zip": "4102",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.48855,
+              "lon": 153.03655
+            }
+          },
+          {
+            "facility": "MHAT Aytos EOOD Department of Internal Diseases",
+            "city": "Aytos",
+            "zip": "8500",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.70322,
+              "lon": 27.25464
+            }
+          },
+          {
+            "facility": "Medical Center Doctor Staykov EOOD",
+            "city": "Burgas",
+            "zip": "8000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.50651,
+              "lon": 27.46886
+            }
+          },
+          {
+            "facility": "UMHAT Deva Maria",
+            "city": "Burgas",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.50651,
+              "lon": 27.46886
+            }
+          },
+          {
+            "facility": "Medical Center Viva Feniks",
+            "city": "Dobrich",
+            "zip": "9300",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.56491,
+              "lon": 27.83138
+            }
+          },
+          {
+            "facility": "MHAT Sveti Ivan Rilski",
+            "city": "Gorna Oryahovitsa",
+            "zip": "5100",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.12778,
+              "lon": 25.70167
+            }
+          },
+          {
+            "facility": "MHAT Haskovo AD",
+            "city": "Haskovo",
+            "zip": "6300",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 41.93415,
+              "lon": 25.55557
+            }
+          },
+          {
+            "facility": "MHAT City Clinic - Sveti Georgi EOOD",
+            "city": "Montana",
+            "zip": "3400",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.41285,
+              "lon": 23.22174
+            }
+          },
+          {
+            "facility": "Medical Center - Cordis OOD",
+            "city": "Pleven",
+            "zip": "5800",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.41791,
+              "lon": 24.61666
+            }
+          },
+          {
+            "facility": "MHAT Heart and Brain Pleven",
+            "city": "Pleven",
+            "zip": "5800",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.41791,
+              "lon": 24.61666
+            }
+          },
+          {
+            "facility": "Medical Center for Rehabilitation and Sports Medicine I - Plovdiv EOOD",
+            "city": "Plovdiv",
+            "zip": "4002",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.15387,
+              "lon": 24.75001
+            }
+          },
+          {
+            "facility": "UMHAT Sveti Georgi EA",
+            "city": "Plovdiv",
+            "zip": "4002",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.15387,
+              "lon": 24.75001
+            }
+          },
+          {
+            "facility": "Medical Center Rusemed EOOD",
+            "city": "Rousse",
+            "zip": "7000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.84872,
+              "lon": 25.9534
+            }
+          },
+          {
+            "facility": "SHATC Medica Cor EAD",
+            "city": "Rousse",
+            "zip": "7013",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.84872,
+              "lon": 25.9534
+            }
+          },
+          {
+            "facility": "Multiprofile Hospital for Active Treatment (MHAT)- Silistra",
+            "city": "Silistra",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 44.1171,
+              "lon": 27.26056
+            }
+          },
+          {
+            "facility": "MHAT Dr. Ivan Seliminski AD",
+            "city": "Sliven",
+            "zip": "8800",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.68607,
+              "lon": 26.32558
+            }
+          },
+          {
+            "facility": "Medical Center for Specialized Medical Help in Cardiovascular Diseases OOD",
+            "city": "Sofia",
+            "zip": "1000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "MHAT Sveta Sofia EOOD",
+            "city": "Sofia",
+            "zip": "1000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "Diagnostic and Consulting Center 22 - Sofia",
+            "city": "Sofia",
+            "zip": "1113",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "DCC \"Ascendent\"",
+            "city": "Sofia",
+            "zip": "1202",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "Diagnostic consultative center 24",
+            "city": "Sofia",
+            "zip": "1231",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "National Multiprofile Transport Hospital Tsar Boris Treti - Cardiology Clinic",
+            "city": "Sofia",
+            "zip": "1233",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "Medical Centre Medcross",
+            "city": "Sofia",
+            "zip": "1309",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "Diagnostic Consulting Center Convex EOOD",
+            "city": "Sofia",
+            "zip": "1680",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "MC Doctor Kalchev OOD",
+            "city": "Sofia",
+            "zip": "1700",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "\"Medical Center Medic\" OOD",
+            "city": "Sofia",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "Multiprofile Hospital for Active Treatment National Cardiology Hospital",
+            "city": "Sofia",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.69751,
+              "lon": 23.32415
+            }
+          },
+          {
+            "facility": "CardioArt Medical Center",
+            "city": "Stara Zagora",
+            "zip": "6000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.43205,
+              "lon": 25.64262
+            }
+          },
+          {
+            "facility": "Medical Center Zara - Med",
+            "city": "Stara Zagora",
+            "zip": "6003",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.43205,
+              "lon": 25.64262
+            }
+          },
+          {
+            "facility": "UMHAT Prof. Dr. Stoyan Kirkovich",
+            "city": "Stara Zagora",
+            "zip": "6003",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.43205,
+              "lon": 25.64262
+            }
+          },
+          {
+            "facility": "Diagnostic Consultative Center Chaika",
+            "city": "Varna",
+            "zip": "9000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.21912,
+              "lon": 27.91024
+            }
+          },
+          {
+            "facility": "Medical Center Plazmamed Clinic",
+            "city": "Varna",
+            "zip": "9000",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.21912,
+              "lon": 27.91024
+            }
+          },
+          {
+            "facility": "Specialized Hospital for Active Treatment of Cardiology",
+            "city": "Varna",
+            "zip": "9020",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.21912,
+              "lon": 27.91024
+            }
+          },
+          {
+            "facility": "Medical Center Medica Plus OOD",
+            "city": "Veliko Tarnovo",
+            "zip": "5006",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.08124,
+              "lon": 25.62904
+            }
+          },
+          {
+            "facility": "Medical Center Nevromedics",
+            "city": "Veliko Tarnovo",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 43.08124,
+              "lon": 25.62904
+            }
+          },
+          {
+            "facility": "Medical Center Velingrad 2017 EOOD",
+            "city": "Velingrad",
+            "zip": "4600",
+            "country": "Bulgaria",
+            "geoPoint": {
+              "lat": 42.02754,
+              "lon": 23.99155
+            }
+          },
+          {
+            "facility": "Medical Arts Health Research Group - Kamloops",
+            "city": "Kamloops",
+            "state": "British Columbia",
+            "zip": "V2C 5T1",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 50.66648,
+              "lon": -120.3192
+            }
+          },
+          {
+            "facility": "Medical Arts Health Research Group - North Vancouver",
+            "city": "North Vancouver",
+            "state": "British Columbia",
+            "zip": "V7M 2H4",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 49.31636,
+              "lon": -123.06934
+            }
+          },
+          {
+            "facility": "The Medical Arts Health Research Group - Penticton",
+            "city": "Penticton",
+            "state": "British Columbia",
+            "zip": "V2A 5L5",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 49.48062,
+              "lon": -119.58584
+            }
+          },
+          {
+            "facility": "Winnipeg Clinic",
+            "city": "Winnipeg",
+            "state": "Manitoba",
+            "zip": "R3C 0N2",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 49.8844,
+              "lon": -97.14704
+            }
+          },
+          {
+            "facility": "LMC Diabetes & Endocrinology Ltd. - Thornhill",
+            "city": "Concord",
+            "state": "Ontario",
+            "zip": "L4K 4M2",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.80011,
+              "lon": -79.48291
+            }
+          },
+          {
+            "facility": "Dr. James Cha",
+            "city": "Oshawa",
+            "state": "Ontario",
+            "zip": "L1J2K1",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.90012,
+              "lon": -78.84957
+            }
+          },
+          {
+            "facility": "Kawartha Cardiology Clinical Trials",
+            "city": "Peterborough",
+            "state": "Ontario",
+            "zip": "K9J 0B2",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 44.30012,
+              "lon": -78.31623
+            }
+          },
+          {
+            "facility": "KMH Cardiology & Diagnostic Centres - Hamilton",
+            "city": "Stoney Creek",
+            "state": "Ontario",
+            "zip": "L8J 3W2",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.21681,
+              "lon": -79.76633
+            }
+          },
+          {
+            "facility": "Ecogene-21",
+            "city": "Chicoutimi",
+            "state": "Quebec",
+            "zip": "G7H 7K9",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 48.41963,
+              "lon": -71.06369
+            }
+          },
+          {
+            "facility": "CardioVasc HR",
+            "city": "Saint-Jean-sur-Richelieu",
+            "state": "Quebec",
+            "zip": "J3A 1J2",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.30713,
+              "lon": -73.26259
+            }
+          },
+          {
+            "facility": "Centre intégré universitaire de santé et de services sociaux (CIUSSS) de l'Estrie -Centre hospitalier universitaire de Sherbrooke (CHUS)",
+            "city": "Sherbrooke",
+            "state": "Quebec",
+            "zip": "J1H 5N4",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.40008,
+              "lon": -71.89908
+            }
+          },
+          {
+            "facility": "Diex Recherche Trois-Rivieres, Inc",
+            "city": "Trois-Rivières",
+            "state": "Quebec",
+            "zip": "G9A 4P3",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 46.34515,
+              "lon": -72.5477
+            }
+          },
+          {
+            "facility": "Diex Recherche Victoriaville",
+            "city": "Victoriaville",
+            "state": "Quebec",
+            "zip": "G6P 6P6",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 46.05007,
+              "lon": -71.96579
+            }
+          },
+          {
+            "facility": "Brampton Clinical Trials",
+            "city": "Brampton",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.68341,
+              "lon": -79.76633
+            }
+          },
+          {
+            "facility": "Centre de recherche clinique de Laval",
+            "city": "Laval",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.56995,
+              "lon": -73.692
+            }
+          },
+          {
+            "facility": "KMH Cardiology & Diagnostic Centres - Mississauga",
+            "city": "Mississauga",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.5789,
+              "lon": -79.6583
+            }
+          },
+          {
+            "facility": "Institut Universitaire de Cardiologie et de Pneumologie De Quebec",
+            "city": "Québec",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 46.81228,
+              "lon": -71.21454
+            }
+          },
+          {
+            "facility": "Discovery Clinical Services, Ltd",
+            "city": "Victoria",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 48.4359,
+              "lon": -123.35155
+            }
+          },
+          {
+            "facility": "Peking University First Hospital",
+            "city": "Beijing",
+            "zip": "100034",
+            "country": "China",
+            "geoPoint": {
+              "lat": 39.9075,
+              "lon": 116.39723
+            }
+          },
+          {
+            "facility": "The First Affiliated Hospital of Bengbu Medical College",
+            "city": "Bengbu",
+            "zip": "233017",
+            "country": "China",
+            "geoPoint": {
+              "lat": 32.94083,
+              "lon": 117.36083
+            }
+          },
+          {
+            "facility": "The First People's Hospital of Changde City",
+            "city": "Changde",
+            "zip": "415003",
+            "country": "China",
+            "geoPoint": {
+              "lat": 29.03205,
+              "lon": 111.69844
+            }
+          },
+          {
+            "facility": "The Second People's Hospital of Changzhou",
+            "city": "Changzhou",
+            "zip": "213164",
+            "country": "China",
+            "geoPoint": {
+              "lat": 31.77359,
+              "lon": 119.95401
+            }
+          },
+          {
+            "facility": "Affiliated Hospital of Chifeng University",
+            "city": "Chifeng",
+            "zip": "24050",
+            "country": "China",
+            "geoPoint": {
+              "lat": 42.26833,
+              "lon": 118.96361
+            }
+          },
+          {
+            "facility": "Daqing People's Hospital",
+            "city": "Daqing",
+            "zip": "163711",
+            "country": "China",
+            "geoPoint": {
+              "lat": 46.58333,
+              "lon": 125.0
+            }
+          },
+          {
+            "facility": "Shunde Hospital of Southern Medical University",
+            "city": "Foshan",
+            "zip": "528308",
+            "country": "China",
+            "geoPoint": {
+              "lat": 23.02677,
+              "lon": 113.13148
+            }
+          },
+          {
+            "facility": "Guangdong Provincial People's Hospital",
+            "city": "Guangzhou",
+            "zip": "510080",
+            "country": "China",
+            "geoPoint": {
+              "lat": 23.11667,
+              "lon": 113.25
+            }
+          },
+          {
+            "facility": "Heilongjiang Provincial Hospital",
+            "city": "Harbin",
+            "zip": "150036",
+            "country": "China",
+            "geoPoint": {
+              "lat": 45.75,
+              "lon": 126.65
+            }
+          },
+          {
+            "facility": "The First Affiliated Hospital of Nanyang Medical College - 2nd site",
+            "city": "Nanyang",
+            "zip": "473024",
+            "country": "China",
+            "geoPoint": {
+              "lat": 33.00524,
+              "lon": 112.54659
+            }
+          },
+          {
+            "facility": "The First affiliated Hospital of Nanyang Medical College",
+            "city": "Nanyang",
+            "zip": "473024",
+            "country": "China",
+            "geoPoint": {
+              "lat": 33.00524,
+              "lon": 112.54659
+            }
+          },
+          {
+            "facility": "Ningbo First Hospital",
+            "city": "Ningbo",
+            "zip": "315010",
+            "country": "China",
+            "geoPoint": {
+              "lat": 29.87819,
+              "lon": 121.54945
+            }
+          },
+          {
+            "facility": "Panjin Liaoyou Gem Flower Hospital",
+            "city": "Panjin",
+            "zip": "124010",
+            "country": "China",
+            "geoPoint": {
+              "lat": 41.121,
+              "lon": 122.0739
+            }
+          },
+          {
+            "facility": "Pingxiang People's Hospital",
+            "city": "Pingxiang",
+            "zip": "337055",
+            "country": "China",
+            "geoPoint": {
+              "lat": 27.61672,
+              "lon": 113.85353
+            }
+          },
+          {
+            "facility": "People's Hospital of Tianjin",
+            "city": "Tianjin",
+            "zip": "300121",
+            "country": "China",
+            "geoPoint": {
+              "lat": 39.14222,
+              "lon": 117.17667
+            }
+          },
+          {
+            "facility": "Tianjin Fourth Central Hospital",
+            "city": "Tianjin",
+            "zip": "300143",
+            "country": "China",
+            "geoPoint": {
+              "lat": 39.14222,
+              "lon": 117.17667
+            }
+          },
+          {
+            "facility": "Xi'an Gaoxin Hospital",
+            "city": "Xi'an",
+            "zip": "710075",
+            "country": "China",
+            "geoPoint": {
+              "lat": 34.25833,
+              "lon": 108.92861
+            }
+          },
+          {
+            "facility": "Xianyang Hospital of Yan 'an University",
+            "city": "Xianyang",
+            "zip": "712099",
+            "country": "China",
+            "geoPoint": {
+              "lat": 34.33778,
+              "lon": 108.70261
+            }
+          },
+          {
+            "facility": "The Third Affiliatied Hospital of Xinxiang Medical University",
+            "city": "Xinxiang",
+            "zip": "453000",
+            "country": "China",
+            "geoPoint": {
+              "lat": 35.19033,
+              "lon": 113.80151
+            }
+          },
+          {
+            "facility": "Zibo City Linzi District People's Hospital",
+            "city": "Zibo",
+            "zip": "255499",
+            "country": "China",
+            "geoPoint": {
+              "lat": 36.79056,
+              "lon": 118.06333
+            }
+          },
+          {
+            "facility": "General Hospital Karlovac",
+            "city": "Karlovac",
+            "zip": "47000",
+            "country": "Croatia",
+            "geoPoint": {
+              "lat": 45.49167,
+              "lon": 15.55
+            }
+          },
+          {
+            "facility": "Special Hospital for Medical Rehabilitation Krapinske Toplice",
+            "city": "Krapinske Toplice",
+            "zip": "49217",
+            "country": "Croatia",
+            "geoPoint": {
+              "lat": 46.09333,
+              "lon": 15.84333
+            }
+          },
+          {
+            "facility": "General Hospital Dr Josip Bencevic",
+            "city": "Slavonski Brod",
+            "zip": "35000",
+            "country": "Croatia",
+            "geoPoint": {
+              "lat": 45.16158,
+              "lon": 18.0163
+            }
+          },
+          {
+            "facility": "Polyclinic Solmed",
+            "city": "Zagreb",
+            "zip": "10000",
+            "country": "Croatia",
+            "geoPoint": {
+              "lat": 45.81444,
+              "lon": 15.97798
+            }
+          },
+          {
+            "facility": "University Hospital Center Zagreb",
+            "city": "Zagreb",
+            "zip": "10000",
+            "country": "Croatia",
+            "geoPoint": {
+              "lat": 45.81444,
+              "lon": 15.97798
+            }
+          },
+          {
+            "facility": "Hornicka nemocnice s poliklinikou Bilina s.r.o.",
+            "city": "Bílina",
+            "zip": "41801",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.54854,
+              "lon": 13.77535
+            }
+          },
+          {
+            "facility": "Medicus Services SRO",
+            "city": "Brandýs nad Labem",
+            "zip": "250 01",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.18356,
+              "lon": 14.67244
+            }
+          },
+          {
+            "facility": "Centrum pro zdravi - kardiologie s.r.o.",
+            "city": "Brno",
+            "zip": "60300",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.19522,
+              "lon": 16.60796
+            }
+          },
+          {
+            "facility": "Kardiologicka ambulance Brno s.r.o.",
+            "city": "Brno",
+            "zip": "612 00",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.19522,
+              "lon": 16.60796
+            }
+          },
+          {
+            "facility": "Amkardia sro",
+            "city": "Brno",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.19522,
+              "lon": 16.60796
+            }
+          },
+          {
+            "facility": "Nemocnice Havlickuv Brod, p.o.",
+            "city": "Havlíčkův Brod",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.6069,
+              "lon": 15.57937
+            }
+          },
+          {
+            "facility": "Cevni ambulance - MATMED s.r.o.",
+            "city": "Hodonín",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 48.84893,
+              "lon": 17.13244
+            }
+          },
+          {
+            "facility": "MUDr. Tomas Edelsberger - diabetologicka ambulance",
+            "city": "Krnov",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.08967,
+              "lon": 17.70385
+            }
+          },
+          {
+            "facility": "Lunacor s.r.o. - Centrum pro choroby srdce a cev",
+            "city": "Kroměříž",
+            "zip": "767 01",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.29785,
+              "lon": 17.39312
+            }
+          },
+          {
+            "facility": "KARDIOLOGIE - LIBEREC s.r.o.",
+            "city": "Liberec",
+            "zip": "46014",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.76711,
+              "lon": 15.05619
+            }
+          },
+          {
+            "facility": "InterKardio ML s.r.o.",
+            "city": "Mariánské Lázně",
+            "zip": "353 01",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.96459,
+              "lon": 12.70118
+            }
+          },
+          {
+            "facility": "Edumed s.r.o.",
+            "city": "Náchod",
+            "zip": "551 01",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.4167,
+              "lon": 16.16289
+            }
+          },
+          {
+            "facility": "PreventaMed s.r.o.",
+            "city": "Olomouc",
+            "zip": "779 00",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.59552,
+              "lon": 17.25175
+            }
+          },
+          {
+            "facility": "CCR Ostrava s.r.o.",
+            "city": "Ostrava",
+            "zip": "702 00",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.83465,
+              "lon": 18.28204
+            }
+          },
+          {
+            "facility": "Lunacor, s.r.o. - Centrum pro choroby srdce a cev - Otrokovice",
+            "city": "Otrokovice",
+            "zip": "765 02",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.20934,
+              "lon": 17.53944
+            }
+          },
+          {
+            "facility": "Kardiologie COR s.r.o.",
+            "city": "Prague",
+            "zip": "106 00",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.08804,
+              "lon": 14.42076
+            }
+          },
+          {
+            "facility": "Vseobecna fakultni nemocnice v Praze",
+            "city": "Prague",
+            "zip": "128 08",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.08804,
+              "lon": 14.42076
+            }
+          },
+          {
+            "facility": "Fakultní nemocnice v Motole",
+            "city": "Prague",
+            "zip": "15006",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.08804,
+              "lon": 14.42076
+            }
+          },
+          {
+            "facility": "Ustredni vojenska nemocnice",
+            "city": "Prague",
+            "zip": "169 02",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 50.08804,
+              "lon": 14.42076
+            }
+          },
+          {
+            "facility": "Krajska nemocnice T. Bati",
+            "city": "Zlín",
+            "zip": "762 75",
+            "country": "Czechia",
+            "geoPoint": {
+              "lat": 49.22645,
+              "lon": 17.67065
+            }
+          },
+          {
+            "facility": "Aalborg University Hospital",
+            "city": "Aalborg",
+            "zip": "9000",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 57.048,
+              "lon": 9.9187
+            }
+          },
+          {
+            "facility": "Bispebjerg Hospital",
+            "city": "Copenhagen",
+            "zip": "2000",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 55.67594,
+              "lon": 12.56553
+            }
+          },
+          {
+            "facility": "Amager Hospital",
+            "city": "Copenhagen",
+            "zip": "2300",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 55.67594,
+              "lon": 12.56553
+            }
+          },
+          {
+            "facility": "Sydvestjysk Hospital",
+            "city": "Esbjerg",
+            "zip": "6700",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 55.47028,
+              "lon": 8.45187
+            }
+          },
+          {
+            "facility": "Godstrup Regional Hospital (Gødstrup)",
+            "city": "Herning",
+            "zip": "7400",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 56.13615,
+              "lon": 8.97662
+            }
+          },
+          {
+            "facility": "Viborg Regional Hospital",
+            "city": "Viborg",
+            "zip": "8800",
+            "country": "Denmark",
+            "geoPoint": {
+              "lat": 56.45319,
+              "lon": 9.40201
+            }
+          },
+          {
+            "facility": "StudyCor Oy",
+            "city": "Jyväskylä",
+            "zip": "40620",
+            "country": "Finland",
+            "geoPoint": {
+              "lat": 62.24147,
+              "lon": 25.72088
+            }
+          },
+          {
+            "facility": "Satucon Oy Kuopio",
+            "city": "Kuopio",
+            "country": "Finland",
+            "geoPoint": {
+              "lat": 62.89238,
+              "lon": 27.67703
+            }
+          },
+          {
+            "facility": "Turku University Hospital",
+            "city": "Turku",
+            "zip": "20521",
+            "country": "Finland",
+            "geoPoint": {
+              "lat": 60.45148,
+              "lon": 22.26869
+            }
+          },
+          {
+            "facility": "Health Ltd",
+            "city": "Batumi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.64077,
+              "lon": 41.6306
+            }
+          },
+          {
+            "facility": "JSC Evex Hospitals - Batumi Referral Hospital",
+            "city": "Batumi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.64077,
+              "lon": 41.6306
+            }
+          },
+          {
+            "facility": "Kutaisi Primary Health Care Center #1",
+            "city": "Kutaisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 42.26791,
+              "lon": 42.69459
+            }
+          },
+          {
+            "facility": "Bokhua Memorial Cardiovascular Center LTD",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Cardioclinic Digomi Medical Center-",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "David Metreveli Medical Centre Lt",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Emergency Cardiology Center by Academician G. Chapidze Ltd",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "JSC Curatio",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "LTD Adapti",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Ltd Georgian-Dutch Hospital",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "LTD Israeli -Georgian Medical Research Clinic Healthycore",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Ltd Tbilisi Heart Center",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "LTD Vitamed",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Mediclub Georgia",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Multiprofile Clinic Consilium Medulla LTD",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "National Center for Diabetes Research",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Tbilisi Heart and Vascular Clinic Ltd",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "The First Medical Center LTD",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "VivaMedi",
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "geoPoint": {
+              "lat": 41.69143,
+              "lon": 44.83412
+            }
+          },
+          {
+            "facility": "Kardiologische Praxis Dr. med. univ. Wolfgang Jungmair",
+            "city": "Bad Homburg",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 50.22683,
+              "lon": 8.61816
+            }
+          },
+          {
+            "facility": "kfgn | Site Operations & Services GmbH - Berlin-Mitte",
+            "city": "Berlin",
+            "zip": "10117",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 52.52437,
+              "lon": 13.41053
+            }
+          },
+          {
+            "facility": "Franziskus Hospital Berlin",
+            "city": "Berlin",
+            "zip": "10787",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 52.52437,
+              "lon": 13.41053
+            }
+          },
+          {
+            "facility": "Diabetespraxis Dr. Braun",
+            "city": "Berlin",
+            "zip": "13187",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 52.52437,
+              "lon": 13.41053
+            }
+          },
+          {
+            "facility": "Kardiologisch-Angiologische Praxis - Herzzentrum Bremen",
+            "city": "Bremen",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 53.07582,
+              "lon": 8.80717
+            }
+          },
+          {
+            "facility": "MVZ am Küchwald GmbH",
+            "city": "Chemnitz",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 50.8357,
+              "lon": 12.92922
+            }
+          },
+          {
+            "facility": "Gemeinschaftspraxis Diabeteszentrum Dortmund",
+            "city": "Dortmund",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.51494,
+              "lon": 7.466
+            }
+          },
+          {
+            "facility": "St Johannes Hospital Dortmund",
+            "city": "Dortmund",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.51494,
+              "lon": 7.466
+            }
+          },
+          {
+            "facility": "Kfgn | Site Operations & Services GmbH - Dresden",
+            "city": "Dresden",
+            "zip": "1069",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.05089,
+              "lon": 13.73832
+            }
+          },
+          {
+            "facility": "Universitaetsklinikum Carl Gustav Carus Dresden",
+            "city": "Dresden",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.05089,
+              "lon": 13.73832
+            }
+          },
+          {
+            "facility": "ZKS - Zentrum Klinische Studien Sudbrandenburg GmbH",
+            "city": "Elsterwerda",
+            "zip": "4910",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.46043,
+              "lon": 13.52001
+            }
+          },
+          {
+            "facility": "Katholisches Krankenhaus St. Johann Nepomuk",
+            "city": "Erfurt",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 50.97734,
+              "lon": 11.03536
+            }
+          },
+          {
+            "facility": "Klinisches Forschungszentrum Dr. Hagemann",
+            "city": "Essen",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.45657,
+              "lon": 7.01228
+            }
+          },
+          {
+            "facility": "Studienzentrum Bocholderstrasse",
+            "city": "Essen",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.45657,
+              "lon": 7.01228
+            }
+          },
+          {
+            "facility": "Zentrum für Klinische Studien (diabetes-falkensee.de)",
+            "city": "Falkensee",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 52.56014,
+              "lon": 13.0927
+            }
+          },
+          {
+            "facility": "ClinPhenomics CVC GmbH",
+            "city": "Frankfurt",
+            "zip": "60596",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 49.68333,
+              "lon": 10.53333
+            }
+          },
+          {
+            "facility": "Diabeteszentrum Hamburg West (DZHW) / Gemeinschaftspraxis Dr. Wendisch, Dr. Dahl und Prof. Dr. Aberle",
+            "city": "Hamburg",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 53.55073,
+              "lon": 9.99302
+            }
+          },
+          {
+            "facility": "St. Josefskrankenhaus Heidelberg GmbH",
+            "city": "Heidelberg",
+            "zip": "69115",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 49.40768,
+              "lon": 8.69079
+            }
+          },
+          {
+            "facility": "Universitaetsklinikum Schleswig-Holstein Campus Kiel",
+            "city": "Kiel",
+            "zip": "24105",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 54.32133,
+              "lon": 10.13489
+            }
+          },
+          {
+            "facility": "Velocity Clinical Research Leipzig GmBH",
+            "city": "Leipzig",
+            "zip": "4103",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.33962,
+              "lon": 12.37129
+            }
+          },
+          {
+            "facility": "Diabetologikum DDG Ludwigshafe",
+            "city": "Ludwigshafen",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 47.81663,
+              "lon": 9.06138
+            }
+          },
+          {
+            "facility": "Kliniken Maria Hilf GmbH Krankenhaus St. Franziskus",
+            "city": "Mönchengladbach",
+            "zip": "41063",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.18539,
+              "lon": 6.44172
+            }
+          },
+          {
+            "facility": "CDG Studienambulanz Dr. Hartard",
+            "city": "München",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.60698,
+              "lon": 13.31243
+            }
+          },
+          {
+            "facility": "Klinikum München Klinik Neuperlach",
+            "city": "München",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.60698,
+              "lon": 13.31243
+            }
+          },
+          {
+            "facility": "Praxis Drs. Haggenmiller/Jeserich",
+            "city": "Nuremberg",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 49.45421,
+              "lon": 11.07752
+            }
+          },
+          {
+            "facility": "RED-Institut GmbH",
+            "city": "Oldenburg in Holstein",
+            "zip": "23758",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 54.29498,
+              "lon": 10.89043
+            }
+          },
+          {
+            "facility": "Praxis Reinfeld Mitte",
+            "city": "Reinfeld",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 53.8311,
+              "lon": 10.49227
+            }
+          },
+          {
+            "facility": "Herz Kreislauf Zentrum - Klinikum Hersfeld Rotenburg GmbH",
+            "city": "Rotenburg (Wümme)",
+            "zip": "36199",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 53.11032,
+              "lon": 9.4036
+            }
+          },
+          {
+            "facility": "Studienzentrum Brinkum",
+            "city": "Stuhr",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 53.03333,
+              "lon": 8.75
+            }
+          },
+          {
+            "facility": "Gemeinschaftspraxis Dr. med. Josef und Dr. med. Wilma Grosskopf",
+            "city": "Wallerfing",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 48.68416,
+              "lon": 12.88035
+            }
+          },
+          {
+            "facility": "Forschungszentrum Ruhr",
+            "city": "Witten",
+            "zip": "58455",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.44362,
+              "lon": 7.35258
+            }
+          },
+          {
+            "facility": "INFO-MED Leipzig GmbH",
+            "city": "Zwenkau",
+            "zip": "4442",
+            "country": "Germany",
+            "geoPoint": {
+              "lat": 51.21872,
+              "lon": 12.33008
+            }
+          },
+          {
+            "facility": "Lausmed Kft",
+            "city": "Baja",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.18299,
+              "lon": 18.95307
+            }
+          },
+          {
+            "facility": "Tagore Medical Center",
+            "city": "Balatonfüred",
+            "zip": "8230",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.96188,
+              "lon": 17.87187
+            }
+          },
+          {
+            "facility": "Dr Lakatos Ferenc Belgyogyaszati-Kardiologiai Maganrendelo",
+            "city": "Békéscsaba",
+            "zip": "5600",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.68333,
+              "lon": 21.1
+            }
+          },
+          {
+            "facility": "Qualiclinic Kft",
+            "city": "Budapest",
+            "zip": "1036",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Semmelweis Egyetem - Szent Rokus Klinikai Tomb",
+            "city": "Budapest",
+            "zip": "1085",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Del-pesti Centrumkorhaz",
+            "city": "Budapest",
+            "zip": "1097",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "MED-TIMA Kft",
+            "city": "Budapest",
+            "zip": "1132",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Obudai Egeszsegugyi Centrum - Budapest",
+            "city": "Budapest",
+            "zip": "H-1036",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Semmelweis Egyetem - Varosmajori Sziv es Ergyogyaszati Klinika",
+            "city": "Budapest",
+            "zip": "H-1122",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Clinexpert Kft.",
+            "city": "Budapest",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "High Tech Medical Kft",
+            "city": "Budapest",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.49835,
+              "lon": 19.04045
+            }
+          },
+          {
+            "facility": "Belinus Bt",
+            "city": "Debrecen",
+            "zip": "4025",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.53167,
+              "lon": 21.62444
+            }
+          },
+          {
+            "facility": "CRU Hungary Kft.",
+            "city": "Encs",
+            "zip": "H-3860",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 48.33067,
+              "lon": 21.11169
+            }
+          },
+          {
+            "facility": "Pharma4 Trial Kft",
+            "city": "Gyöngyös",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.78257,
+              "lon": 19.928
+            }
+          },
+          {
+            "facility": "BKS Research Kft.",
+            "city": "Hatvan",
+            "zip": "3000",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.66667,
+              "lon": 19.68333
+            }
+          },
+          {
+            "facility": "Porcika Klinik",
+            "city": "Hódmezővásárhely",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.41667,
+              "lon": 20.33333
+            }
+          },
+          {
+            "facility": "Somogy Varmegyei Kaposi Mor Oktato Korhaz",
+            "city": "Kaposvár",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.36667,
+              "lon": 17.8
+            }
+          },
+          {
+            "facility": "Pest M. Flór F. Kórház V. Belgy. Oszt",
+            "city": "Kistarcsa",
+            "zip": "H- 2143",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.54757,
+              "lon": 19.26247
+            }
+          },
+          {
+            "facility": "Kistarcsai Flor Ferenc Korhaz",
+            "city": "Kistarcsa",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.54757,
+              "lon": 19.26247
+            }
+          },
+          {
+            "facility": "IPR Hungary Kft",
+            "city": "Miskolc",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 48.10327,
+              "lon": 20.77806
+            }
+          },
+          {
+            "facility": "dr Vasas Szilard Haziorvosi Rendelo",
+            "city": "Nyíregyháza",
+            "zip": "4405",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.95539,
+              "lon": 21.71671
+            }
+          },
+          {
+            "facility": "Medifarma-98 Kft",
+            "city": "Nyíregyháza",
+            "zip": "H-4400",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 47.95539,
+              "lon": 21.71671
+            }
+          },
+          {
+            "facility": "dr Nagy Laszlo Kardiologiai Maganrendeles es Klinikai Vizsgalohely",
+            "city": "Orosháza",
+            "zip": "5900",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.56667,
+              "lon": 20.66667
+            }
+          },
+          {
+            "facility": "Coromed SMO Kft",
+            "city": "Pécs",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.07617,
+              "lon": 18.22814
+            }
+          },
+          {
+            "facility": "Obudai Egeszsegugyi Centrum - Zalaegerszeg",
+            "city": "Zalaegerszeg",
+            "zip": "8900",
+            "country": "Hungary",
+            "geoPoint": {
+              "lat": 46.83695,
+              "lon": 16.84401
+            }
+          },
+          {
+            "facility": "Barzilai Medical Center",
+            "city": "Ashkelon",
+            "zip": "7830604",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 31.66926,
+              "lon": 34.57149
+            }
+          },
+          {
+            "facility": "Bnai Zion Medical Center",
+            "city": "Haifa",
+            "zip": "3104802",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.81303,
+              "lon": 34.99928
+            }
+          },
+          {
+            "facility": "Rambam Health Care Campus",
+            "city": "Haifa",
+            "zip": "3109601",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.81303,
+              "lon": 34.99928
+            }
+          },
+          {
+            "facility": "The Lady Davis Carmel Medical Center",
+            "city": "Haifa",
+            "zip": "3436212",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.81303,
+              "lon": 34.99928
+            }
+          },
+          {
+            "facility": "Shaare Zedek Medical Center",
+            "city": "Jerusalem",
+            "zip": "9103102",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 31.76904,
+              "lon": 35.21633
+            }
+          },
+          {
+            "facility": "Hadassah Hebrew University Medical Center - Cardiology - The Heart Institute",
+            "city": "Jerusalem",
+            "zip": "9112001",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 31.76904,
+              "lon": 35.21633
+            }
+          },
+          {
+            "facility": "Meir Medical Center",
+            "city": "Kfar Saba",
+            "zip": "44281",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.175,
+              "lon": 34.90694
+            }
+          },
+          {
+            "facility": "Galilee Medical Cente",
+            "city": "Nahariya",
+            "zip": "2210001",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 33.00892,
+              "lon": 35.09814
+            }
+          },
+          {
+            "facility": "Rabin Medical Center, Beilinson Hospital - Internal Medicine B",
+            "city": "Petah Tikva",
+            "zip": "4941492",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.08707,
+              "lon": 34.88747
+            }
+          },
+          {
+            "facility": "Rabin Medical Center, Beilinson Hospital",
+            "city": "Petah Tikva",
+            "zip": "4941492",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.08707,
+              "lon": 34.88747
+            }
+          },
+          {
+            "facility": "The BARUCH PADEH Medical Center, Poriya",
+            "city": "Poria – Neve Oved",
+            "zip": "1520800",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.74446,
+              "lon": 35.53855
+            }
+          },
+          {
+            "facility": "Kaplan Medical Center",
+            "city": "Rehovot",
+            "zip": "7610001",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 31.89421,
+              "lon": 34.81199
+            }
+          },
+          {
+            "facility": "Ziv Medical Center",
+            "city": "Safed",
+            "zip": "1340305",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 32.96465,
+              "lon": 35.496
+            }
+          },
+          {
+            "facility": "Shamir Medical Center (Assaf Harofeh)",
+            "city": "Ẕerifin",
+            "zip": "6093000",
+            "country": "Israel",
+            "geoPoint": {
+              "lat": 31.95731,
+              "lon": 34.84852
+            }
+          },
+          {
+            "facility": "Azienda Ospedaliero-Universitaria di Ferrara-Arcispedale Sant'Anna",
+            "city": "Ferrara",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 44.83804,
+              "lon": 11.62057
+            }
+          },
+          {
+            "facility": "IRCCS Ospedale San Raffaele",
+            "city": "Milan",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 42.78235,
+              "lon": 12.59836
+            }
+          },
+          {
+            "facility": "Azienda Ospedaliera Universitaria Federico II",
+            "city": "Naples",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 40.85216,
+              "lon": 14.26811
+            }
+          },
+          {
+            "facility": "Azienda Ospedaliera Universitaria Policlinico Paolo Giaccone",
+            "city": "Palermo",
+            "zip": "90127",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 38.1166,
+              "lon": 13.3636
+            }
+          },
+          {
+            "facility": "Fondazione IRCCS Policlinico San Matteo",
+            "city": "Pavia",
+            "zip": "27100",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 45.19205,
+              "lon": 9.15917
+            }
+          },
+          {
+            "facility": "Istituto Clinico Humanitas",
+            "city": "Rozzano",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 45.38193,
+              "lon": 9.1559
+            }
+          },
+          {
+            "facility": "Azienda Ospedaliera Santa Maria di Terni",
+            "city": "Terni",
+            "country": "Italy",
+            "geoPoint": {
+              "lat": 42.56335,
+              "lon": 12.64329
+            }
+          },
+          {
+            "facility": "Chiba University Hospital",
+            "city": "Chiba",
+            "zip": "260-8677",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 35.6,
+              "lon": 140.11667
+            }
+          },
+          {
+            "facility": "New Tokyo Heart Clinic",
+            "city": "Chiba",
+            "zip": "271-0077",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 35.6,
+              "lon": 140.11667
+            }
+          },
+          {
+            "facility": "Kokura Memorial Hospital",
+            "city": "Fukuoka",
+            "zip": "802-8555",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 33.6,
+              "lon": 130.41667
+            }
+          },
+          {
+            "facility": "Japan Community Health Care Organization Kyushu Hospital",
+            "city": "Fukuoka",
+            "zip": "806-8501",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 33.6,
+              "lon": 130.41667
+            }
+          },
+          {
+            "facility": "National Hospital Organization Takasaki General Medical Center",
+            "city": "Gunma",
+            "zip": "370-0829",
+            "country": "Japan"
+          },
+          {
+            "facility": "Hiroshima Prefectural Hospital",
+            "city": "Hiroshima",
+            "zip": "734-8530",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.4,
+              "lon": 132.45
+            }
+          },
+          {
+            "facility": "Hiroshima University Hospital",
+            "city": "Hiroshima",
+            "zip": "734-8551",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.4,
+              "lon": 132.45
+            }
+          },
+          {
+            "facility": "Hyogo Prefectural Harima-Himeji General Medical Center",
+            "city": "Hyōgo",
+            "zip": "670-8560",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 43.36667,
+              "lon": 144.43333
+            }
+          },
+          {
+            "facility": "Ishikawa Prefectural Central Hospital",
+            "city": "Ishikawa",
+            "zip": "920-8530",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 26.42333,
+              "lon": 127.82139
+            }
+          },
+          {
+            "facility": "Komatsu Municipal Hospital",
+            "city": "Ishikawa",
+            "zip": "923-8560",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 26.42333,
+              "lon": 127.82139
+            }
+          },
+          {
+            "facility": "Public Central Hospital of Matto lshikawa",
+            "city": "Ishikawa",
+            "zip": "924-8588",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 26.42333,
+              "lon": 127.82139
+            }
+          },
+          {
+            "facility": "Showa University Northern Yokohama Hospital",
+            "city": "Kanagawa",
+            "zip": "224-8503",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 37.58333,
+              "lon": 139.91667
+            }
+          },
+          {
+            "facility": "Yokohama Minami Kyousai Hospital",
+            "city": "Kanagawa",
+            "zip": "236-0037",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 37.58333,
+              "lon": 139.91667
+            }
+          },
+          {
+            "facility": "Niigata University Medical & Dental Hospital",
+            "city": "Niigata",
+            "zip": "951-8510",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 37.92259,
+              "lon": 139.04125
+            }
+          },
+          {
+            "facility": "The Sakakibara Heart Institute of Okayama",
+            "city": "Okayama",
+            "zip": "700-0804",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.65,
+              "lon": 133.93333
+            }
+          },
+          {
+            "facility": "Sakurabashi Watanabe Hospital",
+            "city": "Osaka",
+            "zip": "530-0001",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.69379,
+              "lon": 135.50107
+            }
+          },
+          {
+            "facility": "Saiseikai Senri Hospital",
+            "city": "Osaka",
+            "zip": "565-0862",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.69379,
+              "lon": 135.50107
+            }
+          },
+          {
+            "facility": "National Cerebral and Cardiovascular Center Research Institute",
+            "city": "Osaka",
+            "zip": "565-8565",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.69379,
+              "lon": 135.50107
+            }
+          },
+          {
+            "facility": "Osaka Medical and Pharmaceutical University Hospital",
+            "city": "Osaka",
+            "zip": "569-8686",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 34.69379,
+              "lon": 135.50107
+            }
+          },
+          {
+            "facility": "Tokyo Saiseikai Central Hospital",
+            "city": "Tokyo",
+            "zip": "108-0073",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 35.6895,
+              "lon": 139.69171
+            }
+          },
+          {
+            "facility": "Nihon University Itabashi Hospital",
+            "city": "Tokyo",
+            "zip": "173-8610",
+            "country": "Japan",
+            "geoPoint": {
+              "lat": 35.6895,
+              "lon": 139.69171
+            }
+          },
+          {
+            "facility": "Abdali Hospital",
+            "city": "Amman",
+            "country": "Jordan",
+            "geoPoint": {
+              "lat": 31.95522,
+              "lon": 35.94503
+            }
+          },
+          {
+            "facility": "Istishari Hospital",
+            "city": "Amman",
+            "country": "Jordan",
+            "geoPoint": {
+              "lat": 31.95522,
+              "lon": 35.94503
+            }
+          },
+          {
+            "facility": "Irbid Specialty Hospital",
+            "city": "Irbid",
+            "country": "Jordan",
+            "geoPoint": {
+              "lat": 32.55556,
+              "lon": 35.85
+            }
+          },
+          {
+            "facility": "Pharmaceutical Research Center -Jordan University of Science & Technology/King Abdulla University Hospital - Cardiology",
+            "city": "Irbid",
+            "country": "Jordan",
+            "geoPoint": {
+              "lat": 32.55556,
+              "lon": 35.85
+            }
+          },
+          {
+            "facility": "Latgales Medical Center",
+            "city": "Daugavpils",
+            "zip": "5417",
+            "country": "Latvia",
+            "geoPoint": {
+              "lat": 55.88333,
+              "lon": 26.53333
+            }
+          },
+          {
+            "facility": "SIA ANIO",
+            "city": "Daugavpils",
+            "country": "Latvia",
+            "geoPoint": {
+              "lat": 55.88333,
+              "lon": 26.53333
+            }
+          },
+          {
+            "facility": "D. Saulites-Kandevicas Private Practice",
+            "city": "Liepāja",
+            "country": "Latvia",
+            "geoPoint": {
+              "lat": 56.50474,
+              "lon": 21.01085
+            }
+          },
+          {
+            "facility": "Pauls Stradins Clinical University Hospital Riga",
+            "city": "Riga",
+            "zip": "1002",
+            "country": "Latvia",
+            "geoPoint": {
+              "lat": 56.946,
+              "lon": 24.10589
+            }
+          },
+          {
+            "facility": "Vidzemes Hospital",
+            "city": "Valmiera",
+            "zip": "4201",
+            "country": "Latvia",
+            "geoPoint": {
+              "lat": 57.54108,
+              "lon": 25.42751
+            }
+          },
+          {
+            "facility": "Academic Medical Center - Department of Vascular Medicine",
+            "city": "Amsterdam",
+            "zip": "1105AZ",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.37403,
+              "lon": 4.88969
+            }
+          },
+          {
+            "facility": "Ziekenhuis Rijnstate",
+            "city": "Arnhem",
+            "zip": "6815 AD",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.98,
+              "lon": 5.91111
+            }
+          },
+          {
+            "facility": "Rode Kruis Ziekenhuis",
+            "city": "Beverwijk",
+            "zip": "1942 LE",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.48333,
+              "lon": 4.65694
+            }
+          },
+          {
+            "facility": "Reinier de Graaf Gasthuis",
+            "city": "Delft",
+            "zip": "2625 AD",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.00667,
+              "lon": 4.35556
+            }
+          },
+          {
+            "facility": "Het Van Weel-Bethesda Ziekenhuis",
+            "city": "Dirksland",
+            "zip": "3247 BW",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.74917,
+              "lon": 4.1
+            }
+          },
+          {
+            "facility": "Albert Schweitzer Ziekenhuis - Location Dordrecht",
+            "city": "Dordrecht",
+            "zip": "3331 LZ",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.81,
+              "lon": 4.67361
+            }
+          },
+          {
+            "facility": "Ziekenhuis Gelderse Vallei",
+            "city": "Ede",
+            "zip": "6716 RP",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.03333,
+              "lon": 5.65833
+            }
+          },
+          {
+            "facility": "Maxima Medisch Centrum",
+            "city": "Eindhoven",
+            "zip": "5504 DB",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.44083,
+              "lon": 5.47778
+            }
+          },
+          {
+            "facility": "Groene Hart Ziekenhuis",
+            "city": "Gouda",
+            "zip": "2803 HH",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.01667,
+              "lon": 4.70833
+            }
+          },
+          {
+            "facility": "St. Jansdal Ziekenhuis",
+            "city": "Harderwijk",
+            "zip": "3844 DG",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.34167,
+              "lon": 5.62083
+            }
+          },
+          {
+            "facility": "Elkerliek Ziekenhuis - Locatie Helmond",
+            "city": "Helmond",
+            "zip": "5707 HA",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.48167,
+              "lon": 5.66111
+            }
+          },
+          {
+            "facility": "Treant Zorggroep",
+            "city": "Hoogeveen",
+            "zip": "7827",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.7225,
+              "lon": 6.47639
+            }
+          },
+          {
+            "facility": "Leids Universitair Medisch Centrum",
+            "city": "Leiden",
+            "zip": "2333 ZA",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.15833,
+              "lon": 4.49306
+            }
+          },
+          {
+            "facility": "Stichting Radboud Universitair Medisch Centrum",
+            "city": "Nijmegen",
+            "zip": "6525 GA",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.8425,
+              "lon": 5.85278
+            }
+          },
+          {
+            "facility": "Canisius-Wilhelmina Ziekenhuis (CWZ)",
+            "city": "Nijmegen",
+            "zip": "6532 SZ",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.8425,
+              "lon": 5.85278
+            }
+          },
+          {
+            "facility": "Franciscus Gasthuis & Vlietland - Locatie Gasthuis",
+            "city": "Rotterdam",
+            "zip": "PM 3045",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.9225,
+              "lon": 4.47917
+            }
+          },
+          {
+            "facility": "HMC Westeinde",
+            "city": "The Hague",
+            "zip": "2512 VA",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.07667,
+              "lon": 4.29861
+            }
+          },
+          {
+            "facility": "Diakonessenhuis - Locatie Utrecht",
+            "city": "Utrecht",
+            "zip": "3582 KE",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.09083,
+              "lon": 5.12222
+            }
+          },
+          {
+            "facility": "VieCuri Medisch Centrum",
+            "city": "Venlo",
+            "zip": "5912 BL",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.37,
+              "lon": 6.16806
+            }
+          },
+          {
+            "facility": "Zaans Medisch Centrum",
+            "city": "Zaandam",
+            "zip": "1502 DV",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.43854,
+              "lon": 4.82643
+            }
+          },
+          {
+            "facility": "Albert Schweitzer Ziekenhuis - Location Zwijndrecht",
+            "city": "Zwijndrecht",
+            "zip": "3331 LZ",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.8175,
+              "lon": 4.63333
+            }
+          },
+          {
+            "facility": "CENTRUM MEDYCZNE INTERCOR Sp. z o.o.",
+            "city": "Bydgoszcz",
+            "zip": "85-605",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.1235,
+              "lon": 18.00762
+            }
+          },
+          {
+            "facility": "Centrum Medyczne Pratia Bydgoszcz",
+            "city": "Bydgoszcz",
+            "zip": "85-796",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.1235,
+              "lon": 18.00762
+            }
+          },
+          {
+            "facility": "Centrum Medyczne Kermed - Renata Bijata-Bronisz I Ewa Kowalinska Spólka Jawna",
+            "city": "Bydgoszcz",
+            "zip": "85231",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.1235,
+              "lon": 18.00762
+            }
+          },
+          {
+            "facility": "DIAB Serwis Popenda Spólka Jawna",
+            "city": "Chorzów",
+            "zip": "41-500",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.30582,
+              "lon": 18.9742
+            }
+          },
+          {
+            "facility": "NZOZ Twoje Zdrowie EL Sp. z o.o.",
+            "city": "Elblag",
+            "zip": "82-300",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 54.1522,
+              "lon": 19.40884
+            }
+          },
+          {
+            "facility": "Indywidualna Specjalistyczna Praktyka Lekarska dr n. med. Adam Grzybowski",
+            "city": "Gdansk",
+            "zip": "80-262",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 54.35227,
+              "lon": 18.64912
+            }
+          },
+          {
+            "facility": "Uniwersyteckie Centrum Kliniczne, I Klinika Kardiologii",
+            "city": "Gdansk",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 54.35227,
+              "lon": 18.64912
+            }
+          },
+          {
+            "facility": "Indywidualna Specjalistyczna Praktyka Lekarska w Dziedzinie Kardiologii, lek. med. Krzysztof Cymerman",
+            "city": "Gdynia",
+            "zip": "81-157",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 54.51889,
+              "lon": 18.53188
+            }
+          },
+          {
+            "facility": "Samodzielny Publiczny Specjalistyczny Szpital Zachodni im. Jana Pawla II",
+            "city": "Grodzisk Mazowiecki",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.10387,
+              "lon": 20.6337
+            }
+          },
+          {
+            "facility": "Centrum Medyczne Pratia Katowice",
+            "city": "Katowice",
+            "zip": "40-081",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.2597,
+              "lon": 19.02173
+            }
+          },
+          {
+            "facility": "SALVIA Lekston i Madej s.j.",
+            "city": "Katowice",
+            "zip": "40-675",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.2597,
+              "lon": 19.02173
+            }
+          },
+          {
+            "facility": "Silmedic Sp. z o.o.",
+            "city": "Katowice",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.2597,
+              "lon": 19.02173
+            }
+          },
+          {
+            "facility": "Ewa Mirek-Bryniarska Specjalistyczna Praktyka Lekarska",
+            "city": "Krakow",
+            "zip": "30-082",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.06143,
+              "lon": 19.93658
+            }
+          },
+          {
+            "facility": "Pratia MCM Krakow",
+            "city": "Krakow",
+            "zip": "30-510",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.06143,
+              "lon": 19.93658
+            }
+          },
+          {
+            "facility": "Krakowski Szpital Specjalistyczny im. Jana Pawla II - Oddzial Kliniczny Kardiologii Interwencyjnej z Pododdzialem Intenyswengo Nadzoru Kardiologicznego",
+            "city": "Krakow",
+            "zip": "31-202",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.06143,
+              "lon": 19.93658
+            }
+          },
+          {
+            "facility": "Centrum Medyczne ZDROWA",
+            "city": "Krakow",
+            "zip": "31-216",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.06143,
+              "lon": 19.93658
+            }
+          },
+          {
+            "facility": "Krakowskie Centrum Medyczne Sp. z o.o.",
+            "city": "Krakow",
+            "zip": "31-501",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.06143,
+              "lon": 19.93658
+            }
+          },
+          {
+            "facility": "ETG Lodz - Santa Sp. z. o.o.",
+            "city": "Lodz",
+            "zip": "90-302",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.77058,
+              "lon": 19.47395
+            }
+          },
+          {
+            "facility": "FutureMeds Lodz",
+            "city": "Lodz",
+            "zip": "91-363",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.77058,
+              "lon": 19.47395
+            }
+          },
+          {
+            "facility": "INSTYTUT CENTRUM ZDROWIA MATKI POLKI - Klinika Kardiologii i Wad Wrodzonych Doroslych",
+            "city": "Lodz",
+            "zip": "93-338",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.77058,
+              "lon": 19.47395
+            }
+          },
+          {
+            "facility": "Indywidualna Specjalistyczna Praktyka Lekarska Wlodzimierz Kus",
+            "city": "Lodz",
+            "zip": "94-255",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.77058,
+              "lon": 19.47395
+            }
+          },
+          {
+            "facility": "Clinical Best Solutions - Lublin",
+            "city": "Lublin",
+            "zip": "20-078",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.25058,
+              "lon": 22.57009
+            }
+          },
+          {
+            "facility": "KO - MED Centra Kliniczne Lublin II",
+            "city": "Lublin",
+            "zip": "20-362",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.25058,
+              "lon": 22.57009
+            }
+          },
+          {
+            "facility": "ETG Lublin - Pro Life Medica Sp. z o.o",
+            "city": "Lublin",
+            "zip": "20-412",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.25058,
+              "lon": 22.57009
+            }
+          },
+          {
+            "facility": "Szpital Sw. Anny w Miechowie",
+            "city": "Miechów",
+            "zip": "32-086",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.35648,
+              "lon": 20.02788
+            }
+          },
+          {
+            "facility": "Pomorskie Centra Kardiologiczne Sp. z o.o., SKA - Mragowo",
+            "city": "Mrągowo",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.86437,
+              "lon": 21.30507
+            }
+          },
+          {
+            "facility": "Futuremeds Olsztyn",
+            "city": "Olsztyn",
+            "zip": "10-010",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.78376,
+              "lon": 20.49272
+            }
+          },
+          {
+            "facility": "Ostrowieckie Centrum Medyczne spólka cywilna Anna Olech-Cudzik",
+            "city": "Ostrowiec Świętokrzyski",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.92936,
+              "lon": 21.38525
+            }
+          },
+          {
+            "facility": "ZOZ w Olawie, Oddzial Chorob Wewnetrznych",
+            "city": "Oława",
+            "zip": "55-200",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.9466,
+              "lon": 17.2926
+            }
+          },
+          {
+            "facility": "Centrum Medyczne OMEDICA Jaroslaw Opiela i Beata Opiela s. j.",
+            "city": "Poznan",
+            "zip": "60-111",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.40692,
+              "lon": 16.92993
+            }
+          },
+          {
+            "facility": "NZOZ Neuro-Kard - Ilkowski i Partnerzy Spólka Partnerska Lekarzy",
+            "city": "Poznan",
+            "zip": "61-853",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.40692,
+              "lon": 16.92993
+            }
+          },
+          {
+            "facility": "Aka-Med Centrum Spólka Z Ograniczona Odpowiedzialnoscia",
+            "city": "Ruda Śląska",
+            "zip": "41-710",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.2584,
+              "lon": 18.85632
+            }
+          },
+          {
+            "facility": "ETG Siedlce- Lukmed 2 Sp. z o.o.",
+            "city": "Siedlce",
+            "zip": "08-110",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.16772,
+              "lon": 22.29006
+            }
+          },
+          {
+            "facility": "ETG Skierniewice - ClinMedica Research Sp. z o.o.",
+            "city": "Skierniewice",
+            "zip": "96-100",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.95485,
+              "lon": 20.15837
+            }
+          },
+          {
+            "facility": "NZOZ Pro Cordis Sopockie Centrum Badan Kardiologicznych",
+            "city": "Sopot",
+            "zip": "81-423",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 54.4418,
+              "lon": 18.56003
+            }
+          },
+          {
+            "facility": "Nowe Zdrowie-Ck Kieltucki i Wspolnicy Spolka Jawna",
+            "city": "Staszów",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.56307,
+              "lon": 21.16593
+            }
+          },
+          {
+            "facility": "Osrodek Badan Klinicznych LabMed Agnieszka Karczmarczyk, Filip Karczmarczyk Spólka Cywilna",
+            "city": "Szczecin",
+            "zip": "71-526",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.42894,
+              "lon": 14.55302
+            }
+          },
+          {
+            "facility": "Prywatny Gabinet Lekarski Jacek Gessek",
+            "city": "Torun",
+            "zip": "87-100",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 53.01375,
+              "lon": 18.59814
+            }
+          },
+          {
+            "facility": "FutureMeds Warszawa Centrum",
+            "city": "Warsaw",
+            "zip": "00-215",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.22977,
+              "lon": 21.01178
+            }
+          },
+          {
+            "facility": "ETG Warszawa- MCM Polimedica 2 Sp. z o.o.",
+            "city": "Warsaw",
+            "zip": "02-793",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.22977,
+              "lon": 21.01178
+            }
+          },
+          {
+            "facility": "FutureMeds Targowek",
+            "city": "Warsaw",
+            "zip": "03-291",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.22977,
+              "lon": 21.01178
+            }
+          },
+          {
+            "facility": "Clinical Best Solutions Sp. z.o.o Spolka Komandytowa",
+            "city": "Warsaw",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.22977,
+              "lon": 21.01178
+            }
+          },
+          {
+            "facility": "Narodowy Instytut Kardiologii Stefana kardynala Wyszynskiego - Panstwowy Instytut Badawczy, Poradnia Prewencji i Leczenia Chorob Metabolicznych, Zaklad Epidemiologii, Prewencji Chorób Ukladu Krazeni",
+            "city": "Warsaw",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 52.22977,
+              "lon": 21.01178
+            }
+          },
+          {
+            "facility": "FutureMeds Sp. z o.o",
+            "city": "Wroclaw",
+            "zip": "50-088",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.10286,
+              "lon": 17.03006
+            }
+          },
+          {
+            "facility": "4 Wojskowy Szpital Kliniczny z Poliklinika Samodzielny Publiczny ZOZ we Wroclawiu",
+            "city": "Wroclaw",
+            "zip": "50-981",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.10286,
+              "lon": 17.03006
+            }
+          },
+          {
+            "facility": "Wroclawska Grupa Medyczna Pankiewicz Spolka Jawna",
+            "city": "Wroclaw",
+            "zip": "53-149",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 51.10286,
+              "lon": 17.03006
+            }
+          },
+          {
+            "facility": "ETG Zamosc - Pro Life Medica Sp. z o.o",
+            "city": "Zamość",
+            "zip": "22 - 400",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.72314,
+              "lon": 23.25196
+            }
+          },
+          {
+            "facility": "KO - MED Centra Kliniczne Sp. z o.o., Osrodek Badan Klinicznych w Zamosciu",
+            "city": "Zamość",
+            "zip": "22-400",
+            "country": "Poland",
+            "geoPoint": {
+              "lat": 50.72314,
+              "lon": 23.25196
+            }
+          },
+          {
+            "facility": "Stredoslovensky ustav srdcovych a cievnych chorob, a.s.",
+            "city": "Banská Bystrica",
+            "zip": "974 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.73947,
+              "lon": 19.14932
+            }
+          },
+          {
+            "facility": "Alian, s.r.o., Kardiologicka ambulancia",
+            "city": "Bardejov",
+            "zip": "085 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.29175,
+              "lon": 21.27271
+            }
+          },
+          {
+            "facility": "DIADA s.r.o.",
+            "city": "Bardejov",
+            "zip": "085 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.29175,
+              "lon": 21.27271
+            }
+          },
+          {
+            "facility": "Thyreomedical s.r.o.",
+            "city": "Bardejov",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.29175,
+              "lon": 21.27271
+            }
+          },
+          {
+            "facility": "Medispektrum s.r.o., Diabetologicka a metabolicka ambulancia",
+            "city": "Bratislava",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.14816,
+              "lon": 17.10674
+            }
+          },
+          {
+            "facility": "Univerzitna nemocnica Bratislava",
+            "city": "Bratislava",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.14816,
+              "lon": 17.10674
+            }
+          },
+          {
+            "facility": "Kardiologicka ambulancia NsP, n.o.",
+            "city": "Brezno",
+            "zip": "977 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.80431,
+              "lon": 19.63631
+            }
+          },
+          {
+            "facility": "JM-INTERNA, s.r.o., Ambulancia vnutorneho lekarstva",
+            "city": "Dolný Kubín",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.20983,
+              "lon": 19.30341
+            }
+          },
+          {
+            "facility": "Cardio D&R, S.R.O. Kosice",
+            "city": "Košice",
+            "zip": "040 22",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.71441,
+              "lon": 21.25802
+            }
+          },
+          {
+            "facility": "Human-Care s.r.o",
+            "city": "Košice",
+            "zip": "4001",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.71441,
+              "lon": 21.25802
+            }
+          },
+          {
+            "facility": "Medical group Kosice, s.r.o. - Kardiologicka a Interna ambulancia",
+            "city": "Košice",
+            "zip": "4001",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.71441,
+              "lon": 21.25802
+            }
+          },
+          {
+            "facility": "KardioLEV s. r. o.",
+            "city": "Levoča",
+            "zip": "054 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.02173,
+              "lon": 20.59212
+            }
+          },
+          {
+            "facility": "Kardiomed s.r.o.",
+            "city": "Lučenec",
+            "zip": "984 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.33249,
+              "lon": 19.66708
+            }
+          },
+          {
+            "facility": "KARDIO 1 s.r.o.",
+            "city": "Lučenec",
+            "zip": "98401",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.33249,
+              "lon": 19.66708
+            }
+          },
+          {
+            "facility": "Interna a diabetologicka ambulancia - IN - DIA s.r.o., MUDr. Livia Tomasova",
+            "city": "Lučenec",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.33249,
+              "lon": 19.66708
+            }
+          },
+          {
+            "facility": "Univerzitna nemocnica Martin",
+            "city": "Martin",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.06651,
+              "lon": 18.92399
+            }
+          },
+          {
+            "facility": "Medi M and M sro",
+            "city": "Moldava nad Bodvou",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.61428,
+              "lon": 20.99957
+            }
+          },
+          {
+            "facility": "Kardiocentrum Nitra s.r.o.",
+            "city": "Nitra",
+            "zip": "949 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.30763,
+              "lon": 18.08453
+            }
+          },
+          {
+            "facility": "Medical KG, s.r.o. - Ambulancia vnutorneho lekarstva",
+            "city": "Piešťany",
+            "zip": "92101",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.59479,
+              "lon": 17.82591
+            }
+          },
+          {
+            "facility": "Medispol, s.r.o.",
+            "city": "Prešov",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.99923,
+              "lon": 21.2355
+            }
+          },
+          {
+            "facility": "Tatratrial s.r.o",
+            "city": "Rožňava",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.66009,
+              "lon": 20.53758
+            }
+          },
+          {
+            "facility": "Interna SK, s.r.o., Kardiologicka a interna ambulancia",
+            "city": "Svidník",
+            "zip": "8901",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.30819,
+              "lon": 21.5703
+            }
+          },
+          {
+            "facility": "JAL s.r.o.",
+            "city": "Trnava",
+            "zip": "917 01",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 48.37773,
+              "lon": 17.58603
+            }
+          },
+          {
+            "facility": "Medivasa, s.r.o., Angiologicka a kardiologicka ambulancia",
+            "city": "Žilina",
+            "zip": "1001",
+            "country": "Slovakia",
+            "geoPoint": {
+              "lat": 49.22315,
+              "lon": 18.73941
+            }
+          },
+          {
+            "facility": "Iatros International",
+            "city": "Bloemfontein",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -29.12107,
+              "lon": 26.214
+            }
+          },
+          {
+            "facility": "Tiervlei Trial Centre (TTC)",
+            "city": "Cape Town",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -33.92584,
+              "lon": 18.42322
+            }
+          },
+          {
+            "facility": "TREAD Research - Department of Cardiology",
+            "city": "Cape Town",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -33.92584,
+              "lon": 18.42322
+            }
+          },
+          {
+            "facility": "WCR - Bara Cardiology",
+            "city": "Johannesburg",
+            "zip": "2013",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -26.20227,
+              "lon": 28.04363
+            }
+          },
+          {
+            "facility": "Dr JM Engelbrecht Trial Site",
+            "city": "Somerset West",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -34.08401,
+              "lon": 18.82113
+            }
+          },
+          {
+            "facility": "Helderberg Research Institute",
+            "city": "Somerset West",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -34.08401,
+              "lon": 18.82113
+            }
+          },
+          {
+            "facility": "Mediclinic Victoria",
+            "city": "Tongaat",
+            "country": "South Africa",
+            "geoPoint": {
+              "lat": -29.57366,
+              "lon": 31.11552
+            }
+          },
+          {
+            "facility": "Hospital Universitario de A Coruna",
+            "city": "A Coruña",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 43.37135,
+              "lon": -8.396
+            }
+          },
+          {
+            "facility": "Hospital General Universitario de Alicante Dr. Balmis",
+            "city": "Alicante",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 38.34517,
+              "lon": -0.48149
+            }
+          },
+          {
+            "facility": "Hospital Universitario Torrecardenas",
+            "city": "Almería",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 36.83814,
+              "lon": -2.45974
+            }
+          },
+          {
+            "facility": "Hospital del Mar",
+            "city": "Barcelona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.38879,
+              "lon": 2.15899
+            }
+          },
+          {
+            "facility": "Hospital Universitari de Bellvitge",
+            "city": "Barcelona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.38879,
+              "lon": 2.15899
+            }
+          },
+          {
+            "facility": "Hospital Universitario Vall d'Hebron",
+            "city": "Barcelona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.38879,
+              "lon": 2.15899
+            }
+          },
+          {
+            "facility": "Hospital Universitario Reina Sofia",
+            "city": "Córdoba",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 37.89155,
+              "lon": -4.77275
+            }
+          },
+          {
+            "facility": "Hospital Universitario Virgen de las Nieves",
+            "city": "Granada",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 37.18817,
+              "lon": -3.60667
+            }
+          },
+          {
+            "facility": "Hospital General Universitario Gregorio Maranon",
+            "city": "Madrid",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 40.4165,
+              "lon": -3.70256
+            }
+          },
+          {
+            "facility": "Hospital Universitario Virgen de la Victoria",
+            "city": "Málaga",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 36.72016,
+              "lon": -4.42034
+            }
+          },
+          {
+            "facility": "Hospital Clinico Universitario de Santiago",
+            "city": "Santiago de Compostela",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 42.88052,
+              "lon": -8.54569
+            }
+          },
+          {
+            "facility": "Hospital Universitario Virgen Macarena",
+            "city": "Seville",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 37.38283,
+              "lon": -5.97317
+            }
+          },
+          {
+            "facility": "Hospital Universitario Joan XXIII de Tarragona",
+            "city": "Tarragona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.11905,
+              "lon": 1.24544
+            }
+          },
+          {
+            "facility": "Hospital Clinico Universitario de Valencia",
+            "city": "Valencia",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 39.47391,
+              "lon": -0.37966
+            }
+          },
+          {
+            "facility": "Hospital Alvaro Cunqueiro",
+            "city": "Vigo",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 42.23282,
+              "lon": -8.72264
+            }
+          },
+          {
+            "facility": "Hospital Universitario Miguel Servet",
+            "city": "Zaragoza",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.65606,
+              "lon": -0.87734
+            }
+          },
+          {
+            "facility": "Atlantic Medical Group",
+            "city": "Penzance",
+            "state": "Cornwall",
+            "zip": "TR18 3DX",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.11861,
+              "lon": -5.53715
+            }
+          },
+          {
+            "facility": "Mounts Bay Medical",
+            "city": "Penzance",
+            "state": "Cornwall",
+            "zip": "TR19 7HU",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.11861,
+              "lon": -5.53715
+            }
+          },
+          {
+            "facility": "Ulster Hospital",
+            "city": "Belfast",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 54.59682,
+              "lon": -5.92541
+            }
+          },
+          {
+            "facility": "FutureMeds - Soho Road Health Centre",
+            "city": "Birmingham",
+            "zip": "B21 9RY",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.48142,
+              "lon": -1.89983
+            }
+          },
+          {
+            "facility": "Birmingham Heartlands Hospital",
+            "city": "Birmingham",
+            "zip": "B9 5SS",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.48142,
+              "lon": -1.89983
+            }
+          },
+          {
+            "facility": "Waterloo Medical Centre",
+            "city": "Blackpool",
+            "zip": "FY4 3AD",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.81667,
+              "lon": -3.05
+            }
+          },
+          {
+            "facility": "University Hospital of Wales",
+            "city": "Cardiff",
+            "zip": "CF14 4XW",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.48,
+              "lon": -3.18
+            }
+          },
+          {
+            "facility": "FutureMeds - Ely Bridge Surgery",
+            "city": "Cardiff",
+            "zip": "CF5 4AD",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.48,
+              "lon": -3.18
+            }
+          },
+          {
+            "facility": "Darlington Memorial Hospital",
+            "city": "Durham",
+            "zip": "DL3 6HX",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 54.77676,
+              "lon": -1.57566
+            }
+          },
+          {
+            "facility": "Panthera - London North",
+            "city": "Enfield",
+            "zip": "EN3 4GS",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.65147,
+              "lon": -0.08497
+            }
+          },
+          {
+            "facility": "Fowey River Practice",
+            "city": "Fowey",
+            "zip": "PL23 1DT",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.33634,
+              "lon": -4.6386
+            }
+          },
+          {
+            "facility": "Panthera - Glasgow",
+            "city": "Glasgow",
+            "zip": "G51 4LB",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 55.86515,
+              "lon": -4.25763
+            }
+          },
+          {
+            "facility": "Futuremeds - CPS Research",
+            "city": "Glasgow",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 55.86515,
+              "lon": -4.25763
+            }
+          },
+          {
+            "facility": "Hounslow Medical Centre",
+            "city": "Hounslow",
+            "zip": "TW3 3ET",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.46839,
+              "lon": -0.36092
+            }
+          },
+          {
+            "facility": "St. Bartholomew's Hospital",
+            "city": "London",
+            "zip": "EC1M 6BQ",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.50853,
+              "lon": -0.12574
+            }
+          },
+          {
+            "facility": "The Good Practice",
+            "city": "London",
+            "zip": "SW10 0LR",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.50853,
+              "lon": -0.12574
+            }
+          },
+          {
+            "facility": "Chelsea and Westminster Hospital",
+            "city": "London",
+            "zip": "TW7 6AF",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.50853,
+              "lon": -0.12574
+            }
+          },
+          {
+            "facility": "Luton and Dunstable University Hospital",
+            "city": "Luton",
+            "zip": "LU4 0DZ",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.87967,
+              "lon": -0.41748
+            }
+          },
+          {
+            "facility": "FutureMeds - Bridle Road Clinic",
+            "city": "Metropolitan Borough of Wirral",
+            "zip": "CH62 6EE",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.37616,
+              "lon": -3.10501
+            }
+          },
+          {
+            "facility": "Beacon Medical Group",
+            "city": "Plymouth",
+            "zip": "PL7 2QP",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.37153,
+              "lon": -4.14305
+            }
+          },
+          {
+            "facility": "Craigavon Area Hospital",
+            "city": "Portadown",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 54.42302,
+              "lon": -6.44434
+            }
+          },
+          {
+            "facility": "Panthera - Preston",
+            "city": "Preston",
+            "zip": "PR2 9QB",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.76282,
+              "lon": -2.70452
+            }
+          },
+          {
+            "facility": "Panthera - Manchester",
+            "city": "Rochdale",
+            "zip": "OL11 4AU",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.61766,
+              "lon": -2.1552
+            }
+          },
+          {
+            "facility": "Queens Hospital",
+            "city": "Romford",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.57515,
+              "lon": 0.18582
+            }
+          },
+          {
+            "facility": "Panthera - Sheffield",
+            "city": "Sheffield",
+            "zip": "S2 5FX",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.38297,
+              "lon": -1.4659
+            }
+          },
+          {
+            "facility": "Sandwell General Hospital",
+            "city": "West Bromwich",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.51868,
+              "lon": -1.9945
+            }
+          },
+          {
+            "facility": "Worcestershire Royal Hospital",
+            "city": "Worcester",
+            "zip": "WR5 1DD",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.18935,
+              "lon": -2.22001
+            }
+          }
+        ]
+      },
+      "ipdSharingStatementModule": {
+        "ipdSharing": "NO"
+      }
+    },
+    "derivedSection": {
+      "miscInfoModule": {
+        "versionHolder": "2026-09-11"
+      },
+      "conditionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D050197",
+            "term": "Atherosclerosis"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D001161",
+            "term": "Arteriosclerosis"
+          },
+          {
+            "id": "D001157",
+            "term": "Arterial Occlusive Diseases"
+          },
+          {
+            "id": "D014652",
+            "term": "Vascular Diseases"
+          },
+          {
+            "id": "D002318",
+            "term": "Cardiovascular Diseases"
+          }
+        ]
+      }
+    },
+    "hasResults": false
+  }
+}

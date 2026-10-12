@@ -1,0 +1,543 @@
+{
+  "dedup_collapse": {
+    "examples": [
+      {
+        "canonical_key": "id|omega 3|ab1 bact bir other inf agents",
+        "raw_label_pairs": [
+          [
+            "Omega-3 Fatty Acids",
+            "Bacterial, viral and other infectious agents"
+          ],
+          [
+            "Omega-3 Fatty Acids to Total Fatty Acids percentage",
+            "Bacterial, viral and other infectious agents"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|dha|ab1 bact intest oth",
+        "raw_label_pairs": [
+          [
+            "Docosahexaenoic Acid",
+            "Other bacterial intestinal infections"
+          ],
+          [
+            "Docosahexaenoic Acid to Total Fatty Acids percentage",
+            "Other bacterial intestinal infections"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|dha|ab1 mycoses",
+        "raw_label_pairs": [
+          [
+            "Docosahexaenoic Acid",
+            "Mycoses"
+          ],
+          [
+            "Docosahexaenoic Acid to Total Fatty Acids percentage",
+            "Mycoses"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|omega 3|ab1 mycoses",
+        "raw_label_pairs": [
+          [
+            "Omega-3 Fatty Acids",
+            "Mycoses"
+          ],
+          [
+            "Omega-3 Fatty Acids to Total Fatty Acids percentage",
+            "Mycoses"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|l ldl c|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Cholesterol in Large LDL",
+            "Other bacterial diseases"
+          ],
+          [
+            "Cholesterol to Total Lipids in Large LDL percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|l ldl ce|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Cholesteryl Esters in Large LDL",
+            "Other bacterial diseases"
+          ],
+          [
+            "Cholesteryl Esters to Total Lipids in Large LDL percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|l ldl fc|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Free Cholesterol in Large LDL",
+            "Other bacterial diseases"
+          ],
+          [
+            "Free Cholesterol to Total Lipids in Large LDL percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|la|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Linoleic Acid",
+            "Other bacterial diseases"
+          ],
+          [
+            "Linoleic Acid to Total Fatty Acids percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|m ldl c|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Cholesterol in Medium LDL",
+            "Other bacterial diseases"
+          ],
+          [
+            "Cholesterol to Total Lipids in Medium LDL percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      },
+      {
+        "canonical_key": "id|m ldl fc|ab1 other bacterial",
+        "raw_label_pairs": [
+          [
+            "Free Cholesterol in Medium LDL",
+            "Other bacterial diseases"
+          ],
+          [
+            "Free Cholesterol to Total Lipids in Medium LDL percentage",
+            "Other bacterial diseases"
+          ]
+        ]
+      }
+    ],
+    "keys": 9801,
+    "keys_with_multiple_raw_labels": 1003
+  },
+  "direction_vocabulary": [
+    {
+      "by_screen_status": {
+        "already_present": 304,
+        "new_pair": 17405
+      },
+      "direction": "forward"
+    },
+    {
+      "by_screen_status": {
+        "excluded_direction": 2751
+      },
+      "direction": "reverse"
+    }
+  ],
+  "empty_direction_kept_as_forward": 0,
+  "identity_resolution": {
+    "candidate_pairs.csv": {
+      "disease_id_present": 17724,
+      "metabolite_id_present": 17724,
+      "rows": 20460,
+      "rows_keyed_on_name_only": 2736,
+      "rows_with_an_id_key": 17724,
+      "rows_with_no_key": 0
+    },
+    "new_unique_pairs.csv": {
+      "disease_id_present": 7205,
+      "metabolite_id_present": 7205,
+      "rows": 9801,
+      "rows_keyed_on_name_only": 2596,
+      "rows_with_an_id_key": 7205,
+      "rows_with_no_key": 0
+    }
+  },
+  "metabolite_vocabulary": {
+    "distinct_raw": 446,
+    "normalize_collision_count": 1,
+    "normalize_collisions": {
+      "glycine": [
+        "Glycine",
+        "glycine"
+      ]
+    }
+  },
+  "numeric_offender_samples": {
+    "ci_low_gt_ci_high": [
+      [
+        2879,
+        "1.19072089664149 > 1.06602302394454"
+      ],
+      [
+        2880,
+        "0.984292363898312 > 0.923396762067993"
+      ],
+      [
+        2881,
+        "1.21700527617954 > 1.04969622004367"
+      ],
+      [
+        2882,
+        "1.21064557831965 > 1.03758412015125"
+      ],
+      [
+        2883,
+        "1.152561799933 > 1.01768808132777"
+      ],
+      [
+        2884,
+        "1.16293704448301 > 1.05086122198223"
+      ],
+      [
+        2885,
+        "0.890106231970595 > 0.720827942671617"
+      ],
+      [
+        2886,
+        "1.16337164924146 > 1.04667924939673"
+      ],
+      [
+        2887,
+        "0.956089814132088 > 0.814744935570121"
+      ],
+      [
+        2888,
+        "1.16689923808608 > 1.0212395524959"
+      ],
+      [
+        2889,
+        "0.944881800756922 > 0.74860373949612"
+      ],
+      [
+        2890,
+        "0.940497263556338 > 0.804188888674396"
+      ],
+      [
+        2891,
+        "0.944340460580849 > 0.815764152292785"
+      ],
+      [
+        2892,
+        "1.83834163801989 > 1.16343092702795"
+      ],
+      [
+        2893,
+        "1.11453032970048 > 1.02147082598559"
+      ],
+      [
+        2894,
+        "0.978548712846874 > 0.892037271019543"
+      ],
+      [
+        2895,
+        "0.994295785395281 > 0.950879414473022"
+      ],
+      [
+        2896,
+        "0.987696042903302 > 0.944855173212692"
+      ],
+      [
+        2897,
+        "0.987639228261983 > 0.924289012674222"
+      ],
+      [
+        2898,
+        "0.96780758226159 > 0.90216940170364"
+      ]
+    ],
+    "p_exactly_zero": [
+      [
+        4468,
+        "0"
+      ],
+      [
+        4534,
+        "0"
+      ],
+      [
+        4598,
+        "0"
+      ],
+      [
+        4772,
+        "0"
+      ],
+      [
+        4780,
+        "0"
+      ],
+      [
+        4781,
+        "0"
+      ],
+      [
+        4794,
+        "0"
+      ],
+      [
+        4795,
+        "0"
+      ],
+      [
+        4796,
+        "0"
+      ],
+      [
+        4799,
+        "0"
+      ],
+      [
+        4823,
+        "0"
+      ],
+      [
+        4838,
+        "0"
+      ],
+      [
+        4896,
+        "0"
+      ],
+      [
+        4962,
+        "0"
+      ]
+    ],
+    "p_outside_0_1": [
+      [
+        9754,
+        "1.43839044131509"
+      ],
+      [
+        9756,
+        "1.22402441532873"
+      ],
+      [
+        9771,
+        "1.85604906568618"
+      ],
+      [
+        9775,
+        "-0.781286873213068"
+      ],
+      [
+        9779,
+        "-0.639457394652202"
+      ],
+      [
+        9789,
+        "-0.363902727230507"
+      ],
+      [
+        9798,
+        "-1.1250725438132"
+      ]
+    ]
+  },
+  "numeric_sanity": {
+    "beta_empty": 0,
+    "beta_unparseable": 0,
+    "ci_low_gt_ci_high": 6914,
+    "ci_pair_empty": 1365,
+    "method_empty": 0,
+    "no_estimate_at_all": 0,
+    "nsnp_empty": 282,
+    "nsnp_lt_1": 0,
+    "nsnp_unparseable": 0,
+    "p_empty": 0,
+    "p_exactly_zero": 14,
+    "p_outside_0_1": 7,
+    "p_unparseable": 0,
+    "se_empty": 8436,
+    "se_not_positive": 0,
+    "se_unparseable": 0
+  },
+  "outcome_vocabulary": {
+    "distinct_normalized": 561,
+    "distinct_raw": 562,
+    "normalize_collision_count": 1,
+    "normalize_collisions": {
+      "venous thromboembolism": [
+        "Venous Thromboembolism",
+        "Venous thromboembolism"
+      ]
+    },
+    "top_20": [
+      [
+        "Aortic Aneurysm (Abdominal)",
+        156
+      ],
+      [
+        "Angina Pectoris (Unstable)",
+        150
+      ],
+      [
+        "osteoarthritis",
+        137
+      ],
+      [
+        "asthma",
+        135
+      ],
+      [
+        "Angina Pectoris (Any)",
+        134
+      ],
+      [
+        "T1D",
+        130
+      ],
+      [
+        "Disorders of lipoprotein metabolism and other lipidaemias",
+        128
+      ],
+      [
+        "Alzheimer's disease",
+        127
+      ],
+      [
+        "Familial hypercholesterolemia",
+        127
+      ],
+      [
+        "IBD",
+        125
+      ],
+      [
+        "Pure hypercholesterolaemia",
+        125
+      ],
+      [
+        "eBMD",
+        124
+      ],
+      [
+        "Parkinson's disease",
+        124
+      ],
+      [
+        "BMI",
+        124
+      ],
+      [
+        "T2D",
+        124
+      ],
+      [
+        "CAD",
+        124
+      ],
+      [
+        "ischemic stroke",
+        123
+      ],
+      [
+        "Metabolic disorders",
+        121
+      ],
+      [
+        "Angina Pectoris (Stable)",
+        119
+      ],
+      [
+        "multiple sclerosis",
+        117
+      ]
+    ]
+  },
+  "provenance_completeness": {
+    "candidate_pairs.csv": {
+      "empty": {
+        "pair_relation_basis": 0,
+        "pair_relation_verified": 0,
+        "record_type": 0,
+        "source_path": 0,
+        "source_row": 0,
+        "source_sheet": 0,
+        "study_id": 0
+      },
+      "rows": 20460
+    },
+    "new_pair_records.csv": {
+      "empty": {
+        "pair_relation_basis": 0,
+        "pair_relation_verified": 0,
+        "record_type": 0,
+        "source_path": 0,
+        "source_row": 0,
+        "source_sheet": 0,
+        "study_id": 0
+      },
+      "rows": 17405
+    },
+    "new_unique_pairs.csv": {
+      "empty": {
+        "pair_relation_basis": 0,
+        "pair_relation_verified": 0,
+        "record_type": 0,
+        "source_path": 0,
+        "source_row": 0,
+        "source_sheet": 0,
+        "study_id": 0
+      },
+      "rows": 9801
+    },
+    "screening_ledger.csv": {
+      "empty": {
+        "pair_relation_basis": 0,
+        "pair_relation_verified": 0,
+        "record_type": 0,
+        "source_path": 0,
+        "source_row": 0,
+        "source_sheet": 0,
+        "study_id": 0
+      },
+      "rows": 20460
+    }
+  },
+  "source_paths": [
+    {
+      "exists": true,
+      "rows": 1590,
+      "source_path": "MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM4_ESM.xlsx"
+    },
+    {
+      "exists": true,
+      "rows": 17442,
+      "source_path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM3_ESM.xlsx"
+    },
+    {
+      "exists": true,
+      "rows": 282,
+      "source_path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM4_ESM.xlsx"
+    },
+    {
+      "exists": true,
+      "rows": 1146,
+      "source_path": "MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM4_ESM.xlsx"
+    }
+  ],
+  "unique_pairs_duplicate_keys": {
+    "distinct_keys": 9801,
+    "duplicate_keys": 0,
+    "examples": [],
+    "rows_with_empty_key": 0
+  }
+}

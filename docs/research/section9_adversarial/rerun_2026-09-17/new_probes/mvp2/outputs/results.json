@@ -1,0 +1,162 @@
+[
+  {
+    "case_id": "L01",
+    "evidence": "outputs/L01_coupling.txt",
+    "finding": "M1",
+    "measurement": "93 runtime python files scanned; 0 MVP2 module imports; 0 MVP2 path literals; 0 sys.path inserts; 0 MVP2 modules loaded after importing pipeline/render/classify/validate_card/tools; get_literature_mr in TOOLS = False",
+    "outcome": "no runtime coupling",
+    "question": "does any MVP2 module or data file reach the card path",
+    "severity": "observation",
+    "surface": "runtime coupling"
+  },
+  {
+    "case_id": "L02",
+    "evidence": "outputs/L02_disclosure.txt, outputs/L02_cards/",
+    "finding": "M2",
+    "measurement": "1 of 3 frozen demo pairs disclose it; by state {\"A\": \"0/1\", \"B\": \"0/1\", \"C\": \"1/1\"}",
+    "outcome": "disclosure is State C only",
+    "question": "which rendered cards tell the reader the literature arm was not consulted",
+    "severity": "observation",
+    "surface": "card prose"
+  },
+  {
+    "case_id": "L03",
+    "evidence": "outputs/L03_tests.txt",
+    "finding": "M10",
+    "measurement": "python -m pytest MVP2/tests -q exits 1 (C:\\Users\\<user>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe: No module named pytest); pytest in requirements.txt = False; under the offline shim: 17 passed, 0 failed, 0 not runnable, 0 collection errors",
+    "outcome": "not runnable as documented; all 17 pass under a shim",
+    "question": "do the teammate's tests run on current main",
+    "severity": "scope_limit",
+    "surface": "MVP2 test suite"
+  },
+  {
+    "case_id": "L04a",
+    "evidence": "outputs/L04_manifests.txt",
+    "finding": "M7, M8",
+    "measurement": "7 hash assertions: 3 verify as-is on this Windows checkout, 4 only after CRLF->LF, 0 neither; against the committed blob bytes 1 of 7 fail",
+    "outcome": "one assertion cannot verify on any checkout; four fail on Windows",
+    "question": "do the recorded sha256 values verify against the files they name",
+    "severity": "defect",
+    "surface": "data manifests"
+  },
+  {
+    "case_id": "L04b",
+    "evidence": "outputs/L04_manifests.txt",
+    "finding": "M11",
+    "measurement": "8 of 8 row-count assertions OK; arithmetic closure True; screen_pairs() recomputed: 7 of 7 summary fields match; ledger tally matches manifest = True",
+    "outcome": "counting layer reproduces exactly",
+    "question": "do the recorded counts and the screening summary reproduce",
+    "severity": "observation",
+    "surface": "data manifests"
+  },
+  {
+    "case_id": "L05a",
+    "evidence": "outputs/L05_records.txt",
+    "finding": "M11",
+    "measurement": "empty provenance cells across all four tables: 0; distinct source files 4, missing from this checkout 0",
+    "outcome": "provenance complete and resolvable",
+    "question": "are the provenance columns complete and do the source files exist",
+    "severity": "observation",
+    "surface": "screened records"
+  },
+  {
+    "case_id": "L05b",
+    "evidence": "outputs/L05_records.txt",
+    "finding": "M3, M4",
+    "measurement": "new_unique_pairs.csv: ci_low > ci_high on 6914 rows; p_value outside [0,1] on 7 rows; p_value exactly 0 on 14; se empty on 8436; nsnp empty on 282",
+    "outcome": "impossible bound ordering and impossible p-values present",
+    "question": "are the estimate fields internally possible",
+    "severity": "defect",
+    "surface": "screened records"
+  },
+  {
+    "case_id": "L05c",
+    "evidence": "outputs/L05_records.txt",
+    "finding": "M12",
+    "measurement": "rows with no direction recorded that were kept as forward: 0",
+    "outcome": "latent, not exercised by the current data",
+    "question": "does the direction filter have unexercised latitude",
+    "severity": "observation",
+    "surface": "screened records"
+  },
+  {
+    "case_id": "L06a",
+    "evidence": "outputs/L06_extraction.txt",
+    "finding": "M3",
+    "measurement": "ukb_mapping_2025: 16944 rows follow the printed header order, and on 16944 of them the value under '95% UCI' is the smaller number; 6914 rows in new_unique_pairs.csv carry ci_low > ci_high",
+    "outcome": "bounds inverted for every ukb_mapping_2025 row",
+    "question": "do the extracted confidence bounds match the source",
+    "severity": "defect",
+    "surface": "seed extraction"
+  },
+  {
+    "case_id": "L06b",
+    "evidence": "outputs/L06_extraction.txt",
+    "finding": "M4",
+    "measurement": "rows whose odds-ratio column is col11 rather than col10: {\"sTable 33\": 18, \"sTable 35\": 480}; of those, 498 reach candidate_pairs.csv, 18 reach new_pair_records.csv and 9 reach new_unique_pairs.csv, where 2 carry a p_value inside [0,1] and are not detectable by a range check",
+    "outcome": "an odds ratio lands in ci_high and a confidence bound in p_value",
+    "question": "does every source row use the layout the fixed indices assume",
+    "severity": "defect",
+    "surface": "seed extraction"
+  },
+  {
+    "case_id": "L07a",
+    "evidence": "outputs/L07_ledger.txt",
+    "finding": "M9",
+    "measurement": "1 of 9801 kept pairs have a search record (0.01020%); 9800 have none",
+    "outcome": "one smoke-test pair searched",
+    "question": "is every kept pair traceable to a search run",
+    "severity": "observation",
+    "surface": "screening ledger"
+  },
+  {
+    "case_id": "L07b",
+    "evidence": "outputs/L07_ledger.txt",
+    "finding": "M11",
+    "measurement": "pair_id recomputes and names row [2514] of new_unique_pairs.csv; 51 papers, 0 malformed pmid, 0 malformed pmcid, 0 malformed doi, 0 duplicate pmid; returned ids not retained: 0; retained ids never returned: 0",
+    "outcome": "internally consistent and fully traceable",
+    "question": "is the one search record consistent and are its identifiers well formed",
+    "severity": "observation",
+    "surface": "screening ledger"
+  },
+  {
+    "case_id": "L08a",
+    "evidence": "outputs/L08_merge.txt",
+    "finding": "M11",
+    "measurement": "re-run exit 0; merged csv identical after CRLF->LF = True; 7 of 7 manifest summary fields match",
+    "outcome": "reproduces exactly",
+    "question": "does the merge reproduce from the committed inputs",
+    "severity": "observation",
+    "surface": "merge"
+  },
+  {
+    "case_id": "L08b",
+    "evidence": "outputs/L08_merge.txt",
+    "finding": "M5, M6",
+    "measurement": "7604 rows discarded; 5171 canonical keys hold more than one row; 7261 discarded rows carry a different (beta, p_value, method); 1920 name a different exposure; all 9801 appended rows carry supporting_mr_rows='1'",
+    "outcome": "a constant supporting-row count over a lossy dedup",
+    "question": "what did one-row-per-canonical-key discard, and what do the constants say",
+    "severity": "defect",
+    "surface": "merge"
+  },
+  {
+    "case_id": "L08c",
+    "evidence": "outputs/L08_merge.txt",
+    "finding": "M3",
+    "measurement": "appended MVP2 rows: 6914 of 9801 carry ci_low > ci_upp; MVP1 baseline rows: 0 of 11117",
+    "outcome": "inverted bounds reach the merged table",
+    "question": "do the inverted bounds survive into the merged candidate table",
+    "severity": "defect",
+    "surface": "merge"
+  },
+  {
+    "case_id": "L05d",
+    "evidence": "outputs/L05_records.txt",
+    "finding": "M5",
+    "measurement": "1003 canonical keys in new_unique_pairs.csv cover more than one distinct raw (metabolite, disease) label pair; normalize() drops '%', so 'Omega-3' and 'Omega-3%' share one key",
+    "outcome": "ratio and absolute exposures share a key",
+    "question": "does normalize() keep ratios distinct from absolute measures",
+    "severity": "defect",
+    "surface": "pair identity"
+  }
+]

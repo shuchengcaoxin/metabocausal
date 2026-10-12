@@ -1,0 +1,95 @@
+
+==============================================================================
+STEP 0 - what is under test on this checkout
+==============================================================================
+repo root          : <workspace>/metabocausal-rerun
+python             : 3.12.10
+validate_card file : validate_card.py
+render file        : render.py
+validate() docstring still states "Never raises." : True
+render_card() docstring still states "Never raises." : True
+
+==============================================================================
+STEP 1 - his minimal snippet (ai_runs/02_numeric_attacks.md, section 12)
+==============================================================================
+>>> validate(ExplodingFields({"reading": "safe"}), {})
+RAISED RuntimeError: fields boom
+--- traceback (last 4 frames) ---
+  File "<workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F8\reverify_f8.py", line 71, in main
+    result = validate_card.validate(ExplodingFields({"reading": "safe"}), {})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>/metabocausal-rerun\validate_card.py", line 546, in validate
+    for name, text in fields.items():
+                      ^^^^^^^^^^^^^^
+  File "<workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F8\reverify_f8.py", line 42, in items
+    raise RuntimeError("fields boom")
+RuntimeError: fields boom
+
+==============================================================================
+STEP 2 - probe case M05, on the frozen urate|gout fixture
+==============================================================================
+fixture pair       : urate|gout   state='A'
+fields type        : ExplodingFields (isinstance(dict) = True)
+>>> validate_card.validate(exploding, run)
+RAISED RuntimeError: fields boom
+
+==============================================================================
+STEP 3 - the same object through render.render_card()
+==============================================================================
+render_card() returned normally (no exception escaped).
+offered prose printed in Section 9 : False
+pending sentence present           : False
+--- Section 9 as rendered ---
+## 9. Reasoning
+
+This section could not be rendered (RuntimeError). That is a failure of the renderer, not a statement about the biology; the run's envelopes are unchanged and the ledger named in section 11 still holds everything that was retrieved.
+--- end Section 9 ---
+
+==============================================================================
+STEP 4 - where exactly does the containment live?
+==============================================================================
+render_card() wraps every section builder in try/except (render.py:2329-2336).
+Calling the Section 9 builder directly, without that wrapper:
+>>> render._section_reasoning(run, interpretation)
+RAISED RuntimeError: fields boom
+--- traceback (last 6 lines) ---
+  File "<workspace>/metabocausal-rerun\validate_card.py", line 546, in validate
+    for name, text in fields.items():
+                      ^^^^^^^^^^^^^^
+  File "<workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F8\reverify_f8.py", line 42, in items
+    raise RuntimeError("fields boom")
+RuntimeError: fields boom
+
+So containment is a property of render_card()'s wrapper, not of the Section 9
+builder and not of validate() itself.
+
+==============================================================================
+STEP 5 - reachability: what do the two real validate() callers pass?
+==============================================================================
+callers of validate_card.validate() outside tests/harness:
+  llm/interpret.py:319   findings = validate_card.validate(fields, run)   [unguarded]
+  render.py:1890         findings = validate_card.validate(fields, result) [inside render_card's per-section try/except]
+
+>>> llm.interpret.parse_fields('{"headline": "h", "reading": "r", "limits": "l"}')
+type(parsed) = dict   exact builtin dict = True
+
+>>> does the exception escape interpret()'s gate-two call site if a subclass somehow arrives there?
+    the call at llm/interpret.py:319 has no try/except around it; the same call raises RuntimeError when handed a subclass.
+    but parse_fields() above returns an exact builtin dict, so no current CLI/Slack input reaches this.
+
+==============================================================================
+VERDICT INPUTS (machine-readable)
+==============================================================================
+{
+  "contract_text_render_card_never_raises": true,
+  "contract_text_validate_never_raises": true,
+  "interpret_call_site_guarded": false,
+  "m05_outcome": "blocked",
+  "m05_prose_printed": false,
+  "m05_render_card_raised": false,
+  "m05_validate_raised": "RuntimeError",
+  "minimal_snippet_message": "fields boom",
+  "minimal_snippet_raised": "RuntimeError",
+  "parse_fields_returns_builtin_dict": true,
+  "section_builder_raised": "RuntimeError"
+}

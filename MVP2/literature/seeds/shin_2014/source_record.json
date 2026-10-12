@@ -1,0 +1,722 @@
+{
+  "paper_key": "shin_2014",
+  "identity": {
+    "pmid": "24816252",
+    "pmcid": "PMC4064254",
+    "doi": "10.1038/ng.2982",
+    "title": "An atlas of genetic influences on human blood metabolites",
+    "atlas_table": "Supplementary Table 6",
+    "publisher": "https://www.nature.com/articles/ng.2982"
+  },
+  "screening_status": "seed_not_screened",
+  "mr_import_status": "not_imported",
+  "existing_atlas_use": "Supplementary Table 6",
+  "scope_note": "Existing atlas source, not a screened or imported metabolite-disease MR estimate dataset.",
+  "attempts": [
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24816252+AND+SRC%3AMED&format=json&resultType=core",
+      "requested_at_utc": "2026-09-12T02:42:13.182876+00:00",
+      "local_path": "metadata/europepmc_search.json",
+      "label": "",
+      "asset_class": "metadata",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24816252+AND+SRC%3AMED&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 17779,
+      "sha256": "606ab2b296b63a2a498da760feec8c064e2ce0286d272647648101679e0c9369",
+      "completed_at_utc": "2026-09-12T02:42:17.639221+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "requested_at_utc": "2026-09-12T02:42:17.641321+00:00",
+      "local_path": "fulltext/PMC4064254.xml",
+      "label": "Europe PMC JATS full text",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "content_type": "application/xml",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 141874,
+      "sha256": "6aafb73bcd7d6f48ad56a9e419e919e09a05fb81e2c8289bf9b8e85abc63ce68",
+      "completed_at_utc": "2026-09-12T02:42:23.368862+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/ng.2982",
+      "requested_at_utc": "2026-09-12T02:42:23.371865+00:00",
+      "local_path": "metadata/publisher_article.html",
+      "label": "Publisher article and linked assets",
+      "asset_class": "metadata",
+      "http_status": 200,
+      "resolved_url": "https://www.nature.com/articles/ng.2982",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 437020,
+      "sha256": "96b48e4cd02c2c60ba9bbf12c50bec412b428e00395e2909fb8c899b60bbcab8",
+      "completed_at_utc": "2026-09-12T02:42:25.856168+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "An atlas of genetic influences on human blood metabolites | Nature Genetics"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24816252+AND+SRC%3AMED&format=json&resultType=core",
+      "requested_at_utc": "2026-09-12T02:44:18.502578+00:00",
+      "local_path": "metadata/europepmc_search.json",
+      "label": "",
+      "asset_class": "metadata",
+      "status": "existing_validated",
+      "size_bytes": 17779,
+      "sha256": "606ab2b296b63a2a498da760feec8c064e2ce0286d272647648101679e0c9369",
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "requested_at_utc": "2026-09-12T02:44:18.516661+00:00",
+      "local_path": "fulltext/PMC4064254.xml",
+      "label": "Europe PMC JATS full text",
+      "asset_class": "full_article",
+      "status": "existing_validated",
+      "size_bytes": 141874,
+      "sha256": "6aafb73bcd7d6f48ad56a9e419e919e09a05fb81e2c8289bf9b8e85abc63ce68",
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/ng.2982",
+      "requested_at_utc": "2026-09-12T02:44:18.541289+00:00",
+      "local_path": "metadata/publisher_article.html",
+      "label": "Publisher article and linked assets",
+      "asset_class": "metadata",
+      "status": "existing_validated",
+      "size_bytes": 437020,
+      "sha256": "96b48e4cd02c2c60ba9bbf12c50bec412b428e00395e2909fb8c899b60bbcab8",
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "An atlas of genetic influences on human blood metabolites | Nature Genetics"
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM49_ESM.pdf",
+      "requested_at_utc": "2026-09-12T02:44:19.087368+00:00",
+      "local_path": "supplements/41588_2014_BFng2982_MOESM49_ESM.pdf",
+      "label": "Supplementary Text and Figures (download PDF )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM49_ESM.pdf",
+      "content_type": "application/pdf",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 5066447,
+      "sha256": "fe6a0c97666e5f75c7f918354213bf4a1b3a8f5b5103699d63059925043bd06e",
+      "completed_at_utc": "2026-09-12T02:44:20.458870+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 30
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+      "requested_at_utc": "2026-09-12T02:44:20.460871+00:00",
+      "local_path": "supplements/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+      "label": "Supplementary Tables 1–14 (download XLSX )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+      "content_type": "application/octet-stream",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 12804500,
+      "sha256": "42ca70c79fdb100ae89d9c88a48029cc8293f0c0289974b198cc6dbb9bea1b27",
+      "completed_at_utc": "2026-09-12T02:44:23.415909+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 27
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/ng.2982.pdf",
+      "requested_at_utc": "2026-09-12T02:44:23.422354+00:00",
+      "local_path": "fulltext/ng.2982.pdf",
+      "label": "Publisher PDF",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://www.nature.com/articles/ng.2982",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "status": "unavailable",
+      "reason": "ValueError: Not a PDF: magic header missing"
+    },
+    {
+      "requested_url": "https://europepmc.org/articles/PMC4064254?pdf=render",
+      "requested_at_utc": "2026-09-12T02:44:27.260088+00:00",
+      "local_path": "fulltext/emss-58114.pdf",
+      "label": "Repository PDF; original filename from JATS self-uri",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC4064254",
+      "content_type": "application/pdf",
+      "content_disposition": "inline; filename=\"emss-58114.pdf\"",
+      "status": "downloaded",
+      "size_bytes": 2587905,
+      "sha256": "c1942a00db51caece80bc29e7f0651c0eaffd12cdf86abd3bf89ea1ab5da13a1",
+      "completed_at_utc": "2026-09-12T02:44:36.226254+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 24
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:44:36.228251+00:00",
+      "local_path": "metadata/PMC4064254_supplementaryFiles.zip",
+      "label": "Europe PMC supplementary-file package",
+      "asset_class": "supplementary_bundle",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "content_type": "application/zip",
+      "content_disposition": "attachment; filename = PMC4064254_SupplementaryFiles.zip",
+      "status": "downloaded",
+      "size_bytes": 15913079,
+      "sha256": "f318414d7043c30cfb310475873cf6872c25d1d77442256524a4dd5aba22f323",
+      "completed_at_utc": "2026-09-12T02:45:39.607114+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 17
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:39.653522+00:00",
+      "archive_member": "NIHMS58114-supplement-1.pdf",
+      "local_path": "supplements/NIHMS58114-supplement-1.pdf",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 4975900,
+      "sha256": "ccb8ee702e8347ef07a1783957a46c0c42184454cc9e976a7df5de08151c3899",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 30
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:39.745417+00:00",
+      "archive_member": "NIHMS58114-supplement-7.jpg",
+      "local_path": "supplements/NIHMS58114-supplement-7.jpg",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 482361,
+      "sha256": "dff5bd7636629b1e194cc0c45fb8a8e205896c3db29eb08265fe016eb60d45a9",
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:39.757213+00:00",
+      "archive_member": "NIHMS58114-supplement-6.jpg",
+      "local_path": "supplements/NIHMS58114-supplement-6.jpg",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 1767840,
+      "sha256": "1d4b1e3e7c5454a4dff85033f7bdd7bf8480205139cfde9f08593998da24600e",
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          3672,
+          4568
+        ]
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:40.107823+00:00",
+      "archive_member": "NIHMS58114-supplement-2.xlsx",
+      "local_path": "supplements/NIHMS58114-supplement-2.xlsx",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 12802334,
+      "sha256": "100e8e79cc8a073cce43cd257fb5daffcef41d6b2c90ee6e78db864f529786c0",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 27
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:40.122719+00:00",
+      "archive_member": "NIHMS58114-supplement-5.jpg",
+      "local_path": "supplements/NIHMS58114-supplement-5.jpg",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 520968,
+      "sha256": "ab1b71510d8f402bbac0940bc088da45249774f4c07dddf080bf4d01ff3ee43e",
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:40.125226+00:00",
+      "archive_member": "NIHMS58114-supplement-4.jpg",
+      "local_path": "supplements/NIHMS58114-supplement-4.jpg",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 357187,
+      "sha256": "e5dcc3c51d045e0f4a5513f360504876793a8a9d933f6227220f4491364abfe2",
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:45:40.130237+00:00",
+      "archive_member": "NIHMS58114-supplement-3.jpg",
+      "local_path": "supplements/NIHMS58114-supplement-3.jpg",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 613179,
+      "sha256": "59abb9560be29d28028c911728020fc2f50008a3537d3f0c08b7147070f75155",
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    }
+  ],
+  "discovered_supplements": [
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM49_ESM.pdf",
+      "label": "Supplementary Text and Figures (download PDF )",
+      "discovered_in": "https://www.nature.com/articles/ng.2982"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+      "label": "Supplementary Tables 1–14 (download XLSX )",
+      "discovered_in": "https://www.nature.com/articles/ng.2982"
+    }
+  ],
+  "license_statements": [
+    {
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "reported_license": "Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research, subject always to the full Conditions of use: http://www.nature.com/authors/editorial_policies/license.html#terms"
+    }
+  ],
+  "last_acquisition_utc": "2026-09-12T02:44:18.501102+00:00",
+  "identity_verified": {
+    "pmid": "24816252",
+    "pmcid": "PMC4064254",
+    "doi": "10.1038/ng.2982",
+    "title": "An atlas of genetic influences on human blood metabolites.",
+    "authorString": "Shin SY, Fauman EB, Petersen AK, Krumsiek J, Santos R, Huang J, Arnold M, Erte I, Forgetta V, Yang TP, Walter K, Menni C, Chen L, Vasquez L, Valdes AM, Hyde CL, Wang V, Ziemek D, Roberts P, Xi L, Grundberg E, Multiple Tissue Human Expression Resource (MuTHER) Consortium, Waldenberger M, Richards JB, Mohney RP, Milburn MV, John SL, Trimmer J, Theis FJ, Overington JP, Suhre K, Brosnan MJ, Gieger C, Kastenmüller G, Spector TD, Soranzo N.",
+    "pubYear": "2014",
+    "firstPublicationDate": "2014-05-11"
+  },
+  "repository_article_version": "author manuscript",
+  "jats_supplement_links": [
+    {
+      "href": "NIHMS58114-supplement-1.pdf",
+      "label": "Supplementary Information",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-2.xlsx",
+      "label": "Supplementary Tables 1-14",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-3.jpg",
+      "label": "Supplementary Figure 1",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-4.jpg",
+      "label": "Supplementary Figure 2",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-5.jpg",
+      "label": "Supplementary Figure 3",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-6.jpg",
+      "label": "Supplementary Figure 4",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    },
+    {
+      "href": "NIHMS58114-supplement-7.jpg",
+      "label": "Supplementary Figure 5",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+    }
+  ],
+  "jats_self_uri": [
+    {
+      "{http://www.w3.org/1999/xlink}href": "emss-58114.pdf",
+      "content-type": "pmc-pdf"
+    }
+  ],
+  "repository_bundle_members": [
+    "emss-58114-f0001.gif",
+    "emss-58114-f0003.jpg",
+    "emss-58114-f0003.gif",
+    "emss-58114-f0004.gif",
+    "NIHMS58114-supplement-1.pdf",
+    "NIHMS58114-supplement-7.jpg",
+    "emss-58114-f0004.jpg",
+    "emss-58114-f0002.jpg",
+    "emss-58114-f0001.jpg",
+    "NIHMS58114-supplement-6.jpg",
+    "emss-58114-f0002.gif",
+    "NIHMS58114-supplement-2.xlsx",
+    "NIHMS58114-supplement-5.jpg",
+    "NIHMS58114-supplement-4.jpg",
+    "emss-58114-f0005.gif",
+    "NIHMS58114-supplement-3.jpg",
+    "emss-58114-f0005.jpg"
+  ],
+  "supplement_coverage": [
+    {
+      "href": "NIHMS58114-supplement-1.pdf",
+      "label": "Supplementary Information",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-2.xlsx",
+      "label": "Supplementary Tables 1-14",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-3.jpg",
+      "label": "Supplementary Figure 1",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-4.jpg",
+      "label": "Supplementary Figure 2",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-5.jpg",
+      "label": "Supplementary Figure 3",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-6.jpg",
+      "label": "Supplementary Figure 4",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "NIHMS58114-supplement-7.jpg",
+      "label": "Supplementary Figure 5",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML",
+      "local_available": true
+    }
+  ],
+  "acquisition_complete_definition": "All publisher asset links and all unique repository JATS supplementary references were attempted. Inspect supplement_coverage and unavailable attempts; screening and MR import were not performed.",
+  "local_verification_utc": "2026-09-12T02:47:57.960497+00:00",
+  "local_files": [
+    {
+      "local_path": "fulltext/PMC4064254.xml",
+      "size_bytes": 141874,
+      "sha256": "6aafb73bcd7d6f48ad56a9e419e919e09a05fb81e2c8289bf9b8e85abc63ce68",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/fullTextXML"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "local_path": "fulltext/emss-58114.pdf",
+      "size_bytes": 2587905,
+      "sha256": "c1942a00db51caece80bc29e7f0651c0eaffd12cdf86abd3bf89ea1ab5da13a1",
+      "source_urls": [
+        "https://europepmc.org/articles/PMC4064254?pdf=render"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 24,
+        "parser_warnings": [],
+        "parser_warning_count": 0,
+        "expected_title_on_first_page": true
+      }
+    },
+    {
+      "local_path": "metadata/PMC4064254_supplementaryFiles.zip",
+      "size_bytes": 15913079,
+      "sha256": "f318414d7043c30cfb310475873cf6872c25d1d77442256524a4dd5aba22f323",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 17
+      }
+    },
+    {
+      "local_path": "metadata/europepmc_search.json",
+      "size_bytes": 17779,
+      "sha256": "606ab2b296b63a2a498da760feec8c064e2ce0286d272647648101679e0c9369",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24816252+AND+SRC%3AMED&format=json&resultType=core"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "local_path": "metadata/publisher_article.html",
+      "size_bytes": 437020,
+      "sha256": "96b48e4cd02c2c60ba9bbf12c50bec412b428e00395e2909fb8c899b60bbcab8",
+      "source_urls": [
+        "https://www.nature.com/articles/ng.2982"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "An atlas of genetic influences on human blood metabolites | Nature Genetics"
+      }
+    },
+    {
+      "local_path": "supplements/41588_2014_BFng2982_MOESM49_ESM.pdf",
+      "size_bytes": 5066447,
+      "sha256": "fe6a0c97666e5f75c7f918354213bf4a1b3a8f5b5103699d63059925043bd06e",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM49_ESM.pdf"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 30,
+        "parser_warnings": [],
+        "parser_warning_count": 0
+      }
+    },
+    {
+      "local_path": "supplements/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+      "size_bytes": 12804500,
+      "sha256": "42ca70c79fdb100ae89d9c88a48029cc8293f0c0289974b198cc6dbb9bea1b27",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng.2982/MediaObjects/41588_2014_BFng2982_MOESM50_ESM.xlsx"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 27,
+        "sheet_names": [
+          "Legends",
+          "Table S1",
+          "Table S2",
+          "Table S3",
+          "Table S4",
+          "Table S5",
+          "Table S6",
+          "Table S7",
+          "Table S8",
+          "Table S9",
+          "Table S10",
+          "Table S11",
+          "Table S12",
+          "Table S13",
+          "Table S14"
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-1.pdf",
+      "size_bytes": 4975900,
+      "sha256": "ccb8ee702e8347ef07a1783957a46c0c42184454cc9e976a7df5de08151c3899",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 30,
+        "parser_warnings": [],
+        "parser_warning_count": 0
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-2.xlsx",
+      "size_bytes": 12802334,
+      "sha256": "100e8e79cc8a073cce43cd257fb5daffcef41d6b2c90ee6e78db864f529786c0",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 27,
+        "sheet_names": [
+          "Legends",
+          "Table S1",
+          "Table S2",
+          "Table S3",
+          "Table S4",
+          "Table S5",
+          "Table S6",
+          "Table S7",
+          "Table S8",
+          "Table S9",
+          "Table S10",
+          "Table S11",
+          "Table S12",
+          "Table S13",
+          "Table S14"
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-3.jpg",
+      "size_bytes": 613179,
+      "sha256": "59abb9560be29d28028c911728020fc2f50008a3537d3f0c08b7147070f75155",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-4.jpg",
+      "size_bytes": 357187,
+      "sha256": "e5dcc3c51d045e0f4a5513f360504876793a8a9d933f6227220f4491364abfe2",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-5.jpg",
+      "size_bytes": 520968,
+      "sha256": "ab1b71510d8f402bbac0940bc088da45249774f4c07dddf080bf4d01ff3ee43e",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-6.jpg",
+      "size_bytes": 1767840,
+      "sha256": "1d4b1e3e7c5454a4dff85033f7bdd7bf8480205139cfde9f08593998da24600e",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          3672,
+          4568
+        ]
+      }
+    },
+    {
+      "local_path": "supplements/NIHMS58114-supplement-7.jpg",
+      "size_bytes": 482361,
+      "sha256": "dff5bd7636629b1e194cc0c45fb8a8e205896c3db29eb08265fe016eb60d45a9",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4064254/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "Pillow image format verification",
+        "format": "JPEG",
+        "size": [
+          2999,
+          2076
+        ]
+      }
+    }
+  ],
+  "identical_byte_copies": [],
+  "supplement_coverage_status": "all_discovered_repository_supplements_available",
+  "api_filename_note": "API responses without an original downloadable filename use descriptive metadata names or the PMCID. Publisher assets, JATS-linked files, and ZIP member filenames are preserved."
+}

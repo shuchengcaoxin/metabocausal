@@ -1,0 +1,5238 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18327257+OR+EXT_ID%3A18842065+OR+DOI%3A10.1056%2FNEJMoa1710895&format=json&resultType=core",
+  "retrieved_at": "2026-09-12T18:02:51.632542+00:00",
+  "data": {
+    "version": "6.9",
+    "hitCount": 3,
+    "request": {
+      "queryString": "EXT_ID:18327257 OR EXT_ID:18842065 OR DOI:10.1056/NEJMoa1710895",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "29527974",
+          "source": "MED",
+          "pmid": "29527974",
+          "doi": "10.1056/nejmoa1710895",
+          "title": "Cardiovascular Safety of Febuxostat or Allopurinol in Patients with Gout.",
+          "authorString": "White WB, Saag KG, Becker MA, Borer JS, Gorelick PB, Whelton A, Hunt B, Castillo M, Gunawardhana L, CARES Investigators.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "White WB",
+                "firstName": "William B",
+                "lastName": "White",
+                "initials": "WB",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8936-967X"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Saag KG",
+                "firstName": "Kenneth G",
+                "lastName": "Saag",
+                "initials": "KG",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Becker MA",
+                "firstName": "Michael A",
+                "lastName": "Becker",
+                "initials": "MA",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Borer JS",
+                "firstName": "Jeffrey S",
+                "lastName": "Borer",
+                "initials": "JS",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Gorelick PB",
+                "firstName": "Philip B",
+                "lastName": "Gorelick",
+                "initials": "PB",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1181-614X"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Whelton A",
+                "firstName": "Andrew",
+                "lastName": "Whelton",
+                "initials": "A",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Hunt B",
+                "firstName": "Barbara",
+                "lastName": "Hunt",
+                "initials": "B",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Castillo M",
+                "firstName": "Majin",
+                "lastName": "Castillo",
+                "initials": "M",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Gunawardhana L",
+                "firstName": "Lhanoo",
+                "lastName": "Gunawardhana",
+                "initials": "L",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.)."
+                    }
+                  ]
+                }
+              },
+              {
+                "collectiveName": "CARES Investigators"
+              }
+            ]
+          },
+          "investigatorList": {
+            "investigator": [
+              {
+                "fullName": "Aggarwal N",
+                "firstName": "Naresh",
+                "lastName": "Aggarwal",
+                "initials": "N"
+              },
+              {
+                "fullName": "Bell A",
+                "firstName": "Alan",
+                "lastName": "Bell",
+                "initials": "A"
+              },
+              {
+                "fullName": "Belle Isle J",
+                "firstName": "Jasmin",
+                "lastName": "Belle Isle",
+                "initials": "J"
+              },
+              {
+                "fullName": "Brown J",
+                "firstName": "Jacques",
+                "lastName": "Brown",
+                "initials": "J"
+              },
+              {
+                "fullName": "Cividino A",
+                "firstName": "Alfred",
+                "lastName": "Cividino",
+                "initials": "A"
+              },
+              {
+                "fullName": "Dion D",
+                "firstName": "Danielle",
+                "lastName": "Dion",
+                "initials": "D"
+              },
+              {
+                "fullName": "Dzongowski P",
+                "firstName": "Peter",
+                "lastName": "Dzongowski",
+                "initials": "P"
+              },
+              {
+                "fullName": "Kelly A",
+                "firstName": "Allan",
+                "lastName": "Kelly",
+                "initials": "A"
+              },
+              {
+                "fullName": "Luton R",
+                "firstName": "Robert",
+                "lastName": "Luton",
+                "initials": "R"
+              },
+              {
+                "fullName": "Misik K",
+                "firstName": "Karl",
+                "lastName": "Misik",
+                "initials": "K"
+              },
+              {
+                "fullName": "Morin F",
+                "firstName": "Frederic",
+                "lastName": "Morin",
+                "initials": "F"
+              },
+              {
+                "fullName": "O'Mahony W",
+                "firstName": "William",
+                "lastName": "O'Mahony",
+                "initials": "W"
+              },
+              {
+                "fullName": "Pesant Y",
+                "firstName": "Yves",
+                "lastName": "Pesant",
+                "initials": "Y"
+              },
+              {
+                "fullName": "Toma A",
+                "firstName": "Azhar",
+                "lastName": "Toma",
+                "initials": "A"
+              },
+              {
+                "fullName": "Van den Berg L",
+                "firstName": "Lucretia",
+                "lastName": "Van den Berg",
+                "initials": "L"
+              },
+              {
+                "fullName": "Wilderman I",
+                "firstName": "Igor",
+                "lastName": "Wilderman",
+                "initials": "I"
+              },
+              {
+                "fullName": "Abud Mendoza C",
+                "firstName": "Carlos",
+                "lastName": "Abud Mendoza",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3749-5831"
+                }
+              },
+              {
+                "fullName": "Aguilera Real M",
+                "firstName": "Manuel",
+                "lastName": "Aguilera Real",
+                "initials": "M"
+              },
+              {
+                "fullName": "Alcocer Gamba MA",
+                "firstName": "Marco Antonio",
+                "lastName": "Alcocer Gamba",
+                "initials": "MA"
+              },
+              {
+                "fullName": "Aldrete‐Velasco J",
+                "firstName": "Jorge",
+                "lastName": "Aldrete‐Velasco",
+                "initials": "J"
+              },
+              {
+                "fullName": "Alpizar Salazar M",
+                "firstName": "Melchor",
+                "lastName": "Alpizar Salazar",
+                "initials": "M"
+              },
+              {
+                "fullName": "Avila Zapata F",
+                "firstName": "Francisco",
+                "lastName": "Avila Zapata",
+                "initials": "F"
+              },
+              {
+                "fullName": "Carmona Furusho L",
+                "firstName": "Luis",
+                "lastName": "Carmona Furusho",
+                "initials": "L"
+              },
+              {
+                "fullName": "Carrillo Vazquez SM",
+                "firstName": "Sandra Miriam",
+                "lastName": "Carrillo Vazquez",
+                "initials": "SM"
+              },
+              {
+                "fullName": "Chavez Paez JG",
+                "firstName": "Jorge Guillermo",
+                "lastName": "Chavez Paez",
+                "initials": "JG"
+              },
+              {
+                "fullName": "De la Garza Ramos E",
+                "firstName": "Edmundo",
+                "lastName": "De la Garza Ramos",
+                "initials": "E"
+              },
+              {
+                "fullName": "Enkerlin Pauwells HL",
+                "firstName": "Hermann Leo",
+                "lastName": "Enkerlin Pauwells",
+                "initials": "HL"
+              },
+              {
+                "fullName": "Esquivel Valerio J",
+                "firstName": "Jorge",
+                "lastName": "Esquivel Valerio",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3124-0395"
+                }
+              },
+              {
+                "fullName": "Fajardo Campos P",
+                "firstName": "Pedro",
+                "lastName": "Fajardo Campos",
+                "initials": "P"
+              },
+              {
+                "fullName": "Garcia Olivera I",
+                "firstName": "Imelda",
+                "lastName": "Garcia Olivera",
+                "initials": "I"
+              },
+              {
+                "fullName": "Garcia Reza R",
+                "firstName": "Raymundo",
+                "lastName": "Garcia Reza",
+                "initials": "R"
+              },
+              {
+                "fullName": "Lopez Ruiz OM",
+                "firstName": "Oscar Martin",
+                "lastName": "Lopez Ruiz",
+                "initials": "OM"
+              },
+              {
+                "fullName": "Luna Ceballos RI",
+                "firstName": "Rosa Isela",
+                "lastName": "Luna Ceballos",
+                "initials": "RI"
+              },
+              {
+                "fullName": "Maldonado Hernandez H",
+                "firstName": "Hector",
+                "lastName": "Maldonado Hernandez",
+                "initials": "H"
+              },
+              {
+                "fullName": "Del Rosario Marrufo M",
+                "firstName": "Maria",
+                "lastName": "Del Rosario Marrufo",
+                "initials": "M"
+              },
+              {
+                "fullName": "Miracle Lopez S",
+                "firstName": "Sigfrido",
+                "lastName": "Miracle Lopez",
+                "initials": "S"
+              },
+              {
+                "fullName": "Montano Gonzalez E",
+                "firstName": "Efrain",
+                "lastName": "Montano Gonzalez",
+                "initials": "E"
+              },
+              {
+                "fullName": "Montes Cruz E",
+                "firstName": "Eliud",
+                "lastName": "Montes Cruz",
+                "initials": "E"
+              },
+              {
+                "fullName": "Nevarez Ruiz L",
+                "firstName": "Luis",
+                "lastName": "Nevarez Ruiz",
+                "initials": "L"
+              },
+              {
+                "fullName": "Ramos Lopez G",
+                "firstName": "Gabriel",
+                "lastName": "Ramos Lopez",
+                "initials": "G"
+              },
+              {
+                "fullName": "Rodriguez Briones I",
+                "firstName": "Ignacio",
+                "lastName": "Rodriguez Briones",
+                "initials": "I"
+              },
+              {
+                "fullName": "Sanchez Mijangos H",
+                "firstName": "Hector",
+                "lastName": "Sanchez Mijangos",
+                "initials": "H"
+              },
+              {
+                "fullName": "Sanchez Vazquez JC",
+                "firstName": "Juan Carlos",
+                "lastName": "Sanchez Vazquez",
+                "initials": "JC"
+              },
+              {
+                "fullName": "Silveira Torre LH",
+                "firstName": "Luis Humberto",
+                "lastName": "Silveira Torre",
+                "initials": "LH"
+              },
+              {
+                "fullName": "Solis Morales L",
+                "firstName": "Lucas",
+                "lastName": "Solis Morales",
+                "initials": "L"
+              },
+              {
+                "fullName": "Stobschinski de Alba CA",
+                "firstName": "Carlos Alejandro",
+                "lastName": "Stobschinski de Alba",
+                "initials": "CA"
+              },
+              {
+                "fullName": "Vazquez Mellado Cervantes NJ",
+                "firstName": "Nora Janitzia",
+                "lastName": "Vazquez Mellado Cervantes",
+                "initials": "NJ"
+              },
+              {
+                "fullName": "Vega Elguezabal JF",
+                "firstName": "Jorge Felipe",
+                "lastName": "Vega Elguezabal",
+                "initials": "JF"
+              },
+              {
+                "fullName": "Villeda Espinosa E",
+                "firstName": "Efrain",
+                "lastName": "Villeda Espinosa",
+                "initials": "E"
+              },
+              {
+                "fullName": "Violante R",
+                "firstName": "Rafael",
+                "lastName": "Violante",
+                "initials": "R"
+              },
+              {
+                "fullName": "Zazueta Montiel BE",
+                "firstName": "Beatriz Elena",
+                "lastName": "Zazueta Montiel",
+                "initials": "BE"
+              },
+              {
+                "fullName": "Abalos‐Galito M",
+                "firstName": "Marietta",
+                "lastName": "Abalos‐Galito",
+                "initials": "M"
+              },
+              {
+                "fullName": "Abboy C",
+                "firstName": "Chandar",
+                "lastName": "Abboy",
+                "initials": "C"
+              },
+              {
+                "fullName": "Abraham W",
+                "firstName": "William",
+                "lastName": "Abraham",
+                "initials": "W"
+              },
+              {
+                "fullName": "Adams M",
+                "firstName": "Mark",
+                "lastName": "Adams",
+                "initials": "M"
+              },
+              {
+                "fullName": "Aelion J",
+                "firstName": "Jacob",
+                "lastName": "Aelion",
+                "initials": "J"
+              },
+              {
+                "fullName": "Alvarado O",
+                "firstName": "Odilon",
+                "lastName": "Alvarado",
+                "initials": "O"
+              },
+              {
+                "fullName": "Alwine L",
+                "firstName": "Lawrence",
+                "lastName": "Alwine",
+                "initials": "L"
+              },
+              {
+                "fullName": "Amin K",
+                "firstName": "Kaushik",
+                "lastName": "Amin",
+                "initials": "K"
+              },
+              {
+                "fullName": "Anderson A",
+                "firstName": "Alyn",
+                "lastName": "Anderson",
+                "initials": "A"
+              },
+              {
+                "fullName": "Anderson C",
+                "firstName": "Corey",
+                "lastName": "Anderson",
+                "initials": "C"
+              },
+              {
+                "fullName": "Andrawis N",
+                "firstName": "Nabil",
+                "lastName": "Andrawis",
+                "initials": "N"
+              },
+              {
+                "fullName": "Archuleta M",
+                "firstName": "Maurice",
+                "lastName": "Archuleta",
+                "initials": "M"
+              },
+              {
+                "fullName": "Arif A",
+                "firstName": "Ahmed",
+                "lastName": "Arif",
+                "initials": "A"
+              },
+              {
+                "fullName": "Azorr M",
+                "firstName": "Michael",
+                "lastName": "Azorr",
+                "initials": "M"
+              },
+              {
+                "fullName": "Babich J",
+                "firstName": "John",
+                "lastName": "Babich",
+                "initials": "J"
+              },
+              {
+                "fullName": "Baraf H",
+                "firstName": "Herbert",
+                "lastName": "Baraf",
+                "initials": "H"
+              },
+              {
+                "fullName": "Barag S",
+                "firstName": "Steven",
+                "lastName": "Barag",
+                "initials": "S"
+              },
+              {
+                "fullName": "Barker B",
+                "firstName": "Bruce",
+                "lastName": "Barker",
+                "initials": "B"
+              },
+              {
+                "fullName": "Barksdale W",
+                "firstName": "Wayne",
+                "lastName": "Barksdale",
+                "initials": "W"
+              },
+              {
+                "fullName": "Barreto A",
+                "firstName": "Angelique",
+                "lastName": "Barreto",
+                "initials": "A"
+              },
+              {
+                "fullName": "Bartkowiak A",
+                "firstName": "Anthony",
+                "lastName": "Bartkowiak",
+                "initials": "A"
+              },
+              {
+                "fullName": "Batongmalaque J",
+                "firstName": "Jenny",
+                "lastName": "Batongmalaque",
+                "initials": "J"
+              },
+              {
+                "fullName": "Bays H",
+                "firstName": "Harold",
+                "lastName": "Bays",
+                "initials": "H"
+              },
+              {
+                "fullName": "Bedel G",
+                "firstName": "Gary",
+                "lastName": "Bedel",
+                "initials": "G"
+              },
+              {
+                "fullName": "Berg I",
+                "firstName": "Isaac",
+                "lastName": "Berg",
+                "initials": "I"
+              },
+              {
+                "fullName": "Bernstein R",
+                "firstName": "Richard",
+                "lastName": "Bernstein",
+                "initials": "R"
+              },
+              {
+                "fullName": "Bertsch J",
+                "firstName": "John",
+                "lastName": "Bertsch",
+                "initials": "J"
+              },
+              {
+                "fullName": "Bhat A",
+                "firstName": "Anupama",
+                "lastName": "Bhat",
+                "initials": "A"
+              },
+              {
+                "fullName": "Bland V",
+                "firstName": "Veita",
+                "lastName": "Bland",
+                "initials": "V"
+              },
+              {
+                "fullName": "Bornfreund J",
+                "firstName": "Jonathan",
+                "lastName": "Bornfreund",
+                "initials": "J"
+              },
+              {
+                "fullName": "Bowling B",
+                "firstName": "Bruce",
+                "lastName": "Bowling",
+                "initials": "B"
+              },
+              {
+                "fullName": "Box E",
+                "firstName": "Emily",
+                "lastName": "Box",
+                "initials": "E"
+              },
+              {
+                "fullName": "Branum R",
+                "firstName": "Russell",
+                "lastName": "Branum",
+                "initials": "R"
+              },
+              {
+                "fullName": "Brewer M",
+                "firstName": "Michael",
+                "lastName": "Brewer",
+                "initials": "M"
+              },
+              {
+                "fullName": "Bright C",
+                "firstName": "Christina",
+                "lastName": "Bright",
+                "initials": "C"
+              },
+              {
+                "fullName": "Britt D",
+                "firstName": "David",
+                "lastName": "Britt",
+                "initials": "D"
+              },
+              {
+                "fullName": "Broker R",
+                "firstName": "Robert",
+                "lastName": "Broker",
+                "initials": "R"
+              },
+              {
+                "fullName": "Bruce T",
+                "firstName": "Tami",
+                "lastName": "Bruce",
+                "initials": "T"
+              },
+              {
+                "fullName": "Buchanan P",
+                "firstName": "Patricia",
+                "lastName": "Buchanan",
+                "initials": "P"
+              },
+              {
+                "fullName": "Burack D",
+                "firstName": "David",
+                "lastName": "Burack",
+                "initials": "D"
+              },
+              {
+                "fullName": "Burbano De Lara J",
+                "firstName": "Jose",
+                "lastName": "Burbano De Lara",
+                "initials": "J"
+              },
+              {
+                "fullName": "Burke D",
+                "firstName": "Deborah",
+                "lastName": "Burke",
+                "initials": "D"
+              },
+              {
+                "fullName": "Buynak R",
+                "firstName": "Robert",
+                "lastName": "Buynak",
+                "initials": "R"
+              },
+              {
+                "fullName": "Byars W",
+                "firstName": "William",
+                "lastName": "Byars",
+                "initials": "W"
+              },
+              {
+                "fullName": "Bybee K",
+                "firstName": "Kevin",
+                "lastName": "Bybee",
+                "initials": "K"
+              },
+              {
+                "fullName": "Campbell J",
+                "firstName": "Joseph",
+                "lastName": "Campbell",
+                "initials": "J"
+              },
+              {
+                "fullName": "Canlas D",
+                "firstName": "Donna",
+                "lastName": "Canlas",
+                "initials": "D"
+              },
+              {
+                "fullName": "Canosa R",
+                "firstName": "Roddy",
+                "lastName": "Canosa",
+                "initials": "R"
+              },
+              {
+                "fullName": "Captain A",
+                "firstName": "Anthony",
+                "lastName": "Captain",
+                "initials": "A"
+              },
+              {
+                "fullName": "Carlos E",
+                "firstName": "Edward",
+                "lastName": "Carlos",
+                "initials": "E"
+              },
+              {
+                "fullName": "Carpenter K",
+                "firstName": "Kent",
+                "lastName": "Carpenter",
+                "initials": "K"
+              },
+              {
+                "fullName": "Carter M",
+                "firstName": "Michael",
+                "lastName": "Carter",
+                "initials": "M"
+              },
+              {
+                "fullName": "Cauthen B",
+                "firstName": "Brett",
+                "lastName": "Cauthen",
+                "initials": "B"
+              },
+              {
+                "fullName": "Cha G",
+                "firstName": "Gloria",
+                "lastName": "Cha",
+                "initials": "G"
+              },
+              {
+                "fullName": "Chang K",
+                "firstName": "Khai",
+                "lastName": "Chang",
+                "initials": "K"
+              },
+              {
+                "fullName": "Chaykin L",
+                "firstName": "Louis",
+                "lastName": "Chaykin",
+                "initials": "L"
+              },
+              {
+                "fullName": "Cheung D",
+                "firstName": "Deanna",
+                "lastName": "Cheung",
+                "initials": "D"
+              },
+              {
+                "fullName": "Chilito A",
+                "firstName": "Alicia",
+                "lastName": "Chilito",
+                "initials": "A"
+              },
+              {
+                "fullName": "Chiong R",
+                "firstName": "Rafael",
+                "lastName": "Chiong",
+                "initials": "R"
+              },
+              {
+                "fullName": "Chipman H",
+                "firstName": "Howard",
+                "lastName": "Chipman",
+                "initials": "H"
+              },
+              {
+                "fullName": "Choi S",
+                "firstName": "Steve",
+                "lastName": "Choi",
+                "initials": "S"
+              },
+              {
+                "fullName": "Christensen J",
+                "firstName": "Jim",
+                "lastName": "Christensen",
+                "initials": "J"
+              },
+              {
+                "fullName": "Chuang R",
+                "firstName": "Rita",
+                "lastName": "Chuang",
+                "initials": "R"
+              },
+              {
+                "fullName": "Claassen D",
+                "firstName": "David",
+                "lastName": "Claassen",
+                "initials": "D"
+              },
+              {
+                "fullName": "Clark G",
+                "firstName": "Gordon",
+                "lastName": "Clark",
+                "initials": "G"
+              },
+              {
+                "fullName": "Clower J",
+                "firstName": "James",
+                "lastName": "Clower",
+                "initials": "J"
+              },
+              {
+                "fullName": "Coburn NJ",
+                "firstName": "Nancy Jo",
+                "lastName": "Coburn",
+                "initials": "NJ"
+              },
+              {
+                "fullName": "Collins H",
+                "firstName": "Harry",
+                "lastName": "Collins",
+                "initials": "H"
+              },
+              {
+                "fullName": "Corder C",
+                "firstName": "Clinton",
+                "lastName": "Corder",
+                "initials": "C"
+              },
+              {
+                "fullName": "Cox R",
+                "firstName": "Ralph",
+                "lastName": "Cox",
+                "initials": "R"
+              },
+              {
+                "fullName": "Crawford P",
+                "firstName": "Paul",
+                "lastName": "Crawford",
+                "initials": "P"
+              },
+              {
+                "fullName": "Cunnar J",
+                "firstName": "James",
+                "lastName": "Cunnar",
+                "initials": "J"
+              },
+              {
+                "fullName": "Davila W",
+                "firstName": "William",
+                "lastName": "Davila",
+                "initials": "W"
+              },
+              {
+                "fullName": "Davit R",
+                "firstName": "Rajesh",
+                "lastName": "Davit",
+                "initials": "R"
+              },
+              {
+                "fullName": "Dayon D",
+                "firstName": "Dominador",
+                "lastName": "Dayon",
+                "initials": "D"
+              },
+              {
+                "fullName": "DeBusk C",
+                "firstName": "Charles",
+                "lastName": "DeBusk",
+                "initials": "C"
+              },
+              {
+                "fullName": "Delgado J",
+                "firstName": "John",
+                "lastName": "Delgado",
+                "initials": "J"
+              },
+              {
+                "fullName": "Delmont J",
+                "firstName": "Jacqueline",
+                "lastName": "Delmont",
+                "initials": "J"
+              },
+              {
+                "fullName": "DeMatteo D",
+                "firstName": "Dominic",
+                "lastName": "DeMatteo",
+                "initials": "D"
+              },
+              {
+                "fullName": "Demetry K",
+                "firstName": "Kamal",
+                "lastName": "Demetry",
+                "initials": "K"
+              },
+              {
+                "fullName": "Dennis D",
+                "firstName": "David",
+                "lastName": "Dennis",
+                "initials": "D"
+              },
+              {
+                "fullName": "DeSantis D",
+                "firstName": "Donna",
+                "lastName": "DeSantis",
+                "initials": "D"
+              },
+              {
+                "fullName": "Diab I",
+                "firstName": "Isam",
+                "lastName": "Diab",
+                "initials": "I"
+              },
+              {
+                "fullName": "Diener C",
+                "firstName": "Carl",
+                "lastName": "Diener",
+                "initials": "C"
+              },
+              {
+                "fullName": "Dobrusin R",
+                "firstName": "Richard",
+                "lastName": "Dobrusin",
+                "initials": "R"
+              },
+              {
+                "fullName": "Dodd J",
+                "firstName": "John",
+                "lastName": "Dodd",
+                "initials": "J"
+              },
+              {
+                "fullName": "Drummond W",
+                "firstName": "Waymon",
+                "lastName": "Drummond",
+                "initials": "W"
+              },
+              {
+                "fullName": "Dulgeroff A",
+                "firstName": "Anthony",
+                "lastName": "Dulgeroff",
+                "initials": "A"
+              },
+              {
+                "fullName": "Durrence H",
+                "firstName": "Hugh",
+                "lastName": "Durrence",
+                "initials": "H"
+              },
+              {
+                "fullName": "Mari Elacion J",
+                "firstName": "Jose",
+                "lastName": "Mari Elacion",
+                "initials": "J"
+              },
+              {
+                "fullName": "Ellison W",
+                "firstName": "William",
+                "lastName": "Ellison",
+                "initials": "W"
+              },
+              {
+                "fullName": "Elzi W",
+                "firstName": "William",
+                "lastName": "Elzi",
+                "initials": "W"
+              },
+              {
+                "fullName": "Escalante D",
+                "firstName": "Dante",
+                "lastName": "Escalante",
+                "initials": "D"
+              },
+              {
+                "fullName": "Ettlinger R",
+                "firstName": "Robert",
+                "lastName": "Ettlinger",
+                "initials": "R"
+              },
+              {
+                "fullName": "Fakih F",
+                "firstName": "Faisal",
+                "lastName": "Fakih",
+                "initials": "F"
+              },
+              {
+                "fullName": "Fandino A",
+                "firstName": "Ana",
+                "lastName": "Fandino",
+                "initials": "A"
+              },
+              {
+                "fullName": "Fang M",
+                "firstName": "Meika",
+                "lastName": "Fang",
+                "initials": "M"
+              },
+              {
+                "fullName": "Farooq O",
+                "firstName": "Omer",
+                "lastName": "Farooq",
+                "initials": "O"
+              },
+              {
+                "fullName": "Farrington C",
+                "firstName": "Cecil",
+                "lastName": "Farrington",
+                "initials": "C"
+              },
+              {
+                "fullName": "Farris N",
+                "firstName": "Neil",
+                "lastName": "Farris",
+                "initials": "N"
+              },
+              {
+                "fullName": "Feinman M",
+                "firstName": "Mitchell",
+                "lastName": "Feinman",
+                "initials": "M"
+              },
+              {
+                "fullName": "Feld L",
+                "firstName": "Lawrence",
+                "lastName": "Feld",
+                "initials": "L"
+              },
+              {
+                "fullName": "Ferro F",
+                "firstName": "Fernando",
+                "lastName": "Ferro",
+                "initials": "F"
+              },
+              {
+                "fullName": "Fields H",
+                "firstName": "Harold",
+                "lastName": "Fields",
+                "initials": "H"
+              },
+              {
+                "fullName": "First B",
+                "firstName": "Brian",
+                "lastName": "First",
+                "initials": "B"
+              },
+              {
+                "fullName": "Fitz‐Patrick D",
+                "firstName": "David",
+                "lastName": "Fitz‐Patrick",
+                "initials": "D"
+              },
+              {
+                "fullName": "Flint K",
+                "firstName": "Kathleen",
+                "lastName": "Flint",
+                "initials": "K"
+              },
+              {
+                "fullName": "Flippo G",
+                "firstName": "Gregory",
+                "lastName": "Flippo",
+                "initials": "G"
+              },
+              {
+                "fullName": "Folkerth S",
+                "firstName": "Steven",
+                "lastName": "Folkerth",
+                "initials": "S"
+              },
+              {
+                "fullName": "Fowler F",
+                "firstName": "Fred",
+                "lastName": "Fowler",
+                "initials": "F"
+              },
+              {
+                "fullName": "Fox D",
+                "firstName": "Donald",
+                "lastName": "Fox",
+                "initials": "D"
+              },
+              {
+                "fullName": "Frandsen B",
+                "firstName": "Brad",
+                "lastName": "Frandsen",
+                "initials": "B"
+              },
+              {
+                "fullName": "Freeman J",
+                "firstName": "James",
+                "lastName": "Freeman",
+                "initials": "J"
+              },
+              {
+                "fullName": "Freyne B",
+                "firstName": "Brigid",
+                "lastName": "Freyne",
+                "initials": "B"
+              },
+              {
+                "fullName": "Fritzhand M",
+                "firstName": "Martin",
+                "lastName": "Fritzhand",
+                "initials": "M"
+              },
+              {
+                "fullName": "Fung E",
+                "firstName": "Eugene",
+                "lastName": "Fung",
+                "initials": "E"
+              },
+              {
+                "fullName": "Funk G",
+                "firstName": "Gregory",
+                "lastName": "Funk",
+                "initials": "G"
+              },
+              {
+                "fullName": "Gabra N",
+                "firstName": "Nashwa",
+                "lastName": "Gabra",
+                "initials": "N"
+              },
+              {
+                "fullName": "Gagianas P",
+                "firstName": "Peter",
+                "lastName": "Gagianas",
+                "initials": "P"
+              },
+              {
+                "fullName": "Gamarra L",
+                "firstName": "Lewis",
+                "lastName": "Gamarra",
+                "initials": "L"
+              },
+              {
+                "fullName": "Gaona R",
+                "firstName": "Raul",
+                "lastName": "Gaona",
+                "initials": "R"
+              },
+              {
+                "fullName": "Garcia R",
+                "firstName": "Ronald",
+                "lastName": "Garcia",
+                "initials": "R"
+              },
+              {
+                "fullName": "Garner A",
+                "firstName": "Andrew",
+                "lastName": "Garner",
+                "initials": "A"
+              },
+              {
+                "fullName": "Gaston P",
+                "firstName": "Pierre",
+                "lastName": "Gaston",
+                "initials": "P"
+              },
+              {
+                "fullName": "Ghanekar H",
+                "firstName": "Hrishikesh",
+                "lastName": "Ghanekar",
+                "initials": "H"
+              },
+              {
+                "fullName": "Ghosh C",
+                "firstName": "Chandra",
+                "lastName": "Ghosh",
+                "initials": "C"
+              },
+              {
+                "fullName": "Gladstein G",
+                "firstName": "Geoffrey",
+                "lastName": "Gladstein",
+                "initials": "G"
+              },
+              {
+                "fullName": "Goldfischer E",
+                "firstName": "Evan",
+                "lastName": "Goldfischer",
+                "initials": "E"
+              },
+              {
+                "fullName": "Gorman T",
+                "firstName": "Timothy",
+                "lastName": "Gorman",
+                "initials": "T"
+              },
+              {
+                "fullName": "Gottschlich G",
+                "firstName": "Gregory",
+                "lastName": "Gottschlich",
+                "initials": "G"
+              },
+              {
+                "fullName": "Grant D",
+                "firstName": "David",
+                "lastName": "Grant",
+                "initials": "D"
+              },
+              {
+                "fullName": "Gray J",
+                "firstName": "James",
+                "lastName": "Gray",
+                "initials": "J"
+              },
+              {
+                "fullName": "Green C",
+                "firstName": "Christopher",
+                "lastName": "Green",
+                "initials": "C"
+              },
+              {
+                "fullName": "Green B",
+                "firstName": "Benny",
+                "lastName": "Green",
+                "initials": "B"
+              },
+              {
+                "fullName": "Gregory D",
+                "firstName": "Darin",
+                "lastName": "Gregory",
+                "initials": "D"
+              },
+              {
+                "fullName": "Griffin R",
+                "firstName": "Robert",
+                "lastName": "Griffin",
+                "initials": "R"
+              },
+              {
+                "fullName": "Guice M",
+                "firstName": "Michael",
+                "lastName": "Guice",
+                "initials": "M"
+              },
+              {
+                "fullName": "Gupta R",
+                "firstName": "Ramesh",
+                "lastName": "Gupta",
+                "initials": "R"
+              },
+              {
+                "fullName": "Hahn G",
+                "firstName": "Giora",
+                "lastName": "Hahn",
+                "initials": "G"
+              },
+              {
+                "fullName": "Halter D",
+                "firstName": "Dale",
+                "lastName": "Halter",
+                "initials": "D"
+              },
+              {
+                "fullName": "Halter M",
+                "firstName": "Michael",
+                "lastName": "Halter",
+                "initials": "M"
+              },
+              {
+                "fullName": "Hansen V",
+                "firstName": "Val",
+                "lastName": "Hansen",
+                "initials": "V"
+              },
+              {
+                "fullName": "Harris A",
+                "firstName": "Anthony",
+                "lastName": "Harris",
+                "initials": "A"
+              },
+              {
+                "fullName": "Harris M",
+                "firstName": "Mark",
+                "lastName": "Harris",
+                "initials": "M"
+              },
+              {
+                "fullName": "Headley D",
+                "firstName": "David",
+                "lastName": "Headley",
+                "initials": "D"
+              },
+              {
+                "fullName": "Hejeebu S",
+                "firstName": "Srinivas",
+                "lastName": "Hejeebu",
+                "initials": "S"
+              },
+              {
+                "fullName": "Hendrix E",
+                "firstName": "Ernest",
+                "lastName": "Hendrix",
+                "initials": "E"
+              },
+              {
+                "fullName": "Herman L",
+                "firstName": "Lee",
+                "lastName": "Herman",
+                "initials": "L"
+              },
+              {
+                "fullName": "Herrera C",
+                "firstName": "Carlos",
+                "lastName": "Herrera",
+                "initials": "C"
+              },
+              {
+                "fullName": "Herring C",
+                "firstName": "Charles",
+                "lastName": "Herring",
+                "initials": "C"
+              },
+              {
+                "fullName": "Herrod J",
+                "firstName": "John",
+                "lastName": "Herrod",
+                "initials": "J"
+              },
+              {
+                "fullName": "Ho G",
+                "firstName": "Gerald",
+                "lastName": "Ho",
+                "initials": "G"
+              },
+              {
+                "fullName": "Hole S",
+                "firstName": "Susan",
+                "lastName": "Hole",
+                "initials": "S"
+              },
+              {
+                "fullName": "Hollister R",
+                "firstName": "Ripley",
+                "lastName": "Hollister",
+                "initials": "R"
+              },
+              {
+                "fullName": "Holt P",
+                "firstName": "Peter",
+                "lastName": "Holt",
+                "initials": "P"
+              },
+              {
+                "fullName": "Hopkins J",
+                "firstName": "John",
+                "lastName": "Hopkins",
+                "initials": "J"
+              },
+              {
+                "fullName": "Horton K",
+                "firstName": "Kevin",
+                "lastName": "Horton",
+                "initials": "K"
+              },
+              {
+                "fullName": "Howard T",
+                "firstName": "Timothy",
+                "lastName": "Howard",
+                "initials": "T"
+              },
+              {
+                "fullName": "Howell M",
+                "firstName": "Mary",
+                "lastName": "Howell",
+                "initials": "M"
+              },
+              {
+                "fullName": "Huff J",
+                "firstName": "John",
+                "lastName": "Huff",
+                "initials": "J"
+              },
+              {
+                "fullName": "Huffman C",
+                "firstName": "Cynthia",
+                "lastName": "Huffman",
+                "initials": "C"
+              },
+              {
+                "fullName": "Huling R",
+                "firstName": "Randall",
+                "lastName": "Huling",
+                "initials": "R"
+              },
+              {
+                "fullName": "Hyers T",
+                "firstName": "Thomas",
+                "lastName": "Hyers",
+                "initials": "T"
+              },
+              {
+                "fullName": "Hymowitz R",
+                "firstName": "Richard",
+                "lastName": "Hymowitz",
+                "initials": "R"
+              },
+              {
+                "fullName": "Ibraheem M",
+                "firstName": "Musibau",
+                "lastName": "Ibraheem",
+                "initials": "M"
+              },
+              {
+                "fullName": "Idarraga S",
+                "firstName": "Samuel",
+                "lastName": "Idarraga",
+                "initials": "S"
+              },
+              {
+                "fullName": "Iranmanesh A",
+                "firstName": "Ali",
+                "lastName": "Iranmanesh",
+                "initials": "A"
+              },
+              {
+                "fullName": "Isakov T",
+                "firstName": "Terence",
+                "lastName": "Isakov",
+                "initials": "T"
+              },
+              {
+                "fullName": "Jack D",
+                "firstName": "David",
+                "lastName": "Jack",
+                "initials": "D"
+              },
+              {
+                "fullName": "Jacks R",
+                "firstName": "Randal",
+                "lastName": "Jacks",
+                "initials": "R"
+              },
+              {
+                "fullName": "Jackson R",
+                "firstName": "Raymond",
+                "lastName": "Jackson",
+                "initials": "R"
+              },
+              {
+                "fullName": "Jackson R",
+                "firstName": "Richard",
+                "lastName": "Jackson",
+                "initials": "R"
+              },
+              {
+                "fullName": "Jackson B",
+                "firstName": "Bruce",
+                "lastName": "Jackson",
+                "initials": "B"
+              },
+              {
+                "fullName": "Jain M",
+                "firstName": "Mahendra",
+                "lastName": "Jain",
+                "initials": "M"
+              },
+              {
+                "fullName": "Janovitz R",
+                "firstName": "Richard",
+                "lastName": "Janovitz",
+                "initials": "R"
+              },
+              {
+                "fullName": "Jeereddi P",
+                "firstName": "Prasad",
+                "lastName": "Jeereddi",
+                "initials": "P"
+              },
+              {
+                "fullName": "Johary A",
+                "firstName": "Albert",
+                "lastName": "Johary",
+                "initials": "A"
+              },
+              {
+                "fullName": "Johnson C",
+                "firstName": "Chrystal",
+                "lastName": "Johnson",
+                "initials": "C"
+              },
+              {
+                "fullName": "Johnson W",
+                "firstName": "Wallace",
+                "lastName": "Johnson",
+                "initials": "W"
+              },
+              {
+                "fullName": "Johnson C",
+                "firstName": "Carol",
+                "lastName": "Johnson",
+                "initials": "C"
+              },
+              {
+                "fullName": "Jones S",
+                "firstName": "Stephen",
+                "lastName": "Jones",
+                "initials": "S"
+              },
+              {
+                "fullName": "Jones R",
+                "firstName": "Robert",
+                "lastName": "Jones",
+                "initials": "R"
+              },
+              {
+                "fullName": "Jordan R",
+                "firstName": "Rebecca",
+                "lastName": "Jordan",
+                "initials": "R"
+              },
+              {
+                "fullName": "June J",
+                "firstName": "Joshua",
+                "lastName": "June",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kafka S",
+                "firstName": "Shelly",
+                "lastName": "Kafka",
+                "initials": "S"
+              },
+              {
+                "fullName": "Kalen V",
+                "firstName": "Vicki",
+                "lastName": "Kalen",
+                "initials": "V"
+              },
+              {
+                "fullName": "Karl J",
+                "firstName": "John",
+                "lastName": "Karl",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kaufmann R",
+                "firstName": "Robert",
+                "lastName": "Kaufmann",
+                "initials": "R"
+              },
+              {
+                "fullName": "Kavanaugh A",
+                "firstName": "Arthur",
+                "lastName": "Kavanaugh",
+                "initials": "A"
+              },
+              {
+                "fullName": "Kaveh K",
+                "firstName": "Kianoosh",
+                "lastName": "Kaveh",
+                "initials": "K"
+              },
+              {
+                "fullName": "Keane J",
+                "firstName": "James",
+                "lastName": "Keane",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kerzner B",
+                "firstName": "Boris",
+                "lastName": "Kerzner",
+                "initials": "B"
+              },
+              {
+                "fullName": "Khan J",
+                "firstName": "Jaber",
+                "lastName": "Khan",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kidokoro Y",
+                "firstName": "Yasuko",
+                "lastName": "Kidokoro",
+                "initials": "Y"
+              },
+              {
+                "fullName": "Kirstein J",
+                "firstName": "Judith",
+                "lastName": "Kirstein",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kivitz A",
+                "firstName": "Alan",
+                "lastName": "Kivitz",
+                "initials": "A"
+              },
+              {
+                "fullName": "Klein S",
+                "firstName": "Steven",
+                "lastName": "Klein",
+                "initials": "S"
+              },
+              {
+                "fullName": "Klein T",
+                "firstName": "Thomas",
+                "lastName": "Klein",
+                "initials": "T"
+              },
+              {
+                "fullName": "Knight H",
+                "firstName": "Herbert",
+                "lastName": "Knight",
+                "initials": "H"
+              },
+              {
+                "fullName": "Knutson T",
+                "firstName": "Thomas",
+                "lastName": "Knutson",
+                "initials": "T"
+              },
+              {
+                "fullName": "Koch S",
+                "firstName": "Stanley",
+                "lastName": "Koch",
+                "initials": "S"
+              },
+              {
+                "fullName": "Koilpillai R",
+                "firstName": "Robinson",
+                "lastName": "Koilpillai",
+                "initials": "R"
+              },
+              {
+                "fullName": "Kolettis E",
+                "firstName": "Elias",
+                "lastName": "Kolettis",
+                "initials": "E"
+              },
+              {
+                "fullName": "Koontz D",
+                "firstName": "Daniel",
+                "lastName": "Koontz",
+                "initials": "D"
+              },
+              {
+                "fullName": "Kopp J",
+                "firstName": "James",
+                "lastName": "Kopp",
+                "initials": "J"
+              },
+              {
+                "fullName": "Koshy N",
+                "firstName": "Nadakavil",
+                "lastName": "Koshy",
+                "initials": "N"
+              },
+              {
+                "fullName": "Kotek L",
+                "firstName": "Larry",
+                "lastName": "Kotek",
+                "initials": "L"
+              },
+              {
+                "fullName": "Krause R",
+                "firstName": "Richard",
+                "lastName": "Krause",
+                "initials": "R"
+              },
+              {
+                "fullName": "LaFata J",
+                "firstName": "John",
+                "lastName": "LaFata",
+                "initials": "J"
+              },
+              {
+                "fullName": "Lang C",
+                "firstName": "Carl",
+                "lastName": "Lang",
+                "initials": "C"
+              },
+              {
+                "fullName": "Lano M",
+                "firstName": "Michael",
+                "lastName": "Lano",
+                "initials": "M"
+              },
+              {
+                "fullName": "Lasala G",
+                "firstName": "German",
+                "lastName": "Lasala",
+                "initials": "G"
+              },
+              {
+                "fullName": "Lawless A",
+                "firstName": "Andrea",
+                "lastName": "Lawless",
+                "initials": "A"
+              },
+              {
+                "fullName": "Lee K",
+                "firstName": "Keung",
+                "lastName": "Lee",
+                "initials": "K"
+              },
+              {
+                "fullName": "Lee D",
+                "firstName": "Denny",
+                "lastName": "Lee",
+                "initials": "D"
+              },
+              {
+                "fullName": "Lefebvre G",
+                "firstName": "Gigi",
+                "lastName": "Lefebvre",
+                "initials": "G"
+              },
+              {
+                "fullName": "Lester F",
+                "firstName": "Frank",
+                "lastName": "Lester",
+                "initials": "F"
+              },
+              {
+                "fullName": "Levins P",
+                "firstName": "Peter",
+                "lastName": "Levins",
+                "initials": "P"
+              },
+              {
+                "fullName": "Lewis D",
+                "firstName": "Derek",
+                "lastName": "Lewis",
+                "initials": "D"
+              },
+              {
+                "fullName": "Lieberman D",
+                "firstName": "Donald",
+                "lastName": "Lieberman",
+                "initials": "D"
+              },
+              {
+                "fullName": "Lillestol M",
+                "firstName": "Michael",
+                "lastName": "Lillestol",
+                "initials": "M"
+              },
+              {
+                "fullName": "Lillo J",
+                "firstName": "Joseph",
+                "lastName": "Lillo",
+                "initials": "J"
+              },
+              {
+                "fullName": "Littlefield R",
+                "firstName": "Ronald",
+                "lastName": "Littlefield",
+                "initials": "R"
+              },
+              {
+                "fullName": "Lockwood M",
+                "firstName": "Michael",
+                "lastName": "Lockwood",
+                "initials": "M"
+              },
+              {
+                "fullName": "Lohr K",
+                "firstName": "Kristine",
+                "lastName": "Lohr",
+                "initials": "K"
+              },
+              {
+                "fullName": "Look M",
+                "firstName": "Michelle",
+                "lastName": "Look",
+                "initials": "M"
+              },
+              {
+                "fullName": "Lorch D",
+                "firstName": "Daniel",
+                "lastName": "Lorch",
+                "initials": "D"
+              },
+              {
+                "fullName": "Ludivico C",
+                "firstName": "Charles",
+                "lastName": "Ludivico",
+                "initials": "C"
+              },
+              {
+                "fullName": "Luna B",
+                "firstName": "Blanca",
+                "lastName": "Luna",
+                "initials": "B"
+              },
+              {
+                "fullName": "Lutskiy M",
+                "firstName": "Maxim",
+                "lastName": "Lutskiy",
+                "initials": "M"
+              },
+              {
+                "fullName": "Mabaquiao A",
+                "firstName": "Arthur",
+                "lastName": "Mabaquiao",
+                "initials": "A"
+              },
+              {
+                "fullName": "Maggiacomo F",
+                "firstName": "Frank",
+                "lastName": "Maggiacomo",
+                "initials": "F"
+              },
+              {
+                "fullName": "Makam S",
+                "firstName": "Sashi",
+                "lastName": "Makam",
+                "initials": "S"
+              },
+              {
+                "fullName": "Maletz L",
+                "firstName": "Louis",
+                "lastName": "Maletz",
+                "initials": "L"
+              },
+              {
+                "fullName": "Malik A",
+                "firstName": "Aarti",
+                "lastName": "Malik",
+                "initials": "A"
+              },
+              {
+                "fullName": "Martin E",
+                "firstName": "Earl",
+                "lastName": "Martin",
+                "initials": "E"
+              },
+              {
+                "fullName": "Martinez J",
+                "firstName": "Juvenal",
+                "lastName": "Martinez",
+                "initials": "J"
+              },
+              {
+                "fullName": "Marx P",
+                "firstName": "Phyllis",
+                "lastName": "Marx",
+                "initials": "P"
+              },
+              {
+                "fullName": "May P",
+                "firstName": "Percy",
+                "lastName": "May",
+                "initials": "P"
+              },
+              {
+                "fullName": "Maynard K",
+                "firstName": "Kenneth",
+                "lastName": "Maynard",
+                "initials": "K"
+              },
+              {
+                "fullName": "McConnehey D",
+                "firstName": "Diane",
+                "lastName": "McConnehey",
+                "initials": "D"
+              },
+              {
+                "fullName": "McConnehey B",
+                "firstName": "Brock",
+                "lastName": "McConnehey",
+                "initials": "B"
+              },
+              {
+                "fullName": "McGettigan J",
+                "firstName": "John",
+                "lastName": "McGettigan",
+                "initials": "J"
+              },
+              {
+                "fullName": "McGuire M",
+                "firstName": "Michael",
+                "lastName": "McGuire",
+                "initials": "M"
+              },
+              {
+                "fullName": "McIlwain H",
+                "firstName": "Harris",
+                "lastName": "McIlwain",
+                "initials": "H"
+              },
+              {
+                "fullName": "McKenzie W",
+                "firstName": "Wilfred",
+                "lastName": "McKenzie",
+                "initials": "W"
+              },
+              {
+                "fullName": "McLean B",
+                "firstName": "Barry",
+                "lastName": "McLean",
+                "initials": "B"
+              },
+              {
+                "fullName": "McNeil D",
+                "firstName": "Donald",
+                "lastName": "McNeil",
+                "initials": "D"
+              },
+              {
+                "fullName": "Mehta D",
+                "firstName": "Daksha",
+                "lastName": "Mehta",
+                "initials": "D"
+              },
+              {
+                "fullName": "Meisner C",
+                "firstName": "Carl",
+                "lastName": "Meisner",
+                "initials": "C"
+              },
+              {
+                "fullName": "Meli J",
+                "firstName": "James",
+                "lastName": "Meli",
+                "initials": "J"
+              },
+              {
+                "fullName": "Metyas S",
+                "firstName": "Samy",
+                "lastName": "Metyas",
+                "initials": "S"
+              },
+              {
+                "fullName": "Metzger F",
+                "firstName": "Frank",
+                "lastName": "Metzger",
+                "initials": "F"
+              },
+              {
+                "fullName": "Meyers P",
+                "firstName": "Peter",
+                "lastName": "Meyers",
+                "initials": "P"
+              },
+              {
+                "fullName": "Michlin B",
+                "firstName": "Bernard",
+                "lastName": "Michlin",
+                "initials": "B"
+              },
+              {
+                "fullName": "Mihills C",
+                "firstName": "Cody",
+                "lastName": "Mihills",
+                "initials": "C"
+              },
+              {
+                "fullName": "Miller K",
+                "firstName": "Kenneth",
+                "lastName": "Miller",
+                "initials": "K"
+              },
+              {
+                "fullName": "Miller A",
+                "firstName": "Alan",
+                "lastName": "Miller",
+                "initials": "A"
+              },
+              {
+                "fullName": "Minton S",
+                "firstName": "Stephen",
+                "lastName": "Minton",
+                "initials": "S"
+              },
+              {
+                "fullName": "Mohart A",
+                "firstName": "Ann‐Elizabeth",
+                "lastName": "Mohart",
+                "initials": "A"
+              },
+              {
+                "fullName": "Montenegro C",
+                "firstName": "Carlos",
+                "lastName": "Montenegro",
+                "initials": "C"
+              },
+              {
+                "fullName": "Montgomery R",
+                "firstName": "Richard",
+                "lastName": "Montgomery",
+                "initials": "R"
+              },
+              {
+                "fullName": "Morelli J",
+                "firstName": "John",
+                "lastName": "Morelli",
+                "initials": "J"
+              },
+              {
+                "fullName": "Morin D",
+                "firstName": "David",
+                "lastName": "Morin",
+                "initials": "D"
+              },
+              {
+                "fullName": "Morita C",
+                "firstName": "Craig",
+                "lastName": "Morita",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8496-8294"
+                }
+              },
+              {
+                "fullName": "Morris F",
+                "firstName": "Frank",
+                "lastName": "Morris",
+                "initials": "F"
+              },
+              {
+                "fullName": "Mortensen S",
+                "firstName": "Steen",
+                "lastName": "Mortensen",
+                "initials": "S"
+              },
+              {
+                "fullName": "Movafagh S",
+                "firstName": "Sharareh",
+                "lastName": "Movafagh",
+                "initials": "S"
+              },
+              {
+                "fullName": "Multani P",
+                "firstName": "Pramod",
+                "lastName": "Multani",
+                "initials": "P"
+              },
+              {
+                "fullName": "Murphy D",
+                "firstName": "Dennis",
+                "lastName": "Murphy",
+                "initials": "D"
+              },
+              {
+                "fullName": "Muse D",
+                "firstName": "Derek",
+                "lastName": "Muse",
+                "initials": "D"
+              },
+              {
+                "fullName": "Myerson G",
+                "firstName": "Gary",
+                "lastName": "Myerson",
+                "initials": "G"
+              },
+              {
+                "fullName": "Nagrani M",
+                "firstName": "Mark",
+                "lastName": "Nagrani",
+                "initials": "M"
+              },
+              {
+                "fullName": "Naidu J",
+                "firstName": "Jayaram",
+                "lastName": "Naidu",
+                "initials": "J"
+              },
+              {
+                "fullName": "Natividad MB",
+                "firstName": "Maria Bella",
+                "lastName": "Natividad",
+                "initials": "MB"
+              },
+              {
+                "fullName": "Neutel J",
+                "firstName": "Joel",
+                "lastName": "Neutel",
+                "initials": "J"
+              },
+              {
+                "fullName": "Nolen T",
+                "firstName": "Thomas",
+                "lastName": "Nolen",
+                "initials": "T"
+              },
+              {
+                "fullName": "Nussbaum A",
+                "firstName": "Alan",
+                "lastName": "Nussbaum",
+                "initials": "A"
+              },
+              {
+                "fullName": "Olson R",
+                "firstName": "Richard",
+                "lastName": "Olson",
+                "initials": "R"
+              },
+              {
+                "fullName": "Ong S",
+                "firstName": "Stephen",
+                "lastName": "Ong",
+                "initials": "S"
+              },
+              {
+                "fullName": "Osborne J",
+                "firstName": "John",
+                "lastName": "Osborne",
+                "initials": "J"
+              },
+              {
+                "fullName": "Pace M",
+                "firstName": "Michael",
+                "lastName": "Pace",
+                "initials": "M"
+              },
+              {
+                "fullName": "Paez H",
+                "firstName": "Henry",
+                "lastName": "Paez",
+                "initials": "H"
+              },
+              {
+                "fullName": "Palatnik M",
+                "firstName": "Mikhail",
+                "lastName": "Palatnik",
+                "initials": "M"
+              },
+              {
+                "fullName": "Palmer W",
+                "firstName": "William",
+                "lastName": "Palmer",
+                "initials": "W"
+              },
+              {
+                "fullName": "Pappas J",
+                "firstName": "John",
+                "lastName": "Pappas",
+                "initials": "J"
+              },
+              {
+                "fullName": "Paster Z",
+                "firstName": "Zorba",
+                "lastName": "Paster",
+                "initials": "Z"
+              },
+              {
+                "fullName": "Patel M",
+                "firstName": "Meenakshi",
+                "lastName": "Patel",
+                "initials": "M"
+              },
+              {
+                "fullName": "Patel M",
+                "firstName": "Manoj",
+                "lastName": "Patel",
+                "initials": "M"
+              },
+              {
+                "fullName": "Patel B",
+                "firstName": "Bhadresh",
+                "lastName": "Patel",
+                "initials": "B"
+              },
+              {
+                "fullName": "Patton W",
+                "firstName": "Walter",
+                "lastName": "Patton",
+                "initials": "W"
+              },
+              {
+                "fullName": "Pema K",
+                "firstName": "Kanchan",
+                "lastName": "Pema",
+                "initials": "K"
+              },
+              {
+                "fullName": "Peniston J",
+                "firstName": "John",
+                "lastName": "Peniston",
+                "initials": "J"
+              },
+              {
+                "fullName": "Peppin G",
+                "firstName": "Gary",
+                "lastName": "Peppin",
+                "initials": "G"
+              },
+              {
+                "fullName": "Petit C",
+                "firstName": "Carlos",
+                "lastName": "Petit",
+                "initials": "C"
+              },
+              {
+                "fullName": "Phillips C",
+                "firstName": "Christopher",
+                "lastName": "Phillips",
+                "initials": "C"
+              },
+              {
+                "fullName": "Phillips A",
+                "firstName": "Andrea",
+                "lastName": "Phillips",
+                "initials": "A"
+              },
+              {
+                "fullName": "Piatek M",
+                "firstName": "Marek",
+                "lastName": "Piatek",
+                "initials": "M"
+              },
+              {
+                "fullName": "Pick M",
+                "firstName": "Michael",
+                "lastName": "Pick",
+                "initials": "M"
+              },
+              {
+                "fullName": "Pillinger M",
+                "firstName": "Michael",
+                "lastName": "Pillinger",
+                "initials": "M"
+              },
+              {
+                "fullName": "Pogue B",
+                "firstName": "Bryan",
+                "lastName": "Pogue",
+                "initials": "B"
+              },
+              {
+                "fullName": "Posey M",
+                "firstName": "Michael",
+                "lastName": "Posey",
+                "initials": "M"
+              },
+              {
+                "fullName": "Poss G",
+                "firstName": "Geri",
+                "lastName": "Poss",
+                "initials": "G"
+              },
+              {
+                "fullName": "Preston K",
+                "firstName": "Krista",
+                "lastName": "Preston",
+                "initials": "K"
+              },
+              {
+                "fullName": "Prupas H",
+                "firstName": "Henry",
+                "lastName": "Prupas",
+                "initials": "H"
+              },
+              {
+                "fullName": "Pullman J",
+                "firstName": "John",
+                "lastName": "Pullman",
+                "initials": "J"
+              },
+              {
+                "fullName": "Raikhel M",
+                "firstName": "Marina",
+                "lastName": "Raikhel",
+                "initials": "M"
+              },
+              {
+                "fullName": "Randall W",
+                "firstName": "William",
+                "lastName": "Randall",
+                "initials": "W"
+              },
+              {
+                "fullName": "Rangaraj M",
+                "firstName": "Madura",
+                "lastName": "Rangaraj",
+                "initials": "M"
+              },
+              {
+                "fullName": "Rapo S",
+                "firstName": "Seppo",
+                "lastName": "Rapo",
+                "initials": "S"
+              },
+              {
+                "fullName": "Rapoport R",
+                "firstName": "Ronald",
+                "lastName": "Rapoport",
+                "initials": "R"
+              },
+              {
+                "fullName": "Rastogi P",
+                "firstName": "Padmashri",
+                "lastName": "Rastogi",
+                "initials": "P"
+              },
+              {
+                "fullName": "Reddy J",
+                "firstName": "Jakkidi",
+                "lastName": "Reddy",
+                "initials": "J"
+              },
+              {
+                "fullName": "Reddy R",
+                "firstName": "Riteesha",
+                "lastName": "Reddy",
+                "initials": "R"
+              },
+              {
+                "fullName": "Reed L",
+                "firstName": "Larry",
+                "lastName": "Reed",
+                "initials": "L"
+              },
+              {
+                "fullName": "Reeves M",
+                "firstName": "Matthew",
+                "lastName": "Reeves",
+                "initials": "M"
+              },
+              {
+                "fullName": "Reiff M",
+                "firstName": "Myron",
+                "lastName": "Reiff",
+                "initials": "M"
+              },
+              {
+                "fullName": "Reynolds M",
+                "firstName": "Michele",
+                "lastName": "Reynolds",
+                "initials": "M"
+              },
+              {
+                "fullName": "Rhee M",
+                "firstName": "Margaret",
+                "lastName": "Rhee",
+                "initials": "M"
+              },
+              {
+                "fullName": "Rhudy J",
+                "firstName": "Jackson",
+                "lastName": "Rhudy",
+                "initials": "J"
+              },
+              {
+                "fullName": "Richter R",
+                "firstName": "Ralph",
+                "lastName": "Richter",
+                "initials": "R"
+              },
+              {
+                "fullName": "Ries D",
+                "firstName": "Daniel",
+                "lastName": "Ries",
+                "initials": "D"
+              },
+              {
+                "fullName": "Roberson K",
+                "firstName": "Kent",
+                "lastName": "Roberson",
+                "initials": "K"
+              },
+              {
+                "fullName": "Roberts D",
+                "firstName": "Douglas",
+                "lastName": "Roberts",
+                "initials": "D"
+              },
+              {
+                "fullName": "Robinson D",
+                "firstName": "Derrick",
+                "lastName": "Robinson",
+                "initials": "D"
+              },
+              {
+                "fullName": "Rock K",
+                "firstName": "Karin",
+                "lastName": "Rock",
+                "initials": "K"
+              },
+              {
+                "fullName": "Roer D",
+                "firstName": "David",
+                "lastName": "Roer",
+                "initials": "D"
+              },
+              {
+                "fullName": "Rosen R",
+                "firstName": "Robert",
+                "lastName": "Rosen",
+                "initials": "R"
+              },
+              {
+                "fullName": "Rosenblum G",
+                "firstName": "Gary",
+                "lastName": "Rosenblum",
+                "initials": "G"
+              },
+              {
+                "fullName": "Rosenfeld J",
+                "firstName": "Jack",
+                "lastName": "Rosenfeld",
+                "initials": "J"
+              },
+              {
+                "fullName": "Rosenthal A",
+                "firstName": "Ann",
+                "lastName": "Rosenthal",
+                "initials": "A"
+              },
+              {
+                "fullName": "Ross D",
+                "firstName": "Dennis",
+                "lastName": "Ross",
+                "initials": "D"
+              },
+              {
+                "fullName": "Rothberg M",
+                "firstName": "Michael",
+                "lastName": "Rothberg",
+                "initials": "M"
+              },
+              {
+                "fullName": "Rubino J",
+                "firstName": "John",
+                "lastName": "Rubino",
+                "initials": "J"
+              },
+              {
+                "fullName": "Rudolph L",
+                "firstName": "Lance",
+                "lastName": "Rudolph",
+                "initials": "L"
+              },
+              {
+                "fullName": "Ruoff G",
+                "firstName": "Gary",
+                "lastName": "Ruoff",
+                "initials": "G"
+              },
+              {
+                "fullName": "Ryan E",
+                "firstName": "Eugene",
+                "lastName": "Ryan",
+                "initials": "E"
+              },
+              {
+                "fullName": "Sadler C",
+                "firstName": "Cynthia",
+                "lastName": "Sadler",
+                "initials": "C"
+              },
+              {
+                "fullName": "Samson M",
+                "firstName": "Mercedes",
+                "lastName": "Samson",
+                "initials": "M"
+              },
+              {
+                "fullName": "Sanders R",
+                "firstName": "Robyn",
+                "lastName": "Sanders",
+                "initials": "R"
+              },
+              {
+                "fullName": "Scarsella A",
+                "firstName": "Anthony",
+                "lastName": "Scarsella",
+                "initials": "A"
+              },
+              {
+                "fullName": "Schmidt J",
+                "firstName": "Jay",
+                "lastName": "Schmidt",
+                "initials": "J"
+              },
+              {
+                "fullName": "Schoenwalder M",
+                "firstName": "Michael",
+                "lastName": "Schoenwalder",
+                "initials": "M"
+              },
+              {
+                "fullName": "Schreiber A",
+                "firstName": "Andrew",
+                "lastName": "Schreiber",
+                "initials": "A"
+              },
+              {
+                "fullName": "Schreiman R",
+                "firstName": "Robert",
+                "lastName": "Schreiman",
+                "initials": "R"
+              },
+              {
+                "fullName": "Schultz D",
+                "firstName": "David",
+                "lastName": "Schultz",
+                "initials": "D"
+              },
+              {
+                "fullName": "Schwartz A",
+                "firstName": "Alan",
+                "lastName": "Schwartz",
+                "initials": "A"
+              },
+              {
+                "fullName": "Sensenbrenner J",
+                "firstName": "John",
+                "lastName": "Sensenbrenner",
+                "initials": "J"
+              },
+              {
+                "fullName": "Serfer G",
+                "firstName": "Gregory",
+                "lastName": "Serfer",
+                "initials": "G"
+              },
+              {
+                "fullName": "Seshadri N",
+                "firstName": "Niranjan",
+                "lastName": "Seshadri",
+                "initials": "N"
+              },
+              {
+                "fullName": "Severa L",
+                "firstName": "Larry",
+                "lastName": "Severa",
+                "initials": "L"
+              },
+              {
+                "fullName": "Shah S",
+                "firstName": "Suresh",
+                "lastName": "Shah",
+                "initials": "S"
+              },
+              {
+                "fullName": "Shanes J",
+                "firstName": "Jeffrey",
+                "lastName": "Shanes",
+                "initials": "J"
+              },
+              {
+                "fullName": "Sharma M",
+                "firstName": "Marigene",
+                "lastName": "Sharma",
+                "initials": "M"
+              },
+              {
+                "fullName": "Sharpe C",
+                "firstName": "Charles",
+                "lastName": "Sharpe",
+                "initials": "C"
+              },
+              {
+                "fullName": "Shergy W",
+                "firstName": "William",
+                "lastName": "Shergy",
+                "initials": "W"
+              },
+              {
+                "fullName": "Sherman H",
+                "firstName": "Howard",
+                "lastName": "Sherman",
+                "initials": "H"
+              },
+              {
+                "fullName": "Shlotzhauer T",
+                "firstName": "Tammi",
+                "lastName": "Shlotzhauer",
+                "initials": "T"
+              },
+              {
+                "fullName": "Shoffner S",
+                "firstName": "Sylvia",
+                "lastName": "Shoffner",
+                "initials": "S"
+              },
+              {
+                "fullName": "Shore K",
+                "firstName": "Kenneth",
+                "lastName": "Shore",
+                "initials": "K"
+              },
+              {
+                "fullName": "Sims J",
+                "firstName": "James",
+                "lastName": "Sims",
+                "initials": "J"
+              },
+              {
+                "fullName": "Singh H",
+                "firstName": "Harmeet",
+                "lastName": "Singh",
+                "initials": "H"
+              },
+              {
+                "fullName": "Smallow S",
+                "firstName": "Stevan",
+                "lastName": "Smallow",
+                "initials": "S"
+              },
+              {
+                "fullName": "Smith MT",
+                "firstName": "Mark Todd",
+                "lastName": "Smith",
+                "initials": "MT"
+              },
+              {
+                "fullName": "Snyder B",
+                "firstName": "Brian",
+                "lastName": "Snyder",
+                "initials": "B"
+              },
+              {
+                "fullName": "Soo A",
+                "firstName": "Allan",
+                "lastName": "Soo",
+                "initials": "A"
+              },
+              {
+                "fullName": "Sprague A",
+                "firstName": "Amy",
+                "lastName": "Sprague",
+                "initials": "A"
+              },
+              {
+                "fullName": "Stamps H",
+                "firstName": "Henry",
+                "lastName": "Stamps",
+                "initials": "H"
+              },
+              {
+                "fullName": "Stearns P",
+                "firstName": "Pamela",
+                "lastName": "Stearns",
+                "initials": "P"
+              },
+              {
+                "fullName": "Sudano D",
+                "firstName": "Dominick",
+                "lastName": "Sudano",
+                "initials": "D"
+              },
+              {
+                "fullName": "Sugimoto D",
+                "firstName": "Danny",
+                "lastName": "Sugimoto",
+                "initials": "D"
+              },
+              {
+                "fullName": "Suleman A",
+                "firstName": "Amer",
+                "lastName": "Suleman",
+                "initials": "A"
+              },
+              {
+                "fullName": "Sunkureddi P",
+                "firstName": "Prashanth",
+                "lastName": "Sunkureddi",
+                "initials": "P"
+              },
+              {
+                "fullName": "Tan R",
+                "firstName": "Ricardo",
+                "lastName": "Tan",
+                "initials": "R"
+              },
+              {
+                "fullName": "Tan A",
+                "firstName": "Alfred",
+                "lastName": "Tan",
+                "initials": "A"
+              },
+              {
+                "fullName": "Tannenbaum A",
+                "firstName": "Alan",
+                "lastName": "Tannenbaum",
+                "initials": "A"
+              },
+              {
+                "fullName": "Tawney K",
+                "firstName": "Kathryn",
+                "lastName": "Tawney",
+                "initials": "K"
+              },
+              {
+                "fullName": "Teixeira G",
+                "firstName": "Gilbert",
+                "lastName": "Teixeira",
+                "initials": "G"
+              },
+              {
+                "fullName": "Teltser M",
+                "firstName": "Matthew",
+                "lastName": "Teltser",
+                "initials": "M"
+              },
+              {
+                "fullName": "Torres A",
+                "firstName": "Arnaldo",
+                "lastName": "Torres",
+                "initials": "A"
+              },
+              {
+                "fullName": "Tran C",
+                "firstName": "Carolyn",
+                "lastName": "Tran",
+                "initials": "C"
+              },
+              {
+                "fullName": "Trapp R",
+                "firstName": "Robert",
+                "lastName": "Trapp",
+                "initials": "R"
+              },
+              {
+                "fullName": "Trevino M",
+                "firstName": "Miguel",
+                "lastName": "Trevino",
+                "initials": "M"
+              },
+              {
+                "fullName": "Tsai Y",
+                "firstName": "Yong",
+                "lastName": "Tsai",
+                "initials": "Y"
+              },
+              {
+                "fullName": "Tuan W",
+                "firstName": "Wei‐Ming",
+                "lastName": "Tuan",
+                "initials": "W"
+              },
+              {
+                "fullName": "Vaid B",
+                "firstName": "Brij",
+                "lastName": "Vaid",
+                "initials": "B"
+              },
+              {
+                "fullName": "Valente R",
+                "firstName": "Robert",
+                "lastName": "Valente",
+                "initials": "R"
+              },
+              {
+                "fullName": "Van Camp K",
+                "firstName": "Kipp",
+                "lastName": "Van Camp",
+                "initials": "K"
+              },
+              {
+                "fullName": "Van Ginkel E",
+                "firstName": "Erik",
+                "lastName": "Van Ginkel",
+                "initials": "E"
+              },
+              {
+                "fullName": "Varano S",
+                "firstName": "Susann",
+                "lastName": "Varano",
+                "initials": "S"
+              },
+              {
+                "fullName": "Vaughn M",
+                "firstName": "Michael",
+                "lastName": "Vaughn",
+                "initials": "M"
+              },
+              {
+                "fullName": "Velderman P",
+                "firstName": "Phillip",
+                "lastName": "Velderman",
+                "initials": "P"
+              },
+              {
+                "fullName": "Viera E",
+                "firstName": "Eduardo",
+                "lastName": "Viera",
+                "initials": "E"
+              },
+              {
+                "fullName": "Vijay N",
+                "firstName": "Nampalli",
+                "lastName": "Vijay",
+                "initials": "N"
+              },
+              {
+                "fullName": "Vincent S",
+                "firstName": "Simi",
+                "lastName": "Vincent",
+                "initials": "S"
+              },
+              {
+                "fullName": "Von Feldt J",
+                "firstName": "Joan",
+                "lastName": "Von Feldt",
+                "initials": "J"
+              },
+              {
+                "fullName": "Vora K",
+                "firstName": "Kishor",
+                "lastName": "Vora",
+                "initials": "K"
+              },
+              {
+                "fullName": "Vora S",
+                "firstName": "Sanjay",
+                "lastName": "Vora",
+                "initials": "S"
+              },
+              {
+                "fullName": "Vukotic G",
+                "firstName": "Goga",
+                "lastName": "Vukotic",
+                "initials": "G"
+              },
+              {
+                "fullName": "Waller P",
+                "firstName": "Philip",
+                "lastName": "Waller",
+                "initials": "P"
+              },
+              {
+                "fullName": "Walton M",
+                "firstName": "Marie",
+                "lastName": "Walton",
+                "initials": "M"
+              },
+              {
+                "fullName": "Wayne J",
+                "firstName": "Jeffrey",
+                "lastName": "Wayne",
+                "initials": "J"
+              },
+              {
+                "fullName": "Weinstein D",
+                "firstName": "Debra",
+                "lastName": "Weinstein",
+                "initials": "D"
+              },
+              {
+                "fullName": "Weiss D",
+                "firstName": "Daniel",
+                "lastName": "Weiss",
+                "initials": "D"
+              },
+              {
+                "fullName": "Weiss E",
+                "firstName": "Edwin",
+                "lastName": "Weiss",
+                "initials": "E"
+              },
+              {
+                "fullName": "Whitlock L",
+                "firstName": "Lawrence",
+                "lastName": "Whitlock",
+                "initials": "L"
+              },
+              {
+                "fullName": "Wiesenhutter C",
+                "firstName": "Craig",
+                "lastName": "Wiesenhutter",
+                "initials": "C"
+              },
+              {
+                "fullName": "Williams R",
+                "firstName": "Rhonda",
+                "lastName": "Williams",
+                "initials": "R"
+              },
+              {
+                "fullName": "Williams T",
+                "firstName": "Tearani",
+                "lastName": "Williams",
+                "initials": "T"
+              },
+              {
+                "fullName": "Williams D",
+                "firstName": "David",
+                "lastName": "Williams",
+                "initials": "D"
+              },
+              {
+                "fullName": "Wilson S",
+                "firstName": "Scott",
+                "lastName": "Wilson",
+                "initials": "S"
+              },
+              {
+                "fullName": "Wolfe S",
+                "firstName": "Sanford",
+                "lastName": "Wolfe",
+                "initials": "S"
+              },
+              {
+                "fullName": "Wombolt D",
+                "firstName": "Duane",
+                "lastName": "Wombolt",
+                "initials": "D"
+              },
+              {
+                "fullName": "Wood J",
+                "firstName": "John",
+                "lastName": "Wood",
+                "initials": "J"
+              },
+              {
+                "fullName": "Yarows S",
+                "firstName": "Steven",
+                "lastName": "Yarows",
+                "initials": "S"
+              },
+              {
+                "fullName": "Yetman C",
+                "firstName": "Cornelius",
+                "lastName": "Yetman",
+                "initials": "C"
+              },
+              {
+                "fullName": "Yiannias C",
+                "firstName": "Chris",
+                "lastName": "Yiannias",
+                "initials": "C"
+              },
+              {
+                "fullName": "Yood R",
+                "firstName": "Robert",
+                "lastName": "Yood",
+                "initials": "R"
+              },
+              {
+                "fullName": "Young VL",
+                "firstName": "Vernon Leroy",
+                "lastName": "Young",
+                "initials": "VL"
+              },
+              {
+                "fullName": "Young D",
+                "firstName": "Douglas",
+                "lastName": "Young",
+                "initials": "D"
+              },
+              {
+                "fullName": "Zuzarte K",
+                "firstName": "Karl",
+                "lastName": "Zuzarte",
+                "initials": "K"
+              },
+              {
+                "fullName": "Gibofsky A",
+                "firstName": "Allan",
+                "lastName": "Gibofsky",
+                "initials": "A"
+              },
+              {
+                "fullName": "Carson PE",
+                "firstName": "Peter E",
+                "lastName": "Carson",
+                "initials": "PE"
+              },
+              {
+                "fullName": "Lakatos E",
+                "firstName": "Edward",
+                "lastName": "Lakatos",
+                "initials": "E"
+              },
+              {
+                "fullName": "Ryan LM",
+                "firstName": "Lawrence M",
+                "lastName": "Ryan",
+                "initials": "LM"
+              },
+              {
+                "fullName": "Waikar SS",
+                "firstName": "Sushrut S",
+                "lastName": "Waikar",
+                "initials": "SS"
+              },
+              {
+                "fullName": "Morris DD",
+                "firstName": "David D",
+                "lastName": "Morris",
+                "initials": "DD"
+              },
+              {
+                "fullName": "Jackson R",
+                "firstName": "Robert",
+                "lastName": "Jackson",
+                "initials": "R"
+              },
+              {
+                "fullName": "McLean L",
+                "firstName": "Lachy",
+                "lastName": "McLean",
+                "initials": "L"
+              },
+              {
+                "fullName": "Qin Y",
+                "firstName": "Yimin",
+                "lastName": "Qin",
+                "initials": "Y"
+              },
+              {
+                "fullName": "Kisfalvi K",
+                "firstName": "Krisztina",
+                "lastName": "Kisfalvi",
+                "initials": "K"
+              },
+              {
+                "fullName": "MacDonald P",
+                "firstName": "Patricia",
+                "lastName": "MacDonald",
+                "initials": "P"
+              },
+              {
+                "fullName": "Palmer R",
+                "firstName": "Robert",
+                "lastName": "Palmer",
+                "initials": "R"
+              },
+              {
+                "fullName": "Yang T",
+                "firstName": "Teresa",
+                "lastName": "Yang",
+                "initials": "T"
+              },
+              {
+                "fullName": "Tsymbalov S",
+                "firstName": "Sarah",
+                "lastName": "Tsymbalov",
+                "initials": "S"
+              },
+              {
+                "fullName": "Alkawass N",
+                "firstName": "Nancy",
+                "lastName": "Alkawass",
+                "initials": "N"
+              },
+              {
+                "fullName": "Keeter K",
+                "firstName": "Kraig",
+                "lastName": "Keeter",
+                "initials": "K"
+              },
+              {
+                "fullName": "Koziol M",
+                "firstName": "Maria",
+                "lastName": "Koziol",
+                "initials": "M"
+              },
+              {
+                "fullName": "Schickedanz B",
+                "firstName": "Brian",
+                "lastName": "Schickedanz",
+                "initials": "B"
+              },
+              {
+                "fullName": "Evans B",
+                "firstName": "Brette",
+                "lastName": "Evans",
+                "initials": "B"
+              },
+              {
+                "fullName": "Chefo S",
+                "firstName": "Solomon",
+                "lastName": "Chefo",
+                "initials": "S"
+              },
+              {
+                "fullName": "Xie B",
+                "firstName": "Benhuai",
+                "lastName": "Xie",
+                "initials": "B"
+              },
+              {
+                "fullName": "Song E",
+                "firstName": "Eric",
+                "lastName": "Song",
+                "initials": "E"
+              },
+              {
+                "fullName": "Dong X",
+                "firstName": "Xinxin",
+                "lastName": "Dong",
+                "initials": "X"
+              },
+              {
+                "fullName": "Zhang W",
+                "firstName": "Wenwen",
+                "lastName": "Zhang",
+                "initials": "W"
+              },
+              {
+                "fullName": "Chen Y",
+                "firstName": "Yinzhong",
+                "lastName": "Chen",
+                "initials": "Y"
+              },
+              {
+                "fullName": "Loke R",
+                "firstName": "Rina",
+                "lastName": "Loke",
+                "initials": "R"
+              },
+              {
+                "fullName": "Li D",
+                "firstName": "Dian",
+                "lastName": "Li",
+                "initials": "D"
+              },
+              {
+                "fullName": "Li X",
+                "firstName": "Xiao",
+                "lastName": "Li",
+                "initials": "X"
+              },
+              {
+                "fullName": "Max E",
+                "firstName": "Ethan",
+                "lastName": "Max",
+                "initials": "E"
+              },
+              {
+                "fullName": "Dabholkar A",
+                "firstName": "Aruna",
+                "lastName": "Dabholkar",
+                "initials": "A"
+              },
+              {
+                "fullName": "Makaratzi M",
+                "firstName": "Martha",
+                "lastName": "Makaratzi",
+                "initials": "M"
+              },
+              {
+                "fullName": "Schulz P",
+                "firstName": "Peter",
+                "lastName": "Schulz",
+                "initials": "P"
+              },
+              {
+                "fullName": "Khursheed M",
+                "firstName": "Mukhy",
+                "lastName": "Khursheed",
+                "initials": "M"
+              },
+              {
+                "fullName": "Marcinak J",
+                "firstName": "John",
+                "lastName": "Marcinak",
+                "initials": "J"
+              },
+              {
+                "fullName": "Geiger C",
+                "firstName": "Carol",
+                "lastName": "Geiger",
+                "initials": "C"
+              },
+              {
+                "fullName": "Henning E",
+                "firstName": "Eric",
+                "lastName": "Henning",
+                "initials": "E"
+              },
+              {
+                "fullName": "Harrigan P",
+                "firstName": "Patrick",
+                "lastName": "Harrigan",
+                "initials": "P"
+              },
+              {
+                "fullName": "Ludwig P",
+                "firstName": "Patricia",
+                "lastName": "Ludwig",
+                "initials": "P"
+              },
+              {
+                "fullName": "Idemoto C",
+                "firstName": "Christie",
+                "lastName": "Idemoto",
+                "initials": "C"
+              },
+              {
+                "fullName": "Bronson C",
+                "firstName": "Christine",
+                "lastName": "Bronson",
+                "initials": "C"
+              },
+              {
+                "fullName": "Gans J",
+                "firstName": "Jason",
+                "lastName": "Gans",
+                "initials": "J"
+              },
+              {
+                "fullName": "Kennedy JE",
+                "firstName": "Justine Elizabeth",
+                "lastName": "Kennedy",
+                "initials": "JE"
+              },
+              {
+                "fullName": "Villinski A",
+                "firstName": "Allison",
+                "lastName": "Villinski",
+                "initials": "A"
+              },
+              {
+                "fullName": "Koehler L",
+                "firstName": "Leslie",
+                "lastName": "Koehler",
+                "initials": "L"
+              },
+              {
+                "fullName": "Parker J",
+                "firstName": "Jonathon",
+                "lastName": "Parker",
+                "initials": "J"
+              },
+              {
+                "fullName": "Desai E",
+                "firstName": "Esha",
+                "lastName": "Desai",
+                "initials": "E"
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8496-8294"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8936-967X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1181-614X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3124-0395"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3749-5831"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9425-8429"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "recommended_reviews",
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "13",
+            "volume": "378",
+            "journalIssueId": 2665612,
+            "dateOfPublication": "2018 Mar",
+            "monthOfPublication": 3,
+            "yearOfPublication": 2018,
+            "printPublicationDate": "2018-03-01",
+            "journal": {
+              "title": "The New England journal of medicine",
+              "medlineAbbreviation": "N Engl J Med",
+              "essn": "1533-4406",
+              "issn": "0028-4793",
+              "isoabbreviation": "N Engl J Med",
+              "nlmid": "0255562"
+            }
+          },
+          "pubYear": "2018",
+          "pageInfo": "1200-1210",
+          "abstractText": "<h4>Background</h4>Cardiovascular risk is increased in patients with gout. We compared cardiovascular outcomes associated with febuxostat, a nonpurine xanthine oxidase inhibitor, with those associated with allopurinol, a purine base analogue xanthine oxidase inhibitor, in patients with gout and cardiovascular disease.<h4>Methods</h4>We conducted a multicenter, double-blind, noninferiority trial involving patients with gout and cardiovascular disease; patients were randomly assigned to receive febuxostat or allopurinol and were stratified according to kidney function. The trial had a prespecified noninferiority margin of 1.3 for the hazard ratio for the primary end point (a composite of cardiovascular death, nonfatal myocardial infarction, nonfatal stroke, or unstable angina with urgent revascularization).<h4>Results</h4>In total, 6190 patients underwent randomization, received febuxostat or allopurinol, and were followed for a median of 32 months (maximum, 85 months). The trial regimen was discontinued in 56.6% of patients, and 45.0% discontinued follow-up. In the modified intention-to-treat analysis, a primary end-point event occurred in 335 patients (10.8%) in the febuxostat group and in 321 patients (10.4%) in the allopurinol group (hazard ratio, 1.03; upper limit of the one-sided 98.5% confidence interval [CI], 1.23; P=0.002 for noninferiority). All-cause and cardiovascular mortality were higher in the febuxostat group than in the allopurinol group (hazard ratio for death from any cause, 1.22 [95% CI, 1.01 to 1.47]; hazard ratio for cardiovascular death, 1.34 [95% CI, 1.03 to 1.73]). The results with regard to the primary end point and all-cause and cardiovascular mortality in the analysis of events that occurred while patients were being treated were similar to the results in the modified intention-to-treat analysis.<h4>Conclusions</h4>In patients with gout and major cardiovascular coexisting conditions, febuxostat was noninferior to allopurinol with respect to rates of adverse cardiovascular events. All-cause mortality and cardiovascular mortality were higher with febuxostat than with allopurinol. (Funded by Takeda Development Center Americas; CARES ClinicalTrials.gov number, NCT01101035 .).",
+          "affiliation": "From the University of Connecticut School of Medicine, Farmington (W.B.W.); the University of Alabama, Birmingham (K.G.S.); University of Chicago Medicine, Chicago (M.A.B.), and Takeda Development Center Americas, Deerfield (B.H., M.C., L.G.) - both in Illinois; the State University of New York, Downstate Medical Center, Brooklyn (J.S.B.); Michigan State University College of Human Medicine, Grand Rapids (P.B.G.); and Johns Hopkins University School of Medicine, Baltimore (A.W.).",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Equivalence Trial",
+              "Research Support, Non-U.S. Gov't",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "Takeda Pharmaceuticals U.S.A.",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gout",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "qualifierName": "complications",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "DT",
+                      "qualifierName": "drug therapy",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cardiovascular Diseases",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CI",
+                      "qualifierName": "chemically induced",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "CO",
+                      "qualifierName": "complications",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "qualifierName": "mortality",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Allopurinol",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "qualifierName": "adverse effects",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "qualifierName": "therapeutic use",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gout Suppressants",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "qualifierName": "adverse effects",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "qualifierName": "therapeutic use",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cause of Death"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Double-Blind Method"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Middle Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Female"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Male"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Febuxostat",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "qualifierName": "adverse effects",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "qualifierName": "therapeutic use",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Gout Suppressants",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Allopurinol",
+                "registryNumber": "63CZ7GJN5I"
+              },
+              {
+                "name": "febuxostat",
+                "registryNumber": "101V0R1N2E"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1056/NEJMoa1710895"
+              }
+            ]
+          },
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "29717259",
+                "source": "MED",
+                "reference": "Nat Rev Rheumatol. 2018 Jun;14(6):320. doi: 10.1038/s41584-018-0007-7",
+                "type": "Comment in",
+                "orderIn": 1
+              },
+              {
+                "id": "30178096",
+                "source": "MED",
+                "reference": "Internist (Berl). 2018 Nov;59(11):1224-1228. doi: 10.1007/s00108-018-0486-2",
+                "type": "Comment in",
+                "orderIn": 2
+              },
+              {
+                "id": "30338966",
+                "source": "MED",
+                "reference": "N Engl J Med. 2018 Oct 18;379(16):1582. doi: 10.1056/NEJMc1809736",
+                "type": "Comment in",
+                "orderIn": 3
+              },
+              {
+                "id": "30338967",
+                "source": "MED",
+                "reference": "N Engl J Med. 2018 Oct 18;379(16):1583. doi: 10.1056/NEJMc1809736",
+                "type": "Comment in",
+                "orderIn": 4
+              },
+              {
+                "id": "30338969",
+                "source": "MED",
+                "reference": "N Engl J Med. 2018 Oct 18;379(16):1583-4. doi: 10.1056/NEJMc1809736",
+                "type": "Comment in",
+                "orderIn": 5
+              },
+              {
+                "id": "33403821",
+                "source": "MED",
+                "reference": "Arthritis Rheumatol. 2021 May;73(5):721-724. doi: 10.1002/art.41638",
+                "type": "Comment in",
+                "orderIn": 6
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "hasPDF": "N",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "citedByCount": 618,
+          "hasData": "Y",
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasLabsLinks": "Y",
+          "hasEvaluations": "N",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "Y",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          },
+          "dateOfCompletion": "2018-04-04",
+          "dateOfCreation": "2018-03-13",
+          "firstIndexDate": "2018-03-12",
+          "dateOfRevision": "2022-04-09",
+          "electronicPublicationDate": "2018-03-12",
+          "firstPublicationDate": "2018-03-12"
+        },
+        {
+          "id": "18842065",
+          "source": "MED",
+          "pmid": "18842065",
+          "pmcid": "PMC2561076",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC2561076"
+            ]
+          },
+          "doi": "10.1371/journal.pmed.0050197",
+          "title": "SLC2A9 is a high-capacity urate transporter in humans.",
+          "authorString": "Caulfield MJ, Munroe PB, O'Neill D, Witkowska K, Charchar FJ, Doblado M, Evans S, Eyheramendy S, Onipinla A, Howard P, Shaw-Hawkins S, Dobson RJ, Wallace C, Newhouse SJ, Brown M, Connell JM, Dominiczak A, Farrall M, Lathrop GM, Samani NJ, Kumari M, Marmot M, Brunner E, Chambers J, Elliott P, Kooner J, Laan M, Org E, Org E, Veldre G, Viigimaa M, Cappuccio FP, Ji C, Iacone R, Strazzullo P, Moley KH, Cheeseman C.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Caulfield MJ",
+                "firstName": "Mark J",
+                "lastName": "Caulfield",
+                "initials": "MJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9295-3594"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Clinical Pharmacology and The Genome Centre, William Harvey Research Institute, Barts and The London School of Medicine and Dentistry, London, United Kingdom. m.j.caulfield@qmul.ac.uk"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Munroe PB",
+                "firstName": "Patricia B",
+                "lastName": "Munroe",
+                "initials": "PB",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4176-2947"
+                }
+              },
+              {
+                "fullName": "O'Neill D",
+                "firstName": "Deb",
+                "lastName": "O'Neill",
+                "initials": "D"
+              },
+              {
+                "fullName": "Witkowska K",
+                "firstName": "Kate",
+                "lastName": "Witkowska",
+                "initials": "K"
+              },
+              {
+                "fullName": "Charchar FJ",
+                "firstName": "Fadi J",
+                "lastName": "Charchar",
+                "initials": "FJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6164-9941"
+                }
+              },
+              {
+                "fullName": "Doblado M",
+                "firstName": "Manuel",
+                "lastName": "Doblado",
+                "initials": "M"
+              },
+              {
+                "fullName": "Evans S",
+                "firstName": "Sarah",
+                "lastName": "Evans",
+                "initials": "S"
+              },
+              {
+                "fullName": "Eyheramendy S",
+                "firstName": "Susana",
+                "lastName": "Eyheramendy",
+                "initials": "S",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4723-9660"
+                }
+              },
+              {
+                "fullName": "Onipinla A",
+                "firstName": "Abiodun",
+                "lastName": "Onipinla",
+                "initials": "A"
+              },
+              {
+                "fullName": "Howard P",
+                "firstName": "Philip",
+                "lastName": "Howard",
+                "initials": "P"
+              },
+              {
+                "fullName": "Shaw-Hawkins S",
+                "firstName": "Sue",
+                "lastName": "Shaw-Hawkins",
+                "initials": "S"
+              },
+              {
+                "fullName": "Dobson RJ",
+                "firstName": "Richard J",
+                "lastName": "Dobson",
+                "initials": "RJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4224-9245"
+                }
+              },
+              {
+                "fullName": "Wallace C",
+                "firstName": "Chris",
+                "lastName": "Wallace",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9755-1703"
+                }
+              },
+              {
+                "fullName": "Newhouse SJ",
+                "firstName": "Stephen J",
+                "lastName": "Newhouse",
+                "initials": "SJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1843-9842"
+                }
+              },
+              {
+                "fullName": "Brown M",
+                "firstName": "Morris",
+                "lastName": "Brown",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8409-1082"
+                }
+              },
+              {
+                "fullName": "Connell JM",
+                "firstName": "John M",
+                "lastName": "Connell",
+                "initials": "JM"
+              },
+              {
+                "fullName": "Dominiczak A",
+                "firstName": "Anna",
+                "lastName": "Dominiczak",
+                "initials": "A",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4913-3608"
+                }
+              },
+              {
+                "fullName": "Farrall M",
+                "firstName": "Martin",
+                "lastName": "Farrall",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4564-2165"
+                }
+              },
+              {
+                "fullName": "Lathrop GM",
+                "firstName": "G Mark",
+                "lastName": "Lathrop",
+                "initials": "GM"
+              },
+              {
+                "fullName": "Samani NJ",
+                "firstName": "Nilesh J",
+                "lastName": "Samani",
+                "initials": "NJ"
+              },
+              {
+                "fullName": "Kumari M",
+                "firstName": "Meena",
+                "lastName": "Kumari",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9716-1035"
+                }
+              },
+              {
+                "fullName": "Marmot M",
+                "firstName": "Michael",
+                "lastName": "Marmot",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2431-6419"
+                }
+              },
+              {
+                "fullName": "Brunner E",
+                "firstName": "Eric",
+                "lastName": "Brunner",
+                "initials": "E",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0595-4474"
+                }
+              },
+              {
+                "fullName": "Chambers J",
+                "firstName": "John",
+                "lastName": "Chambers",
+                "initials": "J"
+              },
+              {
+                "fullName": "Elliott P",
+                "firstName": "Paul",
+                "lastName": "Elliott",
+                "initials": "P",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7511-5684"
+                }
+              },
+              {
+                "fullName": "Kooner J",
+                "firstName": "Jaspal",
+                "lastName": "Kooner",
+                "initials": "J"
+              },
+              {
+                "fullName": "Laan M",
+                "firstName": "Maris",
+                "lastName": "Laan",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8519-243X"
+                }
+              },
+              {
+                "fullName": "Org E",
+                "firstName": "Elin",
+                "lastName": "Org",
+                "initials": "E",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1451-9375"
+                }
+              },
+              {
+                "fullName": "Org E",
+                "firstName": "Elin",
+                "lastName": "Org",
+                "initials": "E",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8688-9717"
+                }
+              },
+              {
+                "fullName": "Veldre G",
+                "firstName": "Gudrun",
+                "lastName": "Veldre",
+                "initials": "G"
+              },
+              {
+                "fullName": "Viigimaa M",
+                "firstName": "Margus",
+                "lastName": "Viigimaa",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5575-5978"
+                }
+              },
+              {
+                "fullName": "Cappuccio FP",
+                "firstName": "Francesco P",
+                "lastName": "Cappuccio",
+                "initials": "FP",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7842-5493"
+                }
+              },
+              {
+                "fullName": "Ji C",
+                "firstName": "Chen",
+                "lastName": "Ji",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4919-3299"
+                }
+              },
+              {
+                "fullName": "Iacone R",
+                "firstName": "Roberto",
+                "lastName": "Iacone",
+                "initials": "R",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3360-3855"
+                }
+              },
+              {
+                "fullName": "Strazzullo P",
+                "firstName": "Pasquale",
+                "lastName": "Strazzullo",
+                "initials": "P"
+              },
+              {
+                "fullName": "Moley KH",
+                "firstName": "Kelle H",
+                "lastName": "Moley",
+                "initials": "KH"
+              },
+              {
+                "fullName": "Cheeseman C",
+                "firstName": "Chris",
+                "lastName": "Cheeseman",
+                "initials": "C"
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5575-5978"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8409-1082"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8688-9717"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9295-3594"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9716-1035"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9755-1703"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0595-4474"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1843-9842"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2431-6419"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3440-9475"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4176-2947"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5860-0768"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6164-9941"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7511-5684"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7842-5493"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8519-243X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1451-9375"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3360-3855"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4224-9245"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4564-2165"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4723-9660"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4913-3608"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4919-3299"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews",
+              "related_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "10",
+            "volume": "5",
+            "journalIssueId": 1561006,
+            "dateOfPublication": "2008 Oct",
+            "monthOfPublication": 10,
+            "yearOfPublication": 2008,
+            "printPublicationDate": "2008-10-01",
+            "journal": {
+              "title": "PLoS medicine",
+              "medlineAbbreviation": "PLoS Med",
+              "essn": "1549-1676",
+              "issn": "1549-1277",
+              "isoabbreviation": "PLoS Med",
+              "nlmid": "101231360"
+            }
+          },
+          "pubYear": "2008",
+          "pageInfo": "e197",
+          "abstractText": "<h4>Background</h4>Serum uric acid levels in humans are influenced by diet, cellular breakdown, and renal elimination, and correlate with blood pressure, metabolic syndrome, diabetes, gout, and cardiovascular disease. Recent genome-wide association scans have found common genetic variants of SLC2A9 to be associated with increased serum urate level and gout. The SLC2A9 gene encodes a facilitative glucose transporter, and it has two splice variants that are highly expressed in the proximal nephron, a key site for urate handling in the kidney. We investigated whether SLC2A9 is a functional urate transporter that contributes to the longstanding association between urate and blood pressure in man.<h4>Methods and findings</h4>We expressed both SLC2A9 splice variants in Xenopus laevis oocytes and found both isoforms mediate rapid urate fluxes at concentration ranges similar to physiological serum levels (200-500 microM). Because SLC2A9 is a known facilitative glucose transporter, we also tested whether glucose or fructose influenced urate transport. We found that urate is transported by SLC2A9 at rates 45- to 60-fold faster than glucose, and demonstrated that SLC2A9-mediated urate transport is facilitated by glucose and, to a lesser extent, fructose. In addition, transport is inhibited by the uricosuric benzbromarone in a dose-dependent manner (Ki = 27 microM). Furthermore, we found urate uptake was at least 2-fold greater in human embryonic kidney (HEK) cells overexpressing SLC2A9 splice variants than nontransfected kidney cells. To confirm that our findings were due to SLC2A9, and not another urate transporter, we showed that urate transport was diminished by SLC2A9-targeted siRNA in a second mammalian cell line. In a cohort of men we showed that genetic variants of SLC2A9 are associated with reduced urinary urate clearance, which fits with common variation at SLC2A9 leading to increased serum urate. We found no evidence of association with hypertension (odds ratio 0.98, 95% confidence interval [CI] 0.9 to 1.05, p > 0.33) by meta-analysis of an SLC2A9 variant in six case-control studies including 11,897 participants. In a separate meta-analysis of four population studies including 11,629 participants we found no association of SLC2A9 with systolic (effect size -0.12 mm Hg, 95% CI -0.68 to 0.43, p = 0.664) or diastolic blood pressure (effect size -0.03 mm Hg, 95% CI -0.39 to 0.31, p = 0.82).<h4>Conclusions</h4>This study provides evidence that SLC2A9 splice variants act as high-capacity urate transporters and is one of the first functional characterisations of findings from genome-wide association scans. We did not find an association of the SLC2A9 gene with blood pressure in this study. Our findings suggest potential pathogenic mechanisms that could offer a new drug target for gout.",
+          "affiliation": "Clinical Pharmacology and The Genome Centre, William Harvey Research Institute, Barts and The London School of Medicine and Dentistry, London, United Kingdom. m.j.caulfield@qmul.ac.uk",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "grantId": "PG02/128",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R01 HD040390",
+                "agency": "NICHD NIH HHS",
+                "acronym": "HD",
+                "orderIn": 0
+              },
+              {
+                "agency": "Wellcome Trust",
+                "acronym": "WT_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0100222",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0400874",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G19/35",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G9521010D",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G9817803B",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R37 AG013196",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "RG/07/008/23674",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R01 HL036310",
+                "agency": "NHLBI NIH HHS",
+                "acronym": "HL",
+                "orderIn": 0
+              },
+              {
+                "grantId": "T32-DK0712",
+                "agency": "NIDDK NIH HHS",
+                "acronym": "DK",
+                "orderIn": 0
+              },
+              {
+                "grantId": "076113/B/04/Z",
+                "agency": "Wellcome Trust",
+                "acronym": "WT_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G8802774",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G9521010",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R01 AG013196",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "T32 DK007120",
+                "agency": "NIDDK NIH HHS",
+                "acronym": "DK",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Oocytes"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cell Line"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cell Line, Tumor"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Animals"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Xenopus laevis"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Mice"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Uric Acid",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Hexoses",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fructose",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Glucose",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fatty Acids, Volatile",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Organic Anion Transporters",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Uricosuric Agents",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Blotting, Western"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Chromatography, Thin Layer"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Immunohistochemistry"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Longitudinal Studies"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Biological Transport",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Kinetics"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Adult"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Middle Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Female"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Glucose Transport Proteins, Facilitative",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "urate transporter",
+                "registryNumber": "0"
+              },
+              {
+                "name": "SLC2A9 protein, human",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Hexoses",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Fructose",
+                "registryNumber": "30237-26-4"
+              },
+              {
+                "name": "Fatty Acids, Volatile",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Uricosuric Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Organic Anion Transporters",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glucose Transport Proteins, Facilitative",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glucose",
+                "registryNumber": "IY9XDZ35W2"
+              },
+              {
+                "name": "Uric Acid",
+                "registryNumber": "268B43MJ25"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.0050197&type=printable"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1371/journal.pmed.0050197"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2561076"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2561076?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "citedByCount": 289,
+          "hasData": "Y",
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "Y",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "UNIPROT"
+            ]
+          },
+          "hasLabsLinks": "Y",
+          "license": "cc by",
+          "hasEvaluations": "N",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "Y",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "refsnp"
+            ]
+          },
+          "dateOfCompletion": "2009-01-05",
+          "dateOfCreation": "2008-10-10",
+          "firstIndexDate": "2009-12-24",
+          "fullTextReceivedDate": "2025-02-02",
+          "dateOfRevision": "2025-05-29",
+          "firstPublicationDate": "2008-10-01"
+        },
+        {
+          "id": "18327257",
+          "source": "MED",
+          "pmid": "18327257",
+          "doi": "10.1038/ng.106",
+          "title": "SLC2A9 is a newly identified urate transporter influencing serum urate concentration, urate excretion and gout.",
+          "authorString": "Vitart V, Rudan I, Hayward C, Gray NK, Floyd J, Palmer CN, Knott SA, Kolcic I, Polasek O, Graessler J, Wilson JF, Marinaki A, Riches PL, Shu X, Janicijevic B, Smolej-Narancic N, Gorgoni B, Morgan J, Campbell S, Biloglav Z, Barac-Lauc L, Pericic M, Klaric IM, Zgaga L, Skaric-Juric T, Wild SH, Richardson WA, Hohenstein P, Kimber CH, Tenesa A, Donnelly LA, Fairbanks LD, Aringer M, McKeigue PM, Ralston SH, Morris AD, Rudan P, Hastie ND, Campbell H, Wright AF.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Vitart V",
+                "firstName": "Veronique",
+                "lastName": "Vitart",
+                "initials": "V",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4991-3797"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "MRC Human Genetics Unit, Western General Hospital, Edinburgh EH4 2XU, UK."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Rudan I",
+                "firstName": "Igor",
+                "lastName": "Rudan",
+                "initials": "I"
+              },
+              {
+                "fullName": "Hayward C",
+                "firstName": "Caroline",
+                "lastName": "Hayward",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9405-9550"
+                }
+              },
+              {
+                "fullName": "Gray NK",
+                "firstName": "Nicola K",
+                "lastName": "Gray",
+                "initials": "NK",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0413-1767"
+                }
+              },
+              {
+                "fullName": "Floyd J",
+                "firstName": "James",
+                "lastName": "Floyd",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0365-9041"
+                }
+              },
+              {
+                "fullName": "Palmer CN",
+                "firstName": "Colin N A",
+                "lastName": "Palmer",
+                "initials": "CN",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6415-6560"
+                }
+              },
+              {
+                "fullName": "Knott SA",
+                "firstName": "Sara A",
+                "lastName": "Knott",
+                "initials": "SA",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4568-2928"
+                }
+              },
+              {
+                "fullName": "Kolcic I",
+                "firstName": "Ivana",
+                "lastName": "Kolcic",
+                "initials": "I",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7918-6052"
+                }
+              },
+              {
+                "fullName": "Polasek O",
+                "firstName": "Ozren",
+                "lastName": "Polasek",
+                "initials": "O",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5765-1862"
+                }
+              },
+              {
+                "fullName": "Graessler J",
+                "firstName": "Juergen",
+                "lastName": "Graessler",
+                "initials": "J"
+              },
+              {
+                "fullName": "Wilson JF",
+                "firstName": "James F",
+                "lastName": "Wilson",
+                "initials": "JF",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5751-9178"
+                }
+              },
+              {
+                "fullName": "Marinaki A",
+                "firstName": "Anthony",
+                "lastName": "Marinaki",
+                "initials": "A"
+              },
+              {
+                "fullName": "Riches PL",
+                "firstName": "Philip L",
+                "lastName": "Riches",
+                "initials": "PL",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3029-7098"
+                }
+              },
+              {
+                "fullName": "Shu X",
+                "firstName": "Xinhua",
+                "lastName": "Shu",
+                "initials": "X"
+              },
+              {
+                "fullName": "Janicijevic B",
+                "firstName": "Branka",
+                "lastName": "Janicijevic",
+                "initials": "B"
+              },
+              {
+                "fullName": "Smolej-Narancic N",
+                "firstName": "Nina",
+                "lastName": "Smolej-Narancic",
+                "initials": "N"
+              },
+              {
+                "fullName": "Gorgoni B",
+                "firstName": "Barbara",
+                "lastName": "Gorgoni",
+                "initials": "B"
+              },
+              {
+                "fullName": "Morgan J",
+                "firstName": "Joanne",
+                "lastName": "Morgan",
+                "initials": "J"
+              },
+              {
+                "fullName": "Campbell S",
+                "firstName": "Susan",
+                "lastName": "Campbell",
+                "initials": "S"
+              },
+              {
+                "fullName": "Biloglav Z",
+                "firstName": "Zrinka",
+                "lastName": "Biloglav",
+                "initials": "Z"
+              },
+              {
+                "fullName": "Barac-Lauc L",
+                "firstName": "Lovorka",
+                "lastName": "Barac-Lauc",
+                "initials": "L"
+              },
+              {
+                "fullName": "Pericic M",
+                "firstName": "Marijana",
+                "lastName": "Pericic",
+                "initials": "M"
+              },
+              {
+                "fullName": "Klaric IM",
+                "firstName": "Irena Martinovic",
+                "lastName": "Klaric",
+                "initials": "IM"
+              },
+              {
+                "fullName": "Zgaga L",
+                "firstName": "Lina",
+                "lastName": "Zgaga",
+                "initials": "L",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4089-9703"
+                }
+              },
+              {
+                "fullName": "Skaric-Juric T",
+                "firstName": "Tatjana",
+                "lastName": "Skaric-Juric",
+                "initials": "T",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3708-6170"
+                }
+              },
+              {
+                "fullName": "Wild SH",
+                "firstName": "Sarah H",
+                "lastName": "Wild",
+                "initials": "SH"
+              },
+              {
+                "fullName": "Richardson WA",
+                "firstName": "William A",
+                "lastName": "Richardson",
+                "initials": "WA"
+              },
+              {
+                "fullName": "Hohenstein P",
+                "firstName": "Peter",
+                "lastName": "Hohenstein",
+                "initials": "P",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8548-4734"
+                }
+              },
+              {
+                "fullName": "Kimber CH",
+                "firstName": "Charley H",
+                "lastName": "Kimber",
+                "initials": "CH"
+              },
+              {
+                "fullName": "Tenesa A",
+                "firstName": "Albert",
+                "lastName": "Tenesa",
+                "initials": "A",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4884-4475"
+                }
+              },
+              {
+                "fullName": "Donnelly LA",
+                "firstName": "Louise A",
+                "lastName": "Donnelly",
+                "initials": "LA"
+              },
+              {
+                "fullName": "Fairbanks LD",
+                "firstName": "Lynette D",
+                "lastName": "Fairbanks",
+                "initials": "LD"
+              },
+              {
+                "fullName": "Aringer M",
+                "firstName": "Martin",
+                "lastName": "Aringer",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4471-8375"
+                }
+              },
+              {
+                "fullName": "McKeigue PM",
+                "firstName": "Paul M",
+                "lastName": "McKeigue",
+                "initials": "PM"
+              },
+              {
+                "fullName": "Ralston SH",
+                "firstName": "Stuart H",
+                "lastName": "Ralston",
+                "initials": "SH"
+              },
+              {
+                "fullName": "Morris AD",
+                "firstName": "Andrew D",
+                "lastName": "Morris",
+                "initials": "AD"
+              },
+              {
+                "fullName": "Rudan P",
+                "firstName": "Pavao",
+                "lastName": "Rudan",
+                "initials": "P"
+              },
+              {
+                "fullName": "Hastie ND",
+                "firstName": "Nicholas D",
+                "lastName": "Hastie",
+                "initials": "ND"
+              },
+              {
+                "fullName": "Campbell H",
+                "firstName": "Harry",
+                "lastName": "Campbell",
+                "initials": "H"
+              },
+              {
+                "fullName": "Wright AF",
+                "firstName": "Alan F",
+                "lastName": "Wright",
+                "initials": "AF"
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5751-9178"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6993-6884"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7918-6052"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8548-4734"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0365-9041"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0413-1767"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4568-2928"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4991-3797"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5765-1862"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6169-6262"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6415-6560"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6545-5589"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9405-9550"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3029-7098"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3708-6170"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4089-9703"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4471-8375"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4884-4475"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "recommended_reviews",
+              "related_data",
+              "wikipedia"
+            ]
+          },
+          "journalInfo": {
+            "issue": "4",
+            "volume": "40",
+            "journalIssueId": 1516910,
+            "dateOfPublication": "2008 Apr",
+            "monthOfPublication": 4,
+            "yearOfPublication": 2008,
+            "printPublicationDate": "2008-04-01",
+            "journal": {
+              "title": "Nature genetics",
+              "medlineAbbreviation": "Nat Genet",
+              "essn": "1546-1718",
+              "issn": "1061-4036",
+              "isoabbreviation": "Nat Genet",
+              "nlmid": "9216904"
+            }
+          },
+          "pubYear": "2008",
+          "pageInfo": "437-442",
+          "abstractText": "Uric acid is the end product of purine metabolism in humans and great apes, which have lost hepatic uricase activity, leading to uniquely high serum uric acid concentrations (200-500 microM) compared with other mammals (3-120 microM). About 70% of daily urate disposal occurs via the kidneys, and in 5-25% of the human population, impaired renal excretion leads to hyperuricemia. About 10% of people with hyperuricemia develop gout, an inflammatory arthritis that results from deposition of monosodium urate crystals in the joint. We have identified genetic variants within a transporter gene, SLC2A9, that explain 1.7-5.3% of the variance in serum uric acid concentrations, following a genome-wide association scan in a Croatian population sample. SLC2A9 variants were also associated with low fractional excretion of uric acid and/or gout in UK, Croatian and German population samples. SLC2A9 is a known fructose transporter, and we now show that it has strong uric acid transport activity in Xenopus laevis oocytes.",
+          "affiliation": "MRC Human Genetics Unit, Western General Hospital, Edinburgh EH4 2XU, UK.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Multicenter Study",
+              "Journal Article"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "grantId": "CZB/4/710",
+                "agency": "Chief Scientist Office",
+                "acronym": "CSO_",
+                "orderIn": 0
+              },
+              {
+                "agency": "Wellcome Trust",
+                "acronym": "WT_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "MC_U127561111",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G117/564",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "agency": "Versus Arthritis",
+                "acronym": "ARC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "MC_U127561128",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Oocytes",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CY",
+                      "qualifierName": "cytology",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Animals"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Xenopus laevis",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gout",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "UR",
+                      "qualifierName": "urine",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Uric Acid",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fructose",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Organic Anion Transporters",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Case-Control Studies"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Biological Transport, Active"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Genotype"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Polymorphism, Single Nucleotide",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Genome, Human"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Molecular Sequence Data"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Adolescent"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Adult"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Aged, 80 and over"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Middle Aged"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Croatia"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Germany"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Female"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Male"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Glucose Transport Proteins, Facilitative",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "qualifierName": "physiology",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Genetic Linkage"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Biomarkers",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "UR",
+                      "qualifierName": "urine",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "urate transporter",
+                "registryNumber": "0"
+              },
+              {
+                "name": "SLC2A9 protein, human",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Fructose",
+                "registryNumber": "30237-26-4"
+              },
+              {
+                "name": "Organic Anion Transporters",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glucose Transport Proteins, Facilitative",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Uric Acid",
+                "registryNumber": "268B43MJ25"
+              },
+              {
+                "name": "Biomarkers",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1038/ng.106"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "hasPDF": "N",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "citedByCount": 612,
+          "hasData": "Y",
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "Y",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "OMIM",
+              "UNIPROT"
+            ]
+          },
+          "hasLabsLinks": "Y",
+          "hasEvaluations": "N",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2008-04-30",
+          "dateOfCreation": "2008-03-11",
+          "firstIndexDate": "2008-05-01",
+          "dateOfRevision": "2025-05-29",
+          "electronicPublicationDate": "2008-03-09",
+          "firstPublicationDate": "2008-03-09"
+        }
+      ]
+    }
+  }
+}

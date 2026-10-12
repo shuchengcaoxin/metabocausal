@@ -1,0 +1,32 @@
+case: GI15
+what: status text that merely contains a terminal word, plus a status the dossier wrote in full sentences
+asks: is the stopped marker decided by a substring of an uncontrolled string
+figure: drawn GI15_genetic_insight.png
+stdout: [timeline] wrote GI15_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134264, NCT00134290
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 3'
+'recruiting; an earlier study was terminated: see the earlier study'
+'phase 3'
+'completed - no safety signal was terminated early: none'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2003'
+'2004'
+'2005'
+'2006'
+'2007'
+'2008'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked'
+"2 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy."
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

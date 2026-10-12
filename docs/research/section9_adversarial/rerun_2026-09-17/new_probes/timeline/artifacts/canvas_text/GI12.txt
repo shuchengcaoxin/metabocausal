@@ -1,0 +1,28 @@
+case: GI12
+what: completion-only record: the registry carries no start year
+asks: the axis is labelled 'start'; is a completion year marked as such
+figure: drawn GI12_genetic_insight.png
+stdout: [timeline] wrote GI12_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134264, NCT00134290
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 3'
+'phase 2'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2015'
+'2016'
+'2017'
+'2018'
+'2019'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

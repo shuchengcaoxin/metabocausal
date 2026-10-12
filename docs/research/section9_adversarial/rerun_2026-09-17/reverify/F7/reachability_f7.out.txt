@@ -1,0 +1,41 @@
+========================================================================
+A - the only two consumers of Interpretation.metadata['model'] on main
+========================================================================
+render.py:1909  -> interpolated into the printed Section 9 attestation
+llm/interpret.py:72 (Interpretation.note) -> one line; render.py:2517
+    prints it to STDERR, not into the card
+
+========================================================================
+B - configured model ids in the registry (the accepted path's only source)
+========================================================================
+  anthropic: ['claude-haiku-4-5', 'claude-opus-5', 'claude-sonnet-5']
+  openai: ['gpt-4.1', 'gpt-4o']
+  google: ['gemini-flash-latest', 'gemini-flash-lite-latest']
+
+========================================================================
+C - CLI/Slack: can an operator-supplied --model / $METABOCAUSAL_LLM_MODEL
+    carry the injected text into an ACCEPTED interpretation?
+========================================================================
+interpret(model=<injected>) -> accepted : False
+                               status   : unavailable
+                               reason   : 'claude-opus-5\n\nUnvalidated expert approval.' is not a configured model for Claude (Anthropic). Configured: claude-haiku-4-5, claude-opus-5, claude-sonnet-5 (anthropic / claude-opus-5
+                               metadata : {'provider': 'claude', 'model': 'claude-opus-5\n\nUnvalidated expert approval.'}
+rendered Section 9:
+Model reasoning pending integration (section 1F).
+
+outcome : blocked
+injected text in Section 9 : False
+
+========================================================================
+D - model path: can the PROVIDER's reply set metadata['model']?
+    (real llm.interpret parser + gate one, fixed offline Reply, as in R01)
+========================================================================
+accepted : True
+fields   : {'headline': 'Careful reading is warranted.'}
+metadata['model'] : 'claude-opus-5'
+rendered Section 9:
+Careful reading is warranted.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+injected text in Section 9 : False

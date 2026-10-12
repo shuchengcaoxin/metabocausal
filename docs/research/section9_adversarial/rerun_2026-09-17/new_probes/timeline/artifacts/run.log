@@ -1,0 +1,31 @@
+GI01  drawn   [timeline] wrote GI01_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))
+GI02  drawn   [timeline] wrote GI02_genetic_insight.png  (1/1 drug lanes, 3 undated report(s))
+GI03  drawn   [timeline] wrote GI03_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI04  drawn   [timeline] wrote GI04_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI05  drawn   [timeline] wrote GI05_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI06  drawn   [timeline] wrote GI06_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI07  drawn   [timeline] wrote GI07_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI08  drawn   [timeline] wrote GI08_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI09  drawn   [timeline] wrote GI09_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))
+GI10  drawn   [timeline] wrote GI10_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI11  drawn   [timeline] wrote GI11_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI12  drawn   [timeline] wrote GI12_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI13  drawn   [timeline] wrote GI13_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI14  drawn   [timeline] wrote GI14_genetic_insight.png  (8/9 drug lanes, 0 undated report(s))
+GI15  drawn   [timeline] wrote GI15_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI16  drawn   [timeline] wrote GI16_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))
+GI17  drawn   [timeline] wrote GI17_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI18  drawn   [timeline] wrote GI18_genetic_insight.png  (1/1 drug lanes, 1 undated report(s))
+GI19  drawn   [timeline] wrote GI19_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI20  drawn   [timeline] wrote GI20_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+GI21  none    
+LC01  validate: passed
+LC02  validate: passed
+LC03  validate: passed
+LC04  validate: passed
+LC05  validate: passed
+LC06  validate: ValueError: Timeline silently omits required stages: human_genetics, preclinical
+LC07  validate: passed
+LC08  validate: passed
+LC09  validate: ValueError: Events must be chronological
+LC10  validate: passed

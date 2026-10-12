@@ -1,0 +1,36 @@
+L03 - MVP2/tests on current main
+
+[1] documented runner: python -m pytest MVP2/tests -q   (cwd = repo root)
+    exit code: 1
+    stderr:
+      <home>\AppData\Local\Programs\Python\Python312\python.exe: No module named pytest
+    importlib.util.find_spec('pytest') -> None
+    'pytest' appears in requirements.txt: False
+
+[2] same test functions under probes/_minipytest.py (offline shim;
+    supplies only pytest.raises and tmp_path - see that file's docstring)
+
+  test_merge_pairs.py
+    passed   test_merge_maps_new_pair_without_overwriting_baseline_schema
+    passed   test_merge_rejects_baseline_overlap
+    passed   test_merge_rejects_unverified_pair
+  test_pair_screening.py
+    passed   test_pair_keys_prefer_ids_but_keep_name_key
+    passed   test_screening_keeps_only_new_forward_pairs
+  test_pair_search_batch.py
+    passed   test_batch_keeps_each_pair_separate
+    passed   test_batch_rejects_unverified_pair
+  test_search.py
+    passed   test_europe_pmc_honours_request_limit
+    passed   test_europe_pmc_merges_identifier_views_of_one_paper
+    passed   test_europe_pmc_normalizes_and_deduplicates_pages
+    passed   test_europe_pmc_retries_transient_provider_error
+    passed   test_europe_pmc_returns_explicit_failure
+    passed   test_inspection_creates_gap_for_pair_and_sources
+    passed   test_orchestrator_inspects_and_chooses_gap_driven_follow_up
+    passed   test_query_kinds_are_distinct
+  test_seed_extraction.py
+    passed   test_blank_excel_cells_do_not_become_textual_none
+    passed   test_extraction_requires_both_endpoints_and_records_relation_basis
+
+  totals: passed=17 failed=0 not_runnable=0 collection_errors=0

@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-09-17T04:15:16.363913+00:00",
+  "command": "python scripts/probe_section9.py",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git_head": "b05639721b07345612bba4ebf66f989805b9703c",
+  "git_branch": "rerun/section9-adversarial-20260916",
+  "git_status": "?? docs/research/section9_adversarial/rerun_2026-09-17/",
+  "network_used": false,
+  "provider_api_used": false,
+  "model_path_method": "deterministic Reply stub through llm.interpret and renderer",
+  "hashes": {
+    "data\\demo_card_inputs.json": "c8e4fda54413f6f1479b2b71114e0c44641bb791b142aea69b3a30dc67579ab9",
+    "render.py": "68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f",
+    "validate_card.py": "a756ab148ce5b7448431551dd262717c0c162a93d54b4449ca9b9d44b6ce3ef3",
+    "llm\\__init__.py": "2765b4deac03c39b7a40080b9acc24692e91a808fff788d6505ad816d35e83db",
+    "llm\\base.py": "db458458219dadc9f5671db28f66f9bff40e649ed30c59a93a7b12c79e242b58",
+    "llm\\interpret.py": "ba15d534b704db37c8dfd3d7d7260f6724142a4f4d6206c63ff6c5607a4afb10",
+    "llm\\registry.py": "894727abff187aa35513e5560926d4235a018e7049bdb5ee52a2495b8b481dcb",
+    "prompts\\interpretation.md": "b3f3a60df1c1bd1a8ca2e961fd8e5bc8221dc71ecb8ebdd697eb750730e0060f",
+    "scripts\\interpretation_fixtures.py": "d11b96ad0249b364b0cc7096bfad9f21f5cfcbd6513af4957d346336be505476",
+    "scripts\\probe_section9.py": "2bd8f3039e2c9ca11edd22079701594a651723a5674ce28c2eee348f6cac3e54"
+  },
+  "reference_only_hashes": {
+    "data/1a_sample.json": "9a86336e11847bdbb413ac34795b0b5a64b5be4f9308b51e5fd4ed16399416ec"
+  },
+  "cases": 51,
+  "outcomes": {
+    "blocked": 17,
+    "bypassed": 2,
+    "printed": 31,
+    "raised": 1
+  },
+  "all_expectations_met": true
+}

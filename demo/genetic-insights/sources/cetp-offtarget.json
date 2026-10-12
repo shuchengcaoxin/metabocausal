@@ -1,0 +1,1191 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A20026784&format=json&resultType=core",
+  "retrieved_at": "2026-09-12T18:13:47.667341+00:00",
+  "data": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "EXT_ID:20026784",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "20026784",
+          "source": "MED",
+          "pmid": "20026784",
+          "pmcid": "PMC2811869",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC2811869"
+            ]
+          },
+          "doi": "10.1161/circulationaha.109.865444",
+          "title": "Separating the mechanism-based and off-target actions of cholesteryl ester transfer protein inhibitors with CETP gene polymorphisms.",
+          "authorString": "Sofat R, Hingorani AD, Smeeth L, Humphries SE, Talmud PJ, Cooper J, Shah T, Sandhu MS, Ricketts SL, Boekholdt SM, Wareham N, Khaw KT, Kumari M, Kivimaki M, Marmot M, Asselbergs FW, van der Harst P, Dullaart RP, Navis G, van Veldhuisen DJ, Van Gilst WH, Thompson JF, McCaskie P, Palmer LJ, Arca M, Quagliarini F, Gaudio C, Cambien F, Nicaud V, Poirer O, Gudnason V, Isaacs A, Witteman JC, van Duijn CM, Pencina M, Vasan RS, D'Agostino RB, Ordovas J, Li TY, Kakko S, Kauma H, Savolainen MJ, Kesäniemi YA, Sandhofer A, Paulweber B, Sorli JV, Goto A, Yokoyama S, Okumura K, Horne BD, Packard C, Freeman D, Ford I, Sattar N, McCormack V, Lawlor DA, Ebrahim S, Smith GD, Kastelein JJ, Deanfield J, Casas JP.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Sofat R",
+                "firstName": "Reecha",
+                "lastName": "Sofat",
+                "initials": "R",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0242-6115"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Centre for Clinical Pharmacology, Department of Medicine, University College London, London, United Kingdom."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Hingorani AD",
+                "firstName": "Aroon D",
+                "lastName": "Hingorani",
+                "initials": "AD",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8365-0081"
+                }
+              },
+              {
+                "fullName": "Smeeth L",
+                "firstName": "Liam",
+                "lastName": "Smeeth",
+                "initials": "L",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9168-6022"
+                }
+              },
+              {
+                "fullName": "Humphries SE",
+                "firstName": "Steve E",
+                "lastName": "Humphries",
+                "initials": "SE",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8221-6547"
+                }
+              },
+              {
+                "fullName": "Talmud PJ",
+                "firstName": "Philippa J",
+                "lastName": "Talmud",
+                "initials": "PJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5560-1933"
+                }
+              },
+              {
+                "fullName": "Cooper J",
+                "firstName": "Jackie",
+                "lastName": "Cooper",
+                "initials": "J"
+              },
+              {
+                "fullName": "Shah T",
+                "firstName": "Tina",
+                "lastName": "Shah",
+                "initials": "T",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7724-7210"
+                }
+              },
+              {
+                "fullName": "Sandhu MS",
+                "firstName": "Manjinder S",
+                "lastName": "Sandhu",
+                "initials": "MS"
+              },
+              {
+                "fullName": "Ricketts SL",
+                "firstName": "Sally L",
+                "lastName": "Ricketts",
+                "initials": "SL",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5644-7958"
+                }
+              },
+              {
+                "fullName": "Boekholdt SM",
+                "firstName": "S Matthijs",
+                "lastName": "Boekholdt",
+                "initials": "SM",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0861-0765"
+                }
+              },
+              {
+                "fullName": "Wareham N",
+                "firstName": "Nicholas",
+                "lastName": "Wareham",
+                "initials": "N"
+              },
+              {
+                "fullName": "Khaw KT",
+                "firstName": "Kay Tee",
+                "lastName": "Khaw",
+                "initials": "KT"
+              },
+              {
+                "fullName": "Kumari M",
+                "firstName": "Meena",
+                "lastName": "Kumari",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9716-1035"
+                }
+              },
+              {
+                "fullName": "Kivimaki M",
+                "firstName": "Mika",
+                "lastName": "Kivimaki",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4699-5627"
+                }
+              },
+              {
+                "fullName": "Marmot M",
+                "firstName": "Michael",
+                "lastName": "Marmot",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2431-6419"
+                }
+              },
+              {
+                "fullName": "Asselbergs FW",
+                "firstName": "Folkert W",
+                "lastName": "Asselbergs",
+                "initials": "FW",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1692-8669"
+                }
+              },
+              {
+                "fullName": "van der Harst P",
+                "firstName": "Pim",
+                "lastName": "van der Harst",
+                "initials": "P",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2713-686X"
+                }
+              },
+              {
+                "fullName": "Dullaart RP",
+                "firstName": "Robin P F",
+                "lastName": "Dullaart",
+                "initials": "RP"
+              },
+              {
+                "fullName": "Navis G",
+                "firstName": "Gerjan",
+                "lastName": "Navis",
+                "initials": "G"
+              },
+              {
+                "fullName": "van Veldhuisen DJ",
+                "firstName": "Dirk J",
+                "lastName": "van Veldhuisen",
+                "initials": "DJ"
+              },
+              {
+                "fullName": "Van Gilst WH",
+                "firstName": "Wiek H",
+                "lastName": "Van Gilst",
+                "initials": "WH",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2968-8585"
+                }
+              },
+              {
+                "fullName": "Thompson JF",
+                "firstName": "John F",
+                "lastName": "Thompson",
+                "initials": "JF",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8568-3311"
+                }
+              },
+              {
+                "fullName": "McCaskie P",
+                "firstName": "Pamela",
+                "lastName": "McCaskie",
+                "initials": "P"
+              },
+              {
+                "fullName": "Palmer LJ",
+                "firstName": "Lyle J",
+                "lastName": "Palmer",
+                "initials": "LJ",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1628-3055"
+                }
+              },
+              {
+                "fullName": "Arca M",
+                "firstName": "Marcello",
+                "lastName": "Arca",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3786-0883"
+                }
+              },
+              {
+                "fullName": "Quagliarini F",
+                "firstName": "Fabiana",
+                "lastName": "Quagliarini",
+                "initials": "F",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1384-4857"
+                }
+              },
+              {
+                "fullName": "Gaudio C",
+                "firstName": "Carlo",
+                "lastName": "Gaudio",
+                "initials": "C"
+              },
+              {
+                "fullName": "Cambien F",
+                "firstName": "François",
+                "lastName": "Cambien",
+                "initials": "F"
+              },
+              {
+                "fullName": "Nicaud V",
+                "firstName": "Viviane",
+                "lastName": "Nicaud",
+                "initials": "V"
+              },
+              {
+                "fullName": "Poirer O",
+                "firstName": "Odette",
+                "lastName": "Poirer",
+                "initials": "O"
+              },
+              {
+                "fullName": "Gudnason V",
+                "firstName": "Vilmundur",
+                "lastName": "Gudnason",
+                "initials": "V",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5696-0084"
+                }
+              },
+              {
+                "fullName": "Isaacs A",
+                "firstName": "Aaron",
+                "lastName": "Isaacs",
+                "initials": "A",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5037-4834"
+                }
+              },
+              {
+                "fullName": "Witteman JC",
+                "firstName": "Jacqueline C M",
+                "lastName": "Witteman",
+                "initials": "JC"
+              },
+              {
+                "fullName": "van Duijn CM",
+                "firstName": "Cornelia M",
+                "lastName": "van Duijn",
+                "initials": "CM",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2374-9204"
+                }
+              },
+              {
+                "fullName": "Pencina M",
+                "firstName": "Michael",
+                "lastName": "Pencina",
+                "initials": "M"
+              },
+              {
+                "fullName": "Vasan RS",
+                "firstName": "Ramachandran S",
+                "lastName": "Vasan",
+                "initials": "RS"
+              },
+              {
+                "fullName": "D'Agostino RB Sr",
+                "firstName": "Ralph B",
+                "lastName": "D'Agostino",
+                "initials": "RB"
+              },
+              {
+                "fullName": "Ordovas J",
+                "firstName": "Jose",
+                "lastName": "Ordovas",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7581-5680"
+                }
+              },
+              {
+                "fullName": "Li TY",
+                "firstName": "Tricia Y",
+                "lastName": "Li",
+                "initials": "TY"
+              },
+              {
+                "fullName": "Kakko S",
+                "firstName": "Sakari",
+                "lastName": "Kakko",
+                "initials": "S"
+              },
+              {
+                "fullName": "Kauma H",
+                "firstName": "Heikki",
+                "lastName": "Kauma",
+                "initials": "H"
+              },
+              {
+                "fullName": "Savolainen MJ",
+                "firstName": "Markku J",
+                "lastName": "Savolainen",
+                "initials": "MJ"
+              },
+              {
+                "fullName": "Kesäniemi YA",
+                "firstName": "Y Antero",
+                "lastName": "Kesäniemi",
+                "initials": "YA"
+              },
+              {
+                "fullName": "Sandhofer A",
+                "firstName": "Anton",
+                "lastName": "Sandhofer",
+                "initials": "A"
+              },
+              {
+                "fullName": "Paulweber B",
+                "firstName": "Bernhard",
+                "lastName": "Paulweber",
+                "initials": "B"
+              },
+              {
+                "fullName": "Sorli JV",
+                "firstName": "Jose V",
+                "lastName": "Sorli",
+                "initials": "JV",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0130-2006"
+                }
+              },
+              {
+                "fullName": "Goto A",
+                "firstName": "Akimoto",
+                "lastName": "Goto",
+                "initials": "A"
+              },
+              {
+                "fullName": "Yokoyama S",
+                "firstName": "Shinji",
+                "lastName": "Yokoyama",
+                "initials": "S"
+              },
+              {
+                "fullName": "Okumura K",
+                "firstName": "Kenji",
+                "lastName": "Okumura",
+                "initials": "K"
+              },
+              {
+                "fullName": "Horne BD",
+                "firstName": "Benjamin D",
+                "lastName": "Horne",
+                "initials": "BD"
+              },
+              {
+                "fullName": "Packard C",
+                "firstName": "Chris",
+                "lastName": "Packard",
+                "initials": "C"
+              },
+              {
+                "fullName": "Freeman D",
+                "firstName": "Dilys",
+                "lastName": "Freeman",
+                "initials": "D"
+              },
+              {
+                "fullName": "Ford I",
+                "firstName": "Ian",
+                "lastName": "Ford",
+                "initials": "I"
+              },
+              {
+                "fullName": "Sattar N",
+                "firstName": "Naveed",
+                "lastName": "Sattar",
+                "initials": "N"
+              },
+              {
+                "fullName": "McCormack V",
+                "firstName": "Valerie",
+                "lastName": "McCormack",
+                "initials": "V",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7397-3442"
+                }
+              },
+              {
+                "fullName": "Lawlor DA",
+                "firstName": "Debbie A",
+                "lastName": "Lawlor",
+                "initials": "DA",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6793-2262"
+                }
+              },
+              {
+                "fullName": "Ebrahim S",
+                "firstName": "Shah",
+                "lastName": "Ebrahim",
+                "initials": "S"
+              },
+              {
+                "fullName": "Smith GD",
+                "firstName": "George Davey",
+                "lastName": "Smith",
+                "initials": "GD"
+              },
+              {
+                "fullName": "Kastelein JJ",
+                "firstName": "John J P",
+                "lastName": "Kastelein",
+                "initials": "JJ"
+              },
+              {
+                "fullName": "Deanfield J",
+                "firstName": "John",
+                "lastName": "Deanfield",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8806-6052"
+                }
+              },
+              {
+                "fullName": "Casas JP",
+                "firstName": "Juan P",
+                "lastName": "Casas",
+                "initials": "JP"
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5037-4834"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5696-0084"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7357-5970"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7397-3442"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7724-7210"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8365-0081"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8568-3311"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8806-6052"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9461-3948"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9716-1035"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0130-2006"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0242-6115"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0861-0765"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1384-4857"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1407-8314"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1628-3055"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1692-8669"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2374-9204"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2431-6419"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2713-686X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3440-9475"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4699-5627"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5560-1933"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5644-7958"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5860-0768"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6793-2262"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7581-5680"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8221-6547"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9168-6022"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2968-8585"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3786-0883"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "1",
+            "volume": "121",
+            "journalIssueId": 1686274,
+            "dateOfPublication": "2010 Jan",
+            "monthOfPublication": 1,
+            "yearOfPublication": 2010,
+            "printPublicationDate": "2010-01-01",
+            "journal": {
+              "title": "Circulation",
+              "medlineAbbreviation": "Circulation",
+              "essn": "1524-4539",
+              "issn": "0009-7322",
+              "isoabbreviation": "Circulation",
+              "nlmid": "0147763"
+            }
+          },
+          "pubYear": "2010",
+          "pageInfo": "52-62",
+          "abstractText": "<h4>Background</h4>Cholesteryl ester transfer protein (CETP) inhibitors raise high-density lipoprotein (HDL) cholesterol, but torcetrapib, the first-in-class inhibitor tested in a large outcome trial, caused an unexpected blood pressure elevation and increased cardiovascular events. Whether the hypertensive effect resulted from CETP inhibition or an off-target action of torcetrapib has been debated. We hypothesized that common single-nucleotide polymorphisms in the CETP gene could help distinguish mechanism-based from off-target actions of CETP inhibitors to inform on the validity of CETP as a therapeutic target.<h4>Methods and results</h4>We compared the effect of CETP single-nucleotide polymorphisms and torcetrapib treatment on lipid fractions, blood pressure, and electrolytes in up to 67 687 individuals from genetic studies and 17 911 from randomized trials. CETP single-nucleotide polymorphisms and torcetrapib treatment reduced CETP activity and had a directionally concordant effect on 8 lipid and lipoprotein traits (total, low-density lipoprotein, and HDL cholesterol; HDL2; HDL3; apolipoproteins A-I and B; and triglycerides), with the genetic effect on HDL cholesterol (0.13 mmol/L, 95% confidence interval [CI] 0.11 to 0.14 mmol/L) being consistent with that expected of a 10-mg dose of torcetrapib (0.13 mmol/L, 95% CI 0.10 to 0.15). In trials, 60 mg of torcetrapib elevated systolic and diastolic blood pressure by 4.47 mm Hg (95% CI 4.10 to 4.84 mm Hg) and 2.08 mm Hg (95% CI 1.84 to 2.31 mm Hg), respectively. However, the effect of CETP single-nucleotide polymorphisms on systolic blood pressure (0.16 mm Hg, 95% CI -0.28 to 0.60 mm Hg) and diastolic blood pressure (-0.04 mm Hg, 95% CI -0.36 to 0.28 mm Hg) was null and significantly different from that expected of 10 mg of torcetrapib.<h4>Conclusions</h4>Discordance in the effects of CETP single-nucleotide polymorphisms and torcetrapib treatment on blood pressure despite the concordant effects on lipids indicates the hypertensive action of torcetrapib is unlikely to be due to CETP inhibition or shared by chemically dissimilar CETP inhibitors. Genetic studies could find a place in drug-development programs as a new source of randomized evidence for drug-target validation in humans.",
+          "affiliation": "Centre for Clinical Pharmacology, Department of Medicine, University College London, London, United Kingdom.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "grantId": "AG13196",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "FS/07/011/22085",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "PG/04/110/17827",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R01 AG013196",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0100222",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "70654",
+                "agency": "Wellcome Trust",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G8802774",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "HL36310",
+                "agency": "NHLBI NIH HHS",
+                "acronym": "HL",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R01 HL036310",
+                "agency": "NHLBI NIH HHS",
+                "acronym": "HL",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institute for Health Research (NIHR)",
+                "acronym": "DH_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0600705",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G19/35",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "PG/08/094/26019",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "PG04/110/17827",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "R37 AG013196",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "082178",
+                "agency": "Wellcome Trust",
+                "acronym": "WT_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "AG1764406S1",
+                "agency": "NIA NIH HHS",
+                "acronym": "AG",
+                "orderIn": 0
+              },
+              {
+                "grantId": "FS/05/125/19379",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "FS/07/011",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0401527",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0801566",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G0902037",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "G19/35(70654)",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "HS06516",
+                "agency": "AHRQ HHS",
+                "acronym": "HS",
+                "orderIn": 0
+              },
+              {
+                "grantId": "MC_U106179471",
+                "agency": "Medical Research Council",
+                "acronym": "MRC_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "FS 05/125",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "RG/07/008/23674",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              },
+              {
+                "grantId": "RG/08/008/25291",
+                "agency": "British Heart Foundation",
+                "acronym": "BHF_",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Hypertension",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CI",
+                      "qualifierName": "chemically induced",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "EP",
+                      "qualifierName": "epidemiology",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Hypercholesterolemia",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "qualifierName": "drug therapy",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "EP",
+                      "qualifierName": "epidemiology",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Electrolytes",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Quinolines",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "qualifierName": "administration & dosage",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "qualifierName": "adverse effects",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Lipoproteins, HDL",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Anticholesteremic Agents",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "qualifierName": "administration & dosage",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "qualifierName": "adverse effects",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Risk Factors"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Blood Pressure",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Dose-Response Relationship, Drug"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Genotype"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Polymorphism, Single Nucleotide"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cholesterol Ester Transfer Proteins",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AI",
+                      "qualifierName": "antagonists & inhibitors",
+                      "majorTopic_YN": "Y"
+                    },
+                    {
+                      "abbreviation": "BL",
+                      "qualifierName": "blood",
+                      "majorTopic_YN": "N"
+                    },
+                    {
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics",
+                      "majorTopic_YN": "Y"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Randomized Controlled Trials as Topic",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "qualifierName": "statistics & numerical data",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Biomarkers"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "White People",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "qualifierName": "statistics & numerical data",
+                      "majorTopic_YN": "N"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "cholesterol ester transfer proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Electrolytes",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Anticholesteremic Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Quinolines",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Lipoproteins, HDL",
+                "registryNumber": "0"
+              },
+              {
+                "name": "CETP protein, human",
+                "registryNumber": "0"
+              },
+              {
+                "name": "torcetrapib",
+                "registryNumber": "4N4457MV2U"
+              },
+              {
+                "name": "Biomarkers",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free after 12 months",
+                "availabilityCode": "F12",
+                "documentStyle": "html",
+                "site": "intl-circ.ahajournals.org",
+                "url": "http://intl-circ.ahajournals.org/cgi/content/full/121/1/52"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "intl-circ.ahajournals.org",
+                "url": "http://intl-circ.ahajournals.org/cgi/content/abstract/121/1/52"
+              },
+              {
+                "availability": "Free after 12 months",
+                "availabilityCode": "F12",
+                "documentStyle": "pdf",
+                "site": "intl-circ.ahajournals.org",
+                "url": "http://intl-circ.ahajournals.org/cgi/reprint/121/1/52.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1161/CIRCULATIONAHA.109.865444"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2811869"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2811869?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1161/circulationaha.109.865444"
+              }
+            ]
+          },
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "source": "MED",
+                "reference": "Circulation. 2010 Feb 23;121(7):e216",
+                "type": "Erratum in",
+                "orderIn": 1
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "citedByCount": 83,
+          "hasData": "Y",
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasLabsLinks": "Y",
+          "hasEvaluations": "N",
+          "authMan": "Y",
+          "epmcAuthMan": "Y",
+          "nihAuthMan": "N",
+          "manuscriptId": "UKMS28287",
+          "hasTMAccessionNumbers": "Y",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "refsnp"
+            ]
+          },
+          "dateOfCompletion": "2010-01-28",
+          "dateOfCreation": "2009-12-23",
+          "firstIndexDate": "2010-09-29",
+          "fullTextReceivedDate": "2025-11-25",
+          "dateOfRevision": "2025-05-29",
+          "electronicPublicationDate": "2009-12-21",
+          "firstPublicationDate": "2009-12-21"
+        }
+      ]
+    }
+  }
+}

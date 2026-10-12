@@ -1,0 +1,33 @@
+case: GI20
+what: five reports of one drug all starting in the same year, with free-text phases; the label stagger has four offsets
+asks: does the fifth label land on the first, and does the figure count it
+figure: drawn GI20_genetic_insight.png
+stdout: [timeline] wrote GI20_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134261, NCT00134262, NCT00134263, NCT00134264, NCT00134265
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+'Phase 2/Phase 3'  OVER  'Phase 2b dose finding'
+
+--- every string drawn on the canvas ---
+'Phase 2/Phase 3'
+'Phase 4 post-marketing surveillance'
+'Phase 1 healthy volunteers'
+'Phase 3 pivotal outcomes'
+'Phase 2b dose finding'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2003'
+'2004'
+'2005'
+'2006'
+'2007'
+'2008'
+'2009'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 5 dated reports drawn, 0 exposure GWAS years marked'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

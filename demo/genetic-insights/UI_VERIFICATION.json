@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-12T19:10:09.943Z",
+  "cases": 2,
+  "event_counts": {
+    "torcetrapib": 11,
+    "evacetrapib": 10
+  },
+  "checks": [
+    "required human-genetic and preclinical stages",
+    "timeline selection",
+    "case-specific title/status",
+    "Slack preview",
+    "module status",
+    "presentation mode",
+    "invalid snapshot preservation",
+    "valid snapshot import",
+    "390px layout",
+    "offline no remote requests"
+  ],
+  "javascript_errors": [],
+  "remote_requests": []
+}

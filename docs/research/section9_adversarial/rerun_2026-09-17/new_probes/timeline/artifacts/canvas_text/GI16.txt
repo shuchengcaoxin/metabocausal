@@ -1,0 +1,29 @@
+case: GI16
+what: the same drug reached through two effector genes
+asks: does one drug become two lanes and two counted reports
+figure: drawn GI16_genetic_insight.png
+stdout: [timeline] wrote GI16_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))
+registry asked: NCT00134264
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 3'
+'phase 3'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2003'
+'2004'
+'2005'
+'2006'
+'2007'
+'torcetrapib\nLIPC, max stage 3'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'2 drug lane(s) from the dossier of 2 effector genes, 2 dated reports drawn, 0 exposure GWAS years marked'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

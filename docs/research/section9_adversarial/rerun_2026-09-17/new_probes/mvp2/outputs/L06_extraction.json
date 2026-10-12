@@ -1,0 +1,261 @@
+{
+  "ci_ordering": {
+    "sTable 31": {
+      "a_bound_missing": 0,
+      "col11_is_larger_than_col12": 0,
+      "col11_is_smaller_than_col12": 7570,
+      "layout_H_rows": 7570
+    },
+    "sTable 32": {
+      "a_bound_missing": 0,
+      "col11_is_larger_than_col12": 0,
+      "col11_is_smaller_than_col12": 6195,
+      "layout_H_rows": 6195
+    },
+    "sTable 33": {
+      "a_bound_missing": 0,
+      "col11_is_larger_than_col12": 0,
+      "col11_is_smaller_than_col12": 526,
+      "layout_H_rows": 526
+    },
+    "sTable 34": {
+      "a_bound_missing": 0,
+      "col11_is_larger_than_col12": 0,
+      "col11_is_smaller_than_col12": 454,
+      "layout_H_rows": 454
+    },
+    "sTable 35": {
+      "a_bound_missing": 0,
+      "col11_is_larger_than_col12": 0,
+      "col11_is_smaller_than_col12": 2199,
+      "layout_H_rows": 2199
+    }
+  },
+  "extractor_map": {
+    "beta": 9,
+    "ci_high": 11,
+    "ci_low": 12,
+    "disease_id": 3,
+    "disease_trait": 4,
+    "metabolite_id": 0,
+    "metabolite_name": 1,
+    "method": 8,
+    "nsnp": 7,
+    "p_value": 13
+  },
+  "kept_bound_ordering": {
+    "chen_2023 / ST18": {
+      "ci_low<=ci_high": 511,
+      "ci_low>ci_high": 0,
+      "no bounds": 0
+    },
+    "chen_2023 / ST19": {
+      "ci_low<=ci_high": 495,
+      "ci_low>ci_high": 0,
+      "no bounds": 0
+    },
+    "chen_2023 / ST20": {
+      "ci_low<=ci_high": 507,
+      "ci_low>ci_high": 0,
+      "no bounds": 0
+    },
+    "ukb_mapping_2025 / sTable 31": {
+      "ci_low<=ci_high": 0,
+      "ci_low>ci_high": 6528,
+      "no bounds": 0
+    },
+    "ukb_mapping_2025 / sTable 32": {
+      "ci_low<=ci_high": 0,
+      "ci_low>ci_high": 340,
+      "no bounds": 0
+    },
+    "ukb_mapping_2025 / sTable 33": {
+      "ci_low<=ci_high": 9,
+      "ci_low>ci_high": 46,
+      "no bounds": 0
+    },
+    "yin_2025 / Sheet1": {
+      "ci_low<=ci_high": 0,
+      "ci_low>ci_high": 0,
+      "no bounds": 282
+    },
+    "zoodsma_2025 / ST14": {
+      "ci_low<=ci_high": 0,
+      "ci_low>ci_high": 0,
+      "no bounds": 1083
+    }
+  },
+  "layout_S_example": {
+    "cols_9_to_14": [
+      "1.07045437888634",
+      "1.18185020203274e-08",
+      "2.91670448786792",
+      "0.702518316457593",
+      "1.43839044131509",
+      "3.5128837353454e-06"
+    ],
+    "row": 16,
+    "sheet": "sTable 33"
+  },
+  "layout_counts": {
+    "sTable 31": {
+      "layout H (col10 = OR)": 7570,
+      "no numeric beta": 6
+    },
+    "sTable 32": {
+      "layout H (col10 = OR)": 6195,
+      "no numeric beta": 6
+    },
+    "sTable 33": {
+      "layout H (col10 = OR)": 526,
+      "layout S (col11 = OR)": 18,
+      "no numeric beta": 6
+    },
+    "sTable 34": {
+      "layout H (col10 = OR, printed to 2 decimals)": 454,
+      "no numeric beta": 6
+    },
+    "sTable 35": {
+      "layout H (col10 = OR)": 2199,
+      "layout S (col11 = OR)": 480,
+      "no numeric beta": 6
+    }
+  },
+  "printed_headers": {
+    "sTable 31": [
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "MR method",
+      "Beta",
+      "Odds ratio",
+      "95% UCI",
+      "95% LCI",
+      "p value",
+      "q value"
+    ],
+    "sTable 32": [
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "MR method",
+      "Beta",
+      "Odds ratio",
+      "95% UCI",
+      "95% LCI",
+      "p value",
+      "q value"
+    ],
+    "sTable 33": [
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "MR method",
+      "Beta",
+      "Odds ratio",
+      "95% UCI",
+      "95% LCI",
+      "p value",
+      "q value"
+    ],
+    "sTable 34": [
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "MR method",
+      "Beta",
+      "Odds ratio",
+      "95% UCI",
+      "95% LCI",
+      "p value",
+      "q value"
+    ],
+    "sTable 35": [
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "MR method",
+      "Beta",
+      "Odds ratio",
+      "95% UCI",
+      "95% LCI",
+      "p value",
+      "q value"
+    ]
+  },
+  "sheet_survival": {
+    "sTable 31": {
+      "candidate_pairs": 7570,
+      "new_pair_records": 7462,
+      "new_unique_pairs": 6528
+    },
+    "sTable 32": {
+      "candidate_pairs": 6195,
+      "new_pair_records": 6093,
+      "new_unique_pairs": 340
+    },
+    "sTable 33": {
+      "candidate_pairs": 544,
+      "new_pair_records": 531,
+      "new_unique_pairs": 55
+    },
+    "sTable 34": {
+      "candidate_pairs": 454,
+      "new_pair_records": 441,
+      "new_unique_pairs": 0
+    },
+    "sTable 35": {
+      "candidate_pairs": 2679,
+      "new_pair_records": 0,
+      "new_unique_pairs": 0
+    }
+  },
+  "survivors": {
+    "candidate_pairs.csv": {
+      "of_those_p_value_inside_0_1_and_therefore_undetectable_by_range": 232,
+      "of_those_p_value_outside_0_1": 266,
+      "rows_from_ukb_mapping_2025": 17442,
+      "rows_on_layout_S": 498,
+      "rows_total": 20460
+    },
+    "new_pair_records.csv": {
+      "of_those_p_value_inside_0_1_and_therefore_undetectable_by_range": 4,
+      "of_those_p_value_outside_0_1": 14,
+      "rows_from_ukb_mapping_2025": 14527,
+      "rows_on_layout_S": 18,
+      "rows_total": 17405
+    },
+    "new_unique_pairs.csv": {
+      "of_those_p_value_inside_0_1_and_therefore_undetectable_by_range": 2,
+      "of_those_p_value_outside_0_1": 7,
+      "rows_from_ukb_mapping_2025": 6923,
+      "rows_on_layout_S": 9,
+      "rows_total": 9801
+    }
+  }
+}

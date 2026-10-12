@@ -1,0 +1,12 @@
+# F7 re-verify command log  (run 2026-09-17)
+# worktree: metabocausal-rerun  branch: rerun/section9-adversarial-20260916
+# HEAD: b05639721b07345612bba4ebf66f989805b9703c   python: Python 3.12.10
+
+$ git diff --stat bcb32a9 b056397 -- render.py validate_card.py llm
+(empty output = the F7 code path is byte-identical to his baseline)
+
+$ git diff --numstat bcb32a9 b056397 -- render.py
+(empty = unchanged)
+
+$ python docs/.../reverify/F7/reverify_f7.py   -> reverify_f7.out.txt
+$ python docs/.../reverify/F7/reachability_f7.py -> reachability_f7.out.txt

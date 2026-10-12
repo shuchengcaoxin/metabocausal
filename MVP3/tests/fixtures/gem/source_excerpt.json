@@ -1,0 +1,1332 @@
+{
+  "annotations": {
+    "genes": {
+      "ENSG00000007933": {
+        "line_end": 46,
+        "omitted_columns": [],
+        "record_number": 46,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Endoplasmic reticulum",
+          "geneAliases": "FMOII",
+          "geneENSPID": "ENSP00000356729;ENSP00000476963;ENSP00000477451",
+          "geneENSTID": "ENST00000367755;ENST00000530212;ENST00000534514;ENST00000472784;ENST00000479749;ENST00000478457",
+          "geneEntrezID": "2328",
+          "geneNames": "flavin containing dimethylaniline monoxygenase 3",
+          "geneSymbols": "FMO3",
+          "geneUniProtID": "P31513",
+          "genes": "ENSG00000007933"
+        }
+      },
+      "ENSG00000010932": {
+        "line_end": 59,
+        "omitted_columns": [],
+        "record_number": 59,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Endoplasmic reticulum",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000481732;ENSP00000356724;ENSP00000491035;ENSP00000346901;ENSP00000385543",
+          "geneENSTID": "ENST00000617670;ENST00000367750;ENST00000469112;ENST00000354841;ENST00000459868;ENST00000472893;ENST00000469711;ENST00000402921",
+          "geneEntrezID": "2326",
+          "geneNames": "flavin containing dimethylaniline monoxygenase 1",
+          "geneSymbols": "FMO1",
+          "geneUniProtID": "Q01740",
+          "genes": "ENSG00000010932"
+        }
+      },
+      "ENSG00000060982": {
+        "line_end": 166,
+        "omitted_columns": [],
+        "record_number": 166,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Cytosol",
+          "geneAliases": "BCT1",
+          "geneENSPID": "ENSP00000261192;ENSP00000440817;ENSP00000339805;ENSP00000443459;ENSP00000440827;ENSP00000481749;ENSP00000438593",
+          "geneENSTID": "ENST00000261192;ENST00000538118;ENST00000342945;ENST00000539282;ENST00000543099;ENST00000539780;ENST00000544418;ENST00000612790;ENST00000546285;ENST00000355164",
+          "geneEntrezID": "586",
+          "geneNames": "branched chain amino acid transaminase 1",
+          "geneSymbols": "BCAT1",
+          "geneUniProtID": "P54687",
+          "genes": "ENSG00000060982"
+        }
+      },
+      "ENSG00000076258": {
+        "line_end": 270,
+        "omitted_columns": [],
+        "record_number": 270,
+        "values": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Endoplasmic reticulum;Cytosol",
+          "geneAliases": "FMO2",
+          "geneENSPID": "ENSP00000356723",
+          "geneENSTID": "ENST00000497228;ENST00000475780;ENST00000367749;ENST00000462992;ENST00000480136",
+          "geneEntrezID": "2329",
+          "geneNames": "flavin containing dimethylaniline monoxygenase 4",
+          "geneSymbols": "FMO4",
+          "geneUniProtID": "P31512",
+          "genes": "ENSG00000076258"
+        }
+      },
+      "ENSG00000094963": {
+        "line_end": 396,
+        "omitted_columns": [],
+        "record_number": 396,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Endoplasmic reticulum",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000209929;ENSP00000487002;ENSP00000487216",
+          "geneENSTID": "ENST00000209929;ENST00000462643;ENST00000489354;ENST00000529935;ENST00000493513;ENST00000483192;ENST00000488431",
+          "geneEntrezID": "2327",
+          "geneNames": "flavin containing dimethylaniline monoxygenase 2",
+          "geneSymbols": "FMO2",
+          "geneUniProtID": "Q99518",
+          "genes": "ENSG00000094963"
+        }
+      },
+      "ENSG00000100075": {
+        "line_end": 428,
+        "omitted_columns": [],
+        "record_number": 428,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Inner mitochondria",
+          "geneAliases": "CTP;SLC20A3",
+          "geneENSPID": "ENSP00000215882;ENSP00000401480",
+          "geneENSTID": "ENST00000215882;ENST00000451283;ENST00000470922;ENST00000461267;ENST00000468824",
+          "geneEntrezID": "6576",
+          "geneNames": "solute carrier family 25 member 1",
+          "geneSymbols": "SLC25A1",
+          "geneUniProtID": "P53007",
+          "genes": "ENSG00000100075"
+        }
+      },
+      "ENSG00000131781": {
+        "line_end": 1158,
+        "omitted_columns": [],
+        "record_number": 1158,
+        "values": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Endoplasmic reticulum;Cytosol",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000433742;ENSP00000416011;ENSP00000254090;ENSP00000358277;ENSP00000436429;ENSP00000432569;ENSP00000462062",
+          "geneENSTID": "ENST00000527849;ENST00000441068;ENST00000254090;ENST00000369272;ENST00000619062;ENST00000533174;ENST00000533848;ENST00000478432;ENST00000578284",
+          "geneEntrezID": "2330",
+          "geneNames": "flavin containing dimethylaniline monoxygenase 5",
+          "geneSymbols": "FMO5",
+          "geneUniProtID": "P49326",
+          "genes": "ENSG00000131781"
+        }
+      },
+      "ENSG00000140905": {
+        "line_end": 1417,
+        "omitted_columns": [],
+        "record_number": 1417,
+        "values": {
+          "compDataSource": "SwissProt",
+          "compartments": "Mitochondria",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000319531;ENSP00000492163;ENSP00000457630;ENSP00000492187;ENSP00000491127;ENSP00000455579;ENSP00000457645;ENSP00000455019;ENSP00000455287",
+          "geneENSTID": "ENST00000315467;ENST00000640150;ENST00000564386;ENST00000639689;ENST00000639169;ENST00000569885;ENST00000639137;ENST00000561801;ENST00000566566;ENST00000564477",
+          "geneEntrezID": "2653",
+          "geneNames": "glycine cleavage system protein H",
+          "geneSymbols": "GCSH",
+          "geneUniProtID": "P23434",
+          "genes": "ENSG00000140905"
+        }
+      },
+      "ENSG00000178445": {
+        "line_end": 2323,
+        "omitted_columns": [],
+        "record_number": 2323,
+        "values": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus",
+          "geneAliases": "GCSP;NKH",
+          "geneENSPID": "ENSP00000370737;ENSP00000491487;ENSP00000491312;ENSP00000491369;ENSP00000491932;ENSP00000491895;ENSP00000491209;ENSP00000491101;ENSP00000491161;ENSP00000491392",
+          "geneENSTID": "ENST00000321612;ENST00000638274;ENST00000639639;ENST00000640505;ENST00000638233;ENST00000639364;ENST00000638661;ENST00000639461;ENST00000639954;ENST00000639318;ENST00000638694;ENST00000477960;ENST00000639443;ENST00000640592;ENST00000460457;ENST00000640208;ENST00000463305;ENST00000640703;ENST00000639493;ENST00000638654;ENST00000639840;ENST00000639020",
+          "geneEntrezID": "2731",
+          "geneNames": "glycine decarboxylase",
+          "geneSymbols": "GLDC",
+          "geneUniProtID": "P23378",
+          "genes": "ENSG00000178445"
+        }
+      },
+      "ENSG00000182199": {
+        "line_end": 2385,
+        "omitted_columns": [],
+        "record_number": 2385,
+        "values": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus;Cytosol;Inner mitochondria",
+          "geneAliases": "SHMT",
+          "geneENSPID": "ENSP00000333667;ENSP00000451169;ENSP00000452315;ENSP00000450930;ENSP00000452035;ENSP00000450594;ENSP00000451630;ENSP00000450610;ENSP00000406881;ENSP00000450927;ENSP00000450452;ENSP00000452161;ENSP00000450893;ENSP00000452045;ENSP00000452419;ENSP00000451968;ENSP00000452404;ENSP00000413770;ENSP00000451872;ENSP00000452339;ENSP00000451371;ENSP00000452163;ENSP00000451495;ENSP00000450490",
+          "geneENSTID": "ENST00000328923;ENST00000556825;ENST00000557740;ENST00000554600;ENST00000553324;ENST00000554467;ENST00000557487;ENST00000553950;ENST00000555634;ENST00000556689;ENST00000557269;ENST00000555563;ENST00000557433;ENST00000414700;ENST00000557348;ENST00000557703;ENST00000553529;ENST00000554310;ENST00000557302;ENST00000554656;ENST00000557427;ENST00000553474;ENST00000555773;ENST00000554975;ENST00000449049;ENST00000555774;ENST00000555116;ENST00000553837;ENST00000554604;ENST00000553949;ENST00000556737;ENST00000553868;ENST00000555213;ENST00000557529;ENST00000556798",
+          "geneEntrezID": "6472",
+          "geneNames": "serine hydroxymethyltransferase 2",
+          "geneSymbols": "SHMT2",
+          "geneUniProtID": "P34897",
+          "genes": "ENSG00000182199"
+        }
+      }
+    },
+    "metabolites": {
+      "MAM00209m": {
+        "line_end": 406,
+        "omitted_columns": [],
+        "record_number": 406,
+        "values": {
+          "metBiGGID": "",
+          "metChEBIID": "",
+          "metEHMNID": "",
+          "metHMDBID": "",
+          "metHMR2ID": "m00209m",
+          "metHepatoNET1ID": "",
+          "metKEGGID": "C16237",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM96070",
+          "metPubChemID": "",
+          "metRecon3DID": "M00209",
+          "metRetired": "m00209m",
+          "mets": "MAM00209m",
+          "metsNoComp": "MAM00209"
+        }
+      },
+      "MAM00669c": {
+        "line_end": 1101,
+        "omitted_columns": [],
+        "record_number": 1101,
+        "values": {
+          "metBiGGID": "3mop",
+          "metChEBIID": "CHEBI:35932",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000491",
+          "metHMR2ID": "m00669c",
+          "metHepatoNET1ID": "HC01123",
+          "metKEGGID": "C03465",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM439",
+          "metPubChemID": "47",
+          "metRecon3DID": "3mop",
+          "metRetired": "m00669c",
+          "mets": "MAM00669c",
+          "metsNoComp": "MAM00669"
+        }
+      },
+      "MAM01045m": {
+        "line_end": 1640,
+        "omitted_columns": [],
+        "record_number": 1640,
+        "values": {
+          "metBiGGID": "mlthf",
+          "metChEBIID": "CHEBI:1989",
+          "metEHMNID": "",
+          "metHMDBID": "",
+          "metHMR2ID": "m01045m",
+          "metHepatoNET1ID": "HC00140",
+          "metKEGGID": "C00143",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM183",
+          "metPubChemID": "439175",
+          "metRecon3DID": "mlthf",
+          "metRetired": "m01045m",
+          "mets": "MAM01045m",
+          "metsNoComp": "MAM01045"
+        }
+      },
+      "MAM01306c": {
+        "line_end": 2055,
+        "omitted_columns": [],
+        "record_number": 2055,
+        "values": {
+          "metBiGGID": "akg",
+          "metChEBIID": "CHEBI:30915",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000208",
+          "metHMR2ID": "m01306c",
+          "metHepatoNET1ID": "HC00035",
+          "metKEGGID": "C00026",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM20",
+          "metPubChemID": "51",
+          "metRecon3DID": "akg",
+          "metRetired": "m01306c",
+          "mets": "MAM01306c",
+          "metsNoComp": "MAM01306"
+        }
+      },
+      "MAM01587c": {
+        "line_end": 2592,
+        "omitted_columns": [],
+        "record_number": 2592,
+        "values": {
+          "metBiGGID": "cit",
+          "metChEBIID": "CHEBI:30769",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000094",
+          "metHMR2ID": "m01587c",
+          "metHepatoNET1ID": "HC00153",
+          "metKEGGID": "C00158",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM131",
+          "metPubChemID": "311",
+          "metRecon3DID": "cit",
+          "metRetired": "m01587c",
+          "mets": "MAM01587c",
+          "metsNoComp": "MAM01587"
+        }
+      },
+      "MAM01587m": {
+        "line_end": 2593,
+        "omitted_columns": [],
+        "record_number": 2593,
+        "values": {
+          "metBiGGID": "cit",
+          "metChEBIID": "CHEBI:30769",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000094",
+          "metHMR2ID": "m01587m",
+          "metHepatoNET1ID": "HC00153",
+          "metKEGGID": "C00158",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM131",
+          "metPubChemID": "311",
+          "metRecon3DID": "cit",
+          "metRetired": "m01587m",
+          "mets": "MAM01587m",
+          "metsNoComp": "MAM01587"
+        }
+      },
+      "MAM01596m": {
+        "line_end": 2618,
+        "omitted_columns": [],
+        "record_number": 2618,
+        "values": {
+          "metBiGGID": "co2",
+          "metChEBIID": "CHEBI:16526",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0001967",
+          "metHMR2ID": "m01596m",
+          "metHepatoNET1ID": "HC00021",
+          "metKEGGID": "C00011",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM13",
+          "metPubChemID": "280",
+          "metRecon3DID": "co2",
+          "metRetired": "m01596m",
+          "mets": "MAM01596m",
+          "metsNoComp": "MAM01596"
+        }
+      },
+      "MAM01974c": {
+        "line_end": 3356,
+        "omitted_columns": [],
+        "record_number": 3356,
+        "values": {
+          "metBiGGID": "glu__L",
+          "metChEBIID": "CHEBI:16015",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000148",
+          "metHMR2ID": "m01974c",
+          "metHepatoNET1ID": "HC00034",
+          "metKEGGID": "C00025",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM89557",
+          "metPubChemID": "33032",
+          "metRecon3DID": "glu_L",
+          "metRetired": "m01974c",
+          "mets": "MAM01974c",
+          "metsNoComp": "MAM01974"
+        }
+      },
+      "MAM01986m": {
+        "line_end": 3383,
+        "omitted_columns": [],
+        "record_number": 3383,
+        "values": {
+          "metBiGGID": "gly",
+          "metChEBIID": "CHEBI:15428",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000123",
+          "metHMR2ID": "m01986m",
+          "metHepatoNET1ID": "HC00045",
+          "metKEGGID": "C00037",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM29",
+          "metPubChemID": "750",
+          "metRecon3DID": "gly",
+          "metRetired": "m01986m",
+          "mets": "MAM01986m",
+          "metsNoComp": "MAM01986"
+        }
+      },
+      "MAM02039m": {
+        "line_end": 3503,
+        "omitted_columns": [],
+        "record_number": 3503,
+        "values": {
+          "metBiGGID": "h",
+          "metChEBIID": "CHEBI:24636",
+          "metEHMNID": "",
+          "metHMDBID": "",
+          "metHMR2ID": "m02039m",
+          "metHepatoNET1ID": "HC00083",
+          "metKEGGID": "C00080",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM1",
+          "metPubChemID": "1038",
+          "metRecon3DID": "h",
+          "metRetired": "m02039m",
+          "mets": "MAM02039m",
+          "metsNoComp": "MAM02039"
+        }
+      },
+      "MAM02040c": {
+        "line_end": 3508,
+        "omitted_columns": [],
+        "record_number": 3508,
+        "values": {
+          "metBiGGID": "h2o",
+          "metChEBIID": "CHEBI:15377",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0002111",
+          "metHMR2ID": "m02040c",
+          "metHepatoNET1ID": "HC00011",
+          "metKEGGID": "C00001",
+          "metLipidMapsID": "LMST01040128",
+          "metMetaNetXID": "MNXM2",
+          "metPubChemID": "962",
+          "metRecon3DID": "h2o",
+          "metRetired": "m02040c",
+          "mets": "MAM02040c",
+          "metsNoComp": "MAM02040"
+        }
+      },
+      "MAM02040m": {
+        "line_end": 3511,
+        "omitted_columns": [],
+        "record_number": 3511,
+        "values": {
+          "metBiGGID": "h2o",
+          "metChEBIID": "CHEBI:15377",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0002111",
+          "metHMR2ID": "m02040m",
+          "metHepatoNET1ID": "HC00011",
+          "metKEGGID": "C00001",
+          "metLipidMapsID": "LMST01040128",
+          "metMetaNetXID": "MNXM2",
+          "metPubChemID": "962",
+          "metRecon3DID": "h2o",
+          "metRetired": "m02040m",
+          "mets": "MAM02040m",
+          "metsNoComp": "MAM02040"
+        }
+      },
+      "MAM02184c": {
+        "line_end": 3769,
+        "omitted_columns": [],
+        "record_number": 3769,
+        "values": {
+          "metBiGGID": "ile__L",
+          "metChEBIID": "CHEBI:17191",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000172",
+          "metHMR2ID": "m02184c",
+          "metHepatoNET1ID": "HC00334",
+          "metKEGGID": "C00407",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM231",
+          "metPubChemID": "6306",
+          "metRecon3DID": "ile_L",
+          "metRetired": "m02184c",
+          "mets": "MAM02184c",
+          "metsNoComp": "MAM02184"
+        }
+      },
+      "MAM02439c": {
+        "line_end": 4149,
+        "omitted_columns": [],
+        "record_number": 4149,
+        "values": {
+          "metBiGGID": "mal__L",
+          "metChEBIID": "CHEBI:30797",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000156",
+          "metHMR2ID": "m02439c",
+          "metHepatoNET1ID": "HC00146",
+          "metKEGGID": "C00149",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM98",
+          "metPubChemID": "222656",
+          "metRecon3DID": "mal_L",
+          "metRetired": "m02439c",
+          "mets": "MAM02439c",
+          "metsNoComp": "MAM02439"
+        }
+      },
+      "MAM02439m": {
+        "line_end": 4150,
+        "omitted_columns": [],
+        "record_number": 4150,
+        "values": {
+          "metBiGGID": "mal__L",
+          "metChEBIID": "CHEBI:30797",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000156",
+          "metHMR2ID": "m02439m",
+          "metHepatoNET1ID": "HC00146",
+          "metKEGGID": "C00149",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM98",
+          "metPubChemID": "222656",
+          "metRecon3DID": "mal_L",
+          "metRetired": "m02439m",
+          "mets": "MAM02439m",
+          "metsNoComp": "MAM02439"
+        }
+      },
+      "MAM02554c": {
+        "line_end": 4354,
+        "omitted_columns": [],
+        "record_number": 4354,
+        "values": {
+          "metBiGGID": "nadp",
+          "metChEBIID": "CHEBI:18009",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000217",
+          "metHMR2ID": "m02554c",
+          "metHepatoNET1ID": "HC00016",
+          "metKEGGID": "C00006",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM5",
+          "metPubChemID": "5886",
+          "metRecon3DID": "nadp",
+          "metRetired": "m02554c",
+          "mets": "MAM02554c",
+          "metsNoComp": "MAM02554"
+        }
+      },
+      "MAM02555c": {
+        "line_end": 4361,
+        "omitted_columns": [],
+        "record_number": 4361,
+        "values": {
+          "metBiGGID": "nadph",
+          "metChEBIID": "CHEBI:16474",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000221",
+          "metHMR2ID": "m02555c",
+          "metHepatoNET1ID": "HC00015",
+          "metKEGGID": "C00005",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM6",
+          "metPubChemID": "22833512",
+          "metRecon3DID": "nadph",
+          "metRetired": "m02555c",
+          "mets": "MAM02555c",
+          "metsNoComp": "MAM02555"
+        }
+      },
+      "MAM02630c": {
+        "line_end": 4476,
+        "omitted_columns": [],
+        "record_number": 4476,
+        "values": {
+          "metBiGGID": "o2",
+          "metChEBIID": "CHEBI:15379",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0001377",
+          "metHMR2ID": "m02630c",
+          "metHepatoNET1ID": "HC00017",
+          "metKEGGID": "C00007",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM4",
+          "metPubChemID": "977",
+          "metRecon3DID": "o2",
+          "metRetired": "m02630c",
+          "mets": "MAM02630c",
+          "metsNoComp": "MAM02630"
+        }
+      },
+      "MAM02878m": {
+        "line_end": 4950,
+        "omitted_columns": [],
+        "record_number": 4950,
+        "values": {
+          "metBiGGID": "alpam",
+          "metChEBIID": "CHEBI:50622",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0006239",
+          "metHMR2ID": "m02878m",
+          "metHepatoNET1ID": "",
+          "metKEGGID": "",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM81220",
+          "metPubChemID": "24906333",
+          "metRecon3DID": "alpam",
+          "metRetired": "m02878m",
+          "mets": "MAM02878m",
+          "metsNoComp": "MAM02878"
+        }
+      },
+      "MAM02896m": {
+        "line_end": 4975,
+        "omitted_columns": [],
+        "record_number": 4975,
+        "values": {
+          "metBiGGID": "ser__L",
+          "metChEBIID": "CHEBI:17115",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0000187",
+          "metHMR2ID": "m02896m",
+          "metHepatoNET1ID": "HC00068",
+          "metKEGGID": "C00065",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM53",
+          "metPubChemID": "5951",
+          "metRecon3DID": "ser_L",
+          "metRetired": "m02896m",
+          "mets": "MAM02896m",
+          "metsNoComp": "MAM02896"
+        }
+      },
+      "MAM02980m": {
+        "line_end": 5159,
+        "omitted_columns": [],
+        "record_number": 5159,
+        "values": {
+          "metBiGGID": "thf",
+          "metChEBIID": "CHEBI:20506",
+          "metEHMNID": "",
+          "metHMDBID": "HMDB0001846",
+          "metHMR2ID": "m02980m",
+          "metHepatoNET1ID": "HC00102",
+          "metKEGGID": "C00101",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM79",
+          "metPubChemID": "91443",
+          "metRecon3DID": "thf",
+          "metRetired": "m02980m",
+          "mets": "MAM02980m",
+          "metsNoComp": "MAM02980"
+        }
+      },
+      "MAM03053c": {
+        "line_end": 5301,
+        "omitted_columns": [],
+        "record_number": 5301,
+        "values": {
+          "metBiGGID": "",
+          "metChEBIID": "CHEBI:18139",
+          "metEHMNID": "",
+          "metHMDBID": "",
+          "metHMR2ID": "m03053c",
+          "metHepatoNET1ID": "",
+          "metKEGGID": "C00565",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM352",
+          "metPubChemID": "",
+          "metRecon3DID": "M03053",
+          "metRetired": "m03053c",
+          "mets": "MAM03053c",
+          "metsNoComp": "MAM03053"
+        }
+      },
+      "MAM03054c": {
+        "line_end": 5302,
+        "omitted_columns": [],
+        "record_number": 5302,
+        "values": {
+          "metBiGGID": "",
+          "metChEBIID": "CHEBI:15724",
+          "metEHMNID": "",
+          "metHMDBID": "",
+          "metHMR2ID": "m03054c",
+          "metHepatoNET1ID": "",
+          "metKEGGID": "C01104",
+          "metLipidMapsID": "",
+          "metMetaNetXID": "MNXM437",
+          "metPubChemID": "",
+          "metRecon3DID": "M03054",
+          "metRetired": "m03054c",
+          "mets": "MAM03054c",
+          "metsNoComp": "MAM03054"
+        }
+      }
+    },
+    "reactions": {
+      "MAR00125": {
+        "line_end": 8068,
+        "omitted_columns": [],
+        "record_number": 8068,
+        "values": {
+          "rxnBiGGID": "CITtam",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "",
+          "rxnMetaNetXID": "MNXR96753",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "",
+          "rxnRecon3DID": "CITtam",
+          "rxnRetired": "CITtam",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "",
+          "rxnTCDBID": "",
+          "rxns": "MAR00125",
+          "spontaneous": "0"
+        }
+      },
+      "MAR03777": {
+        "line_end": 783,
+        "omitted_columns": [],
+        "record_number": 783,
+        "values": {
+          "rxnBiGGID": "ILETA",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "HMR_3777",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "R01090",
+          "rxnMetaNetXID": "MNXR96228",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11379",
+          "rxnRecon3DID": "ILETA",
+          "rxnRetired": "HMR_3777",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "RHEA:18321",
+          "rxnTCDBID": "",
+          "rxns": "MAR03777",
+          "spontaneous": "0"
+        }
+      },
+      "MAR04792": {
+        "line_end": 678,
+        "omitted_columns": [],
+        "record_number": 678,
+        "values": {
+          "rxnBiGGID": "GHMT2rm",
+          "rxnEHMNID": "R00945C",
+          "rxnHMR2ID": "HMR_4792",
+          "rxnHepatoNET1ID": "r0231",
+          "rxnKEGGID": "R00945",
+          "rxnMetaNetXID": "MNXR100142",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11314",
+          "rxnRecon3DID": "GHMT2rm",
+          "rxnRetired": "HMR_4792",
+          "rxnRheaID": "RHEA:15484",
+          "rxnRheaMasterID": "RHEA:15481",
+          "rxnTCDBID": "",
+          "rxns": "MAR04792",
+          "spontaneous": "0"
+        }
+      },
+      "MAR08433": {
+        "line_end": 685,
+        "omitted_columns": [],
+        "record_number": 685,
+        "values": {
+          "rxnBiGGID": "GCC2cm",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "HMR_8433",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "",
+          "rxnMetaNetXID": "MNXR100066",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11318",
+          "rxnRecon3DID": "GCC2am",
+          "rxnRetired": "HMR_8433",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "RHEA:24304",
+          "rxnTCDBID": "",
+          "rxns": "MAR08433",
+          "spontaneous": "0"
+        }
+      },
+      "MAR09514": {
+        "line_end": 4956,
+        "omitted_columns": [],
+        "record_number": 4956,
+        "values": {
+          "rxnBiGGID": "",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "HMR_9514",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "R05623",
+          "rxnMetaNetXID": "MNXR109720",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR14789",
+          "rxnRecon3DID": "HMR_9514",
+          "rxnRetired": "HMR_9514",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "RHEA:31979",
+          "rxnTCDBID": "",
+          "rxns": "MAR09514",
+          "spontaneous": "0"
+        }
+      }
+    }
+  },
+  "model": {
+    "compartments": [
+      [
+        "e",
+        "Extracellular"
+      ],
+      [
+        "x",
+        "Peroxisome"
+      ],
+      [
+        "m",
+        "Mitochondria"
+      ],
+      [
+        "c",
+        "Cytosol"
+      ],
+      [
+        "l",
+        "Lysosome"
+      ],
+      [
+        "r",
+        "Endoplasmic reticulum"
+      ],
+      [
+        "g",
+        "Golgi apparatus"
+      ],
+      [
+        "n",
+        "Nucleus"
+      ],
+      [
+        "i",
+        "Inner mitochondria"
+      ]
+    ],
+    "genes": [
+      {
+        "id": "ENSG00000007933",
+        "name": "FMO3"
+      },
+      {
+        "id": "ENSG00000010932",
+        "name": "FMO1"
+      },
+      {
+        "id": "ENSG00000060982",
+        "name": "BCAT1"
+      },
+      {
+        "id": "ENSG00000076258",
+        "name": "FMO4"
+      },
+      {
+        "id": "ENSG00000094963",
+        "name": "FMO2"
+      },
+      {
+        "id": "ENSG00000100075",
+        "name": "SLC25A1"
+      },
+      {
+        "id": "ENSG00000131781",
+        "name": "FMO5"
+      },
+      {
+        "id": "ENSG00000140905",
+        "name": "GCSH"
+      },
+      {
+        "id": "ENSG00000178445",
+        "name": "GLDC"
+      },
+      {
+        "id": "ENSG00000182199",
+        "name": "SHMT2"
+      }
+    ],
+    "metaData": {
+      "date": "2026-03-26",
+      "defaultLB": "-1000",
+      "defaultUB": "1000",
+      "id": "HumanGEM",
+      "name": "Generic genome-scale metabolic model of Homo sapiens",
+      "note": "Genome-scale metabolic models are valuable tools to study metabolism and provide a scaffold for the integrative analysis of omics data. This is the latest version of Human-GEM, which is a genome-scale metabolic model of a generic human cell. The objective of Human-GEM is to serve as a community model for enabling integrative and mechanistic studies of human metabolism.",
+      "sourceUrl": "https://github.com/SysBioChalmers/Human-GEM",
+      "taxonomy": "9606",
+      "version": "2.0.0"
+    },
+    "metabolites": [
+      {
+        "charge": 0,
+        "compartment": "m",
+        "formula": "C1375H2185N381O420S6",
+        "id": "MAM00209m",
+        "metFrom": "HMRdatabase",
+        "name": "[protein]-N6-(lipoyl)lysine"
+      },
+      {
+        "charge": -1,
+        "compartment": "c",
+        "formula": "C6H9O3",
+        "id": "MAM00669c",
+        "metFrom": "HMRdatabase",
+        "name": "2-oxo-3-methylvalerate"
+      },
+      {
+        "charge": -2,
+        "compartment": "m",
+        "formula": "C20H21N7O6",
+        "id": "MAM01045m",
+        "metFrom": "HMRdatabase",
+        "name": "5,10-methylene-THF"
+      },
+      {
+        "charge": -2,
+        "compartment": "c",
+        "formula": "C5H4O5",
+        "id": "MAM01306c",
+        "metFrom": "HMRdatabase",
+        "name": "AKG"
+      },
+      {
+        "charge": -3,
+        "compartment": "c",
+        "formula": "C6H5O7",
+        "id": "MAM01587c",
+        "metFrom": "HMRdatabase",
+        "name": "citrate"
+      },
+      {
+        "charge": -3,
+        "compartment": "m",
+        "formula": "C6H5O7",
+        "id": "MAM01587m",
+        "metFrom": "HMRdatabase",
+        "name": "citrate"
+      },
+      {
+        "charge": 0,
+        "compartment": "m",
+        "formula": "CO2",
+        "id": "MAM01596m",
+        "inchis": "InChI=1S/CO2/c2-1-3",
+        "metFrom": "HMRdatabase",
+        "name": "CO2"
+      },
+      {
+        "charge": -1,
+        "compartment": "c",
+        "formula": "C5H8NO4",
+        "id": "MAM01974c",
+        "metFrom": "HMRdatabase",
+        "name": "glutamate"
+      },
+      {
+        "charge": 0,
+        "compartment": "m",
+        "formula": "C2H5NO2",
+        "id": "MAM01986m",
+        "inchis": "InChI=1S/C2H5NO2/c3-1-2(4)5/h1,3H2,(H,4,5)",
+        "metFrom": "HMRdatabase",
+        "name": "glycine"
+      },
+      {
+        "charge": 1,
+        "compartment": "m",
+        "formula": "H",
+        "id": "MAM02039m",
+        "metFrom": "HMRdatabase",
+        "name": "H+"
+      },
+      {
+        "charge": 0,
+        "compartment": "c",
+        "formula": "H2O",
+        "id": "MAM02040c",
+        "metFrom": "HMRdatabase",
+        "name": "H2O"
+      },
+      {
+        "charge": 0,
+        "compartment": "m",
+        "formula": "H2O",
+        "id": "MAM02040m",
+        "metFrom": "HMRdatabase",
+        "name": "H2O"
+      },
+      {
+        "charge": 0,
+        "compartment": "c",
+        "formula": "C6H13NO2",
+        "id": "MAM02184c",
+        "metFrom": "HMRdatabase",
+        "name": "isoleucine"
+      },
+      {
+        "charge": -2,
+        "compartment": "c",
+        "formula": "C4H4O5",
+        "id": "MAM02439c",
+        "metFrom": "HMRdatabase",
+        "name": "malate"
+      },
+      {
+        "charge": -2,
+        "compartment": "m",
+        "formula": "C4H4O5",
+        "id": "MAM02439m",
+        "metFrom": "HMRdatabase",
+        "name": "malate"
+      },
+      {
+        "charge": -3,
+        "compartment": "c",
+        "formula": "C21H25N7O17P3",
+        "id": "MAM02554c",
+        "metFrom": "HMRdatabase",
+        "name": "NADP+"
+      },
+      {
+        "charge": -4,
+        "compartment": "c",
+        "formula": "C21H26N7O17P3",
+        "id": "MAM02555c",
+        "metFrom": "HMRdatabase",
+        "name": "NADPH"
+      },
+      {
+        "charge": 0,
+        "compartment": "c",
+        "formula": "O2",
+        "id": "MAM02630c",
+        "metFrom": "HMRdatabase",
+        "name": "O2"
+      },
+      {
+        "charge": 1,
+        "compartment": "m",
+        "formula": "C9H21N2OS2",
+        "id": "MAM02878m",
+        "metFrom": "HMRdatabase",
+        "name": "S-aminomethyldihydrolipoamide"
+      },
+      {
+        "charge": 0,
+        "compartment": "m",
+        "formula": "C3H7NO3",
+        "id": "MAM02896m",
+        "inchis": "InChI=1S/C3H7NO3/c4-2(1-5)3(6)7/h2,5H,1,4H2,(H,6,7)/t2-/m0/s1",
+        "metFrom": "HMRdatabase",
+        "name": "serine"
+      },
+      {
+        "charge": -2,
+        "compartment": "m",
+        "formula": "C19H21N7O6",
+        "id": "MAM02980m",
+        "metFrom": "HMRdatabase",
+        "name": "THF"
+      },
+      {
+        "charge": 1,
+        "compartment": "c",
+        "formula": "C3H10N",
+        "id": "MAM03053c",
+        "metFrom": "HMRdatabase",
+        "name": "trimethylamine"
+      },
+      {
+        "charge": 0,
+        "compartment": "c",
+        "formula": "C3H9NO",
+        "id": "MAM03054c",
+        "metFrom": "HMRdatabase",
+        "name": "trimethylamine-N-oxide"
+      }
+    ],
+    "reactions": [
+      {
+        "confidence_score": 0,
+        "eccodes": "4.2.1.56",
+        "gene_reaction_rule": "ENSG00000100075",
+        "id": "MAR00125",
+        "lower_bound": -1000,
+        "metabolites": [
+          [
+            "MAM01587c",
+            -1
+          ],
+          [
+            "MAM01587m",
+            1
+          ],
+          [
+            "MAM02439c",
+            1
+          ],
+          [
+            "MAM02439m",
+            -1
+          ]
+        ],
+        "name": "Citrate Transport, Mitochondrial",
+        "references": "PMID:14598172",
+        "rxnFrom": "Recon3D",
+        "subsystem": "Transport reactions",
+        "upper_bound": 1000
+      },
+      {
+        "confidence_score": 0,
+        "eccodes": "2.6.1.42",
+        "gene_reaction_rule": "ENSG00000060982",
+        "id": "MAR03777",
+        "lower_bound": 0,
+        "metabolites": [
+          [
+            "MAM00669c",
+            1
+          ],
+          [
+            "MAM01306c",
+            -1
+          ],
+          [
+            "MAM01974c",
+            1
+          ],
+          [
+            "MAM02184c",
+            -1
+          ]
+        ],
+        "name": "L-Leucine:2-oxoglutarate aminotransferase",
+        "rxnFrom": "HMRdatabase",
+        "subsystem": "Valine, leucine, and isoleucine metabolism",
+        "upper_bound": 1000
+      },
+      {
+        "confidence_score": 0,
+        "eccodes": "2.1.2.1",
+        "gene_reaction_rule": "ENSG00000182199",
+        "id": "MAR04792",
+        "lower_bound": -1000,
+        "metabolites": [
+          [
+            "MAM01045m",
+            -1
+          ],
+          [
+            "MAM01986m",
+            -1
+          ],
+          [
+            "MAM02040m",
+            -1
+          ],
+          [
+            "MAM02896m",
+            1
+          ],
+          [
+            "MAM02980m",
+            1
+          ]
+        ],
+        "name": "5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase",
+        "references": "PMID:10762066;PMID:6821365;PMID:8505317",
+        "rxnFrom": "HMRdatabase",
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000
+      },
+      {
+        "confidence_score": 0,
+        "eccodes": [
+          "1.8.1.4",
+          "2.1.2.10"
+        ],
+        "gene_reaction_rule": "ENSG00000140905 and ENSG00000178445",
+        "id": "MAR08433",
+        "lower_bound": 0,
+        "metabolites": [
+          [
+            "MAM00209m",
+            -1
+          ],
+          [
+            "MAM01596m",
+            1
+          ],
+          [
+            "MAM01986m",
+            -1
+          ],
+          [
+            "MAM02039m",
+            -1
+          ],
+          [
+            "MAM02878m",
+            1
+          ]
+        ],
+        "references": "PMID:24798336",
+        "rxnFrom": "HMRdatabase",
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000
+      },
+      {
+        "confidence_score": 0,
+        "eccodes": "1.14.13.8",
+        "gene_reaction_rule": "ENSG00000007933 or ENSG00000010932 or ENSG00000076258 or ENSG00000094963 or ENSG00000131781",
+        "id": "MAR09514",
+        "lower_bound": 0,
+        "metabolites": [
+          [
+            "MAM02040c",
+            1
+          ],
+          [
+            "MAM02554c",
+            1
+          ],
+          [
+            "MAM02555c",
+            -1
+          ],
+          [
+            "MAM02630c",
+            -1
+          ],
+          [
+            "MAM03053c",
+            -1
+          ],
+          [
+            "MAM03054c",
+            1
+          ]
+        ],
+        "name": "N,N,N-trimethylamine,NADPH:oxygen oxidoreductase (N-oxide-forming)",
+        "rxnFrom": "HMRdatabase",
+        "subsystem": "Isolated",
+        "upper_bound": 1000
+      }
+    ],
+    "source_lines": {
+      "ENSG00000007933": 246777,
+      "ENSG00000010932": 246816,
+      "ENSG00000060982": 247140,
+      "ENSG00000076258": 247455,
+      "ENSG00000094963": 247833,
+      "ENSG00000100075": 247929,
+      "ENSG00000131781": 250137,
+      "ENSG00000140905": 250935,
+      "ENSG00000178445": 253689,
+      "ENSG00000182199": 253878,
+      "MAM00209m": 2878,
+      "MAM00669c": 7781,
+      "MAM01045m": 11588,
+      "MAM01306c": 14533,
+      "MAM01587c": 18321,
+      "MAM01587m": 18328,
+      "MAM01596m": 18505,
+      "MAM01974c": 23704,
+      "MAM01986m": 23898,
+      "MAM02039m": 24746,
+      "MAM02040c": 24781,
+      "MAM02040m": 24802,
+      "MAM02184c": 26634,
+      "MAM02439c": 29313,
+      "MAM02439m": 29320,
+      "MAM02554c": 30756,
+      "MAM02555c": 30805,
+      "MAM02630c": 31616,
+      "MAM02878m": 34967,
+      "MAM02896m": 35147,
+      "MAM02980m": 36446,
+      "MAM03053c": 37445,
+      "MAM03054c": 37452,
+      "MAR00125": 180110,
+      "MAR03777": 72708,
+      "MAR04792": 71003,
+      "MAR08433": 71122,
+      "MAR09514": 139519
+    }
+  },
+  "provenance": {
+    "annotation_diagnostics": {
+      "genes": {
+        "records": 2848,
+        "records_with_omitted_trailing_columns": 2
+      },
+      "metabolites": {
+        "records": 8461,
+        "records_with_omitted_trailing_columns": 2
+      },
+      "reactions": {
+        "records": 12931,
+        "records_with_omitted_trailing_columns": 0
+      }
+    },
+    "citation_note": "See the pinned README.md: Human2 (Luo et al., 2026, in press there) and Human1 (Robinson et al., 2020).",
+    "commit": "635f533152dc5f7290ce04d12700eaa882273c3e",
+    "dataset_kind": "source_fixture",
+    "fixture_note": "Unmodified entity/annotation records selected from the pinned full source; graph deliberately incomplete.",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "selected_reaction_ids": [
+      "MAR00125",
+      "MAR03777",
+      "MAR04792",
+      "MAR08433",
+      "MAR09514"
+    ],
+    "source": "Human-GEM",
+    "sources": {
+      "Human-GEM.yml": {
+        "path": "model/Human-GEM.yml",
+        "sha256": "01a8ea826bdaa36511b9eed28eedcb5e73690333860856c682387c6380dd3fc6",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/Human-GEM.yml"
+      },
+      "LICENSE.md": {
+        "path": "LICENSE.md",
+        "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/LICENSE.md"
+      },
+      "README.md": {
+        "path": "README.md",
+        "sha256": "a9918dedb17984a9ba80ec27e588af9dd300fbfb8c066917421df9d97571d1c1",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/README.md"
+      },
+      "genes.tsv": {
+        "path": "model/genes.tsv",
+        "sha256": "2a6058a157b3b9f3c958ba753e71d7a702d2716742972741d2ef36535ae9dff6",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/genes.tsv"
+      },
+      "metabolites.tsv": {
+        "path": "model/metabolites.tsv",
+        "sha256": "9d58bb3a9cd217c47dc0d54ea9517b0a23e0603bbb60d5428551e0449af1eab3",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/metabolites.tsv"
+      },
+      "reactions.tsv": {
+        "path": "model/reactions.tsv",
+        "sha256": "1436dd90e959714366270a9904fd6a5108044a2f7f1d7f8360bf7a195fc9e28f",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/reactions.tsv"
+      },
+      "version.txt": {
+        "path": "version.txt",
+        "sha256": "f22abd6773ab232869321ad4b1e47ac0c908febf4f3a2bd10c8066140f741261",
+        "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/version.txt"
+      }
+    },
+    "tag": "v2.0.0",
+    "version": "2.0.0"
+  }
+}

@@ -1,0 +1,3 @@
+# Preserve exact snapshot/source bytes used by the evidence hashes across platforms.
+* -text whitespace=cr-at-eol
+*.png binary

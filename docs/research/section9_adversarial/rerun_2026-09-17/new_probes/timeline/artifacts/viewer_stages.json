@@ -1,0 +1,498 @@
+{
+  "template": "demo/genetic-insights/viewer.template.html",
+  "template_sha256": "b61f2820e3f37c2849abe457b38f9763e5a3508f92941271c96c747761bfcb30",
+  "lifted": {
+    "stageNames": "const stageNames={human_genetics:\"Human genetics\",preclinical:\"Preclinical\",clinical:\"Clinical development\",later_genetics:\"Later genetics\",class_status:\"Current class status\",unspecified:\"Unspecified\"};",
+    "stageOrder": "const stageOrder=bundle.timeline_standard?.display_order||[...new Set(bundle.events.map(e=>e.evidence_stage||\"unspecified\"))];",
+    "stages": "const stages=stageOrder.filter(stage=>bundle.events.some(e=>(e.evidence_stage||\"unspecified\")===stage));"
+  },
+  "cases": [
+    {
+      "case": "LC01",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2009–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC02",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "unspecified",
+          "heading": "Unspecified",
+          "range": "1989–2026",
+          "events": [
+            "human-genetics",
+            "preclinical-antisense",
+            "preclinical-inhibitor",
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results",
+            "genetic-comparison",
+            "hdl-mr",
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC03",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2009–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 10,
+      "events_dropped": [
+        "programme-stop"
+      ]
+    },
+    {
+      "case": "LC04",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "2017",
+          "events": [
+            "anacetrapib-outcome"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "1989–2007",
+          "events": [
+            "human-genetics",
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2009–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2026",
+          "events": [
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC05",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "1989–2026",
+          "events": [
+            "human-genetics",
+            "preclinical-antisense",
+            "preclinical-inhibitor",
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results",
+            "genetic-comparison",
+            "hdl-mr",
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC06",
+      "js_validate": "Error: Timeline silently omits a required lifecycle stage.",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2009–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 8,
+      "events_rendered": 8,
+      "events_dropped": []
+    },
+    {
+      "case": "LC07",
+      "js_validate": "Error: Invalid event.",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2009–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC08",
+      "js_validate": "passed",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2012–2017",
+          "events": [
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2012–2017",
+          "events": [
+            "hdl-mr",
+            "target-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 10,
+      "events_rendered": 10,
+      "events_dropped": []
+    },
+    {
+      "case": "LC09",
+      "js_validate": "Error: Invalid event.",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2007–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    },
+    {
+      "case": "LC10",
+      "js_validate": "Error: Invalid event.",
+      "render_error": "",
+      "stage_groups": [
+        {
+          "stage": "human_genetics",
+          "heading": "Human genetics",
+          "range": "1989",
+          "events": [
+            "human-genetics"
+          ]
+        },
+        {
+          "stage": "preclinical",
+          "heading": "Preclinical",
+          "range": "1998–2000",
+          "events": [
+            "preclinical-antisense",
+            "preclinical-inhibitor"
+          ]
+        },
+        {
+          "stage": "clinical",
+          "heading": "Clinical development",
+          "range": "2004–2007",
+          "events": [
+            "phase1",
+            "trial-start",
+            "programme-stop",
+            "results"
+          ]
+        },
+        {
+          "stage": "later_genetics",
+          "heading": "Later genetics",
+          "range": "2007–2012",
+          "events": [
+            "genetic-comparison",
+            "hdl-mr"
+          ]
+        },
+        {
+          "stage": "class_status",
+          "heading": "Current class status",
+          "range": "2017–2026",
+          "events": [
+            "anacetrapib-outcome",
+            "obicetrapib-status"
+          ]
+        }
+      ],
+      "events_in_bundle": 11,
+      "events_rendered": 11,
+      "events_dropped": []
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+========================================================================
+STEP 1 - gate two on the FIELDS alone (validate_card.validate)
+========================================================================
+fields   : {'headline': 'Careful reading is warranted.'}
+findings : []
+rules    : []
+
+========================================================================
+STEP 2 - rendered Section 9 on current main
+========================================================================
+Careful reading is warranted.
+
+Written by OFFLINE-HARNESS
+
+Unvalidated expert approval. from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+outcome  : printed
+
+========================================================================
+STEP 3 - is the unvalidated metadata text present in the printed section?
+========================================================================
+injected literal in section : True
+injected literal validated  : False
+  (empty findings above means the validator was never asked about it;
+   the text never passes through validate() at all - see STEP 5)
+
+========================================================================
+STEP 4 - byte comparison against his committed m04.md (baseline bcb32a9)
+========================================================================
+his  m04.md len : 267
+mine        len : 267
+identical       : True
+
+========================================================================
+STEP 5 - the code path, quoted from current render.py
+========================================================================
+render.py:1901:         text = fields.get(key)
+render.py:1902:         if isinstance(text, str) and text.strip():
+render.py:1903:             lines.append(text.strip())
+render.py:1904:             lines.append("")
+render.py:1905: 
+render.py:1906:     if not lines:
+render.py:1907:         return [PENDING_REASONING]
+render.py:1908: 
+render.py:1909:     model = (getattr(interpretation, "metadata", None) or {}).get("model") or "a model"
+render.py:1910:     lines.append(
+render.py:1911:         f"Written by {model} from this run's retrieved evidence and checked against it "
+render.py:1912:         "before printing. Every number and identifier above appears in the sections "
+render.py:1913:         "above; no model wrote or changed any of them."
+render.py:1914:     )
+render.py:1915:     return lines
+render.py:1916: 
+
+========================================================================
+STEP 6 - full card: where the injected text lands
+========================================================================
+card:248: ## 9. Reasoning
+card:249: 
+card:250: Careful reading is warranted.
+card:251: 
+card:252: Written by OFFLINE-HARNESS
+card:253: 
+card:254: Unvalidated expert approval. from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+full card identical to his full_cards/m04.md : True

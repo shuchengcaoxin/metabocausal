@@ -1,0 +1,153 @@
+# MetaboCausal evidence card - trimethylamine N-oxide x coronary artery disease
+
+## 1. Requested pair and resolved IDs
+
+| Side | Asked for | Resolved label | Id | Resolution |
+|---|---|---|---|---|
+| Metabolite (exposure) | trimethylamine N-oxide | trimethylamine N-oxide | CHEBI:15724 | NOT in the pre-resolved sample; matching used the raw input string only (the 1A resolver lands separately) |
+| Disease (outcome) | coronary artery disease | coronary artery disorder | MONDO:0005010 | NOT in the pre-resolved sample; matching used the raw input string only (the 1A resolver lands separately) |
+
+Synonyms handed to the metabolite-side tools (18): trimethylamine N-oxide, (CH3)3NO, Me3N(+)O(-), Me3N(O), N(CH3)3O, N,N-dimethylmethanamine oxide, TMAO, Trimethylaminoxid (showing 8 of 18). Every match in this card is made on these strings, case-insensitively, not on the name as it was typed.
+
+Synonyms handed to the disease-side tools (11): coronary artery disease, coronary artery disorder, CHD (coronary heart disease), coronary arteriosclerosis, disease or disorder of coronary artery, CAD, coronary artery disease or disorder, coronary disease (showing 8 of 11). Every match in this card is made on these strings, case-insensitively, not on the name as it was typed.
+
+One direction only: the metabolite is queried as the EXPOSURE and the disease as the OUTCOME. Nothing on this card is a statement about the reverse direction.
+
+## 2. Evidence state and one-line verdict
+
+**Verdict: State C - evidence gap.** State C (evidence gap): no retrieved MR estimate (retrieved MR (get_mr_result) returned no estimate; literature MR not run) and the pair is not shown to be analysis-ready (instrument search (get_mqtl_instruments) found no exposure dataset with a hit count; outcome dataset search (find_outcome_datasets) found 3 outcome dataset(s)). An empty or failed result is a gap in what could be retrieved, not evidence of no effect. Colocalisation: not queried in this run, so nothing here says whether the two GWAS share a causal variant. Any retrieved MR is retained without this additional supporting layer; colocalisation is not an inclusion requirement.
+
+The state and the sentence above come from `classify.classify_state`, a pure function over this run's envelopes. No model wrote them and no model can change them.
+
+The colocalisation clause is an evidence QUALIFIER: `get_colocalisation` runs after the classifier, its envelope is never passed to it, and no H4 on this card can move a pair between states A, B and C.
+
+## 3. Metabolite -> disease genetic evidence
+
+Source: EpiGraphDB MR-EVE - tool `get_mr_result` - status `empty` - retrieved at 2026-09-10T18:15:43.
+
+Retrieved MR estimates: not available in this snapshot - not evidence of no effect.
+
+MR-EVE matched no exposure dataset by trait name.
+MR-EVE outcome datasets matched (8): ebi-a-GCST003116 (Coronary artery disease), ebi-a-GCST005195 (Coronary artery disease), ebi-a-GCST005194 (Coronary artery disease), ebi-a-GCST000998 (Coronary heart disease), ieu-a-8 (Coronary heart disease), ieu-a-6 (Coronary heart disease), ieu-a-7 (Coronary heart disease), ieu-a-9 (Coronary heart disease).
+
+**Retrieved colocalisation (Open Targets)**
+
+`get_colocalisation` did not run in this run, so nothing was retrieved about a shared causal variant. That is a gap in what was queried, not a finding.
+
+## 4. Instruments and feasibility
+
+### Exposure datasets (metabolite instruments)
+
+Source: OpenGWAS (gwasinfo index + tophits) - tool `get_mqtl_instruments` - status `empty` - retrieved at 2026-09-10T18:15:43.
+
+Exposure datasets measuring this metabolite: not available in this snapshot - not evidence of no effect. A dataset that is absent from this OpenGWAS release is not a measurement without a genetic basis.
+
+### Outcome datasets (disease)
+
+Source: OpenGWAS (gwasinfo index + tophits) - tool `find_outcome_datasets` - status `ok` - retrieved at 2026-09-10T18:15:43.
+
+| Dataset | Trait | Sample size | Cases | Controls | Population | Year | Author | Consortium | Build |
+|---|---|---|---|---|---|---|---|---|---|
+| ebi-a-GCST005195 | Coronary artery disease | 547,261 | 122,733 | 424,528 | not recorded by this source | 2017 | van der Harst P | not recorded by this source | HG19/GRCh37 |
+| ebi-a-GCST005194 | Coronary artery disease | 296,525 | 34,541 | 261,984 | not recorded by this source | 2017 | van der Harst P | not recorded by this source | HG19/GRCh37 |
+| ieu-a-9 | Coronary heart disease | 194,427 | 63,746 | 130,681 | Mixed | 2013 | Deloukas | CARDIoGRAMplusC4D | HG19/GRCh37 |
+
+Capped by the tool: 3 of the 9 matched dataset(s) are returned. The rest are named in the caveats, not hidden.
+
+### GWAS Catalog (context only)
+
+Source: GWAS Catalog (EBI) REST API - tool `get_gwas_catalog` - status `error` - retrieved at 2026-09-10T18:15:42.
+
+`get_gwas_catalog` returned an error envelope, so no association was retrieved: the request failed, which is not the same statement as the Catalog holding no association for this trait. It is not a classifier input, so the A/B/C state did not move. The source reported: GET https://www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005010/associations exceeded the 120s wall-clock deadline after 120s and 4202496 bytes; the response was still arriving. Partial JSON cannot be parsed, so nothing was retrieved.
+
+## 5. Effector genes by source
+
+GWAS Catalog mapped genes: the request failed, so no gene was retrieved. That is not the same statement as the Catalog naming no gene.
+
+The atlas nomination layer was not queried in this run; the effector mechanism was not assessed.
+An unresolved effector mechanism does not remove or invalidate retrieved metabolite MR, colocalisation assessments, or instrument feasibility evidence; those layers remain separate.
+No gene dossier is available in this run; see the atlas status above and run-level notes.
+
+Human-GEM biochemical candidates were not assessed in this run.
+
+**Molecular-QTL colocalisation at the disease's credible sets**
+
+`get_colocalisation` did not run in this run, so no QTL colocalisation was retrieved for any gene.
+
+## 6. Gene dossiers
+
+No gene dossier is available in this run. This may reflect an unqueried or unresolved effector layer, or an interrupted dossier stage; consult section 5 and the run notes. It does not mean that these genes have no drugs, and does not invalidate any retrieved metabolite MR, colocalisation assessment, or feasibility evidence.
+
+## 7. Via-enzyme protein evidence
+
+Human-GEM biochemical context was not assessed in this run. This is not evidence that the metabolite has no reactions, enzymes or transporters.
+
+## 8. Caveats
+
+**Run-level notes**
+
+- cached snapshot, not a live run.
+
+**Tools that failed in this run**
+
+- `get_gwas_catalog` (GWAS Catalog (EBI) REST API) returned an error envelope.
+
+A failed request is not a source with no record. Nothing above may be read as an absence of evidence.
+
+**Caveats declared by the tools, verbatim**
+
+`get_mr_result` (EpiGraphDB MR-EVE):
+- Retrieved from EpiGraphDB MR-EVE (OpenGWAS 2020-10-13 snapshot); automated MR labelled preliminary by the source. Not computed here. One direction only: the metabolite is queried as the EXPOSURE, never as the outcome, so nothing said here is a statement about the reverse direction.
+- No dataset in this snapshot is named by any of the metabolite synonyms, so no MR query was sent.
+- Empty is not evidence of no effect - the trait may be absent from this snapshot (e.g. no met-d datasets).
+
+`get_mqtl_instruments` (OpenGWAS (gwasinfo index + tophits)):
+- Retrieved from OpenGWAS: the gwasinfo dataset index plus, per dataset, its pre-computed tophits. This is a feasibility report - which datasets exist and whether they carry instruments - and NOT an MR result. No estimate was computed here and nothing here says an effect exists.
+- Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().
+- No dataset in this OpenGWAS release is named by any of the 18 metabolite synonym(s), so no tophits request was sent. The metabolite may simply never have been measured in a published GWAS - Nightingale NMR and Metabolon panels between them cover a few hundred metabolites, not the metabolome.
+- Empty is not evidence of no effect and not evidence of no genetic basis - it is a statement about what this release of OpenGWAS holds.
+
+`find_outcome_datasets` (OpenGWAS (gwasinfo index + tophits)):
+- Retrieved from OpenGWAS: the gwasinfo dataset index plus, per dataset, its pre-computed tophits. This is a feasibility report - which datasets exist and whether they carry instruments - and NOT an MR result. No estimate was computed here and nothing here says an effect exists.
+- Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().
+- These synonyms matched 2 different trait spellings ('Coronary artery disease', 'Coronary heart disease'); matching is exact after casefolding, so a spelling no synonym carries was never reachable.
+- Ranking: datasets with a recorded sample_size first, then the curated repositories (ebi-, ieu-, finn-) ahead of the rest, then sample size descending. So this list is not a pure size ranking - a large dataset from another batch can sit below a smaller curated one - and the datasets gwasinfo records no sample_size for (every finn-b row) come last however big they are.
+- Capped: 9 outcome dataset(s) match these synonyms, only the top 3 are returned (ebi-a-GCST005195, ebi-a-GCST005194, ieu-a-9); not returned: ieu-a-7, ebi-a-GCST003116, ebi-a-GCST000998, ieu-a-8, ieu-a-6, bbj-a-159. Raise top_n to see them.
+- ebi-a-GCST005195 and ebi-a-GCST005194 (PMID 29212778) are deposits from the SAME publication (matching PMID) and are not independent outcome datasets - one can be a sub-stage of the other, so their sample sizes differ while the participants do not. Count the study once.
+- ebi-a-GCST005195, ebi-a-GCST005194: a UK Biobank deposit or a meta-analysis large enough (>= 250,000) that it very likely contains UK Biobank. gwasinfo records no cohort list, so this is a size-based flag, not a verified overlap. Sample overlap is NOT checked here and it is the first thing a two-sample MR reviewer asks. This tool sees one side of the pair at a time, so it cannot tell whether the exposure and outcome GWAS share participants. Overlapping samples bias two-sample MR towards the confounded observational estimate and inflate type-1 error. Check the cohort composition of BOTH datasets before any card says analysis-ready.
+- gwasinfo records no population for ebi-a-GCST005195, ebi-a-GCST005194 (it writes the literal "NA"), so the ancestry match against the exposure cannot be checked for those datasets from this envelope alone.
+- ncase / ncontrol are reported exactly as gwasinfo wrote them. They are not always a study design: the ukb-e continuous panels carry ncase == sample_size and ncontrol == 0 on a blood measurement, and the finn-b datasets carry case and control counts but no sample_size at all.
+- population is reported per dataset because it has to be checked against the exposure's population before any MR is run; this tool sees only one side of the pair and cannot check it for you.
+
+`get_gwas_catalog` (GWAS Catalog (EBI) REST API):
+- GWAS Catalog rows are curated trait-variant ASSOCIATIONS from published GWAS, not causal estimates: no MR, no instrument, no direction of causation. An odds ratio or beta here is the reported marginal association of one variant with the trait in that study's own scale and ancestry. Retrieved, not computed.
+- Resolved through the ontology id: 'MONDO:0005010' -> MONDO_0005010 ('coronary artery disorder'). The trait name was not searched.
+- The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 113 s for 3.0 MB / 1,420 rows and urate measurement 364 s for 10.4 MB / 4,588 rows, dribbled out in small chunks so an ordinary read timeout never fires. This call therefore aborts at a 120 s wall-clock deadline with an error envelope rather than hanging the pipeline. A deadline hit is a limit of the resource, NEVER evidence that the trait has no associations.
+- The GWAS Catalog request failed before any association was retrieved, so this trait has no retrieved association either way: GET https://www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005010/associations exceeded the 120s wall-clock deadline after 120s and 4202496 bytes; the response was still arriving. Partial JSON cannot be parsed, so nothing was retrieved.
+- Empty is not evidence of no association - it means no curated GWAS Catalog row was retrieved under this trait term, which is a fact about this resource's curation and naming, not about biology.
+
+## 9. Reasoning
+
+Model reasoning pending integration (section 1F).
+
+## 10. Next action
+
+Nothing sufficient was retrieved for this pair, so there is no estimate to check and no analysis to run yet. State C is a statement about what could be retrieved from these releases, never about the biology.
+
+- Read the caveats in section 8 first: they name which arm was empty and which arm failed, and those are different problems.
+- Widen the metabolite synonyms. A metabolite absent from this OpenGWAS release under one name can be present under another.
+- A failed request (an error envelope) should simply be retried before anything is concluded from it.
+- The literature MR arm (MVP2) is not integrated in this build, and Human-GEM biochemical context was not assessed in this run. Neither omission is a negative biological finding.
+
+## 11. Provenance
+
+This run wrote no ledger file, so the digest below is built from the envelopes carried in the run's own result.
+
+| # | Tool | Status | Source URL (query cut at 80 characters) | Retrieved at |
+|---|---|---|---|---|
+| 1 | get_mr_result | empty | no URL recorded by this tool | 2026-09-10T18:15:43 |
+| 2 | get_mqtl_instruments | empty | no URL recorded by this tool | 2026-09-10T18:15:43 |
+| 3 | find_outcome_datasets | ok | no URL recorded by this tool | 2026-09-10T18:15:43 |
+| 4 | get_gwas_catalog | error | www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005010/associations | 2026-09-10T18:15:42 |
+
+Sections 1 and 3 to 8, 10 and this one are rendered by code from the envelopes above; section 2's state and reason come from `classify.classify_state`, a pure function. No model wrote any of them, and no MR estimate was retrieved for this pair in this snapshot, so section 3 quotes none.

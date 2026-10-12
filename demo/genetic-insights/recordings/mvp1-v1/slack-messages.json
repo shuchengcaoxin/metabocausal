@@ -1,0 +1,205 @@
+[
+  {
+    "text": "*MetaboCausal | Urate · SLC2A9 · Gout*\nmvp1-urate-gout-2026-09-12-v1 | Checked 2026-09-12\nCurated recording demo · saved evidence\nInspect an existing urate–gout finding, the SLC2A9 gene context, and the clinical history of a related urate-lowering treatment.\n\n*The question*\nFor urate and gout, what genetic evidence is already available, what gene context can we explain, and what can related clinical experience teach a research team?\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n\n*Retrieved genetic evidence*\nThe selected MVP1 record contains a positive pre-computed MR estimate for urate and gout. It was retrieved from MR-EVE, not recomputed here. Method and deposited dataset IDs remain attached to the original values.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n\n*Gene context: SLC2A9*\nThe project atlas nominates SLC2A9 by proximity to rs938554. Separately, the 2008 paper provides human genetic and experimental evidence for urate transport. These are different evidence types and remain separately attributed.\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n<https://doi.org/10.1038/ng.106|Vitart et al., Nature Genetics (2008)>\n<https://pubmed.ncbi.nlm.nih.gov/18842065/|Caulfield et al., PLoS Medicine (2008)>\n\n*Related clinical experience*\nFebuxostat lowers urate by inhibiting xanthine oxidase. It is included through the direct urate-lowering route, not as an SLC2A9-targeted treatment. CARES adds a cardiovascular-safety question in a specific gout population.\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>\n\n*What to check next*\nA molecule-level genetic finding does not settle the safety of a particular drug. Review the MR design and missing diagnostics, then evaluate target mechanism, intended population and clinical endpoints separately.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n<https://doi.org/10.1056/NEJMoa1710895|White et al., NEJM (2018)>\n\n*What remains uncertain*\nColocalisation and gene-QTL evidence were not queried in the selected baseline record. Nearest-gene assignment does not prove mediation. MR confidence-interval scale and level are unspecified in the source. This selected chronology is not an exhaustive clinical review.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n\n*Genetic Insights*\nFebuxostat acts through xanthine oxidase inhibition. SLC2A9 is the genetic context here, not its drug target. Chronology does not establish that genetics drove the development decision.",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*MetaboCausal | Urate · SLC2A9 · Gout*\nmvp1-urate-gout-2026-09-12-v1 | Checked 2026-09-12\nCurated recording demo · saved evidence\nInspect an existing urate–gout finding, the SLC2A9 gene context, and the clinical history of a related urate-lowering treatment."
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*The question*\nFor urate and gout, what genetic evidence is already available, what gene context can we explain, and what can related clinical experience teach a research team?\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Retrieved genetic evidence*\nThe selected MVP1 record contains a positive pre-computed MR estimate for urate and gout. It was retrieved from MR-EVE, not recomputed here. Method and deposited dataset IDs remain attached to the original values.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Gene context: SLC2A9*\nThe project atlas nominates SLC2A9 by proximity to rs938554. Separately, the 2008 paper provides human genetic and experimental evidence for urate transport. These are different evidence types and remain separately attributed.\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n<https://doi.org/10.1038/ng.106|Vitart et al., Nature Genetics (2008)>\n<https://pubmed.ncbi.nlm.nih.gov/18842065/|Caulfield et al., PLoS Medicine (2008)>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Related clinical experience*\nFebuxostat lowers urate by inhibiting xanthine oxidase. It is included through the direct urate-lowering route, not as an SLC2A9-targeted treatment. CARES adds a cardiovascular-safety question in a specific gout population.\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*What to check next*\nA molecule-level genetic finding does not settle the safety of a particular drug. Review the MR design and missing diagnostics, then evaluate target mechanism, intended population and clinical endpoints separately.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>\n<https://doi.org/10.1056/NEJMoa1710895|White et al., NEJM (2018)>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*What remains uncertain*\nColocalisation and gene-QTL evidence were not queried in the selected baseline record. Nearest-gene assignment does not prove mediation. MR confidence-interval scale and level are unspecified in the source. This selected chronology is not an exhaustive clinical review.\n<https://epigraphdb.org/mr|MVP1 urate–gout MR record>\n<https://doi.org/10.1038/ng.2982|MVP1 SLC2A9 annotation>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Genetic Insights*\nFebuxostat acts through xanthine oxidase inhibition. SLC2A9 is the genetic context here, not its drug target. Chronology does not establish that genetics drove the development decision."
+        }
+      }
+    ],
+    "unfurl_links": false,
+    "unfurl_media": false
+  },
+  {
+    "text": "*2008-03-09 — SLC2A9, urate &amp; gout*\nGenetic evidence | Gene / metabolite / disease evidence\nHuman genetic associations and urate-transport experiments connect SLC2A9 with urate handling and gout.\n<https://doi.org/10.1038/ng.106|Vitart et al., Nature Genetics (2008)>\n\n*2009-02-13 — Febuxostat approved*\nUS approval | Direct urate-lowering intervention context\nFDA approved febuxostat for hyperuricemia in adults with gout. It lowers urate through xanthine oxidase inhibition, a different mechanism from SLC2A9 transport.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021856s000ltr.pdf|FDA original febuxostat approval (2009)>\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>\n\n*2010-04-23 — CARES begins*\nClinical trial | Safety in the specified gout population\nRandomized febuxostat versus allopurinol cardiovascular-safety study in people with gout and cardiovascular comorbidities. Registry phase: Phase 3; official title: Phase 3B.\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>\n\n*2018-03-12 — Benefits &amp; risks diverge*\nClinical results | Trial-specific safety result\nThe primary cardiovascular composite met noninferiority; cardiovascular and all-cause mortality were higher with febuxostat than allopurinol in CARES.\n<https://doi.org/10.1056/NEJMoa1710895|White et al., NEJM (2018)>\n\n*2019-02-21 — US boxed warning*\nLabel update | US regulatory update\nFDA approved a boxed warning and a narrower indication following CARES. This is a safety-related label change, not a withdrawal of all urate-lowering treatments.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/021856Orig1s013ltr.pdf|FDA label-change approval (2019)>\n\n*Latest retrieved status*\nNCT01101035: PHASE3 · COMPLETED\nCARES cardiovascular-safety study in gout with cardiovascular comorbidities\nRegistry updated 2018-06-14; checked 2026-09-12.\nUS approval with a cardiovascular-death boxed warning and restricted indication in the retrieved label.\nLabel effective 2025-12-24.\nNot assessed beyond this selected study and label.\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>\n\n*Module status*\nMVP1: Saved evidence available. Existing MR record, atlas annotation and archived full report.\nGenetic Insights: Curated example ready. Five source-linked milestones; automatic all-pair preparation remains integration work.\nJingrui · MVP2: Awaiting accepted output. Seed papers and Europe PMC literature evidence.\nZiwei · MVP2: Awaiting accepted output. Semantic Scholar evidence, merged by paper identity.\nZipeng · MVP3: Awaiting accepted output. Human-GEM biochemical context.\nSlack: Export ready; live delivery unverified. Same snapshot produces Slack text and attachments; Zhang Hao connects the bot.\nLLM interpretation: No model run for this demo. The visible summary was prepared for the saved example. OpenAI/Claude code support is separate.\n\n*Source detail: MVP1 urate–gout MR record*\nmetabolite_disease.csv, CSV record 8815 (header = 1)\nExact original row is included in provenance. The web link identifies the database; the saved row establishes this snapshot.\n<https://epigraphdb.org/mr|Open source>",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*2008-03-09 — SLC2A9, urate &amp; gout*\nGenetic evidence | Gene / metabolite / disease evidence\nHuman genetic associations and urate-transport experiments connect SLC2A9 with urate handling and gout.\n<https://doi.org/10.1038/ng.106|Vitart et al., Nature Genetics (2008)>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*2009-02-13 — Febuxostat approved*\nUS approval | Direct urate-lowering intervention context\nFDA approved febuxostat for hyperuricemia in adults with gout. It lowers urate through xanthine oxidase inhibition, a different mechanism from SLC2A9 transport.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021856s000ltr.pdf|FDA original febuxostat approval (2009)>\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*2010-04-23 — CARES begins*\nClinical trial | Safety in the specified gout population\nRandomized febuxostat versus allopurinol cardiovascular-safety study in people with gout and cardiovascular comorbidities. Registry phase: Phase 3; official title: Phase 3B.\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*2018-03-12 — Benefits &amp; risks diverge*\nClinical results | Trial-specific safety result\nThe primary cardiovascular composite met noninferiority; cardiovascular and all-cause mortality were higher with febuxostat than allopurinol in CARES.\n<https://doi.org/10.1056/NEJMoa1710895|White et al., NEJM (2018)>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*2019-02-21 — US boxed warning*\nLabel update | US regulatory update\nFDA approved a boxed warning and a narrower indication following CARES. This is a safety-related label change, not a withdrawal of all urate-lowering treatments.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/021856Orig1s013ltr.pdf|FDA label-change approval (2019)>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Latest retrieved status*\nNCT01101035: PHASE3 · COMPLETED\nCARES cardiovascular-safety study in gout with cardiovascular comorbidities\nRegistry updated 2018-06-14; checked 2026-09-12.\nUS approval with a cardiovascular-death boxed warning and restricted indication in the retrieved label.\nLabel effective 2025-12-24.\nNot assessed beyond this selected study and label.\n<https://clinicaltrials.gov/study/NCT01101035|ClinicalTrials.gov — CARES>\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|FDA labeling record — Uloric>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Module status*\nMVP1: Saved evidence available. Existing MR record, atlas annotation and archived full report.\nGenetic Insights: Curated example ready. Five source-linked milestones; automatic all-pair preparation remains integration work.\nJingrui · MVP2: Awaiting accepted output. Seed papers and Europe PMC literature evidence.\nZiwei · MVP2: Awaiting accepted output. Semantic Scholar evidence, merged by paper identity.\nZipeng · MVP3: Awaiting accepted output. Human-GEM biochemical context.\nSlack: Export ready; live delivery unverified. Same snapshot produces Slack text and attachments; Zhang Hao connects the bot.\nLLM interpretation: No model run for this demo. The visible summary was prepared for the saved example. OpenAI/Claude code support is separate."
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: MVP1 urate–gout MR record*\nmetabolite_disease.csv, CSV record 8815 (header = 1)\nExact original row is included in provenance. The web link identifies the database; the saved row establishes this snapshot.\n<https://epigraphdb.org/mr|Open source>"
+        }
+      }
+    ],
+    "unfurl_links": false,
+    "unfurl_media": false
+  },
+  {
+    "text": "*Source detail: MVP1 SLC2A9 annotation*\ntriples.csv.gz, decompressed CSV record 843481 (header = 1); atlas rs938554\nSource gene attribution is nearest, Shin 2014. This is a candidate annotation, not confirmed mediation.\n<https://doi.org/10.1038/ng.2982|Open source>\n\n*Source detail: Vitart et al., Nature Genetics (2008)*\nAbstract; online publication 2008-03-09; PMID 18327257\nGenetic associations with urate/excretion/gout and experimental urate transport. Added for this curated demo.\n<https://doi.org/10.1038/ng.106|Open source>\n\n*Source detail: Caulfield et al., PLoS Medicine (2008)*\nAbstract; 2008-10 (month precision); DOI 10.1371/journal.pmed.0050197\nFunctional urate-transport evidence; do not treat a metadata day of 01 as a verified publication day.\n<https://pubmed.ncbi.nlm.nih.gov/18842065/|Open source>\n\n*Source detail: FDA original febuxostat approval (2009)*\nNDA 21-856 original approval; February 13, 2009, also referenced in the 2019 supplement letter\nUS regulatory event; not proof of the SLC2A9 mechanism.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021856s000ltr.pdf|Open source>\n\n*Source detail: ClinicalTrials.gov — CARES*\nprotocolSection: identificationModule, statusModule, designModule, eligibilityModule\nGout participants with cardiovascular comorbidities. Cardiovascular safety outcome; not a gout-onset prevention trial.\n<https://clinicaltrials.gov/study/NCT01101035|Open source>\n\n*Source detail: White et al., NEJM (2018)*\nAbstract; published online 2018-03-12; PMID 29527974\nNoninferior primary cardiovascular composite; higher cardiovascular and all-cause mortality with febuxostat versus allopurinol in this trial population.\n<https://doi.org/10.1056/NEJMoa1710895|Open source>\n\n*Source detail: FDA label-change approval (2019)*\nPages 1 and 3; signature dated 2019-02-21\nCARES-related labeling change, boxed warning and modification of indication.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/021856Orig1s013ltr.pdf|Open source>\n\n*Source detail: FDA labeling record — Uloric*\nlabel ID 16c36a5a-2f72-4df7-aa6f-1ca27a39404f; effective_time 2025-12-24; mechanism_of_action, indications_and_usage, boxed_warning\nRetrieved label retains a cardiovascular-death boxed warning and a restricted gout indication. One selected label record; not an exhaustive labeling or global programme search.\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|Open source>",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: MVP1 SLC2A9 annotation*\ntriples.csv.gz, decompressed CSV record 843481 (header = 1); atlas rs938554\nSource gene attribution is nearest, Shin 2014. This is a candidate annotation, not confirmed mediation.\n<https://doi.org/10.1038/ng.2982|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: Vitart et al., Nature Genetics (2008)*\nAbstract; online publication 2008-03-09; PMID 18327257\nGenetic associations with urate/excretion/gout and experimental urate transport. Added for this curated demo.\n<https://doi.org/10.1038/ng.106|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: Caulfield et al., PLoS Medicine (2008)*\nAbstract; 2008-10 (month precision); DOI 10.1371/journal.pmed.0050197\nFunctional urate-transport evidence; do not treat a metadata day of 01 as a verified publication day.\n<https://pubmed.ncbi.nlm.nih.gov/18842065/|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: FDA original febuxostat approval (2009)*\nNDA 21-856 original approval; February 13, 2009, also referenced in the 2019 supplement letter\nUS regulatory event; not proof of the SLC2A9 mechanism.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021856s000ltr.pdf|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: ClinicalTrials.gov — CARES*\nprotocolSection: identificationModule, statusModule, designModule, eligibilityModule\nGout participants with cardiovascular comorbidities. Cardiovascular safety outcome; not a gout-onset prevention trial.\n<https://clinicaltrials.gov/study/NCT01101035|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: White et al., NEJM (2018)*\nAbstract; published online 2018-03-12; PMID 29527974\nNoninferior primary cardiovascular composite; higher cardiovascular and all-cause mortality with febuxostat versus allopurinol in this trial population.\n<https://doi.org/10.1056/NEJMoa1710895|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: FDA label-change approval (2019)*\nPages 1 and 3; signature dated 2019-02-21\nCARES-related labeling change, boxed warning and modification of indication.\n<https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/021856Orig1s013ltr.pdf|Open source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Source detail: FDA labeling record — Uloric*\nlabel ID 16c36a5a-2f72-4df7-aa6f-1ca27a39404f; effective_time 2025-12-24; mechanism_of_action, indications_and_usage, boxed_warning\nRetrieved label retains a cardiovascular-death boxed warning and a restricted gout indication. One selected label record; not an exhaustive labeling or global programme search.\n<https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22&limit=1|Open source>"
+        }
+      }
+    ],
+    "unfurl_links": false,
+    "unfurl_media": false
+  },
+  {
+    "text": "*Snapshot boundaries*\nCurated primary-source supplement to existing MVP1 data. Not generated by the unfinished MVP2/MVP3 pipeline.\nSeparate older run with 22 MR rows; do not combine its counts with the selected September 11 baseline row or newly prepared timeline.",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Snapshot boundaries*\nCurated primary-source supplement to existing MVP1 data. Not generated by the unfinished MVP2/MVP3 pipeline.\nSeparate older run with 22 MR rows; do not combine its counts with the selected September 11 baseline row or newly prepared timeline."
+        }
+      }
+    ],
+    "unfurl_links": false,
+    "unfurl_media": false
+  }
+]

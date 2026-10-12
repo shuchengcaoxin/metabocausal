@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "seed_id": "chen_2023",
+  "status": "seeds_not_screened",
+  "doi": "10.1038/s41588-022-01270-1",
+  "pmcid": "PMC7614162",
+  "pmid": "36635386",
+  "title": "Genomic atlas of the plasma metabolome prioritizes metabolites implicated in human diseases.",
+  "article_version": "Author manuscript in PMC; publisher supplementary files retained separately.",
+  "existing_project_use": "The project previously used the paper's Supplementary Table 5 through Ziwei He's locus-gene atlas. No import of its MR result tables was found in the audited workspace.",
+  "publisher_url": "https://www.nature.com/articles/s41588-022-01270-1",
+  "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614162/",
+  "retrieved_at": "2026-09-12T02:44:29.932846+00:00",
+  "license_as_reported": [
+    "Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law."
+  ],
+  "is_open_access_europepmc": "N",
+  "purpose": "Original reading/screening seeds only. Downloading does not import MR results, establish quality, or add product evidence.",
+  "inventory_scope": "All unique supplementary/source-data files linked in the saved publisher article page; fallback to saved PMC attachment links if publisher inventory unavailable. Alternative mirrors of the same attachment are not treated as additional scientific datasets.",
+  "linked_supplementary_assets": {
+    "41588_2022_1270_MOESM1_ESM.pdf": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM1_ESM.pdf",
+      "label": "Supplementary Information (download PDF )",
+      "discovered_from": "publisher_article.html"
+    },
+    "41588_2022_1270_MOESM2_ESM.pdf": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM2_ESM.pdf",
+      "label": "Reporting Summary (download PDF )",
+      "discovered_from": "publisher_article.html"
+    },
+    "41588_2022_1270_MOESM3_ESM.pdf": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM3_ESM.pdf",
+      "label": "Peer Review File (download PDF )",
+      "discovered_from": "publisher_article.html"
+    },
+    "41588_2022_1270_MOESM4_ESM.xlsx": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM4_ESM.xlsx",
+      "label": "Supplementary Tables (download XLSX )",
+      "discovered_from": "publisher_article.html"
+    }
+  },
+  "successful_files": [
+    {
+      "original_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41588-022-01270-1&format=json&resultType=core",
+      "filename": "europepmc_search_response.json",
+      "role": "source_metadata",
+      "label": "Europe PMC DOI search (raw response)",
+      "retrieved_at": "2026-09-12T02:43:40.535538+00:00",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41588-022-01270-1&format=json&resultType=core",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "status": "downloaded",
+      "bytes": 15469,
+      "sha256": "cef2bccd9efcc9ad20a72b6aa20c0851fb8a8131a9caf15cbb2c7506fb213fb9",
+      "file_format_validation": {
+        "valid": true,
+        "format": "json",
+        "check": "JSON parser"
+      }
+    },
+    {
+      "original_url": "https://www.nature.com/articles/s41588-022-01270-1",
+      "filename": "publisher_article.html",
+      "role": "source_metadata",
+      "label": "Publisher article page and linked attachment inventory",
+      "retrieved_at": "2026-09-12T02:43:43.030450+00:00",
+      "resolved_url": "https://www.nature.com/articles/s41588-022-01270-1",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "status": "downloaded",
+      "bytes": 438267,
+      "sha256": "b2e06aa1e2103ae142294e1d989499e51b88d1a0d24845007d22d77ab1038c72",
+      "file_format_validation": {
+        "valid": true,
+        "format": "html",
+        "check": "HTML parser and substantive text; not a rendered-page layout review"
+      }
+    },
+    {
+      "original_url": "https://europepmc.org/articles/PMC7614162?pdf=render",
+      "filename": "PMC7614162.pdf",
+      "role": "article_full_text",
+      "label": "Article PDF through Europe PMC",
+      "retrieved_at": "2026-09-12T02:43:47.145845+00:00",
+      "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC7614162",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded",
+      "bytes": 1896398,
+      "sha256": "c725cb6f2d2589aad9ba8bdece6a4a4212f89781edf77c9aeb7a767f79851b6b",
+      "file_format_validation": {
+        "valid": true,
+        "format": "pdf",
+        "pages": 29,
+        "check": "PDF magic and parser",
+        "identity_check": "First-page title matches Genomic atlas of the plasma metabolome prioritizes metabolites implicated in human diseases."
+      },
+      "filename_note": "Europe PMC exposes the PDF through a render URL without a source filename in that URL. Stored under the PMCID; publisher attachment filenames are preserved as linked."
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM1_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM1_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Supplementary Information (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:49.813063+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM1_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded",
+      "bytes": 1107543,
+      "sha256": "b660bb57616d759501b7e31de245c1766c04e77b596b6701b2eb45b092fae93f",
+      "file_format_validation": {
+        "valid": true,
+        "format": "pdf",
+        "pages": 10,
+        "check": "PDF magic and parser"
+      }
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM2_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM2_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Reporting Summary (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:52.540652+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM2_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded",
+      "bytes": 1997303,
+      "sha256": "21c854aa25e3ff141d2a84a7eef0cffdf0d2ea0e8f15c0165b17db90b415dc6f",
+      "file_format_validation": {
+        "valid": true,
+        "format": "pdf",
+        "pages": 3,
+        "check": "PDF magic and parser"
+      }
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM3_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM3_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Peer Review File (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:57.709277+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM3_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded",
+      "bytes": 710613,
+      "sha256": "9b58255f86484ceb885f6d4f41bdfe2e1ec34eefeb4979b9a823c6b9991b2ea5",
+      "file_format_validation": {
+        "valid": true,
+        "format": "pdf",
+        "pages": 54,
+        "check": "PDF magic and parser"
+      }
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM4_ESM.xlsx",
+      "filename": "41588_2022_1270_MOESM4_ESM.xlsx",
+      "role": "supplementary_file",
+      "label": "Supplementary Tables (download XLSX )",
+      "retrieved_at": "2026-09-12T02:43:59.565061+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM4_ESM.xlsx",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "status": "downloaded",
+      "bytes": 20553798,
+      "sha256": "f95c93e01c079159b5be7ead323b9a34714d84ac64de1f94a1684481da039560",
+      "file_format_validation": {
+        "valid": true,
+        "format": "xlsx",
+        "check": "OOXML workbook structure and ZIP CRC"
+      }
+    }
+  ],
+  "unavailable_assets": [],
+  "download_attempts": [
+    {
+      "original_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41588-022-01270-1&format=json&resultType=core",
+      "filename": "europepmc_search_response.json",
+      "role": "source_metadata",
+      "label": "Europe PMC DOI search (raw response)",
+      "retrieved_at": "2026-09-12T02:43:40.535538+00:00",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41588-022-01270-1&format=json&resultType=core",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614162/fullTextXML",
+      "filename": "PMC7614162.xml",
+      "role": "article_full_text",
+      "label": "Europe PMC full-text JATS XML",
+      "retrieved_at": "2026-09-12T02:43:42.031422+00:00",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614162/fullTextXML",
+      "http_status": 404,
+      "content_type": "",
+      "status": "unavailable",
+      "reason": "HTTPError: 404 Client Error: Not Found for url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614162/fullTextXML"
+    },
+    {
+      "original_url": "https://www.nature.com/articles/s41588-022-01270-1",
+      "filename": "publisher_article.html",
+      "role": "source_metadata",
+      "label": "Publisher article page and linked attachment inventory",
+      "retrieved_at": "2026-09-12T02:43:43.030450+00:00",
+      "resolved_url": "https://www.nature.com/articles/s41588-022-01270-1",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614162/",
+      "filename": "pmc_article.html",
+      "role": "article_full_text",
+      "label": "PMC archived full-text HTML",
+      "retrieved_at": "2026-09-12T02:43:46.278781+00:00",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614162/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "status": "unavailable",
+      "reason": "ValueError: Response lacks substantive HTML article/metadata text"
+    },
+    {
+      "original_url": "https://europepmc.org/articles/PMC7614162?pdf=render",
+      "filename": "PMC7614162.pdf",
+      "role": "article_full_text",
+      "label": "Article PDF through Europe PMC",
+      "retrieved_at": "2026-09-12T02:43:47.145845+00:00",
+      "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC7614162",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM1_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM1_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Supplementary Information (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:49.813063+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM1_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM2_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM2_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Reporting Summary (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:52.540652+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM2_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM3_ESM.pdf",
+      "filename": "41588_2022_1270_MOESM3_ESM.pdf",
+      "role": "supplementary_file",
+      "label": "Peer Review File (download PDF )",
+      "retrieved_at": "2026-09-12T02:43:57.709277+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM3_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "status": "downloaded"
+    },
+    {
+      "original_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM4_ESM.xlsx",
+      "filename": "41588_2022_1270_MOESM4_ESM.xlsx",
+      "role": "supplementary_file",
+      "label": "Supplementary Tables (download XLSX )",
+      "retrieved_at": "2026-09-12T02:43:59.565061+00:00",
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-022-01270-1/MediaObjects/41588_2022_1270_MOESM4_ESM.xlsx",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "status": "downloaded"
+    }
+  ],
+  "supplementary_link_count": 4,
+  "supplementary_downloaded_count": 4,
+  "main_pdf_downloaded": true,
+  "main_full_text_available": true,
+  "limits": {
+    "max_asset_bytes": 100000000,
+    "per_request_timeout_seconds": [
+      12,
+      40
+    ],
+    "max_transfer_seconds": 150,
+    "automatic_retries": 0
+  },
+  "license_source_file": "publisher_article.html",
+  "supplementary_inventory_validation": "All unique publisher supplementary/source-data links were enumerated from saved HTML. JATS unavailable for this author manuscript.",
+  "final_local_hash_verification": {
+    "verified_at": "2026-09-12T02:50:58.589126+00:00",
+    "files_verified": 7,
+    "all_hashes_and_sizes_match": true,
+    "temporary_partial_files": 0
+  }
+}

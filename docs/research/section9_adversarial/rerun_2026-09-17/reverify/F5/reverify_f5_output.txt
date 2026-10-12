@@ -1,0 +1,144 @@
+
+==============================================================================
+STEP 0 - environment and code identity
+==============================================================================
+cwd/repo_root : <workspace>/metabocausal-rerun
+git HEAD      : b05639721b07345612bba4ebf66f989805b9703c
+git branch    : rerun/section9-adversarial-20260916
+python        : 3.12.10
+network_used  : false
+validate_card.py                 sha256=a756ab148ce5b744  blob@HEAD=11e08476c6dc  blob@bcb32a9=11e08476c6dc  same_as_baseline=True
+render.py                        sha256=68c5f17e46ed57ad  blob@HEAD=3e3787422ac8  blob@bcb32a9=3e3787422ac8  same_as_baseline=True
+llm/interpret.py                 sha256=ba15d534b704db37  blob@HEAD=8673c020bcdd  blob@bcb32a9=8673c020bcdd  same_as_baseline=True
+data/demo_card_inputs.json       sha256=c8e4fda54413f6f1  blob@HEAD=b9ee5625a107  blob@bcb32a9=b9ee5625a107  same_as_baseline=True
+
+==============================================================================
+STEP 1 - parser-level fact: does the number parser see U+2212 as a sign?
+==============================================================================
+validate_card.NUMBER.pattern = '[-+]?(?:\\d+\\.?\\d*|\\.\\d+)(?:[eE][-+]?\\d+)?'
+U+2212 name = 'MINUS SIGN'
+U+2212 in SUPERSCRIPTS translate table = False
+superscript minus U+207B in SUPERSCRIPTS = True
+  U+2212   text='The effect is b = −1.367.'
+  U+2212   normalise_notation -> 'The effect is b = −1.367.'
+  U+2212   NUMBER.findall(_mask_identifiers(text)) -> ['1.367']
+  ASCII -  text='The effect is b = -1.367.'
+  ASCII -  normalise_notation -> 'The effect is b = -1.367.'
+  ASCII -  NUMBER.findall(_mask_identifiers(text)) -> ['-1.367']
+
+==============================================================================
+STEP 2 - what the source run actually contains
+==============================================================================
+run state                       : A
+values within 0.01 of |1.367|   : [1.3665151455190399]
+traceable_number('1.367', ...)  : True
+traceable_number('-1.367', ...) : False
+is -1.367... present in the run : False
+
+==============================================================================
+STEP 3 - his U01/U02/U03/U04, reproduced through the renderer gate on current main
+==============================================================================
+
+[U01] fields = {'headline': 'The effect is b = −1.367.'}
+[U01] non-ASCII in headline: −=U+2212
+[U01] gate-two findings (0): none
+[U01] renderer outcome: printed
+[U01] Section 9 text:
+---8<---
+The effect is b = −1.367.
+
+Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--->8---
+
+[U02] fields = {'headline': 'The effect is b = -1.367.'}
+[U02] non-ASCII in headline: (all ASCII)
+[U02] gate-two findings (1): ["V1 [headline]: '-1.367' does not appear in this run's retrieved values."]
+[U02] renderer outcome: blocked
+[U02] Section 9 text:
+---8<---
+Model reasoning pending integration (section 1F).
+
+(A model interpretation was offered and rejected here by the validator: 1 finding(s). The evidence above is unaffected.)
+--->8---
+
+[U03] fields = {'headline': 'The query found no\xa0effect.'}
+[U03] non-ASCII in headline:  =U+00A0
+[U03] gate-two findings (0): none
+[U03] renderer outcome: printed
+[U03] Section 9 text:
+---8<---
+The query found no effect.
+
+Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--->8---
+
+[U04] fields = {'headline': 'The marker medіates the disease effect.'}
+[U04] non-ASCII in headline: і=U+0456
+[U04] gate-two findings (0): none
+[U04] renderer outcome: printed
+[U04] Section 9 text:
+---8<---
+The marker medіates the disease effect.
+
+Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--->8---
+
+==============================================================================
+STEP 4 - the same sign flip through the REAL model path (gate one + gate two)
+==============================================================================
+
+[F5-MP-unicode] model JSON reply = {"headline": "The effect is b = −1.367."}
+[F5-MP-unicode] gate one: status='accepted' accepted=True findings=none
+[F5-MP-unicode] gate one returned fields = {'headline': 'The effect is b = −1.367.'}
+[F5-MP-unicode] gate two findings: none
+[F5-MP-unicode] renderer outcome: printed
+[F5-MP-unicode] Section 9 text:
+---8<---
+The effect is b = −1.367.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--->8---
+
+[F5-MP-ascii] model JSON reply = {"headline": "The effect is b = -1.367."}
+[F5-MP-ascii] gate one: status='rejected' accepted=False findings=["V1 [headline]: '-1.367' does not appear in this run's retrieved values."]
+[F5-MP-ascii] gate one returned fields = {}
+[F5-MP-ascii] gate two findings: none
+[F5-MP-ascii] renderer outcome: blocked
+[F5-MP-ascii] Section 9 text:
+---8<---
+Model reasoning pending integration (section 1F).
+--->8---
+
+==============================================================================
+STEP 5 - whole card via render.render_card (does Section 9 survive into the card?)
+==============================================================================
+card length            : 32200 chars
+card contains U+2212 claim : True
+card contains PENDING sentence : False
+--- card excerpt around Section 9 ---
+## 9. Reasoning
+
+The effect is b = −1.367.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+## 10. Next action
+
+Open the retrieved row at its source before quoting it. The smallest retrieved p-value is ieu-a-789 -> ieu-a-1054 (FE IVW): b 1.367, se 0.1068, p 1.79e-37, nsnp n/a (not returned by this snapshot).
+
+- Confirm what one unit of the exposure dataset means before repeating the effect size: raw and rank-inverse-normalised deposits of one measurement differ by orders of magnitude and this snapshot carries no unit for some of them.
+- Treat repeated rows as one study: MR-EVE returns one row per method, and one study deposited under several OpenGWAS ids returns one row per id.
+- No formal sensitivity analysis is retrieved with these
+--- end excerpt ---
+
+==============================================================================
+VERDICT TABLE (this run, HEAD b056397)
+==============================================================================
+U01              observed=printed  baseline_or_expected=printed  match=True
+U02              observed=blocked  baseline_or_expected=blocked  match=True
+U03              observed=printed  baseline_or_expected=printed  match=True
+U04              observed=printed  baseline_or_expected=printed  match=True
+F5-MP-unicode    observed=printed  baseline_or_expected=printed  match=True
+F5-MP-ascii      observed=blocked  baseline_or_expected=blocked  match=True
+
+all F5 observations match the 2026-09-16 baseline expectation: True

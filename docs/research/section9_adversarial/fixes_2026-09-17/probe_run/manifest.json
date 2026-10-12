@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-09-18T07:17:39.261639+00:00",
+  "command": "python scripts/probe_section9.py",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git_head": "7793a22c0dcc317cf57bc6c71adb0d4723c0d11a",
+  "git_branch": "fix/adversarial-16-20260917",
+  "git_status": "M MVP2/data/README.md\n M docs/research/section9_adversarial/fixes_2026-09-17/FIXES.md\n M tests/test_fix_mvp2_m4_m5_m6_m7.py\n?? archive/project_files/.ppt_build/__pycache__/\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1A_\\346\\231\\257\\347\\235\\277_2026-09-09/_\\350\\247\\243\\345\\216\\213/Resolve_ids(Jingrui)/code/__pycache__/\"\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1A_\\346\\231\\257\\347\\235\\277_2026-09-09/_\\350\\247\\243\\345\\216\\213/Resolve_ids(Jingrui)/test_code/__pycache__/\"\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1D_\\345\\255\\220\\345\\264\\264_2026-09-11/_\\350\\247\\243\\345\\216\\213/1D-Ziwei/__pycache__/\"\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1E_\\345\\255\\220\\351\\271\\217_2026-09-10/_\\350\\247\\243\\345\\216\\213/1E/scripts/__pycache__/\"\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1E_\\345\\255\\220\\351\\271\\217_2026-09-10/_\\350\\247\\243\\345\\216\\213/1E/tests/__pycache__/\"\n?? \"archive/project_files/_\\351\\230\\237\\345\\221\\230\\344\\272\\244\\346\\235\\245\\347\\232\\204\\345\\216\\237\\344\\273\\266/1E_\\345\\255\\220\\351\\271\\217_2026-09-10/_\\350\\247\\243\\345\\216\\213/1E/tools/__pycache__/\"\n?? \"archive/project_files/official-repo-folder-draft/metabocausal-skeleton\\351\\252\\250\\346\\236\\266\\347\\211\\210/__pycache__/\"\n?? \"archive/project_files/official-repo-folder-draft/metabocausal-skeleton\\351\\252\\250\\346\\236\\266\\347\\211\\210/scripts/__pycache__/\"\n?? \"archive/project_files/official-repo-folder-draft/metabocausal-skeleton\\351\\252\\250\\346\\236\\266\\347\\211\\210/tests/__pycache__/\"\n?? \"archive/project_files/official-repo-folder-draft/metabocausal-skeleton\\351\\252\\250\\346\\236\\266\\347\\211\\210/tools/__pycache__/\"\n?? archive/project_files/release-corrected_2026-09-11/metabocausal-public/__pycache__/\n?? archive/project_files/release-corrected_2026-09-11/metabocausal-public/scripts/__pycache__/\n?? archive/project_files/release-corrected_2026-09-11/metabocausal-public/tests/__pycache__/\n?? archive/project_files/release-corrected_2026-09-11/metabocausal-public/tools/__pycache__/\n?? archive/project_files/release-evidence_2026-09-11/metabocausal-public/__pycache__/\n?? archive/project_files/release-evidence_2026-09-11/metabocausal-public/scripts/__pycache__/\n?? archive/project_files/release-evidence_2026-09-11/metabocausal-public/tests/__pycache__/\n?? archive/project_files/release-evidence_2026-09-11/metabocausal-public/tools/__pycache__/\n?? archive/project_files/release-final_2026-09-11/metabocausal-public/__pycache__/\n?? archive/project_files/release-final_2026-09-11/metabocausal-public/scripts/__pycache__/\n?? archive/project_files/release-final_2026-09-11/metabocausal-public/tests/__pycache__/\n?? archive/project_files/release-final_2026-09-11/metabocausal-public/tools/__pycache__/\n?? archive/project_files/release-ready_2026-09-11/metabocausal-public/__pycache__/\n?? archive/project_files/release-ready_2026-09-11/metabocausal-public/scripts/__pycache__/\n?? archive/project_files/release-ready_2026-09-11/metabocausal-public/tests/__pycache__/\n?? archive/project_files/team-admin/__pycache__/\n?? \"archive/project_files/team-admin/\\351\\234\\200\\346\\261\\202\\346\\240\\270\\345\\257\\271\\350\\257\\201\\346\\215\\256_2026-09-11/__pycache__/\"",
+  "network_used": false,
+  "provider_api_used": false,
+  "model_path_method": "deterministic Reply stub through llm.interpret and renderer",
+  "hashes": {
+    "data\\demo_card_inputs.json": "c8e4fda54413f6f1479b2b71114e0c44641bb791b142aea69b3a30dc67579ab9",
+    "render.py": "68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f",
+    "validate_card.py": "7217cec61a9d223385e695310cb86b7ba8166088de0be1e214947ef02b2291cc",
+    "llm\\__init__.py": "2765b4deac03c39b7a40080b9acc24692e91a808fff788d6505ad816d35e83db",
+    "llm\\base.py": "db458458219dadc9f5671db28f66f9bff40e649ed30c59a93a7b12c79e242b58",
+    "llm\\interpret.py": "ba15d534b704db37c8dfd3d7d7260f6724142a4f4d6206c63ff6c5607a4afb10",
+    "llm\\registry.py": "894727abff187aa35513e5560926d4235a018e7049bdb5ee52a2495b8b481dcb",
+    "prompts\\interpretation.md": "b3f3a60df1c1bd1a8ca2e961fd8e5bc8221dc71ecb8ebdd697eb750730e0060f",
+    "scripts\\interpretation_fixtures.py": "d11b96ad0249b364b0cc7096bfad9f21f5cfcbd6513af4957d346336be505476",
+    "scripts\\probe_section9.py": "ec93689dced10aed75f5179983b5c9279f86f4da2fa89fabd4ae575292ca692c"
+  },
+  "reference_only_hashes": {
+    "data/1a_sample.json": "9a86336e11847bdbb413ac34795b0b5a64b5be4f9308b51e5fd4ed16399416ec"
+  },
+  "cases": 51,
+  "outcomes": {
+    "blocked": 17,
+    "bypassed": 2,
+    "printed": 31,
+    "raised": 1
+  },
+  "all_expectations_met": true
+}

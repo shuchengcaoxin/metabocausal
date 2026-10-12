@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-18T06:31:28.814272+00:00",
+  "inputs": {
+    "baseline": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "bytes": "as-committed"
+    },
+    "new_pairs": {
+      "path": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "sha256": "80e8a2336538605bacf8f2e7baab90af3568a6bf55691a9c6ae6cac92a883ddd",
+      "bytes": "lf-normalized"
+    }
+  },
+  "outputs": {
+    "merged_csv": {
+      "path": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv",
+      "sha256": "f36c6fcc7b6c52017f20034827d2608ea944df3fc9a43c00358f753fbad37c7b",
+      "bytes": "lf-normalized"
+    },
+    "provenance_csv": {
+      "path": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv",
+      "sha256": "647261123ebe14c3ef977cc399725ef38044858a8ae1500d9f65a79b4c9e886f",
+      "bytes": "lf-normalized"
+    },
+    "reference_original_merged_csv": {
+      "path": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv",
+      "sha256": "af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce",
+      "bytes": "lf-normalized"
+    }
+  },
+  "summary": {
+    "baseline_row_count": 11117,
+    "new_row_count": 10804,
+    "merged_row_count": 21921,
+    "baseline_unique_pair_count": 10278,
+    "new_unique_pair_count": 10804,
+    "merged_unique_pair_count": 21082,
+    "baseline_new_intersection_count": 0
+  },
+  "rules": [
+    "The MVP1 baseline is not modified.",
+    "The merged CSV uses exactly the baseline column names and order.",
+    "Source-only fields are stored in the provenance sidecar and joined by merged_row_number.",
+    "Every appended row must be source-verified, forward metabolite-to-disease, unique within the new file, and absent from the baseline.",
+    "Paper metabolite IDs remain source_metabolite_id and are not asserted to be ChEBI IDs.",
+    "Appended rows remain published_literature_mr_candidate until scientific validation accepts them.",
+    "An appended row's ci_low/ci_upp are the source's own two 95% bounds in numeric order. Where the source printed them in the impossible order (ci_low > ci_upp), the provenance sidecar carries the as-printed pair in ci_low_as_printed/ci_high_as_printed and extraction_note says so; no bound is recomputed."
+  ]
+}

@@ -1,0 +1,25 @@
+# MetaboCausal - Round 1 dependencies
+google-genai>=1.0.0        # Gemini SDK (current package; google-generativeai is deprecated)
+anthropic>=0.40.0          # Claude SDK, for the llm/ provider layer
+openai>=1.40.0             # ChatGPT SDK, for the llm/ provider layer
+requests>=2.31.0           # calling the public database REST/GraphQL APIs
+openpyxl>=3.1              # reading seed supplementary workbooks for MVP2 screening
+python-dotenv>=1.0.0       # load API keys from ../.env (never hard-code keys)
+
+# Added in later rounds:
+streamlit>=1.30.0          # Round 2 (1G): app.py, the browser over shipped cards/figures/library
+pandas>=2.0                # Round 2 (1G): MVP2's screened candidate table in the library tab
+# duckdb>=1.0.0            # Round 3: read own pre-computed MR results
+# matplotlib>=3.8          # Round 3: MR forest / instrument-strength plots
+
+# Round 1 Slack shell (slack_app.py):
+slack-bolt>=1.30.0         # Socket Mode app, no public URL needed; pulls slack_sdk>=3.38
+websocket-client>=1.8.0    # preferred Socket Mode websocket; slack_sdk's built-in
+                           # client drops long-lived connections on some networks
+
+# Round 1 figures (plots.py) - the matplotlib line above landed earlier than planned:
+matplotlib>=3.8            # one PNG per run (Agg backend, no display); tested on 3.11.0
+
+# The three LLM SDKs above are OPTIONAL at runtime: llm/ imports each one lazily, so a
+# missing package disables that one provider and never stops the deterministic
+# pipeline, rendering or Slack shell from running.

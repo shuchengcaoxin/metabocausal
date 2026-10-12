@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-09-17T00:42:39.138304+00:00",
+  "command": "python scripts/probe_section9.py",
+  "python": "3.12.4 (main, Jun 12 2024, 16:22:31) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-INTEL-R-_XEON-R-_SILVER_4510-with-glibc2.37",
+  "git_head": "bcb32a91071b93cacaa62cd7487abb2d991baeb7",
+  "git_branch": "research/section9-adversarial-probes",
+  "git_status": "A  docs/research/section9_adversarial/DESIGN_JUDGMENT.md\nA  docs/research/section9_adversarial/README.md\nA  docs/research/section9_adversarial/REPORT.md\nA  docs/research/section9_adversarial/ai_runs/01_semantic_attacks.md\nA  docs/research/section9_adversarial/ai_runs/02_numeric_attacks.md\nA  docs/research/section9_adversarial/ai_runs/03_replay_callgraph.md\nA  docs/research/section9_adversarial/ai_runs/04_dual_gate_surface.md\nA  docs/research/section9_adversarial/artifacts/RESULTS.md\nA  docs/research/section9_adversarial/artifacts/full_cards/a01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/m01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/m03.md\nA  docs/research/section9_adversarial/artifacts/full_cards/m04.md\nA  docs/research/section9_adversarial/artifacts/full_cards/r01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/r02.md\nA  docs/research/section9_adversarial/artifacts/full_cards/r06.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s02.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s03.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s05.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s07.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s09.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s10.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s11.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s12.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s14.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s15.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s16.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s17.md\nA  docs/research/section9_adversarial/artifacts/full_cards/s18.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t02.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t03.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t04.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t06.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t07.md\nA  docs/research/section9_adversarial/artifacts/full_cards/t08.md\nA  docs/research/section9_adversarial/artifacts/full_cards/u01.md\nA  docs/research/section9_adversarial/artifacts/full_cards/u03.md\nA  docs/research/section9_adversarial/artifacts/full_cards/u04.md\nA  docs/research/section9_adversarial/artifacts/manifest.json\nAM docs/research/section9_adversarial/artifacts/results.csv\nA  docs/research/section9_adversarial/artifacts/results.json\nA  docs/research/section9_adversarial/artifacts/run.log\nA  docs/research/section9_adversarial/artifacts/section9_outputs/a01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/b01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/b02.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/m01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/m03.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/m04.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/r01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/r02.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/r06.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s02.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s03.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s05.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s07.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s09.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s10.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s11.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s12.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s14.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s15.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s16.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s17.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/s18.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t02.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t03.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t04.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t06.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t07.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/t08.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/u01.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/u03.md\nA  docs/research/section9_adversarial/artifacts/section9_outputs/u04.md\nA  docs/research/section9_adversarial/logs/FINAL_TESTS.md\nAM scripts/probe_section9.py\nA  tests/test_probe_section9.py",
+  "network_used": false,
+  "provider_api_used": false,
+  "model_path_method": "deterministic Reply stub through llm.interpret and renderer",
+  "hashes": {
+    "data/demo_card_inputs.json": "c30d8aad2905291d1c96f4375333d2096f0e6dadb62878915f18a59e9708ded0",
+    "render.py": "e597a01bc9f4042b21ce3f7003b9991f58155bbf0623bc023dccc3babcf1ead2",
+    "validate_card.py": "16fe34fd8b5fe28a76fbc558cd71079235bb4424d393cb93447961fba091a7ac",
+    "llm/__init__.py": "fa1a76cd672764b9bf823b96c1fb5244cceca13db6cd732f0cfbb0956fa41d97",
+    "llm/base.py": "bd702ec1afc260671a0776415154f8e5ab4d2741105741ab166638b04d4bbe4c",
+    "llm/interpret.py": "7aac6ef96190f451f9650eac1cf3ecf4d50b0aa08e10ab0266942247b9e3f16d",
+    "llm/registry.py": "18b06c64179bb7a461a6f00cbd453bab0da51c45f43a09bf658453961e4add81",
+    "prompts/interpretation.md": "bf08a6bed7b14a5b1c04fd4ed5d5bea8900a72daf2c54e7c467463f751e2e8ee",
+    "scripts/interpretation_fixtures.py": "bbd04ad89f11033e7e4df4778378d98bf22d814caeaac3bc21b0eaf84ae42b4a",
+    "scripts/probe_section9.py": "a1cb309bcfb984f104dc2bbb55b46f8bb2a076074a1377942d27e396a9915854"
+  },
+  "reference_only_hashes": {
+    "data/1a_sample.json": "4df52270ac0659f08bcd19d1dfef792329bf45504fd8eea5e2853faaa57d853d"
+  },
+  "cases": 51,
+  "outcomes": {
+    "blocked": 17,
+    "bypassed": 2,
+    "printed": 31,
+    "raised": 1
+  },
+  "all_expectations_met": true
+}

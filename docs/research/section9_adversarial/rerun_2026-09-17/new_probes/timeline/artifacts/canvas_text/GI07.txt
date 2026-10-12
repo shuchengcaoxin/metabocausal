@@ -1,0 +1,29 @@
+case: GI07
+what: dollar signs in the drug name and the stop reason (matplotlib mathtext)
+asks: does an unbalanced or math-like string change or break the rendering
+figure: drawn GI07_genetic_insight.png
+stdout: [timeline] wrote GI07_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134264
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 3'
+'terminated: budget $overrun_{total}$ only'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2003'
+'2004'
+'2005'
+'2006'
+'2007'
+'cost-$5-per-$1 gain\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked'
+"1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy."
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-12T02:51:47.030918+00:00",
+  "purpose": "Downloaded reading/screening seeds; not accepted MR evidence or a completed literature search.",
+  "status": "verified",
+  "studies": [
+    {
+      "study_id": "chen_2023",
+      "title": "Genomic atlas of the plasma metabolome prioritizes metabolites implicated in human diseases.",
+      "doi": "10.1038/s41588-022-01270-1",
+      "source_record": "MVP2/literature/seeds/chen_2023/source_record.json",
+      "screening_status": "seed_not_screened",
+      "new_mr_import_status": "not_imported",
+      "verified_download_records": 7,
+      "files": [
+        {
+          "path": "MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM1_ESM.pdf",
+          "bytes": 1107543,
+          "sha256": "b660bb57616d759501b7e31de245c1766c04e77b596b6701b2eb45b092fae93f"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM2_ESM.pdf",
+          "bytes": 1997303,
+          "sha256": "21c854aa25e3ff141d2a84a7eef0cffdf0d2ea0e8f15c0165b17db90b415dc6f"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM3_ESM.pdf",
+          "bytes": 710613,
+          "sha256": "9b58255f86484ceb885f6d4f41bdfe2e1ec34eefeb4979b9a823c6b9991b2ea5"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM4_ESM.xlsx",
+          "bytes": 20553798,
+          "sha256": "f95c93e01c079159b5be7ead323b9a34714d84ac64de1f94a1684481da039560"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/europepmc_search_response.json",
+          "bytes": 15469,
+          "sha256": "cef2bccd9efcc9ad20a72b6aa20c0851fb8a8131a9caf15cbb2c7506fb213fb9"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/PMC7614162.pdf",
+          "bytes": 1896398,
+          "sha256": "c725cb6f2d2589aad9ba8bdece6a4a4212f89781edf77c9aeb7a767f79851b6b"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/publisher_article.html",
+          "bytes": 438267,
+          "sha256": "b2e06aa1e2103ae142294e1d989499e51b88d1a0d24845007d22d77ab1038c72"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/README.md",
+          "bytes": 1987,
+          "sha256": "cd6b85898de52c9f3d4529eb3689d6c8a450023c14bc3de90ad408bfb3ca0ef4"
+        },
+        {
+          "path": "MVP2/literature/seeds/chen_2023/source_record.json",
+          "bytes": 15517,
+          "sha256": "633d9d5e6539aac59774383e087475186902f656f34533e66d2dc86ee772ce68"
+        }
+      ],
+      "bytes": 26736895
+    },
+    {
+      "study_id": "shin_2014",
+      "title": "An atlas of genetic influences on human blood metabolites",
+      "doi": "10.1038/ng.2982",
+      "source_record": "MVP2/literature/seeds/shin_2014/source_record.json",
+      "screening_status": "seed_not_screened",
+      "new_mr_import_status": "not_imported",
+      "verified_download_records": 7,
+      "files": [
+        {
+          "path": "MVP2/literature/seeds/shin_2014/fulltext/emss-58114.pdf",
+          "bytes": 2587905,
+          "sha256": "c1942a00db51caece80bc29e7f0651c0eaffd12cdf86abd3bf89ea1ab5da13a1"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/fulltext/PMC4064254.xml",
+          "bytes": 141874,
+          "sha256": "6aafb73bcd7d6f48ad56a9e419e919e09a05fb81e2c8289bf9b8e85abc63ce68"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/metadata/europepmc_search.json",
+          "bytes": 17779,
+          "sha256": "606ab2b296b63a2a498da760feec8c064e2ce0286d272647648101679e0c9369"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/metadata/PMC4064254_supplementaryFiles.zip",
+          "bytes": 15913079,
+          "sha256": "f318414d7043c30cfb310475873cf6872c25d1d77442256524a4dd5aba22f323"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/metadata/publisher_article.html",
+          "bytes": 437020,
+          "sha256": "96b48e4cd02c2c60ba9bbf12c50bec412b428e00395e2909fb8c899b60bbcab8"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/README.md",
+          "bytes": 1860,
+          "sha256": "d6bd77a0c948aaa421d5b0ccfb1ffe6853c8b83d034807362e9ea090e3a4c47b"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/source_record.json",
+          "bytes": 28601,
+          "sha256": "c8e52d4eaeb37559fa0ba743b12d642cd8b580201a71e031eaa5ddea2be18177"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/41588_2014_BFng2982_MOESM49_ESM.pdf",
+          "bytes": 5066447,
+          "sha256": "fe6a0c97666e5f75c7f918354213bf4a1b3a8f5b5103699d63059925043bd06e"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/41588_2014_BFng2982_MOESM50_ESM.xlsx",
+          "bytes": 12804500,
+          "sha256": "42ca70c79fdb100ae89d9c88a48029cc8293f0c0289974b198cc6dbb9bea1b27"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-1.pdf",
+          "bytes": 4975900,
+          "sha256": "ccb8ee702e8347ef07a1783957a46c0c42184454cc9e976a7df5de08151c3899"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-2.xlsx",
+          "bytes": 12802334,
+          "sha256": "100e8e79cc8a073cce43cd257fb5daffcef41d6b2c90ee6e78db864f529786c0"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-3.jpg",
+          "bytes": 613179,
+          "sha256": "59abb9560be29d28028c911728020fc2f50008a3537d3f0c08b7147070f75155"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-4.jpg",
+          "bytes": 357187,
+          "sha256": "e5dcc3c51d045e0f4a5513f360504876793a8a9d933f6227220f4491364abfe2"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-5.jpg",
+          "bytes": 520968,
+          "sha256": "ab1b71510d8f402bbac0940bc088da45249774f4c07dddf080bf4d01ff3ee43e"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-6.jpg",
+          "bytes": 1767840,
+          "sha256": "1d4b1e3e7c5454a4dff85033f7bdd7bf8480205139cfde9f08593998da24600e"
+        },
+        {
+          "path": "MVP2/literature/seeds/shin_2014/supplements/NIHMS58114-supplement-7.jpg",
+          "bytes": 482361,
+          "sha256": "dff5bd7636629b1e194cc0c45fb8a8e205896c3db29eb08265fe016eb60d45a9"
+        }
+      ],
+      "bytes": 58518834
+    },
+    {
+      "study_id": "ukb_mapping_2025",
+      "title": "Mapping the plasma metabolome to human health and disease in 274,241 adults.",
+      "doi": "10.1038/s42255-025-01371-1",
+      "source_record": "MVP2/literature/seeds/ukb_mapping_2025/source_record.json",
+      "screening_status": "seed_not_screened",
+      "new_mr_import_status": "not_imported",
+      "verified_download_records": 24,
+      "files": [
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM10_ESM.xlsx",
+          "bytes": 993573,
+          "sha256": "2aa21f67bbac3a4267b0b1899a96312d4db4f4381fead42448797827f34dbce2"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM11_ESM.xlsx",
+          "bytes": 1101324,
+          "sha256": "52feb5899e90acfbf23491757b40fa55226092292dfc12571b8b4af2bd2b1a0b"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM12_ESM.xlsx",
+          "bytes": 9665,
+          "sha256": "961cfdf568a99dc2207c1d7dff1134f2ee6b4cf3e81bb2daaedfa4b76f713165"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM13_ESM.xlsx",
+          "bytes": 17923,
+          "sha256": "e82f1fae7daad25c64e759fb57736013611d5c79ae64e74cae7ce1d22bedbc92"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM14_ESM.xlsx",
+          "bytes": 104648,
+          "sha256": "4d7b79859f49fd5e2316f0b951a9826beb78bdb455f4daacda42582bd19da447"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM15_ESM.xlsx",
+          "bytes": 733088,
+          "sha256": "af59bd93af083d46a5b351b072760ce4e8a86a23974148c0c5449bde0308243c"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM16_ESM.xlsx",
+          "bytes": 47187986,
+          "sha256": "36affda11c3324653c3dc605c0cb90639845d955785579f13ff4ea4ea2e54c2d"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM17_ESM.xlsx",
+          "bytes": 6095608,
+          "sha256": "153d26445191a04ae98e04da7e61111d0fa8e66e9b72187431dbef0f64416e21"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM18_ESM.xlsx",
+          "bytes": 155868,
+          "sha256": "9793993c07e57acbb11ad34f51ed5ef1bed5ec7ca1bad29376db1688afb10a65"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM19_ESM.xlsx",
+          "bytes": 42563,
+          "sha256": "7f741eb8f4c0b9b57910ba078f0516217edf6130b93744d0a7c0d96f5b972311"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM1_ESM.pdf",
+          "bytes": 429040,
+          "sha256": "ee06781e4b1aeccf1c669cd87e2410fca4d2b5e8c137e61cf655fe26d92301f4"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM2_ESM.pdf",
+          "bytes": 3826735,
+          "sha256": "d0b89f96c23d1d47e190c136a489c7d39070ddaaba94e1d8be219f1b39636af9"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM3_ESM.xlsx",
+          "bytes": 17021664,
+          "sha256": "17303aa9db07701d608b130367980d1758ba95dc40457157a52a6e79db0e500e"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM4_ESM.xlsx",
+          "bytes": 10988666,
+          "sha256": "23c2ae13c5c64acf1a6194edc7edc0403590b50aa5207d7030cfd2e937fc3167"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM5_ESM.xlsx",
+          "bytes": 11944141,
+          "sha256": "a0ce9acb03d298a630cf87e3522eb9fdbd1a323a4d7fc10dc68d390068df1e46"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM6_ESM.xlsx",
+          "bytes": 39582515,
+          "sha256": "c4a003681c402a5c8755306c84199803448c1fe0f35566b89b71e3d8c8dfa50a"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM7_ESM.xlsx",
+          "bytes": 1471809,
+          "sha256": "68c6988f7414ba321273af351041155a3b7bad4bdce4431da7a0ee426088f202"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM8_ESM.xlsx",
+          "bytes": 47793233,
+          "sha256": "60fd67c5906a96f5f976835dd579b71694e144679108d4e14866cbeb8c7303c9"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM9_ESM.xlsx",
+          "bytes": 153167,
+          "sha256": "9e1c455b8ed1b009b83217523d16791ec06a6d9776ff5d9ebf40170ae233c959"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/42255_2025_Article_1371.pdf",
+          "bytes": 31782713,
+          "sha256": "83a50e262098cef5c195137d603a1434a03873ae70810b3d2ae93e4fd2d980a7"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/europepmc_search_response.json",
+          "bytes": 17979,
+          "sha256": "127bb58be6bac1b832c94f3f6e1be5f9c734f3cf8a51e6ee7ceef29f54a0ad77"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/PMC12638258.xml",
+          "bytes": 216256,
+          "sha256": "05eb290a5b4d4f5b8ec8327b0739fed0580e44aaa6d405e565af19701c7844b2"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/pmc_article.html",
+          "bytes": 325196,
+          "sha256": "957077e10045ae34bdd2d1ec369b8869615a6872b5ca8a4f62b6ca0cd2613cfb"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/publisher_article.html",
+          "bytes": 617471,
+          "sha256": "d23fc17de0be36f972d99c6de03e0535a29c80f0884fd4c9117622b6629ff37b"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/README.md",
+          "bytes": 4099,
+          "sha256": "4ab4f177066b9a5146458496f69b835f9dacf97e36a69a816fc5fa054013ce56"
+        },
+        {
+          "path": "MVP2/literature/seeds/ukb_mapping_2025/source_record.json",
+          "bytes": 46703,
+          "sha256": "22bce3480613e1f1c44f0ff75632e39a3766942d87b7dc2dc48b5b4bbfd9834d"
+        }
+      ],
+      "bytes": 222663633
+    },
+    {
+      "study_id": "yin_2025",
+      "title": "Assessing the potential causal effects of 1099 plasma metabolites on 2099 binary disease endpoints.",
+      "doi": "10.1038/s41467-025-58129-2",
+      "source_record": "MVP2/literature/seeds/yin_2025/source_record.json",
+      "screening_status": "seed_not_screened",
+      "new_mr_import_status": "not_imported",
+      "verified_download_records": 14,
+      "files": [
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM10_ESM.xlsx",
+          "bytes": 5139604,
+          "sha256": "3b53e3d475650429031bf21a9d3fa0378b5ef38801caf3fb43dd92d8db75ebe3"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM1_ESM.pdf",
+          "bytes": 2166978,
+          "sha256": "289a3eedb05aaa346d490640870411bc117dddc1f509863b93be068ae19cf278"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM2_ESM.pdf",
+          "bytes": 161559,
+          "sha256": "7d37b2e49f66484d1ac279cee754a94447721b4a625cc7300376e5ef8bb554c8"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM3_ESM.xlsx",
+          "bytes": 157265,
+          "sha256": "578b0a74d6b48c2cf85793a33a065a43eadf4ee00ddf1a8417855710962a0b4e"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM4_ESM.xlsx",
+          "bytes": 68615,
+          "sha256": "4ff6541c8c3191cb6ac81bb168eb0058fbf1c34742d9c7562c4cdc5ecb4ab304"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM5_ESM.xlsx",
+          "bytes": 87353,
+          "sha256": "dbcb82e2d664ac501a794c5d7a0a5d32b3c8bbdc57fcf1ffe267d2da29337a75"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM6_ESM.xlsx",
+          "bytes": 29651,
+          "sha256": "0aecd34fc013096b509963839e2f80cd5a99c2a723f72e96e664a0a5650c0e52"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM7_ESM.xlsx",
+          "bytes": 11619,
+          "sha256": "a59239a60652e61026fc975fc698c275525d69ce09af9d1d698f75cbdb9dea21"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM8_ESM.pdf",
+          "bytes": 77747,
+          "sha256": "83db215caf21e1c4a1de7f2c146ba814d0d0c80005a4ee1992349a1e7f98658d"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM9_ESM.pdf",
+          "bytes": 997861,
+          "sha256": "229f8e8e319f97ce04ef17923bc2d0bc32fbe85390d59fce1088709f8cc5951f"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/41467_2025_Article_58129.pdf",
+          "bytes": 1839248,
+          "sha256": "8f1c55d9d020d60a492707d26e15fe7cc00e088526b166ba17a74ff4546bee0b"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/europepmc_search_response.json",
+          "bytes": 14909,
+          "sha256": "4443f57f8192c5aecb0ddb49f3f74b83bff95f6ffbf85f913af7772716325b67"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/PMC11953310.xml",
+          "bytes": 131833,
+          "sha256": "65c006b1a2af288dc2bca484f77d4b2d56bb583bcf3cb5c1b173a160270d8438"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/publisher_article.html",
+          "bytes": 532502,
+          "sha256": "ec7ee5b12f5f620e2480c7eb502eb175a0a7584da0bad63ad5bd9211b7a42917"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/README.md",
+          "bytes": 2809,
+          "sha256": "0ff46434ac63141822636ece1a3a6bdc1b7c8237da264adfd7bf7feb38b2ccff"
+        },
+        {
+          "path": "MVP2/literature/seeds/yin_2025/source_record.json",
+          "bytes": 28712,
+          "sha256": "2cd29ada98f29acac7cbc8812b7abcd181f3f467f5718c2650bdd8dace745cc8"
+        }
+      ],
+      "bytes": 11448265
+    },
+    {
+      "study_id": "zoodsma_2025",
+      "title": "A genetic map of human metabolism across the allele frequency spectrum",
+      "doi": "10.1038/s41588-025-02355-3",
+      "source_record": "MVP2/literature/seeds/zoodsma_2025/source_record.json",
+      "screening_status": "seed_not_screened",
+      "new_mr_import_status": "not_imported",
+      "verified_download_records": 10,
+      "files": [
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/fulltext/41588_2025_Article_2355.pdf",
+          "bytes": 13809392,
+          "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/fulltext/PMC12513840.xml",
+          "bytes": 230439,
+          "sha256": "6d7822cd08f0c0b7b8bae15b16008d1ec407571e2e1fd869c848c72fc126343a"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/fulltext/s41588-025-02355-3.pdf",
+          "bytes": 13809392,
+          "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/metadata/europepmc_search.json",
+          "bytes": 9994,
+          "sha256": "f8d2223c320be5074523d22650597dae802a908e0a32590b5258e4deddd6881a"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/metadata/PMC12513840_supplementaryFiles.zip",
+          "bytes": 52759026,
+          "sha256": "0e7fcd5ab68155fe1361b2fadff0f5974eb0013a9660a43eec313103b83e44c3"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/metadata/publisher_article.html",
+          "bytes": 631344,
+          "sha256": "c58a31a64bdc79b954d6bc684e288e2817b96ae8b67d8d14cab4bc6260299657"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/README.md",
+          "bytes": 1869,
+          "sha256": "a83ebdee7c8bb2bff9d378941a572d9244e0d3fa9792cfa325ef92cf5c82f406"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/source_record.json",
+          "bytes": 29881,
+          "sha256": "e360dfb4392e3cb1fff93e0c3e4e85e362bd004f18214fa1964132cb8bc58079"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM1_ESM.pdf",
+          "bytes": 3266499,
+          "sha256": "f4626ad5a71f6fd8327cf01687a12a43c4d6dd8daf061e3b334db509affad43a"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM2_ESM.pdf",
+          "bytes": 488964,
+          "sha256": "1be68c4c0882e422a05443b8e832a2a75ee3092f806ea2440d72d75c3a352273"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM3_ESM.pdf",
+          "bytes": 7505923,
+          "sha256": "667eb336bcfb1f29e128720cf4308ff59c5f1b69f3637f9b5189eb24937fcbc3"
+        },
+        {
+          "path": "MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM4_ESM.xlsx",
+          "bytes": 38544493,
+          "sha256": "9d98d479da85d937465cef5018081e7e3e20fe569dd450b9eb2686f589ee50cf"
+        }
+      ],
+      "bytes": 131087216
+    }
+  ],
+  "same_bytes_at_multiple_paths": [
+    [
+      "MVP2/literature/seeds/zoodsma_2025/fulltext/41588_2025_Article_2355.pdf",
+      "MVP2/literature/seeds/zoodsma_2025/fulltext/s41588-025-02355-3.pdf"
+    ]
+  ],
+  "problems": [],
+  "total_bytes": 450454843
+}

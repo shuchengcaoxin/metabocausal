@@ -1,0 +1,31 @@
+case: GI13
+what: one drug, reports from two different diseases, max stage 4 earned elsewhere; this run's pair is HDL -> Coronary artery disease
+asks: does the lane label roll a cross-indication stage up onto a figure that names one disease
+figure: drawn GI13_genetic_insight.png
+stdout: [timeline] wrote GI13_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134264, NCT00134290
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 1'
+'phase 4'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2002'
+'2004'
+'2006'
+'2008'
+'2010'
+'2012'
+'2014'
+'2016'
+'torcetrapib\nCETP, max stage 4'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

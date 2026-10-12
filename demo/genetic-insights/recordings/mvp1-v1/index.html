@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MetaboCausal — Genetic Insights</title>
+<style>
+:root{--ink:#123647;--muted:#5e7480;--teal:#09647b;--deep:#10475b;--line:#dbe5e9;--paper:#fff;--bg:#f3f7f9;--green:#16846d;--amber:#9b650e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Segoe UI",Arial,sans-serif}button,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer}a{color:var(--teal);text-underline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e8ac4f;outline-offset:4px}
+aside{width:242px;position:fixed;inset:0 auto 0 0;border-right:1px solid var(--line);padding:30px 23px;background:#edf3f6;overflow-y:auto}.brand{font-size:22px;font-weight:750;letter-spacing:-.8px}.logo{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:10px;background:var(--teal);color:white;margin-right:8px;font-size:20px}.sub{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);font-weight:650}
+aside h3{font-size:13px;margin:35px 0 12px}aside p{color:var(--muted);font-size:13px}.selected{border:1px solid #b4ced9;background:white;padding:14px;border-radius:10px;line-height:1.7}.selected small{display:block;color:var(--muted)}
+.source-label{display:flex;gap:8px;align-items:center;margin:10px 0;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0}
+main{margin-left:242px;padding:25px 36px 50px;max-width:1610px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.top .sub{letter-spacing:1.2px}.actions{display:flex;gap:8px}.btn{border:1px solid #c8d7de;border-radius:7px;padding:7px 13px;background:white;color:var(--ink);font-size:13px}.btn:hover{background:#e3eff3}.pill{border-radius:30px;background:#e5f1ef;color:#146b58;padding:4px 10px;font-size:12px;font-weight:650;display:inline-block}.pill.muted{background:#eaf0f3;color:#526873}
+.hero{background:linear-gradient(110deg,#085b77,#19768b);border-radius:14px;color:white;padding:30px 32px}.hero .sub{color:#bde2eb}.hero h1{font-size:34px;font-weight:680;letter-spacing:-1px;line-height:1.2;margin:10px 0 12px}.hero p{color:#e0f0f4;font-size:16px;max-width:840px;margin:0}.hero-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:16px}.pair{font-size:18px;font-weight:650}.snapshot{font-size:12px;color:#cce5ec}
+nav{display:flex;gap:6px;margin:22px 0;border-bottom:1px solid var(--line)}.tab{padding:12px 18px;background:transparent;border:0;border-bottom:3px solid transparent;color:var(--muted);font-weight:650;font-size:14px}.tab[aria-selected=true]{border-color:var(--teal);color:var(--teal)}.tab:hover{color:var(--teal)}.panel[hidden]{display:none}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:11px;padding:22px}.card h2,.card h3{margin:0 0 8px;font-weight:650}.card h2{font-size:21px}.card h3{font-size:17px}.card p{margin:6px 0;color:var(--muted);font-size:14px}.metric{font-size:23px;font-weight:650;margin:8px 0}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:700}.full{grid-column:1/-1}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.callout{background:#eaf4f4;border-left:3px solid #2f8d8f;border-radius:0 8px 8px 0;padding:16px 20px;margin-top:18px;font-size:14px}.callout strong{display:block;margin-bottom:4px}.footnote{font-size:12px;color:var(--muted);margin:10px 0}.refs{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.refs a{font-size:12px}.section-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin:0 0 20px}.section-header h2{margin:0;font-size:24px;letter-spacing:-.4px}.section-header p{font-size:14px;color:var(--muted);margin:4px 0 0}
+.timeline-shell{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.timeline-head{padding:22px 25px;background:var(--deep);color:white}.timeline-head h2{font-size:20px;margin:0}.timeline-head p{font-size:13px;color:#cde2e9;margin:6px 0 0}.timeline-content{padding:20px 25px}.link-note{font-size:13px;background:#f0f5f7;border-radius:7px;padding:10px 14px;color:#526b79}.axis-wrap{overflow-x:auto}.timeline{position:relative;height:284px;display:grid;grid-template-columns:repeat(var(--events),1fr);min-width:690px;margin:4px 12px 0}.timeline:before{content:"";position:absolute;left:6%;right:6%;top:141px;height:3px;background:#cfdde3}.event{border:0;background:transparent;position:relative;padding:0 8px;text-align:center;color:var(--ink)}.event .node{position:absolute;width:15px;height:15px;border-radius:50%;background:var(--teal);top:135px;left:calc(50% - 7px);z-index:1;border:3px solid white;box-shadow:0 0 0 1px var(--teal)}.event.selected-event .node{background:#de9c2d;box-shadow:0 0 0 5px #f6e6c9;border-color:white}.event:nth-child(5) .node{background:#aa7337}.event .event-label{position:absolute;left:0;right:0;padding:0 8px;top:32px;line-height:1.3}.event:nth-child(even) .event-label{top:164px}.event .year{display:block;font-size:18px;font-weight:750;margin-bottom:4px}.event .event-title{display:block;font-size:13px;font-weight:650}.event .event-type{font-size:11px;display:block;color:var(--muted);margin-top:5px}.event-detail{border-top:1px solid var(--line);padding:17px 0 0;min-height:130px}.event-detail h3{font-size:16px;margin:0 0 6px}.event-detail p{font-size:14px;margin:4px 0;color:var(--muted)}.status-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:16px;margin-top:16px}.status-grid .metric{font-size:21px}.status-grid small{font-size:12px;color:var(--muted);display:block;margin-top:8px}
+details{border:1px solid var(--line);border-radius:9px;background:white;padding:14px 18px;margin-top:16px}summary{cursor:pointer;font-weight:600;font-size:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;color:#385462;max-height:440px;overflow:auto;font-family:Consolas,monospace}table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600}
+.slack-frame{max-width:850px;background:white;border:1px solid var(--line);border-radius:12px;margin:auto;overflow:hidden}.slack-top{background:#f0edf5;padding:15px 22px;font-weight:650;border-bottom:1px solid #e0dce8}.slack-message{display:flex;gap:12px;padding:20px 24px;border-bottom:1px solid #e9edf0}.avatar{background:var(--teal);color:white;border-radius:8px;padding:7px;width:38px;height:38px;flex-shrink:0;text-align:center;font-weight:700}.message-body{min-width:0;flex:1}.message-body h3{font-size:14px;margin:0}.message-body .body{font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}.app-tag{font-size:10px;background:#e9edf0;border-radius:3px;padding:2px 4px;margin-left:4px;color:#52636d}.file-chip{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:12px;margin:5px 5px 0 0;background:#f8fafb}
+.sources{display:grid;grid-template-columns:1fr 1fr;gap:12px}.source-item{padding:15px;border:1px solid var(--line);border-radius:8px;background:white}.source-item h3{font-size:14px;margin:0}.source-item p{font-size:12px;margin:5px 0;color:var(--muted)}.footer{display:flex;justify-content:space-between;margin-top:24px;border-top:1px solid var(--line);padding-top:16px;font-size:12px;color:var(--muted)}
+.presentation aside{display:none}.presentation main{margin:0 auto;max-width:1340px}.presentation #load-label{display:none}.hidden{display:none}#error{color:#91352c;background:#fff0ed;padding:10px;margin-bottom:15px;border:1px solid #e5b9b0;border-radius:8px}
+@media(max-width:1050px){aside{width:210px;padding:24px 16px}main{margin-left:210px;padding:20px}.hero h1{font-size:29px}.grid{gap:10px}.card{padding:16px}}
+@media(max-width:760px){aside{display:none}main{margin:0;padding:16px}.grid,.two,.status-grid,.sources{grid-template-columns:1fr}.hero{padding:24px}.hero h1{font-size:28px}.top{align-items:flex-start}.actions{flex-wrap:wrap;justify-content:flex-end}.hero-bottom{align-items:flex-start;flex-direction:column}nav{overflow-x:auto}.tab{white-space:nowrap;padding:10px 12px}.section-header{display:block}.footer{display:block}}
+@media print{aside,.actions,nav{display:none}main{margin:0;padding:0}.panel[hidden]{display:block}.panel{break-before:page}.hero{background:white;color:var(--ink)}.hero p,.hero .sub,.snapshot{color:var(--muted)}details{display:none}}
+</style>
+</head>
+<body>
+<aside>
+<div class="brand"><span class="logo">M</span>MetaboCausal</div>
+<p>Genes · Disease · Evidence</p>
+<h3>Worked example</h3>
+<div class="selected"><strong id="side-pair"></strong><small id="side-gene"></small></div>
+<h3>Evidence in this example</h3>
+<div class="source-label"><span class="dot"></span> EpiGraphDB / MR-EVE</div>
+<div class="source-label"><span class="dot"></span> Metabolite gene atlas</div>
+<div class="source-label"><span class="dot"></span> Original research papers</div>
+<div class="source-label"><span class="dot"></span> ClinicalTrials.gov</div>
+<div class="source-label"><span class="dot"></span> FDA records</div>
+<h3>A saved, inspectable example</h3>
+<p>This page opens locally. Reading it makes no database or model requests. Source links open the original records.</p>
+<p>New evidence can be shown in a new version of the same report.</p>
+<button class="btn" id="download">Download evidence</button>
+</aside>
+<main>
+<div class="top"><span class="sub">Evidence workspace</span><div class="actions"><label class="btn" id="load-label">Open snapshot<input id="load" type="file" accept=".json,application/json" hidden></label><button class="btn" id="present">Presentation mode</button></div></div>
+<div id="error" hidden role="alert"></div>
+<header class="hero">
+<div class="sub">MetaboCausal / worked example</div>
+<h1 id="headline"></h1><p id="intro"></p>
+<div class="hero-bottom"><div class="pair" id="pair"></div><span class="snapshot" id="snapshot"></span></div>
+</header>
+<nav role="tablist" aria-label="Evidence views">
+<button class="tab" id="tab-evidence" role="tab" aria-controls="evidence" aria-selected="true" data-tab="evidence">Evidence card</button>
+<button class="tab" id="tab-insights" role="tab" aria-controls="insights" aria-selected="false" data-tab="insights">Genetic Insights</button>
+<button class="tab" id="tab-slack" role="tab" aria-controls="slack" aria-selected="false" data-tab="slack">Slack preview</button>
+<button class="tab" id="tab-updates" role="tab" aria-controls="updates" aria-selected="false" data-tab="updates">What's next</button>
+</nav>
+<section id="evidence" class="panel" role="tabpanel" aria-labelledby="tab-evidence">
+<div class="section-header"><div><h2>One question. Evidence you can inspect.</h2><p id="question-text"></p></div><span class="pill">Saved evidence</span></div>
+<div class="grid" id="highlights"></div>
+<div class="two" id="evidence-sections"></div>
+<details><summary>Selected original MR row and gene annotation</summary><p class="footnote">Original source values are preserved. No treatment effect or confidence level is inferred from the source CI.</p><pre id="raw"></pre></details>
+<details><summary id="legacy-label">Archived full MVP1 report</summary><p class="footnote" id="legacy-note"></p><pre id="legacy"></pre></details>
+</section>
+<section id="insights" class="panel" role="tabpanel" aria-labelledby="tab-insights" hidden>
+<div class="section-header"><div><h2>Genetic Insights</h2><p>Trace the evidence through time, including what happened in the clinic.</p></div><span class="pill muted">Curated example</span></div>
+<div id="timeline-capture" class="timeline-shell">
+<div class="timeline-head"><h2 id="timeline-title"></h2><p>Selected milestones · genetic context and a related urate-lowering intervention</p></div>
+<div class="timeline-content"><div class="link-note" id="relationship"></div>
+<div class="axis-wrap"><div class="timeline" id="timeline"></div></div>
+<p class="footnote">Milestones are ordered by date and spaced for readability. Select a point to inspect its evidence.</p>
+<div class="event-detail" id="event-detail" aria-live="polite"></div></div>
+</div>
+<div class="status-grid" id="status"></div>
+<details><summary>Sources and evidence boundaries</summary><div class="sources" id="sources"></div></details>
+</section>
+<section id="slack" class="panel" role="tabpanel" aria-labelledby="tab-slack" hidden>
+<div class="section-header"><div><h2>The same evidence, in the team conversation.</h2><p>Local preview of the prepared Slack content. Live delivery has not been verified.</p></div><button class="btn" id="copy-slack">Copy Slack text</button></div>
+<div class="slack-frame"><div class="slack-top">MetaboCausal · evidence thread</div><div id="slack-content"></div></div>
+</section>
+<section id="updates" class="panel" role="tabpanel" aria-labelledby="tab-updates" hidden>
+<div class="section-header"><div><h2>Build on the evidence already here.</h2><p>Keep each recording tied to its own result version.</p></div></div>
+<div class="two" id="modules"></div>
+<div class="callout"><strong>From a recording prototype to a shared product</strong>The next investment is reliable evidence updates, evaluation, and shared access: merge new papers once, check scientific links, refresh clinical records, and deliver the same result in the report and Slack.</div>
+</section>
+<footer class="footer"><span>MetaboCausal · What should we test next?</span><span id="footer-version"></span></footer>
+</main>
+<script type="application/json" id="initial-data">{
+  "schema_version": "1.0",
+  "snapshot_id": "mvp1-urate-gout-2026-09-12-v1",
+  "checked_at": "2026-09-12",
+  "mode": "Curated recording demo · saved evidence",
+  "pair": {
+    "metabolite": "Urate",
+    "gene": "SLC2A9",
+    "disease": "Gout",
+    "exposure_id": "ieu-a-789",
+    "outcome_dataset_id": "ieu-a-1054"
+  },
+  "headline": "From genetic evidence to the next research question.",
+  "summary": "Inspect an existing urate–gout finding, the SLC2A9 gene context, and the clinical history of a related urate-lowering treatment.",
+  "relationship_note": "Febuxostat acts through xanthine oxidase inhibition. SLC2A9 is the genetic context here, not its drug target. Chronology does not establish that genetics drove the development decision.",
+  "sections": [
+    {
+      "id": "question",
+      "title": "The question",
+      "text": "For urate and gout, what genetic evidence is already available, what gene context can we explain, and what can related clinical experience teach a research team?",
+      "source_ids": [
+        "baseline",
+        "atlas"
+      ]
+    },
+    {
+      "id": "mr",
+      "title": "Retrieved genetic evidence",
+      "text": "The selected MVP1 record contains a positive pre-computed MR estimate for urate and gout. It was retrieved from MR-EVE, not recomputed here. Method and deposited dataset IDs remain attached to the original values.",
+      "source_ids": [
+        "baseline"
+      ]
+    },
+    {
+      "id": "gene",
+      "title": "Gene context: SLC2A9",
+      "text": "The project atlas nominates SLC2A9 by proximity to rs938554. Separately, the 2008 paper provides human genetic and experimental evidence for urate transport. These are different evidence types and remain separately attributed.",
+      "source_ids": [
+        "atlas",
+        "vitart",
+        "caulfield"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "Related clinical experience",
+      "text": "Febuxostat lowers urate by inhibiting xanthine oxidase. It is included through the direct urate-lowering route, not as an SLC2A9-targeted treatment. CARES adds a cardiovascular-safety question in a specific gout population.",
+      "source_ids": [
+        "label",
+        "cares"
+      ]
+    },
+    {
+      "id": "decision",
+      "title": "What to check next",
+      "text": "A molecule-level genetic finding does not settle the safety of a particular drug. Review the MR design and missing diagnostics, then evaluate target mechanism, intended population and clinical endpoints separately.",
+      "source_ids": [
+        "baseline",
+        "atlas",
+        "cares_paper"
+      ]
+    },
+    {
+      "id": "limitations",
+      "title": "What remains uncertain",
+      "text": "Colocalisation and gene-QTL evidence were not queried in the selected baseline record. Nearest-gene assignment does not prove mediation. MR confidence-interval scale and level are unspecified in the source. This selected chronology is not an exhaustive clinical review.",
+      "source_ids": [
+        "baseline",
+        "atlas"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "slc2a9-2008",
+      "date": "2008-03-09",
+      "precision": "day",
+      "type": "Genetic evidence",
+      "title": "SLC2A9, urate \u0026 gout",
+      "description": "Human genetic associations and urate-transport experiments connect SLC2A9 with urate handling and gout.",
+      "source_ids": [
+        "vitart"
+      ],
+      "scope": "Gene / metabolite / disease evidence"
+    },
+    {
+      "id": "fda-2009",
+      "date": "2009-02-13",
+      "precision": "day",
+      "type": "US approval",
+      "title": "Febuxostat approved",
+      "description": "FDA approved febuxostat for hyperuricemia in adults with gout. It lowers urate through xanthine oxidase inhibition, a different mechanism from SLC2A9 transport.",
+      "source_ids": [
+        "approval",
+        "label"
+      ],
+      "scope": "Direct urate-lowering intervention context"
+    },
+    {
+      "id": "cares-start",
+      "date": "2010-04-23",
+      "precision": "day",
+      "type": "Clinical trial",
+      "title": "CARES begins",
+      "description": "Randomized febuxostat versus allopurinol cardiovascular-safety study in people with gout and cardiovascular comorbidities. Registry phase: Phase 3; official title: Phase 3B.",
+      "source_ids": [
+        "cares"
+      ],
+      "scope": "Safety in the specified gout population"
+    },
+    {
+      "id": "cares-results",
+      "date": "2018-03-12",
+      "precision": "day",
+      "type": "Clinical results",
+      "title": "Benefits \u0026 risks diverge",
+      "description": "The primary cardiovascular composite met noninferiority; cardiovascular and all-cause mortality were higher with febuxostat than allopurinol in CARES.",
+      "source_ids": [
+        "cares_paper"
+      ],
+      "scope": "Trial-specific safety result"
+    },
+    {
+      "id": "fda-2019",
+      "date": "2019-02-21",
+      "precision": "day",
+      "type": "Label update",
+      "title": "US boxed warning",
+      "description": "FDA approved a boxed warning and a narrower indication following CARES. This is a safety-related label change, not a withdrawal of all urate-lowering treatments.",
+      "source_ids": [
+        "warning"
+      ],
+      "scope": "US regulatory update"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baseline",
+      "title": "MVP1 urate–gout MR record",
+      "url": "https://epigraphdb.org/mr",
+      "location": "metabolite_disease.csv, CSV record 8815 (header = 1)",
+      "note": "Exact original row is included in provenance. The web link identifies the database; the saved row establishes this snapshot."
+    },
+    {
+      "id": "atlas",
+      "title": "MVP1 SLC2A9 annotation",
+      "url": "https://doi.org/10.1038/ng.2982",
+      "location": "triples.csv.gz, decompressed CSV record 843481 (header = 1); atlas rs938554",
+      "note": "Source gene attribution is nearest, Shin 2014. This is a candidate annotation, not confirmed mediation."
+    },
+    {
+      "id": "vitart",
+      "title": "Vitart et al., Nature Genetics (2008)",
+      "url": "https://doi.org/10.1038/ng.106",
+      "location": "Abstract; online publication 2008-03-09; PMID 18327257",
+      "note": "Genetic associations with urate/excretion/gout and experimental urate transport. Added for this curated demo."
+    },
+    {
+      "id": "caulfield",
+      "title": "Caulfield et al., PLoS Medicine (2008)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18842065/",
+      "location": "Abstract; 2008-10 (month precision); DOI 10.1371/journal.pmed.0050197",
+      "note": "Functional urate-transport evidence; do not treat a metadata day of 01 as a verified publication day."
+    },
+    {
+      "id": "approval",
+      "title": "FDA original febuxostat approval (2009)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021856s000ltr.pdf",
+      "location": "NDA 21-856 original approval; February 13, 2009, also referenced in the 2019 supplement letter",
+      "note": "US regulatory event; not proof of the SLC2A9 mechanism."
+    },
+    {
+      "id": "cares",
+      "title": "ClinicalTrials.gov — CARES",
+      "url": "https://clinicaltrials.gov/study/NCT01101035",
+      "location": "protocolSection: identificationModule, statusModule, designModule, eligibilityModule",
+      "note": "Gout participants with cardiovascular comorbidities. Cardiovascular safety outcome; not a gout-onset prevention trial."
+    },
+    {
+      "id": "cares_paper",
+      "title": "White et al., NEJM (2018)",
+      "url": "https://doi.org/10.1056/NEJMoa1710895",
+      "location": "Abstract; published online 2018-03-12; PMID 29527974",
+      "note": "Noninferior primary cardiovascular composite; higher cardiovascular and all-cause mortality with febuxostat versus allopurinol in this trial population."
+    },
+    {
+      "id": "warning",
+      "title": "FDA label-change approval (2019)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/021856Orig1s013ltr.pdf",
+      "location": "Pages 1 and 3; signature dated 2019-02-21",
+      "note": "CARES-related labeling change, boxed warning and modification of indication."
+    },
+    {
+      "id": "label",
+      "title": "FDA labeling record — Uloric",
+      "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22\u0026limit=1",
+      "location": "label ID 16c36a5a-2f72-4df7-aa6f-1ca27a39404f; effective_time 2025-12-24; mechanism_of_action, indications_and_usage, boxed_warning",
+      "note": "Retrieved label retains a cardiovascular-death boxed warning and a restricted gout indication. One selected label record; not an exhaustive labeling or global programme search."
+    }
+  ],
+  "current_status": {
+    "trial_id": "NCT01101035",
+    "trial_phase": "PHASE3",
+    "trial_status": "COMPLETED",
+    "trial_updated_at": "2018-06-14",
+    "trial_description": "CARES cardiovascular-safety study in gout with cardiovascular comorbidities",
+    "regulatory": "US approval with a cardiovascular-death boxed warning and restricted indication in the retrieved label.",
+    "label_effective_at": "2025-12-24",
+    "programme_status": "Not assessed beyond this selected study and label.",
+    "source_ids": [
+      "cares",
+      "label"
+    ]
+  },
+  "modules": [
+    {
+      "name": "MVP1",
+      "status": "Saved evidence available",
+      "detail": "Existing MR record, atlas annotation and archived full report."
+    },
+    {
+      "name": "Genetic Insights",
+      "status": "Curated example ready",
+      "detail": "Five source-linked milestones; automatic all-pair preparation remains integration work."
+    },
+    {
+      "name": "Jingrui · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Seed papers and Europe PMC literature evidence."
+    },
+    {
+      "name": "Ziwei · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Semantic Scholar evidence, merged by paper identity."
+    },
+    {
+      "name": "Zipeng · MVP3",
+      "status": "Awaiting accepted output",
+      "detail": "Human-GEM biochemical context."
+    },
+    {
+      "name": "Slack",
+      "status": "Export ready; live delivery unverified",
+      "detail": "Same snapshot produces Slack text and attachments; Zhang Hao connects the bot."
+    },
+    {
+      "name": "LLM interpretation",
+      "status": "No model run for this demo",
+      "detail": "The visible summary was prepared for the saved example. OpenAI/Claude code support is separate."
+    }
+  ],
+  "provenance": {
+    "preparation": "Curated primary-source supplement to existing MVP1 data. Not generated by the unfinished MVP2/MVP3 pipeline.",
+    "code_commit": "fb98afe7edcdc9f229ad2c2bc3ca44811f2479a3",
+    "baseline": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "row": {
+        "metabolite_name": "urate",
+        "metabolite_chebi": "",
+        "disease_trait": "Gout",
+        "disease_id": "ieu-a-1054",
+        "exposure_id": "ieu-a-789",
+        "exposure_trait": "Urate",
+        "b": "1.3665151455190399",
+        "se": "0.106814322383297",
+        "ci_low": "0.58120187185338",
+        "ci_upp": "2.1518284191846897",
+        "pval": "1.7855974619591198e-37",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/urate-83547f7b.md",
+        "retrieved_at": "2026-09-11T22:20:24.015737+00:00",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "10",
+        "source_detail_status": "ok",
+        "record_type": "metabolite_disease_evidence",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "1",
+        "atlas_loci_available": "3"
+      },
+      "line": 8815
+    },
+    "triple": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/triples.csv.gz",
+      "sha256": "0560f29748107446bd3d1c45602bf76d3c576e0acf05d91a6fd30f57b7327844",
+      "row": {
+        "metabolite_name": "urate",
+        "metabolite_chebi": "",
+        "ensembl_gene_id": "",
+        "gene_symbol": "SLC2A9",
+        "gene_source": "nearest",
+        "atlas": "Shin 2014",
+        "disease_trait": "Gout",
+        "disease_id": "ieu-a-1054",
+        "exposure_id": "ieu-a-789",
+        "exposure_trait": "Urate",
+        "b": "1.3665151455190399",
+        "se": "0.106814322383297",
+        "ci_low": "0.58120187185338",
+        "ci_upp": "2.1518284191846897",
+        "pval": "1.7855974619591198e-37",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/urate-83547f7b.md",
+        "retrieved_at": "2026-09-11T22:20:24.015737+00:00",
+        "source_gene_symbol": "SLC2A9",
+        "gene_annotation_resolution": "single_source_label",
+        "ensembl_resolution": "not_reported_or_ambiguous_atlas_ids",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "gene_qtl_h4": "",
+        "gene_qtl_h3": "",
+        "gene_qtl_clpp": "",
+        "gene_qtl_method": "",
+        "gene_qtl_locus": "",
+        "gene_qtl_study_id": "",
+        "gene_qtl_status": "not_queried",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "10",
+        "supporting_atlas_loci": "1",
+        "source_detail_status": "ok",
+        "record_type": "gene_annotated_candidate",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "1",
+        "atlas_loci_available": "3"
+      },
+      "line": 843481
+    },
+    "atlas": {
+      "path": "data/atlas_locus_gene.csv",
+      "sha256": "5af6d4c388dbd413d8aa7e7f8dd9e7d6bc7e2d338716796a6d68f90b0485c052",
+      "records": [
+        {
+          "line": 43683,
+          "row": {
+            "metabolite_name": "urate",
+            "chebi": "",
+            "ensembl_gene_id": "",
+            "rsid": "rs9994216",
+            "chr": "4",
+            "pos": "9982917",
+            "gene_symbol": "N/A",
+            "gene_source": "author_prioritized",
+            "atlas": "Chen 2023",
+            "year": "2023",
+            "note": ""
+          }
+        },
+        {
+          "line": 43749,
+          "row": {
+            "metabolite_name": "urate",
+            "chebi": "",
+            "ensembl_gene_id": "",
+            "rsid": "rs2231142",
+            "chr": "4",
+            "pos": "88131171",
+            "gene_symbol": "N/A",
+            "gene_source": "author_prioritized",
+            "atlas": "Chen 2023",
+            "year": "2023",
+            "note": ""
+          }
+        },
+        {
+          "line": 45058,
+          "row": {
+            "metabolite_name": "urate",
+            "chebi": "",
+            "ensembl_gene_id": "",
+            "rsid": "rs938554",
+            "chr": "",
+            "pos": "",
+            "gene_symbol": "SLC2A9",
+            "gene_source": "nearest",
+            "atlas": "Shin 2014",
+            "year": "2014",
+            "note": ""
+          }
+        }
+      ]
+    },
+    "source_receipts": {
+      "trial": {
+        "file": "sources/trial.json",
+        "url": "https://clinicaltrials.gov/api/v2/studies/NCT01101035",
+        "retrieved_at": "2026-09-12T18:02:50.779780+00:00",
+        "sha256": "5da4269a65c3de477c394ee9359af562043830b87e1548b2e78a0e31002a6b3d"
+      },
+      "papers": {
+        "file": "sources/papers.json",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A18327257+OR+EXT_ID%3A18842065+OR+DOI%3A10.1056%2FNEJMoa1710895\u0026format=json\u0026resultType=core",
+        "retrieved_at": "2026-09-12T18:02:51.632542+00:00",
+        "sha256": "d4b3f5c0dce6c6cd1d269546706f022a1e05f89c4bcc25292c6a6edeaa68d662"
+      },
+      "label": {
+        "file": "sources/label.json",
+        "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ULORIC%22\u0026limit=1",
+        "retrieved_at": "2026-09-12T18:02:52.305195+00:00",
+        "sha256": "6774ab7774e82cc281a809d2533864051011f248e9811082333194b74ae69636"
+      }
+    },
+    "note": "CSV record positions include header=1. Outcome dataset IDs are not disease ontology IDs. Do not count repeated methods or dataset aliases as independent studies."
+  },
+  "legacy_report": {
+    "label": "Archived full MVP1 report · run dated 2026-09-10",
+    "text": "# MetaboCausal evidence card - urate x gout\n\n## 1. Requested pair and resolved IDs\n\n| Side | Asked for | Resolved label | Id | Resolution |\n|---|---|---|---|---|\n| Metabolite (exposure) | urate | 7,9-dihydro-1H-purine-2,6,8(3H)-trione | CHEBI:17775 | resolved from sample entry `urate\\|gout` |\n| Disease (outcome) | gout | gout | MONDO:0005393 | resolved from sample entry `urate\\|gout` |\n\nSynonyms handed to the metabolite-side tools (15): urate, 7,9-dihydro-1H-purine-2,6,8(3H)-trione, 2,6,8-trioxopurine, 2,6,8-trioxypurine, URIC ACID, purine-2,6,8(1H,3H,9H)-trione, Lithic acid, 2,6,8-trihydroxypurine (showing 8 of 15). Every match in this card is made on these strings, case-insensitively, not on the name as it was typed.\n\nSynonyms handed to the disease-side tools (5): gout, chronic gout, gouty arthropathy, tophaceous disease, tophaceous gout. Every match in this card is made on these strings, case-insensitively, not on the name as it was typed.\n\nOne direction only: the metabolite is queried as the EXPOSURE and the disease as the OUTCOME. Nothing on this card is a statement about the reverse direction.\n\n## 2. Evidence state and one-line verdict\n\n**Verdict: State A - retrieved MR.** State A (retrieved MR): 22 estimate(s) carry a numeric effect size, uncertainty and p-value (retrieved MR (get_mr_result): 22). Retrieved from a published or pre-computed source, not computed here. Colocalisation: not queried in this run, so nothing here says whether the two GWAS share a causal variant. Any retrieved MR is retained without this additional supporting layer; colocalisation is not an inclusion requirement.\n\nThe state and the sentence above come from `classify.classify_state`, a pure function over this run's envelopes. No model wrote them and no model can change them.\n\nThe colocalisation clause is an evidence QUALIFIER: `get_colocalisation` runs after the classifier, its envelope is never passed to it, and no H4 on this card can move a pair between states A, B and C.\n\n## 3. Metabolite -\u003e disease genetic evidence\n\nSource: EpiGraphDB MR-EVE - tool `get_mr_result` - status `ok` - retrieved at 2026-09-10T18:12:02.\n\n22 estimate row(s) retrieved from a pre-computed source. They carry 13 distinct (b, se, p): MR-EVE returns one row per method and one row per deposited dataset id, so this is not a count of independent studies. Retrieved, not computed here.\n\nMR-EVE exposure datasets matched (17): ieu-a-788 (Urate), ieu-a-789 (Urate), ieu-a-793 (Urate), ieu-a-1055 (Urate), ieu-a-792 (Urate), ieu-a-796 (Urate), ieu-a-794 (Urate), ieu-a-786 (Urate) (showing 8 of 17).\nMR-EVE outcome datasets matched (3): ieu-a-1054 (Gout), ebi-a-GCST001790 (Gout), finn-a-M13_GOUT (Gout).\n\n| Exposure dataset | Outcome dataset | Method | b | se | p | nsnp | moescore | selection | Source CI (level unspecified) |\n|---|---|---|---|---|---|---|---|---|---|\n| ieu-a-789 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.367 | 0.1068 | 1.79e-37 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-789 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.367 | 0.1068 | 1.79e-37 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-795 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.678 | 0.1323 | 6.76e-37 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-795 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.678 | 0.1323 | 6.76e-37 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-791 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.223 | 0.1006 | 5.26e-34 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-791 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.223 | 0.1006 | 5.26e-34 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-796 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.966 | 0.1662 | 2.77e-32 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-796 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.966 | 0.1662 | 2.77e-32 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-797 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.105 | 0.09929 | 9.13e-29 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-797 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.105 | 0.09929 | 9.13e-29 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-790 (Urate) | ieu-a-1054 (Gout) | FE IVW | 1.380 | 0.1296 | 1.75e-26 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ieu-a-790 (Urate) | ebi-a-GCST001790 (Gout) | FE IVW | 1.380 | 0.1296 | 1.75e-26 | n/a (not returned by this snapshot) | 1.000 | DF | not retrieved |\n| ukb-d-30880_irnt (Urate) | ebi-a-GCST001790 (Gout) | Simple mean | 1.902 | 0.1707 | 7.19e-18 | n/a (not returned by this snapshot) | 0.9200 | HF | not retrieved |\n| ukb-d-30880_irnt (Urate) | ieu-a-1054 (Gout) | Simple mean | 1.889 | 0.1768 | 5.27e-17 | n/a (not returned by this snapshot) | 0.9500 | HF | not retrieved |\n| ukb-d-30880_raw (Urate) | ebi-a-GCST001790 (Gout) | Simple mean | 0.02270 | 0.002248 | 1.46e-15 | n/a (not returned by this snapshot) | 0.9200 | HF | not retrieved |\n\nTable capped: 15 of 22 retrieved row(s) are shown, sorted by retrieved p-value (smallest first). The rows not shown are in the ledger named in section 11.\n\n- nsnp is shown when retrieved from the source; a missing value prints as \"n/a (not returned by this snapshot)\" rather than as a number.\n- moescore is the MR-EVE mixture-of-experts score (0-1) for how appropriate the automatically chosen method was. It is NOT a p-value and not a confidence that the effect is causal.\n- Effect sizes are per unit of each exposure dataset's OWN scale and are not comparable across rows; the exposure and outcome dataset ids are printed beside every number for exactly that reason.\n\n**MR sensitivity and source completeness**\n\nDirection agreement below describes retrieved estimates, not independent replication or a passed robustness test. A non-significant p-value is not evidence of no effect.\n\n| Exposure | Outcome | Selection | Retrieved methods | Direction check |\n|---|---|---|---|---|\n| ieu-a-789 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-789 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-795 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-795 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-791 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-791 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-796 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-796 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-797 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-797 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-790 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-790 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ukb-d-30880_irnt | ebi-a-GCST001790 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ukb-d-30880_irnt | ieu-a-1054 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ukb-d-30880_raw | ebi-a-GCST001790 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ukb-d-30880_raw | ieu-a-1054 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ieu-a-792 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-792 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-1055 | ieu-a-1054 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ieu-a-1055 | ebi-a-GCST001790 | HF | Simple mean | Only one reported method; cross-method agreement not assessable |\n| ieu-a-793 | ieu-a-1054 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n| ieu-a-793 | ebi-a-GCST001790 | DF | FE IVW | Only one reported method; cross-method agreement not assessable |\n\nSteiger directionality: not reported by this resource. Heterogeneity Q: not reported. Egger intercept: not reported. LD check: not reported. Colocalisation: see the colocalisation section (retrieved separately from Open Targets).\nMR-PRESSO, leave-one-out and sample overlap diagnostics are also not reported. Missing diagnostics do not mean these checks passed.\nSource CI bounds are printed verbatim when available. Their confidence level, construction and scale metadata are unspecified. The forest uses valid source bounds first, otherwise b +/- 1.96 se with positive se, labelled as derived. Source properties and Cypher request are retained in the ledger; REST fallback and older cached rows may lack these details.\n\n**Retrieved colocalisation (Open Targets)**\n\n`get_colocalisation` did not run in this run, so nothing was retrieved about a shared causal variant. That is a gap in what was queried, not a finding.\n\n## 4. Instruments and feasibility\n\n### Exposure datasets (metabolite instruments)\n\nSource: OpenGWAS (gwasinfo index + tophits) - tool `get_mqtl_instruments` - status `ok` - retrieved at 2026-09-10T18:12:04.\n\n| Dataset | Trait | Platform | Unit | Sample size | Population | Sex | Year | Build | GWS hits | Weak (F\u003c10) | F range | Note (from the source) |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| ieu-b-5137 | Urate | not recorded by this source | SD | 440,466 | European | Males and Females | 2024 | HG19/GRCh37 | 323 | 0 | 24.24 to 2.021e+04 | not recorded by this source |\n| ieu-a-1055 | Urate | not recorded by this source | mg/dl | 110,347 | European | Males and Females | 2013 | HG19/GRCh37 | 25 | 0 | 35.39 to 3638 | Effect allele frequencies are missing |\n| bbj-a-57 | Uric acid | not recorded by this source | not recorded by this source | 109,029 | East Asian | Males and Females | 2019 | HG19/GRCh37 | 43 | 0 | 30.87 to 1255 | not recorded by this source |\n| ieu-a-786 | Urate | not recorded by this source | SD (mg/dL) | 42,741 | European | Males and Females | 2015 | HG19/GRCh37 | 0 | 0 | not retrieved | BMI by SNP interaction all; effect allele frequencies are missing |\n| ieu-a-787 | Urate | not recorded by this source | SD (mg/dL) | 42,741 | European | Males | 2015 | HG19/GRCh37 | 0 | 0 | not retrieved | BMI by SNP interaction men; effect allele frequencies are missing |\n| ieu-a-788 | Urate | not recorded by this source | SD (mg/dL) | 42,741 | European | Females | 2015 | HG19/GRCh37 | 0 | 0 | not retrieved | BMI by SNP interaction women; effect allele frequencies are missing |\n\nRead the Sex and Note columns before reading any row as an exposure: a sex-stratified deposit and an interaction scan are different datasets from a main-effect GWAS of the same trait, and an interaction beta measures how a SNP effect changes with the modifier, so F = (beta/se)^2 on it is not instrument strength.\n\nCapped by the tool: 6 of the 22 dataset(s) named by these synonyms were queried, the largest by sample size. The other 16 were never opened, so nothing here says anything about them.\n\nStrongest retrieved hit per dataset (by retrieved p-value):\n- ieu-b-5137: rs58656183 (chr4:9,927,898, A/G, eaf 0.7213) beta 0.2733, se 0.001922, p 1.00e-200, F 2.021e+04\n- ieu-a-1055: rs12498742 (chr4:9,944,052, G/A, eaf not retrieved) beta -0.3800, se 0.006300, p 1.00e-200, F 3638\n- bbj-a-57: rs477138 (chr11:64,461,973, G/C, eaf 0.1609) beta -0.2061, se 0.005818, p 6.11e-275, F 1255\n- ieu-a-786: no example hit was returned for this dataset.\n- ieu-a-787: no example hit was returned for this dataset.\n- ieu-a-788: no example hit was returned for this dataset.\n\nF = (beta/se)^2 on the retrieved hit, arithmetic on retrieved numbers; weak means F \u003c 10. It is not the first-stage F of a fitted MR, because no MR was fitted here, and it may be upward-biased by winner's curse. These are the feasibility arm's instruments, NOT necessarily the instruments behind the retrieved MR estimates in section 3; these F statistics do not describe those MR rows.\n\nGWS hits are OpenGWAS's own PRE-CLUMPED tophits at p \u003c 5e-8: independent loci, retrieved as a count, not selected or clumped here.\n\n### Outcome datasets (disease)\n\nSource: OpenGWAS (gwasinfo index + tophits) - tool `find_outcome_datasets` - status `ok` - retrieved at 2026-09-10T18:12:04.\n\n| Dataset | Trait | Sample size | Cases | Controls | Population | Year | Author | Consortium | Build |\n|---|---|---|---|---|---|---|---|---|---|\n| ebi-a-GCST90038687 | Gout | 484,598 | 6,810 | 477,788 | not recorded by this source | 2021 | D\u003cU+00F6\u003enerta\u003cU+015F\u003e HM | not recorded by this source | HG19/GRCh37 |\n| ebi-a-GCST001790 | Gout | 69,374 | 2,115 | 67,259 | European | 2012 | K\u003cc3\u003e\u003cb6\u003ettgen A | not recorded by this source | HG19/GRCh37 |\n| ieu-a-1054 | Gout | 69,374 | 2,115 | 67,259 | European | 2013 | Kottgen | GUGC | HG19/GRCh37 |\n\nCapped by the tool: 3 of the 4 matched dataset(s) are returned. The rest are named in the caveats, not hidden.\n\nOne or more author or consortium names above carry the source's own broken non-ASCII escapes (for example \"D\u003cU+00F6\u003enerta\u003cU+015F\u003e HM\"). They are printed exactly as OpenGWAS wrote them and are not repaired here.\n\n### GWAS Catalog (context only)\n\nSource: GWAS Catalog (EBI) REST API - tool `get_gwas_catalog` - status `ok` - retrieved at 2026-09-10T18:13:40.\n\nTrait MONDO_0005393 (gout): 200 of 1,420 curated association(s) kept, 72 mapped-gene row(s) retrieved.\n\nCapped by the tool: 200 of the 1,420 retrieved association(s) are kept in the envelope; 1,220 weaker row(s) were dropped after download.\n\nCatalog rows are curated trait-variant ASSOCIATIONS from published GWAS: no MR, no instrument, no direction of causation. They are context, and they are not a classifier input - an association can never move the A/B/C state.\n\n## 5. Effector genes by source\n\nGWAS Catalog mapped genes for the disease trait: 14 distinct gene symbol(s) across 72 mapped-gene row(s).\n\n| Gene | Variants | rsIDs | How the Catalog named it |\n|---|---|---|---|\n| ABCG2 | 5 | rs1481012, rs2231142, rs2725217, rs2728099 (showing 4 of 5) | variant inside the gene body; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| PKD2 | 5 | rs1481012, rs2231142, rs2725217, rs2728099 (showing 4 of 5) | variant inside the gene body; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| LOC124900664 | 3 | rs10805346, rs6449137, rs7675964 | intergenic, nearest variant 66,670 bp away; mapped by NCBI |\n| LOC124900730 | 3 | rs2725217, rs2728099, rs2728109 | intergenic, nearest variant 62,802 bp away; mapped by NCBI |\n| RNA5SP154 | 3 | rs10805346, rs6449137, rs7675964 | intergenic, nearest variant 125,862 bp away; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| RNU1-36P | 3 | rs2725217, rs2728099, rs2728109 | intergenic, nearest variant 36,170 bp away; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| SLC2A9 | 3 | rs10805346, rs6449137, rs7675964 | variant inside the gene body; mapped by Ensembl, NCBI |\n| SLC2A9-AS1 | 3 | rs10805346, rs6449137, rs7675964 | intergenic, nearest variant 48,313 bp away; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| SPP1 | 3 | rs2725217, rs2728099, rs2728109 | intergenic, nearest variant 53,039 bp away; mapped by Ensembl, NCBI |\n| LOC124900867 | 2 | rs1481012, rs2231142 | intergenic, nearest variant 27,215 bp away; closest gene to at least one variant; mapped by NCBI |\n| RNU6-818P | 2 | rs1481012, rs2231142 | intergenic, nearest variant 70,532 bp away; mapped by Ensembl, NCBI |\n| RNU6ATAC31P | 2 | rs1481012, rs2231142 | intergenic, nearest variant 75,256 bp away; mapped by Ensembl, NCBI |\n| RPL31P24 | 2 | rs1481012, rs2231142 | intergenic, nearest variant 32,368 bp away; closest gene to at least one variant; mapped by Ensembl, NCBI |\n| RNU6-1298P | 1 | rs2231142 | intergenic, nearest variant 95,556 bp away; mapped by Ensembl, NCBI |\n\nThese are the DISEASE's mapped genes, and Catalog mapping is proximity-based. A gene named here is a positional annotation of a variant, not an effector gene of the metabolite and not a target.\n\nThe atlas nomination layer was not queried in this run; the effector mechanism was not assessed.\nAn unresolved effector mechanism does not remove or invalidate retrieved metabolite MR, colocalisation assessments, or instrument feasibility evidence; those layers remain separate.\nNo gene dossier is available in this run; see the atlas status above and run-level notes.\n\nHuman-GEM (MVP3) is not in scope for this build; biochemical reaction mapping was not performed.\n\n**Molecular-QTL colocalisation at the disease's credible sets**\n\n`get_colocalisation` did not run in this run, so no QTL colocalisation was retrieved for any gene.\n\n## 6. Gene dossiers\n\nNo gene dossier is available in this run. This may reflect an unqueried or unresolved effector layer, or an interrupted dossier stage; consult section 5 and the run notes. It does not mean that these genes have no drugs, and does not invalidate any retrieved metabolite MR, colocalisation assessment, or feasibility evidence.\n\n## 7. Via-enzyme protein evidence\n\nVia-enzyme protein evidence (MVP3) is not in scope for this build: no metabolite -\u003e enzyme -\u003e disease hop was retrieved, so nothing is shown here. Absence of this section is a scope decision, not a negative result.\n\n## 8. Caveats\n\n**Run-level notes**\n\n- rendered from data/demo_card_inputs.json, a CACHED SNAPSHOT of these envelopes taken 2026-09-10, not a live run.\n\n**Tools that failed in this run**\n\n- No tool returned an error envelope.\n\n**Caveats declared by the tools, verbatim**\n\n`get_mr_result` (EpiGraphDB MR-EVE):\n- Retrieved from EpiGraphDB MR-EVE (OpenGWAS 2020-10-13 snapshot); automated MR labelled preliminary by the source. Not computed here. One direction only: the metabolite is queried as the EXPOSURE, never as the outcome, so nothing said here is a statement about the reverse direction.\n- This MR-EVE snapshot does not return an SNP count, so nsnp is null on every row.\n- n_estimates counts retrieved ROWS: 22 rows carry 13 distinct (b, se, pval). MR-EVE returns one row per MR method, and a study deposited under several OpenGWAS ids returns one row per id (ieu-a-1054 and ebi-a-GCST001790 are both the 2013 gout GWAS, n=69374), so identical numbers repeat. Never present this as a count of independent studies.\n- Effect sizes are per unit of each exposure dataset's OWN scale and are not comparable across rows: ukb-d-30880_raw reports b per measured unit and ukb-d-30880_irnt b per SD of the same UKB measurement, an ~84x difference. This snapshot carries no `unit` for those datasets, so join exposure_id / outcome_id to the vocabulary (tools._traits) and print the dataset beside every number.\n- moescore is MR-EVE's mixture-of-experts score (0-1) for how appropriate the automatically selected MR method was, and selection is its instrument-selection strategy (DF / HF). Neither is a significance measure, and neither is a confidence that the effect is causal.\n\n`get_mqtl_instruments` (OpenGWAS (gwasinfo index + tophits)):\n- Retrieved from OpenGWAS: the gwasinfo dataset index plus, per dataset, its pre-computed tophits. This is a feasibility report - which datasets exist and whether they carry instruments - and NOT an MR result. No estimate was computed here and nothing here says an effect exists.\n- Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().\n- Capped: 22 dataset(s) measure this metabolite, only the 6 largest by sample size were queried (ieu-b-5137, ieu-a-1055, bbj-a-57, ieu-a-786, ieu-a-787, ieu-a-788); not queried: ieu-a-792, ieu-a-789, ieu-a-793, ieu-a-791, ieu-a-795, ukb-e-30880_CSA, met-a-345, ieu-a-794, ukb-e-30880_AFR, ieu-a-790, ieu-a-797, ieu-a-796, ukb-e-30880_EAS, ukb-e-30880_MID, ukb-d-30880_irnt, ukb-d-30880_raw. Raise max_datasets to see them.\n- gwasinfo carries no platform field, so platform is INFERRED from the id batch prefix: met-a is the Metabolon-type mass-spectrometry panel (Shin 2014), met-c and met-d are Nightingale NMR (met-d being the UK Biobank release). Every other batch - met-b included, which is not a metabolite panel at all but Roederer 2015 immune-cell flow cytometry - is reported with platform null rather than guessed at.\n- gws_hits counts OpenGWAS's own PRE-CLUMPED tophits at p \u003c 5e-8: independent loci, not SNPs. The independence comes from that pre-computed set, built at OpenGWAS's own r2/kb defaults, and NOT from the clump flag this tool sends - measured 2026-09-10, met-d-Gly returns the same 49 rows with clump=1, with clump=0 and with no clump key at all, because preclumped defaults to 1. Clumping on the fly instead (preclumped=0, clump=1) gives a slightly different set: 52 rows in 6.7 s against 0.1 s. The p-value threshold IS applied on top of the pre-clumped set.\n- F is the approximate per-SNP F statistic (beta/se)^2, arithmetic on the retrieved beta and se; weak_instruments counts hits with F \u003c 10. It is NOT the first-stage F of a fitted MR, because no MR was fitted here, and a hit whose se is missing or zero gets no F at all. These betas also come from the same scan that selected the SNPs at p \u003c 5e-8, so every F here is inflated by winner's curse - read it as an upper bound on instrument strength, not an estimate of it.\n- Several datasets of one metabolite are not interchangeable: they are different assays on different scales - ieu-b-5137 (platform unknown, unit 'SD', n=440466) vs ieu-a-1055 (platform unknown, unit 'mg/dl', n=110347) vs bbj-a-57 (platform unknown, unit None, n=109029). Effect sizes across them are not comparable. Print platform / unit / sample_size beside every number and never merge them into one.\n- A sex-stratified dataset or an interaction scan is not a main-effect exposure: an interaction beta measures how the SNP effect changes with the modifier, so F = (beta/se)^2 on it is not instrument strength. sex and note are reported per dataset for exactly this reason - three urate datasets (ieu-a-786/787/788) are otherwise identical rows. In this envelope: ieu-a-786 (sex 'Males and Females', note 'BMI by SNP interaction all; effect allele frequencies are missing'); ieu-a-787 (sex 'Males', note 'BMI by SNP interaction men; effect allele frequencies are missing'); ieu-a-788 (sex 'Females', note 'BMI by SNP interaction women; effect allele frequencies are missing').\n- example_hits is the 5 strongest hits by p-value per dataset, not the whole instrument set; gws_hits is the full count.\n- tophits answers an id it does not recognise with an empty list, exactly as it answers a real dataset that has no genome-wide hit. So gws_hits = 0 means \"no LD-clumped hit at p \u003c 5e-8 in this dataset\" and never \"this measurement has no genetic basis\".\n\n`find_outcome_datasets` (OpenGWAS (gwasinfo index + tophits)):\n- Retrieved from OpenGWAS: the gwasinfo dataset index plus, per dataset, its pre-computed tophits. This is a feasibility report - which datasets exist and whether they carry instruments - and NOT an MR result. No estimate was computed here and nothing here says an effect exists.\n- Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().\n- Ranking: datasets with a recorded sample_size first, then the curated repositories (ebi-, ieu-, finn-) ahead of the rest, then sample size descending. So this list is not a pure size ranking - a large dataset from another batch can sit below a smaller curated one - and the datasets gwasinfo records no sample_size for (every finn-b row) come last however big they are.\n- Capped: 4 outcome dataset(s) match these synonyms, only the top 3 are returned (ebi-a-GCST90038687, ebi-a-GCST001790, ieu-a-1054); not returned: finn-b-M13_GOUT. Raise top_n to see them.\n- Some of these are the SAME study deposited under more than one id (ebi-a-GCST001790 = ieu-a-1054): identical n, ncase and ncontrol. Count them once.\n- ebi-a-GCST001790 and ieu-a-1054 (PMID 23263486) are deposits from the SAME publication (matching PMID) and are not independent outcome datasets - one can be a sub-stage of the other, so their sample sizes differ while the participants do not. Count the study once.\n- ebi-a-GCST90038687: a UK Biobank deposit or a meta-analysis large enough (\u003e= 250,000) that it very likely contains UK Biobank. gwasinfo records no cohort list, so this is a size-based flag, not a verified overlap. Sample overlap is NOT checked here and it is the first thing a two-sample MR reviewer asks. This tool sees one side of the pair at a time, so it cannot tell whether the exposure and outcome GWAS share participants. Overlapping samples bias two-sample MR towards the confounded observational estimate and inflate type-1 error. Check the cohort composition of BOTH datasets before any card says analysis-ready.\n- gwasinfo stores some author / consortium names with broken non-ASCII escapes (ebi-a-GCST90038687, ebi-a-GCST001790; \"K\u003cc3\u003e\u003cb6\u003ettgen A\" is Kottgen A with an umlaut, \"D\u003cU+00F6\u003enerta\u003cU+015F\u003e HM\" is Donertas HM). 1,357 of the 50,056 cached rows carry a \"\u003cU+00xx\u003e\" escape and 20 carry raw byte tokens. The string is reported exactly as the source wrote it - the damage is OpenGWAS's, not this tool's - so a renderer that wants a clean name has to repair it and say it did.\n- gwasinfo records no population for ebi-a-GCST90038687 (it writes the literal \"NA\"), so the ancestry match against the exposure cannot be checked for those datasets from this envelope alone.\n- ncase / ncontrol are reported exactly as gwasinfo wrote them. They are not always a study design: the ukb-e continuous panels carry ncase == sample_size and ncontrol == 0 on a blood measurement, and the finn-b datasets carry case and control counts but no sample_size at all.\n- population is reported per dataset because it has to be checked against the exposure's population before any MR is run; this tool sees only one side of the pair and cannot check it for you.\n\n`get_gwas_catalog` (GWAS Catalog (EBI) REST API):\n- GWAS Catalog rows are curated trait-variant ASSOCIATIONS from published GWAS, not causal estimates: no MR, no instrument, no direction of causation. An odds ratio or beta here is the reported marginal association of one variant with the trait in that study's own scale and ancestry. Retrieved, not computed.\n- Resolved through the ontology id: 'MONDO:0005393' -\u003e MONDO_0005393 ('gout'). The trait name was not searched.\n- This endpoint ignores `size` and `page` (measured 2026-09-10: identical 575 rows with and without size=5\u0026page=0, `page` block null), so the full association set for the trait is transferred on every call and any cap below is applied here, after download, not by the server.\n- Capped: 1420 association(s) were retrieved and the strongest 200 by p-value are kept; 1220 weaker row(s) were dropped after download.\n- beta is the Catalog's own betaNum, which is an UNSIGNED MAGNITUDE - the direction lives in beta_direction (\"increase\" / \"decrease\"). Measured 2026-09-10 on rs1047891: 0 of 566 betaNum values are negative while 255 of them are \"decrease\". Reading beta alone gets the sign wrong on roughly 45% of rows. beta_signed is derived here for convenience (beta with the direction applied, null when the direction is missing); beta and beta_direction are the source's own fields.\n- p-values reported as exactly 0 underflowed double precision in the source; the true exponent survives in pvalue_mantissa / pvalue_exponent (gout's strongest row is 1e-1421). Render those as \"p ~ {mantissa}e{exponent} (reported 0)\", never as p = 0, and note that ranking uses the mantissa/exponent pair for exactly this reason - sorting on the float would tie every underflowed row at the top.\n- 21 of the 200 kept association(s) carry an author-reported gene entry; the rest name none, which is why mapped genes are fetched from the SNP resource separately.\n- Mapped genes come from the SNP resource, one request per variant, and are capped at the strongest 10 variant(s) by p-value: 10 variant(s) queried out of 200 kept association(s), 72 gene row(s) returned.\n- 2 of the 10 queried variant(s) returned no genomic context (chr4:88887327, chr4:89025241): the Catalog also writes positional ids such as chr4:88887327 and HGVS strings, which carry no gene annotation, and an unknown rsid answers 404.\n- No distance cutoff was applied to mapped genes: rows span 0 to 146,949 bp from their variant (16 row(s) at distance 0) and include pseudogenes - rs1165151 returns histone pseudogenes out to 94,826 bp. Sort by distance and state the range before calling any of these an effector gene. Reported, not filtered.\n- Mapped genes are listed once per annotation source, and the two sources disagree about distance (rs1165151 SLC17A3: 11,678 bp per Ensembl, 23,468 bp per NCBI). Both rows are kept exactly as retrieved, so the row count is not a gene count.\n- `is_closest_gene` is the source's own per-source, per-direction flag (nearest upstream and nearest downstream, once for NCBI and once for Ensembl), so several genes carry it at one variant and the gene the variant sits INSIDE need not: at rs1165151 SLC17A1 is distance 0 with is_intergenic false and is_closest_gene false, while SLC17A3, SLC17A4 and LOC124901285 are all flagged closest. Do not read it as \"the\" nearest gene.\n\n## 9. Reasoning\n\nModel reasoning pending integration (section 1F).\n\n## 10. Next action\n\nOpen the retrieved row at its source before quoting it. The smallest retrieved p-value is ieu-a-789 -\u003e ieu-a-1054 (FE IVW): b 1.367, se 0.1068, p 1.79e-37, nsnp n/a (not returned by this snapshot).\n\n- Confirm what one unit of the exposure dataset means before repeating the effect size: raw and rank-inverse-normalised deposits of one measurement differ by orders of magnitude and this snapshot carries no unit for some of them.\n- Treat repeated rows as one study: MR-EVE returns one row per method, and one study deposited under several OpenGWAS ids returns one row per id.\n- No formal sensitivity analysis is retrieved with these MR rows - no heterogeneity or pleiotropy test. Read the source completeness block in section 3; SNP counts are shown where retrieved, and colocalisation is a separate evidence arm.\n- This is one direction only. Nothing here is a statement about the disease acting on the metabolite.\n\n## 11. Provenance\n\nLedger: `demo_urate_gout.ledger.jsonl` - 4 entry(ies) counted by the run, 4 read back at render time.\n\n| # | Tool | Status | Source URL (query cut at 80 characters) | Retrieved at |\n|---|---|---|---|---|\n| 1 | get_mr_result | ok | api.epigraphdb.org/mr?exposure_trait=Urate\u0026pval_threshold=1.0\u0026outcome_trait=Gout | 2026-09-10T18:12:02 |\n| 2 | get_mqtl_instruments | ok | api.opengwas.io/api/tophits | 2026-09-10T18:12:04 |\n| 3 | find_outcome_datasets | ok | no URL recorded by this tool | 2026-09-10T18:12:04 |\n| 4 | get_gwas_catalog | ok | www.ebi.ac.uk/gwas/rest/api/efoTraits/MONDO_0005393/associations | 2026-09-10T18:13:40 |\n\nSections 1 and 3 to 8, 10 and this one are rendered by code from the envelopes above; section 2's state and reason come from `classify.classify_state`, a pure function. No model wrote any of them, and the estimates in section 3 are retrieved from a pre-computed source and are not computed here.\n",
+    "note": "Separate older run with 22 MR rows; do not combine its counts with the selected September 11 baseline row or newly prepared timeline."
+  }
+}</script>
+<script>
+"use strict";
+let bundle=JSON.parse(document.getElementById("initial-data").textContent);
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const put=(id,text)=>{$(id).textContent=text??""};
+const safeURL=url=>{try{const u=new URL(url);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}};
+function links(ids){return '<div class="refs">'+ids.map(id=>{const s=bundle.sources.find(x=>x.id===id);return '<a href="'+esc(safeURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a>'}).join("")+"</div>"}
+function card(title,text,refs){return '<article class="card"><h3>'+esc(title)+'</h3><p>'+esc(text)+'</p>'+links(refs)+"</article>"}
+function showTab(id){
+ document.querySelectorAll(".panel").forEach(p=>p.hidden=p.id!==id);
+ document.querySelectorAll(".tab").forEach(b=>{b.setAttribute("aria-selected",String(b.dataset.tab===id));b.tabIndex=b.dataset.tab===id?0:-1});
+}
+document.querySelectorAll(".tab").forEach((b,i,all)=>{
+ b.onclick=()=>showTab(b.dataset.tab);
+ b.onkeydown=e=>{if(["ArrowRight","ArrowLeft","Home","End"].includes(e.key)){e.preventDefault();let n=e.key==="Home"?0:e.key==="End"?all.length-1:(i+(e.key==="ArrowRight"?1:-1)+all.length)%all.length;all[n].focus();showTab(all[n].dataset.tab)}};
+});
+function renderEvent(id){
+ const e=bundle.events.find(x=>x.id===id);
+ document.querySelectorAll(".event").forEach(b=>{b.classList.toggle("selected-event",b.dataset.event===id);b.setAttribute("aria-pressed",String(b.dataset.event===id))});
+ $("event-detail").innerHTML='<div class="kicker">'+esc(e.type)+" · "+esc(e.date)+'</div><h3>'+esc(e.title)+'</h3><p>'+esc(e.description)+"</p>"+links(e.source_ids);
+}
+function slackSections(){
+ const p=bundle.pair, s=bundle.current_status;
+ return [
+ {title:"MetaboCausal · "+p.metabolite+" / "+p.disease,text:bundle.mode+"\n"+bundle.snapshot_id+"\n"+bundle.summary,source_ids:[]},
+ ...bundle.sections.map(x=>({title:x.title,text:x.text,source_ids:x.source_ids})),
+ {title:"Genetic Insights",text:bundle.relationship_note,source_ids:[]},
+ ...bundle.events.map(e=>({title:e.date+" · "+e.title,text:e.type+" · "+e.scope+"\n"+e.description,source_ids:e.source_ids})),
+ {title:"Latest retrieved status",text:s.trial_id+": "+s.trial_phase+" · "+s.trial_status+"\n"+s.trial_description+"\nRegistry updated "+s.trial_updated_at+" · checked "+bundle.checked_at+"\n"+s.regulatory+"\nLabel effective "+s.label_effective_at+"\n"+s.programme_status,source_ids:s.source_ids},
+ {title:"Module status",text:bundle.modules.map(m=>m.name+": "+m.status+". "+m.detail).join("\n"),source_ids:[]},
+ ...bundle.sources.map(s=>({title:"Source detail: "+s.title,text:s.location+"\n"+s.note,source_ids:[s.id]})),
+ {title:"Snapshot boundaries",text:bundle.provenance.preparation+"\n"+bundle.legacy_report.note,source_ids:[]}
+ ];
+}
+function render(){
+ const p=bundle.pair,s=bundle.current_status;
+ put("side-pair",p.metabolite+" · "+p.disease);put("side-gene","Gene context: "+p.gene);
+ put("headline",bundle.headline);put("intro",bundle.summary);
+ put("pair",p.metabolite+" · "+p.gene+" · "+p.disease);
+ put("snapshot",bundle.mode+" | Checked "+bundle.checked_at);put("footer-version",bundle.snapshot_id);
+ const section=id=>bundle.sections.find(s=>s.id===id);
+ put("question-text",section("question")?.text||bundle.summary);
+ const items=[
+ ["MR evidence","Retrieved",section("mr")?.text||"See evidence sections.",section("mr")?.source_ids||[]],
+ ["Gene context",p.gene,section("gene")?.text||"Gene context unresolved.",section("gene")?.source_ids||[]],
+ ["Clinical context",s.trial_phase+" · "+s.trial_status,section("clinical")?.text||s.trial_description,s.source_ids]
+ ];
+ $("highlights").innerHTML=items.map(x=>'<article class="card"><div class="kicker">'+esc(x[0])+'</div><div class="metric">'+esc(x[1])+'</div><p>'+esc(x[2])+"</p>"+links(x[3])+"</article>").join("");
+ $("evidence-sections").innerHTML=bundle.sections.filter(x=>!["question","mr","gene","clinical"].includes(x.id)).map(x=>card(x.title,x.text,x.source_ids)).join("");
+ put("raw",JSON.stringify({baseline:bundle.provenance.baseline,triple:bundle.provenance.triple},null,2));
+ put("legacy-label",bundle.legacy_report.label);put("legacy-note",bundle.legacy_report.note);put("legacy",bundle.legacy_report.text);
+ put("timeline-title",p.metabolite+" · "+p.disease+" — febuxostat clinical context");
+ put("relationship",bundle.relationship_note);
+ $("timeline").style.setProperty("--events",bundle.events.length);
+ $("timeline").innerHTML=bundle.events.map(e=>'<button class="event" data-event="'+esc(e.id)+'" aria-pressed="false" aria-label="'+esc(e.date+" "+e.title)+'"><span class="event-label"><span class="year">'+esc(e.date.slice(0,4))+'</span><span class="event-title">'+esc(e.title)+'</span><span class="event-type">'+esc(e.type)+'</span></span><span class="node"></span></button>').join("");
+ document.querySelectorAll(".event").forEach(b=>b.onclick=()=>renderEvent(b.dataset.event));
+ renderEvent(bundle.events[0].id);
+ $("status").innerHTML='<article class="card"><div class="kicker">Latest registry record · '+esc(s.trial_id)+'</div><div class="metric">'+esc(s.trial_phase.replace("PHASE","Phase "))+" · "+esc(s.trial_status.toLowerCase())+'</div><p>'+esc(s.trial_description)+'</p><small>Registry updated '+esc(s.trial_updated_at)+" · checked "+esc(bundle.checked_at)+"</small>"+links(s.source_ids.slice(0,1))+'</article><article class="card"><div class="kicker">US regulatory context</div><h3 style="margin-top:8px">Approved · label restrictions remain</h3><p>'+esc(s.regulatory)+'</p><small>Retrieved label effective '+esc(s.label_effective_at)+". "+esc(s.programme_status)+"</small>"+links(s.source_ids.slice(1))+"</article>";
+ $("sources").innerHTML=bundle.sources.map(s=>'<article class="source-item"><h3><a href="'+esc(safeURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a></h3><p>'+esc(s.location)+'</p><p>'+esc(s.note)+'</p></article>').join("");
+ $("slack-content").innerHTML=slackSections().map((s,i)=>'<div class="slack-message"><div class="avatar">M</div><div class="message-body"><h3>MetaboCausal <span class="app-tag">PREVIEW</span></h3><strong>'+esc(s.title)+'</strong><div class="body">'+esc(s.text)+'</div>'+links(s.source_ids)+"</div></div>").join("")+'<div class="slack-message"><div class="message-body"><strong>Prepared attachments</strong><p class="footnote">The full archived report remains available alongside the new timeline summary.</p>'+["Timeline image (when captured)","Full MVP1 report","Evidence summary","Evidence JSON","HTML viewer"].map(s=>'<span class="file-chip">'+s+"</span>").join("")+"</div></div>";
+ $("modules").innerHTML=bundle.modules.map(m=>'<article class="card"><div class="kicker">'+esc(m.name)+'</div><h3 style="margin-top:8px">'+esc(m.status)+'</h3><p>'+esc(m.detail)+"</p></article>").join("");
+}
+$("present").onclick=()=>{document.body.classList.toggle("presentation");$("present").textContent=document.body.classList.contains("presentation")?"Exit presentation":"Presentation mode"};
+$("download").onclick=()=>{const blob=new Blob([JSON.stringify(bundle,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=bundle.snapshot_id.replace(/[^a-z0-9_-]/gi,"_")+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)};
+$("copy-slack").onclick=async()=>{
+ const txt=slackSections().map(s=>s.title+"\n"+s.text+"\n"+s.source_ids.map(id=>{const r=bundle.sources.find(x=>x.id===id);return r.title+": "+r.url}).join("\n")).join("\n\n");
+ try{await navigator.clipboard.writeText(txt);$("copy-slack").textContent="Copied"}catch{put("error","Clipboard access is unavailable here. Use the generated slack-text.txt file.");$("error").hidden=false}
+};
+function validate(b){
+ if(b.schema_version!=="1.0")throw Error("Unsupported snapshot version.");
+ for(const k of ["snapshot_id","checked_at","mode","headline","summary","relationship_note"])if(typeof b[k]!=="string")throw Error("Missing "+k);
+ for(const k of ["metabolite","gene","disease","exposure_id","outcome_dataset_id"])if(typeof b.pair?.[k]!=="string")throw Error("Missing pair "+k);
+ for(const k of ["events","sections","sources","modules"])if(!Array.isArray(b[k])||!b[k].length)throw Error("Missing "+k);
+ const ids=new Set(b.sources.map(s=>s.id));if(ids.size!==b.sources.length)throw Error("Duplicate source IDs.");
+ b.sources.forEach(s=>{if(!s.id||!s.title||!s.location||typeof s.note!=="string"||safeURL(s.url)==="#")throw Error("Invalid source.")});
+ [...b.events,...b.sections].forEach(s=>{if(!s.title||!Array.isArray(s.source_ids)||!s.source_ids.length||s.source_ids.some(id=>!ids.has(id)))throw Error("Missing evidence source.")});
+ b.events.forEach(e=>{if(typeof e.description!=="string"||typeof e.scope!=="string"||typeof e.type!=="string"||!["year","month","day"].includes(e.precision)||!/^(\d{4})(-\d{2})?(-\d{2})?$/.test(e.date))throw Error("Invalid event.")});
+ if(b.events.map(e=>e.date).join("|")!==b.events.map(e=>e.date).sort().join("|"))throw Error("Events must be chronological.");
+ b.sections.forEach(s=>{if(typeof s.text!=="string")throw Error("Invalid section.")});
+ b.modules.forEach(m=>{if(!["name","status","detail"].every(k=>typeof m[k]==="string"))throw Error("Invalid module.")});
+ if(!b.current_status||!Array.isArray(b.current_status.source_ids)||b.current_status.source_ids.some(id=>!ids.has(id)))throw Error("Missing status sources.");
+ for(const k of ["trial_id","trial_phase","trial_status","trial_updated_at","trial_description","regulatory","label_effective_at","programme_status"])if(typeof b.current_status[k]!=="string")throw Error("Missing status "+k);
+ if(!b.provenance||typeof b.provenance.preparation!=="string"||!b.legacy_report||typeof b.legacy_report.text!=="string"||typeof b.legacy_report.note!=="string")throw Error("Missing provenance or archived report.");
+}
+$("load").onchange=async e=>{
+ const file=e.target.files[0];if(!file)return;
+ const previous=bundle;
+ try{if(file.size>5*1024*1024)throw Error("Choose a snapshot smaller than 5 MB.");const candidate=JSON.parse(await file.text());validate(candidate);bundle=candidate;render();$("error").hidden=true;showTab("evidence")}
+ catch(err){bundle=previous;render();put("error","Snapshot was not loaded: "+err.message);$("error").hidden=false}
+ e.target.value="";
+};
+render();
+if(["evidence","insights","slack","updates"].includes(location.hash.slice(1)))showTab(location.hash.slice(1));
+</script>
+</body></html>

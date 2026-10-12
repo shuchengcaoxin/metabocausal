@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MetaboCausal — Genetic Insights</title>
+<style>
+:root{--ink:#123647;--muted:#5e7480;--teal:#09647b;--deep:#10475b;--line:#dbe5e9;--paper:#fff;--bg:#f3f7f9;--green:#16846d;--amber:#9b650e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Segoe UI",Arial,sans-serif}button,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer}a{color:var(--teal);text-underline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e8ac4f;outline-offset:4px}
+aside{width:242px;position:fixed;inset:0 auto 0 0;border-right:1px solid var(--line);padding:30px 23px;background:#edf3f6;overflow-y:auto}.brand{font-size:22px;font-weight:750;letter-spacing:-.8px}.logo{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:10px;background:var(--teal);color:white;margin-right:8px;font-size:20px}.sub{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);font-weight:650}
+aside h3{font-size:13px;margin:35px 0 12px}aside p{color:var(--muted);font-size:13px}.selected{border:1px solid #b4ced9;background:white;padding:14px;border-radius:10px;line-height:1.7}.selected small{display:block;color:var(--muted)}
+.source-label{display:flex;gap:8px;align-items:center;margin:10px 0;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0}
+main{margin-left:242px;padding:25px 36px 50px;max-width:1610px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.top .sub{letter-spacing:1.2px}.actions{display:flex;gap:8px}.btn{border:1px solid #c8d7de;border-radius:7px;padding:7px 13px;background:white;color:var(--ink);font-size:13px}.btn:hover{background:#e3eff3}.pill{border-radius:30px;background:#e5f1ef;color:#146b58;padding:4px 10px;font-size:12px;font-weight:650;display:inline-block}.pill.muted{background:#eaf0f3;color:#526873}
+.hero{background:linear-gradient(110deg,#085b77,#19768b);border-radius:14px;color:white;padding:30px 32px}.hero .sub{color:#bde2eb}.hero h1{font-size:34px;font-weight:680;letter-spacing:-1px;line-height:1.2;margin:10px 0 12px}.hero p{color:#e0f0f4;font-size:16px;max-width:840px;margin:0}.hero-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:16px}.pair{font-size:18px;font-weight:650}.snapshot{font-size:12px;color:#cce5ec}
+nav{display:flex;gap:6px;margin:22px 0;border-bottom:1px solid var(--line)}.tab{padding:12px 18px;background:transparent;border:0;border-bottom:3px solid transparent;color:var(--muted);font-weight:650;font-size:14px}.tab[aria-selected=true]{border-color:var(--teal);color:var(--teal)}.tab:hover{color:var(--teal)}.panel[hidden]{display:none}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:11px;padding:22px}.card h2,.card h3{margin:0 0 8px;font-weight:650}.card h2{font-size:21px}.card h3{font-size:17px}.card p{margin:6px 0;color:var(--muted);font-size:14px}.metric{font-size:23px;font-weight:650;margin:8px 0}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:700}.full{grid-column:1/-1}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.callout{background:#eaf4f4;border-left:3px solid #2f8d8f;border-radius:0 8px 8px 0;padding:16px 20px;margin-top:18px;font-size:14px}.callout strong{display:block;margin-bottom:4px}.footnote{font-size:12px;color:var(--muted);margin:10px 0}.refs{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.refs a{font-size:12px}.section-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin:0 0 20px}.section-header h2{margin:0;font-size:24px;letter-spacing:-.4px}.section-header p{font-size:14px;color:var(--muted);margin:4px 0 0}
+.timeline-shell{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.timeline-head{padding:22px 25px;background:var(--deep);color:white}.timeline-head h2{font-size:20px;margin:0}.timeline-head p{font-size:13px;color:#cde2e9;margin:6px 0 0}.timeline-content{padding:20px 25px}.link-note{font-size:13px;background:#f0f5f7;border-radius:7px;padding:10px 14px;color:#526b79}.axis-wrap{overflow-x:auto}.timeline{position:relative;height:284px;display:grid;grid-template-columns:repeat(var(--events),1fr);min-width:690px;margin:4px 12px 0}.timeline:before{content:"";position:absolute;left:6%;right:6%;top:141px;height:3px;background:#cfdde3}.event{border:0;background:transparent;position:relative;padding:0 8px;text-align:center;color:var(--ink)}.event .node{position:absolute;width:15px;height:15px;border-radius:50%;background:var(--teal);top:135px;left:calc(50% - 7px);z-index:1;border:3px solid white;box-shadow:0 0 0 1px var(--teal)}.event.selected-event .node{background:#de9c2d;box-shadow:0 0 0 5px #f6e6c9;border-color:white}.event:nth-child(5) .node{background:#aa7337}.event .event-label{position:absolute;left:0;right:0;padding:0 8px;top:32px;line-height:1.3}.event:nth-child(even) .event-label{top:164px}.event .year{display:block;font-size:18px;font-weight:750;margin-bottom:4px}.event .event-title{display:block;font-size:13px;font-weight:650}.event .event-type{font-size:11px;display:block;color:var(--muted);margin-top:5px}.event-detail{border-top:1px solid var(--line);padding:17px 0 0;min-height:130px}.event-detail h3{font-size:16px;margin:0 0 6px}.event-detail p{font-size:14px;margin:4px 0;color:var(--muted)}.status-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:16px;margin-top:16px}.status-grid .metric{font-size:21px}.status-grid small{font-size:12px;color:var(--muted);display:block;margin-top:8px}
+details{border:1px solid var(--line);border-radius:9px;background:white;padding:14px 18px;margin-top:16px}summary{cursor:pointer;font-weight:600;font-size:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;color:#385462;max-height:440px;overflow:auto;font-family:Consolas,monospace}table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600}
+.slack-frame{max-width:850px;background:white;border:1px solid var(--line);border-radius:12px;margin:auto;overflow:hidden}.slack-top{background:#f0edf5;padding:15px 22px;font-weight:650;border-bottom:1px solid #e0dce8}.slack-message{display:flex;gap:12px;padding:20px 24px;border-bottom:1px solid #e9edf0}.avatar{background:var(--teal);color:white;border-radius:8px;padding:7px;width:38px;height:38px;flex-shrink:0;text-align:center;font-weight:700}.message-body{min-width:0;flex:1}.message-body h3{font-size:14px;margin:0}.message-body .body{font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}.app-tag{font-size:10px;background:#e9edf0;border-radius:3px;padding:2px 4px;margin-left:4px;color:#52636d}.file-chip{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:12px;margin:5px 5px 0 0;background:#f8fafb}
+.sources{display:grid;grid-template-columns:1fr 1fr;gap:12px}.source-item{padding:15px;border:1px solid var(--line);border-radius:8px;background:white}.source-item h3{font-size:14px;margin:0}.source-item p{font-size:12px;margin:5px 0;color:var(--muted)}.footer{display:flex;justify-content:space-between;margin-top:24px;border-top:1px solid var(--line);padding-top:16px;font-size:12px;color:var(--muted)}
+.presentation aside{display:none}.presentation main{margin:0 auto;max-width:1340px}.presentation #load-label{display:none}.hidden{display:none}#error{color:#91352c;background:#fff0ed;padding:10px;margin-bottom:15px;border:1px solid #e5b9b0;border-radius:8px}
+@media(max-width:1050px){aside{width:210px;padding:24px 16px}main{margin-left:210px;padding:20px}.hero h1{font-size:29px}.grid{gap:10px}.card{padding:16px}}
+@media(max-width:760px){aside{display:none}main{margin:0;padding:16px}.grid,.two,.status-grid,.sources{grid-template-columns:1fr}.hero{padding:24px}.hero h1{font-size:28px}.top{align-items:flex-start}.actions{flex-wrap:wrap;justify-content:flex-end}.hero-bottom{align-items:flex-start;flex-direction:column}nav{overflow-x:auto}.tab{white-space:nowrap;padding:10px 12px}.section-header{display:block}.footer{display:block}}
+@media print{aside,.actions,nav{display:none}main{margin:0;padding:0}.panel[hidden]{display:block}.panel{break-before:page}.hero{background:white;color:var(--ink)}.hero p,.hero .sub,.snapshot{color:var(--muted)}details{display:none}}
+</style>
+</head>
+<body>
+<aside>
+<div class="brand"><span class="logo">M</span>MetaboCausal</div>
+<p>Genes · Disease · Evidence</p>
+<h3>Worked example</h3>
+<div class="selected"><strong id="side-pair"></strong><small id="side-gene"></small></div>
+<h3>Evidence in this example</h3>
+<div id="source-groups"></div>
+<div id="case-links"></div>
+<h3>A saved, inspectable example</h3>
+<p>This page opens locally. Reading it makes no database or model requests. Source links open the original records.</p>
+<p>New evidence can be shown in a new version of the same report.</p>
+<button class="btn" id="download">Download evidence</button>
+</aside>
+<main>
+<div class="top"><span class="sub">Evidence workspace</span><div class="actions"><label class="btn" id="load-label">Open snapshot<input id="load" type="file" accept=".json,application/json" hidden></label><button class="btn" id="present">Presentation mode</button></div></div>
+<div id="error" hidden role="alert"></div>
+<header class="hero">
+<div class="sub">MetaboCausal / worked example</div>
+<h1 id="headline"></h1><p id="intro"></p>
+<div class="hero-bottom"><div class="pair" id="pair"></div><span class="snapshot" id="snapshot"></span></div>
+</header>
+<nav role="tablist" aria-label="Evidence views">
+<button class="tab" id="tab-evidence" role="tab" aria-controls="evidence" aria-selected="true" data-tab="evidence">Evidence card</button>
+<button class="tab" id="tab-insights" role="tab" aria-controls="insights" aria-selected="false" data-tab="insights">Genetic Insights</button>
+<button class="tab" id="tab-slack" role="tab" aria-controls="slack" aria-selected="false" data-tab="slack">Slack preview</button>
+<button class="tab" id="tab-updates" role="tab" aria-controls="updates" aria-selected="false" data-tab="updates">What's next</button>
+</nav>
+<section id="evidence" class="panel" role="tabpanel" aria-labelledby="tab-evidence">
+<div class="section-header"><div><h2>One question. Evidence you can inspect.</h2><p id="question-text"></p></div><span class="pill">Saved evidence</span></div>
+<div class="grid" id="highlights"></div>
+<div class="two" id="evidence-sections"></div>
+<details><summary>Selected original MR row and gene annotation</summary><p class="footnote">Original source values are preserved. No treatment effect or confidence level is inferred from the source CI.</p><pre id="raw"></pre></details>
+<details><summary id="legacy-label">Archived full MVP1 report</summary><p class="footnote" id="legacy-note"></p><pre id="legacy"></pre></details>
+</section>
+<section id="insights" class="panel" role="tabpanel" aria-labelledby="tab-insights" hidden>
+<div class="section-header"><div><h2>Genetic Insights</h2><p>Trace the evidence through time, including what happened in the clinic.</p></div><span class="pill muted">Curated example</span></div>
+<div id="timeline-capture" class="timeline-shell">
+<div class="timeline-head"><h2 id="timeline-title"></h2><p>Selected milestones · clinical development and genetic interpretation</p></div>
+<div class="timeline-content"><div class="link-note" id="relationship"></div>
+<div class="axis-wrap"><div class="timeline" id="timeline"></div></div>
+<p class="footnote">Milestones are ordered by date and spaced for readability. Select a point to inspect its evidence.</p>
+<div class="event-detail" id="event-detail" aria-live="polite"></div></div>
+</div>
+<div class="status-grid" id="status"></div>
+<details><summary>Sources and evidence boundaries</summary><div class="sources" id="sources"></div></details>
+</section>
+<section id="slack" class="panel" role="tabpanel" aria-labelledby="tab-slack" hidden>
+<div class="section-header"><div><h2>The same evidence, in the team conversation.</h2><p>Local preview of the prepared Slack content. Live delivery has not been verified.</p></div><button class="btn" id="copy-slack">Copy Slack text</button></div>
+<div class="slack-frame"><div class="slack-top">MetaboCausal · evidence thread</div><div id="slack-content"></div></div>
+</section>
+<section id="updates" class="panel" role="tabpanel" aria-labelledby="tab-updates" hidden>
+<div class="section-header"><div><h2>Build on the evidence already here.</h2><p>Keep each recording tied to its own result version.</p></div></div>
+<div class="two" id="modules"></div>
+<div class="callout"><strong>From a recording prototype to a shared product</strong>The next investment is reliable evidence updates, evaluation, and shared access: merge new papers once, check scientific links, refresh clinical records, and deliver the same result in the report and Slack.</div>
+</section>
+<footer class="footer"><span>MetaboCausal · What should we test next?</span><span id="footer-version"></span></footer>
+</main>
+<script type="application/json" id="initial-data">{
+  "schema_version": "1.0",
+  "snapshot_id": "mvp1-cetp-torcetrapib-2026-09-12-v1",
+  "checked_at": "2026-09-12",
+  "mode": "Curated recording demo · saved evidence",
+  "pair": {
+    "metabolite": "HDL cholesterol",
+    "gene": "CETP",
+    "disease": "Coronary artery disease",
+    "exposure_id": "ebi-a-GCST005058",
+    "outcome_dataset_id": "ebi-a-GCST005194"
+  },
+  "headline": "The blood marker improved. The trial failed.",
+  "summary": "Follow a CETP-targeted drug from clinical testing to failure, then see how genetic evidence helps distinguish the target, the blood marker and the drug.",
+  "relationship_note": "This drug inhibits CETP, the gene product in the selected candidate. The trial population and cardiovascular endpoints are related to CAD, not identical to the GWAS outcome. Genetic interpretations published later are not earlier predictions.",
+  "sections": [
+    {
+      "id": "question",
+      "title": "The question",
+      "text": "If a drug improves HDL cholesterol, will it protect patients from coronary events? And if it fails, is the problem the blood marker, the target, or the particular drug?",
+      "source_ids": [
+        "torce_paper",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "mr",
+      "title": "Retrieved MR: inspect the design",
+      "text": "The selected MVP1 HDL–CAD row has a negative pre-computed estimate. It remains visible beside the later curated literature. Different instruments, populations and endpoints can lead to different conclusions; a source p-value does not resolve these differences.",
+      "source_ids": [
+        "baseline",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "gene",
+      "title": "A target-matched example: CETP",
+      "text": "CETP is an author-prioritized HDL gene in the project atlas. Torcetrapib and evacetrapib inhibit the CETP protein. This gives a real gene-to-drug link, while the atlas annotation alone does not prove mediation.",
+      "source_ids": [
+        "atlas",
+        "torce_paper",
+        "evace_paper"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "What failed?",
+      "text": "Torcetrapib was stopped after excess mortality and cardiovascular events. Evacetrapib was stopped for insufficient efficacy. These are different failure modes and are shown as separate drug histories.",
+      "source_ids": [
+        "pfizer",
+        "lilly"
+      ]
+    },
+    {
+      "id": "decision",
+      "title": "What genetics adds",
+      "text": "Comparing CETP gene variants with torcetrapib helped distinguish lipid changes from the drug's blood-pressure effect. HDL-focused MR also challenged the assumption that raising this marker must prevent heart attacks.",
+      "source_ids": [
+        "offtarget",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "limits",
+      "title": "Keep the counterevidence",
+      "text": "This is not proof that genetic analysis would have predicted every failure, or that CETP is an invalid target. REVEAL found benefit with anacetrapib, and target-specific genetic analyses point to apoB-related effects.",
+      "source_ids": [
+        "reveal",
+        "cetp_mr"
+      ]
+    },
+    {
+      "id": "current-class",
+      "title": "The target's story continues",
+      "text": "A retrieved PREVAIL record lists obicetrapib as Phase 3, active not recruiting; its last update is June 2024. A January 2026 sponsor update discusses continued development. Neither record is a completed cardiovascular-outcome result.",
+      "source_ids": [
+        "prevail",
+        "sponsor2026"
+      ]
+    },
+    {
+      "id": "limitations",
+      "title": "What remains unresolved",
+      "text": "The selected baseline has no queried colocalisation or gene-QTL evidence. Source CI bounds include zero despite a small reported p-value; the CI level and scale are unspecified, so these fields are flagged rather than silently repaired. No claim of causal confidence is made from State A.",
+      "source_ids": [
+        "baseline",
+        "atlas"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "trial-start",
+      "date": "2004-07",
+      "precision": "month",
+      "type": "Phase 3 trial",
+      "title": "ILLUMINATE begins",
+      "description": "Trial of torcetrapib plus atorvastatin versus atorvastatin in a coronary-risk population.",
+      "source_ids": [
+        "torce_trial"
+      ],
+      "scope": "Trial record; start date has month precision"
+    },
+    {
+      "id": "programme-stop",
+      "date": "2006-12-02",
+      "precision": "day",
+      "type": "Safety failure",
+      "title": "Development stopped",
+      "description": "Pfizer announced termination of ILLUMINATE and the compound's development after a mortality and cardiovascular-event imbalance.",
+      "source_ids": [
+        "pfizer"
+      ],
+      "scope": "Drug-specific safety / programme decision"
+    },
+    {
+      "id": "results",
+      "date": "2007-11-05",
+      "precision": "day",
+      "type": "Trial results",
+      "title": "Higher HDL, more harm",
+      "description": "Published trial results showed improved lipid levels alongside higher mortality and cardiovascular morbidity.",
+      "source_ids": [
+        "torce_paper"
+      ],
+      "scope": "Specific drug and trial population"
+    },
+    {
+      "id": "genetic-comparison",
+      "date": "2009-12-21",
+      "precision": "day",
+      "type": "Genetic interpretation",
+      "title": "Target or drug effect?",
+      "description": "CETP genetic variants resembled the drug's lipid effects but not its blood-pressure rise, supporting an off-target explanation of that effect.",
+      "source_ids": [
+        "offtarget"
+      ],
+      "scope": "Retrospective target-versus-drug comparison"
+    },
+    {
+      "id": "hdl-mr",
+      "date": "2012-05-17",
+      "precision": "day",
+      "type": "Metabolite-level MR",
+      "title": "HDL assumption questioned",
+      "description": "Some genetic mechanisms raising HDL did not lower heart-attack risk. This challenges HDL elevation as a sufficient rationale; it is not a CETP-specific negative result.",
+      "source_ids": [
+        "hdl_mr"
+      ],
+      "scope": "Related later evidence; not a 2006 prediction"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baseline",
+      "title": "MVP1 HDL cholesterol–CAD record",
+      "url": "https://epigraphdb.org/mr",
+      "location": "metabolite_disease.csv record 4145; header = 1",
+      "note": "Selected pre-computed estimate, not a target-specific MR analysis. Original source values are in the evidence bundle."
+    },
+    {
+      "id": "atlas",
+      "title": "MVP1 CETP annotation / Zoodsma 2025",
+      "url": "https://doi.org/10.1038/s41588-025-02355-3",
+      "location": "triples.csv.gz decompressed record 328106; atlas rs821840 and rs189866004",
+      "note": "Author-prioritized gene annotation for HDL cholesterol, ENSG00000087237. The present atlas is not evidence available to a 2006 decision-maker."
+    },
+    {
+      "id": "torce_trial",
+      "title": "ILLUMINATE registry",
+      "url": "https://clinicaltrials.gov/study/NCT00134264",
+      "location": "protocolSection identification, status, design and eligibility",
+      "note": "Phase 3 torcetrapib/atorvastatin versus atorvastatin. Population includes coronary heart disease or high-risk diabetes; broader than the exact CAD GWAS population."
+    },
+    {
+      "id": "pfizer",
+      "title": "Pfizer programme stop (2006)",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800306000334/ex991202.htm",
+      "location": "Pfizer release, 2006-12-02, filed with SEC",
+      "note": "Sponsor stopped trials and compound development after the mortality/cardiovascular-event imbalance."
+    },
+    {
+      "id": "torce_paper",
+      "title": "ILLUMINATE results (2007)",
+      "url": "https://doi.org/10.1056/NEJMoa0706628",
+      "location": "Abstract and discussion; published online 2007-11-05; PMID 17984165",
+      "note": "Torcetrapib increased HDL but increased mortality and cardiovascular morbidity. This does not isolate CETP inhibition as the cause of harm."
+    },
+    {
+      "id": "offtarget",
+      "title": "CETP genetics versus torcetrapib (2009 online)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20026784/",
+      "location": "Abstract; online 2009-12-21, journal issue 2010; DOI 10.1161/CIRCULATIONAHA.109.865444",
+      "note": "Genetic lipid effects resembled treatment; blood-pressure effects did not. Supports an off-target interpretation of the hypertensive effect, not proof of every cause of death."
+    },
+    {
+      "id": "hdl_mr",
+      "title": "HDL cholesterol and heart attack MR (2012)",
+      "url": "https://doi.org/10.1016/S0140-6736(12)60312-2",
+      "location": "Abstract / interpretation; 2012-05-17; PMID 22607825",
+      "note": "Some genetic mechanisms raising HDL did not lower myocardial-infarction risk. HDL-level evidence is not a CETP-specific verdict; MI is related to, but not identical to, the CAD dataset outcome."
+    },
+    {
+      "id": "evace_trial",
+      "title": "ACCELERATE registry",
+      "url": "https://clinicaltrials.gov/study/NCT01687998",
+      "location": "protocolSection identification, status, design and eligibility",
+      "note": "Phase 3, terminated for insufficient efficacy. High-risk vascular population and composite endpoint, not an exact reproduction of the CAD GWAS."
+    },
+    {
+      "id": "lilly",
+      "title": "Lilly programme stop (2015)",
+      "url": "https://investor.lilly.com/node/24656",
+      "location": "Sponsor release, 2015-10-12",
+      "note": "Development for high-risk ASCVD discontinued due to insufficient efficacy; the stated stop was not for safety findings."
+    },
+    {
+      "id": "evace_paper",
+      "title": "ACCELERATE results (2017)",
+      "url": "https://doi.org/10.1056/NEJMoa1609581",
+      "location": "Abstract and trial results; 2017-05 (month precision); PMID 28514624",
+      "note": "Favorable lipid changes did not translate into fewer cardiovascular events in this trial."
+    },
+    {
+      "id": "cetp_mr",
+      "title": "CETP/HMGCR genetic analysis (2017)",
+      "url": "https://doi.org/10.1001/jama.2017.11467",
+      "location": "Abstract / conclusions; JAMA online 2017-08-28; PMID 28846118",
+      "note": "Cardiovascular associations tracked apoB reduction in the joint genetic analysis. Do not reduce CETP effects to HDL elevation alone."
+    },
+    {
+      "id": "reveal",
+      "title": "REVEAL anacetrapib results (2017)",
+      "url": "https://doi.org/10.1056/NEJMoa1706444",
+      "location": "Abstract; NEJM online 2017-08-29; PMID 28847206",
+      "note": "Anacetrapib reduced major coronary events in REVEAL. Necessary counterexample to a claim that all CETP inhibition fails."
+    },
+    {
+      "id": "prevail",
+      "title": "Obicetrapib PREVAIL registry",
+      "url": "https://clinicaltrials.gov/study/NCT05202509",
+      "location": "protocolSection status and design; source update 2024-06-04",
+      "note": "Retrieved Phase 3 ACTIVE_NOT_RECRUITING record. Old registry update, not proof of current recruitment or programme-wide regulatory status."
+    },
+    {
+      "id": "sponsor2026",
+      "title": "NewAmsterdam 2026 programme update",
+      "url": "https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-highlights-2025-achievements-and-outlines",
+      "location": "Sponsor release 2026-01-09; PREVAIL section",
+      "note": "Reports continuing obicetrapib development. Projections are not achieved outcomes; no global approval status is established here."
+    }
+  ],
+  "current_status": {
+    "trial_id": "NCT00134264",
+    "trial_phase": "PHASE3",
+    "trial_status": "TERMINATED",
+    "trial_updated_at": "2012-02-03",
+    "trial_description": "A Study Examining Torcetrapib/Atorvastatin And Atorvastatin Effects On Clinical CV Events In Patients With Heart Disease",
+    "regulatory": "Safety stop announced by Pfizer after excess deaths and cardiovascular events.",
+    "label_effective_at": "2006-12-02",
+    "programme_status": "Latest programme decision retrieved for this example; no exhaustive global revival/approval search.",
+    "source_ids": [
+      "torce_trial",
+      "pfizer"
+    ],
+    "context_label": "Programme outcome",
+    "context_title": "Development discontinued",
+    "context_date_label": "Sponsor decision"
+  },
+  "modules": [
+    {
+      "name": "MVP1",
+      "status": "Saved evidence available",
+      "detail": "Selected original HDL–CAD MR row and CETP atlas annotation."
+    },
+    {
+      "name": "Genetic Insights",
+      "status": "Curated example ready",
+      "detail": "Two target-matched failure histories with dated sources; all-pair automatic preparation remains integration work."
+    },
+    {
+      "name": "Jingrui · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Seed papers and Europe PMC literature evidence."
+    },
+    {
+      "name": "Ziwei · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Semantic Scholar evidence, merged by paper identity."
+    },
+    {
+      "name": "Zipeng · MVP3",
+      "status": "Awaiting accepted output",
+      "detail": "Human-GEM biochemical context."
+    },
+    {
+      "name": "Slack",
+      "status": "Export ready; live delivery unverified",
+      "detail": "Same snapshot produces Slack text and attachments; Zhang Hao connects the bot."
+    },
+    {
+      "name": "LLM interpretation",
+      "status": "No model run for this demo",
+      "detail": "The visible summary was prepared for the saved example. OpenAI/Claude code support is separate."
+    }
+  ],
+  "provenance": {
+    "preparation": "Curated failure-case overlay, built from existing MVP1 records and explicitly retrieved primary sources. No automatic all-pair timeline search, no MVP2/MVP3 completion, and no live Slack deployment is claimed.",
+    "baseline": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "line": 4145,
+      "row": {
+        "metabolite_name": "hdl cholesterol",
+        "metabolite_chebi": "",
+        "disease_trait": "Coronary artery disease",
+        "disease_id": "ebi-a-GCST005194",
+        "exposure_id": "ebi-a-GCST005058",
+        "exposure_trait": "HDL cholesterol",
+        "b": "-0.11201101881553",
+        "se": "0.0210845860404704",
+        "ci_low": "-0.270463355356383",
+        "ci_upp": "0.0464413177253243",
+        "pval": "1.081552039397e-07",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/hdl-cholesterol-fee7d2be.md",
+        "retrieved_at": "2026-09-11T22:19:51.092142+00:00",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "3",
+        "source_detail_status": "ok",
+        "record_type": "metabolite_disease_evidence",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "295",
+        "atlas_loci_available": "334"
+      }
+    },
+    "triple": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/triples.csv.gz",
+      "sha256": "0560f29748107446bd3d1c45602bf76d3c576e0acf05d91a6fd30f57b7327844",
+      "line": 328106,
+      "row": {
+        "metabolite_name": "hdl cholesterol",
+        "metabolite_chebi": "",
+        "ensembl_gene_id": "ENSG00000087237",
+        "gene_symbol": "CETP",
+        "gene_source": "author_prioritized",
+        "atlas": "Zoodsma 2025",
+        "disease_trait": "Coronary artery disease",
+        "disease_id": "ebi-a-GCST005194",
+        "exposure_id": "ebi-a-GCST005058",
+        "exposure_trait": "HDL cholesterol",
+        "b": "-0.11201101881553",
+        "se": "0.0210845860404704",
+        "ci_low": "-0.270463355356383",
+        "ci_upp": "0.0464413177253243",
+        "pval": "1.081552039397e-07",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/hdl-cholesterol-fee7d2be.md",
+        "retrieved_at": "2026-09-11T22:19:51.092142+00:00",
+        "source_gene_symbol": "CETP",
+        "gene_annotation_resolution": "single_source_label",
+        "ensembl_resolution": "reported_in_atlas",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "gene_qtl_h4": "",
+        "gene_qtl_h3": "",
+        "gene_qtl_clpp": "",
+        "gene_qtl_method": "",
+        "gene_qtl_locus": "",
+        "gene_qtl_study_id": "",
+        "gene_qtl_status": "not_queried",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "3",
+        "supporting_atlas_loci": "2",
+        "source_detail_status": "ok",
+        "record_type": "gene_annotated_candidate",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "295",
+        "atlas_loci_available": "334"
+      }
+    },
+    "atlas": {
+      "path": "archive/project_files/handoff-product_2026-09-11/runtime-data/data/atlas_locus_gene.csv",
+      "sha256": "5af6d4c388dbd413d8aa7e7f8dd9e7d6bc7e2d338716796a6d68f90b0485c052",
+      "records": [
+        {
+          "line": 22600,
+          "row": {
+            "metabolite_name": "HDL Cholesterol",
+            "chebi": "",
+            "ensembl_gene_id": "ENSG00000087237",
+            "rsid": "rs821840",
+            "chr": "16",
+            "pos": "56959974",
+            "gene_symbol": "CETP",
+            "gene_source": "author_prioritized",
+            "atlas": "Zoodsma 2025",
+            "year": "2025",
+            "note": ""
+          }
+        },
+        {
+          "line": 22601,
+          "row": {
+            "metabolite_name": "HDL Cholesterol",
+            "chebi": "",
+            "ensembl_gene_id": "ENSG00000087237",
+            "rsid": "rs189866004",
+            "chr": "16",
+            "pos": "56978732",
+            "gene_symbol": "CETP",
+            "gene_source": "author_prioritized",
+            "atlas": "Zoodsma 2025",
+            "year": "2025",
+            "note": ""
+          }
+        }
+      ]
+    },
+    "source_receipts": {
+      "cetp-offtarget.json": {
+        "path": "sources/cetp-offtarget.json",
+        "sha256": "10830d1eb437512c28543cccfbd1c9298438dd0593aa2111967baed9adb022cb",
+        "retrieved_at": "2026-09-12T18:13:47.667341+00:00"
+      },
+      "cetp-papers.json": {
+        "path": "sources/cetp-papers.json",
+        "sha256": "6886eb809b521379a36371c53344a9bef8871c4785021a3735f443bfe2ce1c09",
+        "retrieved_at": "2026-09-12T18:13:16.908926+00:00"
+      },
+      "NCT00134264.json": {
+        "path": "sources/NCT00134264.json",
+        "sha256": "d2400a1c356ed8f912de6f8c112d12a3f19ccf20e41ab55673543d5d948c6752",
+        "retrieved_at": "2026-09-12T18:13:15.066059+00:00"
+      },
+      "NCT01252953.json": {
+        "path": "sources/NCT01252953.json",
+        "sha256": "bd7d336a4d8b5b3a665d2ae8263f9aa7e2696df24ef1df445a8a29cab3217986",
+        "retrieved_at": "2026-09-12T18:13:15.815671+00:00"
+      },
+      "NCT01687998.json": {
+        "path": "sources/NCT01687998.json",
+        "sha256": "6495630f16a8b99537432fdef616643ee136b2e6f02b108544347ee4caf3e4ff",
+        "retrieved_at": "2026-09-12T18:13:15.289657+00:00"
+      },
+      "NCT05202509.json": {
+        "path": "sources/NCT05202509.json",
+        "sha256": "f1d5778168dbf625e42e6ad8a94fcc911941b221d9970004fa79ff36f26ddd49",
+        "retrieved_at": "2026-09-12T18:13:15.644208+00:00"
+      }
+    },
+    "note": "Original fields preserved, including the source CI/p discrepancy. This selected MR estimate is not CETP-target MR. Annotation is a candidate link. Year of the current atlas must not be backdated to the historical drug decision."
+  },
+  "legacy_report": {
+    "label": "Selected original MVP1 records",
+    "note": "These are original table records, not a new full pipeline run. The urate report belongs to a different example and is not included.",
+    "text": "# Selected original MVP1 evidence\n\n## MR record\n\n{\n  \"line\": 4145,\n  \"row\": {\n    \"metabolite_name\": \"hdl cholesterol\",\n    \"metabolite_chebi\": \"\",\n    \"disease_trait\": \"Coronary artery disease\",\n    \"disease_id\": \"ebi-a-GCST005194\",\n    \"exposure_id\": \"ebi-a-GCST005058\",\n    \"exposure_trait\": \"HDL cholesterol\",\n    \"b\": \"-0.11201101881553\",\n    \"se\": \"0.0210845860404704\",\n    \"ci_low\": \"-0.270463355356383\",\n    \"ci_upp\": \"0.0464413177253243\",\n    \"pval\": \"1.081552039397e-07\",\n    \"method\": \"FE IVW\",\n    \"nsnp\": \"4\",\n    \"moescore\": \"1.0\",\n    \"coloc_h4\": \"\",\n    \"coloc_method\": \"\",\n    \"coloc_locus\": \"\",\n    \"n_instruments\": \"\",\n    \"weak_instruments\": \"\",\n    \"state\": \"A\",\n    \"page_path\": \"data/metabolites/hdl-cholesterol-fee7d2be.md\",\n    \"retrieved_at\": \"2026-09-11T22:19:51.092142+00:00\",\n    \"coloc_h3\": \"\",\n    \"coloc_clpp\": \"\",\n    \"coloc_scope\": \"\",\n    \"coloc_study_id\": \"\",\n    \"instrument_dataset_id\": \"\",\n    \"instrument_status\": \"ok\",\n    \"coloc_status\": \"not_queried\",\n    \"representative_rule\": \"Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.\",\n    \"supporting_mr_rows\": \"3\",\n    \"source_detail_status\": \"ok\",\n    \"record_type\": \"metabolite_disease_evidence\",\n    \"mechanism_status\": \"candidate_genes_available\",\n    \"candidate_gene_count\": \"295\",\n    \"atlas_loci_available\": \"334\"\n  }\n}\n\n## CETP annotated candidate\n\n{\n  \"line\": 328106,\n  \"row\": {\n    \"metabolite_name\": \"hdl cholesterol\",\n    \"metabolite_chebi\": \"\",\n    \"ensembl_gene_id\": \"ENSG00000087237\",\n    \"gene_symbol\": \"CETP\",\n    \"gene_source\": \"author_prioritized\",\n    \"atlas\": \"Zoodsma 2025\",\n    \"disease_trait\": \"Coronary artery disease\",\n    \"disease_id\": \"ebi-a-GCST005194\",\n    \"exposure_id\": \"ebi-a-GCST005058\",\n    \"exposure_trait\": \"HDL cholesterol\",\n    \"b\": \"-0.11201101881553\",\n    \"se\": \"0.0210845860404704\",\n    \"ci_low\": \"-0.270463355356383\",\n    \"ci_upp\": \"0.0464413177253243\",\n    \"pval\": \"1.081552039397e-07\",\n    \"method\": \"FE IVW\",\n    \"nsnp\": \"4\",\n    \"moescore\": \"1.0\",\n    \"coloc_h4\": \"\",\n    \"coloc_method\": \"\",\n    \"coloc_locus\": \"\",\n    \"n_instruments\": \"\",\n    \"weak_instruments\": \"\",\n    \"state\": \"A\",\n    \"page_path\": \"data/metabolites/hdl-cholesterol-fee7d2be.md\",\n    \"retrieved_at\": \"2026-09-11T22:19:51.092142+00:00\",\n    \"source_gene_symbol\": \"CETP\",\n    \"gene_annotation_resolution\": \"single_source_label\",\n    \"ensembl_resolution\": \"reported_in_atlas\",\n    \"coloc_h3\": \"\",\n    \"coloc_clpp\": \"\",\n    \"coloc_scope\": \"\",\n    \"coloc_study_id\": \"\",\n    \"gene_qtl_h4\": \"\",\n    \"gene_qtl_h3\": \"\",\n    \"gene_qtl_clpp\": \"\",\n    \"gene_qtl_method\": \"\",\n    \"gene_qtl_locus\": \"\",\n    \"gene_qtl_study_id\": \"\",\n    \"gene_qtl_status\": \"not_queried\",\n    \"instrument_dataset_id\": \"\",\n    \"instrument_status\": \"ok\",\n    \"coloc_status\": \"not_queried\",\n    \"representative_rule\": \"Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.\",\n    \"supporting_mr_rows\": \"3\",\n    \"supporting_atlas_loci\": \"2\",\n    \"source_detail_status\": \"ok\",\n    \"record_type\": \"gene_annotated_candidate\",\n    \"mechanism_status\": \"candidate_genes_available\",\n    \"candidate_gene_count\": \"295\",\n    \"atlas_loci_available\": \"334\"\n  }\n}\n\n## Atlas records\n\n[\n  {\n    \"line\": 22600,\n    \"row\": {\n      \"metabolite_name\": \"HDL Cholesterol\",\n      \"chebi\": \"\",\n      \"ensembl_gene_id\": \"ENSG00000087237\",\n      \"rsid\": \"rs821840\",\n      \"chr\": \"16\",\n      \"pos\": \"56959974\",\n      \"gene_symbol\": \"CETP\",\n      \"gene_source\": \"author_prioritized\",\n      \"atlas\": \"Zoodsma 2025\",\n      \"year\": \"2025\",\n      \"note\": \"\"\n    }\n  },\n  {\n    \"line\": 22601,\n    \"row\": {\n      \"metabolite_name\": \"HDL Cholesterol\",\n      \"chebi\": \"\",\n      \"ensembl_gene_id\": \"ENSG00000087237\",\n      \"rsid\": \"rs189866004\",\n      \"chr\": \"16\",\n      \"pos\": \"56978732\",\n      \"gene_symbol\": \"CETP\",\n      \"gene_source\": \"author_prioritized\",\n      \"atlas\": \"Zoodsma 2025\",\n      \"year\": \"2025\",\n      \"note\": \"\"\n    }\n  }\n]"
+  },
+  "source_groups": [
+    "EpiGraphDB / MR-EVE",
+    "Metabolite gene atlas",
+    "Original genetic studies",
+    "ClinicalTrials.gov",
+    "Trial papers \u0026 sponsor records"
+  ],
+  "case_navigation": true,
+  "timeline_title": "CETP · Torcetrapib — coronary / cardiovascular outcomes"
+}</script>
+<script>
+"use strict";
+let bundle=JSON.parse(document.getElementById("initial-data").textContent);
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const put=(id,text)=>{$(id).textContent=text??""};
+const safeURL=url=>{try{const u=new URL(url);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}};
+function links(ids){return '<div class="refs">'+ids.map(id=>{const s=bundle.sources.find(x=>x.id===id);return '<a href="'+esc(safeURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a>'}).join("")+"</div>"}
+function card(title,text,refs){return '<article class="card"><h3>'+esc(title)+'</h3><p>'+esc(text)+'</p>'+links(refs)+"</article>"}
+function showTab(id){
+ document.querySelectorAll(".panel").forEach(p=>p.hidden=p.id!==id);
+ document.querySelectorAll(".tab").forEach(b=>{b.setAttribute("aria-selected",String(b.dataset.tab===id));b.tabIndex=b.dataset.tab===id?0:-1});
+}
+document.querySelectorAll(".tab").forEach((b,i,all)=>{
+ b.onclick=()=>showTab(b.dataset.tab);
+ b.onkeydown=e=>{if(["ArrowRight","ArrowLeft","Home","End"].includes(e.key)){e.preventDefault();let n=e.key==="Home"?0:e.key==="End"?all.length-1:(i+(e.key==="ArrowRight"?1:-1)+all.length)%all.length;all[n].focus();showTab(all[n].dataset.tab)}};
+});
+function renderEvent(id){
+ const e=bundle.events.find(x=>x.id===id);
+ document.querySelectorAll(".event").forEach(b=>{b.classList.toggle("selected-event",b.dataset.event===id);b.setAttribute("aria-pressed",String(b.dataset.event===id))});
+ $("event-detail").innerHTML='<div class="kicker">'+esc(e.type)+" · "+esc(e.date)+'</div><h3>'+esc(e.title)+'</h3><p>'+esc(e.description)+"</p>"+links(e.source_ids);
+}
+function slackSections(){
+ const p=bundle.pair, s=bundle.current_status;
+ return [
+ {title:"MetaboCausal · "+p.metabolite+" / "+p.disease,text:bundle.mode+"\n"+bundle.snapshot_id+"\n"+bundle.summary,source_ids:[]},
+ ...bundle.sections.map(x=>({title:x.title,text:x.text,source_ids:x.source_ids})),
+ {title:"Genetic Insights",text:bundle.relationship_note,source_ids:[]},
+ ...bundle.events.map(e=>({title:e.date+" · "+e.title,text:e.type+" · "+e.scope+"\n"+e.description,source_ids:e.source_ids})),
+ {title:"Latest retrieved status",text:s.trial_id+": "+s.trial_phase+" · "+s.trial_status+"\n"+s.trial_description+"\nRegistry updated "+s.trial_updated_at+" · checked "+bundle.checked_at+"\n"+s.regulatory+"\n"+(s.context_date_label||"Label effective")+" "+s.label_effective_at+"\n"+s.programme_status,source_ids:s.source_ids},
+ {title:"Module status",text:bundle.modules.map(m=>m.name+": "+m.status+". "+m.detail).join("\n"),source_ids:[]},
+ ...bundle.sources.map(s=>({title:"Source detail: "+s.title,text:s.location+"\n"+s.note,source_ids:[s.id]})),
+ {title:"Snapshot boundaries",text:bundle.provenance.preparation+"\n"+bundle.legacy_report.note,source_ids:[]}
+ ];
+}
+function render(){
+ const p=bundle.pair,s=bundle.current_status;
+ put("side-pair",p.metabolite+" · "+p.disease);put("side-gene","Gene context: "+p.gene);
+ $("source-groups").innerHTML=(bundle.source_groups||["EpiGraphDB / MR-EVE","Metabolite gene atlas","Original research papers","ClinicalTrials.gov","FDA records"]).map(s=>'<div class="source-label"><span class="dot"></span>'+esc(s)+'</div>').join("");
+ $("case-links").innerHTML=bundle.case_navigation?'<h3>Recording examples</h3><p><a href="../cetp-torcetrapib-v1/index.html#insights">Torcetrapib · safety failure</a></p><p><a href="../cetp-evacetrapib-v1/index.html#insights">Evacetrapib · efficacy failure</a></p>':"";
+ put("headline",bundle.headline);put("intro",bundle.summary);
+ put("pair",p.metabolite+" · "+p.gene+" · "+p.disease);
+ put("snapshot",bundle.mode+" | Checked "+bundle.checked_at);put("footer-version",bundle.snapshot_id);
+ const section=id=>bundle.sections.find(s=>s.id===id);
+ put("question-text",section("question")?.text||bundle.summary);
+ const items=[
+ ["MR evidence","Retrieved",section("mr")?.text||"See evidence sections.",section("mr")?.source_ids||[]],
+ ["Gene context",p.gene,section("gene")?.text||"Gene context unresolved.",section("gene")?.source_ids||[]],
+ ["Clinical context",s.trial_phase+" · "+s.trial_status,section("clinical")?.text||s.trial_description,s.source_ids]
+ ];
+ $("highlights").innerHTML=items.map(x=>'<article class="card"><div class="kicker">'+esc(x[0])+'</div><div class="metric">'+esc(x[1])+'</div><p>'+esc(x[2])+"</p>"+links(x[3])+"</article>").join("");
+ $("evidence-sections").innerHTML=bundle.sections.filter(x=>!["question","mr","gene","clinical"].includes(x.id)).map(x=>card(x.title,x.text,x.source_ids)).join("");
+ put("raw",JSON.stringify({baseline:bundle.provenance.baseline,triple:bundle.provenance.triple},null,2));
+ put("legacy-label",bundle.legacy_report.label);put("legacy-note",bundle.legacy_report.note);put("legacy",bundle.legacy_report.text);
+ put("timeline-title",bundle.timeline_title || p.metabolite+" · "+p.disease+" — clinical context");
+ put("relationship",bundle.relationship_note);
+ $("timeline").style.setProperty("--events",bundle.events.length);
+ $("timeline").innerHTML=bundle.events.map(e=>'<button class="event" data-event="'+esc(e.id)+'" aria-pressed="false" aria-label="'+esc(e.date+" "+e.title)+'"><span class="event-label"><span class="year">'+esc(e.date.slice(0,4))+'</span><span class="event-title">'+esc(e.title)+'</span><span class="event-type">'+esc(e.type)+'</span></span><span class="node"></span></button>').join("");
+ document.querySelectorAll(".event").forEach(b=>b.onclick=()=>renderEvent(b.dataset.event));
+ renderEvent(bundle.events[0].id);
+ $("status").innerHTML='<article class="card"><div class="kicker">Latest registry record · '+esc(s.trial_id)+'</div><div class="metric">'+esc(s.trial_phase.replace("PHASE","Phase "))+" · "+esc(s.trial_status.toLowerCase())+'</div><p>'+esc(s.trial_description)+'</p><small>Registry updated '+esc(s.trial_updated_at)+" · checked "+esc(bundle.checked_at)+"</small>"+links(s.source_ids.slice(0,1))+'</article><article class="card"><div class="kicker">'+esc(s.context_label||'Regulatory context')+'</div><h3 style="margin-top:8px">'+esc(s.context_title||'Latest retrieved record')+'</h3><p>'+esc(s.regulatory)+'</p><small>'+esc(s.context_date_label||'Retrieved label effective')+' '+esc(s.label_effective_at)+". "+esc(s.programme_status)+"</small>"+links(s.source_ids.slice(1))+"</article>";
+ $("sources").innerHTML=bundle.sources.map(s=>'<article class="source-item"><h3><a href="'+esc(safeURL(s.url))+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+' ↗</a></h3><p>'+esc(s.location)+'</p><p>'+esc(s.note)+'</p></article>').join("");
+ $("slack-content").innerHTML=slackSections().map((s,i)=>'<div class="slack-message"><div class="avatar">M</div><div class="message-body"><h3>MetaboCausal <span class="app-tag">PREVIEW</span></h3><strong>'+esc(s.title)+'</strong><div class="body">'+esc(s.text)+'</div>'+links(s.source_ids)+"</div></div>").join("")+'<div class="slack-message"><div class="message-body"><strong>Prepared attachments</strong><p class="footnote">The full archived report remains available alongside the new timeline summary.</p>'+["Timeline image (when captured)","Full MVP1 report","Evidence summary","Evidence JSON","HTML viewer"].map(s=>'<span class="file-chip">'+s+"</span>").join("")+"</div></div>";
+ $("modules").innerHTML=bundle.modules.map(m=>'<article class="card"><div class="kicker">'+esc(m.name)+'</div><h3 style="margin-top:8px">'+esc(m.status)+'</h3><p>'+esc(m.detail)+"</p></article>").join("");
+}
+$("present").onclick=()=>{document.body.classList.toggle("presentation");$("present").textContent=document.body.classList.contains("presentation")?"Exit presentation":"Presentation mode"};
+$("download").onclick=()=>{const blob=new Blob([JSON.stringify(bundle,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=bundle.snapshot_id.replace(/[^a-z0-9_-]/gi,"_")+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)};
+$("copy-slack").onclick=async()=>{
+ const txt=slackSections().map(s=>s.title+"\n"+s.text+"\n"+s.source_ids.map(id=>{const r=bundle.sources.find(x=>x.id===id);return r.title+": "+r.url}).join("\n")).join("\n\n");
+ try{await navigator.clipboard.writeText(txt);$("copy-slack").textContent="Copied"}catch{put("error","Clipboard access is unavailable here. Use the generated slack-text.txt file.");$("error").hidden=false}
+};
+function validate(b){
+ if(b.schema_version!=="1.0")throw Error("Unsupported snapshot version.");
+ for(const k of ["snapshot_id","checked_at","mode","headline","summary","relationship_note"])if(typeof b[k]!=="string")throw Error("Missing "+k);
+ for(const k of ["metabolite","gene","disease","exposure_id","outcome_dataset_id"])if(typeof b.pair?.[k]!=="string")throw Error("Missing pair "+k);
+ for(const k of ["events","sections","sources","modules"])if(!Array.isArray(b[k])||!b[k].length)throw Error("Missing "+k);
+ const ids=new Set(b.sources.map(s=>s.id));if(ids.size!==b.sources.length)throw Error("Duplicate source IDs.");
+ b.sources.forEach(s=>{if(!s.id||!s.title||!s.location||typeof s.note!=="string"||safeURL(s.url)==="#")throw Error("Invalid source.")});
+ [...b.events,...b.sections].forEach(s=>{if(!s.title||!Array.isArray(s.source_ids)||!s.source_ids.length||s.source_ids.some(id=>!ids.has(id)))throw Error("Missing evidence source.")});
+ b.events.forEach(e=>{if(typeof e.description!=="string"||typeof e.scope!=="string"||typeof e.type!=="string"||!["year","month","day"].includes(e.precision)||!/^(\d{4})(-\d{2})?(-\d{2})?$/.test(e.date))throw Error("Invalid event.")});
+ if(b.events.map(e=>e.date).join("|")!==b.events.map(e=>e.date).sort().join("|"))throw Error("Events must be chronological.");
+ b.sections.forEach(s=>{if(typeof s.text!=="string")throw Error("Invalid section.")});
+ b.modules.forEach(m=>{if(!["name","status","detail"].every(k=>typeof m[k]==="string"))throw Error("Invalid module.")});
+ if(!b.current_status||!Array.isArray(b.current_status.source_ids)||b.current_status.source_ids.some(id=>!ids.has(id)))throw Error("Missing status sources.");
+ for(const k of ["trial_id","trial_phase","trial_status","trial_updated_at","trial_description","regulatory","label_effective_at","programme_status"])if(typeof b.current_status[k]!=="string")throw Error("Missing status "+k);
+ if(!b.provenance||typeof b.provenance.preparation!=="string"||!b.legacy_report||typeof b.legacy_report.text!=="string"||typeof b.legacy_report.note!=="string")throw Error("Missing provenance or archived report.");
+}
+$("load").onchange=async e=>{
+ const file=e.target.files[0];if(!file)return;
+ const previous=bundle;
+ try{if(file.size>5*1024*1024)throw Error("Choose a snapshot smaller than 5 MB.");const candidate=JSON.parse(await file.text());validate(candidate);bundle=candidate;render();$("error").hidden=true;showTab("evidence")}
+ catch(err){bundle=previous;render();put("error","Snapshot was not loaded: "+err.message);$("error").hidden=false}
+ e.target.value="";
+};
+render();
+if(["evidence","insights","slack","updates"].includes(location.hash.slice(1)))showTab(location.hash.slice(1));
+</script>
+</body></html>

@@ -1,0 +1,19 @@
+case: GI21
+what: a stopping reason matplotlib parses as malformed mathtext
+asks: can one retrieved string deny the whole figure
+figure: none 
+stdout: 
+registry asked: NCT00134264
+exception: ValueError: 
+1{2 per site
+            ^
+ParseFatalException: Expected '}', found end of text  (at char 12), (line:1, col:13)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---

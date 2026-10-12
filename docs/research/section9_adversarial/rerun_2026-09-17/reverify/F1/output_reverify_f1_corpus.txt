@@ -1,0 +1,37 @@
+case       pair   gate1      gate2    renderer  attestation
+------------------------------------------------------------------------------
+A01/R01    A      accepted   none     printed   True
+S01        A      accepted   none     printed   True
+S02        A      accepted   none     printed   True
+S03        C      accepted   none     printed   True
+S05        A      accepted   none     printed   True
+S09        C      accepted   none     printed   True
+
+--- A01/R01: exact Section 9 from current main ---
+This target looks promising.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- S01: exact Section 9 from current main ---
+This target deserves immediate clinical prioritization.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- S02: exact Section 9 from current main ---
+This target is safer and more effective than the alternatives.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- S03: exact Section 9 from current main ---
+The metabolite appears harmless for this disease.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- S05: exact Section 9 from current main ---
+The evidence leaves little room for doubt.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- S09: exact Section 9 from current main ---
+The search found nothing concerning.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- end ---
+
+cases sent through the real model path : 6
+printed under the attestation          : 6

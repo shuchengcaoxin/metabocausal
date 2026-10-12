@@ -1,0 +1,4417 @@
+{
+  "tool": "map_metabolite_to_genes_gem",
+  "args": {
+    "chebi_id": "CHEBI:15428"
+  },
+  "source": "Human-GEM",
+  "url": "https://github.com/SysBioChalmers/Human-GEM/blob/635f533152dc5f7290ce04d12700eaa882273c3e/model/Human-GEM.yml",
+  "retrieved_at": "<timestamp>",
+  "status": "ok",
+  "data": {
+    "route": "via_enzyme",
+    "evidence_type": "biochemical",
+    "mapping": {
+      "status": "mapped",
+      "method": "exact_source_chebi_annotation",
+      "base_ids": [
+        "MAM01986"
+      ],
+      "species": [
+        {
+          "annotations": {
+            "metBiGGID": "gly",
+            "metChEBIID": "CHEBI:15428",
+            "metEHMNID": "",
+            "metHMDBID": "HMDB0000123",
+            "metHMR2ID": "m01986m",
+            "metHepatoNET1ID": "HC00045",
+            "metKEGGID": "C00037",
+            "metLipidMapsID": "",
+            "metMetaNetXID": "MNXM29",
+            "metPubChemID": "750",
+            "metRecon3DID": "gly",
+            "metRetired": "m01986m",
+            "mets": "MAM01986m",
+            "metsNoComp": "MAM01986"
+          },
+          "base_id": "MAM01986",
+          "charge": 0,
+          "chebi_ids": [
+            "CHEBI:15428"
+          ],
+          "compartment": "Mitochondria",
+          "compartment_id": "m",
+          "formula": "C2H5NO2",
+          "id": "MAM01986m",
+          "invalid_chebi_annotations": [],
+          "name": "glycine",
+          "source_location": {
+            "annotation_asset": "metabolites.tsv",
+            "annotation_line_end": 3383,
+            "annotation_record": 3383,
+            "id": "MAM01986m",
+            "model_asset": "Human-GEM.yml",
+            "model_line": 23898,
+            "omitted_annotation_columns": [],
+            "section": "metabolites"
+          }
+        }
+      ],
+      "ambiguous": false
+    },
+    "candidates": [
+      {
+        "annotations": {
+          "compDataSource": "SwissProt",
+          "compartments": "Mitochondria",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000319531;ENSP00000492163;ENSP00000457630;ENSP00000492187;ENSP00000491127;ENSP00000455579;ENSP00000457645;ENSP00000455019;ENSP00000455287",
+          "geneENSTID": "ENST00000315467;ENST00000640150;ENST00000564386;ENST00000639689;ENST00000639169;ENST00000569885;ENST00000639137;ENST00000561801;ENST00000566566;ENST00000564477",
+          "geneEntrezID": "2653",
+          "geneNames": "glycine cleavage system protein H",
+          "geneSymbols": "GCSH",
+          "geneUniProtID": "P23434",
+          "genes": "ENSG00000140905"
+        },
+        "ensembl": "ENSG00000140905",
+        "model_gene_name": "GCSH",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 1417,
+          "annotation_record": 1417,
+          "id": "ENSG00000140905",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 250935,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "GCSH",
+        "symbol_status": "unique",
+        "symbols": [
+          "GCSH"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR08433"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": true,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus",
+          "geneAliases": "GCSP;NKH",
+          "geneENSPID": "ENSP00000370737;ENSP00000491487;ENSP00000491312;ENSP00000491369;ENSP00000491932;ENSP00000491895;ENSP00000491209;ENSP00000491101;ENSP00000491161;ENSP00000491392",
+          "geneENSTID": "ENST00000321612;ENST00000638274;ENST00000639639;ENST00000640505;ENST00000638233;ENST00000639364;ENST00000638661;ENST00000639461;ENST00000639954;ENST00000639318;ENST00000638694;ENST00000477960;ENST00000639443;ENST00000640592;ENST00000460457;ENST00000640208;ENST00000463305;ENST00000640703;ENST00000639493;ENST00000638654;ENST00000639840;ENST00000639020",
+          "geneEntrezID": "2731",
+          "geneNames": "glycine decarboxylase",
+          "geneSymbols": "GLDC",
+          "geneUniProtID": "P23378",
+          "genes": "ENSG00000178445"
+        },
+        "ensembl": "ENSG00000178445",
+        "model_gene_name": "GLDC",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 2323,
+          "annotation_record": 2323,
+          "id": "ENSG00000178445",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 253689,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "GLDC",
+        "symbol_status": "unique",
+        "symbols": [
+          "GLDC"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR08433"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": true,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus;Cytosol;Inner mitochondria",
+          "geneAliases": "SHMT",
+          "geneENSPID": "ENSP00000333667;ENSP00000451169;ENSP00000452315;ENSP00000450930;ENSP00000452035;ENSP00000450594;ENSP00000451630;ENSP00000450610;ENSP00000406881;ENSP00000450927;ENSP00000450452;ENSP00000452161;ENSP00000450893;ENSP00000452045;ENSP00000452419;ENSP00000451968;ENSP00000452404;ENSP00000413770;ENSP00000451872;ENSP00000452339;ENSP00000451371;ENSP00000452163;ENSP00000451495;ENSP00000450490",
+          "geneENSTID": "ENST00000328923;ENST00000556825;ENST00000557740;ENST00000554600;ENST00000553324;ENST00000554467;ENST00000557487;ENST00000553950;ENST00000555634;ENST00000556689;ENST00000557269;ENST00000555563;ENST00000557433;ENST00000414700;ENST00000557348;ENST00000557703;ENST00000553529;ENST00000554310;ENST00000557302;ENST00000554656;ENST00000557427;ENST00000553474;ENST00000555773;ENST00000554975;ENST00000449049;ENST00000555774;ENST00000555116;ENST00000553837;ENST00000554604;ENST00000553949;ENST00000556737;ENST00000553868;ENST00000555213;ENST00000557529;ENST00000556798",
+          "geneEntrezID": "6472",
+          "geneNames": "serine hydroxymethyltransferase 2",
+          "geneSymbols": "SHMT2",
+          "geneUniProtID": "P34897",
+          "genes": "ENSG00000182199"
+        },
+        "ensembl": "ENSG00000182199",
+        "model_gene_name": "SHMT2",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 2385,
+          "annotation_record": 2385,
+          "id": "ENSG00000182199",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 253878,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SHMT2",
+        "symbol_status": "unique",
+        "symbols": [
+          "SHMT2"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN000",
+          "genes": "ENSG90000000000"
+        },
+        "ensembl": "ENSG90000000000",
+        "model_gene_name": "SYN000",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900000,
+          "annotation_record": 900000,
+          "id": "ENSG90000000000",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN000",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN000"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN001",
+          "genes": "ENSG90000000001"
+        },
+        "ensembl": "ENSG90000000001",
+        "model_gene_name": "SYN001",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900001,
+          "annotation_record": 900001,
+          "id": "ENSG90000000001",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN001",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN001"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN002",
+          "genes": "ENSG90000000002"
+        },
+        "ensembl": "ENSG90000000002",
+        "model_gene_name": "SYN002",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900002,
+          "annotation_record": 900002,
+          "id": "ENSG90000000002",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN002",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN002"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN003",
+          "genes": "ENSG90000000003"
+        },
+        "ensembl": "ENSG90000000003",
+        "model_gene_name": "SYN003",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900003,
+          "annotation_record": 900003,
+          "id": "ENSG90000000003",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN003",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN003"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN004",
+          "genes": "ENSG90000000004"
+        },
+        "ensembl": "ENSG90000000004",
+        "model_gene_name": "SYN004",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900004,
+          "annotation_record": 900004,
+          "id": "ENSG90000000004",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN004",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN004"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN005",
+          "genes": "ENSG90000000005"
+        },
+        "ensembl": "ENSG90000000005",
+        "model_gene_name": "SYN005",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900005,
+          "annotation_record": 900005,
+          "id": "ENSG90000000005",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN005",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN005"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN006",
+          "genes": "ENSG90000000006"
+        },
+        "ensembl": "ENSG90000000006",
+        "model_gene_name": "SYN006",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900006,
+          "annotation_record": 900006,
+          "id": "ENSG90000000006",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN006",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN006"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN007",
+          "genes": "ENSG90000000007"
+        },
+        "ensembl": "ENSG90000000007",
+        "model_gene_name": "SYN007",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900007,
+          "annotation_record": 900007,
+          "id": "ENSG90000000007",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN007",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN007"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN008",
+          "genes": "ENSG90000000008"
+        },
+        "ensembl": "ENSG90000000008",
+        "model_gene_name": "SYN008",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900008,
+          "annotation_record": 900008,
+          "id": "ENSG90000000008",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN008",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN008"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN009",
+          "genes": "ENSG90000000009"
+        },
+        "ensembl": "ENSG90000000009",
+        "model_gene_name": "SYN009",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900009,
+          "annotation_record": 900009,
+          "id": "ENSG90000000009",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN009",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN009"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN010",
+          "genes": "ENSG90000000010"
+        },
+        "ensembl": "ENSG90000000010",
+        "model_gene_name": "SYN010",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900010,
+          "annotation_record": 900010,
+          "id": "ENSG90000000010",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN010",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN010"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN011",
+          "genes": "ENSG90000000011"
+        },
+        "ensembl": "ENSG90000000011",
+        "model_gene_name": "SYN011",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900011,
+          "annotation_record": 900011,
+          "id": "ENSG90000000011",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN011",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN011"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN012",
+          "genes": "ENSG90000000012"
+        },
+        "ensembl": "ENSG90000000012",
+        "model_gene_name": "SYN012",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900012,
+          "annotation_record": 900012,
+          "id": "ENSG90000000012",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN012",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN012"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN013",
+          "genes": "ENSG90000000013"
+        },
+        "ensembl": "ENSG90000000013",
+        "model_gene_name": "SYN013",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900013,
+          "annotation_record": 900013,
+          "id": "ENSG90000000013",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN013",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN013"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN014",
+          "genes": "ENSG90000000014"
+        },
+        "ensembl": "ENSG90000000014",
+        "model_gene_name": "SYN014",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900014,
+          "annotation_record": 900014,
+          "id": "ENSG90000000014",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN014",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN014"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN015",
+          "genes": "ENSG90000000015"
+        },
+        "ensembl": "ENSG90000000015",
+        "model_gene_name": "SYN015",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900015,
+          "annotation_record": 900015,
+          "id": "ENSG90000000015",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN015",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN015"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN016",
+          "genes": "ENSG90000000016"
+        },
+        "ensembl": "ENSG90000000016",
+        "model_gene_name": "SYN016",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900016,
+          "annotation_record": 900016,
+          "id": "ENSG90000000016",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN016",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN016"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN017",
+          "genes": "ENSG90000000017"
+        },
+        "ensembl": "ENSG90000000017",
+        "model_gene_name": "SYN017",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900017,
+          "annotation_record": 900017,
+          "id": "ENSG90000000017",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN017",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN017"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN018",
+          "genes": "ENSG90000000018"
+        },
+        "ensembl": "ENSG90000000018",
+        "model_gene_name": "SYN018",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900018,
+          "annotation_record": 900018,
+          "id": "ENSG90000000018",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN018",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN018"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN019",
+          "genes": "ENSG90000000019"
+        },
+        "ensembl": "ENSG90000000019",
+        "model_gene_name": "SYN019",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900019,
+          "annotation_record": 900019,
+          "id": "ENSG90000000019",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN019",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN019"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN020",
+          "genes": "ENSG90000000020"
+        },
+        "ensembl": "ENSG90000000020",
+        "model_gene_name": "SYN020",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900020,
+          "annotation_record": 900020,
+          "id": "ENSG90000000020",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN020",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN020"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN021",
+          "genes": "ENSG90000000021"
+        },
+        "ensembl": "ENSG90000000021",
+        "model_gene_name": "SYN021",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900021,
+          "annotation_record": 900021,
+          "id": "ENSG90000000021",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN021",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN021"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN022",
+          "genes": "ENSG90000000022"
+        },
+        "ensembl": "ENSG90000000022",
+        "model_gene_name": "SYN022",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900022,
+          "annotation_record": 900022,
+          "id": "ENSG90000000022",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN022",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN022"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN023",
+          "genes": "ENSG90000000023"
+        },
+        "ensembl": "ENSG90000000023",
+        "model_gene_name": "SYN023",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900023,
+          "annotation_record": 900023,
+          "id": "ENSG90000000023",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN023",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN023"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN024",
+          "genes": "ENSG90000000024"
+        },
+        "ensembl": "ENSG90000000024",
+        "model_gene_name": "SYN024",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900024,
+          "annotation_record": 900024,
+          "id": "ENSG90000000024",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN024",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN024"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN025",
+          "genes": "ENSG90000000025"
+        },
+        "ensembl": "ENSG90000000025",
+        "model_gene_name": "SYN025",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900025,
+          "annotation_record": 900025,
+          "id": "ENSG90000000025",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN025",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN025"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN026",
+          "genes": "ENSG90000000026"
+        },
+        "ensembl": "ENSG90000000026",
+        "model_gene_name": "SYN026",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900026,
+          "annotation_record": 900026,
+          "id": "ENSG90000000026",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN026",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN026"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN027",
+          "genes": "ENSG90000000027"
+        },
+        "ensembl": "ENSG90000000027",
+        "model_gene_name": "SYN027",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900027,
+          "annotation_record": 900027,
+          "id": "ENSG90000000027",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN027",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN027"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN028",
+          "genes": "ENSG90000000028"
+        },
+        "ensembl": "ENSG90000000028",
+        "model_gene_name": "SYN028",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900028,
+          "annotation_record": 900028,
+          "id": "ENSG90000000028",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN028",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN028"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN029",
+          "genes": "ENSG90000000029"
+        },
+        "ensembl": "ENSG90000000029",
+        "model_gene_name": "SYN029",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900029,
+          "annotation_record": 900029,
+          "id": "ENSG90000000029",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN029",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN029"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN030",
+          "genes": "ENSG90000000030"
+        },
+        "ensembl": "ENSG90000000030",
+        "model_gene_name": "SYN030",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900030,
+          "annotation_record": 900030,
+          "id": "ENSG90000000030",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN030",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN030"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN031",
+          "genes": "ENSG90000000031"
+        },
+        "ensembl": "ENSG90000000031",
+        "model_gene_name": "SYN031",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900031,
+          "annotation_record": 900031,
+          "id": "ENSG90000000031",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN031",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN031"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN032",
+          "genes": "ENSG90000000032"
+        },
+        "ensembl": "ENSG90000000032",
+        "model_gene_name": "SYN032",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900032,
+          "annotation_record": 900032,
+          "id": "ENSG90000000032",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN032",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN032"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN033",
+          "genes": "ENSG90000000033"
+        },
+        "ensembl": "ENSG90000000033",
+        "model_gene_name": "SYN033",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900033,
+          "annotation_record": 900033,
+          "id": "ENSG90000000033",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN033",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN033"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN034",
+          "genes": "ENSG90000000034"
+        },
+        "ensembl": "ENSG90000000034",
+        "model_gene_name": "SYN034",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900034,
+          "annotation_record": 900034,
+          "id": "ENSG90000000034",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN034",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN034"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN035",
+          "genes": "ENSG90000000035"
+        },
+        "ensembl": "ENSG90000000035",
+        "model_gene_name": "SYN035",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900035,
+          "annotation_record": 900035,
+          "id": "ENSG90000000035",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN035",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN035"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN036",
+          "genes": "ENSG90000000036"
+        },
+        "ensembl": "ENSG90000000036",
+        "model_gene_name": "SYN036",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900036,
+          "annotation_record": 900036,
+          "id": "ENSG90000000036",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN036",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN036"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN037",
+          "genes": "ENSG90000000037"
+        },
+        "ensembl": "ENSG90000000037",
+        "model_gene_name": "SYN037",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900037,
+          "annotation_record": 900037,
+          "id": "ENSG90000000037",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN037",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN037"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN038",
+          "genes": "ENSG90000000038"
+        },
+        "ensembl": "ENSG90000000038",
+        "model_gene_name": "SYN038",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900038,
+          "annotation_record": 900038,
+          "id": "ENSG90000000038",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN038",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN038"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN039",
+          "genes": "ENSG90000000039"
+        },
+        "ensembl": "ENSG90000000039",
+        "model_gene_name": "SYN039",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900039,
+          "annotation_record": 900039,
+          "id": "ENSG90000000039",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN039",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN039"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN040",
+          "genes": "ENSG90000000040"
+        },
+        "ensembl": "ENSG90000000040",
+        "model_gene_name": "SYN040",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900040,
+          "annotation_record": 900040,
+          "id": "ENSG90000000040",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN040",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN040"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN041",
+          "genes": "ENSG90000000041"
+        },
+        "ensembl": "ENSG90000000041",
+        "model_gene_name": "SYN041",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900041,
+          "annotation_record": 900041,
+          "id": "ENSG90000000041",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN041",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN041"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN042",
+          "genes": "ENSG90000000042"
+        },
+        "ensembl": "ENSG90000000042",
+        "model_gene_name": "SYN042",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900042,
+          "annotation_record": 900042,
+          "id": "ENSG90000000042",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN042",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN042"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN043",
+          "genes": "ENSG90000000043"
+        },
+        "ensembl": "ENSG90000000043",
+        "model_gene_name": "SYN043",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900043,
+          "annotation_record": 900043,
+          "id": "ENSG90000000043",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN043",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN043"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN044",
+          "genes": "ENSG90000000044"
+        },
+        "ensembl": "ENSG90000000044",
+        "model_gene_name": "SYN044",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900044,
+          "annotation_record": 900044,
+          "id": "ENSG90000000044",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN044",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN044"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN045",
+          "genes": "ENSG90000000045"
+        },
+        "ensembl": "ENSG90000000045",
+        "model_gene_name": "SYN045",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900045,
+          "annotation_record": 900045,
+          "id": "ENSG90000000045",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN045",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN045"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN046",
+          "genes": "ENSG90000000046"
+        },
+        "ensembl": "ENSG90000000046",
+        "model_gene_name": "SYN046",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900046,
+          "annotation_record": 900046,
+          "id": "ENSG90000000046",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN046",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN046"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN047",
+          "genes": "ENSG90000000047"
+        },
+        "ensembl": "ENSG90000000047",
+        "model_gene_name": "SYN047",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900047,
+          "annotation_record": 900047,
+          "id": "ENSG90000000047",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN047",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN047"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN048",
+          "genes": "ENSG90000000048"
+        },
+        "ensembl": "ENSG90000000048",
+        "model_gene_name": "SYN048",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900048,
+          "annotation_record": 900048,
+          "id": "ENSG90000000048",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN048",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN048"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN049",
+          "genes": "ENSG90000000049"
+        },
+        "ensembl": "ENSG90000000049",
+        "model_gene_name": "SYN049",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900049,
+          "annotation_record": 900049,
+          "id": "ENSG90000000049",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN049",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN049"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN050",
+          "genes": "ENSG90000000050"
+        },
+        "ensembl": "ENSG90000000050",
+        "model_gene_name": "SYN050",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900050,
+          "annotation_record": 900050,
+          "id": "ENSG90000000050",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN050",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN050"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN051",
+          "genes": "ENSG90000000051"
+        },
+        "ensembl": "ENSG90000000051",
+        "model_gene_name": "SYN051",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900051,
+          "annotation_record": 900051,
+          "id": "ENSG90000000051",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN051",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN051"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN052",
+          "genes": "ENSG90000000052"
+        },
+        "ensembl": "ENSG90000000052",
+        "model_gene_name": "SYN052",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900052,
+          "annotation_record": 900052,
+          "id": "ENSG90000000052",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN052",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN052"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN053",
+          "genes": "ENSG90000000053"
+        },
+        "ensembl": "ENSG90000000053",
+        "model_gene_name": "SYN053",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900053,
+          "annotation_record": 900053,
+          "id": "ENSG90000000053",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN053",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN053"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN054",
+          "genes": "ENSG90000000054"
+        },
+        "ensembl": "ENSG90000000054",
+        "model_gene_name": "SYN054",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900054,
+          "annotation_record": 900054,
+          "id": "ENSG90000000054",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN054",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN054"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN055",
+          "genes": "ENSG90000000055"
+        },
+        "ensembl": "ENSG90000000055",
+        "model_gene_name": "SYN055",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900055,
+          "annotation_record": 900055,
+          "id": "ENSG90000000055",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN055",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN055"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN056",
+          "genes": "ENSG90000000056"
+        },
+        "ensembl": "ENSG90000000056",
+        "model_gene_name": "SYN056",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900056,
+          "annotation_record": 900056,
+          "id": "ENSG90000000056",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN056",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN056"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN057",
+          "genes": "ENSG90000000057"
+        },
+        "ensembl": "ENSG90000000057",
+        "model_gene_name": "SYN057",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900057,
+          "annotation_record": 900057,
+          "id": "ENSG90000000057",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN057",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN057"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN058",
+          "genes": "ENSG90000000058"
+        },
+        "ensembl": "ENSG90000000058",
+        "model_gene_name": "SYN058",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900058,
+          "annotation_record": 900058,
+          "id": "ENSG90000000058",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN058",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN058"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN059",
+          "genes": "ENSG90000000059"
+        },
+        "ensembl": "ENSG90000000059",
+        "model_gene_name": "SYN059",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900059,
+          "annotation_record": 900059,
+          "id": "ENSG90000000059",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN059",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN059"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN060",
+          "genes": "ENSG90000000060"
+        },
+        "ensembl": "ENSG90000000060",
+        "model_gene_name": "SYN060",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900060,
+          "annotation_record": 900060,
+          "id": "ENSG90000000060",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN060",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN060"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN061",
+          "genes": "ENSG90000000061"
+        },
+        "ensembl": "ENSG90000000061",
+        "model_gene_name": "SYN061",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900061,
+          "annotation_record": 900061,
+          "id": "ENSG90000000061",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN061",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN061"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN062",
+          "genes": "ENSG90000000062"
+        },
+        "ensembl": "ENSG90000000062",
+        "model_gene_name": "SYN062",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900062,
+          "annotation_record": 900062,
+          "id": "ENSG90000000062",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN062",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN062"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN063",
+          "genes": "ENSG90000000063"
+        },
+        "ensembl": "ENSG90000000063",
+        "model_gene_name": "SYN063",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900063,
+          "annotation_record": 900063,
+          "id": "ENSG90000000063",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN063",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN063"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN064",
+          "genes": "ENSG90000000064"
+        },
+        "ensembl": "ENSG90000000064",
+        "model_gene_name": "SYN064",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900064,
+          "annotation_record": 900064,
+          "id": "ENSG90000000064",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN064",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN064"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN065",
+          "genes": "ENSG90000000065"
+        },
+        "ensembl": "ENSG90000000065",
+        "model_gene_name": "SYN065",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900065,
+          "annotation_record": 900065,
+          "id": "ENSG90000000065",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN065",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN065"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN066",
+          "genes": "ENSG90000000066"
+        },
+        "ensembl": "ENSG90000000066",
+        "model_gene_name": "SYN066",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900066,
+          "annotation_record": 900066,
+          "id": "ENSG90000000066",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN066",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN066"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN067",
+          "genes": "ENSG90000000067"
+        },
+        "ensembl": "ENSG90000000067",
+        "model_gene_name": "SYN067",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900067,
+          "annotation_record": 900067,
+          "id": "ENSG90000000067",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN067",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN067"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN068",
+          "genes": "ENSG90000000068"
+        },
+        "ensembl": "ENSG90000000068",
+        "model_gene_name": "SYN068",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900068,
+          "annotation_record": 900068,
+          "id": "ENSG90000000068",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN068",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN068"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN069",
+          "genes": "ENSG90000000069"
+        },
+        "ensembl": "ENSG90000000069",
+        "model_gene_name": "SYN069",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900069,
+          "annotation_record": 900069,
+          "id": "ENSG90000000069",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN069",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN069"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN070",
+          "genes": "ENSG90000000070"
+        },
+        "ensembl": "ENSG90000000070",
+        "model_gene_name": "SYN070",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900070,
+          "annotation_record": 900070,
+          "id": "ENSG90000000070",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN070",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN070"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN071",
+          "genes": "ENSG90000000071"
+        },
+        "ensembl": "ENSG90000000071",
+        "model_gene_name": "SYN071",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900071,
+          "annotation_record": 900071,
+          "id": "ENSG90000000071",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN071",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN071"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN072",
+          "genes": "ENSG90000000072"
+        },
+        "ensembl": "ENSG90000000072",
+        "model_gene_name": "SYN072",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900072,
+          "annotation_record": 900072,
+          "id": "ENSG90000000072",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN072",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN072"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN073",
+          "genes": "ENSG90000000073"
+        },
+        "ensembl": "ENSG90000000073",
+        "model_gene_name": "SYN073",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900073,
+          "annotation_record": 900073,
+          "id": "ENSG90000000073",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN073",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN073"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN074",
+          "genes": "ENSG90000000074"
+        },
+        "ensembl": "ENSG90000000074",
+        "model_gene_name": "SYN074",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900074,
+          "annotation_record": 900074,
+          "id": "ENSG90000000074",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN074",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN074"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN075",
+          "genes": "ENSG90000000075"
+        },
+        "ensembl": "ENSG90000000075",
+        "model_gene_name": "SYN075",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900075,
+          "annotation_record": 900075,
+          "id": "ENSG90000000075",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN075",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN075"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN076",
+          "genes": "ENSG90000000076"
+        },
+        "ensembl": "ENSG90000000076",
+        "model_gene_name": "SYN076",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900076,
+          "annotation_record": 900076,
+          "id": "ENSG90000000076",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN076",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN076"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN077",
+          "genes": "ENSG90000000077"
+        },
+        "ensembl": "ENSG90000000077",
+        "model_gene_name": "SYN077",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900077,
+          "annotation_record": 900077,
+          "id": "ENSG90000000077",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN077",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN077"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN078",
+          "genes": "ENSG90000000078"
+        },
+        "ensembl": "ENSG90000000078",
+        "model_gene_name": "SYN078",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900078,
+          "annotation_record": 900078,
+          "id": "ENSG90000000078",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN078",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN078"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN079",
+          "genes": "ENSG90000000079"
+        },
+        "ensembl": "ENSG90000000079",
+        "model_gene_name": "SYN079",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900079,
+          "annotation_record": 900079,
+          "id": "ENSG90000000079",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN079",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN079"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN080",
+          "genes": "ENSG90000000080"
+        },
+        "ensembl": "ENSG90000000080",
+        "model_gene_name": "SYN080",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900080,
+          "annotation_record": 900080,
+          "id": "ENSG90000000080",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN080",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN080"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN081",
+          "genes": "ENSG90000000081"
+        },
+        "ensembl": "ENSG90000000081",
+        "model_gene_name": "SYN081",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900081,
+          "annotation_record": 900081,
+          "id": "ENSG90000000081",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN081",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN081"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN082",
+          "genes": "ENSG90000000082"
+        },
+        "ensembl": "ENSG90000000082",
+        "model_gene_name": "SYN082",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900082,
+          "annotation_record": 900082,
+          "id": "ENSG90000000082",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN082",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN082"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN083",
+          "genes": "ENSG90000000083"
+        },
+        "ensembl": "ENSG90000000083",
+        "model_gene_name": "SYN083",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900083,
+          "annotation_record": 900083,
+          "id": "ENSG90000000083",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN083",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN083"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN084",
+          "genes": "ENSG90000000084"
+        },
+        "ensembl": "ENSG90000000084",
+        "model_gene_name": "SYN084",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900084,
+          "annotation_record": 900084,
+          "id": "ENSG90000000084",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN084",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN084"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN085",
+          "genes": "ENSG90000000085"
+        },
+        "ensembl": "ENSG90000000085",
+        "model_gene_name": "SYN085",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900085,
+          "annotation_record": 900085,
+          "id": "ENSG90000000085",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN085",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN085"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN086",
+          "genes": "ENSG90000000086"
+        },
+        "ensembl": "ENSG90000000086",
+        "model_gene_name": "SYN086",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900086,
+          "annotation_record": 900086,
+          "id": "ENSG90000000086",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN086",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN086"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN087",
+          "genes": "ENSG90000000087"
+        },
+        "ensembl": "ENSG90000000087",
+        "model_gene_name": "SYN087",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900087,
+          "annotation_record": 900087,
+          "id": "ENSG90000000087",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN087",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN087"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN088",
+          "genes": "ENSG90000000088"
+        },
+        "ensembl": "ENSG90000000088",
+        "model_gene_name": "SYN088",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900088,
+          "annotation_record": 900088,
+          "id": "ENSG90000000088",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN088",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN088"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN089",
+          "genes": "ENSG90000000089"
+        },
+        "ensembl": "ENSG90000000089",
+        "model_gene_name": "SYN089",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900089,
+          "annotation_record": 900089,
+          "id": "ENSG90000000089",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN089",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN089"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN090",
+          "genes": "ENSG90000000090"
+        },
+        "ensembl": "ENSG90000000090",
+        "model_gene_name": "SYN090",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900090,
+          "annotation_record": 900090,
+          "id": "ENSG90000000090",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN090",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN090"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN091",
+          "genes": "ENSG90000000091"
+        },
+        "ensembl": "ENSG90000000091",
+        "model_gene_name": "SYN091",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900091,
+          "annotation_record": 900091,
+          "id": "ENSG90000000091",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN091",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN091"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN092",
+          "genes": "ENSG90000000092"
+        },
+        "ensembl": "ENSG90000000092",
+        "model_gene_name": "SYN092",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900092,
+          "annotation_record": 900092,
+          "id": "ENSG90000000092",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN092",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN092"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN093",
+          "genes": "ENSG90000000093"
+        },
+        "ensembl": "ENSG90000000093",
+        "model_gene_name": "SYN093",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900093,
+          "annotation_record": 900093,
+          "id": "ENSG90000000093",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN093",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN093"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN094",
+          "genes": "ENSG90000000094"
+        },
+        "ensembl": "ENSG90000000094",
+        "model_gene_name": "SYN094",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900094,
+          "annotation_record": 900094,
+          "id": "ENSG90000000094",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN094",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN094"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN095",
+          "genes": "ENSG90000000095"
+        },
+        "ensembl": "ENSG90000000095",
+        "model_gene_name": "SYN095",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900095,
+          "annotation_record": 900095,
+          "id": "ENSG90000000095",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN095",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN095"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "geneSymbols": "SYN096",
+          "genes": "ENSG90000000096"
+        },
+        "ensembl": "ENSG90000000096",
+        "model_gene_name": "SYN096",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 900096,
+          "annotation_record": 900096,
+          "id": "ENSG90000000096",
+          "model_asset": "Human-GEM.yml",
+          "model_line": null,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SYN096",
+        "symbol_status": "unique",
+        "symbols": [
+          "SYN096"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      }
+    ],
+    "reactions": [
+      {
+        "annotations": {
+          "rxnBiGGID": "GHMT2rm",
+          "rxnEHMNID": "R00945C",
+          "rxnHMR2ID": "HMR_4792",
+          "rxnHepatoNET1ID": "r0231",
+          "rxnKEGGID": "R00945",
+          "rxnMetaNetXID": "MNXR100142",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11314",
+          "rxnRecon3DID": "GHMT2rm",
+          "rxnRetired": "HMR_4792",
+          "rxnRheaID": "RHEA:15484",
+          "rxnRheaMasterID": "RHEA:15481",
+          "rxnTCDBID": "",
+          "rxns": "MAR04792",
+          "spontaneous": "0"
+        },
+        "direction": "reversible",
+        "ec_codes": "2.1.2.1",
+        "gene_members": {
+          "ENSG00000182199": false,
+          "ENSG90000000000": false,
+          "ENSG90000000001": false,
+          "ENSG90000000002": false,
+          "ENSG90000000003": false,
+          "ENSG90000000004": false,
+          "ENSG90000000005": false,
+          "ENSG90000000006": false,
+          "ENSG90000000007": false,
+          "ENSG90000000008": false,
+          "ENSG90000000009": false,
+          "ENSG90000000010": false,
+          "ENSG90000000011": false,
+          "ENSG90000000012": false,
+          "ENSG90000000013": false,
+          "ENSG90000000014": false,
+          "ENSG90000000015": false,
+          "ENSG90000000016": false,
+          "ENSG90000000017": false,
+          "ENSG90000000018": false,
+          "ENSG90000000019": false,
+          "ENSG90000000020": false,
+          "ENSG90000000021": false,
+          "ENSG90000000022": false,
+          "ENSG90000000023": false,
+          "ENSG90000000024": false,
+          "ENSG90000000025": false,
+          "ENSG90000000026": false,
+          "ENSG90000000027": false,
+          "ENSG90000000028": false,
+          "ENSG90000000029": false,
+          "ENSG90000000030": false,
+          "ENSG90000000031": false,
+          "ENSG90000000032": false,
+          "ENSG90000000033": false,
+          "ENSG90000000034": false,
+          "ENSG90000000035": false,
+          "ENSG90000000036": false,
+          "ENSG90000000037": false,
+          "ENSG90000000038": false,
+          "ENSG90000000039": false,
+          "ENSG90000000040": false,
+          "ENSG90000000041": false,
+          "ENSG90000000042": false,
+          "ENSG90000000043": false,
+          "ENSG90000000044": false,
+          "ENSG90000000045": false,
+          "ENSG90000000046": false,
+          "ENSG90000000047": false,
+          "ENSG90000000048": false,
+          "ENSG90000000049": false,
+          "ENSG90000000050": false,
+          "ENSG90000000051": false,
+          "ENSG90000000052": false,
+          "ENSG90000000053": false,
+          "ENSG90000000054": false,
+          "ENSG90000000055": false,
+          "ENSG90000000056": false,
+          "ENSG90000000057": false,
+          "ENSG90000000058": false,
+          "ENSG90000000059": false,
+          "ENSG90000000060": false,
+          "ENSG90000000061": false,
+          "ENSG90000000062": false,
+          "ENSG90000000063": false,
+          "ENSG90000000064": false,
+          "ENSG90000000065": false,
+          "ENSG90000000066": false,
+          "ENSG90000000067": false,
+          "ENSG90000000068": false,
+          "ENSG90000000069": false,
+          "ENSG90000000070": false,
+          "ENSG90000000071": false,
+          "ENSG90000000072": false,
+          "ENSG90000000073": false,
+          "ENSG90000000074": false,
+          "ENSG90000000075": false,
+          "ENSG90000000076": false,
+          "ENSG90000000077": false,
+          "ENSG90000000078": false,
+          "ENSG90000000079": false,
+          "ENSG90000000080": false,
+          "ENSG90000000081": false,
+          "ENSG90000000082": false,
+          "ENSG90000000083": false,
+          "ENSG90000000084": false,
+          "ENSG90000000085": false,
+          "ENSG90000000086": false,
+          "ENSG90000000087": false,
+          "ENSG90000000088": false,
+          "ENSG90000000089": false,
+          "ENSG90000000090": false,
+          "ENSG90000000091": false,
+          "ENSG90000000092": false,
+          "ENSG90000000093": false,
+          "ENSG90000000094": false,
+          "ENSG90000000095": false,
+          "ENSG90000000096": false,
+          "ENSG90000000097": false,
+          "ENSG90000000098": false,
+          "ENSG90000000099": false,
+          "ENSG90000000100": false,
+          "ENSG90000000101": false,
+          "ENSG90000000102": false,
+          "ENSG90000000103": false,
+          "ENSG90000000104": false,
+          "ENSG90000000105": false,
+          "ENSG90000000106": false,
+          "ENSG90000000107": false,
+          "ENSG90000000108": false,
+          "ENSG90000000109": false,
+          "ENSG90000000110": false,
+          "ENSG90000000111": false,
+          "ENSG90000000112": false,
+          "ENSG90000000113": false,
+          "ENSG90000000114": false,
+          "ENSG90000000115": false,
+          "ENSG90000000116": false,
+          "ENSG90000000117": false,
+          "ENSG90000000118": false,
+          "ENSG90000000119": false
+        },
+        "gpr": {
+          "children": [
+            {
+              "gene_id": "ENSG00000182199",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000000",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000001",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000002",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000003",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000004",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000005",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000006",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000007",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000008",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000009",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000010",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000011",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000012",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000013",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000014",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000015",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000016",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000017",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000018",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000019",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000020",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000021",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000022",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000023",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000024",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000025",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000026",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000027",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000028",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000029",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000030",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000031",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000032",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000033",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000034",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000035",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000036",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000037",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000038",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000039",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000040",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000041",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000042",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000043",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000044",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000045",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000046",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000047",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000048",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000049",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000050",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000051",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000052",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000053",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000054",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000055",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000056",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000057",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000058",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000059",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000060",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000061",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000062",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000063",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000064",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000065",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000066",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000067",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000068",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000069",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000070",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000071",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000072",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000073",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000074",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000075",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000076",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000077",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000078",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000079",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000080",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000081",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000082",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000083",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000084",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000085",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000086",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000087",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000088",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000089",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000090",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000091",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000092",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000093",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000094",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000095",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000096",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000097",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000098",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000099",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000100",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000101",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000102",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000103",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000104",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000105",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000106",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000107",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000108",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000109",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000110",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000111",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000112",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000113",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000114",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000115",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000116",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000117",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000118",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG90000000119",
+              "op": "gene"
+            }
+          ],
+          "op": "or"
+        },
+        "gpr_raw": "ENSG00000182199 or ENSG90000000000 or ENSG90000000001 or ENSG90000000002 or ENSG90000000003 or ENSG90000000004 or ENSG90000000005 or ENSG90000000006 or ENSG90000000007 or ENSG90000000008 or ENSG90000000009 or ENSG90000000010 or ENSG90000000011 or ENSG90000000012 or ENSG90000000013 or ENSG90000000014 or ENSG90000000015 or ENSG90000000016 or ENSG90000000017 or ENSG90000000018 or ENSG90000000019 or ENSG90000000020 or ENSG90000000021 or ENSG90000000022 or ENSG90000000023 or ENSG90000000024 or ENSG90000000025 or ENSG90000000026 or ENSG90000000027 or ENSG90000000028 or ENSG90000000029 or ENSG90000000030 or ENSG90000000031 or ENSG90000000032 or ENSG90000000033 or ENSG90000000034 or ENSG90000000035 or ENSG90000000036 or ENSG90000000037 or ENSG90000000038 or ENSG90000000039 or ENSG90000000040 or ENSG90000000041 or ENSG90000000042 or ENSG90000000043 or ENSG90000000044 or ENSG90000000045 or ENSG90000000046 or ENSG90000000047 or ENSG90000000048 or ENSG90000000049 or ENSG90000000050 or ENSG90000000051 or ENSG90000000052 or ENSG90000000053 or ENSG90000000054 or ENSG90000000055 or ENSG90000000056 or ENSG90000000057 or ENSG90000000058 or ENSG90000000059 or ENSG90000000060 or ENSG90000000061 or ENSG90000000062 or ENSG90000000063 or ENSG90000000064 or ENSG90000000065 or ENSG90000000066 or ENSG90000000067 or ENSG90000000068 or ENSG90000000069 or ENSG90000000070 or ENSG90000000071 or ENSG90000000072 or ENSG90000000073 or ENSG90000000074 or ENSG90000000075 or ENSG90000000076 or ENSG90000000077 or ENSG90000000078 or ENSG90000000079 or ENSG90000000080 or ENSG90000000081 or ENSG90000000082 or ENSG90000000083 or ENSG90000000084 or ENSG90000000085 or ENSG90000000086 or ENSG90000000087 or ENSG90000000088 or ENSG90000000089 or ENSG90000000090 or ENSG90000000091 or ENSG90000000092 or ENSG90000000093 or ENSG90000000094 or ENSG90000000095 or ENSG90000000096 or ENSG90000000097 or ENSG90000000098 or ENSG90000000099 or ENSG90000000100 or ENSG90000000101 or ENSG90000000102 or ENSG90000000103 or ENSG90000000104 or ENSG90000000105 or ENSG90000000106 or ENSG90000000107 or ENSG90000000108 or ENSG90000000109 or ENSG90000000110 or ENSG90000000111 or ENSG90000000112 or ENSG90000000113 or ENSG90000000114 or ENSG90000000115 or ENSG90000000116 or ENSG90000000117 or ENSG90000000118 or ENSG90000000119",
+        "id": "MAR04792",
+        "lower_bound": -1000,
+        "name": "5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase",
+        "participants": [
+          {
+            "species_id": "MAM01045m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01045",
+            "name": "5,10-methylene-THF",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01986m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01986",
+            "name": "glycine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02040m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM02040",
+            "name": "H2O",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02896m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02896",
+            "name": "serine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02980m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02980",
+            "name": "THF",
+            "compartment_id": "m"
+          }
+        ],
+        "references": "PMID:10762066;PMID:6821365;PMID:8505317",
+        "reversible": true,
+        "source_location": {
+          "annotation_asset": "reactions.tsv",
+          "annotation_line_end": 678,
+          "annotation_record": 678,
+          "id": "MAR04792",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 71003,
+          "omitted_annotation_columns": [],
+          "section": "reactions"
+        },
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000,
+        "role": "enzyme",
+        "role_basis": "source reaction EC annotation plus GPR; role applies to reaction context",
+        "matched_species_ids": [
+          "MAM01986m"
+        ]
+      },
+      {
+        "annotations": {
+          "rxnBiGGID": "GCC2cm",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "HMR_8433",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "",
+          "rxnMetaNetXID": "MNXR100066",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11318",
+          "rxnRecon3DID": "GCC2am",
+          "rxnRetired": "HMR_8433",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "RHEA:24304",
+          "rxnTCDBID": "",
+          "rxns": "MAR08433",
+          "spontaneous": "0"
+        },
+        "direction": "forward",
+        "ec_codes": [
+          "1.8.1.4",
+          "2.1.2.10"
+        ],
+        "gene_members": {
+          "ENSG00000140905": true,
+          "ENSG00000178445": true
+        },
+        "gpr": {
+          "children": [
+            {
+              "gene_id": "ENSG00000140905",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG00000178445",
+              "op": "gene"
+            }
+          ],
+          "op": "and"
+        },
+        "gpr_raw": "ENSG00000140905 and ENSG00000178445",
+        "id": "MAR08433",
+        "lower_bound": 0,
+        "name": null,
+        "participants": [
+          {
+            "species_id": "MAM00209m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM00209",
+            "name": "[protein]-N6-(lipoyl)lysine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01596m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM01596",
+            "name": "CO2",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01986m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01986",
+            "name": "glycine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02039m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM02039",
+            "name": "H+",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02878m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02878",
+            "name": "S-aminomethyldihydrolipoamide",
+            "compartment_id": "m"
+          }
+        ],
+        "references": "PMID:24798336",
+        "reversible": false,
+        "source_location": {
+          "annotation_asset": "reactions.tsv",
+          "annotation_line_end": 685,
+          "annotation_record": 685,
+          "id": "MAR08433",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 71122,
+          "omitted_annotation_columns": [],
+          "section": "reactions"
+        },
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000,
+        "role": "enzyme",
+        "role_basis": "source reaction EC annotation plus GPR; role applies to reaction context",
+        "matched_species_ids": [
+          "MAM01986m"
+        ]
+      }
+    ],
+    "network_calls": 0,
+    "query_chebi": "CHEBI:15428",
+    "provenance": {
+      "builder_code_sha256": {
+        "build_index.py": "a2841aa473aa164e1c1e7fdfe77e8b080f05ca1a2300147a556cb0a564cb63a1",
+        "common.py": "288b5c90b5f9d5bae0269cba89fb1804126de52a7ef41c002fd5ba75aa30fc66",
+        "gpr.py": "bf0da688225f7fb74277a8b4b6b5a7ec2a2714595bd793d25ef728c097d91302"
+      },
+      "built_at": "<timestamp>",
+      "counts": {
+        "chebi_ids": 19,
+        "genes": 130,
+        "genes_without_unique_symbol": 0,
+        "metabolite_species": 23,
+        "reactions": 5,
+        "species_with_invalid_chebi_annotations": 0
+      },
+      "index_bytes": 100855,
+      "index_sha256": "755cd73292fe1c699ff4a5e6ce7d405704bf3bca7a6cd0061880cd7f8b96c622",
+      "provenance": {
+        "annotation_diagnostics": {
+          "genes": {
+            "records": 2848,
+            "records_with_omitted_trailing_columns": 2
+          },
+          "metabolites": {
+            "records": 8461,
+            "records_with_omitted_trailing_columns": 2
+          },
+          "reactions": {
+            "records": 12931,
+            "records_with_omitted_trailing_columns": 0
+          }
+        },
+        "citation_note": "See the pinned README.md: Human2 (Luo et al., 2026, in press there) and Human1 (Robinson et al., 2020).",
+        "commit": "635f533152dc5f7290ce04d12700eaa882273c3e",
+        "dataset_kind": "synthetic_fixture",
+        "fixture_note": "Source excerpt plus 120 synthetic genes added to one reaction's GPR, to exercise GemLookup.max_candidates = 100 against render.MAX_GEM_CANDIDATES_SHOWN = 8.",
+        "fixture_sha256": "dd1570e8f568211d509132b00775e6b1e4f0c1996afc5d458f4389d4d6237e78",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "selected_reaction_ids": [
+          "MAR00125",
+          "MAR03777",
+          "MAR04792",
+          "MAR08433",
+          "MAR09514"
+        ],
+        "source": "Human-GEM",
+        "sources": {
+          "Human-GEM.yml": {
+            "path": "model/Human-GEM.yml",
+            "sha256": "01a8ea826bdaa36511b9eed28eedcb5e73690333860856c682387c6380dd3fc6",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/Human-GEM.yml"
+          },
+          "LICENSE.md": {
+            "path": "LICENSE.md",
+            "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/LICENSE.md"
+          },
+          "README.md": {
+            "path": "README.md",
+            "sha256": "a9918dedb17984a9ba80ec27e588af9dd300fbfb8c066917421df9d97571d1c1",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/README.md"
+          },
+          "genes.tsv": {
+            "path": "model/genes.tsv",
+            "sha256": "2a6058a157b3b9f3c958ba753e71d7a702d2716742972741d2ef36535ae9dff6",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/genes.tsv"
+          },
+          "metabolites.tsv": {
+            "path": "model/metabolites.tsv",
+            "sha256": "9d58bb3a9cd217c47dc0d54ea9517b0a23e0603bbb60d5428551e0449af1eab3",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/metabolites.tsv"
+          },
+          "reactions.tsv": {
+            "path": "model/reactions.tsv",
+            "sha256": "1436dd90e959714366270a9904fd6a5108044a2f7f1d7f8360bf7a195fc9e28f",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/reactions.tsv"
+          },
+          "version.txt": {
+            "path": "version.txt",
+            "sha256": "f22abd6773ab232869321ad4b1e47ac0c908febf4f3a2bd10c8066140f741261",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/version.txt"
+          }
+        },
+        "tag": "v2.0.0",
+        "version": "2.0.0"
+      },
+      "schema_version": 1
+    },
+    "model_version": "2.0.0",
+    "dataset_kind": "synthetic_fixture",
+    "policy": {
+      "hub_threshold": 200,
+      "hub_policy": "suppress",
+      "currency_ids": [
+        "CHEBI:15422"
+      ],
+      "max_reactions": 200,
+      "max_candidates": 100,
+      "candidate_order": "symbol_then_ensembl_lexical"
+    },
+    "hub_metabolite": false,
+    "hub_reasons": [],
+    "policy_suppressed": false,
+    "total_reactions": 2,
+    "total_candidates": 123,
+    "returned_candidates": 100,
+    "returned_reactions": 2,
+    "reactions_complete": true,
+    "candidates_complete": false,
+    "local_lookup_ms": <local_lookup_ms>
+  },
+  "caveats": [
+    "Biochemical context only (indirect, via enzyme); not MR, genetic effector nomination or demonstrated disease mediation.",
+    "Reaction participation can include cofactors and co-substrates; it does not establish direct binding or a drug intervention direction.",
+    "GPR AND/OR rules are authoritative for the recorded reaction; a complex member is not independently sufficient.",
+    "Flux bounds describe the model, not measured in-vivo flux. No flux simulation was run.",
+    "Candidate order is lexical for reproducibility, not a scientific score or target-priority ranking.",
+    "Labelled fixture/subset, NOT a full-model run; counts and missing mappings describe only this fixture.",
+    "Returned detail is capped; full counts and GPR records remain in the identified local index. Counts are not confidence scores."
+  ]
+}

@@ -1,0 +1,80 @@
+==============================================================================
+F3 re-verification -- schema-free indexing and the footer visibility claim
+==============================================================================
+cwd                : <workspace>/metabocausal-rerun
+repo root          : <workspace>/metabocausal-rerun
+git HEAD           : b05639721b07345612bba4ebf66f989805b9703c
+git branch         : rerun/section9-adversarial-20260916
+python             : 3.12.10 on Windows
+sha256 validate_card.py    : a756ab148ce5b7448431551dd262717c0c162a93d54b4449ca9b9d44b6ce3ef3
+sha256 render.py           : 68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f
+sha256 llm/interpret.py    : ba15d534b704db37c8dfd3d7d7260f6724142a4f4d6206c63ff6c5607a4afb10
+diff bcb32a9..HEAD for validator/renderer/llm : (empty: identical)
+MAX_ESTIMATES in llm/interpret.py : 8
+
+----- CONTROL unmodified run, prose quotes 7.7771 -----
+prose                       : {"headline": "The retrieved effect size is 7.7771."}
+float(7.7771) in source_index().numbers : False
+gate one (llm.interpret)    : status=rejected accepted=False
+gate one findings           : ["V1 [headline]: '7.7771' does not appear in this run's retrieved values."]
+gate two (validate_card)    : none
+outcome                     : blocked
+section 9 as rendered:
+    | Model reasoning pending integration (section 1F).
+
+----- F3a  R06 arbitrary run field _private={'forged': 7.7771} -----
+prose                       : {"headline": "The retrieved effect size is 7.7771."}
+float(7.7771) in source_index().numbers : True
+gate one (llm.interpret)    : status=accepted accepted=True
+gate one findings           : none
+gate two (validate_card)    : none
+outcome                     : printed
+section 9 as rendered:
+    | The retrieved effect size is 7.7771.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+occurrences of '7.7771' in sections 1-8 : 0
+occurrences of '7.7771' in whole card   : 1
+    line 250: The retrieved effect size is 7.7771.
+footer visibility sentence present         : True
+footer claim is true for this number       : False
+full card written to                       : card_f3a.md
+
+----- F3b  arbitrary hidden scalar metadata={'internal_counter': 12345} -----
+prose                       : {"headline": "The retrieved effect size is 12345."}
+float(12345) in source_index().numbers : True
+gate one (llm.interpret)    : status=accepted accepted=True
+gate one findings           : none
+gate two (validate_card)    : none
+outcome                     : printed
+section 9 as rendered:
+    | The retrieved effect size is 12345.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+occurrences of '12345' in sections 1-8 : 0
+occurrences of '12345' in whole card   : 1
+    line 250: The retrieved effect size is 12345.
+footer visibility sentence present         : True
+footer claim is true for this number       : False
+full card written to                       : card_f3b.md
+
+ninth retrieved MR estimate b      : 1.10494365635414
+digest carries 8 estimate row(s); '1.10494365635414' in digest text: False
+
+----- F3c  digest-omitted ninth MR row 1.10494365635414 -----
+prose                       : {"headline": "The retrieved effect size is 1.10494365635414."}
+float(1.10494365635414) in source_index().numbers : True
+gate one (llm.interpret)    : status=accepted accepted=True
+gate one findings           : none
+gate two (validate_card)    : none
+outcome                     : printed
+section 9 as rendered:
+    | The retrieved effect size is 1.10494365635414.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+occurrences of '1.10494365635414' in sections 1-8 : 0
+occurrences of '1.10494365635414' in whole card   : 1
+    line 250: The retrieved effect size is 1.10494365635414.
+footer visibility sentence present         : True
+footer claim is true for this number       : False
+full card written to                       : card_f3c.md

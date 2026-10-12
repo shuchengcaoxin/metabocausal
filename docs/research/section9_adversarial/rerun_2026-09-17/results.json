@@ -1,0 +1,411 @@
+{
+  "schema": "metabocausal.section9_adversarial.rerun/1",
+  "generated_for": "2026-09-17 re-run of the 2026-09-16 Section 9 closed-boundary adversarial study",
+  "mirrors": "RESULTS.md",
+  "provenance": {
+    "revision": "b05639721b07345612bba4ebf66f989805b9703c",
+    "revision_short": "b056397",
+    "branch": "rerun/section9-adversarial-20260916",
+    "baseline_revision": "bcb32a91071b93cacaa62cd7487abb2d991baeb7",
+    "baseline_revision_short": "bcb32a9",
+    "merged_since_baseline": ["#13 MVP3 Human-GEM", "#14 Genetic Insights timeline lifecycle", "#15 docs", "#16 MVP2 literature data layer", "#17 the September 16 harness itself"],
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "network_used": false,
+    "provider_api_used": false,
+    "pushed": false,
+    "his_bundle_modified": false
+  },
+  "method": {
+    "vocabulary": "printed = the renderer emitted Section 9; blocked = it fell back to the fixed pending sentence; bypassed = the case deliberately does not call the gate; raised = an exception propagated.",
+    "independent_refutation": "Every candidate claim was rebuilt from source by a second pass that tried to make it fail. Claims that survived are findings; claims that did not are in rejected_claims.",
+    "provider_isolation": "Where a card was produced end to end, only llm.interpret.complete was replaced with a fixed offline Reply. Argument parsing, interpret(), both validators and render_card() ran unmodified.",
+    "reachability_rule": "The strongest path actually executed is recorded. Unexecuted or weaker paths are named separately and are not the headline."
+  },
+
+  "drift": {
+    "headline": "0 of 51 cases changed outcome",
+    "command": "python scripts/probe_section9.py",
+    "exit_code": 0,
+    "all_expectations_met": true,
+    "changed_cases": [],
+    "counts": {
+      "cases":       {"expected_bcb32a9": 51, "observed_b056397": 51, "same": true},
+      "printed":     {"expected_bcb32a9": 31, "observed_b056397": 31, "same": true},
+      "blocked":     {"expected_bcb32a9": 17, "observed_b056397": 17, "same": true},
+      "bypassed":    {"expected_bcb32a9":  2, "observed_b056397":  2, "same": true},
+      "raised":      {"expected_bcb32a9":  1, "observed_b056397":  1, "same": true}
+    },
+    "per_case_field_diff": {
+      "method": "git show HEAD:docs/research/section9_adversarial/artifacts/results.json vs this run's results.json, every field of every row",
+      "fields_compared": ["case_id", "category", "attack", "construction", "pair", "reachability", "gate_one", "outcome", "expected", "matched_rules", "expectation_met", "notes"],
+      "same_case_id_set": true,
+      "rows_with_any_difference": 0
+    },
+    "artifact_files": {
+      "total": 69,
+      "identical_lf_normalised": 67,
+      "differing": 2,
+      "section9_outputs": {"files": 33, "differing_raw": 0, "differing_lf_normalised": 0},
+      "full_cards":      {"files": 31, "differing_raw": 0, "differing_lf_normalised": 0},
+      "differences": [
+        {
+          "file": "run.log",
+          "what_differs": "two hunks only: the command/cwd/git_head/git_branch header and the output-path footer",
+          "result_lines_identical": true,
+          "reading": "interpreter path and revision, not #13/#14/#16"
+        },
+        {
+          "file": "manifest.json",
+          "what_differs": "generated_at_utc, python, platform, git_head, git_branch, git_status, Windows backslash path separators in the hashes keys, and all 10 input hashes",
+          "unchanged_keys": ["cases", "outcomes", "all_expectations_met", "network_used", "provider_api_used", "command", "model_path_method"],
+          "reading": "Windows checkout, not #13/#14/#16"
+        }
+      ],
+      "results_csv_note": "This run's results.csv is byte-identical to the HEAD blob (sha 3d7338bfd053f05d...). The 52-byte delta against the pre-run snapshot is CRLF-vs-LF from core.autocrlf=true (blob len 10084 CRLF 0 bareLF 52; snapshot len 10136 CRLF 52 bareLF 0)."
+    },
+    "inputs_byte_identical_at_git_blob_level": {
+      "verdict": "all ten measured inputs identical between bcb32a9 and b056397, each also matching the hash his manifest recorded",
+      "paths": ["data/demo_card_inputs.json", "render.py", "validate_card.py", "llm/__init__.py", "llm/base.py", "llm/interpret.py", "llm/registry.py", "prompts/interpretation.md", "scripts/interpretation_fixtures.py", "data/1a_sample.json"],
+      "independent_check": "git diff --name-only bcb32a9..HEAD -- data/ prompts/ llm/ render.py validate_card.py ledger.py  ->  empty",
+      "harness_blob_sha256": "a1cb309bcfb984f104dc2bbb55b46f8bb2a076074a1377942d27e396a9915854",
+      "harness_matches_his_manifest": true
+    },
+    "reproduce_tests": {
+      "command": "python -m unittest tests.test_probe_section9 tests.test_section_nine tests.test_validate_card tests.test_interpret",
+      "exit_code": 0,
+      "tests_run": 93,
+      "result": "OK"
+    },
+    "coverage_fact": "The September 16 harness's measured file set does not reach any file that #13, #14 or #16 added."
+  },
+
+  "reverify": {
+    "summary": {"still_holds": 7, "fixed_by_13_14_16": 0, "rejected_at_verification": 1},
+    "findings": [
+      {
+        "id": "F1",
+        "baseline_finding": "The card-wide attestation overstates a token-membership and regex check as if the prose itself had been checked against the evidence.",
+        "verdict": "still_holds",
+        "reachability": "current_cli_surface",
+        "reachability_change": "new this re-run; he inferred this surface, here it is executed",
+        "measured": [
+          "render.py urate|gout --interpret --provider claude --model claude-opus-5, run end to end through the CLI's own __main__ with only llm.interpret.complete replaced, wrote a 32,141-character card whose Section 9 is the unsupported sentence followed by the attestation",
+          "R01 (token-free prose through the real parser and both gates) reproduced",
+          "S01/S02/S03/S05/S09, labelled model_path_equivalent in his bundle, were sent through gate one as well: all five accepted and printed under the attestation; S03/S09 are State C, so the attestation also prints on an evidence-gap run"
+        ],
+        "code_path_identical_not_executed": "slack_app.py:996-1008 and :926 call the same llm.interpret.interpret and render.render_card; blob unchanged from bcb32a9; needs Slack tokens and a live provider",
+        "harness_only": "A01, the hand-built accepted=True object, remains a harness construction and is not claimed as a deployed injection surface",
+        "not_measured": ["prompt-injection susceptibility", "stochastic provider behaviour"],
+        "evidence_dir": "reverify/F1/"
+      },
+      {
+        "id": "F2",
+        "baseline_finding": "Numeric membership is not bound to a field or semantic role: identifier digits, dates and list lengths can be relabelled as scientific quantities.",
+        "verdict": "still_holds",
+        "reachability": "current_model_path",
+        "reachability_change": "T01/T02/T03 as he ran them stay model_path_equivalent; the same three claims measured additionally on the real model path",
+        "measured": [
+          "T01 interpret().accepted=True, fields={'headline': 'The effect size is 17775.'}, gate-one findings [], renderer outcome printed",
+          "T02 interpret().accepted=True, fields={'headline': 'The effect size is 2026.'}, gate-one findings [], renderer outcome printed",
+          "T03 interpret().accepted=True, fields={'headline': 'The effect size is 4.'}, gate-one findings [], renderer outcome printed",
+          "the footer then carries the real model label: 'Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing.'"
+        ],
+        "deployed_call_sites": ["render.py:2502-2519", "slack_app.py:926"],
+        "harness_only": "the ai_runs/02 inline snippets and the synthetic list-length runs are direct validate_card.validate() calls on hand-written run dicts; cited as mechanism, not as reachable paths",
+        "not_inflated": "Nothing external injects these sentences. The precondition is that the model itself writes them; what is measured is that neither gate stops it when it does.",
+        "evidence_dir": "reverify/F2/"
+      },
+      {
+        "id": "F3",
+        "baseline_finding": "Schema-free indexing trusts values absent from both the model digest and the rendered evidence sections, so the footer can make a literally false visibility claim.",
+        "verdict": "still_holds",
+        "reachability": "split by claim",
+        "claims": [
+          {
+            "claim": "an arbitrary hidden run field whitelists a number and the footer then lies (his R06; cases F3a/F3b)",
+            "reachability": "current_validator_path_with_synthetic_run_field",
+            "reachability_change": "unchanged from his label",
+            "note": "Both gates are the real deployed code; only the provider call is stubbed. What is synthetic is the extra run key. render.py --interpret (render.py:2440-2519) builds the run itself and hands the same dict to interpret() and render_card(); the Slack caller likewise. Neither accepts an externally supplied run field. Internal / future-deserialization surface, NOT a current CLI or Slack injection point. The TOCTOU variant is internal misuse only."
+          },
+          {
+            "claim": "the validator trusts values absent from both the model digest and the rendered sections, so the footer sentence is not guaranteed true (case F3c)",
+            "reachability": "current_cli_surface",
+            "measured": "9 of 13 distinct retrieved b values are trusted by both gates while appearing in neither build_digest() nor anywhere in the CLI-rendered card. source_index() walks the whole run (22 MR rows at full precision, caveat strings, keys, notes); build_digest() shows the model 8 rows; section 3 prints a capped table rounded to 3-4 significant digits.",
+            "limit": "With a live provider the model only receives build_digest(), so emitting one of those hidden values requires chance or prompt injection, neither of which is measured. The deterministic offline stub is what makes the emission happen on demand."
+          }
+        ],
+        "evidence_dir": "reverify/F3/"
+      },
+      {
+        "id": "F4",
+        "baseline_finding": "Sentence-wide negation/disclaimer exemptions can excuse a prohibited positive claim in another clause.",
+        "verdict": "still_holds",
+        "reachability": "current_cli_surface",
+        "reachability_change": "he recorded S10/S11/S12/S14 as model_path_equivalent; upgraded here on evidence",
+        "measured": [
+          "the four F4 payloads returned as model JSON pass llm.interpret()'s parser and gate one (status=accepted, accepted=True, 0 findings) and then gate two; Section 9 is printed with the full attestation footer",
+          "the same S10 sentence reached a real card through python render.py \"urate|gout\" --interpret --provider claude --model claude-opus-5; CLI stderr reported 'section 9 written by claude-opus-5 and accepted by the validator'"
+        ],
+        "code_path_identical_not_executed": "slack_app.py:996-1001 and :926 carry the same two gates; code-reading, not a measurement",
+        "not_demonstrated": "that a live provider spontaneously emits such a sentence. The defect is that the validator accepts it, not that a model is known to produce it.",
+        "evidence_dir": "reverify/F4/"
+      },
+      {
+        "id": "F5",
+        "baseline_finding": "Unicode normalization gaps can change meaning, including the sign of a coefficient, without producing a finding.",
+        "verdict": "still_holds",
+        "reachability": "current_model_path for the sign flip; U03 (NBSP) and U04 (Cyrillic homoglyph) remain renderer-only",
+        "reachability_change": "he marked U01 model_path_equivalent because it was a DirectCase handed straight to render._section_reasoning; the sign-flip form is recorded as current_model_path here",
+        "measured": [
+          "render.py:2501-2519 calls llm.interpret.interpret(run, provider, model, credential) then render_card(run, interpretation); the F5-MP-unicode case exercises that chain with only llm.interpret.complete replaced",
+          "gate one status='accepted' with zero findings, gate two zero findings, and the renderer printed the sign-reversed sentence into a full card",
+          "llm/interpret.py parse_fields does no Unicode normalization: it strips a code fence and calls json.loads; grep shows no unicodedata/normalize call"
+        ],
+        "trigger_condition": "the model must write U+2212 MINUS SIGN instead of ASCII hyphen-minus. Ordinary typographic behaviour in LLM prose, not attacker-controlled input. No external-user injection channel is claimed.",
+        "code_path_identical_not_executed": "slack_app.py:996-1001 and :926",
+        "evidence_dir": "reverify/F5/"
+      },
+      {
+        "id": "F6",
+        "baseline_finding": "Raw Markdown in model fields can create a forged heading/action block within Section 9 (his S18).",
+        "verdict": "still_holds",
+        "reachability": "current_model_path",
+        "reachability_change": "his model_path_equivalent label is now backed by a measured model-path run rather than by an equivalence argument",
+        "measured": [
+          "his own S18 row is a DirectCase: a hand-built SimpleNamespace with accepted=True, gate one not exercised",
+          "the identical payload serialised as model JSON was parsed by the real llm.interpret.parse_fields/interpret() and passed gate one ('gate one accepted: True', 0 validator findings), then re-validated and printed by render.render_card (gate two, printed)",
+          "the JSON round trip preserves the embedded newline ('newline survived the parser: True'), so the forged heading comes out of the real parser output"
+        ],
+        "consuming_surfaces": ["render.py --interpret (render.py:2502-2519), which writes and prints the Markdown card", "the Slack shell (slack_app.py:909-927, write_section_nine -> write_card), which writes the same Markdown into cards/ before upload"],
+        "limit": "only the provider call is stubbed. Whether a live provider can be induced to emit '\\n## ' inside a field is prompt-injection susceptibility, which his REPORT.md:51-52 records as unmeasured. No CLI/Slack object-injection claim is made.",
+        "evidence_dir": "reverify/F6/"
+      },
+      {
+        "id": "F7",
+        "baseline_finding": "Unvalidated metadata.model text is appended to an otherwise validated section.",
+        "verdict": "still_holds",
+        "reachability": "harness_only / future-deserialization boundary",
+        "reachability_change": "unchanged from his baseline label, and re-measured rather than inherited",
+        "measured": [
+          "the accepted path's only source of metadata['model'] is llm/registry.py run_metadata() -> spec.model, and resolve() (llm/registry.py:145-171) looks the id up in a fixed REGISTRY dict",
+          "registry contents on current main: anthropic ['claude-haiku-4-5', 'claude-opus-5', 'claude-sonnet-5']; openai ['gpt-4.1', 'gpt-4o']; google ['gemini-flash-latest', 'gemini-flash-lite-latest']",
+          "interpret(model='claude-opus-5\\n\\nUnvalidated expert approval.') -> accepted False, status unavailable; metadata carries the raw string but accepted=False, so the renderer emits 'Model reasoning pending integration (section 1F).' -> outcome blocked, injected text in Section 9 False",
+          "model path: a reply carrying both metadata.model and a top-level model key gives accepted True with metadata['model'] == 'claude-opus-5'; parse_fields drops unknown keys and interpret.py:306 only adds usage/stop_reason, so the provider cannot set the model label"
+        ],
+        "consumers_on_current_main": ["render.py:1909 (printed into the card)", "llm/interpret.py:72 Interpretation.note(), which render.py:2517 prints to stderr, not into the card"],
+        "not_inflated": "printed in the harness form; blocked on every measured deployed surface. Do not describe it as a deployed injection.",
+        "evidence_dir": "reverify/F7/"
+      },
+      {
+        "id": "F8",
+        "baseline_finding": "A malicious dict subclass can make validate() raise despite its never-raises contract; render_card() contains the exception (robustness loss, not prose leakage).",
+        "verdict": "rejected_at_verification",
+        "reachability": null,
+        "see": "rejected_claims[0]",
+        "evidence_dir": "reverify/F8/, verify_scratch/F8/"
+      }
+    ]
+  },
+
+  "new_surfaces": {
+    "totals": {"defects": 16, "scope_limits": 4, "observations": 11, "confirmed": 31, "rejected": 12},
+    "surfaces": [
+      {
+        "surface": "genetic_insights_timeline",
+        "pr": "#14, plus plots.py which no PR touched and no earlier study probed",
+        "code_under_test": ["plots.plot_genetic_insight and its helpers _drug_lanes, _lane_markers, _phase_text, _trial_dates", "demo/genetic-insights/render_bundle.py and viewer.template.html as changed by 25defeb"],
+        "cases": {"GI": 21, "LC": 10, "figures_drawn": 20, "figures_raised": 1},
+        "probe_dir": "new_probes/timeline/",
+        "counts": {"defects": 11, "scope_limits": 2, "observations": 5, "rejected": 2},
+        "findings": [
+          {"id": "T1", "severity": "defect", "finding": "The timeline credits the registry for a stopping reason and a status the registry never supplied.", "reachability": "Any run whose dossier carries a status or why_stopped that the registry record does not. Ordinary retrieved Open Targets data reaching the Slack timeline button, NOT a user-typed input and NOT object injection.", "cases": ["GI03", "GI04"]},
+          {"id": "T2", "severity": "defect", "finding": "The stopped/terminated state is an unanchored substring test on a retrieval-controlled status string.", "reachability": "Any report whose free-text status contains a terminal word in any position. Open Targets status strings are free text: retrieval-controlled, not user-controlled.", "cases": ["GI15"]},
+          {"id": "T3", "severity": "defect", "finding": "The undated-count note asserts something about the registry for reports the registry was never asked about.", "reachability": "Any dossier with a clinical report lacking an NCT id. Open Targets label and regulatory records carry none and _nct_id deliberately returns \"\" for them, so this fires on ordinary data.", "cases": ["GI02", "GI18"]},
+          {"id": "T5", "severity": "defect", "finding": "trial_phase, status and the GWAS dataset label carry no character budget, contradicting plots.py's own stated contract.", "reachability": "GI20 needs NO adversarial input: five trials of one drug starting in the same year. tools/trials.py's own docstring records 19 clinical reports on one drug in real Open Targets data.", "cases": ["GI08", "GI15", "GI17", "GI20"]},
+          {"id": "T6", "severity": "defect", "finding": "The lane label rolls a cross-indication max stage onto a figure that names one disease, and that same number orders and cuts the lanes.", "reachability": "Every run. Open Targets maxClinicalStage is cross-indication by definition; no adversarial input needed.", "cases": ["GI13", "GI14"]},
+          {"id": "T7", "severity": "defect", "finding": "A marker drawn on a completion year is indistinguishable from one drawn on a start year.", "reachability": "Ordinary registry data: a record with a primary completion date and no start date.", "cases": ["GI12"]},
+          {"id": "T8", "severity": "defect", "finding": "One retrieved string changes the drawn glyphs, and a malformed one denies the whole figure, because matplotlib parses dollar signs as mathtext.", "reachability": "A retrieved drug name or registry stopping reason containing a balanced pair of dollar signs; cost figures in a why_stopped are the plausible vector. Robustness loss in the F8 sense, not prose leakage. NOT a user-typed input.", "cases": ["GI07", "GI21"]},
+          {"id": "T9", "severity": "defect", "finding": "The year axis prints two decimal places whenever every drawn year is the same year.", "reachability": "Not adversarial at all: one drug, one report, a retrieved start year and no completion date. A plain defect on a never-probed surface.", "cases": ["GI19"]},
+          {"id": "L2", "severity": "defect", "finding": "An event whose stage is not in display_order is silently dropped from the rendered timeline.", "reachability": "The viewer's 'Open snapshot' file input accepts an arbitrary local bundle and is exercised by qa_viewer.cjs; a bundle author can also write the stage directly. Not a network-reachable injection.", "cases": ["LC03"]},
+          {"id": "L3", "severity": "defect", "finding": "PR #14's required-stage check is a label-presence check, not an evidence check.", "reachability": "Bundle authoring, and the loaded-snapshot path accepts the same bundle.", "cases": ["LC04", "LC05"]},
+          {"id": "L6", "severity": "defect", "finding": "The chronology guard compares date strings; ISO 8601 basic format rejects a correct order and accepts a reversed one.", "reachability": "Bundle authoring. The viewer's file-input path rejects the date format, so this does not reach a loaded snapshot.", "cases": ["LC07", "LC09", "LC10"]},
+          {"id": "T4", "severity": "scope_limit", "finding": "Truncating the stopping reason at 40 characters can invert its meaning.", "reachability": "Any registry why_stopped longer than 40 characters.", "cases": ["GI05"]},
+          {"id": "L4", "severity": "scope_limit", "finding": "The lifecycle guarantee is opt-in, and there is no missing-stage display at all.", "reachability": "The viewer's file input; the superseded v1 CETP bundles that PR #14 replaced have exactly this shape.", "cases": ["LC02"]},
+          {"id": "T10", "severity": "observation", "finding": "No plausibility floor on a year; an implausible one rescales every real marker.", "reachability": "report['year'] and the exposure year. tools/trials.py records that report['year'] is null on every report this project has seen, so this needs upstream data that has not been observed.", "cases": ["GI10", "GI17"]},
+          {"id": "T11", "severity": "observation", "finding": "An impossible interval is dropped rather than reported.", "reachability": "Registry data quality; not an injection.", "cases": ["GI11"]},
+          {"id": "T12", "severity": "observation", "finding": "One trial reached through two effector genes is drawn as two lanes and counted as two reports.", "reachability": "Any drug whose target set includes two of the run's effector genes.", "cases": ["GI16"]},
+          {"id": "L1", "severity": "observation", "finding": "PR #14's central lifecycle check does fire - positive verification.", "reachability": "Build time, and the viewer's 'Open snapshot' file input.", "cases": ["LC06"]},
+          {"id": "A1", "severity": "observation", "finding": "Markdown emphasis in a retrieved why_stopped reaches the card - adjacent surface, recorded not claimed.", "reachability": "A retrieved Open Targets field, not model prose.", "cases": ["GI06"]}
+        ]
+      },
+      {
+        "surface": "human_gem_arm",
+        "pr": "#13 (MVP3)",
+        "code_under_test": ["tools/gem.py map_metabolite_to_genes_gem over MVP3/src/gem.py", "pipeline.run_pair wiring and its honest-absence notes", "card Section 7 and the Human-GEM block in Section 5", "whether Human-GEM values widen what validate_card.validate accepts in Section 9"],
+        "cases": {"total": 30, "expectation_failures": 0},
+        "probe_dir": "new_probes/gem/",
+        "counts": {"defects": 1, "scope_limits": 1, "observations": 1, "rejected": 8},
+        "findings": [
+          {"id": "GEM-D2", "severity": "defect", "finding": "Human-GEM candidate symbols let V5 accept effector-gene nominations on runs that nominated no genes.", "reachability": "current_model_path - the real adapter's own output through the same two gates. Gate one accepted=True, gate two findings [], printed; the counterfactual without the gem envelope is rejected and blocked by V5 on GCSH/GLDC. The same card says in Section 5 that the atlas nomination layer was not queried, so the accepted sentence contradicts the deterministic section above it.", "cases": ["GV03"]},
+          {"id": "GEM-O6", "severity": "scope_limit", "finding": "No Human-GEM index ships in the repository, so a fresh checkout renders the Section 7 error branch on every card.", "reachability": "deployed_path - the default state of a fresh checkout. MVP3/data/index contains only .gitkeep and README.md; MVP3/data/model has no Human-GEM.yml.", "cases": ["GH04"]},
+          {"id": "GEM-O3", "severity": "observation", "finding": "A Cyrillic homoglyph gene symbol prints beside the Latin dossier gene and the overlap sentence does not fire.", "reachability": "local_index_config - the same trust boundary as a poisoned index, not a deployed input.", "cases": ["GI06 (gem probe)"]}
+        ]
+      },
+      {
+        "surface": "mvp2_literature_layer",
+        "pr": "#16",
+        "code_under_test": ["MVP2 runtime coupling to pipeline/render/classify", "card disclosure prose", "MVP2/tests", "data manifests", "screened records", "seed extraction", "screening ledger", "merge"],
+        "cases": {"total": 16, "probe_scripts": 8, "probe_scripts_nonzero_exit": 0},
+        "probe_dir": "new_probes/mvp2/",
+        "counts": {"defects": 4, "scope_limits": 1, "observations": 5, "rejected": 2},
+        "findings": [
+          {"id": "M4", "severity": "defect", "finding": "On shifted source rows the extractor writes an odds ratio into ci_high and a confidence bound into p_value.", "reachability": "data layer only (see M1); 9 rows in new_unique_pairs.csv and 18 in new_pair_records.csv", "cases": ["L05b", "L06b"]},
+          {"id": "M5", "severity": "defect", "finding": "normalize() erases '%', so ratio and absolute exposures collapse into one pair identity.", "reachability": "data layer only (see M1); affects 1,003 of the 9,801 kept pair keys and every downstream count derived from them", "cases": ["L05d", "L08b"]},
+          {"id": "M6", "severity": "defect", "finding": "Every appended row in the merged candidate table claims exactly one supporting source row.", "reachability": "data layer only (see M1); the merged candidate table is the artefact a future integration would read", "cases": ["L08b"]},
+          {"id": "M7", "severity": "defect", "finding": "A search-run manifest records a sha256 the repository cannot produce for the file it names.", "reachability": "anyone verifying the bundle; fails on an LF checkout, which is what a clean clone on Linux or macOS produces. The pair_batch manifest claims 5e7411e6..., the CRLF hash; the committed blob is f3c7ff09...", "cases": ["L04a"]},
+          {"id": "M10", "severity": "scope_limit", "finding": "MVP2/tests cannot run with the documented runner in this environment; under an offline shim all 17 pass.", "reachability": "any contributor in this environment; the shim result is a harness substitute and is not presented as 'the suite passes under pytest'", "cases": ["L03"]},
+          {"id": "M1", "severity": "observation", "finding": "No MVP2 output reaches the card path - zero runtime coupling.", "reachability": "none - there is no runtime path from MVP2 to pipeline/render/classify on b056397. 93 runtime python files scanned; 0 MVP2 imports, 0 MVP2 path literals, 0 sys.path inserts; get_literature_mr in TOOLS = False", "cases": ["L01"]},
+          {"id": "M2", "severity": "observation", "finding": "The 'MVP2 is not integrated' disclosure is printed on State C cards only.", "reachability": "printed on every State C card rendered from the frozen fixtures; absent from every State A and State B card (A 0/1, B 0/1, C 1/1)", "cases": ["L02"]},
+          {"id": "M9", "severity": "observation", "finding": "One of 9,801 kept pairs has a search record (0.0102% coverage); the one record is sound.", "reachability": "not a reachability claim; a coverage fact about the screening ledger", "cases": ["L07a"]},
+          {"id": "M11", "severity": "observation", "finding": "The counting and merging layer reproduces exactly - positive result.", "reachability": "n/a - positive reproduction result", "cases": ["L04b", "L05a", "L07b", "L08a"]},
+          {"id": "M12", "severity": "observation", "finding": "An unset direction counts as forward.", "reachability": "latent - 0 rows in the current data exercise it", "cases": ["L05c"]}
+        ]
+      }
+    ]
+  },
+
+  "rejected_claims": [
+    {
+      "id": "F8",
+      "origin": "reverify",
+      "claim": "A malicious dict subclass can make validate() raise despite its never-raises contract; render_card() contains it.",
+      "what_reproduced": "validate() does raise on a dict subclass whose items() raises (validate_card.py:546); both docstrings say 'Never raises.'; render_card() contains it and prints the render-failure sentence instead of the prose (prose_printed false).",
+      "why_rejected": "The second real call site contains it too. llm/interpret.py:319 sits inside _attempt(), and interpret() wraps _attempt() in try/except Exception at llm/interpret.py:233-267, so forcing the input into the real path returns rather than raises (accepted=False, status=unavailable, card prints the pending sentence). parse_fields() returns an exact builtin dict, so no CLI or Slack input can deliver a subclass. No reachable input and no uncontained failure remain.",
+      "evidence": ["verify_scratch/F8/independent_run.log", "reverify/F8/run.log"]
+    },
+    {
+      "id": "T13",
+      "origin": "probe:timeline",
+      "claim": "Homoglyph drug names are neither normalized nor distinguished.",
+      "what_reproduced": "The 'not normalized' half.",
+      "why_rejected": "The fixture is mis-specified and the 'not distinguished' half fails. In toрсеtrаpib the substitute at position 2 is U+0440 CYRILLIC SMALL LETTER ER, whose closest Latin shape is 'p' (0.0% mismatch against p, 57.3% against the r it replaced), so a reader sees topcetrapib. With a corrected fixture using only genuine homoglyphs, the rendered lane labels still differ: 386 differing pixels, 26.5% ink moved.",
+      "evidence": ["verify_scratch/T13/glyphs_t13_stdout.txt", "verify_scratch/T13/corrected_fixture_stdout.txt"]
+    },
+    {
+      "id": "L5",
+      "origin": "probe:timeline",
+      "claim": "The shipped evacetrapib page orders its stage groups against its own dates, which PR #14's own spec forbids.",
+      "what_reproduced": "Nothing that supports the claim.",
+      "why_rejected": "The page renders its groups in exactly the declared display_order (human_genetics, preclinical, clinical, later_genetics, class_status), which is thematic rather than chronological. The later_genetics range (2012-2017) overlapping clinical (2012-2017) is the declared design and the bundle says so in the event text.",
+      "evidence": ["verify_scratch/L5/repro_l5.out.txt", "verify_scratch/L5/byte_identity_check.txt"]
+    },
+    {
+      "id": "GEM-D1",
+      "origin": "probe:gem",
+      "claim": "The Human-GEM arm multiplies the Section 9 validator's accepted number set by ~24x, including effect-size-shaped decimals taken from EC codes.",
+      "what_reproduced": "The mechanism, which is already a measured probe row.",
+      "why_rejected": "The quantifier is wrong: measured, the accepted number set goes from 8 to 294, a factor of about 37, not 24. The EC-code clause is a separate case (GV07) that stands on its own.",
+      "evidence": ["new_probes/gem/artifacts/RESULTS.md (GV01)", "verify_scratch/GEM-D1/"]
+    },
+    {
+      "id": "GEM-D3",
+      "origin": "probe:gem",
+      "claim": "The card-wide attestation is false on any card whose Section 9 quotes a Human-GEM value from unrendered envelope depth.",
+      "what_reproduced": "The mechanism: the value is accepted by both gates and printed.",
+      "why_rejected": "The universal claim does not hold. In the reproduction the quoted number does appear on the full card (lines of the FULL card containing the number: 1), so 'false on any such card' is not what was measured. The measurable statement is the narrower one carried as F3 claim 2.",
+      "evidence": ["verify_scratch/GEM-D3/run1.txt"]
+    },
+    {
+      "id": "GEM-D4",
+      "origin": "probe:gem",
+      "claim": "build_digest omits the gem arm from its 'arms that did not run' defaults, so the model is never told the Human-GEM arm exists when it was switched off.",
+      "what_reproduced": "The first clause: the tuple at llm/interpret.py:144 is (mr, instruments, outcomes, catalog, coloc, atlas, dossier) and does not contain gem.",
+      "why_rejected": "The conclusion is false. pipeline.py:617 appends _GEM_OFF_NOTE to the run's notes and build_digest copies run_notes from run['notes'] (llm/interpret.py:140), so the model is told, by a different field.",
+      "evidence": ["verify_scratch/GEM-D4/", "new_probes/gem/artifacts/RESULTS.md (GH02, GV05)"]
+    },
+    {
+      "id": "GEM-D5",
+      "origin": "probe:gem",
+      "claim": "Section 7's cap line reports the tool's internal 100-record cap as if it were the total, contradicting the count printed two lines above.",
+      "what_reproduced": "Both numbers do print two lines apart.",
+      "why_rejected": "The wording distinguishes them: the head line says '123 reaction-linked gene candidate(s)' and the cap line says 'showing 8 of 100 returned candidate(s)'. 100 is presented as what the tool returned, which is accurate. The unexplained gap between the two numbers is already carried as the GI08 contradiction outcome.",
+      "evidence": ["verify_scratch/GEM-D5/section7_gi08.md"]
+    },
+    {
+      "id": "GEM-O1",
+      "origin": "probe:gem",
+      "claim": "The GPR string is the one Section 7 field with no display cap.",
+      "what_reproduced": "That the GPR string has no length cap.",
+      "why_rejected": "It is not the one. On the same section a 2,006-character model_version printed in full (head line 2,130 chars) and a 1,205-character gene symbol printed in full (candidate line 1,271 chars); _text() and _or_unknown() return 5,000 characters for a 5,000-character input. The only Section 7 caps are MAX_GEM_REACTIONS_SHOWN = 5 and MAX_GEM_CANDIDATES_SHOWN = 8, which cap list length, not field length.",
+      "evidence": ["verify_scratch/GEM-O1/refute_output.txt"]
+    },
+    {
+      "id": "GEM-O2",
+      "origin": "probe:gem",
+      "claim": "Retrieved Human-GEM strings are not Markdown-escaped, but the S18-style heading forgery and the GPR code-span break-out are both blocked.",
+      "what_reproduced": "Both 'blocked' halves: GI03's newline is flattened so '## 12. Confirmed genetic effectors' lands inline inside a list item rather than as a heading, and GI05 is refused at index build with ValueError: Unsupported GPR syntax at character 15.",
+      "why_rejected": "The framing does not survive: the same surface passes other Markdown through unchanged (GI04, a Markdown link plus an HTML comment, rendered_verbatim). Reporting 'both blocked' as the finding would state a reassurance the evidence does not support. The three underlying outcomes are already rows in the probe's own table.",
+      "evidence": ["verify_scratch/GEM-O2/gi03_section7.md", "verify_scratch/GEM-O2/gi05_build_result.txt", "verify_scratch/GEM-O2/gi04_section7.md"]
+    },
+    {
+      "id": "GEM-O4",
+      "origin": "probe:gem",
+      "claim": "The honest-absence paths render exactly as written, and Section 7 itself never reads as genetic evidence on honest input.",
+      "what_reproduced": "The first half, which is kept as part of the GH01-GH07 rows.",
+      "why_rejected": "The second half is a universal negative about how prose reads, which is not a measurable property, and the independent run shows at least one honest branch depends on a modified source fixture (GH07 rewrites a model species' metChEBIID and rebuilds the index).",
+      "evidence": ["verify_scratch/GEM-O4/opus_indep_check.out.txt"]
+    },
+    {
+      "id": "GEM-O5",
+      "origin": "probe:gem",
+      "claim": "Section 5/7 branch selection reads two fields and cross-checks nothing, but the field combinations that exploit this are harness constructions.",
+      "what_reproduced": "The branch selection reads two fields.",
+      "why_rejected": "The 'harness constructions' half fails: the same combination is produced from the real module and from the deployed CLI's own --include-hubs flag, where it is a documented operator choice. All eight assertions pass on the real-module reproduction and the section text is byte-identical to the forged-envelope case after timestamp scrubbing.",
+      "evidence": ["verify_scratch/GEM-O5/repro_ge06_real_module.out.txt", "verify_scratch/GEM-O5/repro_ge06_shipped_flag.out.txt"]
+    },
+    {
+      "id": "M3",
+      "origin": "probe:mvp2",
+      "claim": "Every extracted ukb_mapping_2025 confidence interval is inverted (ci_low > ci_high).",
+      "what_reproduced": "The mechanism (MVP2/scripts/screen_seed_papers.py:97-106) and the three cited counts.",
+      "why_rejected": "The 'every' does not hold. candidate_pairs.csv: 16,944 inverted and 498 NOT inverted of 17,442 ukb_mapping_2025 rows; new_pair_records.csv: 14,509 inverted and 18 not, of 14,527; new_unique_pairs.csv: 6,914 inverted and 9 not, of 6,923. The row-level observation stands as probe rows L06a and L08c; the neighbouring column-shift defect that does survive is M4.",
+      "evidence": ["verify_scratch/M3/independent_refutation_check.out"]
+    },
+    {
+      "id": "M8",
+      "origin": "probe:mvp2",
+      "claim": "MVP2/data/** is the one evidence tier whose bytes .gitattributes does not pin.",
+      "what_reproduced": "That MVP2/data is not pinned (git check-attr reports text: unspecified).",
+      "why_rejected": "It is not the one. The root .gitattributes pins archive/**, provenance/**, MVP2/literature/seeds/** and MVP2/literature/studies/**; everything else is text: unspecified, including MVP3 (30 files), data (2 files), docs (111 files), llm (9 files) and every root-level Python module. The verifiable consequence - one of seven manifest hashes failing on an LF checkout - is carried by M7.",
+      "evidence": ["verify_scratch/M8/pin_survey.txt", "verify_scratch/M8/m8_repro_out.txt"]
+    }
+  ],
+
+  "repository_note_correction": {
+    "about": "The parent README.md 'Repository baseline note', which states that on 2026-09-16 origin/main had been force-replaced by an unrelated-root static public demo at 3359f1d that no longer contained render.py, validate_card.py or llm/.",
+    "verified_now": {
+      "remote": "origin  <team repository>",
+      "origin_main": "b05639721b07345612bba4ebf66f989805b9703c (2026-09-16 23:55:57 -0400, Merge pull request #17)",
+      "commit_count": 38,
+      "root_commits": ["efd56df1351988e8b5de7fccff99e6f0fd50124e"],
+      "bcb32a9_is_ancestor_of_origin_main": true,
+      "measured_files_present_on_origin_main": ["ledger.py", "plots.py", "render.py", "slack_app.py", "validate_card.py", "llm/*"],
+      "git_cat_file_t_3359f1d": "fatal: Not a valid object name 3359f1d"
+    },
+    "not_established": [
+      "what origin/main pointed at on 2026-09-16",
+      "whether the note described this remote or another one",
+      "whether a force-push happened and was later reverted"
+    ],
+    "correction": "A reader of his bundle should not conclude that the code named in the assignment is missing from main. On the remote this branch tracks it is present, and b056397 is the revision every measurement in this directory was taken on."
+  },
+
+  "deliberately_not_done": [
+    "nothing was pushed",
+    "no measured behaviour was patched",
+    "his bundle was not modified; harness rewrites were copied out and git restore put his bytes back",
+    "the Slack surface was not executed (needs tokens and a live provider); it appears only as a code-reading of an unchanged file",
+    "no network call and no provider credential, so no claim depends on what a live model would actually write"
+  ]
+}

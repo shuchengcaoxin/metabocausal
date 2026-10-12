@@ -1,0 +1,25 @@
+== F8 code-identity check, baseline bcb32a9 vs current main b056397 ==
+git rev-parse HEAD: b05639721b07345612bba4ebf66f989805b9703c
+validate_card.py
+  bcb32a9 blob: 11e08476c6dc4fba3d50febb0a299c937cb7975b
+  b056397 blob: 11e08476c6dc4fba3d50febb0a299c937cb7975b
+render.py
+  bcb32a9 blob: 3e3787422ac8d1d380883649bc36d00d82ac6654
+  b056397 blob: 3e3787422ac8d1d380883649bc36d00d82ac6654
+llm/interpret.py
+  bcb32a9 blob: 8673c020bcddca1b7910b24680d4bb3b2614cdf6
+  b056397 blob: 8673c020bcddca1b7910b24680d4bb3b2614cdf6
+slack_app.py
+  bcb32a9 blob: a6201b40e7a638de4de03f6dd3abe06063dd8122
+  b056397 blob: a6201b40e7a638de4de03f6dd3abe06063dd8122
+
+== git diff --stat bcb32a9..b056397 -- validate_card.py render.py llm/ ==
+(empty output above means all three paths are unchanged)
+
+== every validate_card.validate() call site in the tree (excl. tests/, archive/, docs/, scripts/) ==
+./llm/interpret.py:319:    findings = validate_card.validate(fields, run)
+./render.py:1890:    findings = validate_card.validate(fields, result)
+./validate_card.py:4:    findings = validate_card.validate(prose_fields, run)
+
+== MVP3 / MVP2 / demo: any call to validate_card or render_card? ==
+tools/epigraphdb.py:162:    the ledger carries it and `validate_card` can hold the model to it."""

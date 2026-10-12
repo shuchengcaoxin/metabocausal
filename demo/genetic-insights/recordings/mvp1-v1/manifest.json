@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "mvp1-urate-gout-2026-09-12-v1",
+  "bundle_sha256": "97d06b1b9d62d237ee0dc2f482aa5c5a7452286c9bd4c3d015edfc6ea1978d31",
+  "renderer_sha256": "17f25530d07145b31af629cf778c4241a8327497b26fb8cf457efe90576f7b9a",
+  "template_sha256": "40e7c18dc9475d54b01386afae73e0fa6f6e4f6905c0b560ad4dad002de27af1",
+  "files": {
+    "index.html": "643ef5724691d0123a33d96011e0782fc2dd74e159490c00d8a04ad61060e610",
+    "bundle.json": "97d06b1b9d62d237ee0dc2f482aa5c5a7452286c9bd4c3d015edfc6ea1978d31",
+    "evidence-summary.md": "2a55e9ca30386ca3532c85217bd34bd3ad99d500b1907a12102d650e08298a69",
+    "full-mvp1-report.md": "2d3d0adb3a7033e59b358dceb8e550df69ee9dd8340c1f8e51fae71972d1984c",
+    "slack-messages.json": "0ac0280167adf7098f3e35c0d932a0b254703d1f966ccec0080a95d86238a1c9",
+    "slack-text.txt": "ab8cf7da246746286fedf122615ea8d0f356ba863557594bb13b4e1a22693d9c"
+  },
+  "network_calls": 0,
+  "llm_calls": 0,
+  "slack_delivery": "not attempted",
+  "file_hash_format": "SHA-256 of exact delivered file bytes",
+  "renderer_commit": "6a651bc"
+}

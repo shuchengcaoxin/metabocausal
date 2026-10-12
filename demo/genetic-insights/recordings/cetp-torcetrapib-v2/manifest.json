@@ -1,0 +1,17 @@
+{
+  "snapshot_id": "mvp1-cetp-torcetrapib-2026-09-12-v2",
+  "bundle_sha256": "dcde8e4cee170d52b9a08e36af59e659a7d55bb62f9b365e27fa8ff47b362727",
+  "renderer_sha256": "8b88d56a725f772586683d2c98b24bc0ebb0cae6245812b932db0a9e19234051",
+  "template_sha256": "b61f2820e3f37c2849abe457b38f9763e5a3508f92941271c96c747761bfcb30",
+  "files": {
+    "index.html": "59c41dbf6a690b547c643a5843f0b5b47a299e7f1a0c65cba919556c932723dd",
+    "bundle.json": "4865b913bbe953fe32cf2004a1d204df57a1a62b58640e5ecea72e8f801a894c",
+    "evidence-summary.md": "0b8c19026acacc581d48124463b63d8be3ff12a4b588763b453320a6f60d6ac4",
+    "full-mvp1-report.md": "8ef74ef3432a3baf234914c1b41bbc5ccd087ac0edf0f8553363cd6a71069b28",
+    "slack-messages.json": "ff9d622b55b53115939776e846474d5a0953e17da15c0d23e802821de0ee1fdb",
+    "slack-text.txt": "2512437fb9fe0d7dcbae44d501a6a05294d312798bd97651ccc8790913875088"
+  },
+  "network_calls": 0,
+  "llm_calls": 0,
+  "slack_delivery": "not attempted"
+}

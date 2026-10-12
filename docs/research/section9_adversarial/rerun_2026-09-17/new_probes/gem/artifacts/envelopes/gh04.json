@@ -1,0 +1,30 @@
+{
+  "tool": "map_metabolite_to_genes_gem",
+  "args": {
+    "chebi_id": "CHEBI:15428"
+  },
+  "source": "Human-GEM",
+  "url": "https://github.com/SysBioChalmers/Human-GEM",
+  "retrieved_at": "<timestamp>",
+  "status": "error",
+  "data": {
+    "route": "via_enzyme",
+    "evidence_type": "biochemical",
+    "mapping": {
+      "status": "error"
+    },
+    "candidates": [],
+    "reactions": [],
+    "network_calls": 0,
+    "query_chebi": "CHEBI:15428",
+    "error": "FileNotFoundError: Human-GEM index is missing; build it and set METABOCAUSAL_GEM_INDEX",
+    "local_lookup_ms": <local_lookup_ms>
+  },
+  "caveats": [
+    "Biochemical context only (indirect, via enzyme); not MR, genetic effector nomination or demonstrated disease mediation.",
+    "Reaction participation can include cofactors and co-substrates; it does not establish direct binding or a drug intervention direction.",
+    "GPR AND/OR rules are authoritative for the recorded reaction; a complex member is not independently sufficient.",
+    "Flux bounds describe the model, not measured in-vivo flux. No flux simulation was run.",
+    "Candidate order is lexical for reproducibility, not a scientific score or target-priority ranking."
+  ]
+}

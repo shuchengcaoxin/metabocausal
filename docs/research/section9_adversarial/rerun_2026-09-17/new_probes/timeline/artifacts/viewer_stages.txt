@@ -1,0 +1,70 @@
+== LC01
+   viewer validate(): passed
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2009–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC02
+   viewer validate(): passed
+   stage unspecified -> heading "Unspecified" range "1989–2026" events human-genetics, preclinical-antisense, preclinical-inhibitor, phase1, trial-start, programme-stop, results, genetic-comparison, hdl-mr, anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC03
+   viewer validate(): passed
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, results
+   stage later_genetics -> heading "Later genetics" range "2009–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 10, dropped [programme-stop]
+== LC04
+   viewer validate(): passed
+   stage human_genetics -> heading "Human genetics" range "2017" events anacetrapib-outcome
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "1989–2007" events human-genetics, phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2009–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2026" events obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC05
+   viewer validate(): passed
+   stage clinical -> heading "Clinical development" range "1989–2026" events human-genetics, preclinical-antisense, preclinical-inhibitor, phase1, trial-start, programme-stop, results, genetic-comparison, hdl-mr, anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC06
+   viewer validate(): Error: Timeline silently omits a required lifecycle stage.
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2009–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 8, rendered 8, dropped []
+== LC07
+   viewer validate(): Error: Invalid event.
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2009–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC08
+   viewer validate(): passed
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2012–2017" events trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2012–2017" events hdl-mr, target-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 10, rendered 10, dropped []
+== LC09
+   viewer validate(): Error: Invalid event.
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2007–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []
+== LC10
+   viewer validate(): Error: Invalid event.
+   stage human_genetics -> heading "Human genetics" range "1989" events human-genetics
+   stage preclinical -> heading "Preclinical" range "1998–2000" events preclinical-antisense, preclinical-inhibitor
+   stage clinical -> heading "Clinical development" range "2004–2007" events phase1, trial-start, programme-stop, results
+   stage later_genetics -> heading "Later genetics" range "2007–2012" events genetic-comparison, hdl-mr
+   stage class_status -> heading "Current class status" range "2017–2026" events anacetrapib-outcome, obicetrapib-status
+   events in bundle 11, rendered 11, dropped []

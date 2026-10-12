@@ -1,0 +1,9 @@
+# scripts/probe_section9.py writes these beside its manifest on every run. They are
+# per-case dumps that reproduce docs/research/section9_adversarial/artifacts/'s own, so
+# they are not committed - and without this file every gate-2 run leaves the working tree
+# dirty. Four explicit entries, no wildcard: manifest.json, run.log and results.csv are
+# the committed evidence that the gate passed and must never be ignored.
+RESULTS.md
+results.json
+full_cards/
+section9_outputs/

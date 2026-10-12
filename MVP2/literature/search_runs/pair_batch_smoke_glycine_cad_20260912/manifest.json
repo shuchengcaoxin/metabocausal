@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20260912T184153Z",
+  "input": {
+    "path": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+    "sha256": "80e8a2336538605bacf8f2e7baab90af3568a6bf55691a9c6ae6cac92a883ddd",
+    "bytes": "lf-normalized",
+    "rows": 10804
+  },
+  "scope": "Europe PMC only; one bounded Task 01 investigation per verified forward metabolite-disease pair",
+  "config": {
+    "offset": 2513,
+    "limit": 1,
+    "max_rounds": 3,
+    "max_pages": 1,
+    "max_requests_per_pair": 9,
+    "max_seconds_per_pair": 120.0,
+    "overwrite": true
+  },
+  "outputs": {
+    "pair_search_index": "pair_search_index.csv",
+    "pair_records_directory": "pairs/"
+  },
+  "summary": {
+    "selected_count": 1,
+    "searched_count": 1,
+    "skipped_count": 0,
+    "failed_count": 0
+  },
+  "caveats": [
+    "Search hits are discovery candidates, not accepted MR evidence.",
+    "Each pair record retains its own queries, returned identifiers, deduplication decisions, remaining gaps and stop reason.",
+    "Semantic Scholar is intentionally not used for this Europe PMC-only workstream."
+  ],
+  "input_note": "This run's own record (run_id, config, summary, index) is the 2026-09-12 search as it was performed and is not re-derived. Only this input block was re-stated, because the file it names was regenerated on 2026-09-17 and again on 2026-09-18; the digest rule is recorded in 'bytes'. The 2026-09-18 regeneration reordered 7,912 of this file's rows' 95% bounds into numeric order and added two as-printed columns; it changed no row's identity and no row count, so the pair this run searched and the pair selection this run recorded are the same ones."
+}

@@ -1,0 +1,36 @@
+case: GI10
+what: absurd years 1850 and 2099 supplied by the dossier's own `year` field
+asks: is there any plausibility floor, and what happens to the real markers
+figure: drawn GI10_genetic_insight.png
+stdout: [timeline] wrote GI10_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))
+registry asked: NCT00134264
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 1'
+'phase 3'
+'phase 4'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'1800'
+'1840'
+'1880'
+'1920'
+'1960'
+'2000'
+'2040'
+'2080'
+'2120'
+'2160'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 3 dated reports drawn, 1 exposure GWAS year marked'
+'Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+'genetic evidence: met-d-HDL 2020'

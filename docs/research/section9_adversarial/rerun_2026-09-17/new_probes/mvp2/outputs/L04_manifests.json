@@ -1,0 +1,205 @@
+{
+  "arithmetic_closure_ok": true,
+  "checks": [],
+  "count_assertions": [
+    {
+      "claim": "screened manifest summary.candidate_row_count",
+      "claimed": 20460,
+      "counted": 20460,
+      "file": "MVP2/data/extracted/screened_20260912/candidate_pairs.csv",
+      "ok": true
+    },
+    {
+      "claim": "screened manifest summary.new_pair_record_count",
+      "claimed": 17405,
+      "counted": 17405,
+      "file": "MVP2/data/extracted/screened_20260912/new_pair_records.csv",
+      "ok": true
+    },
+    {
+      "claim": "screened manifest summary.new_pair_key_count",
+      "claimed": 9801,
+      "counted": 9801,
+      "file": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "ok": true
+    },
+    {
+      "claim": "screened manifest summary.candidate_row_count (vs ledger)",
+      "claimed": 20460,
+      "counted": 20460,
+      "file": "MVP2/data/extracted/screened_20260912/screening_ledger.csv",
+      "ok": true
+    },
+    {
+      "claim": "merged manifest summary.merged_row_count",
+      "claimed": 20918,
+      "counted": 20918,
+      "file": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv",
+      "ok": true
+    },
+    {
+      "claim": "merged manifest summary.new_row_count (provenance sidecar)",
+      "claimed": 9801,
+      "counted": 9801,
+      "file": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv",
+      "ok": true
+    },
+    {
+      "claim": "merged manifest summary.baseline_row_count",
+      "claimed": 11117,
+      "counted": 11117,
+      "file": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "ok": true
+    },
+    {
+      "claim": "pair_batch manifest input.rows",
+      "claimed": 9801,
+      "counted": 9801,
+      "file": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "ok": true
+    }
+  ],
+  "gitattributes": "# Preserve archived evidence bytes on every platform.\narchive/** -text\nprovenance/** -text\nMVP2/literature/seeds/** -text\nMVP2/literature/studies/** -text\n*.gz binary\n*.zip binary\n*.png binary\n*.pdf binary\n*.xlsx binary\n*.pptx binary\n",
+  "hash_assertions": [
+    {
+      "assertion": "screened_20260912/manifest.json :: baseline.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "crlf_lines": 11118,
+      "file": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "manifest_path_field": "<workspace>/metabocausal/archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256_as_is": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "sha256_committed_blob": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "sha256_crlf_to_lf": "bbb10c365a0f1076b193011ac221f22dcefa50b8dcb239346ac83a1c939972ad",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(as-is)"
+    },
+    {
+      "assertion": "mvp1_plus_mvp2...manifest.json :: inputs.baseline.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "crlf_lines": 11118,
+      "file": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "manifest_path_field": "<workspace>/metabocausal/archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256_as_is": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "sha256_committed_blob": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "sha256_crlf_to_lf": "bbb10c365a0f1076b193011ac221f22dcefa50b8dcb239346ac83a1c939972ad",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(as-is)"
+    },
+    {
+      "assertion": "mvp1_plus_mvp2...manifest.json :: inputs.new_pairs.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083",
+      "crlf_lines": 9802,
+      "file": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "manifest_path_field": "<workspace>/metabocausal/MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "sha256_as_is": "5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b",
+      "sha256_committed_blob": "f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083",
+      "sha256_crlf_to_lf": "f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(after CRLF->LF)"
+    },
+    {
+      "assertion": "mvp1_plus_mvp2...manifest.json :: outputs.merged_csv.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0",
+      "crlf_lines": 20919,
+      "file": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv",
+      "manifest_path_field": "<workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv",
+      "sha256_as_is": "1ab7c7a4d24e827d6f99087745eac546d33556dc5b79ccdd63dcd323f052458b",
+      "sha256_committed_blob": "8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0",
+      "sha256_crlf_to_lf": "8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(after CRLF->LF)"
+    },
+    {
+      "assertion": "mvp1_plus_mvp2...manifest.json :: outputs.provenance_csv.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c",
+      "crlf_lines": 9802,
+      "file": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv",
+      "manifest_path_field": "<workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv",
+      "sha256_as_is": "5fa6c2343727f7246d1336dc5e4cbaea6c2ea39614b9899e45bfc432b57bdadb",
+      "sha256_committed_blob": "b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c",
+      "sha256_crlf_to_lf": "b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(after CRLF->LF)"
+    },
+    {
+      "assertion": "mvp1_plus_mvp2...manifest.json :: outputs.reference_original_merged_csv.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce",
+      "crlf_lines": 20919,
+      "file": "MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv",
+      "manifest_path_field": "<workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv",
+      "sha256_as_is": "c5bc2b45ff153ce4f199c12454d1183025d516f3a5c6be9262969441325cbb74",
+      "sha256_committed_blob": "af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce",
+      "sha256_crlf_to_lf": "af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce",
+      "verdict_lf_checkout": "PASS",
+      "verdict_this_checkout": "PASS(after CRLF->LF)"
+    },
+    {
+      "assertion": "pair_batch_smoke.../manifest.json :: input.sha256",
+      "bare_lf_lines": 0,
+      "claimed": "5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b",
+      "crlf_lines": 9802,
+      "file": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "manifest_path_field": "MVP2/data/extracted/screened_20260912/new_unique_pairs.csv",
+      "sha256_as_is": "5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b",
+      "sha256_committed_blob": "f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083",
+      "sha256_crlf_to_lf": "f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083",
+      "verdict_lf_checkout": "FAIL",
+      "verdict_this_checkout": "PASS(as-is)"
+    }
+  ],
+  "ledger_status_tally": {
+    "already_present": 304,
+    "excluded_direction": 2751,
+    "new_pair": 17405
+  },
+  "ledger_tally_matches_manifest": true,
+  "recomputed_summary": {
+    "already_present_count": {
+      "manifest": 304,
+      "ok": true,
+      "recomputed": 304
+    },
+    "baseline_pair_key_count": {
+      "manifest": 10278,
+      "ok": true,
+      "recomputed": 10278
+    },
+    "candidate_row_count": {
+      "manifest": 20460,
+      "ok": true,
+      "recomputed": 20460
+    },
+    "excluded_direction_count": {
+      "manifest": 2751,
+      "ok": true,
+      "recomputed": 2751
+    },
+    "new_pair_key_count": {
+      "manifest": 9801,
+      "ok": true,
+      "recomputed": 9801
+    },
+    "new_pair_record_count": {
+      "manifest": 17405,
+      "ok": true,
+      "recomputed": 17405
+    },
+    "unresolved_identity_count": {
+      "manifest": 0,
+      "ok": true,
+      "recomputed": 0
+    }
+  },
+  "totals": {
+    "lf_checkout_fail": 1,
+    "this_checkout_fail": 0,
+    "this_checkout_pass_after_normalization": 4,
+    "this_checkout_pass_as_is": 3
+  }
+}

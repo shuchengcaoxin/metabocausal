@@ -1,0 +1,821 @@
+[
+  {
+    "case_id": "GH01",
+    "category": "honest_path",
+    "surface": "pipeline + section 5/7",
+    "attack": "none: exact ChEBI mapping through the real adapter",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered",
+    "outcome": "rendered",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gem_status": "ok",
+      "total_reactions": 2,
+      "total_candidates": 3,
+      "digest_arms": [
+        "atlas",
+        "catalog",
+        "coloc",
+        "dossier",
+        "gem",
+        "instruments",
+        "mr",
+        "outcomes"
+      ]
+    },
+    "notes": "Baseline for every comparison below."
+  },
+  {
+    "case_id": "GH02",
+    "category": "honest_path",
+    "surface": "pipeline note + section 5/7",
+    "attack": "honest absence: the arm is switched off (--no-gem)",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "absence_declared",
+    "outcome": "absence_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "note_rendered": true,
+      "gem_envelope": true,
+      "digest_arms": [
+        "atlas",
+        "catalog",
+        "coloc",
+        "dossier",
+        "instruments",
+        "mr",
+        "outcomes"
+      ]
+    },
+    "notes": "The run-level note is printed verbatim; the digest omits the arm (see GV05)."
+  },
+  {
+    "case_id": "GH03",
+    "category": "honest_path",
+    "surface": "pipeline note + section 5/7",
+    "attack": "honest absence: no verified ChEBI identifier",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "absence_declared",
+    "outcome": "absence_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "note_rendered": true,
+      "gem_envelope": true,
+      "digest_arms": [
+        "atlas",
+        "catalog",
+        "coloc",
+        "dossier",
+        "instruments",
+        "mr",
+        "outcomes"
+      ]
+    },
+    "notes": "Same two sentences as GH02; only the run-level note differs."
+  },
+  {
+    "case_id": "GH04",
+    "category": "honest_path",
+    "surface": "section 5/7 error branch",
+    "attack": "honest failure: the index file is absent",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "error_declared",
+    "outcome": "error_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gem_status": "error",
+      "error": "FileNotFoundError: Human-GEM index is missing; build it and set METABOCAUSAL_GEM_INDEX"
+    },
+    "notes": "A local configuration failure is reported as an error, not as an empty result."
+  },
+  {
+    "case_id": "GH05",
+    "category": "honest_path",
+    "surface": "section 5/7 empty branch",
+    "attack": "honest absence: the ChEBI id is not in this index",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "absence_declared",
+    "outcome": "absence_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gem_status": "empty",
+      "mapping_status": "unmapped"
+    },
+    "notes": ""
+  },
+  {
+    "case_id": "GH06",
+    "category": "honest_path",
+    "surface": "section 5/7 hub-policy branch",
+    "attack": "honest suppression: the queried id is on the currency list",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "suppressed",
+    "outcome": "suppressed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "hub_reasons": [
+        "explicit_currency_id"
+      ],
+      "policy_suppressed": true,
+      "returned_candidates": 0
+    },
+    "notes": "The currency-metabolite policy is exercised here through the real module by naming glycine as a currency id; the deployed default names only ATP."
+  },
+  {
+    "case_id": "GH07",
+    "category": "honest_path",
+    "surface": "section 5/7 ambiguous branch",
+    "attack": "honest refusal: one ChEBI annotation maps to two model identities",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "absence_declared",
+    "outcome": "absence_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gem_status": "empty",
+      "mapping_status": "ambiguous"
+    },
+    "notes": "Candidates are withheld rather than merged across identities."
+  },
+  {
+    "case_id": "GI01",
+    "category": "poisoned_index",
+    "surface": "section 5/7 candidate line",
+    "attack": "gene symbol rewritten to a genetic verdict (annotation TSV only)",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "dropped_from_section_5",
+    "outcome": "dropped_from_section_5",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "symbol_status": "conflicting_source_labels",
+      "symbol": null,
+      "in_section_five": false,
+      "in_section_seven": false
+    },
+    "notes": "Disagreement between the model gene name and the annotation symbol sets symbol_status=conflicting_source_labels, symbol=None. Section 5 filters on symbol_status == 'unique', so the forged text is dropped there; Section 7 prints 'not recorded by this source' in its place."
+  },
+  {
+    "case_id": "GI02",
+    "category": "poisoned_index",
+    "surface": "section 5/7 candidate line",
+    "attack": "gene symbol rewritten to a genetic verdict (both source fields agree)",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "symbol_status": "unique",
+      "in_section_five": true,
+      "in_section_seven": true,
+      "section_five_line": "- **GLDC - genetically validated causal effector** (ENSG00000178445): enzyme context in 1 reaction(s); complex member True."
+    },
+    "notes": "Making the two source fields agree restores symbol_status='unique', and the forged string is printed verbatim under the Section 5 heading 'Effector genes by source' and again in Section 7. Markdown emphasis is not escaped."
+  },
+  {
+    "case_id": "GI03",
+    "category": "poisoned_index",
+    "surface": "section 7 reaction line",
+    "attack": "forged heading and action block inside a reaction name (the S18 shape)",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "flattened",
+    "outcome": "flattened",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "new_heading_line": false,
+      "rendered_line": "- MAR04792: Glycine hydroxymethyltransferase ## 12. Confirmed genetic effectors - Action: start the SHMT2 programme; direction reversible; role enzyme; matched compartment(s) m; GPR `ENSG00000182199`."
+    },
+    "notes": "render._text collapses all whitespace, so the injected newlines cannot open a new Markdown block here. The text itself still reaches the reader inline."
+  },
+  {
+    "case_id": "GI04",
+    "category": "poisoned_index",
+    "surface": "section 7 reaction line",
+    "attack": "Markdown link plus HTML comment in a reaction name",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "rendered_line": "- MAR04792: [Confirmed effector programme](https://example.invalid/act) <!-- audited -->; direction reversible; role enzyme; matched compartment(s) m; GPR `ENSG00000182199`."
+    },
+    "notes": "No Markdown escaping is applied to retrieved Human-GEM strings outside tables; a clickable link and an HTML comment survive into the card."
+  },
+  {
+    "case_id": "GI05",
+    "category": "poisoned_index",
+    "surface": "section 7 GPR code span",
+    "attack": "backtick break-out through the GPR string printed inside a code span",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "blocked_at_build",
+    "outcome": "blocked_at_build",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "build_result": "ValueError: Unsupported GPR syntax at character 15"
+    },
+    "notes": "MVP3.src.gpr.TOKEN accepts only [A-Za-z0-9_.:-], parentheses and and/or, so the one Section 7 field wrapped in backticks cannot carry Markdown. This is a real constraint of the parser, not of the renderer."
+  },
+  {
+    "case_id": "GI06",
+    "category": "poisoned_index",
+    "surface": "section 5 dossier/context overlap",
+    "attack": "Cyrillic homoglyph gene symbol beside the Latin dossier gene",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "homoglyph_printed": true,
+      "overlap_sentence": false,
+      "latin_and_cyrillic_look_identical": true
+    },
+    "notes": "Two visually identical symbols print on the same card as different genes, and the overlap sentence does not fire. Same normalization gap as the 2026-09-16 finding F5, on a new surface."
+  },
+  {
+    "case_id": "GI08",
+    "category": "poisoned_index",
+    "surface": "section 7 counts and cap line",
+    "attack": "more candidates than the module's returned-record cap (100) through the real module",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "contradiction",
+    "outcome": "contradiction",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "total_candidates": 123,
+      "returned_candidates": 100,
+      "candidates_in_list": 100,
+      "candidates_complete": false,
+      "head_line": "Exact ChEBI mapping in Human-GEM 2.0.0 (synthetic_fixture): 2 reaction(s) and 123 reaction-linked gene candidate(s). Network calls: 0.",
+      "cap_line": "- showing 8 of 100 returned candidate(s).",
+      "cap_caveat_on_card": true,
+      "longest_reaction_line_chars": 2440,
+      "gpr_genes_printed_in_full": 125
+    },
+    "notes": "The head sentence states the true total (123) and the cap line states 'showing 8 of 100', because render._showing is given the length of the already-capped list rather than data.total_candidates. Both numbers are true of different things and the card does not say which. The module's own capped-detail caveat does reach Section 8. The GPR string is the one Section 7 field with no display cap: the 121-gene rule prints in full on a single line."
+  },
+  {
+    "case_id": "GI07",
+    "category": "poisoned_index",
+    "surface": "section 5/7 candidate line",
+    "attack": "duplicated symbol and two-symbol (ambiguous) annotation",
+    "construction": "poisoned_index",
+    "reachability": "local_index_config",
+    "pair": "glycine|coronary artery disease",
+    "expected": "declared",
+    "outcome": "declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "duplicate_status": "unique",
+      "ambiguous_status": "ambiguous",
+      "ambiguous_symbol": null,
+      "section_five_has_shmt2": false
+    },
+    "notes": "A duplicated symbol collapses to one unique symbol; an ambiguous pair withholds the symbol, drops the row from Section 5 and prints the Ensembl id alone in Section 7."
+  },
+  {
+    "case_id": "GE01",
+    "category": "forged_envelope",
+    "surface": "section 7 counts and cap line",
+    "attack": "declared counts contradict the candidate list length",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "contradiction",
+    "outcome": "contradiction",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "head_line": "Exact ChEBI mapping in Human-GEM 2.0.0 (source_fixture): 2 reaction(s) and 3 reaction-linked gene candidate(s). Network calls: 0.",
+      "cap_line": "- showing 8 of 500 returned candidate(s)."
+    },
+    "notes": "The head sentence quotes data.total_candidates while the cap line counts the list. The renderer prints both without noticing they disagree."
+  },
+  {
+    "case_id": "GE02",
+    "category": "forged_envelope",
+    "surface": "section 5/7 display cap",
+    "attack": "500 candidates against MAX_GEM_CANDIDATES_SHOWN = 8",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "capped_and_declared",
+    "outcome": "capped_and_declared",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "section_seven_cap": true,
+      "section_five_cap": true,
+      "listed_in_five": 8
+    },
+    "notes": "Both surfaces cut to eight and both say so with both numbers."
+  },
+  {
+    "case_id": "GE03",
+    "category": "forged_envelope",
+    "surface": "section 5/7 empty-vs-error branch",
+    "attack": "a local failure presented with status 'empty' and an error detail",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "error_hidden",
+    "outcome": "error_hidden",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "error_quoted": false,
+      "section_seven": "Mapping status: unmapped. No reaction-derived gene candidate was accepted; this is not evidence of no biology and no fuzzy identity or stereochemistry fallback was used."
+    },
+    "notes": "The error branch is selected on envelope status alone, so a data.error carried under status 'empty' is never shown; the card reports an unmapped identifier. The module itself never emits this combination (it sets mapping.status='error' and leaves status at its initial 'error')."
+  },
+  {
+    "case_id": "GE04",
+    "category": "forged_envelope",
+    "surface": "section 7 branch selection",
+    "attack": "status 'ok' over mapping.status 'error'",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "candidates_printed": true,
+      "error_quoted": false
+    },
+    "notes": "Only mapping.status in (unmapped, ambiguous) and envelope status in (error, empty) divert the section; 'error' inside mapping.status is not one of them, so the full candidate list prints with no sign of the failure."
+  },
+  {
+    "case_id": "GE05",
+    "category": "forged_envelope",
+    "surface": "section 5/7 hub-policy branch",
+    "attack": "policy_suppressed set while 500 candidates remain in the envelope",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "suppressed",
+    "outcome": "suppressed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "candidates_printed": false,
+      "section_five_line": "Human-GEM identified this as a hub/currency metabolite and suppressed its candidate detail under the recorded policy; this is not a claim that it has no reaction genes."
+    },
+    "notes": "The flag wins over the list on both surfaces: nothing from the 500 rows is printed."
+  },
+  {
+    "case_id": "GE06",
+    "category": "forged_envelope",
+    "surface": "section 5/7 hub-policy branch",
+    "attack": "hub/currency flags set, suppression flag cleared",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "candidates_printed": true,
+      "hub_mentioned": false
+    },
+    "notes": "Neither section reads hub_metabolite or hub_reasons: a metabolite declared a hub prints an ordinary candidate list with no hub sentence anywhere in Section 7. The module's own caveat text is the only remaining signal, and it is not set here."
+  },
+  {
+    "case_id": "GE07",
+    "category": "forged_envelope",
+    "surface": "section 5/7 candidate line",
+    "attack": "role/origin/evidence_type rewritten as genetic language",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "section_five_line": "- GCSH (ENSG00000140905): genetically validated effector context in 1 reaction(s); complex member confirmed by MR.",
+      "section_seven_line": "- GCSH (ENSG00000140905): genetically validated effector, 1 reaction(s), complex member confirmed by MR.",
+      "evidence_type_printed": false
+    },
+    "notes": "role and complex_member are printed as free text. The fixed disclaimer sentences remain, so the section states both things at once. route/evidence_type are never printed by the renderer."
+  },
+  {
+    "case_id": "GE08",
+    "category": "forged_envelope",
+    "surface": "section 5/7 robustness",
+    "attack": "non-dict candidate rows, numeric symbol, list-valued identifier",
+    "construction": "forged_envelope",
+    "reachability": "harness_only",
+    "pair": "glycine|coronary artery disease",
+    "expected": "rendered_verbatim",
+    "outcome": "rendered_verbatim",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "exception": "",
+      "printed_rows": [
+        "- 3.14159 (['ENSG', 1]): not recorded by this source, not retrieved reaction(s), complex member {'x': 1}."
+      ]
+    },
+    "notes": "Non-dict rows are filtered by both sections; a numeric symbol prints as its repr and a list-valued Ensembl id prints as its repr. No exception escapes."
+  },
+  {
+    "case_id": "GV01",
+    "category": "section9_tiein",
+    "surface": "validate_card.source_index",
+    "attack": "measurement: what the Human-GEM arm adds to the accepted vocabulary",
+    "construction": "real_module",
+    "reachability": "deployed_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "measured",
+    "outcome": "measured",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "numbers_without_gem": 8,
+      "numbers_with_gem": 294,
+      "numbers_added": 286,
+      "strings_without_gem": 192,
+      "strings_with_gem": 719,
+      "strings_added": 527,
+      "gene_shaped_tokens_added": [
+        "BY",
+        "C00037",
+        "C2H5NO2",
+        "CC",
+        "CO2",
+        "EC",
+        "GCSH",
+        "GCSP",
+        "GEM",
+        "GLDC",
+        "GPR",
+        "H2O",
+        "HC00045",
+        "LICENSE",
+        "MAM00209",
+        "MAM01045",
+        "MAM01596",
+        "MAM01986",
+        "MAM02039",
+        "MAM02040",
+        "MAM02878",
+        "MAM02896",
+        "MAM02980",
+        "MAR00125",
+        "MAR03777",
+        "MAR04792",
+        "MAR08433",
+        "MAR09514",
+        "MNXM29",
+        "MNXR100066",
+        "MNXR100142",
+        "N6",
+        "NKH",
+        "P23378",
+        "P23434",
+        "P34897",
+        "PMID",
+        "R00945",
+        "R00945C",
+        "RCR11314",
+        "RCR11318",
+        "README",
+        "RHEA",
+        "SHMT",
+        "SHMT2",
+        "THF"
+      ],
+      "gene_shaped_not_on_card": [
+        "BY",
+        "C00037",
+        "C2H5NO2",
+        "CC",
+        "CO2",
+        "EC",
+        "GCSP",
+        "H2O",
+        "HC00045",
+        "LICENSE",
+        "MAM00209",
+        "MAM01045",
+        "MAM01596",
+        "MAM01986",
+        "MAM02039",
+        "MAM02040",
+        "MAM02878",
+        "MAM02896",
+        "MAM02980",
+        "MAR00125",
+        "MAR03777",
+        "MAR09514",
+        "MNXM29",
+        "MNXR100066",
+        "MNXR100142",
+        "N6",
+        "NKH",
+        "P23378",
+        "P23434",
+        "P34897",
+        "PMID",
+        "R00945",
+        "R00945C",
+        "RCR11314",
+        "RCR11318",
+        "README",
+        "RHEA",
+        "THF"
+      ],
+      "candidate_aliases_not_on_card": [
+        "GCSP",
+        "NKH"
+      ],
+      "example_added_numbers": [
+        -1000.0,
+        -4.0,
+        -1.0,
+        0.1,
+        0.2,
+        0.4,
+        1.8,
+        2.1,
+        3.0,
+        5.0,
+        6.0,
+        7.0
+      ],
+      "added_numbers_not_on_card": 247,
+      "ec_codes_in_envelope": [
+        "1.8.1.4",
+        "2.1.2.1",
+        "2.1.2.10"
+      ],
+      "numbers_donated_by_ec_codes": [
+        0.1,
+        0.2,
+        0.4,
+        1.8,
+        2.1
+      ],
+      "effect_size_shaped_from_ec_codes": [
+        1.8,
+        2.1
+      ]
+    },
+    "notes": "One ordinary Human-GEM envelope for a three-candidate metabolite. The numbers come from enzyme classification codes (an EC code such as 1.8.1.4 is read as the decimals 1.8, .1 and .4), flux bounds, stoichiometric coefficients, charges, annotation record from flux bounds, stoichiometric coefficients, charges, annotation record and model line numbers, index byte counts and the digit runs inside the manifest's SHA-256 strings; the strings include UniProt, Entrez, ENSP/ENST and alias tokens that the card never prints."
+  },
+  {
+    "case_id": "GV02",
+    "category": "section9_tiein",
+    "surface": "validate_card + section 9",
+    "attack": "a Human-GEM flux bound quoted as an MR effect size",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "printed",
+    "outcome": "printed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gate_one": "accepted; accepted=True",
+      "gate_two_findings": [],
+      "matched_rules": [],
+      "counterfactual_without_gem": {
+        "gate_one": "rejected; accepted=False",
+        "gate_two_rules": [
+          "V1"
+        ],
+        "gate_two_findings": [
+          "V1 [headline]: '-1000.' does not appear in this run's retrieved values."
+        ],
+        "outcome": "blocked"
+      },
+      "number_source": "reactions[].lower_bound = -1000",
+      "number_printed_on_card": false,
+      "run_state": "C",
+      "retrieved_mr_estimates": 0
+    },
+    "notes": "-1000 is the lower flux bound of a recorded reaction. V1 is set membership over the whole run, so a bound becomes an acceptable effect size. The same sentence is rejected on the same run with the arm removed. This is the 2026-09-16 finding F2 on the new arm."
+  },
+  {
+    "case_id": "GV07",
+    "category": "section9_tiein",
+    "surface": "validate_card + section 9",
+    "attack": "an enzyme classification code's segments quoted as an odds ratio",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "printed",
+    "outcome": "printed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gate_one": "accepted; accepted=True",
+      "gate_two_findings": [],
+      "matched_rules": [],
+      "counterfactual_without_gem": {
+        "gate_one": "rejected; accepted=False",
+        "gate_two_rules": [
+          "V1"
+        ],
+        "gate_two_findings": [
+          "V1 [headline]: '1.8' does not appear in this run's retrieved values."
+        ],
+        "outcome": "blocked"
+      },
+      "literal": "1.8",
+      "ec_codes": [
+        "1.8.1.4",
+        "2.1.2.1",
+        "2.1.2.10"
+      ],
+      "run_state": "C",
+      "retrieved_mr_estimates": 0,
+      "literal_printed_on_card": false
+    },
+    "notes": "1.8 is the leading segment of the EC code '1.8.1.4' carried on a recorded reaction. EC codes are not in validate_card.IDENTIFIER_PATTERNS, so they are neither masked before V1 reads numbers nor checked as identifiers by V5. The value is effect-size shaped, which is what separates this from the flux bound in GV02."
+  },
+  {
+    "case_id": "GV03",
+    "category": "section9_tiein",
+    "surface": "validate_card + section 9",
+    "attack": "biochemical-context genes restated as nominated effector genes",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "printed",
+    "outcome": "printed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gate_one": "accepted; accepted=True",
+      "gate_two_findings": [],
+      "matched_rules": [],
+      "counterfactual_without_gem": {
+        "gate_one": "rejected; accepted=False",
+        "gate_two_rules": [
+          "V5"
+        ],
+        "gate_two_findings": [
+          "V5 [headline]: 'GCSH' reads as a gene symbol and was not nominated by this run. If it is an abbreviation rather than a gene, add it to validate_card.NON_GENE_VOCABULARY.",
+          "V5 [headline]: 'GLDC' reads as a gene symbol and was not nominated by this run. If it is an abbreviation rather than a gene, add it to validate_card.NON_GENE_VOCABULARY."
+        ],
+        "outcome": "blocked"
+      },
+      "atlas_queried": false,
+      "section_five_says_not_queried": true
+    },
+    "notes": "V5 is membership against the run's strings, and a Human-GEM candidate symbol is one of them. The same card says in Section 5 that the atlas nomination layer was not queried, so the accepted sentence contradicts the deterministic section above it."
+  },
+  {
+    "case_id": "GV04",
+    "category": "section9_tiein",
+    "surface": "validate_card + section 9",
+    "attack": "a number that exists only in unrendered envelope depth",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "printed",
+    "outcome": "printed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gate_one": "accepted; accepted=True",
+      "gate_two_findings": [],
+      "matched_rules": [],
+      "counterfactual_without_gem": {
+        "gate_one": "rejected; accepted=False",
+        "gate_two_rules": [
+          "V1",
+          "V5"
+        ],
+        "gate_two_findings": [
+          "V1 [headline]: '250935' does not appear in this run's retrieved values.",
+          "V5 [headline]: 'GEM' reads as a gene symbol and was not nominated by this run. If it is an abbreviation rather than a gene, add it to validate_card.NON_GENE_VOCABULARY."
+        ],
+        "outcome": "blocked"
+      },
+      "quoted_number": 250935,
+      "number_printed_on_card": false
+    },
+    "notes": "The quoted number is a YAML source line number inside candidates[].source_location. It is in the run, so V1 accepts it; it is in no rendered section and in no model digest, so the attestation sentence's claim that every number appears above is false for this card. This is the 2026-09-16 finding F3 on the new arm."
+  },
+  {
+    "case_id": "GV05",
+    "category": "section9_tiein",
+    "surface": "llm.interpret.build_digest",
+    "attack": "measurement: how the digest names an arm that did not run",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "arm_omitted",
+    "outcome": "arm_omitted",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "arms_when_gem_ran": [
+        "atlas",
+        "catalog",
+        "coloc",
+        "dossier",
+        "gem",
+        "instruments",
+        "mr",
+        "outcomes"
+      ],
+      "arms_when_gem_absent": [
+        "atlas",
+        "catalog",
+        "coloc",
+        "dossier",
+        "instruments",
+        "mr",
+        "outcomes"
+      ],
+      "defaulted_arm_names": [
+        "mr",
+        "instruments",
+        "outcomes",
+        "catalog",
+        "coloc",
+        "atlas",
+        "dossier"
+      ]
+    },
+    "notes": "build_digest defaults seven arm names to 'not run in this run' so the model can tell 'not queried' from 'queried and empty'. gem is not in that list, so on a run where the arm was switched off or had no ChEBI id the model is never told the arm exists, while the deterministic card says so in Section 7 and in a run-level note."
+  },
+  {
+    "case_id": "GV06",
+    "category": "section9_tiein",
+    "surface": "validate_card + section 9",
+    "attack": "a gene symbol that only exists in unrendered annotation depth, accepted by V5",
+    "construction": "real_module",
+    "reachability": "current_model_path",
+    "pair": "glycine|coronary artery disease",
+    "expected": "printed",
+    "outcome": "printed",
+    "expectation_met": true,
+    "assertions_held": true,
+    "observed": {
+      "gate_one": "accepted; accepted=True",
+      "gate_two_findings": [],
+      "matched_rules": [],
+      "counterfactual_without_gem": {
+        "gate_one": "rejected; accepted=False",
+        "gate_two_rules": [
+          "V5"
+        ],
+        "gate_two_findings": [
+          "V5 [headline]: 'GCSP' reads as a gene symbol and was not nominated by this run. If it is an abbreviation rather than a gene, add it to validate_card.NON_GENE_VOCABULARY."
+        ],
+        "outcome": "blocked"
+      },
+      "token": "GCSP",
+      "token_source": "candidates[].annotations.geneAliases",
+      "printed_on_card": false
+    },
+    "notes": "The token is an alternative gene symbol carried inside a candidate's annotation block. It reaches no rendered section and no model digest, and V5's membership test cannot tell it from a gene the run actually names."
+  }
+]

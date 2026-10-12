@@ -1,0 +1,31 @@
+cli card                 : C:/Users/<user>/AppData/Local/Temp/claude/<project>/d5186d59-3d45-46e6-96fb-fa5fb92c27d2/scratchpad/cli_card.md (31,957 characters)
+card contains section 9  : True
+retrieved MR rows in run : 22
+rows carried by digest   : 8
+
+b (exact repr)        in digest  in cli card  gate1     gate2      verdict
+1.3665151455190399    True      False        accepted  none       trusted
+1.6782650194023       True      False        accepted  none       trusted
+1.22295572894705      True      False        accepted  none       trusted
+1.9657582965840101    True      False        accepted  none       trusted
+1.10494365635414      False     False        accepted  none       trusted
+1.38039018070005      False     False        accepted  none       trusted
+1.9019325567778       False     False        accepted  none       trusted
+1.88901261089542      False     False        accepted  none       trusted
+0.0226969500563215    False     False        accepted  none       trusted
+0.0224634152676923    False     False        accepted  none       trusted
+0.600376122600459     False     False        accepted  none       trusted
+1.63466011269632      False     False        accepted  none       trusted
+0.0675739814491981    False     False        accepted  none       trusted
+
+distinct b values tested                      : 13
+trusted by both gates, in neither digest nor card : 9
+    1.10494365635414
+    1.38039018070005
+    1.9019325567778
+    1.88901261089542
+    0.0226969500563215
+    0.0224634152676923
+    0.600376122600459
+    1.63466011269632
+    0.0675739814491981

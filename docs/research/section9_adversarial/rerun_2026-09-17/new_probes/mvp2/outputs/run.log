@@ -1,0 +1,16 @@
+MVP2 probe run
+utc: 2026-09-17T04:45:20.843404+00:00
+python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+platform: Windows-11-10.0.26200-SP0
+
+L01  probe_L01_coupling.py      exit 0  does any MVP2 artefact reach pipeline/render/classify
+L02  probe_L02_disclosure.py    exit 0  which rendered cards disclose that the MVP2 arm is absent
+L03  probe_L03_tests.py         exit 0  MVP2/tests under the documented runner and under an offline shim
+L04  probe_L04_manifests.py     exit 0  manifest sha256 and row-count assertions, and the screening summary
+L05  probe_L05_records.py       exit 0  record-level integrity of the screened candidate tables
+L06  probe_L06_extraction.py    exit 0  fixed-column extraction against the source workbook
+L07  probe_L07_ledger.py        exit 0  search-run coverage, traceability and identifier hygiene
+L08  probe_L08_merge.py         exit 0  merge reproduction and canonical-dedup accounting
+
+cases written to results.csv: 16
+probe scripts that exited non-zero: 0

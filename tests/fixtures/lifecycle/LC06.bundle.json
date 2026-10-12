@@ -1,0 +1,584 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "mvp1-cetp-torcetrapib-2026-09-12-v2",
+  "checked_at": "2026-09-12",
+  "mode": "Curated recording demo · saved evidence",
+  "pair": {
+    "metabolite": "HDL cholesterol",
+    "gene": "CETP",
+    "disease": "Coronary artery disease",
+    "exposure_id": "ebi-a-GCST005058",
+    "outcome_dataset_id": "ebi-a-GCST005194"
+  },
+  "headline": "The blood marker improved. The trial failed.",
+  "summary": "Follow CETP from human genetics and preclinical evidence into clinical testing, failure, later interpretation and the target class's current status.",
+  "relationship_note": "This timeline starts with human genetics and target-level preclinical evidence, then follows the compound into clinical trials and later genetic reinterpretation. Early evidence supported CETP's effect on HDL and the target rationale; it did not establish torcetrapib safety or clinical benefit.",
+  "sections": [
+    {
+      "id": "question",
+      "title": "The question",
+      "text": "If a drug improves HDL cholesterol, will it protect patients from coronary events? And if it fails, is the problem the blood marker, the target, or the particular drug?",
+      "source_ids": [
+        "torce_paper",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "mr",
+      "title": "Retrieved MR: inspect the design",
+      "text": "The selected MVP1 HDL–CAD row has a negative pre-computed estimate. It remains visible beside the later curated literature. Different instruments, populations and endpoints can lead to different conclusions; a source p-value does not resolve these differences.",
+      "source_ids": [
+        "baseline",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "gene",
+      "title": "A target-matched example: CETP",
+      "text": "CETP is an author-prioritized HDL gene in the project atlas. Torcetrapib and evacetrapib inhibit the CETP protein. This gives a real gene-to-drug link, while the atlas annotation alone does not prove mediation.",
+      "source_ids": [
+        "atlas",
+        "torce_paper",
+        "evace_paper"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "What failed?",
+      "text": "Torcetrapib was stopped after excess mortality and cardiovascular events. Evacetrapib was stopped for insufficient efficacy. These are different failure modes and are shown as separate drug histories.",
+      "source_ids": [
+        "pfizer",
+        "lilly"
+      ]
+    },
+    {
+      "id": "decision",
+      "title": "What genetics adds",
+      "text": "Comparing CETP gene variants with torcetrapib helped distinguish lipid changes from the drug's blood-pressure effect. HDL-focused MR also challenged the assumption that raising this marker must prevent heart attacks.",
+      "source_ids": [
+        "offtarget",
+        "hdl_mr"
+      ]
+    },
+    {
+      "id": "limits",
+      "title": "Keep the counterevidence",
+      "text": "This is not proof that genetic analysis would have predicted every failure, or that CETP is an invalid target. REVEAL found benefit with anacetrapib, and target-specific genetic analyses point to apoB-related effects.",
+      "source_ids": [
+        "reveal",
+        "cetp_mr"
+      ]
+    },
+    {
+      "id": "current-class",
+      "title": "The target's story continues",
+      "text": "A retrieved PREVAIL record lists obicetrapib as Phase 3, active not recruiting; its last update is June 2024. A January 2026 sponsor update discusses continued development. Neither record is a completed cardiovascular-outcome result.",
+      "source_ids": [
+        "prevail",
+        "sponsor2026"
+      ]
+    },
+    {
+      "id": "limitations",
+      "title": "What remains unresolved",
+      "text": "The selected baseline has no queried colocalisation or gene-QTL evidence. Source CI bounds include zero despite a small reported p-value; the CI level and scale are unspecified, so these fields are flagged rather than silently repaired. No claim of causal confidence is made from State A.",
+      "source_ids": [
+        "baseline",
+        "atlas"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "phase1",
+      "date": "2004-03",
+      "precision": "month",
+      "type": "Phase 1 publication",
+      "title": "Torcetrapib raises HDL",
+      "description": "A short multidose study showed that torcetrapib inhibited CETP and raised HDL in healthy participants.",
+      "source_ids": [
+        "torce_phase1"
+      ],
+      "scope": "Compound-specific early human evidence; publication month",
+      "evidence_stage": "clinical"
+    },
+    {
+      "id": "trial-start",
+      "date": "2004-07",
+      "precision": "month",
+      "type": "Phase 3 trial",
+      "title": "ILLUMINATE begins",
+      "description": "Trial of torcetrapib plus atorvastatin versus atorvastatin in a coronary-risk population.",
+      "source_ids": [
+        "torce_trial"
+      ],
+      "scope": "Trial record; start date has month precision",
+      "evidence_stage": "clinical"
+    },
+    {
+      "id": "programme-stop",
+      "date": "2006-12-02",
+      "precision": "day",
+      "type": "Safety failure",
+      "title": "Development stopped",
+      "description": "Pfizer announced termination of ILLUMINATE and the compound's development after a mortality and cardiovascular-event imbalance.",
+      "source_ids": [
+        "pfizer"
+      ],
+      "scope": "Drug-specific safety / programme decision",
+      "evidence_stage": "clinical"
+    },
+    {
+      "id": "results",
+      "date": "2007-11-05",
+      "precision": "day",
+      "type": "Trial results",
+      "title": "Higher HDL, more harm",
+      "description": "Published trial results showed improved lipid levels alongside higher mortality and cardiovascular morbidity.",
+      "source_ids": [
+        "torce_paper"
+      ],
+      "scope": "Specific drug and trial population",
+      "evidence_stage": "clinical"
+    },
+    {
+      "id": "genetic-comparison",
+      "date": "2009-12-21",
+      "precision": "day",
+      "type": "Later genetic interpretation",
+      "title": "Target or drug effect?",
+      "description": "CETP genetic variants resembled the drug's lipid effects but not its blood-pressure rise, supporting an off-target explanation of that effect.",
+      "source_ids": [
+        "offtarget"
+      ],
+      "scope": "Retrospective target-versus-drug comparison",
+      "evidence_stage": "later_genetics"
+    },
+    {
+      "id": "hdl-mr",
+      "date": "2012-05-17",
+      "precision": "day",
+      "type": "Later metabolite MR",
+      "title": "HDL assumption questioned",
+      "description": "Some genetic mechanisms raising HDL did not lower heart-attack risk. This challenges HDL elevation as a sufficient rationale; it is not a CETP-specific negative result.",
+      "source_ids": [
+        "hdl_mr"
+      ],
+      "scope": "Related later evidence; not a 2006 prediction",
+      "evidence_stage": "later_genetics"
+    },
+    {
+      "id": "anacetrapib-outcome",
+      "date": "2017-08-29",
+      "precision": "day",
+      "type": "Class outcome",
+      "title": "Another CETP drug shows benefit",
+      "description": "REVEAL found fewer major coronary events with anacetrapib, showing that torcetrapib's failure did not invalidate the whole target class.",
+      "source_ids": [
+        "reveal"
+      ],
+      "scope": "Different compound; necessary counterevidence",
+      "evidence_stage": "class_status"
+    },
+    {
+      "id": "obicetrapib-status",
+      "date": "2026-01-09",
+      "precision": "day",
+      "type": "Current class status",
+      "title": "CETP development continues",
+      "description": "A sponsor update described continued obicetrapib development; this is not a completed cardiovascular-outcome result.",
+      "source_ids": [
+        "prevail",
+        "sponsor2026"
+      ],
+      "scope": "Different compound; dated programme status",
+      "evidence_stage": "class_status"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baseline",
+      "title": "MVP1 HDL cholesterol–CAD record",
+      "url": "https://epigraphdb.org/mr",
+      "location": "metabolite_disease.csv record 4145; header = 1",
+      "note": "Selected pre-computed estimate, not a target-specific MR analysis. Original source values are in the evidence bundle."
+    },
+    {
+      "id": "atlas",
+      "title": "MVP1 CETP annotation / Zoodsma 2025",
+      "url": "https://doi.org/10.1038/s41588-025-02355-3",
+      "location": "triples.csv.gz decompressed record 328106; atlas rs821840 and rs189866004",
+      "note": "Author-prioritized gene annotation for HDL cholesterol, ENSG00000087237. The present atlas is not evidence available to a 2006 decision-maker."
+    },
+    {
+      "id": "cetp_deficiency",
+      "title": "Inherited CETP deficiency (1989)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2586614/",
+      "location": "Nature paper; published 1989-11-23; PMID 2586614",
+      "note": "A CETP splice-site mutation caused inherited CETP deficiency and markedly increased HDL. This establishes human genetic effects on the biomarker, not protection from coronary disease."
+    },
+    {
+      "id": "cetp_antisense",
+      "title": "CETP suppression in rabbits (1998)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9478952/",
+      "location": "Journal paper; published 1998-02-27; PMID 9478952",
+      "note": "Target-level preclinical evidence: CETP antisense treatment reduced atherosclerotic lesions in cholesterol-fed rabbits. This was not a torcetrapib experiment."
+    },
+    {
+      "id": "cetp_inhibitor_rabbit",
+      "title": "CETP inhibitor in rabbits (2000)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10910363/",
+      "location": "Nature paper; published 2000-07-13; PMID 10910363",
+      "note": "A different CETP inhibitor, JTT-705, improved lipids and attenuated rabbit atherosclerosis. It supports the target class, not torcetrapib-specific safety or efficacy."
+    },
+    {
+      "id": "torce_phase1",
+      "title": "Torcetrapib Phase 1 study (2004)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14739125/",
+      "location": "Phase 1 multidose study; published 2004-03; PMID 14739125",
+      "note": "Early human proof of mechanism: torcetrapib increased HDL over 14 days. Publication date is shown; the study began earlier, but no verified start date is asserted here."
+    },
+    {
+      "id": "torce_trial",
+      "title": "ILLUMINATE registry",
+      "url": "https://clinicaltrials.gov/study/NCT00134264",
+      "location": "protocolSection identification, status, design and eligibility",
+      "note": "Phase 3 torcetrapib/atorvastatin versus atorvastatin. Population includes coronary heart disease or high-risk diabetes; broader than the exact CAD GWAS population."
+    },
+    {
+      "id": "pfizer",
+      "title": "Pfizer programme stop (2006)",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800306000334/ex991202.htm",
+      "location": "Pfizer release, 2006-12-02, filed with SEC",
+      "note": "Sponsor stopped trials and compound development after the mortality/cardiovascular-event imbalance."
+    },
+    {
+      "id": "torce_paper",
+      "title": "ILLUMINATE results (2007)",
+      "url": "https://doi.org/10.1056/NEJMoa0706628",
+      "location": "Abstract and discussion; published online 2007-11-05; PMID 17984165",
+      "note": "Torcetrapib increased HDL but increased mortality and cardiovascular morbidity. This does not isolate CETP inhibition as the cause of harm."
+    },
+    {
+      "id": "offtarget",
+      "title": "CETP genetics versus torcetrapib (2009 online)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20026784/",
+      "location": "Abstract; online 2009-12-21, journal issue 2010; DOI 10.1161/CIRCULATIONAHA.109.865444",
+      "note": "Genetic lipid effects resembled treatment; blood-pressure effects did not. Supports an off-target interpretation of the hypertensive effect, not proof of every cause of death."
+    },
+    {
+      "id": "hdl_mr",
+      "title": "HDL cholesterol and heart attack MR (2012)",
+      "url": "https://doi.org/10.1016/S0140-6736(12)60312-2",
+      "location": "Abstract / interpretation; 2012-05-17; PMID 22607825",
+      "note": "Some genetic mechanisms raising HDL did not lower myocardial-infarction risk. HDL-level evidence is not a CETP-specific verdict; MI is related to, but not identical to, the CAD dataset outcome."
+    },
+    {
+      "id": "evace_trial",
+      "title": "ACCELERATE registry",
+      "url": "https://clinicaltrials.gov/study/NCT01687998",
+      "location": "protocolSection identification, status, design and eligibility",
+      "note": "Phase 3, terminated for insufficient efficacy. High-risk vascular population and composite endpoint, not an exact reproduction of the CAD GWAS."
+    },
+    {
+      "id": "lilly",
+      "title": "Lilly programme stop (2015)",
+      "url": "https://investor.lilly.com/node/24656",
+      "location": "Sponsor release, 2015-10-12",
+      "note": "Development for high-risk ASCVD discontinued due to insufficient efficacy; the stated stop was not for safety findings."
+    },
+    {
+      "id": "evace_paper",
+      "title": "ACCELERATE results (2017)",
+      "url": "https://doi.org/10.1056/NEJMoa1609581",
+      "location": "Abstract and trial results; 2017-05 (month precision); PMID 28514624",
+      "note": "Favorable lipid changes did not translate into fewer cardiovascular events in this trial."
+    },
+    {
+      "id": "cetp_mr",
+      "title": "CETP/HMGCR genetic analysis (2017)",
+      "url": "https://doi.org/10.1001/jama.2017.11467",
+      "location": "Abstract / conclusions; JAMA online 2017-08-28; PMID 28846118",
+      "note": "Cardiovascular associations tracked apoB reduction in the joint genetic analysis. Do not reduce CETP effects to HDL elevation alone."
+    },
+    {
+      "id": "reveal",
+      "title": "REVEAL anacetrapib results (2017)",
+      "url": "https://doi.org/10.1056/NEJMoa1706444",
+      "location": "Abstract; NEJM online 2017-08-29; PMID 28847206",
+      "note": "Anacetrapib reduced major coronary events in REVEAL. Necessary counterexample to a claim that all CETP inhibition fails."
+    },
+    {
+      "id": "prevail",
+      "title": "Obicetrapib PREVAIL registry",
+      "url": "https://clinicaltrials.gov/study/NCT05202509",
+      "location": "protocolSection status and design; source update 2024-06-04",
+      "note": "Retrieved Phase 3 ACTIVE_NOT_RECRUITING record. Old registry update, not proof of current recruitment or programme-wide regulatory status."
+    },
+    {
+      "id": "sponsor2026",
+      "title": "NewAmsterdam 2026 programme update",
+      "url": "https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-highlights-2025-achievements-and-outlines",
+      "location": "Sponsor release 2026-01-09; PREVAIL section",
+      "note": "Reports continuing obicetrapib development. Projections are not achieved outcomes; no global approval status is established here."
+    }
+  ],
+  "current_status": {
+    "trial_id": "NCT00134264",
+    "trial_phase": "PHASE3",
+    "trial_status": "TERMINATED",
+    "trial_updated_at": "2012-02-03",
+    "trial_description": "A Study Examining Torcetrapib/Atorvastatin And Atorvastatin Effects On Clinical CV Events In Patients With Heart Disease",
+    "regulatory": "Safety stop announced by Pfizer after excess deaths and cardiovascular events.",
+    "label_effective_at": "2006-12-02",
+    "programme_status": "Latest programme decision retrieved for this example; no exhaustive global revival/approval search.",
+    "source_ids": [
+      "torce_trial",
+      "pfizer"
+    ],
+    "context_label": "Programme outcome",
+    "context_title": "Development discontinued",
+    "context_date_label": "Sponsor decision"
+  },
+  "modules": [
+    {
+      "name": "MVP1",
+      "status": "Saved evidence available",
+      "detail": "Selected original HDL–CAD MR row and CETP atlas annotation."
+    },
+    {
+      "name": "Genetic Insights",
+      "status": "Curated example ready",
+      "detail": "Two target-matched failure histories with dated sources; all-pair automatic preparation remains integration work."
+    },
+    {
+      "name": "Jingrui · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Seed papers and Europe PMC literature evidence."
+    },
+    {
+      "name": "Ziwei · MVP2",
+      "status": "Awaiting accepted output",
+      "detail": "Semantic Scholar evidence, merged by paper identity."
+    },
+    {
+      "name": "Zipeng · MVP3",
+      "status": "Awaiting accepted output",
+      "detail": "Human-GEM biochemical context."
+    },
+    {
+      "name": "Slack",
+      "status": "Export ready; live delivery unverified",
+      "detail": "Same snapshot produces Slack text and attachments; Zhang Hao connects the bot."
+    },
+    {
+      "name": "LLM interpretation",
+      "status": "No model run for this demo",
+      "detail": "The visible summary was prepared for the saved example. OpenAI/Claude code support is separate."
+    }
+  ],
+  "provenance": {
+    "preparation": "Curated lifecycle example spanning human genetics, preclinical evidence, clinical development, later interpretation and current class status. Built from existing MVP1 records and explicitly retrieved primary sources. No automatic all-pair timeline search, no MVP2/MVP3 completion, and no live Slack deployment is claimed.",
+    "baseline": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+      "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+      "line": 4145,
+      "row": {
+        "metabolite_name": "hdl cholesterol",
+        "metabolite_chebi": "",
+        "disease_trait": "Coronary artery disease",
+        "disease_id": "ebi-a-GCST005194",
+        "exposure_id": "ebi-a-GCST005058",
+        "exposure_trait": "HDL cholesterol",
+        "b": "-0.11201101881553",
+        "se": "0.0210845860404704",
+        "ci_low": "-0.270463355356383",
+        "ci_upp": "0.0464413177253243",
+        "pval": "1.081552039397e-07",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/hdl-cholesterol-fee7d2be.md",
+        "retrieved_at": "2026-09-11T22:19:51.092142+00:00",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "3",
+        "source_detail_status": "ok",
+        "record_type": "metabolite_disease_evidence",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "295",
+        "atlas_loci_available": "334"
+      }
+    },
+    "triple": {
+      "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/triples.csv.gz",
+      "sha256": "0560f29748107446bd3d1c45602bf76d3c576e0acf05d91a6fd30f57b7327844",
+      "line": 328106,
+      "row": {
+        "metabolite_name": "hdl cholesterol",
+        "metabolite_chebi": "",
+        "ensembl_gene_id": "ENSG00000087237",
+        "gene_symbol": "CETP",
+        "gene_source": "author_prioritized",
+        "atlas": "Zoodsma 2025",
+        "disease_trait": "Coronary artery disease",
+        "disease_id": "ebi-a-GCST005194",
+        "exposure_id": "ebi-a-GCST005058",
+        "exposure_trait": "HDL cholesterol",
+        "b": "-0.11201101881553",
+        "se": "0.0210845860404704",
+        "ci_low": "-0.270463355356383",
+        "ci_upp": "0.0464413177253243",
+        "pval": "1.081552039397e-07",
+        "method": "FE IVW",
+        "nsnp": "4",
+        "moescore": "1.0",
+        "coloc_h4": "",
+        "coloc_method": "",
+        "coloc_locus": "",
+        "n_instruments": "",
+        "weak_instruments": "",
+        "state": "A",
+        "page_path": "data/metabolites/hdl-cholesterol-fee7d2be.md",
+        "retrieved_at": "2026-09-11T22:19:51.092142+00:00",
+        "source_gene_symbol": "CETP",
+        "gene_annotation_resolution": "single_source_label",
+        "ensembl_resolution": "reported_in_atlas",
+        "coloc_h3": "",
+        "coloc_clpp": "",
+        "coloc_scope": "",
+        "coloc_study_id": "",
+        "gene_qtl_h4": "",
+        "gene_qtl_h3": "",
+        "gene_qtl_clpp": "",
+        "gene_qtl_method": "",
+        "gene_qtl_locus": "",
+        "gene_qtl_study_id": "",
+        "gene_qtl_status": "not_queried",
+        "instrument_dataset_id": "",
+        "instrument_status": "ok",
+        "coloc_status": "not_queried",
+        "representative_rule": "Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.",
+        "supporting_mr_rows": "3",
+        "supporting_atlas_loci": "2",
+        "source_detail_status": "ok",
+        "record_type": "gene_annotated_candidate",
+        "mechanism_status": "candidate_genes_available",
+        "candidate_gene_count": "295",
+        "atlas_loci_available": "334"
+      }
+    },
+    "atlas": {
+      "path": "archive/project_files/handoff-product_2026-09-11/runtime-data/data/atlas_locus_gene.csv",
+      "sha256": "5af6d4c388dbd413d8aa7e7f8dd9e7d6bc7e2d338716796a6d68f90b0485c052",
+      "records": [
+        {
+          "line": 22600,
+          "row": {
+            "metabolite_name": "HDL Cholesterol",
+            "chebi": "",
+            "ensembl_gene_id": "ENSG00000087237",
+            "rsid": "rs821840",
+            "chr": "16",
+            "pos": "56959974",
+            "gene_symbol": "CETP",
+            "gene_source": "author_prioritized",
+            "atlas": "Zoodsma 2025",
+            "year": "2025",
+            "note": ""
+          }
+        },
+        {
+          "line": 22601,
+          "row": {
+            "metabolite_name": "HDL Cholesterol",
+            "chebi": "",
+            "ensembl_gene_id": "ENSG00000087237",
+            "rsid": "rs189866004",
+            "chr": "16",
+            "pos": "56978732",
+            "gene_symbol": "CETP",
+            "gene_source": "author_prioritized",
+            "atlas": "Zoodsma 2025",
+            "year": "2025",
+            "note": ""
+          }
+        }
+      ]
+    },
+    "source_receipts": {
+      "cetp-offtarget.json": {
+        "path": "sources/cetp-offtarget.json",
+        "sha256": "242868f95a7cba390588eb3caec1de901597225f81d1a59008926c9250660068",
+        "retrieved_at": "2026-09-12T18:13:47.667341+00:00"
+      },
+      "cetp-papers.json": {
+        "path": "sources/cetp-papers.json",
+        "sha256": "b7bb4367930ad4623be47225be438ad17787b5499a2042735485a652cf2cbdc0",
+        "retrieved_at": "2026-09-12T18:13:16.908926+00:00"
+      },
+      "NCT00134264.json": {
+        "path": "sources/NCT00134264.json",
+        "sha256": "51c9f48c1caa520c709650f21ef87044cf1f8132e024ad180b31663dce3a7e06",
+        "retrieved_at": "2026-09-12T18:13:15.066059+00:00"
+      },
+      "NCT01252953.json": {
+        "path": "sources/NCT01252953.json",
+        "sha256": "bd8ece4dd55071e399273894ba1dddab9606002fd27ad458463ebbc10d3fc4c9",
+        "retrieved_at": "2026-09-12T18:13:15.815671+00:00"
+      },
+      "NCT01687998.json": {
+        "path": "sources/NCT01687998.json",
+        "sha256": "f3c6731a4525da162c46e94f6f5ed94c8cb3ed7cee4ec9ba8717551ae6d4ba04",
+        "retrieved_at": "2026-09-12T18:13:15.289657+00:00"
+      },
+      "NCT05202509.json": {
+        "path": "sources/NCT05202509.json",
+        "sha256": "104c34bff249a3347de5038ff40f201364d8445d19f0c75ea5f2bc2ef4757176",
+        "retrieved_at": "2026-09-12T18:13:15.644208+00:00"
+      }
+    },
+    "note": "Original fields preserved, including the source CI/p discrepancy. This selected MR estimate is not CETP-target MR. Annotation is a candidate link. Year of the current atlas must not be backdated to the historical drug decision."
+  },
+  "legacy_report": {
+    "label": "Selected original MVP1 records",
+    "note": "These are original table records, not a new full pipeline run. The urate report belongs to a different example and is not included.",
+    "text": "# Selected original MVP1 evidence\n\n## MR record\n\n{\n  \"line\": 4145,\n  \"row\": {\n    \"metabolite_name\": \"hdl cholesterol\",\n    \"metabolite_chebi\": \"\",\n    \"disease_trait\": \"Coronary artery disease\",\n    \"disease_id\": \"ebi-a-GCST005194\",\n    \"exposure_id\": \"ebi-a-GCST005058\",\n    \"exposure_trait\": \"HDL cholesterol\",\n    \"b\": \"-0.11201101881553\",\n    \"se\": \"0.0210845860404704\",\n    \"ci_low\": \"-0.270463355356383\",\n    \"ci_upp\": \"0.0464413177253243\",\n    \"pval\": \"1.081552039397e-07\",\n    \"method\": \"FE IVW\",\n    \"nsnp\": \"4\",\n    \"moescore\": \"1.0\",\n    \"coloc_h4\": \"\",\n    \"coloc_method\": \"\",\n    \"coloc_locus\": \"\",\n    \"n_instruments\": \"\",\n    \"weak_instruments\": \"\",\n    \"state\": \"A\",\n    \"page_path\": \"data/metabolites/hdl-cholesterol-fee7d2be.md\",\n    \"retrieved_at\": \"2026-09-11T22:19:51.092142+00:00\",\n    \"coloc_h3\": \"\",\n    \"coloc_clpp\": \"\",\n    \"coloc_scope\": \"\",\n    \"coloc_study_id\": \"\",\n    \"instrument_dataset_id\": \"\",\n    \"instrument_status\": \"ok\",\n    \"coloc_status\": \"not_queried\",\n    \"representative_rule\": \"Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.\",\n    \"supporting_mr_rows\": \"3\",\n    \"source_detail_status\": \"ok\",\n    \"record_type\": \"metabolite_disease_evidence\",\n    \"mechanism_status\": \"candidate_genes_available\",\n    \"candidate_gene_count\": \"295\",\n    \"atlas_loci_available\": \"334\"\n  }\n}\n\n## CETP annotated candidate\n\n{\n  \"line\": 328106,\n  \"row\": {\n    \"metabolite_name\": \"hdl cholesterol\",\n    \"metabolite_chebi\": \"\",\n    \"ensembl_gene_id\": \"ENSG00000087237\",\n    \"gene_symbol\": \"CETP\",\n    \"gene_source\": \"author_prioritized\",\n    \"atlas\": \"Zoodsma 2025\",\n    \"disease_trait\": \"Coronary artery disease\",\n    \"disease_id\": \"ebi-a-GCST005194\",\n    \"exposure_id\": \"ebi-a-GCST005058\",\n    \"exposure_trait\": \"HDL cholesterol\",\n    \"b\": \"-0.11201101881553\",\n    \"se\": \"0.0210845860404704\",\n    \"ci_low\": \"-0.270463355356383\",\n    \"ci_upp\": \"0.0464413177253243\",\n    \"pval\": \"1.081552039397e-07\",\n    \"method\": \"FE IVW\",\n    \"nsnp\": \"4\",\n    \"moescore\": \"1.0\",\n    \"coloc_h4\": \"\",\n    \"coloc_method\": \"\",\n    \"coloc_locus\": \"\",\n    \"n_instruments\": \"\",\n    \"weak_instruments\": \"\",\n    \"state\": \"A\",\n    \"page_path\": \"data/metabolites/hdl-cholesterol-fee7d2be.md\",\n    \"retrieved_at\": \"2026-09-11T22:19:51.092142+00:00\",\n    \"source_gene_symbol\": \"CETP\",\n    \"gene_annotation_resolution\": \"single_source_label\",\n    \"ensembl_resolution\": \"reported_in_atlas\",\n    \"coloc_h3\": \"\",\n    \"coloc_clpp\": \"\",\n    \"coloc_scope\": \"\",\n    \"coloc_study_id\": \"\",\n    \"gene_qtl_h4\": \"\",\n    \"gene_qtl_h3\": \"\",\n    \"gene_qtl_clpp\": \"\",\n    \"gene_qtl_method\": \"\",\n    \"gene_qtl_locus\": \"\",\n    \"gene_qtl_study_id\": \"\",\n    \"gene_qtl_status\": \"not_queried\",\n    \"instrument_dataset_id\": \"\",\n    \"instrument_status\": \"ok\",\n    \"coloc_status\": \"not_queried\",\n    \"representative_rule\": \"Smallest numeric source p per metabolite and outcome dataset; ties: exposure_id, method, selection. Copy every MR value from that ONE row. All methods remain in raw evidence.\",\n    \"supporting_mr_rows\": \"3\",\n    \"supporting_atlas_loci\": \"2\",\n    \"source_detail_status\": \"ok\",\n    \"record_type\": \"gene_annotated_candidate\",\n    \"mechanism_status\": \"candidate_genes_available\",\n    \"candidate_gene_count\": \"295\",\n    \"atlas_loci_available\": \"334\"\n  }\n}\n\n## Atlas records\n\n[\n  {\n    \"line\": 22600,\n    \"row\": {\n      \"metabolite_name\": \"HDL Cholesterol\",\n      \"chebi\": \"\",\n      \"ensembl_gene_id\": \"ENSG00000087237\",\n      \"rsid\": \"rs821840\",\n      \"chr\": \"16\",\n      \"pos\": \"56959974\",\n      \"gene_symbol\": \"CETP\",\n      \"gene_source\": \"author_prioritized\",\n      \"atlas\": \"Zoodsma 2025\",\n      \"year\": \"2025\",\n      \"note\": \"\"\n    }\n  },\n  {\n    \"line\": 22601,\n    \"row\": {\n      \"metabolite_name\": \"HDL Cholesterol\",\n      \"chebi\": \"\",\n      \"ensembl_gene_id\": \"ENSG00000087237\",\n      \"rsid\": \"rs189866004\",\n      \"chr\": \"16\",\n      \"pos\": \"56978732\",\n      \"gene_symbol\": \"CETP\",\n      \"gene_source\": \"author_prioritized\",\n      \"atlas\": \"Zoodsma 2025\",\n      \"year\": \"2025\",\n      \"note\": \"\"\n    }\n  }\n]"
+  },
+  "source_groups": [
+    "Human genetics",
+    "Preclinical studies",
+    "ClinicalTrials.gov",
+    "Trial papers & sponsor records",
+    "Later genetic interpretation"
+  ],
+  "case_navigation": true,
+  "timeline_standard": {
+    "required_stages": [
+      "human_genetics",
+      "preclinical",
+      "clinical"
+    ],
+    "display_order": [
+      "human_genetics",
+      "preclinical",
+      "clinical",
+      "later_genetics",
+      "class_status"
+    ],
+    "note": "A missing stage must be reported as missing, never silently omitted. Target-class evidence and compound-specific evidence must remain distinct."
+  },
+  "timeline_title": "CETP · Torcetrapib — coronary / cardiovascular outcomes"
+}

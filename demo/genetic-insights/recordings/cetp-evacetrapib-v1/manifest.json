@@ -1,0 +1,21 @@
+{
+  "snapshot_id": "mvp1-cetp-evacetrapib-2026-09-12-v1",
+  "bundle_sha256": "1856473ba2c3b91f85cff39ae4c9072914fb2e5755a9c0fe2dfac130364ba963",
+  "renderer_sha256": "10b9658093043d5a7da18c700b964543c8e968bc602190e9cafe0283311d0775",
+  "template_sha256": "6054e34f3986bc06ba49f275ec8de8ee9f583a29e769d87c1e9c95074b7ce90b",
+  "files": {
+    "index.html": "9910f4f0a89a3d3775f80a2db782167de29ce05a911f518403096077a97f167e",
+    "bundle.json": "1856473ba2c3b91f85cff39ae4c9072914fb2e5755a9c0fe2dfac130364ba963",
+    "evidence-summary.md": "dc004d57aae99b8ffeb17685ff83b4968171ca414e571c46ccccf8caa6665211",
+    "full-mvp1-report.md": "cf184e36257b77648bbb3ed79831f51d9ec4de310b3d803b0a74a31d002e8147",
+    "slack-messages.json": "80baa5ae29d2783092ca2cbb13c218bc2d306e20d575910032882344a5fbca43",
+    "slack-text.txt": "167fc3c3dabd5e370ea9f426224fbd7609e03a31d232a2c16591a352513d7b1a",
+    "timeline.png": "bf5b16f8df2a53e42eb89663713e9e5f0791e0545cbc2f7d68c078eab3e6738a",
+    "recording-preview.png": "07652a820e341aa80fef9df856295d279bb3af389619df419c1b175a17ebad8f"
+  },
+  "network_calls": 0,
+  "llm_calls": 0,
+  "slack_delivery": "not attempted",
+  "file_hash_format": "SHA-256 of exact delivered file bytes",
+  "renderer_commit": "6a651bc"
+}

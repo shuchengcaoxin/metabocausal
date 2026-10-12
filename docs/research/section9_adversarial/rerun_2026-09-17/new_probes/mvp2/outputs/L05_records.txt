@@ -1,0 +1,139 @@
+L05 - record-level integrity of screened_20260912
+
+  candidate_pairs.csv      20460 data rows
+  new_pair_records.csv     17405 data rows
+  new_unique_pairs.csv     9801 data rows
+  screening_ledger.csv     20460 data rows
+
+[1] provenance column completeness (count of rows with an empty value)
+
+  file                     study_id               source_path            source_sheet           source_row             pair_relation_verified pair_relation_basis    record_type           
+  candidate_pairs.csv      0                      0                      0                      0                      0                      0                      0                     
+  new_pair_records.csv     0                      0                      0                      0                      0                      0                      0                     
+  new_unique_pairs.csv     0                      0                      0                      0                      0                      0                      0                     
+  screening_ledger.csv     0                      0                      0                      0                      0                      0                      0                     
+
+[2] recorded source_path values, resolved against this repository
+    OK        1590 rows  MVP2/literature/seeds/chen_2023/41588_2022_1270_MOESM4_ESM.xlsx
+    OK       17442 rows  MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM3_ESM.xlsx
+    OK         282 rows  MVP2/literature/seeds/yin_2025/41467_2025_58129_MOESM4_ESM.xlsx
+    OK        1146 rows  MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM4_ESM.xlsx
+    distinct source files: 4, missing from this checkout: 0
+
+[3] resolved identities vs free-text labels (what the anti-join matched on)
+
+  candidate_pairs.csv (20460 rows)
+    metabolite_id non-empty : 17724
+    disease_id non-empty    : 17724
+    rows carrying an id|... key : 17724
+    rows keyed on name|... only : 2736
+    rows with no usable key     : 0
+  new_unique_pairs.csv (9801 rows)
+    metabolite_id non-empty : 7205
+    disease_id non-empty    : 7205
+    rows carrying an id|... key : 7205
+    rows keyed on name|... only : 2596
+    rows with no usable key     : 0
+
+[4] `direction` vocabulary in candidate_pairs.csv, and how each was screened
+
+    forward                {"already_present": 304, "new_pair": 17405}
+    reverse                {"excluded_direction": 2751}
+
+    rows with NO direction recorded that were kept as a new forward pair: 0
+    (src/pair_screening.py:_is_forward treats the empty string as forward:
+     src/pair_screening.py:47 return direction in {"", "forward", "metabolite disease", "metabolite outcome", "exposure outcome"}
+    )
+
+[5] duplicate canonical pair keys inside new_unique_pairs.csv
+    distinct canonical keys : 9801
+    keys appearing twice+   : 0
+    rows with an empty key  : 0
+
+[6] what canonical-key dedup collapsed: distinct source label pairs per key
+    canonical keys built from new_pair_records.csv : 9801
+    keys covering more than one distinct raw (metabolite, disease) label pair: 1003
+      id|omega 3|ab1 bact bir other inf agents
+        ('Omega-3 Fatty Acids', 'Bacterial, viral and other infectious agents')
+        ('Omega-3 Fatty Acids to Total Fatty Acids percentage', 'Bacterial, viral and other infectious agents')
+      id|dha|ab1 bact intest oth
+        ('Docosahexaenoic Acid', 'Other bacterial intestinal infections')
+        ('Docosahexaenoic Acid to Total Fatty Acids percentage', 'Other bacterial intestinal infections')
+      id|dha|ab1 mycoses
+        ('Docosahexaenoic Acid', 'Mycoses')
+        ('Docosahexaenoic Acid to Total Fatty Acids percentage', 'Mycoses')
+      id|omega 3|ab1 mycoses
+        ('Omega-3 Fatty Acids', 'Mycoses')
+        ('Omega-3 Fatty Acids to Total Fatty Acids percentage', 'Mycoses')
+      id|l ldl c|ab1 other bacterial
+        ('Cholesterol in Large LDL', 'Other bacterial diseases')
+        ('Cholesterol to Total Lipids in Large LDL percentage', 'Other bacterial diseases')
+      id|l ldl ce|ab1 other bacterial
+        ('Cholesteryl Esters in Large LDL', 'Other bacterial diseases')
+        ('Cholesteryl Esters to Total Lipids in Large LDL percentage', 'Other bacterial diseases')
+      id|l ldl fc|ab1 other bacterial
+        ('Free Cholesterol in Large LDL', 'Other bacterial diseases')
+        ('Free Cholesterol to Total Lipids in Large LDL percentage', 'Other bacterial diseases')
+      id|la|ab1 other bacterial
+        ('Linoleic Acid', 'Other bacterial diseases')
+        ('Linoleic Acid to Total Fatty Acids percentage', 'Other bacterial diseases')
+      id|m ldl c|ab1 other bacterial
+        ('Cholesterol in Medium LDL', 'Other bacterial diseases')
+        ('Cholesterol to Total Lipids in Medium LDL percentage', 'Other bacterial diseases')
+      id|m ldl fc|ab1 other bacterial
+        ('Free Cholesterol in Medium LDL', 'Other bacterial diseases')
+        ('Free Cholesterol to Total Lipids in Medium LDL percentage', 'Other bacterial diseases')
+
+[7] numeric field sanity on new_unique_pairs.csv (9801 rows)
+    beta_empty             0
+    beta_unparseable       0
+    ci_low_gt_ci_high      6914
+    ci_pair_empty          1365
+    method_empty           0
+    no_estimate_at_all     0
+    nsnp_empty             282
+    nsnp_lt_1              0
+    nsnp_unparseable       0
+    p_empty                0
+    p_exactly_zero         14
+    p_outside_0_1          7
+    p_unparseable          0
+    se_empty               8436
+    se_not_positive        0
+    se_unparseable         0
+
+    first offending rows (1-based row number within new_unique_pairs.csv):
+      ci_low_gt_ci_high      [(2879, '1.19072089664149 > 1.06602302394454'), (2880, '0.984292363898312 > 0.923396762067993'), (2881, '1.21700527617954 > 1.04969622004367'), (2882, '1.21064557831965 > 1.03758412015125'), (2883, '1.152561799933 > 1.01768808132777')]
+      p_exactly_zero         [(4468, '0'), (4534, '0'), (4598, '0'), (4772, '0'), (4780, '0')]
+      p_outside_0_1          [(9754, '1.43839044131509'), (9756, '1.22402441532873'), (9771, '1.85604906568618'), (9775, '-0.781286873213068'), (9779, '-0.639457394652202')]
+
+[8] outcome vocabulary carried in disease_trait (new_unique_pairs.csv)
+    distinct disease_trait strings          : 562
+    distinct after normalize()              : 561
+    20 most frequent disease_trait values:
+          156  Aortic Aneurysm (Abdominal)
+          150  Angina Pectoris (Unstable)
+          137  osteoarthritis
+          135  asthma
+          134  Angina Pectoris (Any)
+          130  T1D
+          128  Disorders of lipoprotein metabolism and other lipidaemias
+          127  Alzheimer's disease
+          127  Familial hypercholesterolemia
+          125  IBD
+          125  Pure hypercholesterolaemia
+          124  eBMD
+          124  Parkinson's disease
+          124  BMI
+          124  T2D
+          124  CAD
+          123  ischemic stroke
+          121  Metabolic disorders
+          119  Angina Pectoris (Stable)
+          117  multiple sclerosis
+    normalize() collisions (distinct raw strings sharing one normalized form): 1
+      venous thromboembolism                   <- ['Venous Thromboembolism', 'Venous thromboembolism']
+
+    distinct metabolite_name strings        : 446
+    normalize() collisions on metabolite_name: 1
+      glycine                                  <- ['Glycine', 'glycine']

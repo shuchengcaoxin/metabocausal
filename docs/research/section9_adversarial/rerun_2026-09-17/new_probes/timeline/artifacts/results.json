@@ -1,0 +1,1291 @@
+{
+  "revision": "b056397",
+  "python": "3.12.10",
+  "matplotlib": "3.11.0",
+  "network": "sealed: socket.socket raises",
+  "registry": "stubbed: tools.trials.get_trial_dates replaced per case",
+  "gi_cases": [
+    {
+      "case": "GI01",
+      "what": "control: two drugs, dated registry reports, one short registry stop reason",
+      "asks": "does an honest dossier draw an honest figure",
+      "figure": "drawn",
+      "figure_file": "GI01_genetic_insight.png",
+      "figure_sha256": "e4dfb5b39708d5868ca39ab4ed6ea8920f6ab5e8fe6c55536c9c4a7f4c663e26",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI01_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290",
+        "NCT04023552"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "phase 2",
+        "phase 3",
+        "terminated: excess mortality",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "1998",
+        "2001",
+        "2004",
+        "2007",
+        "2010",
+        "2013",
+        "2016",
+        "2019",
+        "2022",
+        "2025",
+        "2028",
+        "2031",
+        "pelacarsen\nLPA, max stage 3",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "2 drug lane(s) from the dossier of 2 effector genes, 3 dated reports drawn, 1 exposure GWAS year marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "1 bar(s) are dotted: they end on the registry's ESTIMATED completion date, which is the sponsor's projection and not a milestone that happened.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records.",
+        "genetic evidence: met-d-HDL 2020"
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "1 bar(s) are dotted: they end on the registry's ESTIMATED completion date, which is the sponsor's projection and not a milestone that happened.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI02",
+      "what": "undated mix: three reports carry no NCT id at all, one is dated",
+      "asks": "is the undated footer's 'carry no year in the registry' true of reports the registry was never asked about",
+      "figure": "drawn",
+      "figure_file": "GI02_genetic_insight.png",
+      "figure_sha256": "7735931b1e0ba927d8b0b37c2d7a0ce912d2238568d68ed52abf4b1dc26ea540",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI02_genetic_insight.png  (1/1 drug lanes, 3 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2001",
+        "2004",
+        "2007",
+        "2010",
+        "2013",
+        "2016",
+        "2019",
+        "2022",
+        "2025",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 1 exposure GWAS year marked",
+        "3 retrieved report(s) carry no year in the registry and are NOT drawn: undated, not absent, and never placed on a guessed year.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records.",
+        "genetic evidence: met-d-HDL 2020"
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "3 retrieved report(s) carry no year in the registry and are NOT drawn: undated, not absent, and never placed on a guessed year.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI03",
+      "what": "why_stopped provenance: registry record carries the stop but NO reason; the dossier report supplies one",
+      "asks": "does the footer credit the registry for a reason the registry never gave",
+      "figure": "drawn",
+      "figure_file": "GI03_genetic_insight.png",
+      "figure_sha256": "b80c004ac75696f13b10f063658c5aec40bffeae6c662c6aa5b7834f2048456d",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI03_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "terminated: stopped early for overwhelming benefit",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI04",
+      "what": "status provenance: the registry record carries no overall_status; the dossier report declares TERMINATED and supplies the reason",
+      "asks": "can a retrieval-controlled field alone produce the stopped marker and a footer sentence that calls the reason the registry's own",
+      "figure": "drawn",
+      "figure_file": "GI04_genetic_insight.png",
+      "figure_sha256": "6737c3220070ab76ffd9baca113931b8bf9744ba0b3c2d2ba7486767569c8e9a",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI04_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "terminated: competitor product was safer",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI05",
+      "what": "truncation inverts the reason: 40 characters of an exonerating sentence read as a harm finding",
+      "asks": "can the drawn stop reason mean the opposite of the retrieved one",
+      "figure": "drawn",
+      "figure_file": "GI05_genetic_insight.png",
+      "figure_sha256": "3ad1ed7f1229769732771051e3fb140b031e13c14e15606594989431d8b45c35",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI05_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "terminated: deaths in the treatment arm were late...",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI06",
+      "what": "Markdown / forged heading inside why_stopped",
+      "asks": "does a heading survive onto the canvas, and does the newline survive",
+      "figure": "drawn",
+      "figure_file": "GI06_genetic_insight.png",
+      "figure_sha256": "1b62181993493d90b13ddee720a5dcffe02d8bb7daba98de3c6c36852f14dc50",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI06_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "terminated: ## SAFETY CONFIRMED **Recommendation:...",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI07",
+      "what": "dollar signs in the drug name and the stop reason (matplotlib mathtext)",
+      "asks": "does an unbalanced or math-like string change or break the rendering",
+      "figure": "drawn",
+      "figure_file": "GI07_genetic_insight.png",
+      "figure_sha256": "bd010b2e0605234f72302722b7b0793b95d0b0cd1b7d7c2b338a46c81b045110",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI07_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "terminated: budget $overrun_{total}$ only",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "cost-$5-per-$1 gain\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "1 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI08",
+      "what": "trial_phase outside the enum: a long free-text approval claim",
+      "asks": "is the phase label budgeted and counted like every other label on this module's figures",
+      "figure": "drawn",
+      "figure_file": "GI08_genetic_insight.png",
+      "figure_sha256": "093c5841b1cb4fb2820eb3e9db1e9622ecc261634445e61501cf749044dfa7f8",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI08_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "Phase 4 - approved by the FDA for every indication and recommended first line",
+        "PHASE1/PHASE2",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI09",
+      "what": "Cyrillic-homoglyph drug name beside the Latin one",
+      "asks": "does the figure distinguish two drugs whose names are not the same string",
+      "figure": "drawn",
+      "figure_file": "GI09_genetic_insight.png",
+      "figure_sha256": "ec76fa8c510ac433bf3f89984b4b52a1d0b342b1b4d86c2e336f32f066175f29",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI09_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "toрсеtrаpib\nCETP, max stage 3",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "2 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI10",
+      "what": "absurd years 1850 and 2099 supplied by the dossier's own `year` field",
+      "asks": "is there any plausibility floor, and what happens to the real markers",
+      "figure": "drawn",
+      "figure_file": "GI10_genetic_insight.png",
+      "figure_sha256": "3bafc2f85dfca6a9a4ff82cd9181bc617651ab26024ec2ecd347aad91098a944",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI10_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 1",
+        "phase 3",
+        "phase 4",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "1800",
+        "1840",
+        "1880",
+        "1920",
+        "1960",
+        "2000",
+        "2040",
+        "2080",
+        "2120",
+        "2160",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 3 dated reports drawn, 1 exposure GWAS year marked",
+        "Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records.",
+        "genetic evidence: met-d-HDL 2020"
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI11",
+      "what": "year conflict: registry completion year earlier than the start year",
+      "asks": "is the impossible interval reported, or silently dropped",
+      "figure": "drawn",
+      "figure_file": "GI11_genetic_insight.png",
+      "figure_sha256": "c6233aac4040a599a6b16c87d3da6a501fa8fc7557f01d16f0dcc8836cab585f",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI11_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI12",
+      "what": "completion-only record: the registry carries no start year",
+      "asks": "the axis is labelled 'start'; is a completion year marked as such",
+      "figure": "drawn",
+      "figure_file": "GI12_genetic_insight.png",
+      "figure_sha256": "25502730f122d20ad7faeaa5202a32b16caad335089da5f6b8665af263314df0",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI12_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "phase 2",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI13",
+      "what": "one drug, reports from two different diseases, max stage 4 earned elsewhere; this run's pair is HDL -> Coronary artery disease",
+      "asks": "does the lane label roll a cross-indication stage up onto a figure that names one disease",
+      "figure": "drawn",
+      "figure_file": "GI13_genetic_insight.png",
+      "figure_sha256": "0a55d1c4c3a4286464e0553db8e517cb01e94975b84d2c67af64a228db4f5f0e",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI13_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "phase 1",
+        "phase 4",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2002",
+        "2004",
+        "2006",
+        "2008",
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "torcetrapib\nCETP, max stage 4",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI14",
+      "what": "nine drugs: eight irrelevant ones carry a high cross-indication stage, the pair-relevant one carries stage 1",
+      "asks": "does the eight-lane cap, ordered by cross-indication stage, drop the drug this pair is about",
+      "figure": "drawn",
+      "figure_file": "GI14_genetic_insight.png",
+      "figure_sha256": "8b299e8d1ca2627539350179437c7658425d7cd2c730ba8d9f426585dc101604",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI14_genetic_insight.png  (8/9 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT10000001",
+        "NCT10000002",
+        "NCT10000003",
+        "NCT10000004",
+        "NCT10000005",
+        "NCT10000006",
+        "NCT10000007",
+        "NCT10000008"
+      ],
+      "canvas_texts": [
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "phase 4",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "1998",
+        "2000",
+        "2002",
+        "2004",
+        "2006",
+        "2008",
+        "2010",
+        "2012",
+        "filler-8\nCETP, max stage 4",
+        "filler-7\nCETP, max stage 4",
+        "filler-6\nCETP, max stage 4",
+        "filler-5\nCETP, max stage 4",
+        "filler-4\nCETP, max stage 4",
+        "filler-3\nCETP, max stage 4",
+        "filler-2\nCETP, max stage 4",
+        "filler-1\nCETP, max stage 4",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "8 drug lane(s) from the dossier of 1 effector gene, 8 dated reports drawn, 0 exposure GWAS years marked",
+        "9 drug(s) retrieved, 8 drawn: this figure caps at 8 lane(s), highest max clinical stage first - the rest are in section 6 of the card.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "9 drug(s) retrieved, 8 drawn: this figure caps at 8 lane(s), highest max clinical stage first - the rest are in section 6 of the card.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI15",
+      "what": "status text that merely contains a terminal word, plus a status the dossier wrote in full sentences",
+      "asks": "is the stopped marker decided by a substring of an uncontrolled string",
+      "figure": "drawn",
+      "figure_file": "GI15_genetic_insight.png",
+      "figure_sha256": "105f15a6f2892ea149f033071c8fc697070699b8b13c018f530eac06babd76a1",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI15_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "recruiting; an earlier study was terminated: see the earlier study",
+        "phase 3",
+        "completed - no safety signal was terminated early: none",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "2 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "2 stopped report(s) carry the registry's own reason, cut to 40 characters. A stopping reason is not a statement about efficacy.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI16",
+      "what": "the same drug reached through two effector genes",
+      "asks": "does one drug become two lanes and two counted reports",
+      "figure": "drawn",
+      "figure_file": "GI16_genetic_insight.png",
+      "figure_sha256": "1e7551eca718cb9606003f0ee6cdc899e90eb74c6a82b621329e88cfb2583ed4",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI16_genetic_insight.png  (2/2 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "torcetrapib\nLIPC, max stage 3",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "2 drug lane(s) from the dossier of 2 effector genes, 2 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI17",
+      "what": "a GWAS 'year' of 2099 and a very long exposure dataset id",
+      "asks": "does the dashed genetic-evidence line accept any number, and is its label budgeted",
+      "figure": "drawn",
+      "figure_file": "GI17_genetic_insight.png",
+      "figure_sha256": "0bdcb5cba0ada1d9f2e9e7ad4340f759e5875e26aa4477538f637db2fd914105",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI17_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "1980",
+        "1995",
+        "2010",
+        "2025",
+        "2040",
+        "2055",
+        "2070",
+        "2085",
+        "2100",
+        "2115",
+        "2130",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 2 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records.",
+        "genetic evidence: met-d-HDL 2020",
+        "genetic evidence: ebi-a-GCST999999999999999999999999999999999999999999999999999999999999-a-dataset-name-nobody-budgeted 2099"
+      ],
+      "overflowing": [
+        {
+          "text": "genetic evidence: ebi-a-GCST999999999999999999999999999999999999999999999999999999999999-a-dataset-name-nobody-budgeted 2099",
+          "x0": -7.0,
+          "x1": 686.2,
+          "canvas_x1": 800.0,
+          "lost_px": 7.0
+        }
+      ],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI18",
+      "what": "every registry lookup fails; one report carries an Open Targets year",
+      "asks": "what does the figure claim when the registry answered nothing",
+      "figure": "drawn",
+      "figure_file": "GI18_genetic_insight.png",
+      "figure_sha256": "a41d5f4e49c3106b962c6307ab7fc79897e20df454e0b65720f30f2618e23de4",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI18_genetic_insight.png  (1/1 drug lanes, 1 undated report(s))",
+      "registry_asked": [
+        "NCT00134264",
+        "NCT00134290"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003.76",
+        "2003.84",
+        "2003.92",
+        "2004.00",
+        "2004.08",
+        "2004.16",
+        "2004.24",
+        "2004.32",
+        "2004.40",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.",
+        "2 registry lookup(s) failed; treat those reports as no information rather than as trials without dates.",
+        "1 retrieved report(s) carry no year in the registry and are NOT drawn: undated, not absent, and never placed on a guessed year.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.",
+        "2 registry lookup(s) failed; treat those reports as no information rather than as trials without dates.",
+        "1 retrieved report(s) carry no year in the registry and are NOT drawn: undated, not absent, and never placed on a guessed year.",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI19",
+      "what": "NOT adversarial: one drug, one report, a registry record with a start year and no completion date",
+      "asks": "what does the year axis print when every drawn year is the same year",
+      "figure": "drawn",
+      "figure_file": "GI19_genetic_insight.png",
+      "figure_sha256": "7a8fa8e6574784f57c85078ffd77d1cc16c7c826a6a4d45ad3968c3b1dc243f0",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI19_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [
+        "phase 3",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003.76",
+        "2003.84",
+        "2003.92",
+        "2004.00",
+        "2004.08",
+        "2004.16",
+        "2004.24",
+        "2004.32",
+        "2004.40",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI20",
+      "what": "five reports of one drug all starting in the same year, with free-text phases; the label stagger has four offsets",
+      "asks": "does the fifth label land on the first, and does the figure count it",
+      "figure": "drawn",
+      "figure_file": "GI20_genetic_insight.png",
+      "figure_sha256": "1b9ff11ccf9e6331e613a14071981633810f55b0914edcffed9abe1f7ff663d7",
+      "exception": "",
+      "draw_error": "",
+      "stdout": "[timeline] wrote GI20_genetic_insight.png  (1/1 drug lanes, 0 undated report(s))",
+      "registry_asked": [
+        "NCT00134261",
+        "NCT00134262",
+        "NCT00134263",
+        "NCT00134264",
+        "NCT00134265"
+      ],
+      "canvas_texts": [
+        "Phase 2/Phase 3",
+        "Phase 4 post-marketing surveillance",
+        "Phase 1 healthy volunteers",
+        "Phase 3 pivotal outcomes",
+        "Phase 2b dose finding",
+        "year (ClinicalTrials.gov record: start, and the bar to primary completion)",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "torcetrapib\nCETP, max stage 3",
+        "HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year",
+        "1 drug lane(s) from the dossier of 1 effector gene, 5 dated reports drawn, 0 exposure GWAS years marked",
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ],
+      "overflowing": [],
+      "collisions": [
+        {
+          "a": "Phase 2/Phase 3",
+          "b": "Phase 2b dose finding"
+        }
+      ],
+      "footer_lines": [
+        "Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."
+      ]
+    },
+    {
+      "case": "GI21",
+      "what": "a stopping reason matplotlib parses as malformed mathtext",
+      "asks": "can one retrieved string deny the whole figure",
+      "figure": "none",
+      "figure_file": "",
+      "figure_sha256": "",
+      "exception": "ValueError: \n1{2 per site\n            ^\nParseFatalException: Expected '}', found end of text  (at char 12), (line:1, col:13)",
+      "draw_error": "",
+      "stdout": "",
+      "registry_asked": [
+        "NCT00134264"
+      ],
+      "canvas_texts": [],
+      "overflowing": [],
+      "collisions": [],
+      "footer_lines": []
+    }
+  ],
+  "lc_cases": [
+    {
+      "case": "LC01",
+      "what": "control: the shipped v2 torcetrapib bundle",
+      "asks": "does the lifecycle standard pass on the bundle PR #14 shipped",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "human genetics | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "clinical | Safety failure | Drug-specific safety / programme decision",
+        "clinical | Trial results | Specific drug and trial population",
+        "later genetics | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "later genetics | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "class status | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC02",
+      "what": "timeline_standard removed and every evidence_stage stripped",
+      "asks": "is 'a missing stage must be reported as missing' enforced, or opt-in",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>",
+        "<absent>"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "unspecified | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "unspecified | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "unspecified | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "unspecified | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "unspecified | Phase 3 trial | Trial record; start date has month precision",
+        "unspecified | Safety failure | Drug-specific safety / programme decision",
+        "unspecified | Trial results | Specific drug and trial population",
+        "unspecified | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "unspecified | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "unspecified | Class outcome | Different compound; necessary counterevidence",
+        "unspecified | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC03",
+      "what": "one event relabelled to a stage absent from display_order",
+      "asks": "does an event with a valid-looking stage survive into the rendered timeline, or is it silently omitted",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "regulatory_action",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "human genetics | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "regulatory action | Safety failure | Drug-specific safety / programme decision",
+        "clinical | Trial results | Specific drug and trial population",
+        "later genetics | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "later genetics | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "class status | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC04",
+      "what": "a 2017 class-outcome event relabelled human_genetics, and the real 1989 human-genetics event relabelled clinical",
+      "asks": "does the required-stage check look at anything but the label",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "clinical",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "human_genetics",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "clinical | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "clinical | Safety failure | Drug-specific safety / programme decision",
+        "clinical | Trial results | Specific drug and trial population",
+        "later genetics | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "later genetics | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "human genetics | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC05",
+      "what": "required_stages emptied, every event marked clinical",
+      "asks": "does the standard still assert anything",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "clinical | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "clinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "clinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "clinical | Safety failure | Drug-specific safety / programme decision",
+        "clinical | Trial results | Specific drug and trial population",
+        "clinical | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "clinical | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "clinical | Class outcome | Different compound; necessary counterevidence",
+        "clinical | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC06",
+      "what": "the human-genetics and preclinical events deleted",
+      "asks": "does the check PR #14 added actually fire",
+      "validate_error": "ValueError: Timeline silently omits required stages: human_genetics, preclinical",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": []
+    },
+    {
+      "case": "LC07",
+      "what": "one date written in ISO 8601 basic format (20071105)",
+      "asks": "does the chronology check survive a date format the validator accepts",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "20071105",
+        "2009-12-21",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "human genetics | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "clinical | Safety failure | Drug-specific safety / programme decision",
+        "clinical | Trial results | Specific drug and trial population",
+        "later genetics | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "later genetics | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "class status | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC08",
+      "what": "control: the shipped v2 evacetrapib bundle, whose later_genetics event (2012-05-17) precedes its first clinical event (2012-10)",
+      "asks": "does display_order present a sequence the dates contradict",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "later_genetics",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2012-05-17",
+        "2012-10",
+        "2015-10-12",
+        "2017-05",
+        "2017-08-28",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-evacetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "human genetics | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not evacetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not evacetrapib-specific",
+        "later genetics | Metabolite-level MR | Related metabolite evidence; not a target-specific prediction",
+        "clinical | Phase 3 trial | Trial population is broader than CAD alone",
+        "clinical | Efficacy failure | Programme decision for high-risk ASCVD",
+        "clinical | Trial results | Trial-specific clinical outcome",
+        "later genetics | Target-level genetics | Later target-specific context; not proof of why this trial failed",
+        "class status | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    },
+    {
+      "case": "LC09",
+      "what": "January 2007 written 20070115 listed before November 2007 written 2007-11-05 - the TRUE chronological order",
+      "asks": "does the chronology guard accept a correctly ordered timeline",
+      "validate_error": "ValueError: Events must be chronological",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "20070115",
+        "2007-11-05",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": []
+    },
+    {
+      "case": "LC10",
+      "what": "the same two events REVERSED: November 2007 listed before January 2007",
+      "asks": "does the chronology guard reject an out-of-order timeline",
+      "validate_error": "",
+      "markdown_error": "",
+      "slack_error": "",
+      "event_stages": [
+        "human_genetics",
+        "preclinical",
+        "preclinical",
+        "clinical",
+        "clinical",
+        "clinical",
+        "later_genetics",
+        "clinical",
+        "later_genetics",
+        "class_status",
+        "class_status"
+      ],
+      "dates": [
+        "1989-11-23",
+        "1998-02-27",
+        "2000-07-13",
+        "2004-03",
+        "2004-07",
+        "2006-12-02",
+        "2007-11-05",
+        "20070115",
+        "2012-05-17",
+        "2017-08-29",
+        "2026-01-09"
+      ],
+      "markdown_stage_lines": [
+        "Snapshot: mvp1-cetp-torcetrapib-2026-09-12-v2 | Checked: 2026-09-12",
+        "human genetics | Human genetics | Human genetic effect on CETP and HDL; not coronary-outcome evidence",
+        "preclinical | Preclinical evidence | Target-level animal evidence; not torcetrapib-specific",
+        "preclinical | Preclinical evidence | Target-class animal evidence; not torcetrapib-specific",
+        "clinical | Phase 1 publication | Compound-specific early human evidence; publication month",
+        "clinical | Phase 3 trial | Trial record; start date has month precision",
+        "clinical | Safety failure | Drug-specific safety / programme decision",
+        "later genetics | Later genetic interpretation | Retrospective target-versus-drug comparison",
+        "clinical | Trial results | Specific drug and trial population",
+        "later genetics | Later metabolite MR | Related later evidence; not a 2006 prediction",
+        "class status | Class outcome | Different compound; necessary counterevidence",
+        "class status | Current class status | Different compound; dated programme status"
+      ]
+    }
+  ],
+  "mathtext": [
+    {
+      "string": "torcetrapib",
+      "matplotlib_math": false,
+      "width_px": 42.8,
+      "escaped_width_px": 42.8
+    },
+    {
+      "string": "cost-$5-per-$1 gain",
+      "matplotlib_math": true,
+      "width_px": 86.0,
+      "escaped_width_px": 77.5
+    },
+    {
+      "string": "budget $overrun_{total}$ only",
+      "matplotlib_math": true,
+      "width_px": 99.0,
+      "escaped_width_px": 123.9
+    },
+    {
+      "string": "plain $ one dollar",
+      "matplotlib_math": false,
+      "width_px": 70.0,
+      "escaped_width_px": 70.0
+    }
+  ]
+}

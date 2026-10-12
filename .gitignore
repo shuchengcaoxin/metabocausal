@@ -1,0 +1,47 @@
+# Credentials are never shared.
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# Pinned Human-GEM source/index files and generated receipts live in scratch.
+/MVP3/data/model/*
+!/MVP3/data/model/source.lock.json
+!/MVP3/data/model/README.md
+/MVP3/data/index/*
+!/MVP3/data/index/README.md
+/MVP3/logs/gem/receipts/
+
+/runtime-data/
+/MANIFEST.json
+
+# Local run output; reviewed examples live under examples/.
+/cards/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+CLAUDE.md
+AGENTS.md
+/team-admin/
+.DS_Store
+Thumbs.db
+
+# Local restoration and exports are reproducible, not separate masters.
+/exports/
+/restored/
+
+# Credential exclusions still apply inside any future archive additions.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/

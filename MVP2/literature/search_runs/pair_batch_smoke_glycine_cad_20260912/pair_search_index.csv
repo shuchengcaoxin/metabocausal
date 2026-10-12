@@ -1,0 +1,2 @@
+pair_id,metabolite_name,metabolite_id,disease_trait,disease_id,source_path,source_sheet,source_row,status,reason,output_file,paper_count,round_count,search_stop_reason
+1b988024b80f599f,Glycine,,Coronary Artery Disease,,MVP2/literature/seeds/zoodsma_2025/supplements/41588_2025_2355_MOESM4_ESM.xlsx,ST14,724,success,search completed,pairs/1b988024b80f599f.json,51,3,configured maximum round limit reached

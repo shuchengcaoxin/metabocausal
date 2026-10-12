@@ -1,0 +1,13 @@
+$ git rev-parse HEAD
+b05639721b07345612bba4ebf66f989805b9703c
+
+$ git diff --numstat bcb32a9..HEAD -- validate_card.py render.py llm scripts/interpretation_fixtures.py data/demo_card_inputs.json
+(no rows above = byte-identical)
+
+$ git rev-parse bcb32a9:validate_card.py HEAD:validate_card.py bcb32a9:render.py HEAD:render.py bcb32a9:data/demo_card_inputs.json HEAD:data/demo_card_inputs.json
+11e08476c6dc4fba3d50febb0a299c937cb7975b
+11e08476c6dc4fba3d50febb0a299c937cb7975b
+3e3787422ac8d1d380883649bc36d00d82ac6654
+3e3787422ac8d1d380883649bc36d00d82ac6654
+b9ee5625a1071597ad7775d99d6b5aa0d04bf5c0
+b9ee5625a1071597ad7775d99d6b5aa0d04bf5c0

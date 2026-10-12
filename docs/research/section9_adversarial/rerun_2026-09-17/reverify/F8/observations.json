@@ -1,0 +1,14 @@
+{
+  "contract_text_render_card_never_raises": true,
+  "contract_text_validate_never_raises": true,
+  "interpret_call_site_guarded": false,
+  "m05_outcome": "blocked",
+  "m05_prose_printed": false,
+  "m05_render_card_raised": false,
+  "m05_section_text": "## 9. Reasoning\n\nThis section could not be rendered (RuntimeError). That is a failure of the renderer, not a statement about the biology; the run's envelopes are unchanged and the ledger named in section 11 still holds everything that was retrieved.\n",
+  "m05_validate_raised": "RuntimeError",
+  "minimal_snippet_message": "fields boom",
+  "minimal_snippet_raised": "RuntimeError",
+  "parse_fields_returns_builtin_dict": true,
+  "section_builder_raised": "RuntimeError"
+}

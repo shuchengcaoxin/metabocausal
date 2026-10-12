@@ -1,0 +1,516 @@
+{
+  "tool": "map_metabolite_to_genes_gem",
+  "args": {
+    "chebi_id": "CHEBI:15428"
+  },
+  "source": "Human-GEM",
+  "url": "https://github.com/SysBioChalmers/Human-GEM/blob/635f533152dc5f7290ce04d12700eaa882273c3e/model/Human-GEM.yml",
+  "retrieved_at": "<timestamp>",
+  "status": "ok",
+  "data": {
+    "route": "via_enzyme",
+    "evidence_type": "biochemical",
+    "mapping": {
+      "status": "mapped",
+      "method": "exact_source_chebi_annotation",
+      "base_ids": [
+        "MAM01986"
+      ],
+      "species": [
+        {
+          "annotations": {
+            "metBiGGID": "gly",
+            "metChEBIID": "CHEBI:15428",
+            "metEHMNID": "",
+            "metHMDBID": "HMDB0000123",
+            "metHMR2ID": "m01986m",
+            "metHepatoNET1ID": "HC00045",
+            "metKEGGID": "C00037",
+            "metLipidMapsID": "",
+            "metMetaNetXID": "MNXM29",
+            "metPubChemID": "750",
+            "metRecon3DID": "gly",
+            "metRetired": "m01986m",
+            "mets": "MAM01986m",
+            "metsNoComp": "MAM01986"
+          },
+          "base_id": "MAM01986",
+          "charge": 0,
+          "chebi_ids": [
+            "CHEBI:15428"
+          ],
+          "compartment": "Mitochondria",
+          "compartment_id": "m",
+          "formula": "C2H5NO2",
+          "id": "MAM01986m",
+          "invalid_chebi_annotations": [],
+          "name": "glycine",
+          "source_location": {
+            "annotation_asset": "metabolites.tsv",
+            "annotation_line_end": 3383,
+            "annotation_record": 3383,
+            "id": "MAM01986m",
+            "model_asset": "Human-GEM.yml",
+            "model_line": 23898,
+            "omitted_annotation_columns": [],
+            "section": "metabolites"
+          }
+        }
+      ],
+      "ambiguous": false
+    },
+    "candidates": [
+      {
+        "annotations": {
+          "compDataSource": "SwissProt",
+          "compartments": "Mitochondria",
+          "geneAliases": "",
+          "geneENSPID": "ENSP00000319531;ENSP00000492163;ENSP00000457630;ENSP00000492187;ENSP00000491127;ENSP00000455579;ENSP00000457645;ENSP00000455019;ENSP00000455287",
+          "geneENSTID": "ENST00000315467;ENST00000640150;ENST00000564386;ENST00000639689;ENST00000639169;ENST00000569885;ENST00000639137;ENST00000561801;ENST00000566566;ENST00000564477",
+          "geneEntrezID": "2653",
+          "geneNames": "glycine cleavage system protein H",
+          "geneSymbols": "GCSH",
+          "geneUniProtID": "P23434",
+          "genes": "ENSG00000140905"
+        },
+        "ensembl": "ENSG00000140905",
+        "model_gene_name": "GCSH",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 1417,
+          "annotation_record": 1417,
+          "id": "ENSG00000140905",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 250935,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "GCSH",
+        "symbol_status": "unique",
+        "symbols": [
+          "GCSH"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR08433"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": true,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus",
+          "geneAliases": "GCSP;NKH",
+          "geneENSPID": "ENSP00000370737;ENSP00000491487;ENSP00000491312;ENSP00000491369;ENSP00000491932;ENSP00000491895;ENSP00000491209;ENSP00000491101;ENSP00000491161;ENSP00000491392",
+          "geneENSTID": "ENST00000321612;ENST00000638274;ENST00000639639;ENST00000640505;ENST00000638233;ENST00000639364;ENST00000638661;ENST00000639461;ENST00000639954;ENST00000639318;ENST00000638694;ENST00000477960;ENST00000639443;ENST00000640592;ENST00000460457;ENST00000640208;ENST00000463305;ENST00000640703;ENST00000639493;ENST00000638654;ENST00000639840;ENST00000639020",
+          "geneEntrezID": "2731",
+          "geneNames": "glycine decarboxylase",
+          "geneSymbols": "GLDC",
+          "geneUniProtID": "P23378",
+          "genes": "ENSG00000178445"
+        },
+        "ensembl": "ENSG00000178445",
+        "model_gene_name": "GLDC",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 2323,
+          "annotation_record": 2323,
+          "id": "ENSG00000178445",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 253689,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "GLDC",
+        "symbol_status": "unique",
+        "symbols": [
+          "GLDC"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR08433"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": true,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      },
+      {
+        "annotations": {
+          "compDataSource": "SwissProt;CellAtlas",
+          "compartments": "Mitochondria;Nucleus;Cytosol;Inner mitochondria",
+          "geneAliases": "SHMT",
+          "geneENSPID": "ENSP00000333667;ENSP00000451169;ENSP00000452315;ENSP00000450930;ENSP00000452035;ENSP00000450594;ENSP00000451630;ENSP00000450610;ENSP00000406881;ENSP00000450927;ENSP00000450452;ENSP00000452161;ENSP00000450893;ENSP00000452045;ENSP00000452419;ENSP00000451968;ENSP00000452404;ENSP00000413770;ENSP00000451872;ENSP00000452339;ENSP00000451371;ENSP00000452163;ENSP00000451495;ENSP00000450490",
+          "geneENSTID": "ENST00000328923;ENST00000556825;ENST00000557740;ENST00000554600;ENST00000553324;ENST00000554467;ENST00000557487;ENST00000553950;ENST00000555634;ENST00000556689;ENST00000557269;ENST00000555563;ENST00000557433;ENST00000414700;ENST00000557348;ENST00000557703;ENST00000553529;ENST00000554310;ENST00000557302;ENST00000554656;ENST00000557427;ENST00000553474;ENST00000555773;ENST00000554975;ENST00000449049;ENST00000555774;ENST00000555116;ENST00000553837;ENST00000554604;ENST00000553949;ENST00000556737;ENST00000553868;ENST00000555213;ENST00000557529;ENST00000556798",
+          "geneEntrezID": "6472",
+          "geneNames": "serine hydroxymethyltransferase 2",
+          "geneSymbols": "SHMT2",
+          "geneUniProtID": "P34897",
+          "genes": "ENSG00000182199"
+        },
+        "ensembl": "ENSG00000182199",
+        "model_gene_name": "SHMT2",
+        "source_location": {
+          "annotation_asset": "genes.tsv",
+          "annotation_line_end": 2385,
+          "annotation_record": 2385,
+          "id": "ENSG00000182199",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 253878,
+          "omitted_annotation_columns": [],
+          "section": "genes"
+        },
+        "symbol": "SHMT2",
+        "symbol_status": "unique",
+        "symbols": [
+          "SHMT2"
+        ],
+        "origin": "biochemical",
+        "reaction_ids": [
+          "MAR04792"
+        ],
+        "roles": [
+          "enzyme"
+        ],
+        "complex_member": false,
+        "n_reactions": 1,
+        "role": "enzyme",
+        "gpr_pointer": "reactions[reaction_id].gpr in the checksum-bound index; do not interpret this flattened candidate as a standalone enzyme"
+      }
+    ],
+    "reactions": [
+      {
+        "annotations": {
+          "rxnBiGGID": "GHMT2rm",
+          "rxnEHMNID": "R00945C",
+          "rxnHMR2ID": "HMR_4792",
+          "rxnHepatoNET1ID": "r0231",
+          "rxnKEGGID": "R00945",
+          "rxnMetaNetXID": "MNXR100142",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11314",
+          "rxnRecon3DID": "GHMT2rm",
+          "rxnRetired": "HMR_4792",
+          "rxnRheaID": "RHEA:15484",
+          "rxnRheaMasterID": "RHEA:15481",
+          "rxnTCDBID": "",
+          "rxns": "MAR04792",
+          "spontaneous": "0"
+        },
+        "direction": "reversible",
+        "ec_codes": "2.1.2.1",
+        "gene_members": {
+          "ENSG00000182199": false
+        },
+        "gpr": {
+          "gene_id": "ENSG00000182199",
+          "op": "gene"
+        },
+        "gpr_raw": "ENSG00000182199",
+        "id": "MAR04792",
+        "lower_bound": -1000,
+        "name": "5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase",
+        "participants": [
+          {
+            "species_id": "MAM01045m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01045",
+            "name": "5,10-methylene-THF",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01986m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01986",
+            "name": "glycine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02040m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM02040",
+            "name": "H2O",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02896m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02896",
+            "name": "serine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02980m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02980",
+            "name": "THF",
+            "compartment_id": "m"
+          }
+        ],
+        "references": "PMID:10762066;PMID:6821365;PMID:8505317",
+        "reversible": true,
+        "source_location": {
+          "annotation_asset": "reactions.tsv",
+          "annotation_line_end": 678,
+          "annotation_record": 678,
+          "id": "MAR04792",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 71003,
+          "omitted_annotation_columns": [],
+          "section": "reactions"
+        },
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000,
+        "role": "enzyme",
+        "role_basis": "source reaction EC annotation plus GPR; role applies to reaction context",
+        "matched_species_ids": [
+          "MAM01986m"
+        ]
+      },
+      {
+        "annotations": {
+          "rxnBiGGID": "GCC2cm",
+          "rxnEHMNID": "",
+          "rxnHMR2ID": "HMR_8433",
+          "rxnHepatoNET1ID": "",
+          "rxnKEGGID": "",
+          "rxnMetaNetXID": "MNXR100066",
+          "rxnREACTOMEID": "",
+          "rxnRatconID": "RCR11318",
+          "rxnRecon3DID": "GCC2am",
+          "rxnRetired": "HMR_8433",
+          "rxnRheaID": "",
+          "rxnRheaMasterID": "RHEA:24304",
+          "rxnTCDBID": "",
+          "rxns": "MAR08433",
+          "spontaneous": "0"
+        },
+        "direction": "forward",
+        "ec_codes": [
+          "1.8.1.4",
+          "2.1.2.10"
+        ],
+        "gene_members": {
+          "ENSG00000140905": true,
+          "ENSG00000178445": true
+        },
+        "gpr": {
+          "children": [
+            {
+              "gene_id": "ENSG00000140905",
+              "op": "gene"
+            },
+            {
+              "gene_id": "ENSG00000178445",
+              "op": "gene"
+            }
+          ],
+          "op": "and"
+        },
+        "gpr_raw": "ENSG00000140905 and ENSG00000178445",
+        "id": "MAR08433",
+        "lower_bound": 0,
+        "name": null,
+        "participants": [
+          {
+            "species_id": "MAM00209m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM00209",
+            "name": "[protein]-N6-(lipoyl)lysine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01596m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM01596",
+            "name": "CO2",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM01986m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM01986",
+            "name": "glycine",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02039m",
+            "coefficient": -1,
+            "side": "reactant",
+            "base_id": "MAM02039",
+            "name": "H+",
+            "compartment_id": "m"
+          },
+          {
+            "species_id": "MAM02878m",
+            "coefficient": 1,
+            "side": "product",
+            "base_id": "MAM02878",
+            "name": "S-aminomethyldihydrolipoamide",
+            "compartment_id": "m"
+          }
+        ],
+        "references": "PMID:24798336",
+        "reversible": false,
+        "source_location": {
+          "annotation_asset": "reactions.tsv",
+          "annotation_line_end": 685,
+          "annotation_record": 685,
+          "id": "MAR08433",
+          "model_asset": "Human-GEM.yml",
+          "model_line": 71122,
+          "omitted_annotation_columns": [],
+          "section": "reactions"
+        },
+        "subsystem": "Glycine, serine and threonine metabolism",
+        "upper_bound": 1000,
+        "role": "enzyme",
+        "role_basis": "source reaction EC annotation plus GPR; role applies to reaction context",
+        "matched_species_ids": [
+          "MAM01986m"
+        ]
+      }
+    ],
+    "network_calls": 0,
+    "query_chebi": "CHEBI:15428",
+    "provenance": {
+      "builder_code_sha256": {
+        "build_index.py": "a2841aa473aa164e1c1e7fdfe77e8b080f05ca1a2300147a556cb0a564cb63a1",
+        "common.py": "288b5c90b5f9d5bae0269cba89fb1804126de52a7ef41c002fd5ba75aa30fc66",
+        "gpr.py": "bf0da688225f7fb74277a8b4b6b5a7ec2a2714595bd793d25ef728c097d91302"
+      },
+      "built_at": "<timestamp>",
+      "counts": {
+        "chebi_ids": 19,
+        "genes": 10,
+        "genes_without_unique_symbol": 0,
+        "metabolite_species": 23,
+        "reactions": 5,
+        "species_with_invalid_chebi_annotations": 0
+      },
+      "index_bytes": 38735,
+      "index_sha256": "a6b5a56596a79a62b392e600da22bc42deb80c854d39ac410e3fff64e1c2e5ff",
+      "provenance": {
+        "annotation_diagnostics": {
+          "genes": {
+            "records": 2848,
+            "records_with_omitted_trailing_columns": 2
+          },
+          "metabolites": {
+            "records": 8461,
+            "records_with_omitted_trailing_columns": 2
+          },
+          "reactions": {
+            "records": 12931,
+            "records_with_omitted_trailing_columns": 0
+          }
+        },
+        "citation_note": "See the pinned README.md: Human2 (Luo et al., 2026, in press there) and Human1 (Robinson et al., 2020).",
+        "commit": "635f533152dc5f7290ce04d12700eaa882273c3e",
+        "dataset_kind": "source_fixture",
+        "fixture_note": "Unmodified entity/annotation records selected from the pinned full source; graph deliberately incomplete.",
+        "fixture_sha256": "cc8a68c8513af26641a66683986fc0597016053bed71c7f9306796ac3645ccb6",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "selected_reaction_ids": [
+          "MAR00125",
+          "MAR03777",
+          "MAR04792",
+          "MAR08433",
+          "MAR09514"
+        ],
+        "source": "Human-GEM",
+        "sources": {
+          "Human-GEM.yml": {
+            "path": "model/Human-GEM.yml",
+            "sha256": "01a8ea826bdaa36511b9eed28eedcb5e73690333860856c682387c6380dd3fc6",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/Human-GEM.yml"
+          },
+          "LICENSE.md": {
+            "path": "LICENSE.md",
+            "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/LICENSE.md"
+          },
+          "README.md": {
+            "path": "README.md",
+            "sha256": "a9918dedb17984a9ba80ec27e588af9dd300fbfb8c066917421df9d97571d1c1",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/README.md"
+          },
+          "genes.tsv": {
+            "path": "model/genes.tsv",
+            "sha256": "2a6058a157b3b9f3c958ba753e71d7a702d2716742972741d2ef36535ae9dff6",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/genes.tsv"
+          },
+          "metabolites.tsv": {
+            "path": "model/metabolites.tsv",
+            "sha256": "9d58bb3a9cd217c47dc0d54ea9517b0a23e0603bbb60d5428551e0449af1eab3",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/metabolites.tsv"
+          },
+          "reactions.tsv": {
+            "path": "model/reactions.tsv",
+            "sha256": "1436dd90e959714366270a9904fd6a5108044a2f7f1d7f8360bf7a195fc9e28f",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/model/reactions.tsv"
+          },
+          "version.txt": {
+            "path": "version.txt",
+            "sha256": "f22abd6773ab232869321ad4b1e47ac0c908febf4f3a2bd10c8066140f741261",
+            "url": "https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/635f533152dc5f7290ce04d12700eaa882273c3e/version.txt"
+          }
+        },
+        "tag": "v2.0.0",
+        "version": "2.0.0"
+      },
+      "schema_version": 1
+    },
+    "model_version": "2.0.0",
+    "dataset_kind": "source_fixture",
+    "policy": {
+      "hub_threshold": 200,
+      "hub_policy": "suppress",
+      "currency_ids": [
+        "CHEBI:15422"
+      ],
+      "max_reactions": 200,
+      "max_candidates": 100,
+      "candidate_order": "symbol_then_ensembl_lexical"
+    },
+    "hub_metabolite": true,
+    "hub_reasons": [
+      "explicit_currency_id",
+      "distinct_reaction_degree_exceeds_threshold"
+    ],
+    "policy_suppressed": false,
+    "total_reactions": 2,
+    "total_candidates": 3,
+    "returned_candidates": 3,
+    "returned_reactions": 2,
+    "reactions_complete": true,
+    "candidates_complete": true,
+    "local_lookup_ms": <local_lookup_ms>
+  },
+  "caveats": [
+    "Biochemical context only (indirect, via enzyme); not MR, genetic effector nomination or demonstrated disease mediation.",
+    "Reaction participation can include cofactors and co-substrates; it does not establish direct binding or a drug intervention direction.",
+    "GPR AND/OR rules are authoritative for the recorded reaction; a complex member is not independently sufficient.",
+    "Flux bounds describe the model, not measured in-vivo flux. No flux simulation was run.",
+    "Candidate order is lexical for reproducibility, not a scientific score or target-priority ranking.",
+    "Labelled fixture/subset, NOT a full-model run; counts and missing mappings describe only this fixture."
+  ]
+}

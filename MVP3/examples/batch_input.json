@@ -1,0 +1,9 @@
+{
+  "snapshot_id": "source-fixture-demo",
+  "chebi_ids": [
+    "CHEBI:15428",
+    "CHEBI_15428",
+    "CHEBI:17191",
+    "CHEBI:999999999"
+  ]
+}

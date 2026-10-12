@@ -1,0 +1,237 @@
+{
+  "revision": "b056397",
+  "taxonomy": "defect / scope_limit / observation, per the parent study's DESIGN_JUDGMENT.md",
+  "findings": [
+    {
+      "id": "T1",
+      "title": "The figure credits the registry for a stopping reason and a status the registry never supplied",
+      "severity": "defect",
+      "detail": "plots.py:1104-1108 falls back from the registry record to the Open Targets report for both overall_status and why_stopped, while plots.py:1385 prints \"stopped report(s) carry the registry's own reason\" unconditionally. The year already has a per-value provenance tag and its own footer line; status and reason do not.",
+      "evidence": "GI03 (registry why_stopped withheld) and GI04 (registry overall_status withheld). artifacts/canvas_text/GI03.txt and GI04.txt; the 'registry asked:' line records exactly what the registry was sent.",
+      "reachability": "Any run whose dossier carries a status or why_stopped the registry record does not. Ordinary retrieved Open Targets data, not a user input.",
+      "cases": [
+        "GI03",
+        "GI04"
+      ]
+    },
+    {
+      "id": "T2",
+      "title": "The stopped state is a substring test on an unanchored, retrieval-controlled status string",
+      "severity": "defect",
+      "detail": "plots.py:1115 uses any(word in status for word in _TERMINAL_STATUSES). A COMPLETED trial whose status text contains the word terminated is drawn with the stopped glyph and its text printed. The status half of that label is also not elided, unlike the reason.",
+      "evidence": "GI15: both reports drawn as stopped, footer claims 2 stopped reports carry the registry's own reason. artifacts/canvas_text/GI15.txt.",
+      "reachability": "Any report whose free-text status contains a terminal word in any position.",
+      "cases": [
+        "GI15"
+      ]
+    },
+    {
+      "id": "T3",
+      "title": "The undated footer asserts something about the registry for reports the registry was never asked about",
+      "severity": "defect",
+      "detail": "plots.py:1344 collapses three different facts - no NCT id, id not looked up, registry carries no date - into 'carry no year in the registry'. _lane_markers' own docstring keeps them distinct.",
+      "evidence": "GI02: the registry was asked for 1 id while the footer claims 3 reports carry no year in the registry. GI18: that sentence sits beside 'registry lookup(s) failed; treat those reports as no information'.",
+      "reachability": "Any dossier with a clinical report lacking an NCT id. Open Targets label and regulatory records carry none, and _nct_id deliberately returns '' for them.",
+      "cases": [
+        "GI02",
+        "GI18"
+      ]
+    },
+    {
+      "id": "T4",
+      "title": "Truncating the stopping reason at 40 characters can invert its meaning",
+      "severity": "scope_limit",
+      "detail": "MAX_WHY_CHARS = 40. The cut is disclosed as a count on the figure; a meaning change is not disclosable as a count.",
+      "evidence": "GI05: the retrieved reason 'deaths in the treatment arm were later traced to a data-entry error and the sponsor closed the study administratively' is drawn as 'terminated: deaths in the treatment arm were late...'.",
+      "reachability": "Any registry why_stopped longer than 40 characters.",
+      "cases": [
+        "GI05"
+      ]
+    },
+    {
+      "id": "T5",
+      "title": "trial_phase, status and the GWAS dataset label carry no character budget, contrary to the module's own contract",
+      "severity": "defect",
+      "detail": "plots.py's module docstring states that no label leaves the canvas without saying it was cut. Drug (30 chars) and gene (28 chars) obey it; the phase label (plots.py:1113), the status half of the stop label (plots.py:1281-1287) and the _gwas_years dataset id do not. The per-marker stagger at plots.py:1270 has four offsets, so the fifth report in one year reuses the first.",
+      "evidence": "GI08 draws a 76-character free-text phase in full with no shortened count. GI17 loses 7.0 px of a 111-character GWAS label off the canvas edge, measured from the label's pixel box. GI20 - five ordinary trials all starting 2004 - prints 'Phase 2b dose finding' exactly on top of 'Phase 2/Phase 3'.",
+      "reachability": "GI20 needs no adversarial input: five trials of one drug starting in the same year. tools/trials.py records 19 reports on one drug in real data.",
+      "cases": [
+        "GI08",
+        "GI15",
+        "GI17",
+        "GI20"
+      ]
+    },
+    {
+      "id": "T6",
+      "title": "The lane label rolls a cross-indication stage onto a figure that names one disease, and the same number decides the eight-lane cap",
+      "severity": "defect",
+      "detail": "plots.py:1301 prints 'max stage N' with no qualifier; render.py:1606 prints the same number as 'across all of its indications'. The figure footer asserts that a drug's stage for one disease is never its stage for another. _drug_lanes does not filter reports by the run's disease, and plots.py:1058 and 1179 order and cut the lanes by that same cross-indication number. undated is accumulated only over drawn lanes (plots.py:1193-1198).",
+      "evidence": "GI13: the lane reads 'max stage 4' on a figure titled HDL cholesterol -> Coronary artery disease while the report drawn for it is phase 1. GI14: the pair-relevant drug is cut by the cap and its two id-less reports contribute 0 to the undated count.",
+      "reachability": "Every run. Open Targets maxClinicalStage is cross-indication by definition.",
+      "cases": [
+        "GI13",
+        "GI14"
+      ]
+    },
+    {
+      "id": "T7",
+      "title": "A marker drawn on a completion year is indistinguishable from one drawn on a start year",
+      "severity": "defect",
+      "detail": "The start-year fallback to the completion year is undisclosed while the x-axis label (plots.py:1308) says 'start'. The module labels derived fallbacks elsewhere, for example the forest plot's derived CI.",
+      "evidence": "GI12: two markers at 2016, one a start year and one a completion year on a record with no start date, drawn identically with no count.",
+      "reachability": "Ordinary registry data - a record with a primary completion date and no start date.",
+      "cases": [
+        "GI12"
+      ]
+    },
+    {
+      "id": "T8",
+      "title": "One retrieved string can deny the whole figure, because matplotlib parses dollar signs as mathtext",
+      "severity": "defect",
+      "detail": "plots.py sets no mathtext rcParam. Text._preprocess_math returns ismath=True for 'cost-$5-per-$1 gain' and 'budget $overrun_{total}$ only'; the rendered widths differ from the same strings with escaped dollars (86.0 vs 77.5 px, 99.0 vs 123.9 px), so the drawn glyphs are not the retrieved characters. A malformed span raises at savefig time.",
+      "evidence": "GI07 (drug name and reason rendered as math). GI21: 'budget $1{2 per site$ exceeded' raises ValueError/ParseFatalException, no figure is written, and slack_app.py:2112-2120 posts FIGURE_FAILED_NOTE. artifacts/results.json -> mathtext.",
+      "reachability": "A retrieved drug name or stopping reason containing a balanced pair of dollar signs; cost figures in a why_stopped are the plausible vector.",
+      "cases": [
+        "GI07",
+        "GI21"
+      ]
+    },
+    {
+      "id": "T9",
+      "title": "A year axis prints two decimal places whenever every drawn year is the same year",
+      "severity": "defect",
+      "detail": "span = (ceiling - floor) or 2.0 collapses to the 2.0 fallback for a single year, giving a 2003.76-2004.40 view. MaxNLocator(integer=True) drops the integer constraint when fewer than min_n_ticks integers fall inside the view.",
+      "evidence": "GI19 tick labels: 2003.76 2003.84 2003.92 2004.00 2004.08 2004.16 2004.24 2004.32 2004.40.",
+      "reachability": "Not adversarial: one drug, one report, a retrieved start year and no completion date.",
+      "cases": [
+        "GI19"
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "No plausibility floor on a year, and an implausible one rescales every real marker",
+      "severity": "observation",
+      "detail": "The footer discloses provenance for an Open Targets year but never implausibility, and the x-axis label still names ClinicalTrials.gov.",
+      "evidence": "GI10: years 1850 and 2099 accepted, axis ticks reach 2160, the real 2004 marker and the 2020 GWAS line compressed. GI17: a GWAS year of 2099 accepted, axis to 2130.",
+      "reachability": "report['year'] and the exposure year. tools/trials.py records that report['year'] is null on every report this project has seen.",
+      "cases": [
+        "GI10",
+        "GI17"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "An impossible interval is dropped rather than reported",
+      "severity": "observation",
+      "detail": "plots.py:1247 draws the bar only when x1 > x0; a completion year before the start year produces no bar and no note.",
+      "evidence": "GI11: start 2016, completion 2009. The marker is indistinguishable from one whose completion date was never retrieved.",
+      "reachability": "Registry data quality.",
+      "cases": [
+        "GI11"
+      ]
+    },
+    {
+      "id": "T12",
+      "title": "One trial reached through two genes is drawn as two lanes and counted as two reports",
+      "severity": "observation",
+      "detail": "The forest plot has an explicit distinct-triple guard against exactly this reading; the timeline has none.",
+      "evidence": "GI16: the same drug and the same NCT00134264 under two genes. The registry is asked once, and the figure says '2 dated reports drawn'.",
+      "reachability": "Any drug whose target set includes two of the run's effector genes.",
+      "cases": [
+        "GI16"
+      ]
+    },
+    {
+      "id": "T13",
+      "title": "Homoglyph drug names are neither normalized nor distinguished",
+      "severity": "observation",
+      "detail": "The mirror image of the parent study's F5: there a normalization gap changed meaning, here the absence of normalization hides a difference.",
+      "evidence": "GI09: two lanes, 'torcetrapib' and a Cyrillic-homoglyph spelling, visually identical at 7.5 pt. Code points preserved in artifacts/canvas_text/GI09.txt.",
+      "reachability": "Upstream data only; drug names come from Open Targets.",
+      "cases": [
+        "GI09"
+      ]
+    },
+    {
+      "id": "L1",
+      "title": "PR #14's central check does fire - positive verification",
+      "severity": "observation",
+      "detail": "Both validators refuse a bundle missing the required stages, so the claim in prepare_cetp_examples.py is real for the case it names.",
+      "evidence": "LC06: render_bundle.validate_bundle raises 'ValueError: Timeline silently omits required stages: human_genetics, preclinical'; the viewer's own validate() raises 'Error: Timeline silently omits a required lifecycle stage.'",
+      "reachability": "Build time, and the viewer's Open snapshot file input.",
+      "cases": [
+        "LC06"
+      ]
+    },
+    {
+      "id": "L2",
+      "title": "An event whose stage is not in display_order is silently dropped from the rendered timeline",
+      "severity": "defect",
+      "detail": "Neither validator checks evidence_stage against timeline_standard.display_order, and viewer.template.html:143-145 filters the rendered stages by it. The standard's own note says a missing stage must never be silently omitted.",
+      "evidence": "LC03: programme-stop, the Pfizer safety stop, relabelled regulatory_action. Both validators pass; the viewer renders 10 of 11 events and drops it with no notice, while the Markdown and Slack renderings still contain it.",
+      "reachability": "The viewer's Open snapshot file input accepts an arbitrary local bundle and is exercised by qa_viewer.cjs; a bundle author can also write the stage directly.",
+      "cases": [
+        "LC03"
+      ]
+    },
+    {
+      "id": "L3",
+      "title": "The required-stage check is a label-presence check, not an evidence check",
+      "severity": "defect",
+      "detail": "render_bundle.py:68 builds a set of evidence_stage strings and asks only whether each required string is present. Nothing looks at the event the label is attached to.",
+      "evidence": "LC04: the 2017 anacetrapib class outcome relabelled human_genetics and the 1989 CETP-deficiency paper relabelled clinical. Both validators pass; the viewer renders 'Human genetics 2017' and 'Clinical development 1989-2007'. LC05 - required_stages emptied, every event clinical - is the weaker scope_limit version.",
+      "reachability": "Bundle authoring; the loaded-snapshot path accepts the same bundle.",
+      "cases": [
+        "LC04",
+        "LC05"
+      ]
+    },
+    {
+      "id": "L4",
+      "title": "The lifecycle guarantee is opt-in, and no missing-stage display exists",
+      "severity": "scope_limit",
+      "detail": "Both checks are guarded by 'if standard:' and 'if(b.timeline_standard)'. PR #14's reference document asks to show the gap and the retrieval diagnostic; what was implemented is a build-time raise, so a failing bundle produces no page at all. The standard's second clause - target-class and compound-specific evidence must remain distinct - is carried only in free-text scope and is checked by nothing.",
+      "evidence": "LC02: timeline_standard removed and every evidence_stage stripped. Both validators pass; the viewer renders one 'Unspecified 1989-2026' group and the Markdown prints 'unspecified' eleven times.",
+      "reachability": "The viewer's file input; the superseded v1 CETP bundles have exactly this shape.",
+      "cases": [
+        "LC02"
+      ]
+    },
+    {
+      "id": "L5",
+      "title": "The shipped evacetrapib page orders its stage groups against its own dates",
+      "severity": "defect",
+      "detail": "display_order is fixed and not date-aware. PR #14's reference document says not to move genetics before the clinic if the real dates are reversed; the shipped page does the mirror image, moving genetics after the clinic when the dates put it first. The two printed ranges overlap with nothing saying so.",
+      "evidence": "LC08: the shipped bundle's first later_genetics event is 2012-05-17 and its first clinical event is 2012-10, yet the viewer renders 'Clinical development 2012-2017' then 'Later genetics 2012-2017'. recordings/cetp-evacetrapib-v2/bundle.json is byte-identical to the snapshot measured.",
+      "reachability": "The shipped artifact.",
+      "cases": [
+        "LC08"
+      ]
+    },
+    {
+      "id": "L6",
+      "title": "The chronology guard compares date strings, and ISO 8601 basic format inverts it",
+      "severity": "defect",
+      "detail": "render_bundle.py:63 compares the date strings. Python 3.11+ date.fromisoformat accepts basic format, and '2007-11-05' sorts below '20070115' because the hyphen sorts below a digit. The viewer's own regex rejects the format, so render_bundle.py can write a bundle.json the shipped viewer refuses to load. render() also embeds the bundle and calls render() at startup without calling validate() (viewer.template.html:183), so the two validators never check the same bundle.",
+      "evidence": "LC09: the TRUE order, January then November, raises 'Events must be chronological'. LC10: the REVERSED order passes. LC07 isolates the validator divergence.",
+      "reachability": "Bundle authoring.",
+      "cases": [
+        "LC07",
+        "LC09",
+        "LC10"
+      ]
+    },
+    {
+      "id": "A1",
+      "title": "Markdown emphasis in a retrieved why_stopped reaches the card - adjacent surface",
+      "severity": "observation",
+      "detail": "render._text flattens newlines, so a forged '##' does not become a heading, but inline emphasis survives into the section 6 bullet that the timeline footer points readers at. On the figure the same string is merely truncated text (GI06); a PNG has no headings.",
+      "evidence": "render._report_line with why_stopped='## SAFETY CONFIRMED\\n\\n**Recommendation:** start this drug.' returns '... why stopped ## SAFETY CONFIRMED **Recommendation:** start this drug., for ...'.",
+      "reachability": "A retrieved Open Targets field, not model prose. Belongs to the card/dossier surface; recorded here only because the timeline names section 6 as its overflow destination.",
+      "cases": [
+        "GI06"
+      ]
+    }
+  ]
+}

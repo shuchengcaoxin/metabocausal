@@ -1,0 +1,137 @@
+L04 - MVP2 data-layer manifest verification
+
+(a) sha256 assertions, verified against the checked-out bytes
+
+  screened_20260912/manifest.json :: baseline.sha256
+    manifest records path : <workspace>/metabocausal/archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    resolved in this repo : archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    claimed               : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    file as-is (this OS)  : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    file after CRLF->LF   : bbb10c365a0f1076b193011ac221f22dcefa50b8dcb239346ac83a1c939972ad
+    committed blob bytes  : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    line endings on disk  : 11118 CRLF, 0 bare LF
+    git ls-files --eol    : i/crlf  w/crlf  attr/-text            	archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    VERDICT (this OS)     : PASS(as-is)
+    VERDICT (LF checkout) : PASS
+
+  mvp1_plus_mvp2...manifest.json :: inputs.baseline.sha256
+    manifest records path : <workspace>/metabocausal/archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    resolved in this repo : archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    claimed               : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    file as-is (this OS)  : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    file after CRLF->LF   : bbb10c365a0f1076b193011ac221f22dcefa50b8dcb239346ac83a1c939972ad
+    committed blob bytes  : af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d
+    line endings on disk  : 11118 CRLF, 0 bare LF
+    git ls-files --eol    : i/crlf  w/crlf  attr/-text            	archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    VERDICT (this OS)     : PASS(as-is)
+    VERDICT (LF checkout) : PASS
+
+  mvp1_plus_mvp2...manifest.json :: inputs.new_pairs.sha256
+    manifest records path : <workspace>/metabocausal/MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    resolved in this repo : MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    claimed               : f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083
+    file as-is (this OS)  : 5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b
+    file after CRLF->LF   : f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083
+    committed blob bytes  : f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083
+    line endings on disk  : 9802 CRLF, 0 bare LF
+    git ls-files --eol    : i/lf    w/crlf  attr/                 	MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    VERDICT (this OS)     : PASS(after CRLF->LF)
+    VERDICT (LF checkout) : PASS
+
+  mvp1_plus_mvp2...manifest.json :: outputs.merged_csv.sha256
+    manifest records path : <workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv
+    resolved in this repo : MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv
+    claimed               : 8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0
+    file as-is (this OS)  : 1ab7c7a4d24e827d6f99087745eac546d33556dc5b79ccdd63dcd323f052458b
+    file after CRLF->LF   : 8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0
+    committed blob bytes  : 8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0
+    line endings on disk  : 20919 CRLF, 0 bare LF
+    git ls-files --eol    : i/lf    w/crlf  attr/                 	MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.csv
+    VERDICT (this OS)     : PASS(after CRLF->LF)
+    VERDICT (LF checkout) : PASS
+
+  mvp1_plus_mvp2...manifest.json :: outputs.provenance_csv.sha256
+    manifest records path : <workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv
+    resolved in this repo : MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv
+    claimed               : b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c
+    file as-is (this OS)  : 5fa6c2343727f7246d1336dc5e4cbaea6c2ea39614b9899e45bfc432b57bdadb
+    file after CRLF->LF   : b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c
+    committed blob bytes  : b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c
+    line endings on disk  : 9802 CRLF, 0 bare LF
+    git ls-files --eol    : i/lf    w/crlf  attr/                 	MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.provenance.csv
+    VERDICT (this OS)     : PASS(after CRLF->LF)
+    VERDICT (LF checkout) : PASS
+
+  mvp1_plus_mvp2...manifest.json :: outputs.reference_original_merged_csv.sha256
+    manifest records path : <workspace>/metabocausal/MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv
+    resolved in this repo : MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv
+    claimed               : af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce
+    file as-is (this OS)  : c5bc2b45ff153ce4f199c12454d1183025d516f3a5c6be9262969441325cbb74
+    file after CRLF->LF   : af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce
+    committed blob bytes  : af9b45d8826c76aad4efc257566009e66095e075b1fd05229f63943eaa1b99ce
+    line endings on disk  : 20919 CRLF, 0 bare LF
+    git ls-files --eol    : i/lf    w/crlf  attr/                 	MVP2/data/extracted/mvp1_plus_mvp2_candidate_metabolite_disease.reference_original_merged.csv
+    VERDICT (this OS)     : PASS(after CRLF->LF)
+    VERDICT (LF checkout) : PASS
+
+  pair_batch_smoke.../manifest.json :: input.sha256
+    manifest records path : MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    resolved in this repo : MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    claimed               : 5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b
+    file as-is (this OS)  : 5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b
+    file after CRLF->LF   : f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083
+    committed blob bytes  : f3c7ff0911dea44bb0d7f89147ca39f0f60cd2637ee6e8164758254736da0083
+    line endings on disk  : 9802 CRLF, 0 bare LF
+    git ls-files --eol    : i/lf    w/crlf  attr/                 	MVP2/data/extracted/screened_20260912/new_unique_pairs.csv
+    VERDICT (this OS)     : PASS(as-is)
+    VERDICT (LF checkout) : FAIL
+
+  totals on THIS checkout (Windows, w/crlf): 3 verify as-is, 4 only after CRLF->LF, 0 neither way
+  totals against the COMMITTED blob bytes (an LF checkout): 1 of 7 fail
+  assertions that fail on this checkout but pass on an LF checkout: 4
+  assertions that pass on this checkout but fail on an LF checkout: 1
+
+  .gitattributes entries that pin bytes (-text), for context:
+    # Preserve archived evidence bytes on every platform.
+    archive/** -text
+    provenance/** -text
+    MVP2/literature/seeds/** -text
+    MVP2/literature/studies/** -text
+    *.gz binary
+    *.zip binary
+    *.png binary
+    *.pdf binary
+    *.xlsx binary
+    *.pptx binary
+
+(b) row counts claimed vs counted (csv.DictReader over the same file)
+
+  screened manifest summary.candidate_row_count              claimed 20460   counted 20460   OK
+  screened manifest summary.new_pair_record_count            claimed 17405   counted 17405   OK
+  screened manifest summary.new_pair_key_count               claimed 9801    counted 9801    OK
+  screened manifest summary.candidate_row_count (vs ledger)  claimed 20460   counted 20460   OK
+  merged manifest summary.merged_row_count                   claimed 20918   counted 20918   OK
+  merged manifest summary.new_row_count (provenance sidecar) claimed 9801    counted 9801    OK
+  merged manifest summary.baseline_row_count                 claimed 11117   counted 11117   OK
+  pair_batch manifest input.rows                             claimed 9801    counted 9801    OK
+
+  arithmetic closure: new(17405) + already_present(304) + excluded_direction(2751) + unresolved(0) = 20460 vs candidate_row_count 20460 -> OK
+
+(c) screening summary recomputed with the teammate's own screen_pairs()
+    baseline  = archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv
+    candidate = MVP2/data/extracted/screened_20260912/candidate_pairs.csv
+
+    field                            manifest   recomputed verdict
+    already_present_count            304        304        OK
+    baseline_pair_key_count          10278      10278      OK
+    candidate_row_count              20460      20460      OK
+    excluded_direction_count         2751       2751       OK
+    new_pair_key_count               9801       9801       OK
+    new_pair_record_count            17405      17405      OK
+    unresolved_identity_count        0          0          OK
+
+    screening_ledger.csv screen_status tally (counted from the file):
+      already_present          304
+      excluded_direction       2751
+      new_pair                 17405
+      ledger tally agrees with the manifest summary: True

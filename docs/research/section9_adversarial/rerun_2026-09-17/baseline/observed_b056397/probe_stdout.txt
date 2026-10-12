@@ -1,0 +1,53 @@
+A01  printed  expected=printed  rules=none
+A02  blocked  expected=blocked  rules=V1
+A03  blocked  expected=blocked  rules=V5
+A04  blocked  expected=blocked  rules=G0 accepted flag is false
+A05  blocked  expected=blocked  rules=G0 unusable or empty fields
+A06  blocked  expected=blocked  rules=G0 no interpretation
+B01  bypassed expected=bypassed rules=no gate called
+B02  bypassed expected=bypassed rules=ledger.record intentional no-op
+M01  printed  expected=printed  rules=none
+M02  blocked  expected=blocked  rules=V0
+M03  printed  expected=printed  rules=none
+M04  printed  expected=printed  rules=none
+M05  blocked  expected=blocked  rules=validate raised RuntimeError; render_card fail-closed
+R01  printed  expected=printed  rules=none
+R02  printed  expected=printed  rules=none
+R03  blocked  expected=blocked  rules=V5
+R04  blocked  expected=blocked  rules=V1
+R05  blocked  expected=blocked  rules=V2
+R06  printed  expected=printed  rules=none
+R07  raised   expected=raised   rules=AttributeError: 'object' object has no attribute 'redacted'
+S01  printed  expected=printed  rules=none
+S02  printed  expected=printed  rules=none
+S03  printed  expected=printed  rules=none
+S04  blocked  expected=blocked  rules=V2
+S05  printed  expected=printed  rules=none
+S06  blocked  expected=blocked  rules=V3
+S07  printed  expected=printed  rules=none
+S08  blocked  expected=blocked  rules=V4
+S09  printed  expected=printed  rules=none
+S10  printed  expected=printed  rules=none
+S11  printed  expected=printed  rules=none
+S12  printed  expected=printed  rules=none
+S13  blocked  expected=blocked  rules=V6
+S14  printed  expected=printed  rules=none
+S15  printed  expected=printed  rules=none
+S16  printed  expected=printed  rules=none
+S17  printed  expected=printed  rules=none
+S18  printed  expected=printed  rules=none
+T01  printed  expected=printed  rules=none
+T02  printed  expected=printed  rules=none
+T03  printed  expected=printed  rules=none
+T04  printed  expected=printed  rules=none
+T05  blocked  expected=blocked  rules=V1
+T06  printed  expected=printed  rules=none
+T07  printed  expected=printed  rules=none
+T08  printed  expected=printed  rules=none
+T09  blocked  expected=blocked  rules=V5
+U01  printed  expected=printed  rules=none
+U02  blocked  expected=blocked  rules=V1
+U03  printed  expected=printed  rules=none
+U04  printed  expected=printed  rules=none
+
+51 cases; artifacts written to <workspace>/metabocausal-rerun\docs\research\section9_adversarial\artifacts

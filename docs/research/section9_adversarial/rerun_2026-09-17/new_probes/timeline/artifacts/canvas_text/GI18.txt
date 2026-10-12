@@ -1,0 +1,34 @@
+case: GI18
+what: every registry lookup fails; one report carries an Open Targets year
+asks: what does the figure claim when the registry answered nothing
+figure: drawn GI18_genetic_insight.png
+stdout: [timeline] wrote GI18_genetic_insight.png  (1/1 drug lanes, 1 undated report(s))
+registry asked: NCT00134264, NCT00134290
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 3'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'2003.76'
+'2003.84'
+'2003.92'
+'2004.00'
+'2004.08'
+'2004.16'
+'2004.24'
+'2004.32'
+'2004.40'
+'torcetrapib\nCETP, max stage 3'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'1 drug lane(s) from the dossier of 1 effector gene, 1 dated report drawn, 0 exposure GWAS years marked'
+'Some marker(s) use the year Open Targets itself recorded on the report, not a ClinicalTrials.gov lookup.'
+'2 registry lookup(s) failed; treat those reports as no information rather than as trials without dates.'
+'1 retrieved report(s) carry no year in the registry and are NOT drawn: undated, not absent, and never placed on a guessed year.'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

@@ -1,0 +1,11 @@
+# Preserve archived evidence bytes on every platform.
+archive/** -text
+provenance/** -text
+MVP2/literature/seeds/** -text
+MVP2/literature/studies/** -text
+*.gz binary
+*.zip binary
+*.png binary
+*.pdf binary
+*.xlsx binary
+*.pptx binary

@@ -1,0 +1,45 @@
+{
+  "probe": "Human-GEM biochemical-context arm (MVP3, PR #13): tool, pipeline wiring, card sections 5 and 7, and the Section 9 validator tie-in",
+  "started_at": "2026-09-17T05:04:02.398727+00:00",
+  "finished_at": "2026-09-17T05:04:03.913522+00:00",
+  "revision": "b05639721b07345612bba4ebf66f989805b9703c",
+  "branch": "rerun/section9-adversarial-20260916",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "network": "none; the Human-GEM lookup is local and the three remote arms are replaced by empty envelopes",
+  "cases": 30,
+  "outcomes": {
+    "absence_declared": 4,
+    "arm_omitted": 1,
+    "blocked_at_build": 1,
+    "capped_and_declared": 1,
+    "contradiction": 2,
+    "declared": 1,
+    "dropped_from_section_5": 1,
+    "error_declared": 1,
+    "error_hidden": 1,
+    "flattened": 1,
+    "measured": 1,
+    "printed": 5,
+    "rendered": 1,
+    "rendered_verbatim": 7,
+    "suppressed": 2
+  },
+  "expectation_failures": [],
+  "code_sha256": {
+    "tools/gem.py": "17727171be0f3cc194db77b6aad46b0146b208c67fd9f7078608973656b80e72",
+    "MVP3/src/gem.py": "c3029b0aba0bc095a8abf0ebbe84ac69dba321083c73a8d7dd2b7ad9711ad6ed",
+    "MVP3/src/build_index.py": "a2841aa473aa164e1c1e7fdfe77e8b080f05ca1a2300147a556cb0a564cb63a1",
+    "MVP3/src/gpr.py": "bf0da688225f7fb74277a8b4b6b5a7ec2a2714595bd793d25ef728c097d91302",
+    "MVP3/src/common.py": "288b5c90b5f9d5bae0269cba89fb1804126de52a7ef41c002fd5ba75aa30fc66",
+    "render.py": "68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f",
+    "validate_card.py": "a756ab148ce5b7448431551dd262717c0c162a93d54b4449ca9b9d44b6ce3ef3",
+    "pipeline.py": "c1d65f9c574350549cd63b9bcd8cda4977fe0b53076615eddcf0d71c64535de7",
+    "llm/interpret.py": "ba15d534b704db37c8dfd3d7d7260f6724142a4f4d6206c63ff6c5607a4afb10"
+  },
+  "input_sha256": {
+    "MVP3/tests/fixtures/gem/source_excerpt.json": "65ebdf72f28a9464c3bfc79c7e1b301b5949fcdf015ca0bd7f50e800acd9e4db",
+    "probe_gem.py": "a2dc5fefe528711da30692bcae1283baafd033bd3acbd29b5ef94a2f9c617fd1"
+  },
+  "normalisation": "Saved artifacts replace ISO timestamps with <timestamp> and data.local_lookup_ms with <local_lookup_ms>; assertions run on raw text."
+}

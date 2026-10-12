@@ -1,0 +1,37 @@
+# Slack app manifest — single source of truth for the MetaboCausal bot config.
+# Rule: edit THIS file first, then paste into api.slack.com/apps -> App Manifest.
+# Scope additions require one click "Reinstall to Workspace" afterwards.
+#
+# Changelog
+#   v3  2026-09-11  interactivity on — checkbox menu (pick which evidence arms to
+#                   run) and buttons (forest plot / instrument plot / genetic
+#                   insight timeline, each with a skip). No new scopes: paste and
+#                   save only, no reinstall needed.
+#   v2  2026-09-11  +files:write — the bot attaches the full card (.md) and the
+#                   forest/instrument plot (.png) to its thread reply.
+#                   After pasting: Reinstall to Workspace (one click).
+#   v1  2026-09-11  Minimum viable set for the hackathon demo:
+#                   app_mention -> reply in thread. Socket Mode (no public URL).
+#                   Scopes: app_mentions:read, chat:write.
+
+display_information:
+  name: MetaboCausal
+  description: Genetics-backed causal evidence cards for metabolite-disease questions
+features:
+  bot_user:
+    display_name: MetaboCausal
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+      - files:write
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+  interactivity:
+    is_enabled: true
+  socket_mode_enabled: true
+  token_rotation_enabled: false

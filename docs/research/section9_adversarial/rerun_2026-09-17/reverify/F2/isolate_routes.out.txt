@@ -1,0 +1,26 @@
+=== T01: 17775 on pair urate|gout ===
+  routes via scalars / digits inside strings : 1
+    [digits-in-string] run.metabolite.id -> CHEBI:17775
+  routes via list lengths                    : 0
+  any route through an effect-size-shaped field : False
+
+=== T02: 2026 on pair trimethylamine N-oxide|coronary artery disease ===
+  routes via scalars / digits inside strings : 7
+    [digits-in-string] run.envelopes.mr.retrieved_at -> 2026-09-10T18:15:43
+    [digits-in-string] run.envelopes.instruments.retrieved_at -> 2026-09-10T18:15:43
+    [digits-in-string] run.envelopes.instruments.caveats[1] -> Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (...
+    [digits-in-string] run.envelopes.outcomes.retrieved_at -> 2026-09-10T18:15:43
+    [digits-in-string] run.envelopes.outcomes.caveats[1] -> Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (...
+    [digits-in-string] run.envelopes.catalog.retrieved_at -> 2026-09-10T18:15:42
+    [digits-in-string] run.envelopes.catalog.caveats[2] -> The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 1...
+  routes via list lengths                    : 0
+  any route through an effect-size-shaped field : False
+
+=== T03: 4 on pair trimethylamine N-oxide|coronary artery disease ===
+  routes via scalars / digits inside strings : 2
+    [digits-in-string] run.envelopes.outcomes.data.datasets[2].consortium -> CARDIoGRAMplusC4D
+    [digits-in-string] run.envelopes.catalog.caveats[2] -> The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 1...
+  routes via list lengths                    : 1
+    [list-length] run.envelopes.instruments.caveats -> len = 4
+  any route through an effect-size-shaped field : False
+

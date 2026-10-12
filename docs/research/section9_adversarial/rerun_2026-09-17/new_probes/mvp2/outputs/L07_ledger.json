@@ -1,0 +1,138 @@
+{
+  "coverage": {
+    "fraction": 0.00010203040506070809,
+    "kept_unique_pairs": 9801,
+    "pair_records": 1,
+    "pairs_without_a_search_record": 9800,
+    "search_run_dirs": [
+      "20260912_europepmc_agentic_glycine_cad",
+      "pair_batch_smoke_glycine_cad_20260912"
+    ]
+  },
+  "duplicate_pmids": {},
+  "offset_claims": {
+    "pair_batch_smoke_glycine_cad_20260912": {
+      "input_rows_claimed": 9801,
+      "input_rows_counted": 9801,
+      "limit": 1,
+      "offset": 2513,
+      "selected_pair_ids": [
+        "1b988024b80f599f"
+      ]
+    }
+  },
+  "pair_record_consistency": [
+    {
+      "distinct_retained_ids": 51,
+      "file": "MVP2/literature/search_runs/pair_batch_smoke_glycine_cad_20260912/pairs/1b988024b80f599f.json",
+      "ids_returned_by_queries": 51,
+      "index_paper_count": 51,
+      "index_round_count": 3,
+      "papers_retained": 51,
+      "remaining_gaps": [
+        "pair-specific source table and direction still require screening",
+        "source full text and supplement acquisition still requires screening"
+      ],
+      "retained_but_never_returned": [],
+      "returned_but_not_retained": [],
+      "rounds_in_record": 3,
+      "status": "success",
+      "stop_reason": "configured maximum round limit reached"
+    }
+  ],
+  "paper_identifiers": {
+    "abstract_empty": 3,
+    "doi_malformed": 0,
+    "doi_present": 50,
+    "no_identifier_at_all": 0,
+    "papers": 51,
+    "pmcid_malformed": 0,
+    "pmcid_present": 48,
+    "pmid_malformed": 0,
+    "pmid_present": 48,
+    "title_empty": 0,
+    "year_empty": 1
+  },
+  "seed_identifiers": [
+    {
+      "dois": [
+        "10.1038/s41588-022-01270-1"
+      ],
+      "malformed": [],
+      "pmcids": [
+        "PMC7614162"
+      ],
+      "pmids": [
+        "36635386"
+      ],
+      "seed": "chen_2023"
+    },
+    {
+      "dois": [
+        "10.1038/ng.2982"
+      ],
+      "malformed": [],
+      "pmcids": [
+        "PMC4064254"
+      ],
+      "pmids": [
+        "24816252"
+      ],
+      "seed": "shin_2014"
+    },
+    {
+      "dois": [
+        "10.1038/s42255-025-01371-1"
+      ],
+      "malformed": [],
+      "pmcids": [
+        "PMC12638258"
+      ],
+      "pmids": [
+        "40973818"
+      ],
+      "seed": "ukb_mapping_2025"
+    },
+    {
+      "dois": [
+        "10.1038/s41467-025-58129-2"
+      ],
+      "malformed": [],
+      "pmcids": [
+        "PMC11953310"
+      ],
+      "pmids": [
+        "40155430"
+      ],
+      "seed": "yin_2025"
+    },
+    {
+      "dois": [
+        "10.1038/s41588-025-02355-3"
+      ],
+      "malformed": [],
+      "pmcids": [
+        "PMC12513840"
+      ],
+      "pmids": [
+        "41044249"
+      ],
+      "seed": "zoodsma_2025"
+    }
+  ],
+  "traceability": [
+    {
+      "file": "MVP2/literature/search_runs/pair_batch_smoke_glycine_cad_20260912/pairs/1b988024b80f599f.json",
+      "matches": true,
+      "pair_id_in_file": "1b988024b80f599f",
+      "pair_id_recomputed": "1b988024b80f599f",
+      "rows_in_new_unique_pairs": [
+        2514
+      ],
+      "validate_pair": [
+        true,
+        "eligible"
+      ]
+    }
+  ]
+}

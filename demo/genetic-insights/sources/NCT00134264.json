@@ -1,0 +1,2389 @@
+{
+  "url": "https://clinicaltrials.gov/api/v2/studies/NCT00134264",
+  "retrieved_at": "2026-09-12T18:13:15.066059+00:00",
+  "data": {
+    "protocolSection": {
+      "identificationModule": {
+        "nctId": "NCT00134264",
+        "orgStudyIdInfo": {
+          "id": "A5091043"
+        },
+        "organization": {
+          "fullName": "Pfizer",
+          "class": "INDUSTRY"
+        },
+        "briefTitle": "A Study Examining Torcetrapib/Atorvastatin And Atorvastatin Effects On Clinical CV Events In Patients With Heart Disease",
+        "officialTitle": "Phase 3 Multi Center, Double Blind, Randomized, Parallel Group Evaluation Of The Fixed Combination Torcetrapib/Atorvastatin, Administered Orally, Once Daily (Qd), Compared With Atorvastatin Alone, On The Occurrence Of Major Cardiovascular Events In Subjects With Coronary Heart Disease Or Risk Equivalents",
+        "acronym": "ILLUMINATE"
+      },
+      "statusModule": {
+        "statusVerifiedDate": "2012-01",
+        "overallStatus": "TERMINATED",
+        "expandedAccessInfo": {
+          "hasExpandedAccess": false
+        },
+        "startDateStruct": {
+          "date": "2004-07"
+        },
+        "primaryCompletionDateStruct": {
+          "date": "2007-06",
+          "type": "ACTUAL"
+        },
+        "completionDateStruct": {
+          "date": "2007-06",
+          "type": "ACTUAL"
+        },
+        "studyFirstSubmitDate": "2005-08-22",
+        "studyFirstSubmitQcDate": "2005-08-22",
+        "studyFirstPostDateStruct": {
+          "date": "2005-08-24",
+          "type": "ESTIMATED"
+        },
+        "dispFirstSubmitDate": "2012-01-30",
+        "dispFirstSubmitQcDate": "2012-01-30",
+        "dispFirstPostDateStruct": {
+          "date": "2012-02-03",
+          "type": "ESTIMATED"
+        },
+        "lastUpdateSubmitDate": "2012-01-30",
+        "lastUpdatePostDateStruct": {
+          "date": "2012-02-03",
+          "type": "ESTIMATED"
+        }
+      },
+      "sponsorCollaboratorsModule": {
+        "responsibleParty": {
+          "type": "SPONSOR"
+        },
+        "leadSponsor": {
+          "name": "Pfizer",
+          "class": "INDUSTRY"
+        }
+      },
+      "descriptionModule": {
+        "briefSummary": "The Torcetrapib project was terminated on December 2, 2006 due to safety findings.\n\nTo demonstrate if torcetrapib/atorvastatin can reduce the risk for major cardiovascular disease events, when compared to atorvastatin alone, in patients with coronary heart disease or risk equivalents"
+      },
+      "conditionsModule": {
+        "conditions": [
+          "Coronary Disease",
+          "Diabetes Mellitus"
+        ]
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": [
+          "PHASE3"
+        ],
+        "designInfo": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "PARALLEL",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "DOUBLE"
+          }
+        },
+        "enrollmentInfo": {
+          "count": 15067,
+          "type": "ACTUAL"
+        }
+      },
+      "armsInterventionsModule": {
+        "interventions": [
+          {
+            "type": "DRUG",
+            "name": "torcetrapib/atorvastatin"
+          },
+          {
+            "type": "DRUG",
+            "name": "atorvastatin"
+          }
+        ]
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {
+            "measure": "The time to first occurrence of a major cardiovascular disease event"
+          }
+        ],
+        "secondaryOutcomes": [
+          {
+            "measure": "Various composites of major cardiovascular disease events and other lipid parameters"
+          }
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion Criteria:\n\n* Diagnosis of coronary heart disease or risk equivalents that place the patient at high risk for cardiovascular disease events\n\nExclusion Criteria:\n\n* Women who are pregnant or lactating, or planning to become pregnant.\n* Subjects with a clinically indicated need for statin (HMG-CoA reductase inhibitor) therapy other than atorvastatin or other concomitant therapy with known lipid altering effects on LDL-C and HDL-C including fibrates and nicotinic acid\n* Subjects taking any drugs known to be associated with an increased risk of myositis in combination with HMG-CoA reductase inhibitors\n* Subjects with any other medical condition or laboratory abnormality which could affect subject safety, preclude evaluationof response, or render unlikely that the subject would complete the study",
+        "healthyVolunteers": false,
+        "sex": "ALL",
+        "minimumAge": "45 Years",
+        "maximumAge": "75 Years",
+        "stdAges": [
+          "ADULT",
+          "OLDER_ADULT"
+        ]
+      },
+      "contactsLocationsModule": {
+        "overallOfficials": [
+          {
+            "name": "Pfizer CT.gov Call Center",
+            "affiliation": "Pfizer",
+            "role": "STUDY_DIRECTOR"
+          }
+        ],
+        "locations": [
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Alabaster",
+            "state": "Alabama",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.24428,
+              "lon": -86.81638
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Birmingham",
+            "state": "Alabama",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.52066,
+              "lon": -86.80249
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Gilbert",
+            "state": "Arizona",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.35283,
+              "lon": -111.78903
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Phoenix",
+            "state": "Arizona",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.44838,
+              "lon": -112.07404
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Tucson",
+            "state": "Arizona",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.22174,
+              "lon": -110.92648
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Fresno",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.74773,
+              "lon": -119.77237
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.05223,
+              "lon": -118.24368
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Modesto",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.6391,
+              "lon": -120.99688
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "San Diego",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.71571,
+              "lon": -117.16472
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Santa Rosa",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.44047,
+              "lon": -122.71443
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Tustin",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.74585,
+              "lon": -117.82617
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Walnut Creek",
+            "state": "California",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.90631,
+              "lon": -122.06496
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Denver",
+            "state": "Colorado",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.73915,
+              "lon": -104.9847
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Longmont",
+            "state": "Colorado",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.16721,
+              "lon": -105.10193
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Guilford",
+            "state": "Connecticut",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.28899,
+              "lon": -72.68176
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Hartford",
+            "state": "Connecticut",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.76371,
+              "lon": -72.68509
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Washington D.C.",
+            "state": "District of Columbia",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.89511,
+              "lon": -77.03637
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Clearwater",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.96585,
+              "lon": -82.8001
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Coral Gables",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.72149,
+              "lon": -80.26838
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Fort Meyers",
+            "state": "Florida",
+            "country": "United States"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.33218,
+              "lon": -81.65565
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Jacksonville Beach",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.29469,
+              "lon": -81.39314
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Lakeland",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.03947,
+              "lon": -81.9498
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Orlando",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.53834,
+              "lon": -81.37924
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Pensacola",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.42131,
+              "lon": -87.21691
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Port Charlotte",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.97617,
+              "lon": -82.09064
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sarasota",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.33643,
+              "lon": -82.53065
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "West Palm Beach",
+            "state": "Florida",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.71534,
+              "lon": -80.05337
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.749,
+              "lon": -84.38798
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Aurora",
+            "state": "Illinois",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.76058,
+              "lon": -88.32007
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Blue Island",
+            "state": "Illinois",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.65726,
+              "lon": -87.68005
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Chicago",
+            "state": "Illinois",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.85003,
+              "lon": -87.65005
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Evansville",
+            "state": "Indiana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.97476,
+              "lon": -87.55585
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Fort Wayne",
+            "state": "Indiana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.1306,
+              "lon": -85.12886
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Davenport",
+            "state": "Iowa",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.52364,
+              "lon": -90.57764
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Des Moines",
+            "state": "Iowa",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.60054,
+              "lon": -93.60911
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Iowa City",
+            "state": "Iowa",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.66113,
+              "lon": -91.53017
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Wichita",
+            "state": "Kansas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.69224,
+              "lon": -97.33754
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Witchita",
+            "state": "Kansas",
+            "country": "United States"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Louisville",
+            "state": "Kentucky",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.25424,
+              "lon": -85.75941
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Baton Rouge",
+            "state": "Louisiana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.44332,
+              "lon": -91.18747
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Covington",
+            "state": "Louisiana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.47549,
+              "lon": -90.10042
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Marrero",
+            "state": "Louisiana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.89937,
+              "lon": -90.10035
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Scarborough",
+            "state": "Maine",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.57814,
+              "lon": -70.32172
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Baltimore",
+            "state": "Maryland",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.29038,
+              "lon": -76.61219
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Bel Air",
+            "state": "Maryland",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.53594,
+              "lon": -76.34829
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Columbia",
+            "state": "Maryland",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.24038,
+              "lon": -76.83942
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Towson",
+            "state": "Maryland",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.4015,
+              "lon": -76.60191
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Westminster",
+            "state": "Maryland",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.57538,
+              "lon": -76.99581
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Abington",
+            "state": "Massachusetts",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.10482,
+              "lon": -70.94532
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Haverhill",
+            "state": "Massachusetts",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.7762,
+              "lon": -71.07728
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Natick",
+            "state": "Massachusetts",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.28343,
+              "lon": -71.3495
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Grand Rapids",
+            "state": "Michigan",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.96336,
+              "lon": -85.66809
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.97997,
+              "lon": -93.26384
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Saint Paul",
+            "state": "Minnesota",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.94441,
+              "lon": -93.09327
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "St Louis",
+            "state": "Missouri",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.62727,
+              "lon": -90.19789
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Billings",
+            "state": "Montana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 45.78329,
+              "lon": -108.50069
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Butte",
+            "state": "Montana",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 46.00382,
+              "lon": -112.53474
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Omaha",
+            "state": "Nebraska",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.25626,
+              "lon": -95.94043
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Papillon",
+            "state": "Nebraska",
+            "country": "United States"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Las Vegas",
+            "state": "Nevada",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.17497,
+              "lon": -115.13722
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Concord",
+            "state": "New Hampshire",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.20814,
+              "lon": -71.53757
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Lebanon",
+            "state": "New Hampshire",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.64229,
+              "lon": -72.25176
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Manchester",
+            "state": "New Hampshire",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.99564,
+              "lon": -71.45479
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Elmer",
+            "state": "New Jersey",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.59511,
+              "lon": -75.17018
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Haddon Heights",
+            "state": "New Jersey",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.87734,
+              "lon": -75.06462
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "New Brunswick",
+            "state": "New Jersey",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.48622,
+              "lon": -74.45182
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Garden City",
+            "state": "New York",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.72677,
+              "lon": -73.6343
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "New Hyde Park",
+            "state": "New York",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.7351,
+              "lon": -73.68791
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Rochester",
+            "state": "New York",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.15478,
+              "lon": -77.61556
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Durham",
+            "state": "North Carolina",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.99403,
+              "lon": -78.89862
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Winston-Salem",
+            "state": "North Carolina",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.09986,
+              "lon": -80.24422
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Cincinnati",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.12711,
+              "lon": -84.51439
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Cleveland",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.4995,
+              "lon": -81.69541
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Columbus",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.96118,
+              "lon": -82.99879
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Mansfield",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.75839,
+              "lon": -82.51545
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sandusky",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.44894,
+              "lon": -82.70796
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Toledo",
+            "state": "Ohio",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.66394,
+              "lon": -83.55521
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Portland",
+            "state": "Oregon",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 45.52345,
+              "lon": -122.67621
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Beaver",
+            "state": "Pennsylvania",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.69534,
+              "lon": -80.30478
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.95238,
+              "lon": -75.16362
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Kingsport",
+            "state": "Tennessee",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.54843,
+              "lon": -82.56182
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Nashville",
+            "state": "Tennessee",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.16589,
+              "lon": -86.78444
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Beaumont",
+            "state": "Texas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.08605,
+              "lon": -94.10185
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Dallas",
+            "state": "Texas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.78306,
+              "lon": -96.80667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Houston",
+            "state": "Texas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Plano",
+            "state": "Texas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.01984,
+              "lon": -96.69889
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "San Antonio",
+            "state": "Texas",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.42412,
+              "lon": -98.49363
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.76078,
+              "lon": -111.89105
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Burlington",
+            "state": "Vermont",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.47588,
+              "lon": -73.21207
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Norfolk",
+            "state": "Virginia",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.84681,
+              "lon": -76.28522
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Richmond",
+            "state": "Virginia",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.55376,
+              "lon": -77.46026
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Burien",
+            "state": "Washington",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 47.47038,
+              "lon": -122.34679
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Tacoma",
+            "state": "Washington",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 47.25288,
+              "lon": -122.44429
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Concord",
+            "state": "New South Wales",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -33.84722,
+              "lon": 151.10381
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "East Gosford",
+            "state": "New South Wales",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -33.43874,
+              "lon": 151.35338
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "St Leonards",
+            "state": "New South Wales",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -33.82344,
+              "lon": 151.19836
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Wollongong",
+            "state": "New South Wales",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.424,
+              "lon": 150.89345
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Chermside",
+            "state": "Queensland",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.38472,
+              "lon": 153.03062
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Herston",
+            "state": "Queensland",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.44453,
+              "lon": 153.01852
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Woolloongabba",
+            "state": "Queensland",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.48855,
+              "lon": 153.03655
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Adelaide",
+            "state": "South Australia",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.92866,
+              "lon": 138.59863
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Bedford Park",
+            "state": "South Australia",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -35.02204,
+              "lon": 138.56815
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Woodville",
+            "state": "South Australia",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -34.877,
+              "lon": 138.54291
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Clayton",
+            "state": "Victoria",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.91667,
+              "lon": 145.11667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Fitzroy",
+            "state": "Victoria",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.79839,
+              "lon": 144.97833
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Footscray",
+            "state": "Victoria",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.8,
+              "lon": 144.9
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Heidelberg",
+            "state": "Victoria",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.75,
+              "lon": 145.06667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Prahran",
+            "state": "Victoria",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.85114,
+              "lon": 144.99318
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Fremantle",
+            "state": "Western Australia",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -32.05632,
+              "lon": 115.74557
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Joondalup",
+            "state": "Western Australia",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -31.74445,
+              "lon": 115.76835
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Camperdown",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -33.88965,
+              "lon": 151.17642
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Darlinghurst",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -33.87939,
+              "lon": 151.21925
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Geelong",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -38.14711,
+              "lon": 144.36069
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Launceston, Tas",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -41.43876,
+              "lon": 147.13467
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Melbourne",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -37.814,
+              "lon": 144.96332
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Nedlands",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -31.98184,
+              "lon": 115.8073
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Perth",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -31.95224,
+              "lon": 115.8614
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Southport",
+            "country": "Australia",
+            "geoPoint": {
+              "lat": -27.96724,
+              "lon": 153.39796
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Calgary",
+            "state": "Alberta",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 51.05011,
+              "lon": -114.08529
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Vancouver",
+            "state": "British Columbia",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 49.24966,
+              "lon": -123.11934
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Winnipeg",
+            "state": "Manitoba",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 49.8844,
+              "lon": -97.14704
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Halifax",
+            "state": "Nova Scotia",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 44.64269,
+              "lon": -63.57688
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Cornwall",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.01809,
+              "lon": -74.72815
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Newmarket",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 44.05011,
+              "lon": -79.46631
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Oshawa",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.90012,
+              "lon": -78.84957
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sarnia",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 42.97866,
+              "lon": -82.40407
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Scarborough Village",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.73899,
+              "lon": -79.22124
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Toronto",
+            "state": "Ontario",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 43.70643,
+              "lon": -79.39864
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Laval",
+            "state": "Quebec",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.56995,
+              "lon": -73.692
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Montreal",
+            "state": "Quebec",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.50884,
+              "lon": -73.58781
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sainte-Foy",
+            "state": "Quebec",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 46.78139,
+              "lon": -71.29217
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sherbrooke",
+            "state": "Quebec",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 45.40008,
+              "lon": -71.89908
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Ste-foy",
+            "state": "Quebec",
+            "country": "Canada"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "St. John's",
+            "country": "Canada",
+            "geoPoint": {
+              "lat": 47.56494,
+              "lon": -52.70931
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "'s-Hertogenbosch",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.69917,
+              "lon": 5.30417
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.37403,
+              "lon": 4.88969
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "AN Rotterdam",
+            "country": "Netherlands"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Apeldoorn",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.21,
+              "lon": 5.96944
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Arnhem",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.98,
+              "lon": 5.91111
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Breda",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.58656,
+              "lon": 4.77596
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Cappelle Aan Den IJssel",
+            "country": "Netherlands"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Delft",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.00667,
+              "lon": 4.35556
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Eindhoven",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.44083,
+              "lon": 5.47778
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Goes",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.50417,
+              "lon": 3.88889
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Gouda",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.01667,
+              "lon": 4.70833
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Groningen",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 53.21917,
+              "lon": 6.56667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Heerlen",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 50.88365,
+              "lon": 5.98154
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Hoorn",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.6425,
+              "lon": 5.05972
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Leiden",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.15833,
+              "lon": 4.49306
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Maastricht",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 50.84833,
+              "lon": 5.68889
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Nijmegen",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.8425,
+              "lon": 5.85278
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Rotterdam",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.9225,
+              "lon": 4.47917
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sittard",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 50.99833,
+              "lon": 5.86944
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Utrecht",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.09083,
+              "lon": 5.12222
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Velp",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.995,
+              "lon": 5.97361
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Venlo",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 51.37,
+              "lon": 6.16806
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Zoetermeer",
+            "country": "Netherlands",
+            "geoPoint": {
+              "lat": 52.0575,
+              "lon": 4.49306
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Almería",
+            "state": "Almeria",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 36.83814,
+              "lon": -2.45974
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Barcelona",
+            "state": "Barcelona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.38879,
+              "lon": 2.15899
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Sant Coloma de Gramenet",
+            "state": "Barcelona",
+            "country": "Spain"
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Terrassa",
+            "state": "Barcelona",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.56667,
+              "lon": 2.01667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Jerez de la Frontera",
+            "state": "Cadiz",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 36.68645,
+              "lon": -6.13606
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Santander",
+            "state": "Cantabria",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 43.46589,
+              "lon": -3.80493
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Ciudad Real",
+            "state": "Ciudad Real",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 38.98626,
+              "lon": -3.92907
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Granada",
+            "state": "Granada",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 37.18817,
+              "lon": -3.60667
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Donostia / San Sebastian",
+            "state": "Guipuzcoa",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 43.31283,
+              "lon": -1.97499
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Ferrol",
+            "state": "La Coruna",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 43.48451,
+              "lon": -8.23293
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Santiago de Compostela",
+            "state": "La Coruña",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 42.88052,
+              "lon": -8.54569
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Madrid",
+            "state": "Madrid",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 40.4165,
+              "lon": -3.70256
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Málaga",
+            "state": "Malaga",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 36.72016,
+              "lon": -4.42034
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Seville",
+            "state": "Sevilla",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 37.38283,
+              "lon": -5.97317
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Valencia",
+            "state": "Valencia",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 39.47391,
+              "lon": -0.37966
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Zaragoza",
+            "state": "Zaragoza",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 41.65606,
+              "lon": -0.87734
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Madrid",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 40.4165,
+              "lon": -3.70256
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Salamanca",
+            "country": "Spain",
+            "geoPoint": {
+              "lat": 40.42972,
+              "lon": -3.67975
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Borås",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 57.72101,
+              "lon": 12.9401
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Eskilstuna",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 59.36661,
+              "lon": 16.5077
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Gothenburg",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 57.70716,
+              "lon": 11.96679
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Hässleholm",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 56.15905,
+              "lon": 13.76638
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Helsingborg",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 56.04673,
+              "lon": 12.69437
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Karlshamn",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 56.1706,
+              "lon": 14.86188
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Köping",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 59.51404,
+              "lon": 15.99255
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Linköping",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 58.41086,
+              "lon": 15.62157
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Luleå",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 65.58415,
+              "lon": 22.15465
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Lund",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 55.70584,
+              "lon": 13.19321
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Malmö",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 55.60587,
+              "lon": 13.00073
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Mölndal",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 57.6554,
+              "lon": 12.01378
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Norrköping",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 58.59419,
+              "lon": 16.1826
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Östersund",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 63.1792,
+              "lon": 14.63566
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Skellefteå",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 64.75067,
+              "lon": 20.95279
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Stockholm",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 59.32938,
+              "lon": 18.06871
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Uddevalla",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 58.34784,
+              "lon": 11.9424
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Uppsala",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 59.85882,
+              "lon": 17.63889
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Vaxjo",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 56.87767,
+              "lon": 14.80906
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Västervik",
+            "country": "Sweden",
+            "geoPoint": {
+              "lat": 57.7584,
+              "lon": 16.63733
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Wrexham",
+            "state": "Clwyd",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.04664,
+              "lon": -2.99132
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Woolwich",
+            "state": "London",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.491,
+              "lon": 0.0648
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Glasgow",
+            "state": "Scotland",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 55.86515,
+              "lon": -4.25763
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Aberdeen",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 57.14369,
+              "lon": -2.09814
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Bath",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.3751,
+              "lon": -2.36172
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Birmingham",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.48142,
+              "lon": -1.89983
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Bournemouth",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.72048,
+              "lon": -1.8795
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Brighton, East Sussex",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.82838,
+              "lon": -0.13947
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Bristol",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.45523,
+              "lon": -2.59665
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Cardiff",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.48,
+              "lon": -3.18
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Chichester",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.83673,
+              "lon": -0.78003
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Coventry",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.40656,
+              "lon": -1.51217
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Dundee",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 56.46913,
+              "lon": -2.97489
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Edinburgh",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 55.95206,
+              "lon": -3.19648
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Exeter",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 50.7236,
+              "lon": -3.52751
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Glasgow",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 55.86515,
+              "lon": -4.25763
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Harrow",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.57835,
+              "lon": -0.33208
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Leicester",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.6386,
+              "lon": -1.13169
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Liverpool",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 53.41058,
+              "lon": -2.97794
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "London",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.50853,
+              "lon": -0.12574
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Newcastle upon Tyne",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 54.97328,
+              "lon": -1.61396
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Romford",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 51.57515,
+              "lon": 0.18582
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Shrewsbury",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.71009,
+              "lon": -2.75208
+            }
+          },
+          {
+            "facility": "Pfizer Investigational Site",
+            "city": "Warwick",
+            "country": "United Kingdom",
+            "geoPoint": {
+              "lat": 52.28333,
+              "lon": -1.58333
+            }
+          }
+        ]
+      },
+      "referencesModule": {
+        "references": [
+          {
+            "pmid": "29103916",
+            "type": "DERIVED",
+            "citation": "Arsenault BJ, Petrides F, Tabet F, Bao W, Hovingh GK, Boekholdt SM, Ramin-Mangata S, Meilhac O, DeMicco D, Rye KA, Waters DD, Kastelein JJP, Barter P, Lambert G. Effect of atorvastatin, cholesterol ester transfer protein inhibition, and diabetes mellitus on circulating proprotein subtilisin kexin type 9 and lipoprotein(a) levels in patients at high cardiovascular risk. J Clin Lipidol. 2018 Jan-Feb;12(1):130-136. doi: 10.1016/j.jacl.2017.10.001. Epub 2017 Oct 12."
+          },
+          {
+            "pmid": "28974520",
+            "type": "DERIVED",
+            "citation": "Williams SA, Murthy AC, DeLisle RK, Hyde C, Malarstig A, Ostroff R, Weiss SJ, Segal MR, Ganz P. Improving Assessment of Drug Safety Through Proteomics: Early Detection and Mechanistic Characterization of the Unforeseen Harmful Effects of Torcetrapib. Circulation. 2018 Mar 6;137(10):999-1010. doi: 10.1161/CIRCULATIONAHA.117.028213. Epub 2017 Oct 3."
+          },
+          {
+            "pmid": "28431663",
+            "type": "DERIVED",
+            "citation": "Bagdade J, Barter P, Quiroga C, Alaupovic P. Effects of Torcetrapib and Statin Treatment on ApoC-III and Apoprotein-Defined Lipoprotein Subclasses (from the ILLUMINATE Trial). Am J Cardiol. 2017 Jun 1;119(11):1753-1756. doi: 10.1016/j.amjcard.2017.02.049. Epub 2017 Mar 18."
+          },
+          {
+            "pmid": "21804130",
+            "type": "DERIVED",
+            "citation": "Barter PJ, Rye KA, Tardif JC, Waters DD, Boekholdt SM, Breazna A, Kastelein JJ. Effect of torcetrapib on glucose, insulin, and hemoglobin A1c in subjects in the Investigation of Lipid Level Management to Understand its Impact in Atherosclerotic Events (ILLUMINATE) trial. Circulation. 2011 Aug 2;124(5):555-62. doi: 10.1161/CIRCULATIONAHA.111.018259. Epub 2011 Jul 18."
+          },
+          {
+            "pmid": "20645885",
+            "type": "DERIVED",
+            "citation": "Dogan S, Duivenvoorden R, Grobbee DE, Kastelein JJ, Shear CL, Evans GW, Visseren FL, Bots ML; Radiance 1 and Radiance 2 Study Groups. Ultrasound protocols to measure carotid intima-media thickness in trials; comparison of reproducibility, rate of progression, and effect of intervention in subjects with familial hypercholesterolemia and subjects with mixed dyslipidemia. Ann Med. 2010 Sep;42(6):447-64. doi: 10.3109/07853890.2010.499132."
+          },
+          {
+            "pmid": "20228610",
+            "type": "DERIVED",
+            "citation": "Dogan S, Duivenvoorden R, Grobbee DE, Kastelein JJ, Shear CL, Evans GW, Visseren FL, Bots ML; Radiance 1 and 2 Study Groups. Completeness of carotid intima media thickness measurements depends on body composition: the RADIANCE 1 and 2 trials. J Atheroscler Thromb. 2010 May;17(5):526-35. doi: 10.5551/jat.3269. Epub 2010 Mar 13."
+          },
+          {
+            "pmid": "19029469",
+            "type": "DERIVED",
+            "citation": "Vergeer M, Bots ML, van Leuven SI, Basart DC, Sijbrands EJ, Evans GW, Grobbee DE, Visseren FL, Stalenhoef AF, Stroes ES, Kastelein JJ. Cholesteryl ester transfer protein inhibitor torcetrapib and off-target toxicity: a pooled analysis of the rating atherosclerotic disease change by imaging with a new CETP inhibitor (RADIANCE) trials. Circulation. 2008 Dec 9;118(24):2515-22. doi: 10.1161/CIRCULATIONAHA.108.772665. Epub 2008 Nov 24."
+          },
+          {
+            "pmid": "17984165",
+            "type": "DERIVED",
+            "citation": "Barter PJ, Caulfield M, Eriksson M, Grundy SM, Kastelein JJ, Komajda M, Lopez-Sendon J, Mosca L, Tardif JC, Waters DD, Shear CL, Revkin JH, Buhr KA, Fisher MR, Tall AR, Brewer B; ILLUMINATE Investigators. Effects of torcetrapib in patients at high risk for coronary events. N Engl J Med. 2007 Nov 22;357(21):2109-22. doi: 10.1056/NEJMoa0706628. Epub 2007 Nov 5."
+          }
+        ],
+        "seeAlsoLinks": [
+          {
+            "label": "To obtain contact information for a study center near you, click here.",
+            "url": "https://trialinfoemail.pfizer.com/pages/landing.aspx?StudyID=A5091043&StudyName=A+Study+Examining+Torcetrapib%2FAtorvastatin+And+Atorvastatin+Effects+On+Clinical+CV+Events+In+Patients+With+Heart+Disease"
+          }
+        ]
+      }
+    },
+    "derivedSection": {
+      "miscInfoModule": {
+        "versionHolder": "2026-09-11"
+      },
+      "conditionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D003327",
+            "term": "Coronary Disease"
+          },
+          {
+            "id": "D003920",
+            "term": "Diabetes Mellitus"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D017202",
+            "term": "Myocardial Ischemia"
+          },
+          {
+            "id": "D006331",
+            "term": "Heart Diseases"
+          },
+          {
+            "id": "D002318",
+            "term": "Cardiovascular Diseases"
+          },
+          {
+            "id": "D014652",
+            "term": "Vascular Diseases"
+          },
+          {
+            "id": "D044882",
+            "term": "Glucose Metabolism Disorders"
+          },
+          {
+            "id": "D008659",
+            "term": "Metabolic Diseases"
+          },
+          {
+            "id": "D009750",
+            "term": "Nutritional and Metabolic Diseases"
+          },
+          {
+            "id": "D004700",
+            "term": "Endocrine System Diseases"
+          }
+        ]
+      },
+      "interventionBrowseModule": {
+        "meshes": [
+          {
+            "id": "C483909",
+            "term": "torcetrapib"
+          },
+          {
+            "id": "D000069059",
+            "term": "Atorvastatin"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D011758",
+            "term": "Pyrroles"
+          },
+          {
+            "id": "D001393",
+            "term": "Azoles"
+          },
+          {
+            "id": "D006573",
+            "term": "Heterocyclic Compounds, 1-Ring"
+          },
+          {
+            "id": "D006571",
+            "term": "Heterocyclic Compounds"
+          },
+          {
+            "id": "D006538",
+            "term": "Heptanoic Acids"
+          },
+          {
+            "id": "D005227",
+            "term": "Fatty Acids"
+          },
+          {
+            "id": "D008055",
+            "term": "Lipids"
+          }
+        ]
+      }
+    },
+    "hasResults": false
+  }
+}

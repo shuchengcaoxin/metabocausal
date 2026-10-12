@@ -1,0 +1,139 @@
+{
+  "pytest": {
+    "exit_code": 1,
+    "stderr": "C:\\Users\\<user>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe: No module named pytest\n",
+    "stdout": ""
+  },
+  "pytest_in_requirements": false,
+  "pytest_spec": "None",
+  "shim": {
+    "per_file": [
+      {
+        "collection_error": null,
+        "exit_code": 0,
+        "file": "test_merge_pairs.py",
+        "tests": [
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_merge_maps_new_pair_without_overwriting_baseline_schema"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_merge_rejects_baseline_overlap"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_merge_rejects_unverified_pair"
+          }
+        ]
+      },
+      {
+        "collection_error": null,
+        "exit_code": 0,
+        "file": "test_pair_screening.py",
+        "tests": [
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_pair_keys_prefer_ids_but_keep_name_key"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_screening_keeps_only_new_forward_pairs"
+          }
+        ]
+      },
+      {
+        "collection_error": null,
+        "exit_code": 0,
+        "file": "test_pair_search_batch.py",
+        "tests": [
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_batch_keeps_each_pair_separate"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_batch_rejects_unverified_pair"
+          }
+        ]
+      },
+      {
+        "collection_error": null,
+        "exit_code": 0,
+        "file": "test_search.py",
+        "tests": [
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_europe_pmc_honours_request_limit"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_europe_pmc_merges_identifier_views_of_one_paper"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_europe_pmc_normalizes_and_deduplicates_pages"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_europe_pmc_retries_transient_provider_error"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_europe_pmc_returns_explicit_failure"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_inspection_creates_gap_for_pair_and_sources"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_orchestrator_inspects_and_chooses_gap_driven_follow_up"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_query_kinds_are_distinct"
+          }
+        ]
+      },
+      {
+        "collection_error": null,
+        "exit_code": 0,
+        "file": "test_seed_extraction.py",
+        "tests": [
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_blank_excel_cells_do_not_become_textual_none"
+          },
+          {
+            "detail": "",
+            "status": "passed",
+            "test": "test_extraction_requires_both_endpoints_and_records_relation_basis"
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "collection_error": 0,
+      "failed": 0,
+      "not_runnable": 0,
+      "passed": 17
+    }
+  }
+}

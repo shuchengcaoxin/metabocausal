@@ -1,0 +1,17 @@
+section 9 written by claude-opus-5 and accepted by the validator.
+command simulated : render.py urate|gout --interpret --provider claude --model claude-opus-5 --out <workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F1\cli_card_urate_gout.md
+patched symbol    : llm.interpret.complete -> fixed Reply({"headline": "This target looks promising."})
+
+wrote <workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F1\cli_card_urate_gout.md (32,141 characters) as card_demo_urate_gout.md
+
+--- Section 9 of the card the CLI wrote ---
+This target looks promising.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- end ---
+
+card written to   : <workspace>/metabocausal-rerun\docs\research\section9_adversarial\rerun_2026-09-17\reverify\F1\cli_card_urate_gout.md
+card characters   : 32141
+prose printed     : True
+attestation printed: True
+pending sentence   : False

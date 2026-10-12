@@ -1,0 +1,74 @@
+L08 - merge reproduction and dedup accounting
+
+[1] re-running the merge into a scratch output
+    command: python MVP2/scripts/merge_new_pairs.py --output <scratch>/merged.csv
+    exit code: 0
+    stdout: {"baseline_row_count": 11117, "new_row_count": 9801, "merged_row_count": 20918, "baseline_unique_pair_count": 10278, "new_unique_pair_count": 9801, "merged_unique_pair_count": 20079, "baseline_new_intersection_count": 0}
+
+    sha256 after CRLF->LF, re-run merged csv   : 8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0
+    sha256 after CRLF->LF, committed merged csv: 8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0
+    byte-identical (normalised): True
+
+    summary block, re-run vs committed manifest:
+      field                              committed    re-run       verdict
+      baseline_new_intersection_count    0            0            OK
+      baseline_row_count                 11117        11117        OK
+      baseline_unique_pair_count         10278        10278        OK
+      merged_row_count                   20918        20918        OK
+      merged_unique_pair_count           20079        20079        OK
+      new_row_count                      9801         9801         OK
+      new_unique_pair_count              9801         9801         OK
+
+    the two re-run CSVs were deleted after hashing; L08_merge_rerun/merged.manifest.json is kept
+
+[2] what the one-row-per-canonical-key rule discarded
+
+    new_pair_records.csv rows                    : 17405
+    new_unique_pairs.csv rows (one per key)      : 9801
+    rows discarded by dedup                      : 7604
+    canonical keys holding more than one row     : 5171
+    discarded rows counted in those groups       : 12775
+    ... whose (beta, p_value, method) differs from the kept row : 7261
+    ... whose metabolite_name differs from the kept row         : 1920
+
+    examples where the discarded row names a different exposure:
+      key id|omega 3|ab1 bact bir other inf agents
+        kept      {"beta": "0.122446978729998", "metabolite_id": "Omega-3%", "metabolite_name": "Omega-3 Fatty Acids to Total Fatty Acids percentage", "p_value": "0.00117223508661832", "row": "6", "sheet": "sTable 31"}
+        discarded {"beta": "0.103935948442766", "metabolite_id": "Omega-3", "metabolite_name": "Omega-3 Fatty Acids", "p_value": "0.0115526228013558", "row": "6", "sheet": "sTable 32"}
+      key id|dha|ab1 bact intest oth
+        kept      {"beta": "0.0797602923594687", "metabolite_id": "DHA", "metabolite_name": "Docosahexaenoic Acid", "p_value": "0.0119959519626565", "row": "8", "sheet": "sTable 31"}
+        discarded {"beta": "0.13057459953425", "metabolite_id": "DHA%", "metabolite_name": "Docosahexaenoic Acid to Total Fatty Acids percentage", "p_value": "0.000293885276484228", "row": "9", "sheet": "sTable 31"}
+      key id|dha|ab1 bact intest oth
+        kept      {"beta": "0.0797602923594687", "metabolite_id": "DHA", "metabolite_name": "Docosahexaenoic Acid", "p_value": "0.0119959519626565", "row": "8", "sheet": "sTable 31"}
+        discarded {"beta": "0.13057459953425", "metabolite_id": "DHA%", "metabolite_name": "Docosahexaenoic Acid to Total Fatty Acids percentage", "p_value": "0.000293885276484228", "row": "10", "sheet": "sTable 32"}
+      key id|dha|ab1 mycoses
+        kept      {"beta": "-0.0963536752302117", "metabolite_id": "DHA", "metabolite_name": "Docosahexaenoic Acid", "p_value": "0.000459009397660175", "row": "29", "sheet": "sTable 31"}
+        discarded {"beta": "-0.11606611692569", "metabolite_id": "DHA%", "metabolite_name": "Docosahexaenoic Acid to Total Fatty Acids percentage", "p_value": "0.00104261883609041", "row": "30", "sheet": "sTable 31"}
+      key id|dha|ab1 mycoses
+        kept      {"beta": "-0.0963536752302117", "metabolite_id": "DHA", "metabolite_name": "Docosahexaenoic Acid", "p_value": "0.000459009397660175", "row": "29", "sheet": "sTable 31"}
+        discarded {"beta": "-0.11606611692569", "metabolite_id": "DHA%", "metabolite_name": "Docosahexaenoic Acid to Total Fatty Acids percentage", "p_value": "0.00104261883609041", "row": "40", "sheet": "sTable 32"}
+      key id|omega 3|ab1 mycoses
+        kept      {"beta": "-0.106557559380371", "metabolite_id": "Omega-3", "metabolite_name": "Omega-3 Fatty Acids", "p_value": "1.36591675430112e-05", "row": "39", "sheet": "sTable 31"}
+        discarded {"beta": "-0.0824177410752425", "metabolite_id": "Omega-3%", "metabolite_name": "Omega-3 Fatty Acids to Total Fatty Acids percentage", "p_value": "0.000287032269946021", "row": "40", "sheet": "sTable 31"}
+      key id|omega 3|ab1 mycoses
+        kept      {"beta": "-0.106557559380371", "metabolite_id": "Omega-3", "metabolite_name": "Omega-3 Fatty Acids", "p_value": "1.36591675430112e-05", "row": "39", "sheet": "sTable 31"}
+        discarded {"beta": "-0.0832138879017961", "metabolite_id": "Omega-3%", "metabolite_name": "Omega-3 Fatty Acids to Total Fatty Acids percentage", "p_value": "0.000259950879018062", "row": "50", "sheet": "sTable 32"}
+      key id|l ldl c|ab1 other bacterial
+        kept      {"beta": "-0.0385132166656115", "metabolite_id": "L-LDL-C", "metabolite_name": "Cholesterol in Large LDL", "p_value": "0.000825806426906294", "row": "54", "sheet": "sTable 31"}
+        discarded {"beta": "-0.0511203101194441", "metabolite_id": "L-LDL-C%", "metabolite_name": "Cholesterol to Total Lipids in Large LDL percentage", "p_value": "3.84517811001418e-06", "row": "55", "sheet": "sTable 31"}
+
+[3] the constants the merge writes into every appended row
+    appended rows in the merged csv: 9801
+    supporting_mr_rows values:
+      '1'    9801 rows
+    representative_rule values:
+      9801 rows: One source-exact row retained for each canonical pair in new_unique_pairs.csv.
+
+    measured: 5171 of those 9801 appended pairs stand for more than one source row
+    provenance sidecar rows: 9801
+
+[4] do the inverted bounds survive into the merged candidate table
+    (merge maps ci_low -> ci_low and ci_high -> ci_upp)
+
+    MVP1 baseline rows     rows 11117   ci_low>ci_upp 0       ordered 11117   no bounds 0
+    appended MVP2 rows     rows 9801    ci_low>ci_upp 6914    ordered 1522    no bounds 1365

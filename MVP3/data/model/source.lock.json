@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source": "Human-GEM",
+  "repository": "https://github.com/SysBioChalmers/Human-GEM",
+  "version": "2.0.0",
+  "tag": "v2.0.0",
+  "commit": "635f533152dc5f7290ce04d12700eaa882273c3e",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "files": {
+    "Human-GEM.yml": {"path": "model/Human-GEM.yml", "sha256": "01a8ea826bdaa36511b9eed28eedcb5e73690333860856c682387c6380dd3fc6"},
+    "metabolites.tsv": {"path": "model/metabolites.tsv", "sha256": "9d58bb3a9cd217c47dc0d54ea9517b0a23e0603bbb60d5428551e0449af1eab3"},
+    "genes.tsv": {"path": "model/genes.tsv", "sha256": "2a6058a157b3b9f3c958ba753e71d7a702d2716742972741d2ef36535ae9dff6"},
+    "reactions.tsv": {"path": "model/reactions.tsv", "sha256": "1436dd90e959714366270a9904fd6a5108044a2f7f1d7f8360bf7a195fc9e28f"},
+    "LICENSE.md": {"path": "LICENSE.md", "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c"},
+    "README.md": {"path": "README.md", "sha256": "a9918dedb17984a9ba80ec27e588af9dd300fbfb8c066917421df9d97571d1c1"},
+    "version.txt": {"path": "version.txt", "sha256": "f22abd6773ab232869321ad4b1e47ac0c908febf4f3a2bd10c8066140f741261"}
+  }
+}

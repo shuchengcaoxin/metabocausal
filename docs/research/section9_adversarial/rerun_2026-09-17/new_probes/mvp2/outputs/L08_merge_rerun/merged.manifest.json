@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-17T04:45:51.702401+00:00",
+  "inputs": {
+    "baseline": {
+      "path": "archive\\project_files\\release-evidence_2026-09-11\\metabocausal-public\\data\\metabolite_disease.csv",
+      "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d"
+    },
+    "new_pairs": {
+      "path": "MVP2\\data\\extracted\\screened_20260912\\new_unique_pairs.csv",
+      "sha256": "5e7411e6b8cc497884e32249ccb494e723cebfd4f46af3e5e3c0dc200b8dd19b"
+    }
+  },
+  "outputs": {
+    "merged_csv": {
+      "path": "<workspace>\\40_\u9ed1\u5ba2\u677e_AI_Tinkerers_2026\\metabocausal-rerun\\docs\\research\\section9_adversarial\\rerun_2026-09-17\\new_probes\\mvp2\\outputs\\L08_merge_rerun\\merged.csv",
+      "sha256": "8e7184f8f7da4a876eaf800a32f76451e6193b31d709f0d73836cc83871f23d0"
+    },
+    "provenance_csv": {
+      "path": "<workspace>\\40_\u9ed1\u5ba2\u677e_AI_Tinkerers_2026\\metabocausal-rerun\\docs\\research\\section9_adversarial\\rerun_2026-09-17\\new_probes\\mvp2\\outputs\\L08_merge_rerun\\merged.provenance.csv",
+      "sha256": "b77338c8a30cfa19968a80c15fb2fb13f3832145a5b31c582becacb11dba332c"
+    },
+    "reference_original_merged_csv": null
+  },
+  "summary": {
+    "baseline_row_count": 11117,
+    "new_row_count": 9801,
+    "merged_row_count": 20918,
+    "baseline_unique_pair_count": 10278,
+    "new_unique_pair_count": 9801,
+    "merged_unique_pair_count": 20079,
+    "baseline_new_intersection_count": 0
+  },
+  "rules": [
+    "The MVP1 baseline is not modified.",
+    "The merged CSV uses exactly the baseline column names and order.",
+    "Source-only fields are stored in the provenance sidecar and joined by merged_row_number.",
+    "Every appended row must be source-verified, forward metabolite-to-disease, unique within the new file, and absent from the baseline.",
+    "Paper metabolite IDs remain source_metabolite_id and are not asserted to be ChEBI IDs.",
+    "Appended rows remain published_literature_mr_candidate until scientific validation accepts them."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "by_state": {
+    "A": {
+      "disclosing": 0,
+      "n": 1
+    },
+    "B": {
+      "disclosing": 0,
+      "n": 1
+    },
+    "C": {
+      "disclosing": 1,
+      "n": 1
+    }
+  },
+  "rows": [
+    {
+      "card_chars": 19005,
+      "card_file": "L02_cards/glycine_coronary_artery_disease.md",
+      "discloses_mvp2_absence": false,
+      "pair": "glycine|coronary artery disease",
+      "soft_token_present": {
+        "MVP2": false,
+        "literature": true
+      },
+      "state": "B"
+    },
+    {
+      "card_chars": 14722,
+      "card_file": "L02_cards/trimethylamine_N-oxide_coronary_artery_disease.md",
+      "discloses_mvp2_absence": true,
+      "pair": "trimethylamine N-oxide|coronary artery disease",
+      "soft_token_present": {
+        "MVP2": true,
+        "literature": true
+      },
+      "state": "C"
+    },
+    {
+      "card_chars": 32019,
+      "card_file": "L02_cards/urate_gout.md",
+      "discloses_mvp2_absence": false,
+      "pair": "urate|gout",
+      "soft_token_present": {
+        "MVP2": false,
+        "literature": false
+      },
+      "state": "A"
+    }
+  ]
+}

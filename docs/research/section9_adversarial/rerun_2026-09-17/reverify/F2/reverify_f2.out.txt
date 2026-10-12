@@ -1,0 +1,164 @@
+Re-verification of F2 (numeric membership unbound to field/role)
+  repo root      : <workspace>/metabocausal-rerun
+  git HEAD       : b05639721b07345612bba4ebf66f989805b9703c
+  git branch     : rerun/section9-adversarial-20260916
+  python         : 3.12.10
+  validate_card.py sha256 : a756ab148ce5b7448431551dd262717c0c162a93d54b4449ca9b9d44b6ce3ef3
+  render.py sha256        : 68c5f17e46ed57adf55c493f9d567b876e6a390631725e174371f1e7d8ea131f
+  MIN_ROUNDING_DIGITS     : 3
+  fixture pairs  : ['glycine|coronary artery disease', 'trimethylamine N-oxide|coronary artery disease', 'urate|gout']
+==============================================================================
+PART 1 - probe cases T01/T02/T03 replayed on current HEAD
+==============================================================================
+
+--- T01  (identifier digits reused as effect size) ---
+  pair     : urate|gout
+  state    : A
+  fields   : {'headline': 'The effect size is 17775.'}
+  provenance of 17775 in the run:
+    digits in string run.metabolite.id = 'CHEBI:17775'
+  17775 in source_index(run).numbers : True
+  traceable_number('17775', index.numbers) : True
+  validate(fields, run) -> []
+  renderer outcome (harness object) : printed
+  Section 9 emitted:
+    | The effect size is 17775.
+    | 
+    | Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+  identical to his committed t01.md : True
+
+--- T02  (year reused as effect size) ---
+  pair     : trimethylamine N-oxide|coronary artery disease
+  state    : C
+  fields   : {'headline': 'The effect size is 2026.'}
+  provenance of 2026 in the run:
+    digits in string run.envelopes.mr.retrieved_at = '2026-09-10T18:15:43'
+    digits in string run.envelopes.instruments.retrieved_at = '2026-09-10T18:15:43'
+    digits in string run.envelopes.instruments.caveats[1] = 'Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().'
+    digits in string run.envelopes.outcomes.retrieved_at = '2026-09-10T18:15:43'
+    digits in string run.envelopes.outcomes.caveats[1] = 'Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-09-10). No index request is sent per call; refresh it with tools._traits.build_opengwas_vocabulary().'
+    digits in string run.envelopes.catalog.retrieved_at = '2026-09-10T18:15:42'
+    ... (truncated)
+  2026 in source_index(run).numbers : True
+  traceable_number('2026', index.numbers) : True
+  validate(fields, run) -> []
+  renderer outcome (harness object) : printed
+  Section 9 emitted:
+    | The effect size is 2026.
+    | 
+    | Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+  identical to his committed t02.md : True
+
+--- T03  (list length reused as effect size) ---
+  pair     : trimethylamine N-oxide|coronary artery disease
+  state    : C
+  fields   : {'headline': 'The effect size is 4.'}
+  provenance of 4 in the run:
+    digits in string run.envelopes.outcomes.data.datasets[2].consortium = 'CARDIoGRAMplusC4D'
+    digits in string run.envelopes.catalog.caveats[2] = 'The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 113 s for 3.0 MB / 1,420 rows and urate measurement 364 s for 10.4 MB / 4,588 rows, dribbled out in small chunks so an ordinary read timeout never fires. This call therefore aborts at a 120 s wall-clock deadline with an error envelope rather than hanging the pipeline. A deadline hit is a limit of the resource, NEVER evidence that the trait has no associations.'
+    list length      len(run.envelopes.instruments.caveats) = 4
+  4 in source_index(run).numbers : True
+  traceable_number('4', index.numbers) : True
+  validate(fields, run) -> []
+  renderer outcome (harness object) : printed
+  Section 9 emitted:
+    | The effect size is 4.
+    | 
+    | Written by OFFLINE-HARNESS from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+  identical to his committed t03.md : True
+
+==============================================================================
+PART 2 - same three claims through the real model path (parse_fields -> gate one -> renderer gate two)
+==============================================================================
+
+--- T01 via llm.interpret() ---
+  interpret().accepted : True
+  interpret().fields   : {'headline': 'The effect size is 17775.'}
+  gate-one findings    : []
+  renderer outcome     : printed
+  Section 9 emitted:
+    | The effect size is 17775.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+--- T02 via llm.interpret() ---
+  interpret().accepted : True
+  interpret().fields   : {'headline': 'The effect size is 2026.'}
+  gate-one findings    : []
+  renderer outcome     : printed
+  Section 9 emitted:
+    | The effect size is 2026.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+--- T03 via llm.interpret() ---
+  interpret().accepted : True
+  interpret().fields   : {'headline': 'The effect size is 4.'}
+  gate-one findings    : []
+  renderer outcome     : printed
+  Section 9 emitted:
+    | The effect size is 4.
+    | 
+    | Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+
+==============================================================================
+PART 3 - inline reproductions from ai_runs/02_numeric_attacks.md
+==============================================================================
+
+#1 identifier digits leak into numeric evidence
+  run={'id': 'NCT12345678'}
+    text='There were 12345678 participants.'
+    source_index(run).numbers = [12345678.0]
+    validate(...) = []
+  run={'id': 'MONDO:0005393'}
+    text='The effect size is 5393.'
+    source_index(run).numbers = [5393.0]
+    validate(...) = []
+  run={'id': 'rs123456'}
+    text='The effect size is 123456.'
+    source_index(run).numbers = [123456.0]
+    validate(...) = []
+  run={'id': 'ieu-a-789'}
+    text='The effect size is -789.'
+    source_index(run).numbers = [-789.0]
+    validate(...) = []
+
+#2 unrelated source values are accepted by the schema-free index
+  run={'notes': ['not returned: rs999999']}
+    text='Variant rs999999 was associated.'
+    validate(...) = []
+  run={'notes': ['retrieved_at 2026-09-16']}
+    text='The effect size is 2026.'
+    validate(...) = []
+
+#10 list-length behaviour
+  run={'rows': []}
+    text='There were 0 participants.'
+    source_index(run).numbers = [0.0]
+    validate(...) = []
+  run={'x': [[1, 2], [3]]}
+    text='There were 2 groups and 1 row.'
+    source_index(run).numbers = [1.0, 2.0, 3.0]
+    validate(...) = []
+  run={'values': [True]}
+    text='The effect size is 1.'
+    source_index(run).numbers = [1.0]
+    validate(...) = []
+
+  control: bool scalars are excluded
+    source_index({'value': True}).numbers = set()
+    validate({'reading': '1'}, {'value': True}) = ["V1 [reading]: '1' does not appear in this run's retrieved values."]
+
+==============================================================================
+PART 4 - negative control (an untraceable number must still be blocked)
+==============================================================================
+
+  fields={'headline': 'The effect size is 17776.'}
+    validate(...) = ["V1 [headline]: '17776.' does not appear in this run's retrieved values."]
+    renderer outcome = blocked
+
+  fields={'headline': 'The effect size is 90210.'}
+    validate(...) = ["V1 [headline]: '90210.' does not appear in this run's retrieved values."]
+    renderer outcome = blocked
+
+done

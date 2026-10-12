@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "run_id": "20260918T063126Z",
+  "run_id_note": "run_id is when these files were last written. The directory name records the screening these tables belong to; re-running the same extractor over the same seed workbooks and the same baseline rewrites the files without making it a different screening.",
+  "baseline": {
+    "path": "archive/project_files/release-evidence_2026-09-11/metabocausal-public/data/metabolite_disease.csv",
+    "sha256": "af2a44acb895868743e61c28ea6621b971b1bb4bccf4096b00125bd3ad585b3d",
+    "bytes": "as-committed"
+  },
+  "candidate_sources": [
+    "Chen 2023 ST18-ST20 forward and ST23 reverse",
+    "Yin 2025 Supplementary Data 2 forward",
+    "Zoodsma 2025 ST14 forward",
+    "UKB Mapping 2025 sTables 31-34 forward and 35 reverse",
+    "Shin 2014: no metabolite-disease MR table extracted"
+  ],
+  "outputs": {
+    "candidate_pairs": "candidate_pairs.csv",
+    "new_pair_records": "new_pair_records.csv",
+    "new_unique_pairs": "new_unique_pairs.csv",
+    "screening_ledger": "screening_ledger.csv"
+  },
+  "summary": {
+    "baseline_pair_key_count": 10278,
+    "candidate_row_count": 20460,
+    "new_pair_record_count": 17405,
+    "new_pair_key_count": 10804,
+    "already_present_count": 304,
+    "excluded_direction_count": 2751,
+    "unresolved_identity_count": 0
+  },
+  "bound_order": {
+    "rule": "A row is reordered only when its two extracted 95% bounds are both numeric and ci_low > ci_high, which no confidence interval can satisfy. Rows already in ascending order, rows with equal bounds and rows with a blank or non-numeric bound are written exactly as they were read.",
+    "reordered_candidate_rows": 16944,
+    "reordered_new_pair_rows": 14509,
+    "reordered_unique_pair_rows": 7912,
+    "as_printed_columns": [
+      "ci_low_as_printed",
+      "ci_high_as_printed"
+    ],
+    "as_printed_note": "Populated only on a reordered row, where they hold that row's bounds exactly as the source prints them; blank on every row that was not reordered.",
+    "remaining_ci_low_greater_than_ci_high": 0
+  },
+  "extraction_rule": "Keep a row only when the Excel row itself contains both a non-empty metabolite/exposure value and a non-empty disease/outcome value. Blank, footer, header, and placeholder cells are excluded; no pair is inferred from a paper title or from separate rows.",
+  "caveats": [
+    "This is source extraction plus an anti-join, not scientific validation or acceptance of MR evidence.",
+    "Reverse and unresolved rows remain in the ledger but are excluded from new_pair_records.csv.",
+    "Phenotype terminology is preserved as printed in the source; disease/outcome interpretation remains a screening decision.",
+    "498 extracted UKB row(s) carry a shifted source layout. single-SNP Wald-ratio row: the printed 'Beta, Odds ratio, 95% UCI, 95% LCI, p value' header does not hold for this row. The odds ratio is one column right of the header, so the p value was read from column 10 and the 95% bounds, which are on the beta scale here, are carried in ci_low_beta_scale/ci_high_beta_scale rather than in ci_low/ci_high, which hold odds-ratio-scale bounds on every other row.",
+    "16944 extracted row(s) had their two 95% bounds reordered into numeric order. UKB rows: the printed header names column 11 '95% UCI' and column 12 '95% LCI', and the values are the other way round - column 11 holds the lower bound. Reading them under the header's own names yields ci_low > ci_high, which is impossible for a confidence interval. ci_low/ci_high therefore hold the two source numbers in numeric order, every reordered row says so in extraction_note, and the as-printed values are preserved in ci_low_as_printed/ci_high_as_printed. No bound was recomputed and no row whose bounds already ascend was touched.",
+    "Pair identity keeps '%': a ratio exposure such as 'Omega-3%' and the absolute exposure 'Omega-3' are two different exposures and are two different pairs."
+  ]
+}

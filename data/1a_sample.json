@@ -1,0 +1,272 @@
+{
+  "glycine|coronary artery disease": {
+    "metabolite": {
+      "input": "glycine",
+      "label": "glycine",
+      "chebi": "CHEBI:15428",
+      "pubchem_cid": 750,
+      "synonyms": [
+        "glycine",
+        "Aminoacetic acid",
+        "Aminoessigsaeure",
+        "G",
+        "Gly",
+        "Glycin",
+        "Glycocoll",
+        "Glykokoll",
+        "Glyzin",
+        "H2N-CH2-COOH",
+        "Hgly",
+        "Leimzucker",
+        "aminoethanoic acid",
+        "2-Aminoacetic acid",
+        "Glycolixir",
+        "Glicoamin",
+        "Glycosthene",
+        "Aciport",
+        "Padil",
+        "Hampshire glycine",
+        "Amitone",
+        "Acetic acid, amino-",
+        "Aminoazijnzuur"
+      ]
+    },
+    "disease": {
+      "input": "coronary artery disease",
+      "label": "coronary artery disorder",
+      "id": "MONDO:0005010",
+      "synonyms": [
+        "coronary artery disease",
+        "coronary artery disorder",
+        "CHD (coronary heart disease)",
+        "coronary arteriosclerosis",
+        "disease or disorder of coronary artery",
+        "CAD",
+        "coronary artery disease or disorder",
+        "coronary disease",
+        "coronary heart disease",
+        "disease of coronary artery",
+        "disorder of coronary artery"
+      ]
+    }
+  },
+  "urate|gout": {
+    "metabolite": {
+      "input": "urate",
+      "label": "7,9-dihydro-1H-purine-2,6,8(3H)-trione",
+      "chebi": "CHEBI:17775",
+      "pubchem_cid": 1175,
+      "synonyms": [
+        "urate",
+        "7,9-dihydro-1H-purine-2,6,8(3H)-trione",
+        "2,6,8-trioxopurine",
+        "2,6,8-trioxypurine",
+        "URIC ACID",
+        "purine-2,6,8(1H,3H,9H)-trione",
+        "Lithic acid",
+        "2,6,8-trihydroxypurine",
+        "1H-Purine-2,6,8-triol",
+        "1H-Purine-2,6,8(3H)-trione, 7,9-dihydro-",
+        "7,9-dihydro-3H-purine-2,6,8-trione",
+        "2,3,6,7,8,9-hexahydro-1H-purine-2,6,8-trione",
+        "Uricum acidum",
+        "Idelalisib metabolite m54",
+        "trioxopurine"
+      ]
+    },
+    "disease": {
+      "input": "gout",
+      "label": "gout",
+      "id": "MONDO:0005393",
+      "synonyms": [
+        "gout",
+        "chronic gout",
+        "gouty arthropathy",
+        "tophaceous disease",
+        "tophaceous gout"
+      ]
+    }
+  },
+  "isoleucine|type 2 diabetes": {
+    "metabolite": {
+      "input": "isoleucine",
+      "label": "isoleucine",
+      "chebi": "CHEBI:24898",
+      "pubchem_cid": 6306,
+      "synonyms": [
+        "isoleucine",
+        "Hile",
+        "rel-(2R,3R)-2-amino-3-methylpentanoic acid",
+        "l-isoleucine",
+        "(2S,3S)-2-Amino-3-methylpentanoic acid",
+        "2S,3S-Isoleucine",
+        "(S)-Isoleucine",
+        "(S,S)-Isoleucine",
+        "2-Amino-3-methylvaleric acid",
+        "erythro-L-Isoleucine",
+        "L-Ile",
+        "Isoleucina",
+        "alpha-Amino-beta-methylvaleric acid",
+        "Norvaline, 3-methyl-",
+        "Valeric acid, 2-amino-3-methyl-",
+        "Isoleucinum",
+        "iso-leucine"
+      ]
+    },
+    "disease": {
+      "input": "type 2 diabetes",
+      "label": "type 2 diabetes mellitus",
+      "id": "MONDO:0005148",
+      "synonyms": [
+        "type 2 diabetes",
+        "type 2 diabetes mellitus",
+        "diabetes mellitis type 2",
+        "diabetes mellitis type II",
+        "diabetes mellitus, noninsulin-dependent, 2",
+        "diabetes mellitus, noninsulin-dependent, association with",
+        "diabetes mellitus, noninsulin-dependent, late onset",
+        "diabetes mellitus, type II",
+        "insulin resistance, severe, digenic",
+        "NIDDM",
+        "T2D",
+        "T2DM - type 2 diabetes mellitus",
+        "T2DM",
+        "adult onset diabetes",
+        "adult-onset diabetes",
+        "diabetes mellitus, noninsulin-dependent",
+        "diabetes mellitus, type 2",
+        "diabetes, type 2",
+        "non-insulin dependent diabetes mellitus",
+        "non-insulin dependent diabetes",
+        "noninsulin dependent diabetes",
+        "noninsulin-dependent diabetes mellitus",
+        "type 2 diabetes mellitus non-insulin dependent",
+        "type II diabetes mellitus",
+        "type II diabetes"
+      ]
+    }
+  },
+  "trimethylamine N-oxide|coronary artery disease": {
+    "metabolite": {
+      "input": "trimethylamine N-oxide",
+      "label": "trimethylamine N-oxide",
+      "chebi": "CHEBI:15724",
+      "pubchem_cid": 1145,
+      "synonyms": [
+        "trimethylamine N-oxide",
+        "(CH3)3NO",
+        "Me3N(+)O(-)",
+        "Me3N(O)",
+        "N(CH3)3O",
+        "N,N-dimethylmethanamine oxide",
+        "TMAO",
+        "Trimethylaminoxid",
+        "trimethylamine oxide",
+        "trimethyloxamine",
+        "Triox",
+        "N,N-Dimethylmethanamine N-oxide",
+        "Methanamine, N,N-dimethyl-, N-oxide",
+        "trimethylammonium oxide",
+        "Trimethylamine N-oxide dihydrate",
+        "trimethylamine-N-oxide",
+        "Trimethylamine, N-oxide",
+        "TMANO"
+      ]
+    },
+    "disease": {
+      "input": "coronary artery disease",
+      "label": "coronary artery disorder",
+      "id": "MONDO:0005010",
+      "synonyms": [
+        "coronary artery disease",
+        "coronary artery disorder",
+        "CHD (coronary heart disease)",
+        "coronary arteriosclerosis",
+        "disease or disorder of coronary artery",
+        "CAD",
+        "coronary artery disease or disorder",
+        "coronary disease",
+        "coronary heart disease",
+        "disease of coronary artery",
+        "disorder of coronary artery"
+      ]
+    }
+  },
+  "creatinine|chronic kidney disease": {
+    "metabolite": {
+      "input": "creatinine",
+      "label": "creatinine",
+      "chebi": "CHEBI:16737",
+      "pubchem_cid": 588,
+      "synonyms": [
+        "creatinine",
+        "1-Methylglycocyamidine",
+        "1-Methylhydantoin-2-imide",
+        "2-Amino-1-methylimidazolin-4-one",
+        "2-amino-1,5-dihydro-1-methyl-4H-Imidazol-4-one",
+        "2-imino-1-methylimidazolidin-4-one",
+        "Creatine anhydride",
+        "Kreatinin",
+        "creatinina",
+        "Creatinine,heated",
+        "Kreatininum",
+        "2-amino-3-methyl-4H-imidazol-5-one",
+        "2-amino-1-methyl-1,5-dihydro-4H-imidazol-4-one",
+        "4H-Imidazol-4-one, 2-amino-1,5-dihydro-1-methyl-",
+        "CREATININE (II)",
+        "CREATININE [II]",
+        "IMIDAZOLIDIN-4-ONE, 2-IMINO-1-METHYL"
+      ]
+    },
+    "disease": {
+      "input": "chronic kidney disease",
+      "label": "chronic kidney disease",
+      "id": "MONDO:0005300",
+      "synonyms": [
+        "chronic kidney disease",
+        "chronic renal failure syndrome",
+        "CKD - chronic kidney disease",
+        "chronic renal disease",
+        "kidney disease, chronic"
+      ]
+    }
+  },
+  "citrate|ischemic stroke": {
+    "metabolite": {
+      "input": "citrate",
+      "label": "citrate(3-)",
+      "chebi": "CHEBI:16947",
+      "pubchem_cid": 31348,
+      "synonyms": [
+        "citrate",
+        "citrate(3-)",
+        "2-hydroxy-1,2,3-propanetricarboxylate",
+        "2-hydroxy-1,2,3-propanetricarboxylate(3-)",
+        "2-hydroxy-1,2,3-propanetricarboxylic acid, ion(3-)",
+        "2-hydroxypropane-1,2,3-tricarboxylate",
+        "2-hydroxytricarballylate",
+        "CITRATE ANION",
+        "cit",
+        "cit(3-)",
+        "Citrate Ion",
+        "citrate salt",
+        "citr",
+        "1,2,3-Propanetricarboxylic acid, 2-hydroxy-, ion(3-)",
+        "citrate trianion",
+        "citrate(3-) anion",
+        "FLC",
+        "CITRIC ACID, ION(3-)",
+        "PD160556"
+      ]
+    },
+    "disease": {
+      "input": "ischemic stroke",
+      "label": "ischemic stroke",
+      "id": "MONDO:1060198",
+      "synonyms": [
+        "ischemic stroke",
+        "ischaemic stroke"
+      ]
+    }
+  }
+}

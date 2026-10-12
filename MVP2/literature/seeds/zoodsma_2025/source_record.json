@@ -1,0 +1,669 @@
+{
+  "paper_key": "zoodsma_2025",
+  "identity": {
+    "pmid": "41044249",
+    "pmcid": "PMC12513840",
+    "doi": "10.1038/s41588-025-02355-3",
+    "title": "A genetic map of human metabolism across the allele frequency spectrum",
+    "atlas_table": "Supplementary Table 5",
+    "publisher": "https://www.nature.com/articles/s41588-025-02355-3"
+  },
+  "screening_status": "seed_not_screened",
+  "mr_import_status": "not_imported",
+  "existing_atlas_use": "Supplementary Table 5",
+  "scope_note": "Existing atlas source, not a screened or imported metabolite-disease MR estimate dataset.",
+  "attempts": [
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41044249+AND+SRC%3AMED&format=json&resultType=core",
+      "requested_at_utc": "2026-09-12T02:42:13.181856+00:00",
+      "local_path": "metadata/europepmc_search.json",
+      "label": "",
+      "asset_class": "metadata",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41044249+AND+SRC%3AMED&format=json&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 9994,
+      "sha256": "f8d2223c320be5074523d22650597dae802a908e0a32590b5258e4deddd6881a",
+      "completed_at_utc": "2026-09-12T02:42:14.496840+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "requested_at_utc": "2026-09-12T02:42:14.498845+00:00",
+      "local_path": "fulltext/PMC12513840.xml",
+      "label": "Europe PMC JATS full text",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "content_type": "application/xml",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 230439,
+      "sha256": "6d7822cd08f0c0b7b8bae15b16008d1ec407571e2e1fd869c848c72fc126343a",
+      "completed_at_utc": "2026-09-12T02:42:16.745689+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/s41588-025-02355-3",
+      "requested_at_utc": "2026-09-12T02:42:16.747687+00:00",
+      "local_path": "metadata/publisher_article.html",
+      "label": "Publisher article and linked assets",
+      "asset_class": "metadata",
+      "http_status": 200,
+      "resolved_url": "https://www.nature.com/articles/s41588-025-02355-3",
+      "content_type": "text/html; charset=utf-8",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 631344,
+      "sha256": "c58a31a64bdc79b954d6bc684e288e2817b96ae8b67d8d14cab4bc6260299657",
+      "completed_at_utc": "2026-09-12T02:42:20.810057+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "A genetic map of human metabolism across the allele frequency spectrum | Nature Genetics"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41044249+AND+SRC%3AMED&format=json&resultType=core",
+      "requested_at_utc": "2026-09-12T02:44:18.502578+00:00",
+      "local_path": "metadata/europepmc_search.json",
+      "label": "",
+      "asset_class": "metadata",
+      "status": "existing_validated",
+      "size_bytes": 9994,
+      "sha256": "f8d2223c320be5074523d22650597dae802a908e0a32590b5258e4deddd6881a",
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "requested_at_utc": "2026-09-12T02:44:18.515663+00:00",
+      "local_path": "fulltext/PMC12513840.xml",
+      "label": "Europe PMC JATS full text",
+      "asset_class": "full_article",
+      "status": "existing_validated",
+      "size_bytes": 230439,
+      "sha256": "6d7822cd08f0c0b7b8bae15b16008d1ec407571e2e1fd869c848c72fc126343a",
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/s41588-025-02355-3",
+      "requested_at_utc": "2026-09-12T02:44:18.545290+00:00",
+      "local_path": "metadata/publisher_article.html",
+      "label": "Publisher article and linked assets",
+      "asset_class": "metadata",
+      "status": "existing_validated",
+      "size_bytes": 631344,
+      "sha256": "c58a31a64bdc79b954d6bc684e288e2817b96ae8b67d8d14cab4bc6260299657",
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "A genetic map of human metabolism across the allele frequency spectrum | Nature Genetics"
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM1_ESM.pdf",
+      "requested_at_utc": "2026-09-12T02:44:19.275551+00:00",
+      "local_path": "supplements/41588_2025_2355_MOESM1_ESM.pdf",
+      "label": "Supplementary Information (download PDF )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM1_ESM.pdf",
+      "content_type": "application/pdf",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 3266499,
+      "sha256": "f4626ad5a71f6fd8327cf01687a12a43c4d6dd8daf061e3b334db509affad43a",
+      "completed_at_utc": "2026-09-12T02:44:21.640197+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 16
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM2_ESM.pdf",
+      "requested_at_utc": "2026-09-12T02:44:21.641197+00:00",
+      "local_path": "supplements/41588_2025_2355_MOESM2_ESM.pdf",
+      "label": "Reporting Summary (download PDF )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM2_ESM.pdf",
+      "content_type": "application/pdf",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 488964,
+      "sha256": "1be68c4c0882e422a05443b8e832a2a75ee3092f806ea2440d72d75c3a352273",
+      "completed_at_utc": "2026-09-12T02:44:27.347368+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 3
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM3_ESM.pdf",
+      "requested_at_utc": "2026-09-12T02:44:27.348814+00:00",
+      "local_path": "supplements/41588_2025_2355_MOESM3_ESM.pdf",
+      "label": "Peer Review File (download PDF )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM3_ESM.pdf",
+      "content_type": "application/pdf",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 7505923,
+      "sha256": "667eb336bcfb1f29e128720cf4308ff59c5f1b69f3637f9b5189eb24937fcbc3",
+      "completed_at_utc": "2026-09-12T02:44:28.932024+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 24
+      }
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM4_ESM.xlsx",
+      "requested_at_utc": "2026-09-12T02:44:28.935361+00:00",
+      "local_path": "supplements/41588_2025_2355_MOESM4_ESM.xlsx",
+      "label": "Supplementary Table 1 (download XLSX )",
+      "asset_class": "supplementary_asset",
+      "http_status": 200,
+      "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM4_ESM.xlsx",
+      "content_type": "application/octet-stream",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 38544493,
+      "sha256": "9d98d479da85d937465cef5018081e7e3e20fe569dd450b9eb2686f589ee50cf",
+      "completed_at_utc": "2026-09-12T02:44:33.812379+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 82
+      }
+    },
+    {
+      "requested_url": "https://www.nature.com/articles/s41588-025-02355-3.pdf",
+      "requested_at_utc": "2026-09-12T02:44:33.822439+00:00",
+      "local_path": "fulltext/s41588-025-02355-3.pdf",
+      "label": "Publisher PDF",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://www.nature.com/articles/s41588-025-02355-3.pdf",
+      "content_type": "application/pdf",
+      "content_disposition": null,
+      "status": "downloaded",
+      "size_bytes": 13809392,
+      "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff",
+      "completed_at_utc": "2026-09-12T02:44:39.644475+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 28
+      }
+    },
+    {
+      "requested_url": "https://europepmc.org/articles/PMC12513840?pdf=render",
+      "requested_at_utc": "2026-09-12T02:44:39.650763+00:00",
+      "local_path": "fulltext/41588_2025_Article_2355.pdf",
+      "label": "Repository PDF; original filename from JATS self-uri",
+      "asset_class": "full_article",
+      "http_status": 200,
+      "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC12513840",
+      "content_type": "application/pdf",
+      "content_disposition": "inline; filename=\"41588_2025_Article_2355.pdf\"",
+      "status": "downloaded",
+      "size_bytes": 13809392,
+      "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff",
+      "completed_at_utc": "2026-09-12T02:44:55.633597+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 28
+      }
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:44:55.636624+00:00",
+      "local_path": "metadata/PMC12513840_supplementaryFiles.zip",
+      "label": "Europe PMC supplementary-file package",
+      "asset_class": "supplementary_bundle",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "content_type": "application/zip",
+      "content_disposition": "attachment; filename = PMC12513840_SupplementaryFiles.zip",
+      "status": "downloaded",
+      "size_bytes": 52759026,
+      "sha256": "0e7fcd5ab68155fe1361b2fadff0f5974eb0013a9660a43eec313103b83e44c3",
+      "completed_at_utc": "2026-09-12T02:46:01.378698+00:00",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 33
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:46:03.919667+00:00",
+      "archive_member": "41588_2025_2355_MOESM4_ESM.xlsx",
+      "local_path": "supplements/41588_2025_2355_MOESM4_ESM.xlsx",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 38544493,
+      "sha256": "9d98d479da85d937465cef5018081e7e3e20fe569dd450b9eb2686f589ee50cf",
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 82
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:46:03.989669+00:00",
+      "archive_member": "41588_2025_2355_MOESM2_ESM.pdf",
+      "local_path": "supplements/41588_2025_2355_MOESM2_ESM.pdf",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 488964,
+      "sha256": "1be68c4c0882e422a05443b8e832a2a75ee3092f806ea2440d72d75c3a352273",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 3
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:46:04.024875+00:00",
+      "archive_member": "41588_2025_2355_MOESM1_ESM.pdf",
+      "local_path": "supplements/41588_2025_2355_MOESM1_ESM.pdf",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 3266499,
+      "sha256": "f4626ad5a71f6fd8327cf01687a12a43c4d6dd8daf061e3b334db509affad43a",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 16
+      }
+    },
+    {
+      "status": "extracted_from_public_bundle",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles",
+      "requested_at_utc": "2026-09-12T02:46:04.083947+00:00",
+      "archive_member": "41588_2025_2355_MOESM3_ESM.pdf",
+      "local_path": "supplements/41588_2025_2355_MOESM3_ESM.pdf",
+      "asset_class": "supplementary_asset",
+      "size_bytes": 7505923,
+      "sha256": "667eb336bcfb1f29e128720cf4308ff59c5f1b69f3637f9b5189eb24937fcbc3",
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "pages": 24
+      }
+    }
+  ],
+  "discovered_supplements": [
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM1_ESM.pdf",
+      "label": "Supplementary Information (download PDF )",
+      "discovered_in": "https://www.nature.com/articles/s41588-025-02355-3"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM2_ESM.pdf",
+      "label": "Reporting Summary (download PDF )",
+      "discovered_in": "https://www.nature.com/articles/s41588-025-02355-3"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM3_ESM.pdf",
+      "label": "Peer Review File (download PDF )",
+      "discovered_in": "https://www.nature.com/articles/s41588-025-02355-3"
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM4_ESM.xlsx",
+      "label": "Supplementary Table 1 (download XLSX )",
+      "discovered_in": "https://www.nature.com/articles/s41588-025-02355-3"
+    }
+  ],
+  "license_statements": [
+    {
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41044249+AND+SRC%3AMED&format=json&resultType=core",
+      "reported_license": "cc by"
+    },
+    {
+      "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "reported_license": "© The Author(s) 2025 2025 https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ ."
+    }
+  ],
+  "last_acquisition_utc": "2026-09-12T02:44:18.502578+00:00",
+  "identity_verified": {
+    "pmid": "41044249",
+    "pmcid": "PMC12513840",
+    "doi": "10.1038/s41588-025-02355-3",
+    "title": "A genetic map of human metabolism across the allele frequency spectrum.",
+    "authorString": "Zoodsma M, Beuchel C, Yasmeen S, Kohleick L, Nepal A, Koprulu M, Kronenberg F, Mayr M, Williamson A, Pietzner M, Langenberg C.",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-10-03"
+  },
+  "repository_article_version": "journal article in repository",
+  "jats_supplement_links": [
+    {
+      "href": "41588_2025_2355_MOESM1_ESM.pdf",
+      "label": "Supplementary Information Supplementary Note and Figs. 1–7.",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML"
+    },
+    {
+      "href": "41588_2025_2355_MOESM2_ESM.pdf",
+      "label": "Reporting Summary",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML"
+    },
+    {
+      "href": "41588_2025_2355_MOESM3_ESM.pdf",
+      "label": "Peer Review File",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML"
+    },
+    {
+      "href": "41588_2025_2355_MOESM4_ESM.xlsx",
+      "label": "Supplementary Table 1 Supplementary Tables 1–19.",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML"
+    }
+  ],
+  "jats_self_uri": [
+    {
+      "content-type": "pmc-pdf",
+      "{http://www.w3.org/1999/xlink}href": "41588_2025_Article_2355.pdf"
+    }
+  ],
+  "repository_bundle_members": [
+    "41588_2025_2355_MOESM4_ESM.xlsx",
+    "41588_2025_2355_Fig11_ESM.gif",
+    "41588_2025_2355_MOESM2_ESM.pdf",
+    "41588_2025_2355_Fig10_ESM.jpg",
+    "41588_2025_2355_Fig12_ESM.jpg",
+    "41588_2025_2355_Fig3_HTML.jpg",
+    "41588_2025_2355_MOESM1_ESM.pdf",
+    "41588_2025_2355_Fig5_HTML.gif",
+    "41588_2025_2355_Fig1_HTML.gif",
+    "41588_2025_2355_Fig11_ESM.jpg",
+    "41588_2025_2355_Fig13_ESM.jpg",
+    "41588_2025_2355_Fig12_ESM.gif",
+    "41588_2025_2355_Fig1_HTML.jpg",
+    "41588_2025_2355_Fig10_ESM.gif",
+    "41588_2025_2355_MOESM3_ESM.pdf",
+    "41588_2025_2355_Article_Equa.gif",
+    "41588_2025_2355_Fig8_ESM.gif",
+    "41588_2025_2355_Fig8_ESM.jpg",
+    "41588_2025_2355_Fig2_HTML.jpg",
+    "41588_2025_2355_Fig4_HTML.jpg",
+    "41588_2025_2355_Fig6_ESM.gif",
+    "41588_2025_2355_Fig14_ESM.gif",
+    "41588_2025_2355_Fig5_HTML.jpg",
+    "41588_2025_2355_Fig4_HTML.gif",
+    "41588_2025_2355_Fig2_HTML.gif",
+    "41588_2025_2355_Fig7_ESM.gif",
+    "41588_2025_2355_Fig3_HTML.gif",
+    "41588_2025_2355_Fig13_ESM.gif",
+    "41588_2025_2355_Fig9_ESM.gif",
+    "41588_2025_2355_Fig7_ESM.jpg",
+    "41588_2025_2355_Fig14_ESM.jpg",
+    "41588_2025_2355_Fig9_ESM.jpg",
+    "41588_2025_2355_Fig6_ESM.jpg"
+  ],
+  "supplement_coverage": [
+    {
+      "href": "41588_2025_2355_MOESM1_ESM.pdf",
+      "label": "Supplementary Information Supplementary Note and Figs. 1–7.",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "41588_2025_2355_MOESM2_ESM.pdf",
+      "label": "Reporting Summary",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "41588_2025_2355_MOESM3_ESM.pdf",
+      "label": "Peer Review File",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "local_available": true
+    },
+    {
+      "href": "41588_2025_2355_MOESM4_ESM.xlsx",
+      "label": "Supplementary Table 1 Supplementary Tables 1–19.",
+      "discovered_in": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML",
+      "local_available": true
+    }
+  ],
+  "acquisition_complete_definition": "All publisher asset links and all unique repository JATS supplementary references were attempted. Inspect supplement_coverage and unavailable attempts; screening and MR import were not performed.",
+  "local_verification_utc": "2026-09-12T02:48:00.079664+00:00",
+  "local_files": [
+    {
+      "local_path": "fulltext/41588_2025_Article_2355.pdf",
+      "size_bytes": 13809392,
+      "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff",
+      "source_urls": [
+        "https://europepmc.org/articles/PMC12513840?pdf=render"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 28,
+        "parser_warnings": [],
+        "parser_warning_count": 0,
+        "expected_title_on_first_page": true
+      }
+    },
+    {
+      "local_path": "fulltext/PMC12513840.xml",
+      "size_bytes": 230439,
+      "sha256": "6d7822cd08f0c0b7b8bae15b16008d1ec407571e2e1fd869c848c72fc126343a",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/fullTextXML"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "XML parse; root article"
+      }
+    },
+    {
+      "local_path": "fulltext/s41588-025-02355-3.pdf",
+      "size_bytes": 13809392,
+      "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff",
+      "source_urls": [
+        "https://www.nature.com/articles/s41588-025-02355-3.pdf"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 28,
+        "parser_warnings": [],
+        "parser_warning_count": 0,
+        "expected_title_on_first_page": true
+      }
+    },
+    {
+      "local_path": "metadata/PMC12513840_supplementaryFiles.zip",
+      "size_bytes": 52759026,
+      "sha256": "0e7fcd5ab68155fe1361b2fadff0f5974eb0013a9660a43eec313103b83e44c3",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 33
+      }
+    },
+    {
+      "local_path": "metadata/europepmc_search.json",
+      "size_bytes": 9994,
+      "sha256": "f8d2223c320be5074523d22650597dae802a908e0a32590b5258e4deddd6881a",
+      "source_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41044249+AND+SRC%3AMED&format=json&resultType=core"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "JSON parse"
+      }
+    },
+    {
+      "local_path": "metadata/publisher_article.html",
+      "size_bytes": 631344,
+      "sha256": "c58a31a64bdc79b954d6bc684e288e2817b96ae8b67d8d14cab4bc6260299657",
+      "source_urls": [
+        "https://www.nature.com/articles/s41588-025-02355-3"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "HTML parse and citation_doi present",
+        "page_title": "A genetic map of human metabolism across the allele frequency spectrum | Nature Genetics"
+      }
+    },
+    {
+      "local_path": "supplements/41588_2025_2355_MOESM1_ESM.pdf",
+      "size_bytes": 3266499,
+      "sha256": "f4626ad5a71f6fd8327cf01687a12a43c4d6dd8daf061e3b334db509affad43a",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM1_ESM.pdf",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 16,
+        "parser_warnings": [],
+        "parser_warning_count": 0
+      }
+    },
+    {
+      "local_path": "supplements/41588_2025_2355_MOESM2_ESM.pdf",
+      "size_bytes": 488964,
+      "sha256": "1be68c4c0882e422a05443b8e832a2a75ee3092f806ea2440d72d75c3a352273",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM2_ESM.pdf",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 3,
+        "parser_warnings": [],
+        "parser_warning_count": 0
+      }
+    },
+    {
+      "local_path": "supplements/41588_2025_2355_MOESM3_ESM.pdf",
+      "size_bytes": 7505923,
+      "sha256": "667eb336bcfb1f29e128720cf4308ff59c5f1b69f3637f9b5189eb24937fcbc3",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM3_ESM.pdf",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "PDF header and pypdf parse",
+        "parser_strict": false,
+        "pages": 24,
+        "parser_warnings": [
+          "Ignoring wrong pointing object 42 0 (offset 0)",
+          "Ignoring wrong pointing object 45 0 (offset 0)",
+          "Ignoring wrong pointing object 49 0 (offset 0)",
+          "Ignoring wrong pointing object 62 0 (offset 0)",
+          "Ignoring wrong pointing object 64 0 (offset 0)",
+          "Ignoring wrong pointing object 73 0 (offset 0)",
+          "Ignoring wrong pointing object 75 0 (offset 0)",
+          "Ignoring wrong pointing object 82 0 (offset 0)",
+          "Ignoring wrong pointing object 84 0 (offset 0)",
+          "Ignoring wrong pointing object 93 0 (offset 0)",
+          "Ignoring wrong pointing object 97 0 (offset 0)",
+          "Ignoring wrong pointing object 103 0 (offset 0)",
+          "Ignoring wrong pointing object 105 0 (offset 0)",
+          "Ignoring wrong pointing object 113 0 (offset 0)",
+          "Ignoring wrong pointing object 117 0 (offset 0)",
+          "Ignoring wrong pointing object 124 0 (offset 0)",
+          "Ignoring wrong pointing object 128 0 (offset 0)",
+          "Ignoring wrong pointing object 134 0 (offset 0)",
+          "Ignoring wrong pointing object 138 0 (offset 0)",
+          "Ignoring wrong pointing object 144 0 (offset 0)",
+          "Ignoring wrong pointing object 148 0 (offset 0)",
+          "Ignoring wrong pointing object 153 0 (offset 0)",
+          "Ignoring wrong pointing object 157 0 (offset 0)",
+          "Ignoring wrong pointing object 167 0 (offset 0)",
+          "Ignoring wrong pointing object 171 0 (offset 0)",
+          "Ignoring wrong pointing object 179 0 (offset 0)",
+          "Ignoring wrong pointing object 181 0 (offset 0)",
+          "Ignoring wrong pointing object 183 0 (offset 0)",
+          "Ignoring wrong pointing object 188 0 (offset 0)"
+        ],
+        "parser_warning_count": 29
+      }
+    },
+    {
+      "local_path": "supplements/41588_2025_2355_MOESM4_ESM.xlsx",
+      "size_bytes": 38544493,
+      "sha256": "9d98d479da85d937465cef5018081e7e3e20fe569dd450b9eb2686f589ee50cf",
+      "source_urls": [
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-025-02355-3/MediaObjects/41588_2025_2355_MOESM4_ESM.xlsx",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12513840/supplementaryFiles"
+      ],
+      "file_validation": {
+        "valid": true,
+        "method": "ZIP CRC and Office structure",
+        "members": 82,
+        "sheet_names": [
+          "Overview",
+          "ST1",
+          "headers ST2",
+          "ST2",
+          "ST3",
+          "ST4",
+          "headers ST5",
+          "ST5",
+          "Header ST6",
+          "ST6",
+          "ST7",
+          "ST8",
+          "ST9",
+          "ST10",
+          "ST11",
+          "ST12",
+          "ST13",
+          "ST14",
+          "ST15",
+          "ST16",
+          "ST17",
+          "ST18",
+          "ST19"
+        ]
+      }
+    }
+  ],
+  "identical_byte_copies": [
+    {
+      "sha256": "0e78bb6b1fee6d46e00957bf923305aa677eceaa01fba493af326413d35f4aff",
+      "paths": [
+        "fulltext/41588_2025_Article_2355.pdf",
+        "fulltext/s41588-025-02355-3.pdf"
+      ]
+    }
+  ],
+  "supplement_coverage_status": "all_discovered_repository_supplements_available",
+  "api_filename_note": "API responses without an original downloadable filename use descriptive metadata names or the PMCID. Publisher assets, JATS-linked files, and ZIP member filenames are preserved."
+}

@@ -1,0 +1,105 @@
+L06 - fixed-column extraction vs the ukb_mapping_2025 source workbook
+
+source: MVP2/literature/seeds/ukb_mapping_2025/42255_2025_1371_MOESM3_ESM.xlsx
+extractor: MVP2/scripts/screen_seed_papers.py:extract_ukb, fixed indices
+           {"beta": 9, "ci_high": 11, "ci_low": 12, "disease_id": 3, "disease_trait": 4, "metabolite_id": 0, "metabolite_name": 1, "method": 8, "nsnp": 7, "p_value": 13}
+
+[0] printed header of each sheet (row 3, the sub-header the values sit under)
+  sTable 31    ['Beta', 'Odds ratio', '95% UCI', '95% LCI', 'p value', 'q value']
+  sTable 32    ['Beta', 'Odds ratio', '95% UCI', '95% LCI', 'p value', 'q value']
+  sTable 33    ['Beta', 'Odds ratio', '95% UCI', '95% LCI', 'p value', 'q value']
+  sTable 34    ['Beta', 'Odds ratio', '95% UCI', '95% LCI', 'p value', 'q value']
+  sTable 35    ['Beta', 'Odds ratio', '95% UCI', '95% LCI', 'p value', 'q value']
+
+[1] which column satisfies  col ~= exp(Beta at col 9)  (relative tol 1e-06)
+    col10 == exp(beta) -> the printed header order holds ('layout H')
+    col11 == exp(beta) -> the row is shifted one column right ('layout S')
+
+  sTable 31
+    layout H (col10 = OR)                  7570
+    no numeric beta                        6
+  sTable 32
+    layout H (col10 = OR)                  6195
+    no numeric beta                        6
+  sTable 33
+    layout H (col10 = OR)                  526
+    layout S (col11 = OR)                  18
+    no numeric beta                        6
+  sTable 34
+    layout H (col10 = OR, printed to 2 decimals) 454
+    no numeric beta                        6
+  sTable 35
+    layout H (col10 = OR)                  2199
+    layout S (col11 = OR)                  480
+    no numeric beta                        6
+
+[2] what the extractor writes for a 'layout S' row
+  sTable 33 row 16
+    col9   header 'Beta'         value 1.07045437888634
+    col10  header 'Odds ratio'   value 1.18185020203274e-08
+    col11  header '95% UCI'      value 2.91670448786792
+    col12  header '95% LCI'      value 0.702518316457593
+    col13  header 'p value'      value 1.43839044131509
+    col14  header 'q value'      value 3.5128837353454e-06
+    exp(col9) = 2.91670448787   (matches col11, not col10)
+    col12 and col13 bracket col9 symmetrically: 0.702518316457593 < 1.07045437888634 < 1.43839044131509
+
+    the extractor therefore records
+      beta    <- col9  = 1.07045437888634   (the beta)
+      ci_high <- col11 = 2.91670448786792   (the odds ratio)
+      ci_low  <- col12 = 0.702518316457593   (a lower bound on the beta scale)
+      p_value <- col13 = 1.43839044131509   (an upper bound, not a p-value)
+
+[3] how many affected rows reach the kept tables
+
+  candidate_pairs.csv
+    rows_total                                                     20460
+    rows_from_ukb_mapping_2025                                     17442
+    rows_on_layout_S                                               498
+    of_those_p_value_outside_0_1                                   266
+    of_those_p_value_inside_0_1_and_therefore_undetectable_by_range 232
+  new_pair_records.csv
+    rows_total                                                     17405
+    rows_from_ukb_mapping_2025                                     14527
+    rows_on_layout_S                                               18
+    of_those_p_value_outside_0_1                                   14
+    of_those_p_value_inside_0_1_and_therefore_undetectable_by_range 4
+  new_unique_pairs.csv
+    rows_total                                                     9801
+    rows_from_ukb_mapping_2025                                     6923
+    rows_on_layout_S                                               9
+    of_those_p_value_outside_0_1                                   7
+    of_those_p_value_inside_0_1_and_therefore_undetectable_by_range 2
+
+[4] confidence-bound ordering on 'layout H' rows (the printed-header case)
+    header says col11 = '95% UCI', col12 = '95% LCI';
+    extractor maps ci_high <- col11 and ci_low <- col12.
+
+  sTable 31    layout-H rows 7570    col11>col12 0       col11<col12 7570    missing 0
+  sTable 32    layout-H rows 6195    col11>col12 0       col11<col12 6195    missing 0
+  sTable 33    layout-H rows 526     col11>col12 0       col11<col12 526     missing 0
+  sTable 34    layout-H rows 454     col11>col12 0       col11<col12 454     missing 0
+  sTable 35    layout-H rows 2199    col11>col12 0       col11<col12 2199    missing 0
+
+  A row where the value printed under '95% UCI' is smaller than the value under
+  '95% LCI' means the source's two bound headers do not describe the numbers under
+  them; the extractor follows the headers, so ci_low and ci_high come out inverted.
+
+[5] contrast: bound ordering in the kept table, by study and sheet
+  chen_2023 / ST18                   inverted 0      ordered 511    no bounds 0
+  chen_2023 / ST19                   inverted 0      ordered 495    no bounds 0
+  chen_2023 / ST20                   inverted 0      ordered 507    no bounds 0
+  ukb_mapping_2025 / sTable 31       inverted 6528   ordered 0      no bounds 0
+  ukb_mapping_2025 / sTable 32       inverted 340    ordered 0      no bounds 0
+  ukb_mapping_2025 / sTable 33       inverted 46     ordered 9      no bounds 0
+  yin_2025 / Sheet1                  inverted 0      ordered 0      no bounds 282
+  zoodsma_2025 / ST14                inverted 0      ordered 0      no bounds 1083
+
+[6] rows per source sheet at each stage (ukb_mapping_2025 only)
+
+  sheet        candidate_pairs    new_pair_records     new_unique_pairs
+  sTable 31    7570               7462                 6528
+  sTable 32    6195               6093                 340
+  sTable 33    544                531                  55
+  sTable 34    454                441                  0
+  sTable 35    2679               0                    0

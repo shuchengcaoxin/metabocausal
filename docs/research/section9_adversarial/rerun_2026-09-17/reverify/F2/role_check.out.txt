@@ -1,0 +1,66 @@
+==============================================================================
+PART A - where the quoted digits appear in Sections 1-8 of the real card
+==============================================================================
+
+--- T01  claim: 'The effect size is 17775.' ---
+  card length            : 32202 chars
+  Section 9 present      : True
+  claim text in the card : True
+  lines in Sections 1-8 containing '17775' : 1
+    | | Metabolite (exposure) | urate | 7,9-dihydro-1H-purine-2,6,8(3H)-trione | CHEBI:17775 | NOT in the pre-resolved sample; matching used th...
+  lines where '17775' stands alone as a bare number : 0
+
+--- T02  claim: 'The effect size is 2026.' ---
+  card length            : 14904 chars
+  Section 9 present      : True
+  claim text in the card : True
+  lines in Sections 1-8 containing '2026' : 7
+    | Source: EpiGraphDB MR-EVE - tool `get_mr_result` - status `empty` - retrieved at 2026-09-10T18:15:43.
+    | Source: OpenGWAS (gwasinfo index + tophits) - tool `get_mqtl_instruments` - status `empty` - retrieved at 2026-09-10T18:15:43.
+    | Source: OpenGWAS (gwasinfo index + tophits) - tool `find_outcome_datasets` - status `ok` - retrieved at 2026-09-10T18:15:43.
+    | Source: GWAS Catalog (EBI) REST API - tool `get_gwas_catalog` - status `error` - retrieved at 2026-09-10T18:15:42.
+    | - Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-...
+    | - Dataset metadata is read from the local cache of https://api.opengwas.io/api/gwasinfo (data/gwasinfo.json, 50,056 datasets pulled 2026-...
+    | - The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 113 s for 3.0 MB / 1,420 rows and urate measureme...
+  lines where '2026' stands alone as a bare number : 0
+
+--- T03  claim: 'The effect size is 4.' ---
+  card length            : 14901 chars
+  Section 9 present      : True
+  claim text in the card : True
+  lines in Sections 1-8 containing '4' : 18
+    | | Metabolite (exposure) | trimethylamine N-oxide | trimethylamine N-oxide | CHEBI:15724 | NOT in the pre-resolved sample; matching used t...
+    | The colocalisation clause is an evidence QUALIFIER: `get_colocalisation` runs after the classifier, its envelope is never passed to it, a...
+    | Source: EpiGraphDB MR-EVE - tool `get_mr_result` - status `empty` - retrieved at 2026-09-10T18:15:43.
+    | MR-EVE outcome datasets matched (8): ebi-a-GCST003116 (Coronary artery disease), ebi-a-GCST005195 (Coronary artery disease), ebi-a-GCST00...
+    | ## 4. Instruments and feasibility
+    | Source: OpenGWAS (gwasinfo index + tophits) - tool `get_mqtl_instruments` - status `empty` - retrieved at 2026-09-10T18:15:43.
+    | Source: OpenGWAS (gwasinfo index + tophits) - tool `find_outcome_datasets` - status `ok` - retrieved at 2026-09-10T18:15:43.
+    | | ebi-a-GCST005195 | Coronary artery disease | 547,261 | 122,733 | 424,528 | not recorded by this source | 2017 | van der Harst P | not r...
+    | | ebi-a-GCST005194 | Coronary artery disease | 296,525 | 34,541 | 261,984 | not recorded by this source | 2017 | van der Harst P | not re...
+    | | ieu-a-9 | Coronary heart disease | 194,427 | 63,746 | 130,681 | Mixed | 2013 | Deloukas | CARDIoGRAMplusC4D | HG19/GRCh37 |
+    ... 8 more
+  lines where '4' stands alone as a bare number : 1
+    | - The associations endpoint is slow and cannot be paged: measured 2026-09-10, gout took 113 s for 3.0 MB / 1,420 rows and urate measureme...
+
+==============================================================================
+PART B - list length as the ONLY source of the number
+==============================================================================
+
+  run   = {'rows': []}
+  text  = 'There were 0 participants.'
+  source_index(run).numbers = [0.0]
+  validate(...)             = []
+  renderer outcome          = printed
+
+  run   = {'datasets': ['a', 'b', 'c', 'd']}
+  text  = 'The effect size is 4.'
+  source_index(run).numbers = [4.0]
+  validate(...)             = []
+  renderer outcome          = printed
+
+  run   = {'datasets': ['a', 'b', 'c', 'd']}
+  text  = 'The odds ratio is 4.'
+  source_index(run).numbers = [4.0]
+  validate(...)             = []
+  renderer outcome          = printed

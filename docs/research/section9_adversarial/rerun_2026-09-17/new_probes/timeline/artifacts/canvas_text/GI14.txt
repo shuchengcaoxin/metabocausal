@@ -1,0 +1,45 @@
+case: GI14
+what: nine drugs: eight irrelevant ones carry a high cross-indication stage, the pair-relevant one carries stage 1
+asks: does the eight-lane cap, ordered by cross-indication stage, drop the drug this pair is about
+figure: drawn GI14_genetic_insight.png
+stdout: [timeline] wrote GI14_genetic_insight.png  (8/9 drug lanes, 0 undated report(s))
+registry asked: NCT10000001, NCT10000002, NCT10000003, NCT10000004, NCT10000005, NCT10000006, NCT10000007, NCT10000008
+exception: (none)
+draw error: (none)
+
+--- labels drawn off the canvas (px lost) ---
+(none)
+
+--- label pairs printed over each other ---
+(none)
+
+--- every string drawn on the canvas ---
+'phase 4'
+'phase 4'
+'phase 4'
+'phase 4'
+'phase 4'
+'phase 4'
+'phase 4'
+'phase 4'
+'year (ClinicalTrials.gov record: start, and the bar to primary completion)'
+'1998'
+'2000'
+'2002'
+'2004'
+'2006'
+'2008'
+'2010'
+'2012'
+'filler-8\nCETP, max stage 4'
+'filler-7\nCETP, max stage 4'
+'filler-6\nCETP, max stage 4'
+'filler-5\nCETP, max stage 4'
+'filler-4\nCETP, max stage 4'
+'filler-3\nCETP, max stage 4'
+'filler-2\nCETP, max stage 4'
+'filler-1\nCETP, max stage 4'
+'HDL cholesterol -> Coronary artery disease: effector-gene drugs against the GWAS year'
+'8 drug lane(s) from the dossier of 1 effector gene, 8 dated reports drawn, 0 exposure GWAS years marked'
+'9 drug(s) retrieved, 8 drawn: this figure caps at 8 lane(s), highest max clinical stage first - the rest are in section 6 of the card.'
+"Per-report phases; a drug's stage for one disease is never its stage for another. Years from ClinicalTrials.gov records."

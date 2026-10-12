@@ -1,0 +1,126 @@
+# F4 re-verification, worktree HEAD b056397, 2026-09-17T04:15:44Z
+# cwd: <workspace>/metabocausal-rerun
+# python: Python 3.12.10
+
+$ python docs/research/section9_adversarial/rerun_2026-09-17/reverify/F4/probe_f4.py
+==============================================================================
+LAYER 1 - direct renderer probe (his harness method)
+==============================================================================
+case   origin                           gate findings    outcome  2026-09-16 match
+S04    probe_section9.py control        V2               blocked  blocked    same
+S10    probe_section9.py F4 (V2)        -                printed  printed    same
+S06    probe_section9.py control        V3               blocked  blocked    same
+S11    probe_section9.py F4 (V3)        -                printed  printed    same
+S08    probe_section9.py control        V4               blocked  blocked    same
+S12    probe_section9.py F4 (V4)        -                printed  printed    same
+S13    probe_section9.py control        V6               blocked  blocked    same
+S14    probe_section9.py F4 (V6)        -                printed  printed    same
+M8     ai_run F4 (V3)                   -                printed  printed    same
+M9     ai_run F4 (V3)                   -                printed  printed    same
+M10    ai_run control (two sentences)   V3               blocked  blocked    same
+M7     ai_run intended safe negation    -                printed  printed    same
+U5     ai_run F4 (V2)                   -                printed  printed    same
+U4     ai_run intended safe negation    -                printed  printed    same
+X12    ai_run F4 (V4)                   -                printed  printed    same
+X14    ai_run F4 (V4)                   -                printed  printed    same
+X13    ai_run intended disclaimer       -                printed  printed    same
+X16    ai_run intended disclaimer       -                printed  printed    same
+V6-1   ai_run control                   V6               blocked  blocked    same
+V6-2   ai_run intended safe negation    -                printed  printed    same
+V6-3   ai_run F4 (V6)                   -                printed  printed    same
+
+==============================================================================
+LAYER 2 - real model path (his R01 construction: offline Reply -> llm.interpret -> renderer)
+==============================================================================
+S10    status=accepted   accepted=True   gate-one findings=0   renderer=printed  same
+       fields returned by interpret(): {"headline": "The missing arm was not queried, but the retrieved evidence proves causality."}
+S11    status=accepted   accepted=True   gate-one findings=0   renderer=printed  same
+       fields returned by interpret(): {"headline": "Colocalisation was not queried, but the target mediates the effect."}
+S12    status=accepted   accepted=True   gate-one findings=0   renderer=printed  same
+       fields returned by interpret(): {"headline": "The source does not mean the estimate is unavailable; there is no effect."}
+S14    status=accepted   accepted=True   gate-one findings=0   renderer=printed  same
+       fields returned by interpret(): {"headline": "Colocalisation was not queried, but it upgraded the state."}
+
+==============================================================================
+LAYER 3 - deployed CLI surface: render.py --interpret with the same offline Reply
+==============================================================================
+CLI stderr note: section 9 written by claude-opus-5 and accepted by the validator.
+sentence in card: True
+pending sentence in card: False
+--- Section 9 as the CLI printed it ---
+## 9. Reasoning
+
+The missing arm was not queried, but the retrieved evidence proves causality.
+
+Written by claude-opus-5 from this run's retrieved evidence and checked against it before printing. Every number and identifier above appears in the sections above; no model wrote or changed any of them.
+--- end ---
+
+==============================================================================
+BYTE COMPARISON against his committed section9_outputs/
+==============================================================================
+S10    identical=True
+S11    identical=True
+S12    identical=True
+S14    identical=True
+
+cases with a changed outcome vs 2026-09-16: 0
+
+$ python docs/research/section9_adversarial/rerun_2026-09-17/reverify/F4/mechanism_trace.py
+validate_card.py loaded from <workspace>/metabocausal-rerun\validate_card.py
+
+[S10] rule V2
+  sentences after _sentences(): 1
+  V2 pattern matches      : True -> 'proves'
+  exemption used             : NEGATION
+  exemption matches          : True -> 'not'
+  findings from _check_language(): []
+
+[S11] rule V3
+  sentences after _sentences(): 1
+  V3 pattern matches      : True -> 'mediates'
+  exemption used             : NEGATION
+  exemption matches          : True -> 'not'
+  findings from _check_language(): []
+
+[S12] rule V4
+  sentences after _sentences(): 1
+  V4 pattern matches      : True -> 'no effect'
+  exemption used             : V4_DISCLAIMER
+  exemption matches          : True -> 'does not mean'
+  findings from _check_language(): []
+
+[S14] rule V6
+  sentences after _sentences(): 1
+  V6 pattern matches      : True -> ''
+  exemption used             : NEGATION
+  exemption matches          : True -> 'not'
+  findings from _check_language(): []
+
+[M9] rule V3
+  sentences after _sentences(): 1
+  V3 pattern matches      : True -> 'mediates'
+  exemption used             : NEGATION
+  exemption matches          : True -> 'not'
+  findings from _check_language(): []
+
+[U5] rule V2
+  sentences after _sentences(): 1
+  V2 pattern matches      : True -> 'prove'
+  exemption used             : NEGATION
+  exemption matches          : True -> 'cannot'
+  findings from _check_language(): []
+
+[X14] rule V4
+  sentences after _sentences(): 1
+  V4 pattern matches      : True -> 'no effect'
+  exemption used             : V4_DISCLAIMER
+  exemption matches          : True -> 'not evidence of'
+  findings from _check_language(): []
+
+[V6-3] rule V6
+  sentences after _sentences(): 1
+  V6 pattern matches      : True -> ''
+  exemption used             : NEGATION
+  exemption matches          : True -> 'not'
+  findings from _check_language(): []
+
