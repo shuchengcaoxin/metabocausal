@@ -1,6 +1,6 @@
 # Contributors
 
-Paper authors: Shucheng Cao, Zipeng Sun, Zhanghao Zhouyin, Jingrui Mu, Ziwei He, Qichen Huang, Baowen Qi.
+Paper authors: Shucheng Cao, Zipeng Sun, Jingrui Mu, Ziwei He, Qichen Huang, Zhanghao Zhouyin, Baowen Qi.
 
 | Contributor | Module | Contribution |
 | --- | --- | --- |
